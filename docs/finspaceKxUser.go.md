@@ -1,6 +1,6 @@
 # `aws_finspace_kx_user`
 
-Refer to the Terraform Registory for docs: [`aws_finspace_kx_user`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user).
+Refer to the Terraform Registory for docs: [`aws_finspace_kx_user`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user).
 
 # `finspaceKxUser` Submodule <a name="`finspaceKxUser` Submodule" id="@cdktf/provider-aws.finspaceKxUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_finspace_kx_user`](https://regi
 
 ### FinspaceKxUser <a name="FinspaceKxUser" id="@cdktf/provider-aws.finspaceKxUser.FinspaceKxUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user aws_finspace_kx_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user aws_finspace_kx_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxUser.FinspaceKxUser.Initializer"></a>
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the FinspaceKxUser to import.
 
 The id of the existing FinspaceKxUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,12 +858,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxuser"
 | <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#environment_id FinspaceKxUser#environment_id}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#iam_role FinspaceKxUser#iam_role}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#name FinspaceKxUser#name}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#id FinspaceKxUser#id}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#tags FinspaceKxUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#tags_all FinspaceKxUser#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#environment_id FinspaceKxUser#environment_id}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#iam_role FinspaceKxUser#iam_role}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#name FinspaceKxUser#name}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#id FinspaceKxUser#id}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#tags FinspaceKxUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#tags_all FinspaceKxUser#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserTimeouts">FinspaceKxUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -946,7 +946,7 @@ EnvironmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#environment_id FinspaceKxUser#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#environment_id FinspaceKxUser#environment_id}.
 
 ---
 
@@ -958,7 +958,7 @@ IamRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#iam_role FinspaceKxUser#iam_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#iam_role FinspaceKxUser#iam_role}.
 
 ---
 
@@ -970,7 +970,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#name FinspaceKxUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#name FinspaceKxUser#name}.
 
 ---
 
@@ -982,7 +982,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#id FinspaceKxUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#id FinspaceKxUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -997,7 +997,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#tags FinspaceKxUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#tags FinspaceKxUser#tags}.
 
 ---
 
@@ -1009,7 +1009,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#tags_all FinspaceKxUser#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#tags_all FinspaceKxUser#tags_all}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Timeouts FinspaceKxUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#timeouts FinspaceKxUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#timeouts FinspaceKxUser#timeouts}
 
 ---
 
@@ -1045,9 +1045,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxuser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#create FinspaceKxUser#create}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#delete FinspaceKxUser#delete}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#update FinspaceKxUser#update}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#create FinspaceKxUser#create}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#delete FinspaceKxUser#delete}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxUser.FinspaceKxUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#update FinspaceKxUser#update}. |
 
 ---
 
@@ -1059,7 +1059,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#create FinspaceKxUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#create FinspaceKxUser#create}.
 
 ---
 
@@ -1071,7 +1071,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#delete FinspaceKxUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#delete FinspaceKxUser#delete}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/finspace_kx_user#update FinspaceKxUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/finspace_kx_user#update FinspaceKxUser#update}.
 
 ---
 

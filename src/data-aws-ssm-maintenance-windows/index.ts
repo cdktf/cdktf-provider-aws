@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows
+// https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSsmMaintenanceWindowsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows#id DataAwsSsmMaintenanceWindows#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows#id DataAwsSsmMaintenanceWindows#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +22,17 @@ export interface DataAwsSsmMaintenanceWindowsConfig extends cdktf.TerraformMetaA
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows#filter DataAwsSsmMaintenanceWindows#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows#filter DataAwsSsmMaintenanceWindows#filter}
   */
   readonly filter?: DataAwsSsmMaintenanceWindowsFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsSsmMaintenanceWindowsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows#name DataAwsSsmMaintenanceWindows#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows#name DataAwsSsmMaintenanceWindows#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows#values DataAwsSsmMaintenanceWindows#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows#values DataAwsSsmMaintenanceWindows#values}
   */
   readonly values: string[];
 }
@@ -146,7 +146,7 @@ export class DataAwsSsmMaintenanceWindowsFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows}
 */
 export class DataAwsSsmMaintenanceWindows extends cdktf.TerraformDataSource {
 
@@ -162,7 +162,7 @@ export class DataAwsSsmMaintenanceWindows extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSsmMaintenanceWindows resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmMaintenanceWindows to import
-  * @param importFromId The id of the existing DataAwsSsmMaintenanceWindows that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSsmMaintenanceWindows that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmMaintenanceWindows to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -174,7 +174,7 @@ export class DataAwsSsmMaintenanceWindows extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -185,7 +185,7 @@ export class DataAwsSsmMaintenanceWindows extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ssm_maintenance_windows',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

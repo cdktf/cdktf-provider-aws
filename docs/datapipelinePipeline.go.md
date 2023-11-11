@@ -1,6 +1,6 @@
 # `aws_datapipeline_pipeline`
 
-Refer to the Terraform Registory for docs: [`aws_datapipeline_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline).
+Refer to the Terraform Registory for docs: [`aws_datapipeline_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline).
 
 # `datapipelinePipeline` Submodule <a name="`datapipelinePipeline` Submodule" id="@cdktf/provider-aws.datapipelinePipeline"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_datapipeline_pipeline`](https:/
 
 ### DatapipelinePipeline <a name="DatapipelinePipeline" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer"></a>
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DatapipelinePipeline to im
 
 The id of the existing DatapipelinePipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,11 +788,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datapipelinepipeline"
 | <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
 
 ---
 
@@ -874,7 +874,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
 
 ---
 
@@ -886,7 +886,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
 
 ---
 
@@ -898,7 +898,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +913,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
 
 ---
 
@@ -925,7 +925,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
 
 ---
 

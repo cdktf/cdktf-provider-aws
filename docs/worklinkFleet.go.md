@@ -1,6 +1,6 @@
 # `aws_worklink_fleet`
 
-Refer to the Terraform Registory for docs: [`aws_worklink_fleet`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet).
+Refer to the Terraform Registory for docs: [`aws_worklink_fleet`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet).
 
 # `worklinkFleet` Submodule <a name="`worklinkFleet` Submodule" id="@cdktf/provider-aws.worklinkFleet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_worklink_fleet`](https://regist
 
 ### WorklinkFleet <a name="WorklinkFleet" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet aws_worklink_fleet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet aws_worklink_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleet.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorklinkFleet to import.
 
 The id of the existing WorklinkFleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,14 +948,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/worklinkfleet"
 | <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#name WorklinkFleet#name}. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.auditStreamArn">AuditStreamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#audit_stream_arn WorklinkFleet#audit_stream_arn}. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.deviceCaCertificate">DeviceCaCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#device_ca_certificate WorklinkFleet#device_ca_certificate}. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#display_name WorklinkFleet#display_name}. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#id WorklinkFleet#id}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#name WorklinkFleet#name}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.auditStreamArn">AuditStreamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#audit_stream_arn WorklinkFleet#audit_stream_arn}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.deviceCaCertificate">DeviceCaCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#device_ca_certificate WorklinkFleet#device_ca_certificate}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#display_name WorklinkFleet#display_name}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#id WorklinkFleet#id}. |
 | <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.identityProvider">IdentityProvider</a></code> | <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider">WorklinkFleetIdentityProvider</a></code> | identity_provider block. |
 | <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.network">Network</a></code> | <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork">WorklinkFleetNetwork</a></code> | network block. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.optimizeForEndUserLocation">OptimizeForEndUserLocation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#optimize_for_end_user_location WorklinkFleet#optimize_for_end_user_location}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.property.optimizeForEndUserLocation">OptimizeForEndUserLocation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#optimize_for_end_user_location WorklinkFleet#optimize_for_end_user_location}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#name WorklinkFleet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#name WorklinkFleet#name}.
 
 ---
 
@@ -1049,7 +1049,7 @@ AuditStreamArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#audit_stream_arn WorklinkFleet#audit_stream_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#audit_stream_arn WorklinkFleet#audit_stream_arn}.
 
 ---
 
@@ -1061,7 +1061,7 @@ DeviceCaCertificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#device_ca_certificate WorklinkFleet#device_ca_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#device_ca_certificate WorklinkFleet#device_ca_certificate}.
 
 ---
 
@@ -1073,7 +1073,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#display_name WorklinkFleet#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#display_name WorklinkFleet#display_name}.
 
 ---
 
@@ -1085,7 +1085,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#id WorklinkFleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#id WorklinkFleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1102,7 +1102,7 @@ IdentityProvider WorklinkFleetIdentityProvider
 
 identity_provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#identity_provider WorklinkFleet#identity_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#identity_provider WorklinkFleet#identity_provider}
 
 ---
 
@@ -1116,7 +1116,7 @@ Network WorklinkFleetNetwork
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#network WorklinkFleet#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#network WorklinkFleet#network}
 
 ---
 
@@ -1128,7 +1128,7 @@ OptimizeForEndUserLocation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#optimize_for_end_user_location WorklinkFleet#optimize_for_end_user_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#optimize_for_end_user_location WorklinkFleet#optimize_for_end_user_location}.
 
 ---
 
@@ -1149,8 +1149,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/worklinkfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider.property.samlMetadata">SamlMetadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#saml_metadata WorklinkFleet#saml_metadata}. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#type WorklinkFleet#type}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider.property.samlMetadata">SamlMetadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#saml_metadata WorklinkFleet#saml_metadata}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#type WorklinkFleet#type}. |
 
 ---
 
@@ -1162,7 +1162,7 @@ SamlMetadata *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#saml_metadata WorklinkFleet#saml_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#saml_metadata WorklinkFleet#saml_metadata}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#type WorklinkFleet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#type WorklinkFleet#type}.
 
 ---
 
@@ -1196,9 +1196,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/worklinkfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#security_group_ids WorklinkFleet#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#subnet_ids WorklinkFleet#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#vpc_id WorklinkFleet#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#security_group_ids WorklinkFleet#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#subnet_ids WorklinkFleet#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#vpc_id WorklinkFleet#vpc_id}. |
 
 ---
 
@@ -1210,7 +1210,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#security_group_ids WorklinkFleet#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#security_group_ids WorklinkFleet#security_group_ids}.
 
 ---
 
@@ -1222,7 +1222,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#subnet_ids WorklinkFleet#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#subnet_ids WorklinkFleet#subnet_ids}.
 
 ---
 
@@ -1234,7 +1234,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/worklink_fleet#vpc_id WorklinkFleet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/worklink_fleet#vpc_id WorklinkFleet#vpc_id}.
 
 ---
 

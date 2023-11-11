@@ -1,6 +1,6 @@
 # `aws_glue_schema`
 
-Refer to the Terraform Registory for docs: [`aws_glue_schema`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema).
+Refer to the Terraform Registory for docs: [`aws_glue_schema`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema).
 
 # `glueSchema` Submodule <a name="`glueSchema` Submodule" id="@cdktf/provider-aws.glueSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_glue_schema`](https://registry.
 
 ### GlueSchema <a name="GlueSchema" id="@cdktf/provider-aws.glueSchema.GlueSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema aws_glue_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema aws_glue_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueSchema.GlueSchema.Initializer"></a>
 
@@ -50,15 +50,15 @@ GlueSchema.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.compatibility">compatibility</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.dataFormat">dataFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#data_format GlueSchema#data_format}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.schemaDefinition">schemaDefinition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#description GlueSchema#description}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#id GlueSchema#id}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.registryArn">registryArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags GlueSchema#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.compatibility">compatibility</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.dataFormat">dataFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#data_format GlueSchema#data_format}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.schemaDefinition">schemaDefinition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#description GlueSchema#description}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#id GlueSchema#id}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.registryArn">registryArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags GlueSchema#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchema.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}. |
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#data_format GlueSchema#data_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#data_format GlueSchema#data_format}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#description GlueSchema#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#description GlueSchema#description}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#id GlueSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#id GlueSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}.
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags GlueSchema#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags GlueSchema#tags}.
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}.
 
 ---
 
@@ -605,7 +605,7 @@ The construct id used in the generated config for the GlueSchema to import.
 
 The id of the existing GlueSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1095,15 +1095,15 @@ GlueSchemaConfig.builder()
 | <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.compatibility">compatibility</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.dataFormat">dataFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#data_format GlueSchema#data_format}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.schemaDefinition">schemaDefinition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#description GlueSchema#description}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#id GlueSchema#id}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.registryArn">registryArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags GlueSchema#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.compatibility">compatibility</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.dataFormat">dataFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#data_format GlueSchema#data_format}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.schemaDefinition">schemaDefinition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#description GlueSchema#description}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#id GlueSchema#id}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.registryArn">registryArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags GlueSchema#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueSchema.GlueSchemaConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}. |
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.String getCompatibility();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public java.lang.String getDataFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#data_format GlueSchema#data_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#data_format GlueSchema#data_format}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public java.lang.String getSchemaDefinition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}.
 
 ---
 
@@ -1221,7 +1221,7 @@ public java.lang.String getSchemaName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}.
 
 ---
 
@@ -1233,7 +1233,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#description GlueSchema#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#description GlueSchema#description}.
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#id GlueSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#id GlueSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1260,7 +1260,7 @@ public java.lang.String getRegistryArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags GlueSchema#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags GlueSchema#tags}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}.
 
 ---
 

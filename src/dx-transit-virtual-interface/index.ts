@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface
+// https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,82 +13,82 @@ import * as cdktf from 'cdktf';
 
 export interface DxTransitVirtualInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}
   */
   readonly addressFamily: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}
   */
   readonly amazonAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}
   */
   readonly bgpAsn: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}
   */
   readonly bgpAuthKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}
   */
   readonly connectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}
   */
   readonly customerAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}
   */
   readonly dxGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}
   */
   readonly mtu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}
   */
   readonly sitelinkEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}
   */
   readonly vlan: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#timeouts DxTransitVirtualInterface#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#timeouts DxTransitVirtualInterface#timeouts}
   */
   readonly timeouts?: DxTransitVirtualInterfaceTimeouts;
 }
 export interface DxTransitVirtualInterfaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}
   */
   readonly update?: string;
 }
@@ -209,7 +209,7 @@ export class DxTransitVirtualInterfaceTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}
 */
 export class DxTransitVirtualInterface extends cdktf.TerraformResource {
 
@@ -225,7 +225,7 @@ export class DxTransitVirtualInterface extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DxTransitVirtualInterface resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxTransitVirtualInterface to import
-  * @param importFromId The id of the existing DxTransitVirtualInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DxTransitVirtualInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxTransitVirtualInterface to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -237,7 +237,7 @@ export class DxTransitVirtualInterface extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -248,7 +248,7 @@ export class DxTransitVirtualInterface extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dx_transit_virtual_interface',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

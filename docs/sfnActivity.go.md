@@ -1,6 +1,6 @@
 # `aws_sfn_activity`
 
-Refer to the Terraform Registory for docs: [`aws_sfn_activity`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity).
+Refer to the Terraform Registory for docs: [`aws_sfn_activity`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity).
 
 # `sfnActivity` Submodule <a name="`sfnActivity` Submodule" id="@cdktf/provider-aws.sfnActivity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_sfn_activity`](https://registry
 
 ### SfnActivity <a name="SfnActivity" id="@cdktf/provider-aws.sfnActivity.SfnActivity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity aws_sfn_activity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity aws_sfn_activity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sfnActivity.SfnActivity.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the SfnActivity to import.
 
 The id of the existing SfnActivity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,10 +769,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sfnactivity"
 | <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#name SfnActivity#name}. |
-| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#id SfnActivity#id}. |
-| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#tags SfnActivity#tags}. |
-| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#tags_all SfnActivity#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#name SfnActivity#name}. |
+| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#id SfnActivity#id}. |
+| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#tags SfnActivity#tags}. |
+| <code><a href="#@cdktf/provider-aws.sfnActivity.SfnActivityConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#tags_all SfnActivity#tags_all}. |
 
 ---
 
@@ -854,7 +854,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#name SfnActivity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#name SfnActivity#name}.
 
 ---
 
@@ -866,7 +866,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#id SfnActivity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#id SfnActivity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +881,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#tags SfnActivity#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#tags SfnActivity#tags}.
 
 ---
 
@@ -893,7 +893,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sfn_activity#tags_all SfnActivity#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_activity#tags_all SfnActivity#tags_all}.
 
 ---
 

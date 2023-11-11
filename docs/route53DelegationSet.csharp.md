@@ -1,6 +1,6 @@
 # `aws_route53_delegation_set`
 
-Refer to the Terraform Registory for docs: [`aws_route53_delegation_set`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/route53_delegation_set).
+Refer to the Terraform Registory for docs: [`aws_route53_delegation_set`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/route53_delegation_set).
 
 # `route53DelegationSet` Submodule <a name="`route53DelegationSet` Submodule" id="@cdktf/provider-aws.route53DelegationSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_route53_delegation_set`](https:
 
 ### Route53DelegationSet <a name="Route53DelegationSet" id="@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/route53_delegation_set aws_route53_delegation_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/route53_delegation_set aws_route53_delegation_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the Route53DelegationSet to im
 
 The id of the existing Route53DelegationSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/route53_delegation_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/route53_delegation_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,8 +727,8 @@ new Route53DelegationSetConfig {
 | <code><a href="#@cdktf/provider-aws.route53DelegationSet.Route53DelegationSetConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53DelegationSet.Route53DelegationSetConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53DelegationSet.Route53DelegationSetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53DelegationSet.Route53DelegationSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/route53_delegation_set#id Route53DelegationSet#id}. |
-| <code><a href="#@cdktf/provider-aws.route53DelegationSet.Route53DelegationSetConfig.property.referenceName">ReferenceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/route53_delegation_set#reference_name Route53DelegationSet#reference_name}. |
+| <code><a href="#@cdktf/provider-aws.route53DelegationSet.Route53DelegationSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/route53_delegation_set#id Route53DelegationSet#id}. |
+| <code><a href="#@cdktf/provider-aws.route53DelegationSet.Route53DelegationSetConfig.property.referenceName">ReferenceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/route53_delegation_set#reference_name Route53DelegationSet#reference_name}. |
 
 ---
 
@@ -810,7 +810,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/route53_delegation_set#id Route53DelegationSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/route53_delegation_set#id Route53DelegationSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -825,7 +825,7 @@ public string ReferenceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/route53_delegation_set#reference_name Route53DelegationSet#reference_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/route53_delegation_set#reference_name Route53DelegationSet#reference_name}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_opsworks_nodejs_app_layer`
 
-Refer to the Terraform Registory for docs: [`aws_opsworks_nodejs_app_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer).
+Refer to the Terraform Registory for docs: [`aws_opsworks_nodejs_app_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer).
 
 # `opsworksNodejsAppLayer` Submodule <a name="`opsworksNodejsAppLayer` Submodule" id="@cdktf/provider-aws.opsworksNodejsAppLayer"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_opsworks_nodejs_app_layer`](htt
 
 ### OpsworksNodejsAppLayer <a name="OpsworksNodejsAppLayer" id="@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayer.Initializer"></a>
 
@@ -635,7 +635,7 @@ The construct id used in the generated config for the OpsworksNodejsAppLayer to 
 
 The id of the existing OpsworksNodejsAppLayer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1427,7 +1427,7 @@ const opsworksNodejsAppLayerCloudwatchConfiguration: opsworksNodejsAppLayer.Opsw
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#enabled OpsworksNodejsAppLayer#enabled}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#enabled OpsworksNodejsAppLayer#enabled}. |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfiguration.property.logStreams">logStreams</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams">OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams</a>[]</code> | log_streams block. |
 
 ---
@@ -1440,7 +1440,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#enabled OpsworksNodejsAppLayer#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#enabled OpsworksNodejsAppLayer#enabled}.
 
 ---
 
@@ -1454,7 +1454,7 @@ public readonly logStreams: IResolvable | OpsworksNodejsAppLayerCloudwatchConfig
 
 log_streams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#log_streams OpsworksNodejsAppLayer#log_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#log_streams OpsworksNodejsAppLayer#log_streams}
 
 ---
 
@@ -1472,17 +1472,17 @@ const opsworksNodejsAppLayerCloudwatchConfigurationLogStreams: opsworksNodejsApp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.file">file</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#file OpsworksNodejsAppLayer#file}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#log_group_name OpsworksNodejsAppLayer#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.batchCount">batchCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#batch_count OpsworksNodejsAppLayer#batch_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.batchSize">batchSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#batch_size OpsworksNodejsAppLayer#batch_size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.bufferDuration">bufferDuration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#buffer_duration OpsworksNodejsAppLayer#buffer_duration}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">datetimeFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#datetime_format OpsworksNodejsAppLayer#datetime_format}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#encoding OpsworksNodejsAppLayer#encoding}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">fileFingerprintLines</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#file_fingerprint_lines OpsworksNodejsAppLayer#file_fingerprint_lines}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.initialPosition">initialPosition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#initial_position OpsworksNodejsAppLayer#initial_position}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">multilineStartPattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#multiline_start_pattern OpsworksNodejsAppLayer#multiline_start_pattern}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.timeZone">timeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#time_zone OpsworksNodejsAppLayer#time_zone}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.file">file</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#file OpsworksNodejsAppLayer#file}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#log_group_name OpsworksNodejsAppLayer#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.batchCount">batchCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#batch_count OpsworksNodejsAppLayer#batch_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.batchSize">batchSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#batch_size OpsworksNodejsAppLayer#batch_size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.bufferDuration">bufferDuration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#buffer_duration OpsworksNodejsAppLayer#buffer_duration}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">datetimeFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#datetime_format OpsworksNodejsAppLayer#datetime_format}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#encoding OpsworksNodejsAppLayer#encoding}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">fileFingerprintLines</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#file_fingerprint_lines OpsworksNodejsAppLayer#file_fingerprint_lines}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.initialPosition">initialPosition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#initial_position OpsworksNodejsAppLayer#initial_position}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">multilineStartPattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#multiline_start_pattern OpsworksNodejsAppLayer#multiline_start_pattern}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationLogStreams.property.timeZone">timeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#time_zone OpsworksNodejsAppLayer#time_zone}. |
 
 ---
 
@@ -1494,7 +1494,7 @@ public readonly file: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#file OpsworksNodejsAppLayer#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#file OpsworksNodejsAppLayer#file}.
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly logGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#log_group_name OpsworksNodejsAppLayer#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#log_group_name OpsworksNodejsAppLayer#log_group_name}.
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly batchCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#batch_count OpsworksNodejsAppLayer#batch_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#batch_count OpsworksNodejsAppLayer#batch_count}.
 
 ---
 
@@ -1530,7 +1530,7 @@ public readonly batchSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#batch_size OpsworksNodejsAppLayer#batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#batch_size OpsworksNodejsAppLayer#batch_size}.
 
 ---
 
@@ -1542,7 +1542,7 @@ public readonly bufferDuration: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#buffer_duration OpsworksNodejsAppLayer#buffer_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#buffer_duration OpsworksNodejsAppLayer#buffer_duration}.
 
 ---
 
@@ -1554,7 +1554,7 @@ public readonly datetimeFormat: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#datetime_format OpsworksNodejsAppLayer#datetime_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#datetime_format OpsworksNodejsAppLayer#datetime_format}.
 
 ---
 
@@ -1566,7 +1566,7 @@ public readonly encoding: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#encoding OpsworksNodejsAppLayer#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#encoding OpsworksNodejsAppLayer#encoding}.
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly fileFingerprintLines: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#file_fingerprint_lines OpsworksNodejsAppLayer#file_fingerprint_lines}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#file_fingerprint_lines OpsworksNodejsAppLayer#file_fingerprint_lines}.
 
 ---
 
@@ -1590,7 +1590,7 @@ public readonly initialPosition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#initial_position OpsworksNodejsAppLayer#initial_position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#initial_position OpsworksNodejsAppLayer#initial_position}.
 
 ---
 
@@ -1602,7 +1602,7 @@ public readonly multilineStartPattern: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#multiline_start_pattern OpsworksNodejsAppLayer#multiline_start_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#multiline_start_pattern OpsworksNodejsAppLayer#multiline_start_pattern}.
 
 ---
 
@@ -1614,7 +1614,7 @@ public readonly timeZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#time_zone OpsworksNodejsAppLayer#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#time_zone OpsworksNodejsAppLayer#time_zone}.
 
 ---
 
@@ -1639,32 +1639,32 @@ const opsworksNodejsAppLayerConfig: opsworksNodejsAppLayer.OpsworksNodejsAppLaye
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.stackId">stackId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#stack_id OpsworksNodejsAppLayer#stack_id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.autoAssignElasticIps">autoAssignElasticIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_elastic_ips OpsworksNodejsAppLayer#auto_assign_elastic_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.autoAssignPublicIps">autoAssignPublicIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_public_ips OpsworksNodejsAppLayer#auto_assign_public_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.autoHealing">autoHealing</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#auto_healing OpsworksNodejsAppLayer#auto_healing}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.stackId">stackId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#stack_id OpsworksNodejsAppLayer#stack_id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.autoAssignElasticIps">autoAssignElasticIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_elastic_ips OpsworksNodejsAppLayer#auto_assign_elastic_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.autoAssignPublicIps">autoAssignPublicIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_public_ips OpsworksNodejsAppLayer#auto_assign_public_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.autoHealing">autoHealing</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#auto_healing OpsworksNodejsAppLayer#auto_healing}. |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.cloudwatchConfiguration">cloudwatchConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfiguration">OpsworksNodejsAppLayerCloudwatchConfiguration</a></code> | cloudwatch_configuration block. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customConfigureRecipes">customConfigureRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_configure_recipes OpsworksNodejsAppLayer#custom_configure_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customDeployRecipes">customDeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_deploy_recipes OpsworksNodejsAppLayer#custom_deploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customInstanceProfileArn">customInstanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_instance_profile_arn OpsworksNodejsAppLayer#custom_instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customJson">customJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_json OpsworksNodejsAppLayer#custom_json}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customSecurityGroupIds">customSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_security_group_ids OpsworksNodejsAppLayer#custom_security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customSetupRecipes">customSetupRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_setup_recipes OpsworksNodejsAppLayer#custom_setup_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customShutdownRecipes">customShutdownRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_shutdown_recipes OpsworksNodejsAppLayer#custom_shutdown_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customUndeployRecipes">customUndeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_undeploy_recipes OpsworksNodejsAppLayer#custom_undeploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.drainElbOnShutdown">drainElbOnShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#drain_elb_on_shutdown OpsworksNodejsAppLayer#drain_elb_on_shutdown}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customConfigureRecipes">customConfigureRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_configure_recipes OpsworksNodejsAppLayer#custom_configure_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customDeployRecipes">customDeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_deploy_recipes OpsworksNodejsAppLayer#custom_deploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customInstanceProfileArn">customInstanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_instance_profile_arn OpsworksNodejsAppLayer#custom_instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customJson">customJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_json OpsworksNodejsAppLayer#custom_json}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customSecurityGroupIds">customSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_security_group_ids OpsworksNodejsAppLayer#custom_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customSetupRecipes">customSetupRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_setup_recipes OpsworksNodejsAppLayer#custom_setup_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customShutdownRecipes">customShutdownRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_shutdown_recipes OpsworksNodejsAppLayer#custom_shutdown_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.customUndeployRecipes">customUndeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_undeploy_recipes OpsworksNodejsAppLayer#custom_undeploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.drainElbOnShutdown">drainElbOnShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#drain_elb_on_shutdown OpsworksNodejsAppLayer#drain_elb_on_shutdown}. |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.ebsVolume">ebsVolume</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume">OpsworksNodejsAppLayerEbsVolume</a>[]</code> | ebs_volume block. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.elasticLoadBalancer">elasticLoadBalancer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#elastic_load_balancer OpsworksNodejsAppLayer#elastic_load_balancer}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#id OpsworksNodejsAppLayer#id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.installUpdatesOnBoot">installUpdatesOnBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#install_updates_on_boot OpsworksNodejsAppLayer#install_updates_on_boot}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.instanceShutdownTimeout">instanceShutdownTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#instance_shutdown_timeout OpsworksNodejsAppLayer#instance_shutdown_timeout}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.elasticLoadBalancer">elasticLoadBalancer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#elastic_load_balancer OpsworksNodejsAppLayer#elastic_load_balancer}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#id OpsworksNodejsAppLayer#id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.installUpdatesOnBoot">installUpdatesOnBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#install_updates_on_boot OpsworksNodejsAppLayer#install_updates_on_boot}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.instanceShutdownTimeout">instanceShutdownTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#instance_shutdown_timeout OpsworksNodejsAppLayer#instance_shutdown_timeout}. |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.loadBasedAutoScaling">loadBasedAutoScaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScaling">OpsworksNodejsAppLayerLoadBasedAutoScaling</a></code> | load_based_auto_scaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#name OpsworksNodejsAppLayer#name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.nodejsVersion">nodejsVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#nodejs_version OpsworksNodejsAppLayer#nodejs_version}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.systemPackages">systemPackages</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#system_packages OpsworksNodejsAppLayer#system_packages}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#tags OpsworksNodejsAppLayer#tags}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#tags_all OpsworksNodejsAppLayer#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.useEbsOptimizedInstances">useEbsOptimizedInstances</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#use_ebs_optimized_instances OpsworksNodejsAppLayer#use_ebs_optimized_instances}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#name OpsworksNodejsAppLayer#name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.nodejsVersion">nodejsVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#nodejs_version OpsworksNodejsAppLayer#nodejs_version}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.systemPackages">systemPackages</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#system_packages OpsworksNodejsAppLayer#system_packages}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#tags OpsworksNodejsAppLayer#tags}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#tags_all OpsworksNodejsAppLayer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerConfig.property.useEbsOptimizedInstances">useEbsOptimizedInstances</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#use_ebs_optimized_instances OpsworksNodejsAppLayer#use_ebs_optimized_instances}. |
 
 ---
 
@@ -1746,7 +1746,7 @@ public readonly stackId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#stack_id OpsworksNodejsAppLayer#stack_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#stack_id OpsworksNodejsAppLayer#stack_id}.
 
 ---
 
@@ -1758,7 +1758,7 @@ public readonly autoAssignElasticIps: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_elastic_ips OpsworksNodejsAppLayer#auto_assign_elastic_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_elastic_ips OpsworksNodejsAppLayer#auto_assign_elastic_ips}.
 
 ---
 
@@ -1770,7 +1770,7 @@ public readonly autoAssignPublicIps: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_public_ips OpsworksNodejsAppLayer#auto_assign_public_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#auto_assign_public_ips OpsworksNodejsAppLayer#auto_assign_public_ips}.
 
 ---
 
@@ -1782,7 +1782,7 @@ public readonly autoHealing: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#auto_healing OpsworksNodejsAppLayer#auto_healing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#auto_healing OpsworksNodejsAppLayer#auto_healing}.
 
 ---
 
@@ -1796,7 +1796,7 @@ public readonly cloudwatchConfiguration: OpsworksNodejsAppLayerCloudwatchConfigu
 
 cloudwatch_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#cloudwatch_configuration OpsworksNodejsAppLayer#cloudwatch_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#cloudwatch_configuration OpsworksNodejsAppLayer#cloudwatch_configuration}
 
 ---
 
@@ -1808,7 +1808,7 @@ public readonly customConfigureRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_configure_recipes OpsworksNodejsAppLayer#custom_configure_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_configure_recipes OpsworksNodejsAppLayer#custom_configure_recipes}.
 
 ---
 
@@ -1820,7 +1820,7 @@ public readonly customDeployRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_deploy_recipes OpsworksNodejsAppLayer#custom_deploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_deploy_recipes OpsworksNodejsAppLayer#custom_deploy_recipes}.
 
 ---
 
@@ -1832,7 +1832,7 @@ public readonly customInstanceProfileArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_instance_profile_arn OpsworksNodejsAppLayer#custom_instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_instance_profile_arn OpsworksNodejsAppLayer#custom_instance_profile_arn}.
 
 ---
 
@@ -1844,7 +1844,7 @@ public readonly customJson: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_json OpsworksNodejsAppLayer#custom_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_json OpsworksNodejsAppLayer#custom_json}.
 
 ---
 
@@ -1856,7 +1856,7 @@ public readonly customSecurityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_security_group_ids OpsworksNodejsAppLayer#custom_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_security_group_ids OpsworksNodejsAppLayer#custom_security_group_ids}.
 
 ---
 
@@ -1868,7 +1868,7 @@ public readonly customSetupRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_setup_recipes OpsworksNodejsAppLayer#custom_setup_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_setup_recipes OpsworksNodejsAppLayer#custom_setup_recipes}.
 
 ---
 
@@ -1880,7 +1880,7 @@ public readonly customShutdownRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_shutdown_recipes OpsworksNodejsAppLayer#custom_shutdown_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_shutdown_recipes OpsworksNodejsAppLayer#custom_shutdown_recipes}.
 
 ---
 
@@ -1892,7 +1892,7 @@ public readonly customUndeployRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#custom_undeploy_recipes OpsworksNodejsAppLayer#custom_undeploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#custom_undeploy_recipes OpsworksNodejsAppLayer#custom_undeploy_recipes}.
 
 ---
 
@@ -1904,7 +1904,7 @@ public readonly drainElbOnShutdown: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#drain_elb_on_shutdown OpsworksNodejsAppLayer#drain_elb_on_shutdown}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#drain_elb_on_shutdown OpsworksNodejsAppLayer#drain_elb_on_shutdown}.
 
 ---
 
@@ -1918,7 +1918,7 @@ public readonly ebsVolume: IResolvable | OpsworksNodejsAppLayerEbsVolume[];
 
 ebs_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#ebs_volume OpsworksNodejsAppLayer#ebs_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#ebs_volume OpsworksNodejsAppLayer#ebs_volume}
 
 ---
 
@@ -1930,7 +1930,7 @@ public readonly elasticLoadBalancer: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#elastic_load_balancer OpsworksNodejsAppLayer#elastic_load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#elastic_load_balancer OpsworksNodejsAppLayer#elastic_load_balancer}.
 
 ---
 
@@ -1942,7 +1942,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#id OpsworksNodejsAppLayer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#id OpsworksNodejsAppLayer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1957,7 +1957,7 @@ public readonly installUpdatesOnBoot: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#install_updates_on_boot OpsworksNodejsAppLayer#install_updates_on_boot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#install_updates_on_boot OpsworksNodejsAppLayer#install_updates_on_boot}.
 
 ---
 
@@ -1969,7 +1969,7 @@ public readonly instanceShutdownTimeout: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#instance_shutdown_timeout OpsworksNodejsAppLayer#instance_shutdown_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#instance_shutdown_timeout OpsworksNodejsAppLayer#instance_shutdown_timeout}.
 
 ---
 
@@ -1983,7 +1983,7 @@ public readonly loadBasedAutoScaling: OpsworksNodejsAppLayerLoadBasedAutoScaling
 
 load_based_auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#load_based_auto_scaling OpsworksNodejsAppLayer#load_based_auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#load_based_auto_scaling OpsworksNodejsAppLayer#load_based_auto_scaling}
 
 ---
 
@@ -1995,7 +1995,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#name OpsworksNodejsAppLayer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#name OpsworksNodejsAppLayer#name}.
 
 ---
 
@@ -2007,7 +2007,7 @@ public readonly nodejsVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#nodejs_version OpsworksNodejsAppLayer#nodejs_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#nodejs_version OpsworksNodejsAppLayer#nodejs_version}.
 
 ---
 
@@ -2019,7 +2019,7 @@ public readonly systemPackages: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#system_packages OpsworksNodejsAppLayer#system_packages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#system_packages OpsworksNodejsAppLayer#system_packages}.
 
 ---
 
@@ -2031,7 +2031,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#tags OpsworksNodejsAppLayer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#tags OpsworksNodejsAppLayer#tags}.
 
 ---
 
@@ -2043,7 +2043,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#tags_all OpsworksNodejsAppLayer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#tags_all OpsworksNodejsAppLayer#tags_all}.
 
 ---
 
@@ -2055,7 +2055,7 @@ public readonly useEbsOptimizedInstances: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#use_ebs_optimized_instances OpsworksNodejsAppLayer#use_ebs_optimized_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#use_ebs_optimized_instances OpsworksNodejsAppLayer#use_ebs_optimized_instances}.
 
 ---
 
@@ -2073,13 +2073,13 @@ const opsworksNodejsAppLayerEbsVolume: opsworksNodejsAppLayer.OpsworksNodejsAppL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.mountPoint">mountPoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#mount_point OpsworksNodejsAppLayer#mount_point}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.numberOfDisks">numberOfDisks</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#number_of_disks OpsworksNodejsAppLayer#number_of_disks}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#size OpsworksNodejsAppLayer#size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.encrypted">encrypted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#encrypted OpsworksNodejsAppLayer#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#iops OpsworksNodejsAppLayer#iops}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.raidLevel">raidLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#raid_level OpsworksNodejsAppLayer#raid_level}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#type OpsworksNodejsAppLayer#type}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.mountPoint">mountPoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#mount_point OpsworksNodejsAppLayer#mount_point}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.numberOfDisks">numberOfDisks</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#number_of_disks OpsworksNodejsAppLayer#number_of_disks}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#size OpsworksNodejsAppLayer#size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.encrypted">encrypted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#encrypted OpsworksNodejsAppLayer#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#iops OpsworksNodejsAppLayer#iops}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.raidLevel">raidLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#raid_level OpsworksNodejsAppLayer#raid_level}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolume.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#type OpsworksNodejsAppLayer#type}. |
 
 ---
 
@@ -2091,7 +2091,7 @@ public readonly mountPoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#mount_point OpsworksNodejsAppLayer#mount_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#mount_point OpsworksNodejsAppLayer#mount_point}.
 
 ---
 
@@ -2103,7 +2103,7 @@ public readonly numberOfDisks: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#number_of_disks OpsworksNodejsAppLayer#number_of_disks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#number_of_disks OpsworksNodejsAppLayer#number_of_disks}.
 
 ---
 
@@ -2115,7 +2115,7 @@ public readonly size: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#size OpsworksNodejsAppLayer#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#size OpsworksNodejsAppLayer#size}.
 
 ---
 
@@ -2127,7 +2127,7 @@ public readonly encrypted: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#encrypted OpsworksNodejsAppLayer#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#encrypted OpsworksNodejsAppLayer#encrypted}.
 
 ---
 
@@ -2139,7 +2139,7 @@ public readonly iops: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#iops OpsworksNodejsAppLayer#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#iops OpsworksNodejsAppLayer#iops}.
 
 ---
 
@@ -2151,7 +2151,7 @@ public readonly raidLevel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#raid_level OpsworksNodejsAppLayer#raid_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#raid_level OpsworksNodejsAppLayer#raid_level}.
 
 ---
 
@@ -2163,7 +2163,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#type OpsworksNodejsAppLayer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#type OpsworksNodejsAppLayer#type}.
 
 ---
 
@@ -2182,7 +2182,7 @@ const opsworksNodejsAppLayerLoadBasedAutoScaling: opsworksNodejsAppLayer.Opswork
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScaling.property.downscaling">downscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling">OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling</a></code> | downscaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScaling.property.enable">enable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#enable OpsworksNodejsAppLayer#enable}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScaling.property.enable">enable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#enable OpsworksNodejsAppLayer#enable}. |
 | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScaling.property.upscaling">upscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling">OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling</a></code> | upscaling block. |
 
 ---
@@ -2197,7 +2197,7 @@ public readonly downscaling: OpsworksNodejsAppLayerLoadBasedAutoScalingDownscali
 
 downscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#downscaling OpsworksNodejsAppLayer#downscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#downscaling OpsworksNodejsAppLayer#downscaling}
 
 ---
 
@@ -2209,7 +2209,7 @@ public readonly enable: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#enable OpsworksNodejsAppLayer#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#enable OpsworksNodejsAppLayer#enable}.
 
 ---
 
@@ -2223,7 +2223,7 @@ public readonly upscaling: OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling;
 
 upscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#upscaling OpsworksNodejsAppLayer#upscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#upscaling OpsworksNodejsAppLayer#upscaling}
 
 ---
 
@@ -2241,13 +2241,13 @@ const opsworksNodejsAppLayerLoadBasedAutoScalingDownscaling: opsworksNodejsAppLa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2259,7 +2259,7 @@ public readonly alarms: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}.
 
 ---
 
@@ -2271,7 +2271,7 @@ public readonly cpuThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}.
 
 ---
 
@@ -2283,7 +2283,7 @@ public readonly ignoreMetricsTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}.
 
 ---
 
@@ -2295,7 +2295,7 @@ public readonly instanceCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}.
 
 ---
 
@@ -2307,7 +2307,7 @@ public readonly loadThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}.
 
 ---
 
@@ -2319,7 +2319,7 @@ public readonly memoryThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}.
 
 ---
 
@@ -2331,7 +2331,7 @@ public readonly thresholdsWaitTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}.
 
 ---
 
@@ -2349,13 +2349,13 @@ const opsworksNodejsAppLayerLoadBasedAutoScalingUpscaling: opsworksNodejsAppLaye
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2367,7 +2367,7 @@ public readonly alarms: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#alarms OpsworksNodejsAppLayer#alarms}.
 
 ---
 
@@ -2379,7 +2379,7 @@ public readonly cpuThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#cpu_threshold OpsworksNodejsAppLayer#cpu_threshold}.
 
 ---
 
@@ -2391,7 +2391,7 @@ public readonly ignoreMetricsTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#ignore_metrics_time OpsworksNodejsAppLayer#ignore_metrics_time}.
 
 ---
 
@@ -2403,7 +2403,7 @@ public readonly instanceCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#instance_count OpsworksNodejsAppLayer#instance_count}.
 
 ---
 
@@ -2415,7 +2415,7 @@ public readonly loadThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#load_threshold OpsworksNodejsAppLayer#load_threshold}.
 
 ---
 
@@ -2427,7 +2427,7 @@ public readonly memoryThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#memory_threshold OpsworksNodejsAppLayer#memory_threshold}.
 
 ---
 
@@ -2439,7 +2439,7 @@ public readonly thresholdsWaitTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_nodejs_app_layer#thresholds_wait_time OpsworksNodejsAppLayer#thresholds_wait_time}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_dms_certificate`
 
-Refer to the Terraform Registory for docs: [`aws_dms_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate).
+Refer to the Terraform Registory for docs: [`aws_dms_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate).
 
 # `dmsCertificate` Submodule <a name="`dmsCertificate` Submodule" id="@cdktf/provider-aws.dmsCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_dms_certificate`](https://regis
 
 ### DmsCertificate <a name="DmsCertificate" id="@cdktf/provider-aws.dmsCertificate.DmsCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate aws_dms_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate aws_dms_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsCertificate.DmsCertificate.Initializer"></a>
 
@@ -456,7 +456,7 @@ The construct id used in the generated config for the DmsCertificate to import.
 
 The id of the existing DmsCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,12 +829,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmscertificate"
 | <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.certificateId">CertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#certificate_id DmsCertificate#certificate_id}. |
-| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.certificatePem">CertificatePem</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#certificate_pem DmsCertificate#certificate_pem}. |
-| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.certificateWallet">CertificateWallet</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#certificate_wallet DmsCertificate#certificate_wallet}. |
-| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#id DmsCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#tags DmsCertificate#tags}. |
-| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#tags_all DmsCertificate#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.certificateId">CertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#certificate_id DmsCertificate#certificate_id}. |
+| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.certificatePem">CertificatePem</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#certificate_pem DmsCertificate#certificate_pem}. |
+| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.certificateWallet">CertificateWallet</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#certificate_wallet DmsCertificate#certificate_wallet}. |
+| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#id DmsCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#tags DmsCertificate#tags}. |
+| <code><a href="#@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#tags_all DmsCertificate#tags_all}. |
 
 ---
 
@@ -916,7 +916,7 @@ CertificateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#certificate_id DmsCertificate#certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#certificate_id DmsCertificate#certificate_id}.
 
 ---
 
@@ -928,7 +928,7 @@ CertificatePem *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#certificate_pem DmsCertificate#certificate_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#certificate_pem DmsCertificate#certificate_pem}.
 
 ---
 
@@ -940,7 +940,7 @@ CertificateWallet *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#certificate_wallet DmsCertificate#certificate_wallet}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#certificate_wallet DmsCertificate#certificate_wallet}.
 
 ---
 
@@ -952,7 +952,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#id DmsCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#id DmsCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -967,7 +967,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#tags DmsCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#tags DmsCertificate#tags}.
 
 ---
 
@@ -979,7 +979,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_certificate#tags_all DmsCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_certificate#tags_all DmsCertificate#tags_all}.
 
 ---
 

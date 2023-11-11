@@ -1,6 +1,6 @@
 # `aws_apigatewayv2_deployment`
 
-Refer to the Terraform Registory for docs: [`aws_apigatewayv2_deployment`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment).
+Refer to the Terraform Registory for docs: [`aws_apigatewayv2_deployment`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment).
 
 # `apigatewayv2Deployment` Submodule <a name="`apigatewayv2Deployment` Submodule" id="@cdktf/provider-aws.apigatewayv2Deployment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_apigatewayv2_deployment`](https
 
 ### Apigatewayv2Deployment <a name="Apigatewayv2Deployment" id="@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer"></a>
 
@@ -43,10 +43,10 @@ apigatewayv2Deployment.Apigatewayv2Deployment(
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer.parameter.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}.
 
 ---
 
@@ -581,7 +581,7 @@ The construct id used in the generated config for the Apigatewayv2Deployment to 
 
 The id of the existing Apigatewayv2Deployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,10 +908,10 @@ apigatewayv2Deployment.Apigatewayv2DeploymentConfig(
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}. |
 
 ---
 
@@ -993,7 +993,7 @@ api_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}.
 
 ---
 
@@ -1005,7 +1005,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}.
 
 ---
 
@@ -1017,7 +1017,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1032,7 +1032,7 @@ triggers: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}.
 
 ---
 

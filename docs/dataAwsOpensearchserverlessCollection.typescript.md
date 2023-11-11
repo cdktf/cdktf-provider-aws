@@ -1,6 +1,6 @@
 # `data_aws_opensearchserverless_collection`
 
-Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_collection`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/opensearchserverless_collection).
+Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_collection`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/opensearchserverless_collection).
 
 # `dataAwsOpensearchserverlessCollection` Submodule <a name="`dataAwsOpensearchserverlessCollection` Submodule" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_colle
 
 ### DataAwsOpensearchserverlessCollection <a name="DataAwsOpensearchserverlessCollection" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataAwsOpensearchserverles
 
 The id of the existing DataAwsOpensearchserverlessCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,8 +711,8 @@ const dataAwsOpensearchserverlessCollectionConfig: dataAwsOpensearchserverlessCo
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}. |
 
 ---
 
@@ -794,7 +794,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +809,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import
+// https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,82 +13,82 @@ import * as cdktf from 'cdktf';
 
 export interface EbsSnapshotImportConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#description EbsSnapshotImport#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#description EbsSnapshotImport#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#encrypted EbsSnapshotImport#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#encrypted EbsSnapshotImport#encrypted}
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#id EbsSnapshotImport#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#id EbsSnapshotImport#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#kms_key_id EbsSnapshotImport#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#kms_key_id EbsSnapshotImport#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#permanent_restore EbsSnapshotImport#permanent_restore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#permanent_restore EbsSnapshotImport#permanent_restore}
   */
   readonly permanentRestore?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#role_name EbsSnapshotImport#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#role_name EbsSnapshotImport#role_name}
   */
   readonly roleName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#storage_tier EbsSnapshotImport#storage_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#storage_tier EbsSnapshotImport#storage_tier}
   */
   readonly storageTier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#tags EbsSnapshotImport#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#tags EbsSnapshotImport#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#tags_all EbsSnapshotImport#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#tags_all EbsSnapshotImport#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#temporary_restore_days EbsSnapshotImport#temporary_restore_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#temporary_restore_days EbsSnapshotImport#temporary_restore_days}
   */
   readonly temporaryRestoreDays?: number;
   /**
   * client_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#client_data EbsSnapshotImport#client_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#client_data EbsSnapshotImport#client_data}
   */
   readonly clientData?: EbsSnapshotImportClientData;
   /**
   * disk_container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#disk_container EbsSnapshotImport#disk_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#disk_container EbsSnapshotImport#disk_container}
   */
   readonly diskContainer: EbsSnapshotImportDiskContainer;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#timeouts EbsSnapshotImport#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#timeouts EbsSnapshotImport#timeouts}
   */
   readonly timeouts?: EbsSnapshotImportTimeouts;
 }
 export interface EbsSnapshotImportClientData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#comment EbsSnapshotImport#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#comment EbsSnapshotImport#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#upload_end EbsSnapshotImport#upload_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#upload_end EbsSnapshotImport#upload_end}
   */
   readonly uploadEnd?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#upload_size EbsSnapshotImport#upload_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#upload_size EbsSnapshotImport#upload_size}
   */
   readonly uploadSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#upload_start EbsSnapshotImport#upload_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#upload_start EbsSnapshotImport#upload_start}
   */
   readonly uploadStart?: string;
 }
@@ -222,11 +222,11 @@ export class EbsSnapshotImportClientDataOutputReference extends cdktf.ComplexObj
 }
 export interface EbsSnapshotImportDiskContainerUserBucket {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#s3_bucket EbsSnapshotImport#s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#s3_bucket EbsSnapshotImport#s3_bucket}
   */
   readonly s3Bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#s3_key EbsSnapshotImport#s3_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#s3_key EbsSnapshotImport#s3_key}
   */
   readonly s3Key: string;
 }
@@ -308,21 +308,21 @@ export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdk
 }
 export interface EbsSnapshotImportDiskContainer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#description EbsSnapshotImport#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#description EbsSnapshotImport#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#format EbsSnapshotImport#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#format EbsSnapshotImport#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#url EbsSnapshotImport#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#url EbsSnapshotImport#url}
   */
   readonly url?: string;
   /**
   * user_bucket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#user_bucket EbsSnapshotImport#user_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#user_bucket EbsSnapshotImport#user_bucket}
   */
   readonly userBucket?: EbsSnapshotImportDiskContainerUserBucket;
 }
@@ -453,11 +453,11 @@ export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.Complex
 }
 export interface EbsSnapshotImportTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#create EbsSnapshotImport#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#create EbsSnapshotImport#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#delete EbsSnapshotImport#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#delete EbsSnapshotImport#delete}
   */
   readonly delete?: string;
 }
@@ -555,7 +555,7 @@ export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import}
 */
 export class EbsSnapshotImport extends cdktf.TerraformResource {
 
@@ -571,7 +571,7 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EbsSnapshotImport resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EbsSnapshotImport to import
-  * @param importFromId The id of the existing EbsSnapshotImport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EbsSnapshotImport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EbsSnapshotImport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -583,7 +583,7 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -594,7 +594,7 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ebs_snapshot_import',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

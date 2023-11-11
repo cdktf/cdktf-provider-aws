@@ -1,6 +1,6 @@
 # `aws_vpn_gateway`
 
-Refer to the Terraform Registory for docs: [`aws_vpn_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway).
+Refer to the Terraform Registory for docs: [`aws_vpn_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway).
 
 # `vpnGateway` Submodule <a name="`vpnGateway` Submodule" id="@cdktf/provider-aws.vpnGateway"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_vpn_gateway`](https://registry.
 
 ### VpnGateway <a name="VpnGateway" id="@cdktf/provider-aws.vpnGateway.VpnGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway aws_vpn_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway aws_vpn_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer"></a>
 
@@ -463,7 +463,7 @@ The construct id used in the generated config for the VpnGateway to import.
 
 The id of the existing VpnGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,12 +836,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngateway"
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.amazonSideAsn">AmazonSideAsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#id VpnGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#tags VpnGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.amazonSideAsn">AmazonSideAsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#id VpnGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#tags VpnGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}. |
 
 ---
 
@@ -923,7 +923,7 @@ AmazonSideAsn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}.
 
 ---
 
@@ -935,7 +935,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}.
 
 ---
 
@@ -947,7 +947,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#id VpnGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#id VpnGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#tags VpnGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#tags VpnGateway#tags}.
 
 ---
 
@@ -974,7 +974,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}.
 
 ---
 
@@ -986,7 +986,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}.
 
 ---
 

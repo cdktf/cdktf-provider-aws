@@ -1,6 +1,6 @@
 # `aws_ses_identity_notification_topic`
 
-Refer to the Terraform Registory for docs: [`aws_ses_identity_notification_topic`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic).
+Refer to the Terraform Registory for docs: [`aws_ses_identity_notification_topic`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic).
 
 # `sesIdentityNotificationTopic` Submodule <a name="`sesIdentityNotificationTopic` Submodule" id="@cdktf/provider-aws.sesIdentityNotificationTopic"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ses_identity_notification_topic
 
 ### SesIdentityNotificationTopic <a name="SesIdentityNotificationTopic" id="@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer"></a>
 
@@ -44,11 +44,11 @@ sesIdentityNotificationTopic.SesIdentityNotificationTopic(
 | <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.identity">identity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.notificationType">notification_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.includeOriginalHeaders">include_original_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.identity">identity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.notificationType">notification_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.includeOriginalHeaders">include_original_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer.parameter.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}.
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the SesIdentityNotificationTop
 
 The id of the existing SesIdentityNotificationTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -930,11 +930,11 @@ sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig(
 | <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.identity">identity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.notificationType">notification_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.includeOriginalHeaders">include_original_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}. |
-| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.identity">identity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.notificationType">notification_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.includeOriginalHeaders">include_original_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}. |
+| <code><a href="#@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.property.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ identity: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#identity SesIdentityNotificationTopic#identity}.
 
 ---
 
@@ -1028,7 +1028,7 @@ notification_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}.
 
 ---
 
@@ -1040,7 +1040,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1055,7 +1055,7 @@ include_original_headers: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}.
 
 ---
 
@@ -1067,7 +1067,7 @@ topic_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_identity_notification_topic#topic_arn SesIdentityNotificationTopic#topic_arn}.
 
 ---
 

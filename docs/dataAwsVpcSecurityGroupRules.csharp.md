@@ -1,6 +1,6 @@
 # `data_aws_vpc_security_group_rules`
 
-Refer to the Terraform Registory for docs: [`data_aws_vpc_security_group_rules`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules).
+Refer to the Terraform Registory for docs: [`data_aws_vpc_security_group_rules`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules).
 
 # `dataAwsVpcSecurityGroupRules` Submodule <a name="`dataAwsVpcSecurityGroupRules` Submodule" id="@cdktf/provider-aws.dataAwsVpcSecurityGroupRules"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_vpc_security_group_rules`]
 
 ### DataAwsVpcSecurityGroupRules <a name="DataAwsVpcSecurityGroupRules" id="@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRules.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataAwsVpcSecurityGroupRul
 
 The id of the existing DataAwsVpcSecurityGroupRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,7 +658,7 @@ new DataAwsVpcSecurityGroupRulesConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesConfig.property.filter">Filter</a></code> | <code>object</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#tags DataAwsVpcSecurityGroupRules#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#tags DataAwsVpcSecurityGroupRules#tags}. |
 
 ---
 
@@ -742,7 +742,7 @@ public object Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#filter DataAwsVpcSecurityGroupRules#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#filter DataAwsVpcSecurityGroupRules#filter}
 
 ---
 
@@ -754,7 +754,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#tags DataAwsVpcSecurityGroupRules#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#tags DataAwsVpcSecurityGroupRules#tags}.
 
 ---
 
@@ -775,8 +775,8 @@ new DataAwsVpcSecurityGroupRulesFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#name DataAwsVpcSecurityGroupRules#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#values DataAwsVpcSecurityGroupRules#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#name DataAwsVpcSecurityGroupRules#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#values DataAwsVpcSecurityGroupRules#values}. |
 
 ---
 
@@ -788,7 +788,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#name DataAwsVpcSecurityGroupRules#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#name DataAwsVpcSecurityGroupRules#name}.
 
 ---
 
@@ -800,7 +800,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/vpc_security_group_rules#values DataAwsVpcSecurityGroupRules#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpc_security_group_rules#values DataAwsVpcSecurityGroupRules#values}.
 
 ---
 

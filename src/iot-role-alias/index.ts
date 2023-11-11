@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias
+// https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface IotRoleAliasConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}
   */
   readonly alias: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}
   */
   readonly credentialDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias#id IotRoleAlias#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias#id IotRoleAlias#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}
   */
   readonly roleArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias aws_iot_role_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias aws_iot_role_alias}
 */
 export class IotRoleAlias extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class IotRoleAlias extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IotRoleAlias resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotRoleAlias to import
-  * @param importFromId The id of the existing IotRoleAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IotRoleAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotRoleAlias to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class IotRoleAlias extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iot_role_alias aws_iot_role_alias} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_role_alias aws_iot_role_alias} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class IotRoleAlias extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iot_role_alias',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
