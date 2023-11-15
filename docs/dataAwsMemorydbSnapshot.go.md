@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshot(scope Construct, id *string, config DataAwsMemorydbSnapshotConfig) DataAwsMemorydbSnapshot
 ```
@@ -285,7 +285,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -673,7 +673,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 &dataawsmemorydbsnapshot.DataAwsMemorydbSnapshotClusterConfiguration {
 
@@ -686,7 +686,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 &dataawsmemorydbsnapshot.DataAwsMemorydbSnapshotConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshotClusterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbSnapshotClusterConfigurationList
 ```
@@ -967,7 +967,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshotClusterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbSnapshotClusterConfigurationOutputReference
 ```

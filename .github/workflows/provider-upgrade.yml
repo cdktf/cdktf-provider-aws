@@ -20,7 +20,7 @@ jobs:
       NODE_OPTIONS: --max-old-space-size=31744
     steps:
       - name: Checkout
-        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - run: yarn install
       - id: check_version
         run: yarn check-if-new-provider-version
@@ -43,7 +43,7 @@ jobs:
         run: yarn docgen
       - name: Create Pull Request
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
-        uses: peter-evans/create-pull-request@284f54f989303d2699d373481a0cfa13ad5a6666
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         with:
           commit-message: "fix: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
           branch: auto/provider-upgrade

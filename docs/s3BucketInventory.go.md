@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventory(scope Construct, id *string, config S3BucketInventoryConfig) S3BucketInventory
 ```
@@ -399,7 +399,7 @@ func ResetOptionalFields()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ s3bucketinventory.S3BucketInventory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ s3bucketinventory.S3BucketInventory_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -886,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryConfig {
 	Connection: interface{},
@@ -897,12 +897,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketInventory.S3BucketInventoryDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketInventory.S3BucketInventoryDestination,
 	IncludedObjectVersions: *string,
 	Name: *string,
-	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketInventory.S3BucketInventorySchedule,
+	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketInventory.S3BucketInventorySchedule,
 	Enabled: interface{},
-	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketInventory.S3BucketInventoryFilter,
+	Filter: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketInventory.S3BucketInventoryFilter,
 	Id: *string,
 	OptionalFields: *[]*string,
 }
@@ -1123,10 +1123,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestination {
-	Bucket: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketInventory.S3BucketInventoryDestinationBucket,
+	Bucket: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketInventory.S3BucketInventoryDestinationBucket,
 }
 ```
 
@@ -1157,13 +1157,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucket {
 	BucketArn: *string,
 	Format: *string,
 	AccountId: *string,
-	Encryption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption,
+	Encryption: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption,
 	Prefix: *string,
 }
 ```
@@ -1247,11 +1247,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucketEncryption {
-	SseKms: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms,
-	SseS3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3,
+	SseKms: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms,
+	SseS3: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3,
 }
 ```
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucketEncryptionSseKms {
 	KeyId: *string,
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucketEncryptionSseS3 {
 
@@ -1342,7 +1342,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryFilter {
 	Prefix: *string,
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventorySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventorySchedule {
 	Frequency: *string,
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketEncryptionOutputReference
 ```
@@ -1741,7 +1741,7 @@ func InternalValue() S3BucketInventoryDestinationBucketEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() S3BucketInventoryDestinationBucketEncryptionSseKms
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketEncryptionSseS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference
 ```
@@ -2261,7 +2261,7 @@ func InternalValue() S3BucketInventoryDestinationBucketEncryptionSseS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketOutputReference
 ```
@@ -2654,7 +2654,7 @@ func InternalValue() S3BucketInventoryDestinationBucket
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationOutputReference
 ```
@@ -2938,7 +2938,7 @@ func InternalValue() S3BucketInventoryDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryFilterOutputReference
 ```
@@ -3216,7 +3216,7 @@ func InternalValue() S3BucketInventoryFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryScheduleOutputReference
 ```

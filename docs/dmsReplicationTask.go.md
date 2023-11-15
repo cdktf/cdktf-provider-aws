@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsreplicationtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationtask"
 
 dmsreplicationtask.NewDmsReplicationTask(scope Construct, id *string, config DmsReplicationTaskConfig) DmsReplicationTask
 ```
@@ -381,7 +381,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsreplicationtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationtask"
 
 dmsreplicationtask.DmsReplicationTask_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsreplicationtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationtask"
 
 dmsreplicationtask.DmsReplicationTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ dmsreplicationtask.DmsReplicationTask_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsreplicationtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationtask"
 
 dmsreplicationtask.DmsReplicationTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ dmsreplicationtask.DmsReplicationTask_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsreplicationtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationtask"
 
 dmsreplicationtask.DmsReplicationTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -978,7 +978,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsreplicationtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationtask"
 
 &dmsreplicationtask.DmsReplicationTaskConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaseline(scope Construct, id *string, config SsmPatchBaselineConfig) SsmPatchBaseline
 ```
@@ -462,7 +462,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.SsmPatchBaseline_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.SsmPatchBaseline_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ ssmpatchbaseline.SsmPatchBaseline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.SsmPatchBaseline_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ ssmpatchbaseline.SsmPatchBaseline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.SsmPatchBaseline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1070,7 +1070,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 &ssmpatchbaseline.SsmPatchBaselineApprovalRule {
 	PatchFilter: interface{},
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 &ssmpatchbaseline.SsmPatchBaselineApprovalRulePatchFilter {
 	Key: *string,
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 &ssmpatchbaseline.SsmPatchBaselineConfig {
 	Connection: interface{},
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 &ssmpatchbaseline.SsmPatchBaselineGlobalFilter {
 	Key: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 &ssmpatchbaseline.SsmPatchBaselineSource {
 	Configuration: *string,
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineApprovalRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmPatchBaselineApprovalRuleList
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineApprovalRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmPatchBaselineApprovalRuleOutputReference
 ```
@@ -2182,7 +2182,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineApprovalRulePatchFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmPatchBaselineApprovalRulePatchFilterList
 ```
@@ -2325,7 +2325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineApprovalRulePatchFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmPatchBaselineApprovalRulePatchFilterOutputReference
 ```
@@ -2636,7 +2636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineGlobalFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmPatchBaselineGlobalFilterList
 ```
@@ -2779,7 +2779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineGlobalFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmPatchBaselineGlobalFilterOutputReference
 ```
@@ -3090,7 +3090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmPatchBaselineSourceList
 ```
@@ -3233,7 +3233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchbaseline"
 
 ssmpatchbaseline.NewSsmPatchBaselineSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmPatchBaselineSourceOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 devicefarmtestgridproject.NewDevicefarmTestGridProject(scope Construct, id *string, config DevicefarmTestGridProjectConfig) DevicefarmTestGridProject
 ```
@@ -380,7 +380,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 devicefarmtestgridproject.DevicefarmTestGridProject_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 devicefarmtestgridproject.DevicefarmTestGridProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ devicefarmtestgridproject.DevicefarmTestGridProject_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 devicefarmtestgridproject.DevicefarmTestGridProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ devicefarmtestgridproject.DevicefarmTestGridProject_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 devicefarmtestgridproject.DevicefarmTestGridProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 &devicefarmtestgridproject.DevicefarmTestGridProjectConfig {
 	Connection: interface{},
@@ -827,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfig,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 &devicefarmtestgridproject.DevicefarmTestGridProjectVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmtestgridproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmtestgridproject"
 
 devicefarmtestgridproject.NewDevicefarmTestGridProjectVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevicefarmTestGridProjectVpcConfigOutputReference
 ```

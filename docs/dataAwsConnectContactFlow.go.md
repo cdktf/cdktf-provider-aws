@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectcontactflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectcontactflow"
 
 dataawsconnectcontactflow.NewDataAwsConnectContactFlow(scope Construct, id *string, config DataAwsConnectContactFlowConfig) DataAwsConnectContactFlow
 ```
@@ -306,7 +306,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectcontactflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectcontactflow"
 
 dataawsconnectcontactflow.DataAwsConnectContactFlow_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectcontactflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectcontactflow"
 
 dataawsconnectcontactflow.DataAwsConnectContactFlow_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataawsconnectcontactflow.DataAwsConnectContactFlow_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectcontactflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectcontactflow"
 
 dataawsconnectcontactflow.DataAwsConnectContactFlow_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ dataawsconnectcontactflow.DataAwsConnectContactFlow_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectcontactflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectcontactflow"
 
 dataawsconnectcontactflow.DataAwsConnectContactFlow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +738,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectcontactflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectcontactflow"
 
 &dataawsconnectcontactflow.DataAwsConnectContactFlowConfig {
 	Connection: interface{},

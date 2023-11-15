@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroup.SecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.NewSecurityGroup(scope Construct, id *string, config SecurityGroupConfig) SecurityGroup
 ```
@@ -448,7 +448,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityGroup.SecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.SecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityGroup.SecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.SecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ securitygroup.SecurityGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityGroup.SecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.SecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ securitygroup.SecurityGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityGroup.SecurityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.SecurityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityGroup.SecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 &securitygroup.SecurityGroupConfig {
 	Connection: interface{},
@@ -1020,7 +1020,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
 	RevokeRulesOnDelete: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityGroup.SecurityGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.securityGroup.SecurityGroupTimeouts,
 	VpcId: *string,
 }
 ```
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityGroup.SecurityGroupEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 &securitygroup.SecurityGroupEgress {
 	CidrBlocks: *[]*string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityGroup.SecurityGroupIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 &securitygroup.SecurityGroupIngress {
 	CidrBlocks: *[]*string,
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityGroup.SecurityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 &securitygroup.SecurityGroupTimeouts {
 	Create: *string,
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroup.SecurityGroupEgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.NewSecurityGroupEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityGroupEgressList
 ```
@@ -1741,7 +1741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroup.SecurityGroupEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.NewSecurityGroupEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityGroupEgressOutputReference
 ```
@@ -2269,7 +2269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroup.SecurityGroupIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.NewSecurityGroupIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityGroupIngressList
 ```
@@ -2412,7 +2412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroup.SecurityGroupIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.NewSecurityGroupIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityGroupIngressOutputReference
 ```
@@ -2940,7 +2940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroup.SecurityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securitygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygroup"
 
 securitygroup.NewSecurityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityGroupTimeoutsOutputReference
 ```
