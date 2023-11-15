@@ -13,7 +13,7 @@ jobs:
     if: github.event.pull_request.user.login != 'team-tf-cdk' && !contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR", "CONTRIBUTOR"]'), github.event.pull_request.author_association)
     steps:
       - name: Checkout
-        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Auto-close PRs by non-collaborators
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
