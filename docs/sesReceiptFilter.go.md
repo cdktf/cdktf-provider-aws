@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesreceiptfilter"
 
 sesreceiptfilter.NewSesReceiptFilter(scope Construct, id *string, config SesReceiptFilterConfig) SesReceiptFilter
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesreceiptfilter"
 
 sesreceiptfilter.SesReceiptFilter_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesreceiptfilter"
 
 sesreceiptfilter.SesReceiptFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ sesreceiptfilter.SesReceiptFilter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesreceiptfilter"
 
 sesreceiptfilter.SesReceiptFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ sesreceiptfilter.SesReceiptFilter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesreceiptfilter"
 
 sesreceiptfilter.SesReceiptFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -727,7 +727,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesreceiptfilter"
 
 &sesreceiptfilter.SesReceiptFilterConfig {
 	Connection: interface{},
