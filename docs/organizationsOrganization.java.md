@@ -1,6 +1,6 @@
 # `aws_organizations_organization`
 
-Refer to the Terraform Registory for docs: [`aws_organizations_organization`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization).
+Refer to the Terraform Registory for docs: [`aws_organizations_organization`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization).
 
 # `organizationsOrganization` Submodule <a name="`organizationsOrganization` Submodule" id="@cdktf/provider-aws.organizationsOrganization"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_organizations_organization`](ht
 
 ### OrganizationsOrganization <a name="OrganizationsOrganization" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization aws_organizations_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization aws_organizations_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer"></a>
 
@@ -45,10 +45,10 @@ OrganizationsOrganization.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.awsServiceAccessPrincipals">awsServiceAccessPrincipals</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.enabledPolicyTypes">enabledPolicyTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.featureSet">featureSet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.awsServiceAccessPrincipals">awsServiceAccessPrincipals</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.enabledPolicyTypes">enabledPolicyTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.featureSet">featureSet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -548,7 +548,7 @@ The construct id used in the generated config for the OrganizationsOrganization 
 
 The id of the existing OrganizationsOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,10 +957,10 @@ OrganizationsOrganizationConfig.builder()
 | <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.awsServiceAccessPrincipals">awsServiceAccessPrincipals</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.enabledPolicyTypes">enabledPolicyTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.featureSet">featureSet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.awsServiceAccessPrincipals">awsServiceAccessPrincipals</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.enabledPolicyTypes">enabledPolicyTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.featureSet">featureSet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}. |
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.util.List<java.lang.String> getAwsServiceAccessPrincipals();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public java.util.List<java.lang.String> getEnabledPolicyTypes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getFeatureSet();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

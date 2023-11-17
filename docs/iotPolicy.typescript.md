@@ -1,6 +1,6 @@
 # `aws_iot_policy`
 
-Refer to the Terraform Registory for docs: [`aws_iot_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy).
+Refer to the Terraform Registory for docs: [`aws_iot_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy).
 
 # `iotPolicy` Submodule <a name="`iotPolicy` Submodule" id="@cdktf/provider-aws.iotPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iot_policy`](https://registry.t
 
 ### IotPolicy <a name="IotPolicy" id="@cdktf/provider-aws.iotPolicy.IotPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy aws_iot_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy aws_iot_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotPolicy.IotPolicy.Initializer"></a>
 
@@ -73,7 +73,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -319,10 +321,28 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-aws.iotPolicy.IotPolicy.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: IotPolicyTimeouts): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.iotPolicy.IotPolicy.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a>
+
+---
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.iotPolicy.IotPolicy.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-aws.iotPolicy.IotPolicy.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -428,7 +448,7 @@ The construct id used in the generated config for the IotPolicy to import.
 
 The id of the existing IotPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -460,9 +480,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.defaultVersionId">defaultVersionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference">IotPolicyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicy.property.policy">policy</a></code> | <code>string</code> | *No description.* |
@@ -631,6 +653,16 @@ public readonly defaultVersionId: string;
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.iotPolicy.IotPolicy.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: IotPolicyTimeoutsOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference">IotPolicyTimeoutsOutputReference</a>
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.iotPolicy.IotPolicy.property.idInput"></a>
 
 ```typescript
@@ -658,6 +690,16 @@ public readonly policyInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.iotPolicy.IotPolicy.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: IResolvable | IotPolicyTimeouts;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a>
 
 ---
 
@@ -732,9 +774,10 @@ const iotPolicyConfig: iotPolicy.IotPolicyConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy#name IotPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy#policy IotPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy#id IotPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#name IotPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#policy IotPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#id IotPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -816,7 +859,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy#name IotPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#name IotPolicy#name}.
 
 ---
 
@@ -828,7 +871,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy#policy IotPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#policy IotPolicy#policy}.
 
 ---
 
@@ -840,10 +883,375 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy#id IotPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#id IotPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: IotPolicyTimeouts;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#timeouts IotPolicy#timeouts}
+
+---
+
+### IotPolicyTimeouts <a name="IotPolicyTimeouts" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts.Initializer"></a>
+
+```typescript
+import { iotPolicy } from '@cdktf/provider-aws'
+
+const iotPolicyTimeouts: iotPolicy.IotPolicyTimeouts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#delete IotPolicy#delete}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#update IotPolicy#update}. |
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#delete IotPolicy#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy#update IotPolicy#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### IotPolicyTimeoutsOutputReference <a name="IotPolicyTimeoutsOutputReference" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { iotPolicy } from '@cdktf/provider-aws'
+
+new iotPolicy.IotPolicyTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete(): void
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | IotPolicyTimeouts;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a>
 
 ---
 

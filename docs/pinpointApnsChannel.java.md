@@ -1,6 +1,6 @@
 # `aws_pinpoint_apns_channel`
 
-Refer to the Terraform Registory for docs: [`aws_pinpoint_apns_channel`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel).
+Refer to the Terraform Registory for docs: [`aws_pinpoint_apns_channel`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel).
 
 # `pinpointApnsChannel` Submodule <a name="`pinpointApnsChannel` Submodule" id="@cdktf/provider-aws.pinpointApnsChannel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_pinpoint_apns_channel`](https:/
 
 ### PinpointApnsChannel <a name="PinpointApnsChannel" id="@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer"></a>
 
@@ -52,16 +52,16 @@ PinpointApnsChannel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.bundleId">bundleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.certificate">certificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.defaultAuthenticationMethod">defaultAuthenticationMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.tokenKey">tokenKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.tokenKeyId">tokenKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.bundleId">bundleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.certificate">certificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.defaultAuthenticationMethod">defaultAuthenticationMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.tokenKey">tokenKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer.parameter.tokenKeyId">tokenKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}. |
 
 ---
 
@@ -129,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}.
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -180,7 +180,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}.
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}.
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}.
 
 ---
 
@@ -644,7 +644,7 @@ The construct id used in the generated config for the PinpointApnsChannel to imp
 
 The id of the existing PinpointApnsChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1103,16 +1103,16 @@ PinpointApnsChannelConfig.builder()
 | <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.bundleId">bundleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.certificate">certificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.defaultAuthenticationMethod">defaultAuthenticationMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.tokenKey">tokenKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.tokenKeyId">tokenKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.bundleId">bundleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.certificate">certificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.defaultAuthenticationMethod">defaultAuthenticationMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.tokenKey">tokenKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.property.tokenKeyId">tokenKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}. |
 
 ---
 
@@ -1194,7 +1194,7 @@ public java.lang.String getApplicationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#application_id PinpointApnsChannel#application_id}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public java.lang.String getBundleId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#bundle_id PinpointApnsChannel#bundle_id}.
 
 ---
 
@@ -1218,7 +1218,7 @@ public java.lang.String getCertificate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#certificate PinpointApnsChannel#certificate}.
 
 ---
 
@@ -1230,7 +1230,7 @@ public java.lang.String getDefaultAuthenticationMethod();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#default_authentication_method PinpointApnsChannel#default_authentication_method}.
 
 ---
 
@@ -1242,7 +1242,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#enabled PinpointApnsChannel#enabled}.
 
 ---
 
@@ -1254,7 +1254,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#id PinpointApnsChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1269,7 +1269,7 @@ public java.lang.String getPrivateKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#private_key PinpointApnsChannel#private_key}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public java.lang.String getTeamId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#team_id PinpointApnsChannel#team_id}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public java.lang.String getTokenKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key PinpointApnsChannel#token_key}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public java.lang.String getTokenKeyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/pinpoint_apns_channel#token_key_id PinpointApnsChannel#token_key_id}.
 
 ---
 

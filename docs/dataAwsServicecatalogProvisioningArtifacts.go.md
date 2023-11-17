@@ -1,6 +1,6 @@
 # `data_aws_servicecatalog_provisioning_artifacts`
 
-Refer to the Terraform Registory for docs: [`data_aws_servicecatalog_provisioning_artifacts`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts).
+Refer to the Terraform Registory for docs: [`data_aws_servicecatalog_provisioning_artifacts`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts).
 
 # `dataAwsServicecatalogProvisioningArtifacts` Submodule <a name="`dataAwsServicecatalogProvisioningArtifacts` Submodule" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_servicecatalog_provisionin
 
 ### DataAwsServicecatalogProvisioningArtifacts <a name="DataAwsServicecatalogProvisioningArtifacts" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifacts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifacts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.NewDataAwsServicecatalogProvisioningArtifacts(scope Construct, id *string, config DataAwsServicecatalogProvisioningArtifactsConfig) DataAwsServicecatalogProvisioningArtifacts
 ```
@@ -305,7 +305,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifacts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArtifacts_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifacts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArtifacts_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArti
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifacts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArtifacts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArti
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifacts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArtifacts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsServicecatalogProvi
 
 The id of the existing DataAwsServicecatalogProvisioningArtifacts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 &dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArtifactsConfig {
 	Connection: interface{},
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprov
 	ProductId: *string,
 	AcceptLanguage: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsTimeouts,
 }
 ```
 
@@ -699,9 +699,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprov
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.productId">ProductId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#product_id DataAwsServicecatalogProvisioningArtifacts#product_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.acceptLanguage">AcceptLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#accept_language DataAwsServicecatalogProvisioningArtifacts#accept_language}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#id DataAwsServicecatalogProvisioningArtifacts#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.productId">ProductId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#product_id DataAwsServicecatalogProvisioningArtifacts#product_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.acceptLanguage">AcceptLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#accept_language DataAwsServicecatalogProvisioningArtifacts#accept_language}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#id DataAwsServicecatalogProvisioningArtifacts#id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsTimeouts">DataAwsServicecatalogProvisioningArtifactsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -784,7 +784,7 @@ ProductId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#product_id DataAwsServicecatalogProvisioningArtifacts#product_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#product_id DataAwsServicecatalogProvisioningArtifacts#product_id}.
 
 ---
 
@@ -796,7 +796,7 @@ AcceptLanguage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#accept_language DataAwsServicecatalogProvisioningArtifacts#accept_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#accept_language DataAwsServicecatalogProvisioningArtifacts#accept_language}.
 
 ---
 
@@ -808,7 +808,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#id DataAwsServicecatalogProvisioningArtifacts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#id DataAwsServicecatalogProvisioningArtifacts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -825,7 +825,7 @@ Timeouts DataAwsServicecatalogProvisioningArtifactsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#timeouts DataAwsServicecatalogProvisioningArtifacts#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#timeouts DataAwsServicecatalogProvisioningArtifacts#timeouts}
 
 ---
 
@@ -834,7 +834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 &dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetails {
 
@@ -847,7 +847,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprov
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 &dataawsservicecatalogprovisioningartifacts.DataAwsServicecatalogProvisioningArtifactsTimeouts {
 	Read: *string,
@@ -858,7 +858,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprov
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#read DataAwsServicecatalogProvisioningArtifacts#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#read DataAwsServicecatalogProvisioningArtifacts#read}. |
 
 ---
 
@@ -870,7 +870,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/servicecatalog_provisioning_artifacts#read DataAwsServicecatalogProvisioningArtifacts#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/servicecatalog_provisioning_artifacts#read DataAwsServicecatalogProvisioningArtifacts#read}.
 
 ---
 
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.NewDataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsList
 ```
@@ -1013,7 +1013,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.NewDataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsOutputReference
 ```
@@ -1357,7 +1357,7 @@ func InternalValue() DataAwsServicecatalogProvisioningArtifactsProvisioningArtif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProvisioningArtifacts.DataAwsServicecatalogProvisioningArtifactsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprovisioningartifacts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogprovisioningartifacts"
 
 dataawsservicecatalogprovisioningartifacts.NewDataAwsServicecatalogProvisioningArtifactsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsServicecatalogProvisioningArtifactsTimeoutsOutputReference
 ```

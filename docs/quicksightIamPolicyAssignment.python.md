@@ -1,6 +1,6 @@
 # `aws_quicksight_iam_policy_assignment`
 
-Refer to the Terraform Registory for docs: [`aws_quicksight_iam_policy_assignment`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment).
+Refer to the Terraform Registory for docs: [`aws_quicksight_iam_policy_assignment`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment).
 
 # `quicksightIamPolicyAssignment` Submodule <a name="`quicksightIamPolicyAssignment` Submodule" id="@cdktf/provider-aws.quicksightIamPolicyAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_quicksight_iam_policy_assignmen
 
 ### QuicksightIamPolicyAssignment <a name="QuicksightIamPolicyAssignment" id="@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer"></a>
 
@@ -45,12 +45,12 @@ quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment(
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.assignmentName">assignment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.assignmentStatus">assignment_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.assignmentName">assignment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.assignmentStatus">assignment_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.identities">identities</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentIdentities">QuicksightIamPolicyAssignmentIdentities</a>]]</code> | identities block. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.policyArn">policy_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignment.Initializer.parameter.policyArn">policy_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#identities QuicksightIamPolicyAssignment#identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#identities QuicksightIamPolicyAssignment#identities}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}.
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the QuicksightIamPolicyAssignm
 
 The id of the existing QuicksightIamPolicyAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,12 +1006,12 @@ quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig(
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.assignmentName">assignment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.assignmentStatus">assignment_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.assignmentName">assignment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.assignmentStatus">assignment_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.identities">identities</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentIdentities">QuicksightIamPolicyAssignmentIdentities</a>]]</code> | identities block. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.policyArn">policy_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentConfig.property.policyArn">policy_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}. |
 
 ---
 
@@ -1093,7 +1093,7 @@ assignment_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_name QuicksightIamPolicyAssignment#assignment_name}.
 
 ---
 
@@ -1105,7 +1105,7 @@ assignment_status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#assignment_status QuicksightIamPolicyAssignment#assignment_status}.
 
 ---
 
@@ -1117,7 +1117,7 @@ aws_account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#aws_account_id QuicksightIamPolicyAssignment#aws_account_id}.
 
 ---
 
@@ -1131,7 +1131,7 @@ identities: typing.Union[IResolvable, typing.List[QuicksightIamPolicyAssignmentI
 
 identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#identities QuicksightIamPolicyAssignment#identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#identities QuicksightIamPolicyAssignment#identities}
 
 ---
 
@@ -1143,7 +1143,7 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#namespace QuicksightIamPolicyAssignment#namespace}.
 
 ---
 
@@ -1155,7 +1155,7 @@ policy_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#policy_arn QuicksightIamPolicyAssignment#policy_arn}.
 
 ---
 
@@ -1176,8 +1176,8 @@ quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentIdentities(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentIdentities.property.group">group</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#group QuicksightIamPolicyAssignment#group}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentIdentities.property.user">user</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#user QuicksightIamPolicyAssignment#user}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentIdentities.property.group">group</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#group QuicksightIamPolicyAssignment#group}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIamPolicyAssignment.QuicksightIamPolicyAssignmentIdentities.property.user">user</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#user QuicksightIamPolicyAssignment#user}. |
 
 ---
 
@@ -1189,7 +1189,7 @@ group: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#group QuicksightIamPolicyAssignment#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#group QuicksightIamPolicyAssignment#group}.
 
 ---
 
@@ -1201,7 +1201,7 @@ user: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/quicksight_iam_policy_assignment#user QuicksightIamPolicyAssignment#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/quicksight_iam_policy_assignment#user QuicksightIamPolicyAssignment#user}.
 
 ---
 

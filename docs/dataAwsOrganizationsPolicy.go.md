@@ -1,6 +1,6 @@
 # `data_aws_organizations_policy`
 
-Refer to the Terraform Registory for docs: [`data_aws_organizations_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/organizations_policy).
+Refer to the Terraform Registory for docs: [`data_aws_organizations_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/organizations_policy).
 
 # `dataAwsOrganizationsPolicy` Submodule <a name="`dataAwsOrganizationsPolicy` Submodule" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_organizations_policy`](htt
 
 ### DataAwsOrganizationsPolicy <a name="DataAwsOrganizationsPolicy" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/organizations_policy aws_organizations_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/organizations_policy aws_organizations_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.NewDataAwsOrganizationsPolicy(scope Construct, id *string, config DataAwsOrganizationsPolicyConfig) DataAwsOrganizationsPolicy
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsOrganizationsPolicy
 
 The id of the existing DataAwsOrganizationsPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/organizations_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/organizations_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -655,7 +655,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 &dataawsorganizationspolicy.DataAwsOrganizationsPolicyConfig {
 	Connection: interface{},
@@ -681,8 +681,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolic
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/organizations_policy#policy_id DataAwsOrganizationsPolicy#policy_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/organizations_policy#id DataAwsOrganizationsPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/organizations_policy#policy_id DataAwsOrganizationsPolicy#policy_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/organizations_policy#id DataAwsOrganizationsPolicy#id}. |
 
 ---
 
@@ -764,7 +764,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/organizations_policy#policy_id DataAwsOrganizationsPolicy#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/organizations_policy#policy_id DataAwsOrganizationsPolicy#policy_id}.
 
 ---
 
@@ -776,7 +776,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/organizations_policy#id DataAwsOrganizationsPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/organizations_policy#id DataAwsOrganizationsPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

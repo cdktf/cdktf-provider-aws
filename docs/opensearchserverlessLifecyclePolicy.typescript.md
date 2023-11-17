@@ -1,6 +1,6 @@
 # `aws_opensearchserverless_lifecycle_policy`
 
-Refer to the Terraform Registory for docs: [`aws_opensearchserverless_lifecycle_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy).
+Refer to the Terraform Registory for docs: [`aws_opensearchserverless_lifecycle_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy).
 
 # `opensearchserverlessLifecyclePolicy` Submodule <a name="`opensearchserverlessLifecyclePolicy` Submodule" id="@cdktf/provider-aws.opensearchserverlessLifecyclePolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_opensearchserverless_lifecycle_
 
 ### OpensearchserverlessLifecyclePolicy <a name="OpensearchserverlessLifecyclePolicy" id="@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicy.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the OpensearchserverlessLifecy
 
 The id of the existing OpensearchserverlessLifecyclePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,10 +754,10 @@ const opensearchserverlessLifecyclePolicyConfig: opensearchserverlessLifecyclePo
 | <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#name OpensearchserverlessLifecyclePolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#policy OpensearchserverlessLifecyclePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#type OpensearchserverlessLifecyclePolicy#type}. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#description OpensearchserverlessLifecyclePolicy#description}. |
+| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#name OpensearchserverlessLifecyclePolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#policy OpensearchserverlessLifecyclePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#type OpensearchserverlessLifecyclePolicy#type}. |
+| <code><a href="#@cdktf/provider-aws.opensearchserverlessLifecyclePolicy.OpensearchserverlessLifecyclePolicyConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#description OpensearchserverlessLifecyclePolicy#description}. |
 
 ---
 
@@ -839,7 +839,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#name OpensearchserverlessLifecyclePolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#name OpensearchserverlessLifecyclePolicy#name}.
 
 ---
 
@@ -851,7 +851,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#policy OpensearchserverlessLifecyclePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#policy OpensearchserverlessLifecyclePolicy#policy}.
 
 ---
 
@@ -863,7 +863,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#type OpensearchserverlessLifecyclePolicy#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#type OpensearchserverlessLifecyclePolicy#type}.
 
 ---
 
@@ -875,7 +875,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opensearchserverless_lifecycle_policy#description OpensearchserverlessLifecyclePolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opensearchserverless_lifecycle_policy#description OpensearchserverlessLifecyclePolicy#description}.
 
 ---
 

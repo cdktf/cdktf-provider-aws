@@ -1,6 +1,6 @@
 # `data_aws_vpclattice_service_network`
 
-Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network).
+Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network).
 
 # `dataAwsVpclatticeServiceNetwork` Submodule <a name="`dataAwsVpclatticeServiceNetwork` Submodule" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network
 
 ### DataAwsVpclatticeServiceNetwork <a name="DataAwsVpclatticeServiceNetwork" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataAwsVpclatticeServiceNe
 
 The id of the existing DataAwsVpclatticeServiceNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,9 +722,9 @@ new DataAwsVpclatticeServiceNetworkConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.serviceNetworkIdentifier">ServiceNetworkIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.serviceNetworkIdentifier">ServiceNetworkIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
 
 ---
 
@@ -806,7 +806,7 @@ public string ServiceNetworkIdentifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
 
 ---
 
@@ -818,7 +818,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -833,7 +833,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
 
 ---
 

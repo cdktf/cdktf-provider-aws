@@ -1,6 +1,6 @@
 # `aws_oam_sink_policy`
 
-Refer to the Terraform Registory for docs: [`aws_oam_sink_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy).
+Refer to the Terraform Registory for docs: [`aws_oam_sink_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy).
 
 # `oamSinkPolicy` Submodule <a name="`oamSinkPolicy` Submodule" id="@cdktf/provider-aws.oamSinkPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_oam_sink_policy`](https://regis
 
 ### OamSinkPolicy <a name="OamSinkPolicy" id="@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy aws_oam_sink_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy aws_oam_sink_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.Initializer"></a>
 
@@ -448,7 +448,7 @@ The construct id used in the generated config for the OamSinkPolicy to import.
 
 The id of the existing OamSinkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -786,9 +786,9 @@ new OamSinkPolicyConfig {
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#policy OamSinkPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.sinkIdentifier">SinkIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#sink_identifier OamSinkPolicy#sink_identifier}. |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#id OamSinkPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#policy OamSinkPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.sinkIdentifier">SinkIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#sink_identifier OamSinkPolicy#sink_identifier}. |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#id OamSinkPolicy#id}. |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -871,7 +871,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#policy OamSinkPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#policy OamSinkPolicy#policy}.
 
 ---
 
@@ -883,7 +883,7 @@ public string SinkIdentifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#sink_identifier OamSinkPolicy#sink_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#sink_identifier OamSinkPolicy#sink_identifier}.
 
 ---
 
@@ -895,7 +895,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#id OamSinkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#id OamSinkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -912,7 +912,7 @@ public OamSinkPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#timeouts OamSinkPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#timeouts OamSinkPolicy#timeouts}
 
 ---
 
@@ -934,9 +934,9 @@ new OamSinkPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#create OamSinkPolicy#create}. |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#delete OamSinkPolicy#delete}. |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#update OamSinkPolicy#update}. |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#create OamSinkPolicy#create}. |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#delete OamSinkPolicy#delete}. |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#update OamSinkPolicy#update}. |
 
 ---
 
@@ -948,7 +948,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#create OamSinkPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#create OamSinkPolicy#create}.
 
 ---
 
@@ -960,7 +960,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#delete OamSinkPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#delete OamSinkPolicy#delete}.
 
 ---
 
@@ -972,7 +972,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/oam_sink_policy#update OamSinkPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/oam_sink_policy#update OamSinkPolicy#update}.
 
 ---
 

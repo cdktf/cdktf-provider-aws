@@ -1,6 +1,6 @@
 # `aws_db_proxy`
 
-Refer to the Terraform Registory for docs: [`aws_db_proxy`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy).
+Refer to the Terraform Registory for docs: [`aws_db_proxy`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy).
 
 # `dbProxy` Submodule <a name="`dbProxy` Submodule" id="@cdktf/provider-aws.dbProxy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_db_proxy`](https://registry.ter
 
 ### DbProxy <a name="DbProxy" id="@cdktf/provider-aws.dbProxy.DbProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy aws_db_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy aws_db_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxy(scope Construct, id *string, config DbProxyConfig) DbProxy
 ```
@@ -414,7 +414,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbProxy.DbProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.DbProxy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.DbProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ dbproxy.DbProxy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.DbProxy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ dbproxy.DbProxy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dbProxy.DbProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.DbProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DbProxy to import.
 
 The id of the existing DbProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 &dbproxy.DbProxyAuth {
 	AuthScheme: *string,
@@ -1027,12 +1027,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.authScheme">AuthScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType">ClientPasswordAuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#description DbProxy#description}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.iamAuth">IamAuth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#username DbProxy#username}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.authScheme">AuthScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType">ClientPasswordAuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#description DbProxy#description}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.iamAuth">IamAuth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#username DbProxy#username}. |
 
 ---
 
@@ -1044,7 +1044,7 @@ AuthScheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}.
 
 ---
 
@@ -1056,7 +1056,7 @@ ClientPasswordAuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#description DbProxy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#description DbProxy#description}.
 
 ---
 
@@ -1080,7 +1080,7 @@ IamAuth *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}.
 
 ---
 
@@ -1092,7 +1092,7 @@ SecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}.
 
 ---
 
@@ -1104,7 +1104,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#username DbProxy#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#username DbProxy#username}.
 
 ---
 
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 &dbproxy.DbProxyConfig {
 	Connection: interface{},
@@ -1134,7 +1134,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
 	RequireTls: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbProxy.DbProxyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dbProxy.DbProxyTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -1151,18 +1151,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.auth">Auth</a></code> | <code>interface{}</code> | auth block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.engineFamily">EngineFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#name DbProxy#name}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds">VpcSubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.debugLogging">DebugLogging</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#id DbProxy#id}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout">IdleClientTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.requireTls">RequireTls</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#tags DbProxy#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.engineFamily">EngineFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#name DbProxy#name}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds">VpcSubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.debugLogging">DebugLogging</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#id DbProxy#id}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout">IdleClientTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.requireTls">RequireTls</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#tags DbProxy#tags}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
 
 ---
 
@@ -1246,7 +1246,7 @@ Auth interface{}
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#auth DbProxy#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#auth DbProxy#auth}
 
 ---
 
@@ -1258,7 +1258,7 @@ EngineFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
 
 ---
 
@@ -1270,7 +1270,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#name DbProxy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#name DbProxy#name}.
 
 ---
 
@@ -1282,7 +1282,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
 
 ---
 
@@ -1294,7 +1294,7 @@ VpcSubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
 
 ---
 
@@ -1306,7 +1306,7 @@ DebugLogging interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
 
 ---
 
@@ -1318,7 +1318,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#id DbProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#id DbProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1333,7 +1333,7 @@ IdleClientTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
 
 ---
 
@@ -1345,7 +1345,7 @@ RequireTls interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
 
 ---
 
@@ -1357,7 +1357,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#tags DbProxy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#tags DbProxy#tags}.
 
 ---
 
@@ -1369,7 +1369,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
 
 ---
 
@@ -1383,7 +1383,7 @@ Timeouts DbProxyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
 
 ---
 
@@ -1395,7 +1395,7 @@ VpcSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 &dbproxy.DbProxyTimeouts {
 	Create: *string,
@@ -1417,9 +1417,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#create DbProxy#create}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#delete DbProxy#delete}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#update DbProxy#update}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#create DbProxy#create}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#delete DbProxy#delete}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#update DbProxy#update}. |
 
 ---
 
@@ -1431,7 +1431,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#create DbProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#create DbProxy#create}.
 
 ---
 
@@ -1443,7 +1443,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#delete DbProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#delete DbProxy#delete}.
 
 ---
 
@@ -1455,7 +1455,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_proxy#update DbProxy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_proxy#update DbProxy#update}.
 
 ---
 
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxyAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbProxyAuthList
 ```
@@ -1609,7 +1609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxyAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbProxyAuthOutputReference
 ```
@@ -2050,7 +2050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbProxyTimeoutsOutputReference
 ```

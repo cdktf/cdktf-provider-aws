@@ -1,6 +1,6 @@
 # `aws_sfn_alias`
 
-Refer to the Terraform Registory for docs: [`aws_sfn_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias).
+Refer to the Terraform Registory for docs: [`aws_sfn_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias).
 
 # `sfnAlias` Submodule <a name="`sfnAlias` Submodule" id="@cdktf/provider-aws.sfnAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_sfn_alias`](https://registry.te
 
 ### SfnAlias <a name="SfnAlias" id="@cdktf/provider-aws.sfnAlias.SfnAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias aws_sfn_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias aws_sfn_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sfnAlias.SfnAlias.Initializer"></a>
 
@@ -468,7 +468,7 @@ The construct id used in the generated config for the SfnAlias to import.
 
 The id of the existing SfnAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,10 +816,10 @@ const sfnAliasConfig: sfnAlias.SfnAliasConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#name SfnAlias#name}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#name SfnAlias#name}. |
 | <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.routingConfiguration">routingConfiguration</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sfnAlias.SfnAliasRoutingConfiguration">SfnAliasRoutingConfiguration</a>[]</code> | routing_configuration block. |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#description SfnAlias#description}. |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#id SfnAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#description SfnAlias#description}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#id SfnAlias#id}. |
 | <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasTimeouts">SfnAliasTimeouts</a></code> | timeouts block. |
 
 ---
@@ -902,7 +902,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#name SfnAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#name SfnAlias#name}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly routingConfiguration: IResolvable | SfnAliasRoutingConfiguration
 
 routing_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#routing_configuration SfnAlias#routing_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#routing_configuration SfnAlias#routing_configuration}
 
 ---
 
@@ -928,7 +928,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#description SfnAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#description SfnAlias#description}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#id SfnAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#id SfnAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ public readonly timeouts: SfnAliasTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#timeouts SfnAlias#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#timeouts SfnAlias#timeouts}
 
 ---
 
@@ -975,8 +975,8 @@ const sfnAliasRoutingConfiguration: sfnAlias.SfnAliasRoutingConfiguration = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.stateMachineVersionArn">stateMachineVersionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}. |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.weight">weight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#weight SfnAlias#weight}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.stateMachineVersionArn">stateMachineVersionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.weight">weight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#weight SfnAlias#weight}. |
 
 ---
 
@@ -988,7 +988,7 @@ public readonly stateMachineVersionArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}.
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly weight: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#weight SfnAlias#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#weight SfnAlias#weight}.
 
 ---
 
@@ -1018,9 +1018,9 @@ const sfnAliasTimeouts: sfnAlias.SfnAliasTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#create SfnAlias#create}. |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#delete SfnAlias#delete}. |
-| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#update SfnAlias#update}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#create SfnAlias#create}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#delete SfnAlias#delete}. |
+| <code><a href="#@cdktf/provider-aws.sfnAlias.SfnAliasTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#update SfnAlias#update}. |
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#create SfnAlias#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#create SfnAlias#create}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#delete SfnAlias#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#delete SfnAlias#delete}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sfn_alias#update SfnAlias#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sfn_alias#update SfnAlias#update}.
 
 ---
 

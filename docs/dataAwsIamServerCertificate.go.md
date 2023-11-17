@@ -1,6 +1,6 @@
 # `data_aws_iam_server_certificate`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_server_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate).
+Refer to the Terraform Registory for docs: [`data_aws_iam_server_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate).
 
 # `dataAwsIamServerCertificate` Submodule <a name="`dataAwsIamServerCertificate` Submodule" id="@cdktf/provider-aws.dataAwsIamServerCertificate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_server_certificate`](h
 
 ### DataAwsIamServerCertificate <a name="DataAwsIamServerCertificate" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate aws_iam_server_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate aws_iam_server_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.NewDataAwsIamServerCertificate(scope Construct, id *string, config DataAwsIamServerCertificateConfig) DataAwsIamServerCertificate
 ```
@@ -306,7 +306,7 @@ func ResetPathPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.DataAwsIamServerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.DataAwsIamServerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataawsiamservercertificate.DataAwsIamServerCertificate_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.DataAwsIamServerCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ dataawsiamservercertificate.DataAwsIamServerCertificate_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.DataAwsIamServerCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -395,7 +395,7 @@ The construct id used in the generated config for the DataAwsIamServerCertificat
 
 The id of the existing DataAwsIamServerCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 &dataawsiamservercertificate.DataAwsIamServerCertificateConfig {
 	Connection: interface{},
@@ -778,11 +778,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamservercertifica
 | <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#id DataAwsIamServerCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.latest">Latest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#latest DataAwsIamServerCertificate#latest}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#name DataAwsIamServerCertificate#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#name_prefix DataAwsIamServerCertificate#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.pathPrefix">PathPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#path_prefix DataAwsIamServerCertificate#path_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#id DataAwsIamServerCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.latest">Latest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#latest DataAwsIamServerCertificate#latest}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#name DataAwsIamServerCertificate#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#name_prefix DataAwsIamServerCertificate#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.property.pathPrefix">PathPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#path_prefix DataAwsIamServerCertificate#path_prefix}. |
 
 ---
 
@@ -864,7 +864,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#id DataAwsIamServerCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#id DataAwsIamServerCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -879,7 +879,7 @@ Latest interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#latest DataAwsIamServerCertificate#latest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#latest DataAwsIamServerCertificate#latest}.
 
 ---
 
@@ -891,7 +891,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#name DataAwsIamServerCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#name DataAwsIamServerCertificate#name}.
 
 ---
 
@@ -903,7 +903,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#name_prefix DataAwsIamServerCertificate#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#name_prefix DataAwsIamServerCertificate#name_prefix}.
 
 ---
 
@@ -915,7 +915,7 @@ PathPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_server_certificate#path_prefix DataAwsIamServerCertificate#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/iam_server_certificate#path_prefix DataAwsIamServerCertificate#path_prefix}.
 
 ---
 

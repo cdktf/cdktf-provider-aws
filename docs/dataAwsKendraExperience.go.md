@@ -1,6 +1,6 @@
 # `data_aws_kendra_experience`
 
-Refer to the Terraform Registory for docs: [`data_aws_kendra_experience`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience).
+Refer to the Terraform Registory for docs: [`data_aws_kendra_experience`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience).
 
 # `dataAwsKendraExperience` Submodule <a name="`dataAwsKendraExperience` Submodule" id="@cdktf/provider-aws.dataAwsKendraExperience"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_kendra_experience`](https:
 
 ### DataAwsKendraExperience <a name="DataAwsKendraExperience" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperience"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience aws_kendra_experience}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience aws_kendra_experience}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperience.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperience(scope Construct, id *string, config DataAwsKendraExperienceConfig) DataAwsKendraExperience
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperience.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.DataAwsKendraExperience_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperience.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.DataAwsKendraExperience_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawskendraexperience.DataAwsKendraExperience_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperience.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.DataAwsKendraExperience_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawskendraexperience.DataAwsKendraExperience_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperience.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.DataAwsKendraExperience_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsKendraExperience to
 
 The id of the existing DataAwsKendraExperience that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 &dataawskendraexperience.DataAwsKendraExperienceConfig {
 	Connection: interface{},
@@ -748,9 +748,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.experienceId">ExperienceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience#experience_id DataAwsKendraExperience#experience_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.indexId">IndexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience#index_id DataAwsKendraExperience#index_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience#id DataAwsKendraExperience#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.experienceId">ExperienceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience#experience_id DataAwsKendraExperience#experience_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.indexId">IndexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience#index_id DataAwsKendraExperience#index_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience#id DataAwsKendraExperience#id}. |
 
 ---
 
@@ -832,7 +832,7 @@ ExperienceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience#experience_id DataAwsKendraExperience#experience_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience#experience_id DataAwsKendraExperience#experience_id}.
 
 ---
 
@@ -844,7 +844,7 @@ IndexId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience#index_id DataAwsKendraExperience#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience#index_id DataAwsKendraExperience#index_id}.
 
 ---
 
@@ -856,7 +856,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/kendra_experience#id DataAwsKendraExperience#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/kendra_experience#id DataAwsKendraExperience#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -868,7 +868,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 &dataawskendraexperience.DataAwsKendraExperienceConfiguration {
 
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationContentSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 &dataawskendraexperience.DataAwsKendraExperienceConfigurationContentSourceConfiguration {
 
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationUserIdentityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 &dataawskendraexperience.DataAwsKendraExperienceConfigurationUserIdentityConfiguration {
 
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 &dataawskendraexperience.DataAwsKendraExperienceEndpoints {
 
@@ -922,7 +922,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationContentSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceConfigurationContentSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraExperienceConfigurationContentSourceConfigurationList
 ```
@@ -1054,7 +1054,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationContentSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceConfigurationContentSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraExperienceConfigurationContentSourceConfigurationOutputReference
 ```
@@ -1354,7 +1354,7 @@ func InternalValue() DataAwsKendraExperienceConfigurationContentSourceConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraExperienceConfigurationList
 ```
@@ -1486,7 +1486,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraExperienceConfigurationOutputReference
 ```
@@ -1775,7 +1775,7 @@ func InternalValue() DataAwsKendraExperienceConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationUserIdentityConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceConfigurationUserIdentityConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraExperienceConfigurationUserIdentityConfigurationList
 ```
@@ -1907,7 +1907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference
 ```
@@ -2185,7 +2185,7 @@ func InternalValue() DataAwsKendraExperienceConfigurationUserIdentityConfigurati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraExperienceEndpointsList
 ```
@@ -2317,7 +2317,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendraexperience"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraexperience"
 
 dataawskendraexperience.NewDataAwsKendraExperienceEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraExperienceEndpointsOutputReference
 ```

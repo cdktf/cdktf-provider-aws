@@ -1,6 +1,6 @@
 # `data_aws_auditmanager_control`
 
-Refer to the Terraform Registory for docs: [`data_aws_auditmanager_control`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control).
+Refer to the Terraform Registory for docs: [`data_aws_auditmanager_control`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control).
 
 # `dataAwsAuditmanagerControl` Submodule <a name="`dataAwsAuditmanagerControl` Submodule" id="@cdktf/provider-aws.dataAwsAuditmanagerControl"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_auditmanager_control`](htt
 
 ### DataAwsAuditmanagerControl <a name="DataAwsAuditmanagerControl" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer"></a>
 
@@ -380,7 +380,7 @@ The construct id used in the generated config for the DataAwsAuditmanagerControl
 
 The id of the existing DataAwsAuditmanagerControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -717,8 +717,8 @@ const dataAwsAuditmanagerControlConfig: dataAwsAuditmanagerControl.DataAwsAuditm
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.controlMappingSources">controlMappingSources</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSources">DataAwsAuditmanagerControlControlMappingSources</a>[]</code> | control_mapping_sources block. |
 
 ---
@@ -801,7 +801,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
 
 ---
 
@@ -813,7 +813,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
 
 ---
 
@@ -827,7 +827,7 @@ public readonly controlMappingSources: IResolvable | DataAwsAuditmanagerControlC
 
 control_mapping_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control#control_mapping_sources DataAwsAuditmanagerControl#control_mapping_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control#control_mapping_sources DataAwsAuditmanagerControl#control_mapping_sources}
 
 ---
 
@@ -859,7 +859,7 @@ public readonly sourceKeyword: IResolvable | DataAwsAuditmanagerControlControlMa
 
 source_keyword block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/auditmanager_control#source_keyword DataAwsAuditmanagerControl#source_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/auditmanager_control#source_keyword DataAwsAuditmanagerControl#source_keyword}
 
 ---
 

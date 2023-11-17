@@ -1,6 +1,6 @@
 # `aws_kendra_experience`
 
-Refer to the Terraform Registory for docs: [`aws_kendra_experience`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience).
+Refer to the Terraform Registory for docs: [`aws_kendra_experience`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience).
 
 # `kendraExperience` Submodule <a name="`kendraExperience` Submodule" id="@cdktf/provider-aws.kendraExperience"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_kendra_experience`](https://reg
 
 ### KendraExperience <a name="KendraExperience" id="@cdktf/provider-aws.kendraExperience.KendraExperience"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience aws_kendra_experience}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience aws_kendra_experience}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraExperience.KendraExperience.Initializer"></a>
 
@@ -475,7 +475,7 @@ The construct id used in the generated config for the KendraExperience to import
 
 The id of the existing KendraExperience that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -889,12 +889,12 @@ const kendraExperienceConfig: kendraExperience.KendraExperienceConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#index_id KendraExperience#index_id}. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#name KendraExperience#name}. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#role_arn KendraExperience#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#index_id KendraExperience#index_id}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#name KendraExperience#name}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#role_arn KendraExperience#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfiguration">KendraExperienceConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#description KendraExperience#description}. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#id KendraExperience#id}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#description KendraExperience#description}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#id KendraExperience#id}. |
 | <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts">KendraExperienceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -977,7 +977,7 @@ public readonly indexId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#index_id KendraExperience#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#index_id KendraExperience#index_id}.
 
 ---
 
@@ -989,7 +989,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#name KendraExperience#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#name KendraExperience#name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly roleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#role_arn KendraExperience#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#role_arn KendraExperience#role_arn}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly configuration: KendraExperienceConfiguration;
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#configuration KendraExperience#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#configuration KendraExperience#configuration}
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#description KendraExperience#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#description KendraExperience#description}.
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#id KendraExperience#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#id KendraExperience#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1056,7 +1056,7 @@ public readonly timeouts: KendraExperienceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#timeouts KendraExperience#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#timeouts KendraExperience#timeouts}
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly contentSourceConfiguration: KendraExperienceConfigurationContent
 
 content_source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#content_source_configuration KendraExperience#content_source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#content_source_configuration KendraExperience#content_source_configuration}
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly userIdentityConfiguration: KendraExperienceConfigurationUserIden
 
 user_identity_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#user_identity_configuration KendraExperience#user_identity_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#user_identity_configuration KendraExperience#user_identity_configuration}
 
 ---
 
@@ -1121,9 +1121,9 @@ const kendraExperienceConfigurationContentSourceConfiguration: kendraExperience.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration.property.dataSourceIds">dataSourceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#data_source_ids KendraExperience#data_source_ids}. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration.property.directPutContent">directPutContent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#direct_put_content KendraExperience#direct_put_content}. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration.property.faqIds">faqIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#faq_ids KendraExperience#faq_ids}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration.property.dataSourceIds">dataSourceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#data_source_ids KendraExperience#data_source_ids}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration.property.directPutContent">directPutContent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#direct_put_content KendraExperience#direct_put_content}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration.property.faqIds">faqIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#faq_ids KendraExperience#faq_ids}. |
 
 ---
 
@@ -1135,7 +1135,7 @@ public readonly dataSourceIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#data_source_ids KendraExperience#data_source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#data_source_ids KendraExperience#data_source_ids}.
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly directPutContent: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#direct_put_content KendraExperience#direct_put_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#direct_put_content KendraExperience#direct_put_content}.
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly faqIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#faq_ids KendraExperience#faq_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#faq_ids KendraExperience#faq_ids}.
 
 ---
 
@@ -1177,7 +1177,7 @@ const kendraExperienceConfigurationUserIdentityConfiguration: kendraExperience.K
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration.property.identityAttributeName">identityAttributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#identity_attribute_name KendraExperience#identity_attribute_name}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration.property.identityAttributeName">identityAttributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#identity_attribute_name KendraExperience#identity_attribute_name}. |
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly identityAttributeName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#identity_attribute_name KendraExperience#identity_attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#identity_attribute_name KendraExperience#identity_attribute_name}.
 
 ---
 
@@ -1218,9 +1218,9 @@ const kendraExperienceTimeouts: kendraExperience.KendraExperienceTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#create KendraExperience#create}. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#delete KendraExperience#delete}. |
-| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#update KendraExperience#update}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#create KendraExperience#create}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#delete KendraExperience#delete}. |
+| <code><a href="#@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#update KendraExperience#update}. |
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#create KendraExperience#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#create KendraExperience#create}.
 
 ---
 
@@ -1244,7 +1244,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#delete KendraExperience#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#delete KendraExperience#delete}.
 
 ---
 
@@ -1256,7 +1256,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/kendra_experience#update KendraExperience#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kendra_experience#update KendraExperience#update}.
 
 ---
 

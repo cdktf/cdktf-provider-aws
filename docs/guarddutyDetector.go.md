@@ -1,6 +1,6 @@
 # `aws_guardduty_detector`
 
-Refer to the Terraform Registory for docs: [`aws_guardduty_detector`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector).
+Refer to the Terraform Registory for docs: [`aws_guardduty_detector`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector).
 
 # `guarddutyDetector` Submodule <a name="`guarddutyDetector` Submodule" id="@cdktf/provider-aws.guarddutyDetector"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_guardduty_detector`](https://re
 
 ### GuarddutyDetector <a name="GuarddutyDetector" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector aws_guardduty_detector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector aws_guardduty_detector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetector(scope Construct, id *string, config GuarddutyDetectorConfig) GuarddutyDetector
 ```
@@ -387,7 +387,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.GuarddutyDetector_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.GuarddutyDetector_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ guarddutydetector.GuarddutyDetector_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.GuarddutyDetector_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ guarddutydetector.GuarddutyDetector_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.GuarddutyDetector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -476,7 +476,7 @@ The construct id used in the generated config for the GuarddutyDetector to impor
 
 The id of the existing GuarddutyDetector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Datasources: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyDetector.GuarddutyDetectorDatasources,
+	Datasources: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyDetector.GuarddutyDetectorDatasources,
 	Enable: interface{},
 	FindingPublishingFrequency: *string,
 	Id: *string,
@@ -861,11 +861,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
 | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.datasources">Datasources</a></code> | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasources">GuarddutyDetectorDatasources</a></code> | datasources block. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.findingPublishingFrequency">FindingPublishingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.findingPublishingFrequency">FindingPublishingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}. |
 
 ---
 
@@ -949,7 +949,7 @@ Datasources GuarddutyDetectorDatasources
 
 datasources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#datasources GuarddutyDetector#datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#datasources GuarddutyDetector#datasources}
 
 ---
 
@@ -961,7 +961,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 
@@ -973,7 +973,7 @@ FindingPublishingFrequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}.
 
 ---
 
@@ -985,7 +985,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1000,7 +1000,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}.
 
 ---
 
@@ -1012,7 +1012,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}.
 
 ---
 
@@ -1021,12 +1021,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorDatasources {
-	Kubernetes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetes,
-	MalwareProtection: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtection,
-	S3Logs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs,
+	Kubernetes: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetes,
+	MalwareProtection: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtection,
+	S3Logs: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Kubernetes GuarddutyDetectorDatasourcesKubernetes
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#kubernetes GuarddutyDetector#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#kubernetes GuarddutyDetector#kubernetes}
 
 ---
 
@@ -1064,7 +1064,7 @@ MalwareProtection GuarddutyDetectorDatasourcesMalwareProtection
 
 malware_protection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#malware_protection GuarddutyDetector#malware_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#malware_protection GuarddutyDetector#malware_protection}
 
 ---
 
@@ -1078,7 +1078,7 @@ S3Logs GuarddutyDetectorDatasourcesS3Logs
 
 s3_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#s3_logs GuarddutyDetector#s3_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#s3_logs GuarddutyDetector#s3_logs}
 
 ---
 
@@ -1087,10 +1087,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorDatasourcesKubernetes {
-	AuditLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs,
+	AuditLogs: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs,
 }
 ```
 
@@ -1112,7 +1112,7 @@ AuditLogs GuarddutyDetectorDatasourcesKubernetesAuditLogs
 
 audit_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#audit_logs GuarddutyDetector#audit_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#audit_logs GuarddutyDetector#audit_logs}
 
 ---
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs {
 	Enable: interface{},
@@ -1132,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 
@@ -1153,10 +1153,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorDatasourcesMalwareProtection {
-	ScanEc2InstanceWithFindings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings,
+	ScanEc2InstanceWithFindings: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings,
 }
 ```
 
@@ -1178,7 +1178,7 @@ ScanEc2InstanceWithFindings GuarddutyDetectorDatasourcesMalwareProtectionScanEc2
 
 scan_ec2_instance_with_findings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#scan_ec2_instance_with_findings GuarddutyDetector#scan_ec2_instance_with_findings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#scan_ec2_instance_with_findings GuarddutyDetector#scan_ec2_instance_with_findings}
 
 ---
 
@@ -1187,10 +1187,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings {
-	EbsVolumes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes,
+	EbsVolumes: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes,
 }
 ```
 
@@ -1212,7 +1212,7 @@ EbsVolumes GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindi
 
 ebs_volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#ebs_volumes GuarddutyDetector#ebs_volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#ebs_volumes GuarddutyDetector#ebs_volumes}
 
 ---
 
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes {
 	Enable: interface{},
@@ -1232,7 +1232,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
 
 ---
 
@@ -1244,7 +1244,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 &guarddutydetector.GuarddutyDetectorDatasourcesS3Logs {
 	Enable: interface{},
@@ -1264,7 +1264,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
 
 ---
 
@@ -1276,7 +1276,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference
 ```
@@ -1558,7 +1558,7 @@ func InternalValue() GuarddutyDetectorDatasourcesKubernetesAuditLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetectorDatasourcesKubernetesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesKubernetesOutputReference
 ```
@@ -1842,7 +1842,7 @@ func InternalValue() GuarddutyDetectorDatasourcesKubernetes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetectorDatasourcesMalwareProtectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesMalwareProtectionOutputReference
 ```
@@ -2126,7 +2126,7 @@ func InternalValue() GuarddutyDetectorDatasourcesMalwareProtection
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference
 ```
@@ -2397,7 +2397,7 @@ func InternalValue() GuarddutyDetectorDatasourcesMalwareProtectionScanEc2Instanc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference
 ```
@@ -2681,7 +2681,7 @@ func InternalValue() GuarddutyDetectorDatasourcesMalwareProtectionScanEc2Instanc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetectorDatasourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesOutputReference
 ```
@@ -3056,7 +3056,7 @@ func InternalValue() GuarddutyDetectorDatasources
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetector"
 
 guarddutydetector.NewGuarddutyDetectorDatasourcesS3LogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesS3LogsOutputReference
 ```

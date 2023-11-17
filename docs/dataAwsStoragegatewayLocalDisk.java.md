@@ -1,6 +1,6 @@
 # `data_aws_storagegateway_local_disk`
 
-Refer to the Terraform Registory for docs: [`data_aws_storagegateway_local_disk`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk).
+Refer to the Terraform Registory for docs: [`data_aws_storagegateway_local_disk`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk).
 
 # `dataAwsStoragegatewayLocalDisk` Submodule <a name="`dataAwsStoragegatewayLocalDisk` Submodule" id="@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_storagegateway_local_disk`
 
 ### DataAwsStoragegatewayLocalDisk <a name="DataAwsStoragegatewayLocalDisk" id="@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk aws_storagegateway_local_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk aws_storagegateway_local_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer"></a>
 
@@ -45,10 +45,10 @@ DataAwsStoragegatewayLocalDisk.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.gatewayArn">gatewayArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.diskNode">diskNode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.diskPath">diskPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.gatewayArn">gatewayArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.diskNode">diskNode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.diskPath">diskPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -478,7 +478,7 @@ The construct id used in the generated config for the DataAwsStoragegatewayLocal
 
 The id of the existing DataAwsStoragegatewayLocalDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,10 +787,10 @@ DataAwsStoragegatewayLocalDiskConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.gatewayArn">gatewayArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.diskNode">diskNode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.diskPath">diskPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.gatewayArn">gatewayArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.diskNode">diskNode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.diskPath">diskPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}. |
 
 ---
 
@@ -872,7 +872,7 @@ public java.lang.String getGatewayArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}.
 
 ---
 
@@ -884,7 +884,7 @@ public java.lang.String getDiskNode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}.
 
 ---
 
@@ -896,7 +896,7 @@ public java.lang.String getDiskPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#disk_path DataAwsStoragegatewayLocalDisk#disk_path}.
 
 ---
 
@@ -908,7 +908,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

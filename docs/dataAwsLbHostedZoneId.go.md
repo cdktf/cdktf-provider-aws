@@ -1,6 +1,6 @@
 # `data_aws_lb_hosted_zone_id`
 
-Refer to the Terraform Registory for docs: [`data_aws_lb_hosted_zone_id`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id).
+Refer to the Terraform Registory for docs: [`data_aws_lb_hosted_zone_id`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id).
 
 # `dataAwsLbHostedZoneId` Submodule <a name="`dataAwsLbHostedZoneId` Submodule" id="@cdktf/provider-aws.dataAwsLbHostedZoneId"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_lb_hosted_zone_id`](https:
 
 ### DataAwsLbHostedZoneId <a name="DataAwsLbHostedZoneId" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.NewDataAwsLbHostedZoneId(scope Construct, id *string, config DataAwsLbHostedZoneIdConfig) DataAwsLbHostedZoneId
 ```
@@ -292,7 +292,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataAwsLbHostedZoneId to i
 
 The id of the existing DataAwsLbHostedZoneId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,7 +625,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
 
 &dataawslbhostedzoneid.DataAwsLbHostedZoneIdConfig {
 	Connection: interface{},
@@ -652,9 +652,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
 | <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id#id DataAwsLbHostedZoneId#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.loadBalancerType">LoadBalancerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id#load_balancer_type DataAwsLbHostedZoneId#load_balancer_type}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id#region DataAwsLbHostedZoneId#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id#id DataAwsLbHostedZoneId#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.loadBalancerType">LoadBalancerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id#load_balancer_type DataAwsLbHostedZoneId#load_balancer_type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id#region DataAwsLbHostedZoneId#region}. |
 
 ---
 
@@ -736,7 +736,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id#id DataAwsLbHostedZoneId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id#id DataAwsLbHostedZoneId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -751,7 +751,7 @@ LoadBalancerType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id#load_balancer_type DataAwsLbHostedZoneId#load_balancer_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id#load_balancer_type DataAwsLbHostedZoneId#load_balancer_type}.
 
 ---
 
@@ -763,7 +763,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lb_hosted_zone_id#region DataAwsLbHostedZoneId#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lb_hosted_zone_id#region DataAwsLbHostedZoneId#region}.
 
 ---
 

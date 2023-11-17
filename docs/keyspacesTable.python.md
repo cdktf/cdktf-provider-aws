@@ -1,6 +1,6 @@
 # `aws_keyspaces_table`
 
-Refer to the Terraform Registory for docs: [`aws_keyspaces_table`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table).
+Refer to the Terraform Registory for docs: [`aws_keyspaces_table`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table).
 
 # `keyspacesTable` Submodule <a name="`keyspacesTable` Submodule" id="@cdktf/provider-aws.keyspacesTable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_keyspaces_table`](https://regis
 
 ### KeyspacesTable <a name="KeyspacesTable" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table aws_keyspaces_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table aws_keyspaces_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer"></a>
 
@@ -53,18 +53,18 @@ keyspacesTable.KeyspacesTable(
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.keyspaceName">keyspace_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.keyspaceName">keyspace_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.schemaDefinition">schema_definition</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinition">KeyspacesTableSchemaDefinition</a></code> | schema_definition block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.capacitySpecification">capacity_specification</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification">KeyspacesTableCapacitySpecification</a></code> | capacity_specification block. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.clientSideTimestamps">client_side_timestamps</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestamps">KeyspacesTableClientSideTimestamps</a></code> | client_side_timestamps block. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.comment">comment</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableComment">KeyspacesTableComment</a></code> | comment block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.defaultTimeToLive">default_time_to_live</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.defaultTimeToLive">default_time_to_live</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.encryptionSpecification">encryption_specification</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification">KeyspacesTableEncryptionSpecification</a></code> | encryption_specification block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#id KeyspacesTable#id}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#id KeyspacesTable#id}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.pointInTimeRecovery">point_in_time_recovery</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecovery">KeyspacesTablePointInTimeRecovery</a></code> | point_in_time_recovery block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts">KeyspacesTableTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer.parameter.ttl">ttl</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtl">KeyspacesTableTtl</a></code> | ttl block. |
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schema_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#schema_definition KeyspacesTable#schema_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#schema_definition KeyspacesTable#schema_definition}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 capacity_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#capacity_specification KeyspacesTable#capacity_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#capacity_specification KeyspacesTable#capacity_specification}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_side_timestamps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#client_side_timestamps KeyspacesTable#client_side_timestamps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#client_side_timestamps KeyspacesTable#client_side_timestamps}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 comment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#comment KeyspacesTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#comment KeyspacesTable#comment}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}.
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#encryption_specification KeyspacesTable#encryption_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#encryption_specification KeyspacesTable#encryption_specification}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#id KeyspacesTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#id KeyspacesTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -221,7 +221,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 point_in_time_recovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#point_in_time_recovery KeyspacesTable#point_in_time_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#point_in_time_recovery KeyspacesTable#point_in_time_recovery}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}.
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}.
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#timeouts KeyspacesTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#timeouts KeyspacesTable#timeouts}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#ttl KeyspacesTable#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#ttl KeyspacesTable#ttl}
 
 ---
 
@@ -595,7 +595,7 @@ def put_capacity_specification(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#read_capacity_units KeyspacesTable#read_capacity_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#read_capacity_units KeyspacesTable#read_capacity_units}.
 
 ---
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#throughput_mode KeyspacesTable#throughput_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#throughput_mode KeyspacesTable#throughput_mode}.
 
 ---
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#write_capacity_units KeyspacesTable#write_capacity_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#write_capacity_units KeyspacesTable#write_capacity_units}.
 
 ---
 
@@ -627,7 +627,7 @@ def put_client_side_timestamps(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 
 ---
 
@@ -643,7 +643,7 @@ def put_comment(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#message KeyspacesTable#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#message KeyspacesTable#message}.
 
 ---
 
@@ -660,7 +660,7 @@ def put_encryption_specification(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#kms_key_identifier KeyspacesTable#kms_key_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#kms_key_identifier KeyspacesTable#kms_key_identifier}.
 
 ---
 
@@ -668,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#type KeyspacesTable#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#type KeyspacesTable#type}.
 
 ---
 
@@ -684,7 +684,7 @@ def put_point_in_time_recovery(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 
 ---
 
@@ -705,7 +705,7 @@ def put_schema_definition(
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#column KeyspacesTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#column KeyspacesTable#column}
 
 ---
 
@@ -715,7 +715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 partition_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#partition_key KeyspacesTable#partition_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#partition_key KeyspacesTable#partition_key}
 
 ---
 
@@ -725,7 +725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 clustering_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#clustering_key KeyspacesTable#clustering_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#clustering_key KeyspacesTable#clustering_key}
 
 ---
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 static_column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#static_column KeyspacesTable#static_column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#static_column KeyspacesTable#static_column}
 
 ---
 
@@ -753,7 +753,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#create KeyspacesTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#create KeyspacesTable#create}.
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#delete KeyspacesTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#delete KeyspacesTable#delete}.
 
 ---
 
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#update KeyspacesTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#update KeyspacesTable#update}.
 
 ---
 
@@ -785,7 +785,7 @@ def put_ttl(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 
 ---
 
@@ -969,7 +969,7 @@ The construct id used in the generated config for the KeyspacesTable to import.
 
 The id of the existing KeyspacesTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1501,9 +1501,9 @@ keyspacesTable.KeyspacesTableCapacitySpecification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification.property.readCapacityUnits">read_capacity_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#read_capacity_units KeyspacesTable#read_capacity_units}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification.property.throughputMode">throughput_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#throughput_mode KeyspacesTable#throughput_mode}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification.property.writeCapacityUnits">write_capacity_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#write_capacity_units KeyspacesTable#write_capacity_units}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification.property.readCapacityUnits">read_capacity_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#read_capacity_units KeyspacesTable#read_capacity_units}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification.property.throughputMode">throughput_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#throughput_mode KeyspacesTable#throughput_mode}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification.property.writeCapacityUnits">write_capacity_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#write_capacity_units KeyspacesTable#write_capacity_units}. |
 
 ---
 
@@ -1515,7 +1515,7 @@ read_capacity_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#read_capacity_units KeyspacesTable#read_capacity_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#read_capacity_units KeyspacesTable#read_capacity_units}.
 
 ---
 
@@ -1527,7 +1527,7 @@ throughput_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#throughput_mode KeyspacesTable#throughput_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#throughput_mode KeyspacesTable#throughput_mode}.
 
 ---
 
@@ -1539,7 +1539,7 @@ write_capacity_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#write_capacity_units KeyspacesTable#write_capacity_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#write_capacity_units KeyspacesTable#write_capacity_units}.
 
 ---
 
@@ -1559,7 +1559,7 @@ keyspacesTable.KeyspacesTableClientSideTimestamps(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestamps.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestamps.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}. |
 
 ---
 
@@ -1571,7 +1571,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 
 ---
 
@@ -1591,7 +1591,7 @@ keyspacesTable.KeyspacesTableComment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableComment.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#message KeyspacesTable#message}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableComment.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#message KeyspacesTable#message}. |
 
 ---
 
@@ -1603,7 +1603,7 @@ message: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#message KeyspacesTable#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#message KeyspacesTable#message}.
 
 ---
 
@@ -1650,18 +1650,18 @@ keyspacesTable.KeyspacesTableConfig(
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.keyspaceName">keyspace_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.keyspaceName">keyspace_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.schemaDefinition">schema_definition</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinition">KeyspacesTableSchemaDefinition</a></code> | schema_definition block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.capacitySpecification">capacity_specification</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification">KeyspacesTableCapacitySpecification</a></code> | capacity_specification block. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.clientSideTimestamps">client_side_timestamps</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestamps">KeyspacesTableClientSideTimestamps</a></code> | client_side_timestamps block. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.comment">comment</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableComment">KeyspacesTableComment</a></code> | comment block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.defaultTimeToLive">default_time_to_live</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.defaultTimeToLive">default_time_to_live</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.encryptionSpecification">encryption_specification</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification">KeyspacesTableEncryptionSpecification</a></code> | encryption_specification block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#id KeyspacesTable#id}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#id KeyspacesTable#id}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.pointInTimeRecovery">point_in_time_recovery</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecovery">KeyspacesTablePointInTimeRecovery</a></code> | point_in_time_recovery block. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts">KeyspacesTableTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.property.ttl">ttl</a></code> | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtl">KeyspacesTableTtl</a></code> | ttl block. |
 
@@ -1745,7 +1745,7 @@ keyspace_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}.
 
 ---
 
@@ -1759,7 +1759,7 @@ schema_definition: KeyspacesTableSchemaDefinition
 
 schema_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#schema_definition KeyspacesTable#schema_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#schema_definition KeyspacesTable#schema_definition}
 
 ---
 
@@ -1771,7 +1771,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#table_name KeyspacesTable#table_name}.
 
 ---
 
@@ -1785,7 +1785,7 @@ capacity_specification: KeyspacesTableCapacitySpecification
 
 capacity_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#capacity_specification KeyspacesTable#capacity_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#capacity_specification KeyspacesTable#capacity_specification}
 
 ---
 
@@ -1799,7 +1799,7 @@ client_side_timestamps: KeyspacesTableClientSideTimestamps
 
 client_side_timestamps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#client_side_timestamps KeyspacesTable#client_side_timestamps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#client_side_timestamps KeyspacesTable#client_side_timestamps}
 
 ---
 
@@ -1813,7 +1813,7 @@ comment: KeyspacesTableComment
 
 comment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#comment KeyspacesTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#comment KeyspacesTable#comment}
 
 ---
 
@@ -1825,7 +1825,7 @@ default_time_to_live: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}.
 
 ---
 
@@ -1839,7 +1839,7 @@ encryption_specification: KeyspacesTableEncryptionSpecification
 
 encryption_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#encryption_specification KeyspacesTable#encryption_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#encryption_specification KeyspacesTable#encryption_specification}
 
 ---
 
@@ -1851,7 +1851,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#id KeyspacesTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#id KeyspacesTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1868,7 +1868,7 @@ point_in_time_recovery: KeyspacesTablePointInTimeRecovery
 
 point_in_time_recovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#point_in_time_recovery KeyspacesTable#point_in_time_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#point_in_time_recovery KeyspacesTable#point_in_time_recovery}
 
 ---
 
@@ -1880,7 +1880,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags KeyspacesTable#tags}.
 
 ---
 
@@ -1892,7 +1892,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#tags_all KeyspacesTable#tags_all}.
 
 ---
 
@@ -1906,7 +1906,7 @@ timeouts: KeyspacesTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#timeouts KeyspacesTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#timeouts KeyspacesTable#timeouts}
 
 ---
 
@@ -1920,7 +1920,7 @@ ttl: KeyspacesTableTtl
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#ttl KeyspacesTable#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#ttl KeyspacesTable#ttl}
 
 ---
 
@@ -1941,8 +1941,8 @@ keyspacesTable.KeyspacesTableEncryptionSpecification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification.property.kmsKeyIdentifier">kms_key_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#kms_key_identifier KeyspacesTable#kms_key_identifier}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#type KeyspacesTable#type}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification.property.kmsKeyIdentifier">kms_key_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#kms_key_identifier KeyspacesTable#kms_key_identifier}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#type KeyspacesTable#type}. |
 
 ---
 
@@ -1954,7 +1954,7 @@ kms_key_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#kms_key_identifier KeyspacesTable#kms_key_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#kms_key_identifier KeyspacesTable#kms_key_identifier}.
 
 ---
 
@@ -1966,7 +1966,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#type KeyspacesTable#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#type KeyspacesTable#type}.
 
 ---
 
@@ -1986,7 +1986,7 @@ keyspacesTable.KeyspacesTablePointInTimeRecovery(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecovery.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecovery.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}. |
 
 ---
 
@@ -1998,7 +1998,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 
 ---
 
@@ -2038,7 +2038,7 @@ column: typing.Union[IResolvable, typing.List[KeyspacesTableSchemaDefinitionColu
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#column KeyspacesTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#column KeyspacesTable#column}
 
 ---
 
@@ -2052,7 +2052,7 @@ partition_key: typing.Union[IResolvable, typing.List[KeyspacesTableSchemaDefinit
 
 partition_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#partition_key KeyspacesTable#partition_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#partition_key KeyspacesTable#partition_key}
 
 ---
 
@@ -2066,7 +2066,7 @@ clustering_key: typing.Union[IResolvable, typing.List[KeyspacesTableSchemaDefini
 
 clustering_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#clustering_key KeyspacesTable#clustering_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#clustering_key KeyspacesTable#clustering_key}
 
 ---
 
@@ -2080,7 +2080,7 @@ static_column: typing.Union[IResolvable, typing.List[KeyspacesTableSchemaDefinit
 
 static_column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#static_column KeyspacesTable#static_column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#static_column KeyspacesTable#static_column}
 
 ---
 
@@ -2101,8 +2101,8 @@ keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey.property.orderBy">order_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#order_by KeyspacesTable#order_by}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey.property.orderBy">order_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#order_by KeyspacesTable#order_by}. |
 
 ---
 
@@ -2114,7 +2114,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
 
 ---
 
@@ -2126,7 +2126,7 @@ order_by: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#order_by KeyspacesTable#order_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#order_by KeyspacesTable#order_by}.
 
 ---
 
@@ -2147,8 +2147,8 @@ keyspacesTable.KeyspacesTableSchemaDefinitionColumn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumn.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#type KeyspacesTable#type}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumn.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#type KeyspacesTable#type}. |
 
 ---
 
@@ -2160,7 +2160,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
 
 ---
 
@@ -2172,7 +2172,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#type KeyspacesTable#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#type KeyspacesTable#type}.
 
 ---
 
@@ -2192,7 +2192,7 @@ keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKey(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKey.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKey.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
 
 ---
 
@@ -2204,7 +2204,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
 
 ---
 
@@ -2224,7 +2224,7 @@ keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}. |
 
 ---
 
@@ -2236,7 +2236,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
 
 ---
 
@@ -2258,9 +2258,9 @@ keyspacesTable.KeyspacesTableTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#create KeyspacesTable#create}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#delete KeyspacesTable#delete}. |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#update KeyspacesTable#update}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#create KeyspacesTable#create}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#delete KeyspacesTable#delete}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#update KeyspacesTable#update}. |
 
 ---
 
@@ -2272,7 +2272,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#create KeyspacesTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#create KeyspacesTable#create}.
 
 ---
 
@@ -2284,7 +2284,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#delete KeyspacesTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#delete KeyspacesTable#delete}.
 
 ---
 
@@ -2296,7 +2296,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#update KeyspacesTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#update KeyspacesTable#update}.
 
 ---
 
@@ -2316,7 +2316,7 @@ keyspacesTable.KeyspacesTableTtl(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtl.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtl.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}. |
 
 ---
 
@@ -2328,7 +2328,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 
 ---
 

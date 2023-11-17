@@ -1,6 +1,6 @@
 # `data_aws_rds_certificate`
 
-Refer to the Terraform Registory for docs: [`data_aws_rds_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/rds_certificate).
+Refer to the Terraform Registory for docs: [`data_aws_rds_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/rds_certificate).
 
 # `dataAwsRdsCertificate` Submodule <a name="`dataAwsRdsCertificate` Submodule" id="@cdktf/provider-aws.dataAwsRdsCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_rds_certificate`](https://
 
 ### DataAwsRdsCertificate <a name="DataAwsRdsCertificate" id="@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/rds_certificate aws_rds_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/rds_certificate aws_rds_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataAwsRdsCertificate to i
 
 The id of the existing DataAwsRdsCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/rds_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/rds_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,8 +699,8 @@ new DataAwsRdsCertificateConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/rds_certificate#id DataAwsRdsCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.property.latestValidTill">LatestValidTill</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/rds_certificate#latest_valid_till DataAwsRdsCertificate#latest_valid_till}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/rds_certificate#id DataAwsRdsCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.property.latestValidTill">LatestValidTill</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/rds_certificate#latest_valid_till DataAwsRdsCertificate#latest_valid_till}. |
 
 ---
 
@@ -782,7 +782,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/rds_certificate#id DataAwsRdsCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/rds_certificate#id DataAwsRdsCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -797,7 +797,7 @@ public object LatestValidTill { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/rds_certificate#latest_valid_till DataAwsRdsCertificate#latest_valid_till}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/rds_certificate#latest_valid_till DataAwsRdsCertificate#latest_valid_till}.
 
 ---
 

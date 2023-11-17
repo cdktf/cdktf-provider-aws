@@ -1,6 +1,6 @@
 # `aws_vpc_dhcp_options_association`
 
-Refer to the Terraform Registory for docs: [`aws_vpc_dhcp_options_association`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association).
+Refer to the Terraform Registory for docs: [`aws_vpc_dhcp_options_association`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association).
 
 # `vpcDhcpOptionsAssociation` Submodule <a name="`vpcDhcpOptionsAssociation` Submodule" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_vpc_dhcp_options_association`](
 
 ### VpcDhcpOptionsAssociation <a name="VpcDhcpOptionsAssociation" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association aws_vpc_dhcp_options_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association aws_vpc_dhcp_options_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.NewVpcDhcpOptionsAssociation(scope Construct, id *string, config VpcDhcpOptionsAssociationConfig) VpcDhcpOptionsAssociation
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the VpcDhcpOptionsAssociation 
 
 The id of the existing VpcDhcpOptionsAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
 
 &vpcdhcpoptionsassociation.VpcDhcpOptionsAssociationConfig {
 	Connection: interface{},
@@ -721,9 +721,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcdhcpoptionsassociation
 | <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.dhcpOptionsId">DhcpOptionsId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association#dhcp_options_id VpcDhcpOptionsAssociation#dhcp_options_id}. |
-| <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association#vpc_id VpcDhcpOptionsAssociation#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association#id VpcDhcpOptionsAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.dhcpOptionsId">DhcpOptionsId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association#dhcp_options_id VpcDhcpOptionsAssociation#dhcp_options_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association#vpc_id VpcDhcpOptionsAssociation#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association#id VpcDhcpOptionsAssociation#id}. |
 
 ---
 
@@ -805,7 +805,7 @@ DhcpOptionsId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association#dhcp_options_id VpcDhcpOptionsAssociation#dhcp_options_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association#dhcp_options_id VpcDhcpOptionsAssociation#dhcp_options_id}.
 
 ---
 
@@ -817,7 +817,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association#vpc_id VpcDhcpOptionsAssociation#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association#vpc_id VpcDhcpOptionsAssociation#vpc_id}.
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_dhcp_options_association#id VpcDhcpOptionsAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_dhcp_options_association#id VpcDhcpOptionsAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

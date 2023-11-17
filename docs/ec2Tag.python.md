@@ -1,6 +1,6 @@
 # `aws_ec2_tag`
 
-Refer to the Terraform Registory for docs: [`aws_ec2_tag`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag).
+Refer to the Terraform Registory for docs: [`aws_ec2_tag`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag).
 
 # `ec2Tag` Submodule <a name="`ec2Tag` Submodule" id="@cdktf/provider-aws.ec2Tag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ec2_tag`](https://registry.terr
 
 ### Ec2Tag <a name="Ec2Tag" id="@cdktf/provider-aws.ec2Tag.Ec2Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag aws_ec2_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag aws_ec2_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer"></a>
 
@@ -43,10 +43,10 @@ ec2Tag.Ec2Tag(
 | <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#key Ec2Tag#key}. |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#value Ec2Tag#value}. |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#id Ec2Tag#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#key Ec2Tag#key}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#value Ec2Tag#value}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2Tag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#id Ec2Tag#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#key Ec2Tag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#key Ec2Tag#key}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#value Ec2Tag#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#value Ec2Tag#value}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#id Ec2Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#id Ec2Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -567,7 +567,7 @@ The construct id used in the generated config for the Ec2Tag to import.
 
 The id of the existing Ec2Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -883,10 +883,10 @@ ec2Tag.Ec2TagConfig(
 | <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#key Ec2Tag#key}. |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#value Ec2Tag#value}. |
-| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#id Ec2Tag#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#key Ec2Tag#key}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#value Ec2Tag#value}. |
+| <code><a href="#@cdktf/provider-aws.ec2Tag.Ec2TagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#id Ec2Tag#id}. |
 
 ---
 
@@ -968,7 +968,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#key Ec2Tag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#key Ec2Tag#key}.
 
 ---
 
@@ -980,7 +980,7 @@ resource_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#resource_id Ec2Tag#resource_id}.
 
 ---
 
@@ -992,7 +992,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#value Ec2Tag#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#value Ec2Tag#value}.
 
 ---
 
@@ -1004,7 +1004,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_tag#id Ec2Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_tag#id Ec2Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

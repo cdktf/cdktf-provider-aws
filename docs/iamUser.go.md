@@ -1,6 +1,6 @@
 # `aws_iam_user`
 
-Refer to the Terraform Registory for docs: [`aws_iam_user`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user).
+Refer to the Terraform Registory for docs: [`aws_iam_user`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user).
 
 # `iamUser` Submodule <a name="`iamUser` Submodule" id="@cdktf/provider-aws.iamUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_iam_user`](https://registry.ter
 
 ### IamUser <a name="IamUser" id="@cdktf/provider-aws.iamUser.IamUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user aws_iam_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user aws_iam_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamUser.IamUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.NewIamUser(scope Construct, id *string, config IamUserConfig) IamUser
 ```
@@ -374,7 +374,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamUser.IamUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.IamUser_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamUser.IamUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.IamUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ iamuser.IamUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamUser.IamUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.IamUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ iamuser.IamUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamUser.IamUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.IamUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -463,7 +463,7 @@ The construct id used in the generated config for the IamUser to import.
 
 The id of the existing IamUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamUser.IamUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 &iamuser.IamUserConfig {
 	Connection: interface{},
@@ -870,13 +870,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuser"
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#name IamUser#name}. |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#name IamUser#name}. |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices. |
-| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#id IamUser#id}. |
-| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#path IamUser#path}. |
-| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.permissionsBoundary">PermissionsBoundary</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#permissions_boundary IamUser#permissions_boundary}. |
-| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#tags IamUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#tags_all IamUser#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#id IamUser#id}. |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#path IamUser#path}. |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.permissionsBoundary">PermissionsBoundary</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#permissions_boundary IamUser#permissions_boundary}. |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#tags IamUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUserConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#tags_all IamUser#tags_all}. |
 
 ---
 
@@ -958,7 +958,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#name IamUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#name IamUser#name}.
 
 ---
 
@@ -972,7 +972,7 @@ ForceDestroy interface{}
 
 Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#force_destroy IamUser#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#force_destroy IamUser#force_destroy}
 
 ---
 
@@ -984,7 +984,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#id IamUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#id IamUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -999,7 +999,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#path IamUser#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#path IamUser#path}.
 
 ---
 
@@ -1011,7 +1011,7 @@ PermissionsBoundary *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#permissions_boundary IamUser#permissions_boundary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#permissions_boundary IamUser#permissions_boundary}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#tags IamUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#tags IamUser#tags}.
 
 ---
 
@@ -1035,7 +1035,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_user#tags_all IamUser#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_user#tags_all IamUser#tags_all}.
 
 ---
 

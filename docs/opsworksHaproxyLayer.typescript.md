@@ -1,6 +1,6 @@
 # `aws_opsworks_haproxy_layer`
 
-Refer to the Terraform Registory for docs: [`aws_opsworks_haproxy_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer).
+Refer to the Terraform Registory for docs: [`aws_opsworks_haproxy_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer).
 
 # `opsworksHaproxyLayer` Submodule <a name="`opsworksHaproxyLayer` Submodule" id="@cdktf/provider-aws.opsworksHaproxyLayer"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_opsworks_haproxy_layer`](https:
 
 ### OpsworksHaproxyLayer <a name="OpsworksHaproxyLayer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer.Initializer"></a>
 
@@ -663,7 +663,7 @@ The construct id used in the generated config for the OpsworksHaproxyLayer to im
 
 The id of the existing OpsworksHaproxyLayer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1565,7 +1565,7 @@ const opsworksHaproxyLayerCloudwatchConfiguration: opsworksHaproxyLayer.Opsworks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#enabled OpsworksHaproxyLayer#enabled}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#enabled OpsworksHaproxyLayer#enabled}. |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration.property.logStreams">logStreams</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams">OpsworksHaproxyLayerCloudwatchConfigurationLogStreams</a>[]</code> | log_streams block. |
 
 ---
@@ -1578,7 +1578,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#enabled OpsworksHaproxyLayer#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#enabled OpsworksHaproxyLayer#enabled}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly logStreams: IResolvable | OpsworksHaproxyLayerCloudwatchConfigur
 
 log_streams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#log_streams OpsworksHaproxyLayer#log_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#log_streams OpsworksHaproxyLayer#log_streams}
 
 ---
 
@@ -1610,17 +1610,17 @@ const opsworksHaproxyLayerCloudwatchConfigurationLogStreams: opsworksHaproxyLaye
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.file">file</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#file OpsworksHaproxyLayer#file}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#log_group_name OpsworksHaproxyLayer#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.batchCount">batchCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#batch_count OpsworksHaproxyLayer#batch_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.batchSize">batchSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#batch_size OpsworksHaproxyLayer#batch_size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.bufferDuration">bufferDuration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#buffer_duration OpsworksHaproxyLayer#buffer_duration}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">datetimeFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#datetime_format OpsworksHaproxyLayer#datetime_format}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#encoding OpsworksHaproxyLayer#encoding}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">fileFingerprintLines</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#file_fingerprint_lines OpsworksHaproxyLayer#file_fingerprint_lines}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.initialPosition">initialPosition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#initial_position OpsworksHaproxyLayer#initial_position}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">multilineStartPattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#multiline_start_pattern OpsworksHaproxyLayer#multiline_start_pattern}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.timeZone">timeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#time_zone OpsworksHaproxyLayer#time_zone}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.file">file</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#file OpsworksHaproxyLayer#file}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#log_group_name OpsworksHaproxyLayer#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.batchCount">batchCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#batch_count OpsworksHaproxyLayer#batch_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.batchSize">batchSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#batch_size OpsworksHaproxyLayer#batch_size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.bufferDuration">bufferDuration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#buffer_duration OpsworksHaproxyLayer#buffer_duration}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">datetimeFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#datetime_format OpsworksHaproxyLayer#datetime_format}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#encoding OpsworksHaproxyLayer#encoding}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">fileFingerprintLines</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#file_fingerprint_lines OpsworksHaproxyLayer#file_fingerprint_lines}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.initialPosition">initialPosition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#initial_position OpsworksHaproxyLayer#initial_position}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">multilineStartPattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#multiline_start_pattern OpsworksHaproxyLayer#multiline_start_pattern}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.property.timeZone">timeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#time_zone OpsworksHaproxyLayer#time_zone}. |
 
 ---
 
@@ -1632,7 +1632,7 @@ public readonly file: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#file OpsworksHaproxyLayer#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#file OpsworksHaproxyLayer#file}.
 
 ---
 
@@ -1644,7 +1644,7 @@ public readonly logGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#log_group_name OpsworksHaproxyLayer#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#log_group_name OpsworksHaproxyLayer#log_group_name}.
 
 ---
 
@@ -1656,7 +1656,7 @@ public readonly batchCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#batch_count OpsworksHaproxyLayer#batch_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#batch_count OpsworksHaproxyLayer#batch_count}.
 
 ---
 
@@ -1668,7 +1668,7 @@ public readonly batchSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#batch_size OpsworksHaproxyLayer#batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#batch_size OpsworksHaproxyLayer#batch_size}.
 
 ---
 
@@ -1680,7 +1680,7 @@ public readonly bufferDuration: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#buffer_duration OpsworksHaproxyLayer#buffer_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#buffer_duration OpsworksHaproxyLayer#buffer_duration}.
 
 ---
 
@@ -1692,7 +1692,7 @@ public readonly datetimeFormat: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#datetime_format OpsworksHaproxyLayer#datetime_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#datetime_format OpsworksHaproxyLayer#datetime_format}.
 
 ---
 
@@ -1704,7 +1704,7 @@ public readonly encoding: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#encoding OpsworksHaproxyLayer#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#encoding OpsworksHaproxyLayer#encoding}.
 
 ---
 
@@ -1716,7 +1716,7 @@ public readonly fileFingerprintLines: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#file_fingerprint_lines OpsworksHaproxyLayer#file_fingerprint_lines}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#file_fingerprint_lines OpsworksHaproxyLayer#file_fingerprint_lines}.
 
 ---
 
@@ -1728,7 +1728,7 @@ public readonly initialPosition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#initial_position OpsworksHaproxyLayer#initial_position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#initial_position OpsworksHaproxyLayer#initial_position}.
 
 ---
 
@@ -1740,7 +1740,7 @@ public readonly multilineStartPattern: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#multiline_start_pattern OpsworksHaproxyLayer#multiline_start_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#multiline_start_pattern OpsworksHaproxyLayer#multiline_start_pattern}.
 
 ---
 
@@ -1752,7 +1752,7 @@ public readonly timeZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#time_zone OpsworksHaproxyLayer#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#time_zone OpsworksHaproxyLayer#time_zone}.
 
 ---
 
@@ -1777,37 +1777,37 @@ const opsworksHaproxyLayerConfig: opsworksHaproxyLayer.OpsworksHaproxyLayerConfi
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.stackId">stackId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stack_id OpsworksHaproxyLayer#stack_id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsPassword">statsPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_password OpsworksHaproxyLayer#stats_password}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.autoAssignElasticIps">autoAssignElasticIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#auto_assign_elastic_ips OpsworksHaproxyLayer#auto_assign_elastic_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.autoAssignPublicIps">autoAssignPublicIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#auto_assign_public_ips OpsworksHaproxyLayer#auto_assign_public_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.autoHealing">autoHealing</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#auto_healing OpsworksHaproxyLayer#auto_healing}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.stackId">stackId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stack_id OpsworksHaproxyLayer#stack_id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsPassword">statsPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_password OpsworksHaproxyLayer#stats_password}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.autoAssignElasticIps">autoAssignElasticIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#auto_assign_elastic_ips OpsworksHaproxyLayer#auto_assign_elastic_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.autoAssignPublicIps">autoAssignPublicIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#auto_assign_public_ips OpsworksHaproxyLayer#auto_assign_public_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.autoHealing">autoHealing</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#auto_healing OpsworksHaproxyLayer#auto_healing}. |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.cloudwatchConfiguration">cloudwatchConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration">OpsworksHaproxyLayerCloudwatchConfiguration</a></code> | cloudwatch_configuration block. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customConfigureRecipes">customConfigureRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_configure_recipes OpsworksHaproxyLayer#custom_configure_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customDeployRecipes">customDeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_deploy_recipes OpsworksHaproxyLayer#custom_deploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customInstanceProfileArn">customInstanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_instance_profile_arn OpsworksHaproxyLayer#custom_instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customJson">customJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_json OpsworksHaproxyLayer#custom_json}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customSecurityGroupIds">customSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_security_group_ids OpsworksHaproxyLayer#custom_security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customSetupRecipes">customSetupRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_setup_recipes OpsworksHaproxyLayer#custom_setup_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customShutdownRecipes">customShutdownRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_shutdown_recipes OpsworksHaproxyLayer#custom_shutdown_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customUndeployRecipes">customUndeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_undeploy_recipes OpsworksHaproxyLayer#custom_undeploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.drainElbOnShutdown">drainElbOnShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#drain_elb_on_shutdown OpsworksHaproxyLayer#drain_elb_on_shutdown}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customConfigureRecipes">customConfigureRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_configure_recipes OpsworksHaproxyLayer#custom_configure_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customDeployRecipes">customDeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_deploy_recipes OpsworksHaproxyLayer#custom_deploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customInstanceProfileArn">customInstanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_instance_profile_arn OpsworksHaproxyLayer#custom_instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customJson">customJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_json OpsworksHaproxyLayer#custom_json}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customSecurityGroupIds">customSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_security_group_ids OpsworksHaproxyLayer#custom_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customSetupRecipes">customSetupRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_setup_recipes OpsworksHaproxyLayer#custom_setup_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customShutdownRecipes">customShutdownRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_shutdown_recipes OpsworksHaproxyLayer#custom_shutdown_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.customUndeployRecipes">customUndeployRecipes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_undeploy_recipes OpsworksHaproxyLayer#custom_undeploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.drainElbOnShutdown">drainElbOnShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#drain_elb_on_shutdown OpsworksHaproxyLayer#drain_elb_on_shutdown}. |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.ebsVolume">ebsVolume</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume">OpsworksHaproxyLayerEbsVolume</a>[]</code> | ebs_volume block. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.elasticLoadBalancer">elasticLoadBalancer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#elastic_load_balancer OpsworksHaproxyLayer#elastic_load_balancer}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.healthcheckMethod">healthcheckMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#healthcheck_method OpsworksHaproxyLayer#healthcheck_method}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.healthcheckUrl">healthcheckUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#healthcheck_url OpsworksHaproxyLayer#healthcheck_url}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#id OpsworksHaproxyLayer#id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.installUpdatesOnBoot">installUpdatesOnBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#install_updates_on_boot OpsworksHaproxyLayer#install_updates_on_boot}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.instanceShutdownTimeout">instanceShutdownTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#instance_shutdown_timeout OpsworksHaproxyLayer#instance_shutdown_timeout}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.elasticLoadBalancer">elasticLoadBalancer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#elastic_load_balancer OpsworksHaproxyLayer#elastic_load_balancer}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.healthcheckMethod">healthcheckMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#healthcheck_method OpsworksHaproxyLayer#healthcheck_method}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.healthcheckUrl">healthcheckUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#healthcheck_url OpsworksHaproxyLayer#healthcheck_url}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#id OpsworksHaproxyLayer#id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.installUpdatesOnBoot">installUpdatesOnBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#install_updates_on_boot OpsworksHaproxyLayer#install_updates_on_boot}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.instanceShutdownTimeout">instanceShutdownTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#instance_shutdown_timeout OpsworksHaproxyLayer#instance_shutdown_timeout}. |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.loadBasedAutoScaling">loadBasedAutoScaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling">OpsworksHaproxyLayerLoadBasedAutoScaling</a></code> | load_based_auto_scaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#name OpsworksHaproxyLayer#name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsEnabled">statsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_enabled OpsworksHaproxyLayer#stats_enabled}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsUrl">statsUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_url OpsworksHaproxyLayer#stats_url}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsUser">statsUser</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_user OpsworksHaproxyLayer#stats_user}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.systemPackages">systemPackages</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#system_packages OpsworksHaproxyLayer#system_packages}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#tags OpsworksHaproxyLayer#tags}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#tags_all OpsworksHaproxyLayer#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.useEbsOptimizedInstances">useEbsOptimizedInstances</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#use_ebs_optimized_instances OpsworksHaproxyLayer#use_ebs_optimized_instances}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#name OpsworksHaproxyLayer#name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsEnabled">statsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_enabled OpsworksHaproxyLayer#stats_enabled}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsUrl">statsUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_url OpsworksHaproxyLayer#stats_url}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.statsUser">statsUser</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_user OpsworksHaproxyLayer#stats_user}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.systemPackages">systemPackages</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#system_packages OpsworksHaproxyLayer#system_packages}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#tags OpsworksHaproxyLayer#tags}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#tags_all OpsworksHaproxyLayer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.property.useEbsOptimizedInstances">useEbsOptimizedInstances</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#use_ebs_optimized_instances OpsworksHaproxyLayer#use_ebs_optimized_instances}. |
 
 ---
 
@@ -1889,7 +1889,7 @@ public readonly stackId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stack_id OpsworksHaproxyLayer#stack_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stack_id OpsworksHaproxyLayer#stack_id}.
 
 ---
 
@@ -1901,7 +1901,7 @@ public readonly statsPassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_password OpsworksHaproxyLayer#stats_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_password OpsworksHaproxyLayer#stats_password}.
 
 ---
 
@@ -1913,7 +1913,7 @@ public readonly autoAssignElasticIps: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#auto_assign_elastic_ips OpsworksHaproxyLayer#auto_assign_elastic_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#auto_assign_elastic_ips OpsworksHaproxyLayer#auto_assign_elastic_ips}.
 
 ---
 
@@ -1925,7 +1925,7 @@ public readonly autoAssignPublicIps: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#auto_assign_public_ips OpsworksHaproxyLayer#auto_assign_public_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#auto_assign_public_ips OpsworksHaproxyLayer#auto_assign_public_ips}.
 
 ---
 
@@ -1937,7 +1937,7 @@ public readonly autoHealing: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#auto_healing OpsworksHaproxyLayer#auto_healing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#auto_healing OpsworksHaproxyLayer#auto_healing}.
 
 ---
 
@@ -1951,7 +1951,7 @@ public readonly cloudwatchConfiguration: OpsworksHaproxyLayerCloudwatchConfigura
 
 cloudwatch_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#cloudwatch_configuration OpsworksHaproxyLayer#cloudwatch_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#cloudwatch_configuration OpsworksHaproxyLayer#cloudwatch_configuration}
 
 ---
 
@@ -1963,7 +1963,7 @@ public readonly customConfigureRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_configure_recipes OpsworksHaproxyLayer#custom_configure_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_configure_recipes OpsworksHaproxyLayer#custom_configure_recipes}.
 
 ---
 
@@ -1975,7 +1975,7 @@ public readonly customDeployRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_deploy_recipes OpsworksHaproxyLayer#custom_deploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_deploy_recipes OpsworksHaproxyLayer#custom_deploy_recipes}.
 
 ---
 
@@ -1987,7 +1987,7 @@ public readonly customInstanceProfileArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_instance_profile_arn OpsworksHaproxyLayer#custom_instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_instance_profile_arn OpsworksHaproxyLayer#custom_instance_profile_arn}.
 
 ---
 
@@ -1999,7 +1999,7 @@ public readonly customJson: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_json OpsworksHaproxyLayer#custom_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_json OpsworksHaproxyLayer#custom_json}.
 
 ---
 
@@ -2011,7 +2011,7 @@ public readonly customSecurityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_security_group_ids OpsworksHaproxyLayer#custom_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_security_group_ids OpsworksHaproxyLayer#custom_security_group_ids}.
 
 ---
 
@@ -2023,7 +2023,7 @@ public readonly customSetupRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_setup_recipes OpsworksHaproxyLayer#custom_setup_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_setup_recipes OpsworksHaproxyLayer#custom_setup_recipes}.
 
 ---
 
@@ -2035,7 +2035,7 @@ public readonly customShutdownRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_shutdown_recipes OpsworksHaproxyLayer#custom_shutdown_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_shutdown_recipes OpsworksHaproxyLayer#custom_shutdown_recipes}.
 
 ---
 
@@ -2047,7 +2047,7 @@ public readonly customUndeployRecipes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#custom_undeploy_recipes OpsworksHaproxyLayer#custom_undeploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#custom_undeploy_recipes OpsworksHaproxyLayer#custom_undeploy_recipes}.
 
 ---
 
@@ -2059,7 +2059,7 @@ public readonly drainElbOnShutdown: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#drain_elb_on_shutdown OpsworksHaproxyLayer#drain_elb_on_shutdown}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#drain_elb_on_shutdown OpsworksHaproxyLayer#drain_elb_on_shutdown}.
 
 ---
 
@@ -2073,7 +2073,7 @@ public readonly ebsVolume: IResolvable | OpsworksHaproxyLayerEbsVolume[];
 
 ebs_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#ebs_volume OpsworksHaproxyLayer#ebs_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#ebs_volume OpsworksHaproxyLayer#ebs_volume}
 
 ---
 
@@ -2085,7 +2085,7 @@ public readonly elasticLoadBalancer: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#elastic_load_balancer OpsworksHaproxyLayer#elastic_load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#elastic_load_balancer OpsworksHaproxyLayer#elastic_load_balancer}.
 
 ---
 
@@ -2097,7 +2097,7 @@ public readonly healthcheckMethod: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#healthcheck_method OpsworksHaproxyLayer#healthcheck_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#healthcheck_method OpsworksHaproxyLayer#healthcheck_method}.
 
 ---
 
@@ -2109,7 +2109,7 @@ public readonly healthcheckUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#healthcheck_url OpsworksHaproxyLayer#healthcheck_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#healthcheck_url OpsworksHaproxyLayer#healthcheck_url}.
 
 ---
 
@@ -2121,7 +2121,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#id OpsworksHaproxyLayer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#id OpsworksHaproxyLayer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2136,7 +2136,7 @@ public readonly installUpdatesOnBoot: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#install_updates_on_boot OpsworksHaproxyLayer#install_updates_on_boot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#install_updates_on_boot OpsworksHaproxyLayer#install_updates_on_boot}.
 
 ---
 
@@ -2148,7 +2148,7 @@ public readonly instanceShutdownTimeout: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#instance_shutdown_timeout OpsworksHaproxyLayer#instance_shutdown_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#instance_shutdown_timeout OpsworksHaproxyLayer#instance_shutdown_timeout}.
 
 ---
 
@@ -2162,7 +2162,7 @@ public readonly loadBasedAutoScaling: OpsworksHaproxyLayerLoadBasedAutoScaling;
 
 load_based_auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#load_based_auto_scaling OpsworksHaproxyLayer#load_based_auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#load_based_auto_scaling OpsworksHaproxyLayer#load_based_auto_scaling}
 
 ---
 
@@ -2174,7 +2174,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#name OpsworksHaproxyLayer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#name OpsworksHaproxyLayer#name}.
 
 ---
 
@@ -2186,7 +2186,7 @@ public readonly statsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_enabled OpsworksHaproxyLayer#stats_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_enabled OpsworksHaproxyLayer#stats_enabled}.
 
 ---
 
@@ -2198,7 +2198,7 @@ public readonly statsUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_url OpsworksHaproxyLayer#stats_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_url OpsworksHaproxyLayer#stats_url}.
 
 ---
 
@@ -2210,7 +2210,7 @@ public readonly statsUser: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#stats_user OpsworksHaproxyLayer#stats_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#stats_user OpsworksHaproxyLayer#stats_user}.
 
 ---
 
@@ -2222,7 +2222,7 @@ public readonly systemPackages: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#system_packages OpsworksHaproxyLayer#system_packages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#system_packages OpsworksHaproxyLayer#system_packages}.
 
 ---
 
@@ -2234,7 +2234,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#tags OpsworksHaproxyLayer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#tags OpsworksHaproxyLayer#tags}.
 
 ---
 
@@ -2246,7 +2246,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#tags_all OpsworksHaproxyLayer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#tags_all OpsworksHaproxyLayer#tags_all}.
 
 ---
 
@@ -2258,7 +2258,7 @@ public readonly useEbsOptimizedInstances: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#use_ebs_optimized_instances OpsworksHaproxyLayer#use_ebs_optimized_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#use_ebs_optimized_instances OpsworksHaproxyLayer#use_ebs_optimized_instances}.
 
 ---
 
@@ -2276,13 +2276,13 @@ const opsworksHaproxyLayerEbsVolume: opsworksHaproxyLayer.OpsworksHaproxyLayerEb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.mountPoint">mountPoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#mount_point OpsworksHaproxyLayer#mount_point}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.numberOfDisks">numberOfDisks</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#number_of_disks OpsworksHaproxyLayer#number_of_disks}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#size OpsworksHaproxyLayer#size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.encrypted">encrypted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#encrypted OpsworksHaproxyLayer#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#iops OpsworksHaproxyLayer#iops}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.raidLevel">raidLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#raid_level OpsworksHaproxyLayer#raid_level}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#type OpsworksHaproxyLayer#type}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.mountPoint">mountPoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#mount_point OpsworksHaproxyLayer#mount_point}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.numberOfDisks">numberOfDisks</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#number_of_disks OpsworksHaproxyLayer#number_of_disks}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#size OpsworksHaproxyLayer#size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.encrypted">encrypted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#encrypted OpsworksHaproxyLayer#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#iops OpsworksHaproxyLayer#iops}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.raidLevel">raidLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#raid_level OpsworksHaproxyLayer#raid_level}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#type OpsworksHaproxyLayer#type}. |
 
 ---
 
@@ -2294,7 +2294,7 @@ public readonly mountPoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#mount_point OpsworksHaproxyLayer#mount_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#mount_point OpsworksHaproxyLayer#mount_point}.
 
 ---
 
@@ -2306,7 +2306,7 @@ public readonly numberOfDisks: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#number_of_disks OpsworksHaproxyLayer#number_of_disks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#number_of_disks OpsworksHaproxyLayer#number_of_disks}.
 
 ---
 
@@ -2318,7 +2318,7 @@ public readonly size: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#size OpsworksHaproxyLayer#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#size OpsworksHaproxyLayer#size}.
 
 ---
 
@@ -2330,7 +2330,7 @@ public readonly encrypted: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#encrypted OpsworksHaproxyLayer#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#encrypted OpsworksHaproxyLayer#encrypted}.
 
 ---
 
@@ -2342,7 +2342,7 @@ public readonly iops: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#iops OpsworksHaproxyLayer#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#iops OpsworksHaproxyLayer#iops}.
 
 ---
 
@@ -2354,7 +2354,7 @@ public readonly raidLevel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#raid_level OpsworksHaproxyLayer#raid_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#raid_level OpsworksHaproxyLayer#raid_level}.
 
 ---
 
@@ -2366,7 +2366,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#type OpsworksHaproxyLayer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#type OpsworksHaproxyLayer#type}.
 
 ---
 
@@ -2385,7 +2385,7 @@ const opsworksHaproxyLayerLoadBasedAutoScaling: opsworksHaproxyLayer.OpsworksHap
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling.property.downscaling">downscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling">OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling</a></code> | downscaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling.property.enable">enable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#enable OpsworksHaproxyLayer#enable}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling.property.enable">enable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#enable OpsworksHaproxyLayer#enable}. |
 | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling.property.upscaling">upscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling">OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling</a></code> | upscaling block. |
 
 ---
@@ -2400,7 +2400,7 @@ public readonly downscaling: OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling
 
 downscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#downscaling OpsworksHaproxyLayer#downscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#downscaling OpsworksHaproxyLayer#downscaling}
 
 ---
 
@@ -2412,7 +2412,7 @@ public readonly enable: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#enable OpsworksHaproxyLayer#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#enable OpsworksHaproxyLayer#enable}.
 
 ---
 
@@ -2426,7 +2426,7 @@ public readonly upscaling: OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling;
 
 upscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#upscaling OpsworksHaproxyLayer#upscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#upscaling OpsworksHaproxyLayer#upscaling}
 
 ---
 
@@ -2444,13 +2444,13 @@ const opsworksHaproxyLayerLoadBasedAutoScalingDownscaling: opsworksHaproxyLayer.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2462,7 +2462,7 @@ public readonly alarms: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}.
 
 ---
 
@@ -2474,7 +2474,7 @@ public readonly cpuThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}.
 
 ---
 
@@ -2486,7 +2486,7 @@ public readonly ignoreMetricsTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}.
 
 ---
 
@@ -2498,7 +2498,7 @@ public readonly instanceCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}.
 
 ---
 
@@ -2510,7 +2510,7 @@ public readonly loadThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}.
 
 ---
 
@@ -2522,7 +2522,7 @@ public readonly memoryThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}.
 
 ---
 
@@ -2534,7 +2534,7 @@ public readonly thresholdsWaitTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}.
 
 ---
 
@@ -2552,13 +2552,13 @@ const opsworksHaproxyLayerLoadBasedAutoScalingUpscaling: opsworksHaproxyLayer.Op
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.alarms">alarms</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">cpuThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">ignoreMetricsTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.instanceCount">instanceCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">loadThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">memoryThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">thresholdsWaitTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2570,7 +2570,7 @@ public readonly alarms: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#alarms OpsworksHaproxyLayer#alarms}.
 
 ---
 
@@ -2582,7 +2582,7 @@ public readonly cpuThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#cpu_threshold OpsworksHaproxyLayer#cpu_threshold}.
 
 ---
 
@@ -2594,7 +2594,7 @@ public readonly ignoreMetricsTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#ignore_metrics_time OpsworksHaproxyLayer#ignore_metrics_time}.
 
 ---
 
@@ -2606,7 +2606,7 @@ public readonly instanceCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#instance_count OpsworksHaproxyLayer#instance_count}.
 
 ---
 
@@ -2618,7 +2618,7 @@ public readonly loadThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#load_threshold OpsworksHaproxyLayer#load_threshold}.
 
 ---
 
@@ -2630,7 +2630,7 @@ public readonly memoryThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#memory_threshold OpsworksHaproxyLayer#memory_threshold}.
 
 ---
 
@@ -2642,7 +2642,7 @@ public readonly thresholdsWaitTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/opsworks_haproxy_layer#thresholds_wait_time OpsworksHaproxyLayer#thresholds_wait_time}.
 
 ---
 

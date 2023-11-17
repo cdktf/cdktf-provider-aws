@@ -1,6 +1,6 @@
 # `aws_networkfirewall_firewall`
 
-Refer to the Terraform Registory for docs: [`aws_networkfirewall_firewall`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall).
+Refer to the Terraform Registory for docs: [`aws_networkfirewall_firewall`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall).
 
 # `networkfirewallFirewall` Submodule <a name="`networkfirewallFirewall` Submodule" id="@cdktf/provider-aws.networkfirewallFirewall"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_networkfirewall_firewall`](http
 
 ### NetworkfirewallFirewall <a name="NetworkfirewallFirewall" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewall(scope Construct, id *string, config NetworkfirewallFirewallConfig) NetworkfirewallFirewall
 ```
@@ -414,7 +414,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the NetworkfirewallFirewall to
 
 The id of the existing NetworkfirewallFirewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallConfig {
 	Connection: interface{},
@@ -1016,7 +1016,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
 	VpcId: *string,
 	DeleteProtection: interface{},
 	Description: *string,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration,
 	FirewallPolicyChangeProtection: interface{},
 	Id: *string,
 	SubnetChangeProtection: interface{},
@@ -1036,18 +1036,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
 | <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.firewallPolicyArn">FirewallPolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.firewallPolicyArn">FirewallPolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}. |
 | <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.subnetMapping">SubnetMapping</a></code> | <code>interface{}</code> | subnet_mapping block. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.deleteProtection">DeleteProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.deleteProtection">DeleteProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}. |
 | <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration">NetworkfirewallFirewallEncryptionConfiguration</a></code> | encryption_configuration block. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.firewallPolicyChangeProtection">FirewallPolicyChangeProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.subnetChangeProtection">SubnetChangeProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.firewallPolicyChangeProtection">FirewallPolicyChangeProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.subnetChangeProtection">SubnetChangeProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}. |
 
 ---
 
@@ -1129,7 +1129,7 @@ FirewallPolicyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}.
 
 ---
 
@@ -1141,7 +1141,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}.
 
 ---
 
@@ -1155,7 +1155,7 @@ SubnetMapping interface{}
 
 subnet_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
 
 ---
 
@@ -1167,7 +1167,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}.
 
 ---
 
@@ -1179,7 +1179,7 @@ DeleteProtection interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}.
 
 ---
 
@@ -1191,7 +1191,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}.
 
 ---
 
@@ -1205,7 +1205,7 @@ EncryptionConfiguration NetworkfirewallFirewallEncryptionConfiguration
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#encryption_configuration NetworkfirewallFirewall#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#encryption_configuration NetworkfirewallFirewall#encryption_configuration}
 
 ---
 
@@ -1217,7 +1217,7 @@ FirewallPolicyChangeProtection interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1244,7 +1244,7 @@ SubnetChangeProtection interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}.
 
 ---
 
@@ -1256,7 +1256,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}.
 
 ---
 
@@ -1268,7 +1268,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}.
 
 ---
 
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallEncryptionConfiguration {
 	Type: *string,
@@ -1289,8 +1289,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}.
 
 ---
 
@@ -1314,7 +1314,7 @@ KeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}.
 
 ---
 
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallFirewallStatus {
 
@@ -1336,7 +1336,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallFirewallStatusSyncStates {
 
@@ -1349,7 +1349,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachment {
 
@@ -1362,7 +1362,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallSubnetMapping {
 	SubnetId: *string,
@@ -1374,8 +1374,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}. |
 
 ---
 
@@ -1387,7 +1387,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}.
 
 ---
 
@@ -1399,7 +1399,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}.
 
 ---
 
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallEncryptionConfigurationOutputReference
 ```
@@ -1710,7 +1710,7 @@ func InternalValue() NetworkfirewallFirewallEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusList
 ```
@@ -1842,7 +1842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallFirewallStatusOutputReference
 ```
@@ -2120,7 +2120,7 @@ func InternalValue() NetworkfirewallFirewallFirewallStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList
 ```
@@ -2252,7 +2252,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference
 ```
@@ -2541,7 +2541,7 @@ func InternalValue() NetworkfirewallFirewallFirewallStatusSyncStatesAttachment
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesList
 ```
@@ -2673,7 +2673,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference
 ```
@@ -2962,7 +2962,7 @@ func InternalValue() NetworkfirewallFirewallFirewallStatusSyncStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallSubnetMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallSubnetMappingList
 ```
@@ -3105,7 +3105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkfirewallfirewall"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallSubnetMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallSubnetMappingOutputReference
 ```

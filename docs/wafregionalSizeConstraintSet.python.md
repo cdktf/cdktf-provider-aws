@@ -1,6 +1,6 @@
 # `aws_wafregional_size_constraint_set`
 
-Refer to the Terraform Registory for docs: [`aws_wafregional_size_constraint_set`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set).
+Refer to the Terraform Registory for docs: [`aws_wafregional_size_constraint_set`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set).
 
 # `wafregionalSizeConstraintSet` Submodule <a name="`wafregionalSizeConstraintSet` Submodule" id="@cdktf/provider-aws.wafregionalSizeConstraintSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_wafregional_size_constraint_set
 
 ### WafregionalSizeConstraintSet <a name="WafregionalSizeConstraintSet" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set aws_wafregional_size_constraint_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set aws_wafregional_size_constraint_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer"></a>
 
@@ -42,8 +42,8 @@ wafregionalSizeConstraintSet.WafregionalSizeConstraintSet(
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}. |
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer.parameter.sizeConstraints">size_constraints</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints">WafregionalSizeConstraintSetSizeConstraints</a>]]</code> | size_constraints block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 size_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#size_constraints WafregionalSizeConstraintSet#size_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#size_constraints WafregionalSizeConstraintSet#size_constraints}
 
 ---
 
@@ -581,7 +581,7 @@ The construct id used in the generated config for the WafregionalSizeConstraintS
 
 The id of the existing WafregionalSizeConstraintSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,8 +885,8 @@ wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig(
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}. |
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.property.sizeConstraints">size_constraints</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints">WafregionalSizeConstraintSetSizeConstraints</a>]]</code> | size_constraints block. |
 
 ---
@@ -969,7 +969,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#name WafregionalSizeConstraintSet#name}.
 
 ---
 
@@ -981,7 +981,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#id WafregionalSizeConstraintSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -998,7 +998,7 @@ size_constraints: typing.Union[IResolvable, typing.List[WafregionalSizeConstrain
 
 size_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#size_constraints WafregionalSizeConstraintSet#size_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#size_constraints WafregionalSizeConstraintSet#size_constraints}
 
 ---
 
@@ -1021,10 +1021,10 @@ wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.property.comparisonOperator">comparison_operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#comparison_operator WafregionalSizeConstraintSet#comparison_operator}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.property.comparisonOperator">comparison_operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#comparison_operator WafregionalSizeConstraintSet#comparison_operator}. |
 | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.property.fieldToMatch">field_to_match</a></code> | <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch">WafregionalSizeConstraintSetSizeConstraintsFieldToMatch</a></code> | field_to_match block. |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.property.size">size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#size WafregionalSizeConstraintSet#size}. |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.property.textTransformation">text_transformation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#text_transformation WafregionalSizeConstraintSet#text_transformation}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.property.size">size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#size WafregionalSizeConstraintSet#size}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.property.textTransformation">text_transformation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#text_transformation WafregionalSizeConstraintSet#text_transformation}. |
 
 ---
 
@@ -1036,7 +1036,7 @@ comparison_operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#comparison_operator WafregionalSizeConstraintSet#comparison_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#comparison_operator WafregionalSizeConstraintSet#comparison_operator}.
 
 ---
 
@@ -1050,7 +1050,7 @@ field_to_match: WafregionalSizeConstraintSetSizeConstraintsFieldToMatch
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#field_to_match WafregionalSizeConstraintSet#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#field_to_match WafregionalSizeConstraintSet#field_to_match}
 
 ---
 
@@ -1062,7 +1062,7 @@ size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#size WafregionalSizeConstraintSet#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#size WafregionalSizeConstraintSet#size}.
 
 ---
 
@@ -1074,7 +1074,7 @@ text_transformation: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#text_transformation WafregionalSizeConstraintSet#text_transformation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#text_transformation WafregionalSizeConstraintSet#text_transformation}.
 
 ---
 
@@ -1095,8 +1095,8 @@ wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#type WafregionalSizeConstraintSet#type}. |
-| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch.property.data">data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#data WafregionalSizeConstraintSet#data}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#type WafregionalSizeConstraintSet#type}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch.property.data">data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#data WafregionalSizeConstraintSet#data}. |
 
 ---
 
@@ -1108,7 +1108,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#type WafregionalSizeConstraintSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#type WafregionalSizeConstraintSet#type}.
 
 ---
 
@@ -1120,7 +1120,7 @@ data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#data WafregionalSizeConstraintSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#data WafregionalSizeConstraintSet#data}.
 
 ---
 
@@ -1864,7 +1864,7 @@ def put_field_to_match(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#type WafregionalSizeConstraintSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#type WafregionalSizeConstraintSet#type}.
 
 ---
 
@@ -1872,7 +1872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/wafregional_size_constraint_set#data WafregionalSizeConstraintSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_size_constraint_set#data WafregionalSizeConstraintSet#data}.
 
 ---
 

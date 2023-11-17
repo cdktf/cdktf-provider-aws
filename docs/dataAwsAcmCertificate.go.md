@@ -1,6 +1,6 @@
 # `data_aws_acm_certificate`
 
-Refer to the Terraform Registory for docs: [`data_aws_acm_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate).
+Refer to the Terraform Registory for docs: [`data_aws_acm_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate).
 
 # `dataAwsAcmCertificate` Submodule <a name="`dataAwsAcmCertificate` Submodule" id="@cdktf/provider-aws.dataAwsAcmCertificate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_acm_certificate`](https://
 
 ### DataAwsAcmCertificate <a name="DataAwsAcmCertificate" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate aws_acm_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate aws_acm_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
 
 dataawsacmcertificate.NewDataAwsAcmCertificate(scope Construct, id *string, config DataAwsAcmCertificateConfig) DataAwsAcmCertificate
 ```
@@ -313,7 +313,7 @@ func ResetTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
 
 dataawsacmcertificate.DataAwsAcmCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
 
 dataawsacmcertificate.DataAwsAcmCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataawsacmcertificate.DataAwsAcmCertificate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
 
 dataawsacmcertificate.DataAwsAcmCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ dataawsacmcertificate.DataAwsAcmCertificate_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
 
 dataawsacmcertificate.DataAwsAcmCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -402,7 +402,7 @@ The construct id used in the generated config for the DataAwsAcmCertificate to i
 
 The id of the existing DataAwsAcmCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,7 +778,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
 
 &dataawsacmcertificate.DataAwsAcmCertificateConfig {
 	Connection: interface{},
@@ -809,13 +809,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsacmcertificate"
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#domain DataAwsAcmCertificate#domain}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#id DataAwsAcmCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.keyTypes">KeyTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#key_types DataAwsAcmCertificate#key_types}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.mostRecent">MostRecent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#most_recent DataAwsAcmCertificate#most_recent}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.statuses">Statuses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#statuses DataAwsAcmCertificate#statuses}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#tags DataAwsAcmCertificate#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#types DataAwsAcmCertificate#types}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#domain DataAwsAcmCertificate#domain}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#id DataAwsAcmCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.keyTypes">KeyTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#key_types DataAwsAcmCertificate#key_types}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.mostRecent">MostRecent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#most_recent DataAwsAcmCertificate#most_recent}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.statuses">Statuses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#statuses DataAwsAcmCertificate#statuses}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#tags DataAwsAcmCertificate#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#types DataAwsAcmCertificate#types}. |
 
 ---
 
@@ -897,7 +897,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#domain DataAwsAcmCertificate#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#domain DataAwsAcmCertificate#domain}.
 
 ---
 
@@ -909,7 +909,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#id DataAwsAcmCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#id DataAwsAcmCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ KeyTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#key_types DataAwsAcmCertificate#key_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#key_types DataAwsAcmCertificate#key_types}.
 
 ---
 
@@ -936,7 +936,7 @@ MostRecent interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#most_recent DataAwsAcmCertificate#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#most_recent DataAwsAcmCertificate#most_recent}.
 
 ---
 
@@ -948,7 +948,7 @@ Statuses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#statuses DataAwsAcmCertificate#statuses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#statuses DataAwsAcmCertificate#statuses}.
 
 ---
 
@@ -960,7 +960,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#tags DataAwsAcmCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#tags DataAwsAcmCertificate#tags}.
 
 ---
 
@@ -972,7 +972,7 @@ Types *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/acm_certificate#types DataAwsAcmCertificate#types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/acm_certificate#types DataAwsAcmCertificate#types}.
 
 ---
 

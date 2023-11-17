@@ -1,6 +1,6 @@
 # `aws_elasticache_user`
 
-Refer to the Terraform Registory for docs: [`aws_elasticache_user`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user).
+Refer to the Terraform Registory for docs: [`aws_elasticache_user`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user).
 
 # `elasticacheUser` Submodule <a name="`elasticacheUser` Submodule" id="@cdktf/provider-aws.elasticacheUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_elasticache_user`](https://regi
 
 ### ElasticacheUser <a name="ElasticacheUser" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user aws_elasticache_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user aws_elasticache_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer"></a>
 
@@ -50,16 +50,16 @@ elasticacheUser.ElasticacheUser(
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.accessString">access_string</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.accessString">access_string</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}. |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.authenticationMode">authentication_mode</a></code> | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserAuthenticationMode">ElasticacheUserAuthenticationMode</a></code> | authentication_mode block. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#id ElasticacheUser#id}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.noPasswordRequired">no_password_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.passwords">passwords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#id ElasticacheUser#id}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.noPasswordRequired">no_password_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.passwords">passwords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUser.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts">ElasticacheUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 authentication_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#id ElasticacheUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#id ElasticacheUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}.
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}.
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
 
 ---
 
@@ -542,7 +542,7 @@ def put_authentication_mode(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#type ElasticacheUser#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#type ElasticacheUser#type}.
 
 ---
 
@@ -550,7 +550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
 
 ---
 
@@ -560,6 +560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 def put_timeouts(
   create: str = None,
   delete: str = None,
+  read: str = None,
   update: str = None
 ) -> None
 ```
@@ -568,7 +569,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#create ElasticacheUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#create ElasticacheUser#create}.
 
 ---
 
@@ -576,7 +577,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}.
+
+---
+
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUser.putTimeouts.parameter.read"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#read ElasticacheUser#read}.
 
 ---
 
@@ -584,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#update ElasticacheUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#update ElasticacheUser#update}.
 
 ---
 
@@ -744,7 +753,7 @@ The construct id used in the generated config for the ElasticacheUser to import.
 
 The id of the existing ElasticacheUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1209,8 +1218,8 @@ elasticacheUser.ElasticacheUserAuthenticationMode(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserAuthenticationMode.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#type ElasticacheUser#type}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserAuthenticationMode.property.passwords">passwords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserAuthenticationMode.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#type ElasticacheUser#type}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserAuthenticationMode.property.passwords">passwords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}. |
 
 ---
 
@@ -1222,7 +1231,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#type ElasticacheUser#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#type ElasticacheUser#type}.
 
 ---
 
@@ -1234,7 +1243,7 @@ passwords: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
 
 ---
 
@@ -1278,16 +1287,16 @@ elasticacheUser.ElasticacheUserConfig(
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.accessString">access_string</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.accessString">access_string</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}. |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.authenticationMode">authentication_mode</a></code> | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserAuthenticationMode">ElasticacheUserAuthenticationMode</a></code> | authentication_mode block. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#id ElasticacheUser#id}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.noPasswordRequired">no_password_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.passwords">passwords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#id ElasticacheUser#id}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.noPasswordRequired">no_password_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.passwords">passwords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts">ElasticacheUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1370,7 +1379,7 @@ access_string: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}.
 
 ---
 
@@ -1382,7 +1391,7 @@ engine: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}.
 
 ---
 
@@ -1394,7 +1403,7 @@ user_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}.
 
 ---
 
@@ -1406,7 +1415,7 @@ user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}.
 
 ---
 
@@ -1420,7 +1429,7 @@ authentication_mode: ElasticacheUserAuthenticationMode
 
 authentication_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
 
 ---
 
@@ -1432,7 +1441,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#id ElasticacheUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#id ElasticacheUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1447,7 +1456,7 @@ no_password_required: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}.
 
 ---
 
@@ -1459,7 +1468,7 @@ passwords: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
 
 ---
 
@@ -1471,7 +1480,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}.
 
 ---
 
@@ -1483,7 +1492,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}.
 
 ---
 
@@ -1497,7 +1506,7 @@ timeouts: ElasticacheUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
 
 ---
 
@@ -1511,6 +1520,7 @@ from cdktf_cdktf_provider_aws import elasticache_user
 elasticacheUser.ElasticacheUserTimeouts(
   create: str = None,
   delete: str = None,
+  read: str = None,
   update: str = None
 )
 ```
@@ -1519,9 +1529,10 @@ elasticacheUser.ElasticacheUserTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#create ElasticacheUser#create}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#update ElasticacheUser#update}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#create ElasticacheUser#create}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#read ElasticacheUser#read}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#update ElasticacheUser#update}. |
 
 ---
 
@@ -1533,7 +1544,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#create ElasticacheUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#create ElasticacheUser#create}.
 
 ---
 
@@ -1545,7 +1556,19 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts.property.read"></a>
+
+```python
+read: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#read ElasticacheUser#read}.
 
 ---
 
@@ -1557,7 +1580,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_user#update ElasticacheUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_user#update ElasticacheUser#update}.
 
 ---
 
@@ -1954,6 +1977,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
@@ -2142,6 +2166,12 @@ def reset_create() -> None
 def reset_delete() -> None
 ```
 
+##### `reset_read` <a name="reset_read" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.resetRead"></a>
+
+```python
+def reset_read() -> None
+```
+
 ##### `reset_update` <a name="reset_update" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
@@ -2157,9 +2187,11 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeouts">ElasticacheUserTimeouts</a>]</code> | *No description.* |
 
@@ -2209,6 +2241,16 @@ delete_input: str
 
 ---
 
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.readInput"></a>
+
+```python
+read_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
@@ -2233,6 +2275,16 @@ create: str
 
 ```python
 delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.property.read"></a>
+
+```python
+read: str
 ```
 
 - *Type:* str
