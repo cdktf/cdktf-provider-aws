@@ -1,6 +1,6 @@
 # `data_aws_sfn_activity`
 
-Refer to the Terraform Registory for docs: [`data_aws_sfn_activity`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity).
+Refer to the Terraform Registory for docs: [`data_aws_sfn_activity`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity).
 
 # `dataAwsSfnActivity` Submodule <a name="`dataAwsSfnActivity` Submodule" id="@cdktf/provider-aws.dataAwsSfnActivity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_sfn_activity`](https://reg
 
 ### DataAwsSfnActivity <a name="DataAwsSfnActivity" id="@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity aws_sfn_activity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity aws_sfn_activity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity.Initializer"></a>
 
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataAwsSfnActivity to impo
 
 The id of the existing DataAwsSfnActivity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,9 +663,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssfnactivity"
 | <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}. |
 
 ---
 
@@ -747,7 +747,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}.
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_detective_organization_admin_account`
 
-Refer to the Terraform Registory for docs: [`aws_detective_organization_admin_account`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/detective_organization_admin_account).
+Refer to the Terraform Registory for docs: [`aws_detective_organization_admin_account`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/detective_organization_admin_account).
 
 # `detectiveOrganizationAdminAccount` Submodule <a name="`detectiveOrganizationAdminAccount` Submodule" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_detective_organization_admin_ac
 
 ### DetectiveOrganizationAdminAccount <a name="DetectiveOrganizationAdminAccount" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccount.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DetectiveOrganizationAdmin
 
 The id of the existing DetectiveOrganizationAdminAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/detective_organization_admin_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/detective_organization_admin_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -698,8 +698,8 @@ new DetectiveOrganizationAdminAccountConfig {
 | <code><a href="#@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/detective_organization_admin_account#account_id DetectiveOrganizationAdminAccount#account_id}. |
-| <code><a href="#@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/detective_organization_admin_account#id DetectiveOrganizationAdminAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/detective_organization_admin_account#account_id DetectiveOrganizationAdminAccount#account_id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/detective_organization_admin_account#id DetectiveOrganizationAdminAccount#id}. |
 
 ---
 
@@ -781,7 +781,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/detective_organization_admin_account#account_id DetectiveOrganizationAdminAccount#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/detective_organization_admin_account#account_id DetectiveOrganizationAdminAccount#account_id}.
 
 ---
 
@@ -793,7 +793,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/detective_organization_admin_account#id DetectiveOrganizationAdminAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/detective_organization_admin_account#id DetectiveOrganizationAdminAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

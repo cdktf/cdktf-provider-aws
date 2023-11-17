@@ -1,6 +1,6 @@
 # `aws_appmesh_virtual_service`
 
-Refer to the Terraform Registory for docs: [`aws_appmesh_virtual_service`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service).
+Refer to the Terraform Registory for docs: [`aws_appmesh_virtual_service`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service).
 
 # `appmeshVirtualService` Submodule <a name="`appmeshVirtualService` Submodule" id="@cdktf/provider-aws.appmeshVirtualService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_appmesh_virtual_service`](https
 
 ### AppmeshVirtualService <a name="AppmeshVirtualService" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService.Initializer"></a>
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the AppmeshVirtualService to i
 
 The id of the existing AppmeshVirtualService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,13 +876,13 @@ const appmeshVirtualServiceConfig: appmeshVirtualService.AppmeshVirtualServiceCo
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshName">meshName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshName">meshName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpec">AppmeshVirtualServiceSpec</a></code> | spec block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshOwner">meshOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshOwner">meshOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}. |
 
 ---
 
@@ -964,7 +964,7 @@ public readonly meshName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}.
 
 ---
 
@@ -976,7 +976,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly spec: AppmeshVirtualServiceSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#spec AppmeshVirtualService#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#spec AppmeshVirtualService#spec}
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1017,7 +1017,7 @@ public readonly meshOwner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}.
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}.
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly provider: AppmeshVirtualServiceSpecProvider;
 
 provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#provider AppmeshVirtualService#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#provider AppmeshVirtualService#provider}
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly virtualNode: AppmeshVirtualServiceSpecProviderVirtualNode;
 
 virtual_node block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#virtual_node AppmeshVirtualService#virtual_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#virtual_node AppmeshVirtualService#virtual_node}
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly virtualRouter: AppmeshVirtualServiceSpecProviderVirtualRouter;
 
 virtual_router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#virtual_router AppmeshVirtualService#virtual_router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#virtual_router AppmeshVirtualService#virtual_router}
 
 ---
 
@@ -1138,7 +1138,7 @@ const appmeshVirtualServiceSpecProviderVirtualNode: appmeshVirtualService.Appmes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode.property.virtualNodeName">virtualNodeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode.property.virtualNodeName">virtualNodeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly virtualNodeName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}.
 
 ---
 
@@ -1168,7 +1168,7 @@ const appmeshVirtualServiceSpecProviderVirtualRouter: appmeshVirtualService.Appm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter.property.virtualRouterName">virtualRouterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter.property.virtualRouterName">virtualRouterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}. |
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly virtualRouterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_ec2_transit_gateway_route_table`
 
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_route_table`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table).
+Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_route_table`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table).
 
 # `ec2TransitGatewayRouteTable` Submodule <a name="`ec2TransitGatewayRouteTable` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_route_table
 
 ### Ec2TransitGatewayRouteTable <a name="Ec2TransitGatewayRouteTable" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the Ec2TransitGatewayRouteTabl
 
 The id of the existing Ec2TransitGatewayRouteTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,10 +791,10 @@ new Ec2TransitGatewayRouteTableConfig {
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#id Ec2TransitGatewayRouteTable#id}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#tags Ec2TransitGatewayRouteTable#tags}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#tags_all Ec2TransitGatewayRouteTable#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#id Ec2TransitGatewayRouteTable#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#tags Ec2TransitGatewayRouteTable#tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#tags_all Ec2TransitGatewayRouteTable#tags_all}. |
 
 ---
 
@@ -876,7 +876,7 @@ public string TransitGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}.
 
 ---
 
@@ -888,7 +888,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#id Ec2TransitGatewayRouteTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#id Ec2TransitGatewayRouteTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -903,7 +903,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#tags Ec2TransitGatewayRouteTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#tags Ec2TransitGatewayRouteTable#tags}.
 
 ---
 
@@ -915,7 +915,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ec2_transit_gateway_route_table#tags_all Ec2TransitGatewayRouteTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ec2_transit_gateway_route_table#tags_all Ec2TransitGatewayRouteTable#tags_all}.
 
 ---
 

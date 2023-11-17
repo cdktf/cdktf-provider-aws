@@ -1,6 +1,6 @@
 # `aws_lightsail_certificate`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate).
+Refer to the Terraform Registory for docs: [`aws_lightsail_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate).
 
 # `lightsailCertificate` Submodule <a name="`lightsailCertificate` Submodule" id="@cdktf/provider-aws.lightsailCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_certificate`](https:/
 
 ### LightsailCertificate <a name="LightsailCertificate" id="@cdktf/provider-aws.lightsailCertificate.LightsailCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate aws_lightsail_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate aws_lightsail_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailCertificate.LightsailCertificate.Initializer"></a>
 
@@ -456,7 +456,7 @@ The construct id used in the generated config for the LightsailCertificate to im
 
 The id of the existing LightsailCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,12 +851,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcertificate"
 | <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}. |
-| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}. |
-| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}. |
+| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}. |
+| <code><a href="#@cdktf/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}. |
 
 ---
 
@@ -938,7 +938,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}.
 
 ---
 
@@ -950,7 +950,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}.
 
 ---
 
@@ -962,7 +962,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -977,7 +977,7 @@ SubjectAlternativeNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}.
 
 ---
 
@@ -989,7 +989,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}.
 
 ---
 
@@ -1001,7 +1001,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}.
 
 ---
 

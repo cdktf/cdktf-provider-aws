@@ -1,6 +1,6 @@
 # `data_aws_lex_bot_alias`
 
-Refer to the Terraform Registory for docs: [`data_aws_lex_bot_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias).
+Refer to the Terraform Registory for docs: [`data_aws_lex_bot_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias).
 
 # `dataAwsLexBotAlias` Submodule <a name="`dataAwsLexBotAlias` Submodule" id="@cdktf/provider-aws.dataAwsLexBotAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_lex_bot_alias`](https://re
 
 ### DataAwsLexBotAlias <a name="DataAwsLexBotAlias" id="@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias aws_lex_bot_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias aws_lex_bot_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsLexBotAlias to impo
 
 The id of the existing DataAwsLexBotAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -704,9 +704,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexbotalias"
 | <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.botName">BotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias#bot_name DataAwsLexBotAlias#bot_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias#name DataAwsLexBotAlias#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias#id DataAwsLexBotAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.botName">BotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias#bot_name DataAwsLexBotAlias#bot_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias#name DataAwsLexBotAlias#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias#id DataAwsLexBotAlias#id}. |
 
 ---
 
@@ -788,7 +788,7 @@ BotName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias#bot_name DataAwsLexBotAlias#bot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias#bot_name DataAwsLexBotAlias#bot_name}.
 
 ---
 
@@ -800,7 +800,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias#name DataAwsLexBotAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias#name DataAwsLexBotAlias#name}.
 
 ---
 
@@ -812,7 +812,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/lex_bot_alias#id DataAwsLexBotAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/lex_bot_alias#id DataAwsLexBotAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

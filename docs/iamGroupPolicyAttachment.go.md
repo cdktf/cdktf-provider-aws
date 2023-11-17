@@ -1,6 +1,6 @@
 # `aws_iam_group_policy_attachment`
 
-Refer to the Terraform Registory for docs: [`aws_iam_group_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment).
+Refer to the Terraform Registory for docs: [`aws_iam_group_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment).
 
 # `iamGroupPolicyAttachment` Submodule <a name="`iamGroupPolicyAttachment` Submodule" id="@cdktf/provider-aws.iamGroupPolicyAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iam_group_policy_attachment`](h
 
 ### IamGroupPolicyAttachment <a name="IamGroupPolicyAttachment" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the IamGroupPolicyAttachment t
 
 The id of the existing IamGroupPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,9 +721,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamgrouppolicyattachment"
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.group">Group</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment#group IamGroupPolicyAttachment#group}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.policyArn">PolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment#policy_arn IamGroupPolicyAttachment#policy_arn}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment#id IamGroupPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.group">Group</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment#group IamGroupPolicyAttachment#group}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.policyArn">PolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment#policy_arn IamGroupPolicyAttachment#policy_arn}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment#id IamGroupPolicyAttachment#id}. |
 
 ---
 
@@ -805,7 +805,7 @@ Group *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment#group IamGroupPolicyAttachment#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment#group IamGroupPolicyAttachment#group}.
 
 ---
 
@@ -817,7 +817,7 @@ PolicyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment#policy_arn IamGroupPolicyAttachment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment#policy_arn IamGroupPolicyAttachment#policy_arn}.
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_group_policy_attachment#id IamGroupPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iam_group_policy_attachment#id IamGroupPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

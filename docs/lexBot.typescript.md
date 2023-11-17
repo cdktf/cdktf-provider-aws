@@ -1,6 +1,6 @@
 # `aws_lex_bot`
 
-Refer to the Terraform Registory for docs: [`aws_lex_bot`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot).
+Refer to the Terraform Registory for docs: [`aws_lex_bot`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot).
 
 # `lexBot` Submodule <a name="`lexBot` Submodule" id="@cdktf/provider-aws.lexBot"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lex_bot`](https://registry.terr
 
 ### LexBot <a name="LexBot" id="@cdktf/provider-aws.lexBot.LexBot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot aws_lex_bot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot aws_lex_bot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBot.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the LexBot to import.
 
 The id of the existing LexBot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1196,7 +1196,7 @@ const lexBotAbortStatement: lexBot.LexBotAbortStatement = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly message: IResolvable | LexBotAbortStatementMessage[];
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#message LexBot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#message LexBot#message}
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#response_card LexBot#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#response_card LexBot#response_card}.
 
 ---
 
@@ -1240,9 +1240,9 @@ const lexBotAbortStatementMessage: lexBot.LexBotAbortStatementMessage = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content LexBot#content}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content LexBot#content}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
 
 ---
 
@@ -1254,7 +1254,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content LexBot#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content LexBot#content}.
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content_type LexBot#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content_type LexBot#content_type}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#group_number LexBot#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#group_number LexBot#group_number}.
 
 ---
 
@@ -1296,9 +1296,9 @@ const lexBotClarificationPrompt: lexBot.LexBotClarificationPrompt = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly maxAttempts: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public readonly message: IResolvable | LexBotClarificationPromptMessage[];
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#message LexBot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#message LexBot#message}
 
 ---
 
@@ -1336,7 +1336,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#response_card LexBot#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#response_card LexBot#response_card}.
 
 ---
 
@@ -1354,9 +1354,9 @@ const lexBotClarificationPromptMessage: lexBot.LexBotClarificationPromptMessage 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content LexBot#content}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content LexBot#content}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
 
 ---
 
@@ -1368,7 +1368,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content LexBot#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content LexBot#content}.
 
 ---
 
@@ -1380,7 +1380,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#content_type LexBot#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#content_type LexBot#content_type}.
 
 ---
 
@@ -1392,7 +1392,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#group_number LexBot#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#group_number LexBot#group_number}.
 
 ---
 
@@ -1418,21 +1418,21 @@ const lexBotConfig: lexBot.LexBotConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.abortStatement">abortStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | abort_statement block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.childDirected">childDirected</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.childDirected">childDirected</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.intent">intent</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]</code> | intent block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#name LexBot#name}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#name LexBot#name}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.clarificationPrompt">clarificationPrompt</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | clarification_prompt block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.createVersion">createVersion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#description LexBot#description}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.detectSentiment">detectSentiment</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements">enableModelImprovements</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#id LexBot#id}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.idleSessionTtlInSeconds">idleSessionTtlInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.locale">locale</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#locale LexBot#locale}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.nluIntentConfidenceThreshold">nluIntentConfidenceThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.processBehavior">processBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.createVersion">createVersion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#description LexBot#description}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.detectSentiment">detectSentiment</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements">enableModelImprovements</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#id LexBot#id}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.idleSessionTtlInSeconds">idleSessionTtlInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.locale">locale</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#locale LexBot#locale}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.nluIntentConfidenceThreshold">nluIntentConfidenceThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.processBehavior">processBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.voiceId">voiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#voice_id LexBot#voice_id}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.voiceId">voiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#voice_id LexBot#voice_id}. |
 
 ---
 
@@ -1516,7 +1516,7 @@ public readonly abortStatement: LexBotAbortStatement;
 
 abort_statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
 
 ---
 
@@ -1528,7 +1528,7 @@ public readonly childDirected: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
 
 ---
 
@@ -1542,7 +1542,7 @@ public readonly intent: IResolvable | LexBotIntent[];
 
 intent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#intent LexBot#intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#intent LexBot#intent}
 
 ---
 
@@ -1554,7 +1554,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#name LexBot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#name LexBot#name}.
 
 ---
 
@@ -1568,7 +1568,7 @@ public readonly clarificationPrompt: LexBotClarificationPrompt;
 
 clarification_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
 
 ---
 
@@ -1580,7 +1580,7 @@ public readonly createVersion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#create_version LexBot#create_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#create_version LexBot#create_version}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#description LexBot#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#description LexBot#description}.
 
 ---
 
@@ -1604,7 +1604,7 @@ public readonly detectSentiment: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly enableModelImprovements: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
 
 ---
 
@@ -1628,7 +1628,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#id LexBot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#id LexBot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1643,7 +1643,7 @@ public readonly idleSessionTtlInSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}.
 
 ---
 
@@ -1655,7 +1655,7 @@ public readonly locale: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#locale LexBot#locale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#locale LexBot#locale}.
 
 ---
 
@@ -1667,7 +1667,7 @@ public readonly nluIntentConfidenceThreshold: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}.
 
 ---
 
@@ -1679,7 +1679,7 @@ public readonly processBehavior: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}.
 
 ---
 
@@ -1693,7 +1693,7 @@ public readonly timeouts: LexBotTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#timeouts LexBot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#timeouts LexBot#timeouts}
 
 ---
 
@@ -1705,7 +1705,7 @@ public readonly voiceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#voice_id LexBot#voice_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#voice_id LexBot#voice_id}.
 
 ---
 
@@ -1723,8 +1723,8 @@ const lexBotIntent: lexBot.LexBotIntent = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntent.property.intentName">intentName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#intent_name LexBot#intent_name}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntent.property.intentVersion">intentVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#intent_version LexBot#intent_version}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntent.property.intentName">intentName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#intent_name LexBot#intent_name}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntent.property.intentVersion">intentVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#intent_version LexBot#intent_version}. |
 
 ---
 
@@ -1736,7 +1736,7 @@ public readonly intentName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#intent_name LexBot#intent_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#intent_name LexBot#intent_name}.
 
 ---
 
@@ -1748,7 +1748,7 @@ public readonly intentVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#intent_version LexBot#intent_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#intent_version LexBot#intent_version}.
 
 ---
 
@@ -1766,9 +1766,9 @@ const lexBotTimeouts: lexBot.LexBotTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#create LexBot#create}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#delete LexBot#delete}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#update LexBot#update}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#create LexBot#create}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#delete LexBot#delete}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#update LexBot#update}. |
 
 ---
 
@@ -1780,7 +1780,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#create LexBot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#create LexBot#create}.
 
 ---
 
@@ -1792,7 +1792,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#delete LexBot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#delete LexBot#delete}.
 
 ---
 
@@ -1804,7 +1804,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lex_bot#update LexBot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lex_bot#update LexBot#update}.
 
 ---
 

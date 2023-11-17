@@ -1,6 +1,6 @@
 # `aws_vpc`
 
-Refer to the Terraform Registory for docs: [`aws_vpc`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc).
+Refer to the Terraform Registory for docs: [`aws_vpc`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc).
 
 # `vpc` Submodule <a name="`vpc` Submodule" id="@cdktf/provider-aws.vpc"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_vpc`](https://registry.terrafor
 
 ### Vpc <a name="Vpc" id="@cdktf/provider-aws.vpc.Vpc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc aws_vpc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc aws_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpc.Vpc.Initializer"></a>
 
@@ -526,7 +526,7 @@ The construct id used in the generated config for the Vpc to import.
 
 The id of the existing Vpc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1160,21 +1160,21 @@ const vpcConfig: vpc.VpcConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.assignGeneratedIpv6CidrBlock">assignGeneratedIpv6CidrBlock</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#cidr_block Vpc#cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsHostnames">enableDnsHostnames</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsSupport">enableDnsSupport</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableNetworkAddressUsageMetrics">enableNetworkAddressUsageMetrics</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#id Vpc#id}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.instanceTenancy">instanceTenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4IpamPoolId">ipv4IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4NetmaskLength">ipv4NetmaskLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlockNetworkBorderGroup">ipv6CidrBlockNetworkBorderGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6IpamPoolId">ipv6IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6NetmaskLength">ipv6NetmaskLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#tags Vpc#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#tags_all Vpc#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.assignGeneratedIpv6CidrBlock">assignGeneratedIpv6CidrBlock</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#cidr_block Vpc#cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsHostnames">enableDnsHostnames</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsSupport">enableDnsSupport</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableNetworkAddressUsageMetrics">enableNetworkAddressUsageMetrics</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#id Vpc#id}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.instanceTenancy">instanceTenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4IpamPoolId">ipv4IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4NetmaskLength">ipv4NetmaskLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlockNetworkBorderGroup">ipv6CidrBlockNetworkBorderGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6IpamPoolId">ipv6IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6NetmaskLength">ipv6NetmaskLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#tags Vpc#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#tags_all Vpc#tags_all}. |
 
 ---
 
@@ -1256,7 +1256,7 @@ public readonly assignGeneratedIpv6CidrBlock: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}.
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly cidrBlock: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#cidr_block Vpc#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#cidr_block Vpc#cidr_block}.
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly enableDnsHostnames: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}.
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly enableDnsSupport: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}.
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly enableNetworkAddressUsageMetrics: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}.
 
 ---
 
@@ -1316,7 +1316,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#id Vpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#id Vpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1331,7 +1331,7 @@ public readonly instanceTenancy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}.
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly ipv4IpamPoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly ipv4NetmaskLength: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}.
 
 ---
 
@@ -1367,7 +1367,7 @@ public readonly ipv6CidrBlock: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}.
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly ipv6CidrBlockNetworkBorderGroup: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}.
 
 ---
 
@@ -1391,7 +1391,7 @@ public readonly ipv6IpamPoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly ipv6NetmaskLength: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}.
 
 ---
 
@@ -1415,7 +1415,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#tags Vpc#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#tags Vpc#tags}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc#tags_all Vpc#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc#tags_all Vpc#tags_all}.
 
 ---
 

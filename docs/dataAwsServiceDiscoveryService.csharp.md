@@ -1,6 +1,6 @@
 # `data_aws_service_discovery_service`
 
-Refer to the Terraform Registory for docs: [`data_aws_service_discovery_service`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service).
+Refer to the Terraform Registory for docs: [`data_aws_service_discovery_service`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service).
 
 # `dataAwsServiceDiscoveryService` Submodule <a name="`dataAwsServiceDiscoveryService` Submodule" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_service_discovery_service`
 
 ### DataAwsServiceDiscoveryService <a name="DataAwsServiceDiscoveryService" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.Initializer"></a>
 
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataAwsServiceDiscoverySer
 
 The id of the existing DataAwsServiceDiscoveryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,11 +753,11 @@ new DataAwsServiceDiscoveryServiceConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.namespaceId">NamespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#tags_all DataAwsServiceDiscoveryService#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.namespaceId">NamespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#tags_all DataAwsServiceDiscoveryService#tags_all}. |
 
 ---
 
@@ -839,7 +839,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}.
 
 ---
 
@@ -851,7 +851,7 @@ public string NamespaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}.
 
 ---
 
@@ -863,7 +863,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -878,7 +878,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}.
 
 ---
 
@@ -890,7 +890,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service#tags_all DataAwsServiceDiscoveryService#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service#tags_all DataAwsServiceDiscoveryService#tags_all}.
 
 ---
 

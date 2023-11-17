@@ -1,6 +1,6 @@
 # `aws_ses_receipt_rule`
 
-Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule).
+Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule).
 
 # `sesReceiptRule` Submodule <a name="`sesReceiptRule` Submodule" id="@cdktf/provider-aws.sesReceiptRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule`](https://regi
 
 ### SesReceiptRule <a name="SesReceiptRule" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRule.Initializer"></a>
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the SesReceiptRule to import.
 
 The id of the existing SesReceiptRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1153,9 +1153,9 @@ const sesReceiptRuleAddHeaderAction: sesReceiptRule.SesReceiptRuleAddHeaderActio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction.property.headerName">headerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#header_name SesReceiptRule#header_name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction.property.headerValue">headerValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#header_value SesReceiptRule#header_value}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction.property.headerName">headerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#header_name SesReceiptRule#header_name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction.property.headerValue">headerValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#header_value SesReceiptRule#header_value}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly headerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#header_name SesReceiptRule#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#header_name SesReceiptRule#header_name}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public readonly headerValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#header_value SesReceiptRule#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#header_value SesReceiptRule#header_value}.
 
 ---
 
@@ -1191,7 +1191,7 @@ public readonly position: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
 
 ---
 
@@ -1209,12 +1209,12 @@ const sesReceiptRuleBounceAction: sesReceiptRule.SesReceiptRuleBounceAction = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.message">message</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#message SesReceiptRule#message}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.sender">sender</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#sender SesReceiptRule#sender}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.smtpReplyCode">smtpReplyCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#smtp_reply_code SesReceiptRule#smtp_reply_code}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#status_code SesReceiptRule#status_code}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.message">message</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#message SesReceiptRule#message}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.sender">sender</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#sender SesReceiptRule#sender}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.smtpReplyCode">smtpReplyCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#smtp_reply_code SesReceiptRule#smtp_reply_code}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#status_code SesReceiptRule#status_code}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly message: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#message SesReceiptRule#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#message SesReceiptRule#message}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly position: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public readonly sender: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#sender SesReceiptRule#sender}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#sender SesReceiptRule#sender}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly smtpReplyCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#smtp_reply_code SesReceiptRule#smtp_reply_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#smtp_reply_code SesReceiptRule#smtp_reply_code}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly statusCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#status_code SesReceiptRule#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#status_code SesReceiptRule#status_code}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
 
 ---
 
@@ -1311,20 +1311,20 @@ const sesReceiptRuleConfig: sesReceiptRule.SesReceiptRuleConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#name SesReceiptRule#name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.ruleSetName">ruleSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#rule_set_name SesReceiptRule#rule_set_name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#name SesReceiptRule#name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.ruleSetName">ruleSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#rule_set_name SesReceiptRule#rule_set_name}. |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.addHeaderAction">addHeaderAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction">SesReceiptRuleAddHeaderAction</a>[]</code> | add_header_action block. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.after">after</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#after SesReceiptRule#after}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.after">after</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#after SesReceiptRule#after}. |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.bounceAction">bounceAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction">SesReceiptRuleBounceAction</a>[]</code> | bounce_action block. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#enabled SesReceiptRule#enabled}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#id SesReceiptRule#id}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#enabled SesReceiptRule#enabled}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#id SesReceiptRule#id}. |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.lambdaAction">lambdaAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction">SesReceiptRuleLambdaAction</a>[]</code> | lambda_action block. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.recipients">recipients</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#recipients SesReceiptRule#recipients}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.recipients">recipients</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#recipients SesReceiptRule#recipients}. |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.s3Action">s3Action</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action">SesReceiptRuleS3Action</a>[]</code> | s3_action block. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.scanEnabled">scanEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#scan_enabled SesReceiptRule#scan_enabled}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.scanEnabled">scanEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#scan_enabled SesReceiptRule#scan_enabled}. |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.snsAction">snsAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction">SesReceiptRuleSnsAction</a>[]</code> | sns_action block. |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.stopAction">stopAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction">SesReceiptRuleStopAction</a>[]</code> | stop_action block. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.tlsPolicy">tlsPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#tls_policy SesReceiptRule#tls_policy}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.tlsPolicy">tlsPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#tls_policy SesReceiptRule#tls_policy}. |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.property.workmailAction">workmailAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction">SesReceiptRuleWorkmailAction</a>[]</code> | workmail_action block. |
 
 ---
@@ -1407,7 +1407,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#name SesReceiptRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#name SesReceiptRule#name}.
 
 ---
 
@@ -1419,7 +1419,7 @@ public readonly ruleSetName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#rule_set_name SesReceiptRule#rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#rule_set_name SesReceiptRule#rule_set_name}.
 
 ---
 
@@ -1433,7 +1433,7 @@ public readonly addHeaderAction: IResolvable | SesReceiptRuleAddHeaderAction[];
 
 add_header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#add_header_action SesReceiptRule#add_header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#add_header_action SesReceiptRule#add_header_action}
 
 ---
 
@@ -1445,7 +1445,7 @@ public readonly after: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#after SesReceiptRule#after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#after SesReceiptRule#after}.
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly bounceAction: IResolvable | SesReceiptRuleBounceAction[];
 
 bounce_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#bounce_action SesReceiptRule#bounce_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#bounce_action SesReceiptRule#bounce_action}
 
 ---
 
@@ -1471,7 +1471,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#enabled SesReceiptRule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#enabled SesReceiptRule#enabled}.
 
 ---
 
@@ -1483,7 +1483,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#id SesReceiptRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#id SesReceiptRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1500,7 +1500,7 @@ public readonly lambdaAction: IResolvable | SesReceiptRuleLambdaAction[];
 
 lambda_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#lambda_action SesReceiptRule#lambda_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#lambda_action SesReceiptRule#lambda_action}
 
 ---
 
@@ -1512,7 +1512,7 @@ public readonly recipients: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#recipients SesReceiptRule#recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#recipients SesReceiptRule#recipients}.
 
 ---
 
@@ -1526,7 +1526,7 @@ public readonly s3Action: IResolvable | SesReceiptRuleS3Action[];
 
 s3_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#s3_action SesReceiptRule#s3_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#s3_action SesReceiptRule#s3_action}
 
 ---
 
@@ -1538,7 +1538,7 @@ public readonly scanEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#scan_enabled SesReceiptRule#scan_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#scan_enabled SesReceiptRule#scan_enabled}.
 
 ---
 
@@ -1552,7 +1552,7 @@ public readonly snsAction: IResolvable | SesReceiptRuleSnsAction[];
 
 sns_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#sns_action SesReceiptRule#sns_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#sns_action SesReceiptRule#sns_action}
 
 ---
 
@@ -1566,7 +1566,7 @@ public readonly stopAction: IResolvable | SesReceiptRuleStopAction[];
 
 stop_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#stop_action SesReceiptRule#stop_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#stop_action SesReceiptRule#stop_action}
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly tlsPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#tls_policy SesReceiptRule#tls_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#tls_policy SesReceiptRule#tls_policy}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly workmailAction: IResolvable | SesReceiptRuleWorkmailAction[];
 
 workmail_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#workmail_action SesReceiptRule#workmail_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#workmail_action SesReceiptRule#workmail_action}
 
 ---
 
@@ -1610,10 +1610,10 @@ const sesReceiptRuleLambdaAction: sesReceiptRule.SesReceiptRuleLambdaAction = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.functionArn">functionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#function_arn SesReceiptRule#function_arn}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.invocationType">invocationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#invocation_type SesReceiptRule#invocation_type}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.functionArn">functionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#function_arn SesReceiptRule#function_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.invocationType">invocationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#invocation_type SesReceiptRule#invocation_type}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
 
 ---
 
@@ -1625,7 +1625,7 @@ public readonly functionArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#function_arn SesReceiptRule#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#function_arn SesReceiptRule#function_arn}.
 
 ---
 
@@ -1637,7 +1637,7 @@ public readonly position: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
 
 ---
 
@@ -1649,7 +1649,7 @@ public readonly invocationType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#invocation_type SesReceiptRule#invocation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#invocation_type SesReceiptRule#invocation_type}.
 
 ---
 
@@ -1661,7 +1661,7 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
 
 ---
 
@@ -1679,11 +1679,11 @@ const sesReceiptRuleS3Action: sesReceiptRule.SesReceiptRuleS3Action = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#bucket_name SesReceiptRule#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#kms_key_arn SesReceiptRule#kms_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.objectKeyPrefix">objectKeyPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#object_key_prefix SesReceiptRule#object_key_prefix}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#bucket_name SesReceiptRule#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#kms_key_arn SesReceiptRule#kms_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.objectKeyPrefix">objectKeyPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#object_key_prefix SesReceiptRule#object_key_prefix}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
 
 ---
 
@@ -1695,7 +1695,7 @@ public readonly bucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#bucket_name SesReceiptRule#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#bucket_name SesReceiptRule#bucket_name}.
 
 ---
 
@@ -1707,7 +1707,7 @@ public readonly position: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public readonly kmsKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#kms_key_arn SesReceiptRule#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#kms_key_arn SesReceiptRule#kms_key_arn}.
 
 ---
 
@@ -1731,7 +1731,7 @@ public readonly objectKeyPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#object_key_prefix SesReceiptRule#object_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#object_key_prefix SesReceiptRule#object_key_prefix}.
 
 ---
 
@@ -1743,7 +1743,7 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
 
 ---
 
@@ -1761,9 +1761,9 @@ const sesReceiptRuleSnsAction: sesReceiptRule.SesReceiptRuleSnsAction = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#encoding SesReceiptRule#encoding}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#encoding SesReceiptRule#encoding}. |
 
 ---
 
@@ -1775,7 +1775,7 @@ public readonly position: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
 
 ---
 
@@ -1787,7 +1787,7 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
 
 ---
 
@@ -1799,7 +1799,7 @@ public readonly encoding: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#encoding SesReceiptRule#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#encoding SesReceiptRule#encoding}.
 
 ---
 
@@ -1817,9 +1817,9 @@ const sesReceiptRuleStopAction: sesReceiptRule.SesReceiptRuleStopAction = { ... 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#scope SesReceiptRule#scope}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#scope SesReceiptRule#scope}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
 
 ---
 
@@ -1831,7 +1831,7 @@ public readonly position: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
 
 ---
 
@@ -1843,7 +1843,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#scope SesReceiptRule#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#scope SesReceiptRule#scope}.
 
 ---
 
@@ -1855,7 +1855,7 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
 
 ---
 
@@ -1873,9 +1873,9 @@ const sesReceiptRuleWorkmailAction: sesReceiptRule.SesReceiptRuleWorkmailAction 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction.property.organizationArn">organizationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#organization_arn SesReceiptRule#organization_arn}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction.property.organizationArn">organizationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#organization_arn SesReceiptRule#organization_arn}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction.property.position">position</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}. |
 
 ---
 
@@ -1887,7 +1887,7 @@ public readonly organizationArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#organization_arn SesReceiptRule#organization_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#organization_arn SesReceiptRule#organization_arn}.
 
 ---
 
@@ -1899,7 +1899,7 @@ public readonly position: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}.
 
 ---
 
@@ -1911,7 +1911,7 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}.
 
 ---
 

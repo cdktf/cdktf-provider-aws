@@ -1,6 +1,6 @@
 # `aws_lambda_provisioned_concurrency_config`
 
-Refer to the Terraform Registory for docs: [`aws_lambda_provisioned_concurrency_config`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config).
+Refer to the Terraform Registory for docs: [`aws_lambda_provisioned_concurrency_config`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config).
 
 # `lambdaProvisionedConcurrencyConfig` Submodule <a name="`lambdaProvisionedConcurrencyConfig` Submodule" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lambda_provisioned_concurrency_
 
 ### LambdaProvisionedConcurrencyConfig <a name="LambdaProvisionedConcurrencyConfig" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig.Initializer"></a>
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the LambdaProvisionedConcurren
 
 The id of the existing LambdaProvisionedConcurrencyConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -803,11 +803,11 @@ const lambdaProvisionedConcurrencyConfigConfig: lambdaProvisionedConcurrencyConf
 | <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#function_name LambdaProvisionedConcurrencyConfig#function_name}. |
-| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.provisionedConcurrentExecutions">provisionedConcurrentExecutions</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#provisioned_concurrent_executions LambdaProvisionedConcurrencyConfig#provisioned_concurrent_executions}. |
-| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.qualifier">qualifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#qualifier LambdaProvisionedConcurrencyConfig#qualifier}. |
-| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#id LambdaProvisionedConcurrencyConfig#id}. |
-| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#skip_destroy LambdaProvisionedConcurrencyConfig#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#function_name LambdaProvisionedConcurrencyConfig#function_name}. |
+| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.provisionedConcurrentExecutions">provisionedConcurrentExecutions</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#provisioned_concurrent_executions LambdaProvisionedConcurrencyConfig#provisioned_concurrent_executions}. |
+| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.qualifier">qualifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#qualifier LambdaProvisionedConcurrencyConfig#qualifier}. |
+| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#id LambdaProvisionedConcurrencyConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#skip_destroy LambdaProvisionedConcurrencyConfig#skip_destroy}. |
 | <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts">LambdaProvisionedConcurrencyConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -890,7 +890,7 @@ public readonly functionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#function_name LambdaProvisionedConcurrencyConfig#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#function_name LambdaProvisionedConcurrencyConfig#function_name}.
 
 ---
 
@@ -902,7 +902,7 @@ public readonly provisionedConcurrentExecutions: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#provisioned_concurrent_executions LambdaProvisionedConcurrencyConfig#provisioned_concurrent_executions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#provisioned_concurrent_executions LambdaProvisionedConcurrencyConfig#provisioned_concurrent_executions}.
 
 ---
 
@@ -914,7 +914,7 @@ public readonly qualifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#qualifier LambdaProvisionedConcurrencyConfig#qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#qualifier LambdaProvisionedConcurrencyConfig#qualifier}.
 
 ---
 
@@ -926,7 +926,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#id LambdaProvisionedConcurrencyConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#id LambdaProvisionedConcurrencyConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ public readonly skipDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#skip_destroy LambdaProvisionedConcurrencyConfig#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#skip_destroy LambdaProvisionedConcurrencyConfig#skip_destroy}.
 
 ---
 
@@ -955,7 +955,7 @@ public readonly timeouts: LambdaProvisionedConcurrencyConfigTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#timeouts LambdaProvisionedConcurrencyConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#timeouts LambdaProvisionedConcurrencyConfig#timeouts}
 
 ---
 
@@ -973,8 +973,8 @@ const lambdaProvisionedConcurrencyConfigTimeouts: lambdaProvisionedConcurrencyCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#create LambdaProvisionedConcurrencyConfig#create}. |
-| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#update LambdaProvisionedConcurrencyConfig#update}. |
+| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#create LambdaProvisionedConcurrencyConfig#create}. |
+| <code><a href="#@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#update LambdaProvisionedConcurrencyConfig#update}. |
 
 ---
 
@@ -986,7 +986,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#create LambdaProvisionedConcurrencyConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#create LambdaProvisionedConcurrencyConfig#create}.
 
 ---
 
@@ -998,7 +998,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lambda_provisioned_concurrency_config#update LambdaProvisionedConcurrencyConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/lambda_provisioned_concurrency_config#update LambdaProvisionedConcurrencyConfig#update}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_aws_media_convert_queue`
 
-Refer to the Terraform Registory for docs: [`data_aws_media_convert_queue`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue).
+Refer to the Terraform Registory for docs: [`data_aws_media_convert_queue`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue).
 
 # `dataAwsMediaConvertQueue` Submodule <a name="`dataAwsMediaConvertQueue` Submodule" id="@cdktf/provider-aws.dataAwsMediaConvertQueue"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_media_convert_queue`](http
 
 ### DataAwsMediaConvertQueue <a name="DataAwsMediaConvertQueue" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer"></a>
 
@@ -41,8 +41,8 @@ dataAwsMediaConvertQueue.DataAwsMediaConvertQueue(
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +121,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}.
 
 ---
 
@@ -478,7 +478,7 @@ The construct id used in the generated config for the DataAwsMediaConvertQueue t
 
 The id of the existing DataAwsMediaConvertQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -759,8 +759,8 @@ dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}. |
 
 ---
 
@@ -842,7 +842,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -857,7 +857,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}.
 
 ---
 

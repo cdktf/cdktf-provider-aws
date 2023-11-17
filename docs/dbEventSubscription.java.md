@@ -1,6 +1,6 @@
 # `aws_db_event_subscription`
 
-Refer to the Terraform Registory for docs: [`aws_db_event_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription).
+Refer to the Terraform Registory for docs: [`aws_db_event_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription).
 
 # `dbEventSubscription` Submodule <a name="`dbEventSubscription` Submodule" id="@cdktf/provider-aws.dbEventSubscription"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_db_event_subscription`](https:/
 
 ### DbEventSubscription <a name="DbEventSubscription" id="@cdktf/provider-aws.dbEventSubscription.DbEventSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription aws_db_event_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription aws_db_event_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer"></a>
 
@@ -53,16 +53,16 @@ DbEventSubscription.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.snsTopic">snsTopic</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.eventCategories">eventCategories</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#id DbEventSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name DbEventSubscription#name}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.sourceIds">sourceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.snsTopic">snsTopic</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.eventCategories">eventCategories</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#id DbEventSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name DbEventSubscription#name}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.sourceIds">sourceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscription.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts">DbEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -131,7 +131,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}.
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#id DbEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#id DbEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -166,7 +166,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name DbEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name DbEventSubscription#name}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}.
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}.
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#timeouts DbEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#timeouts DbEventSubscription#timeouts}
 
 ---
 
@@ -676,7 +676,7 @@ The construct id used in the generated config for the DbEventSubscription to imp
 
 The id of the existing DbEventSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1180,16 +1180,16 @@ DbEventSubscriptionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.snsTopic">snsTopic</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.eventCategories">eventCategories</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#id DbEventSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name DbEventSubscription#name}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.sourceIds">sourceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.snsTopic">snsTopic</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.eventCategories">eventCategories</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#id DbEventSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name DbEventSubscription#name}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.sourceIds">sourceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts">DbEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1272,7 +1272,7 @@ public java.lang.String getSnsTopic();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#sns_topic DbEventSubscription#sns_topic}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#enabled DbEventSubscription#enabled}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public java.util.List<java.lang.String> getEventCategories();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#event_categories DbEventSubscription#event_categories}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#id DbEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#id DbEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1323,7 +1323,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name DbEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name DbEventSubscription#name}.
 
 ---
 
@@ -1335,7 +1335,7 @@ public java.lang.String getNamePrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#name_prefix DbEventSubscription#name_prefix}.
 
 ---
 
@@ -1347,7 +1347,7 @@ public java.util.List<java.lang.String> getSourceIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_ids DbEventSubscription#source_ids}.
 
 ---
 
@@ -1359,7 +1359,7 @@ public java.lang.String getSourceType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#source_type DbEventSubscription#source_type}.
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags DbEventSubscription#tags}.
 
 ---
 
@@ -1383,7 +1383,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#tags_all DbEventSubscription#tags_all}.
 
 ---
 
@@ -1397,7 +1397,7 @@ public DbEventSubscriptionTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#timeouts DbEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#timeouts DbEventSubscription#timeouts}
 
 ---
 
@@ -1419,9 +1419,9 @@ DbEventSubscriptionTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#create DbEventSubscription#create}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#delete DbEventSubscription#delete}. |
-| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#update DbEventSubscription#update}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#create DbEventSubscription#create}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#delete DbEventSubscription#delete}. |
+| <code><a href="#@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#update DbEventSubscription#update}. |
 
 ---
 
@@ -1433,7 +1433,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#create DbEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#create DbEventSubscription#create}.
 
 ---
 
@@ -1445,7 +1445,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#delete DbEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#delete DbEventSubscription#delete}.
 
 ---
 
@@ -1457,7 +1457,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/db_event_subscription#update DbEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/db_event_subscription#update DbEventSubscription#update}.
 
 ---
 

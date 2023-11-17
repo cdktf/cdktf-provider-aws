@@ -1,6 +1,6 @@
 # `aws_eip_association`
 
-Refer to the Terraform Registory for docs: [`aws_eip_association`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association).
+Refer to the Terraform Registory for docs: [`aws_eip_association`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association).
 
 # `eipAssociation` Submodule <a name="`eipAssociation` Submodule" id="@cdktf/provider-aws.eipAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_eip_association`](https://regis
 
 ### EipAssociation <a name="EipAssociation" id="@cdktf/provider-aws.eipAssociation.EipAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association aws_eip_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association aws_eip_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eipAssociation.EipAssociation.Initializer"></a>
 
@@ -470,7 +470,7 @@ The construct id used in the generated config for the EipAssociation to import.
 
 The id of the existing EipAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,13 +840,13 @@ const eipAssociationConfig: eipAssociation.EipAssociationConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#allocation_id EipAssociation#allocation_id}. |
-| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.allowReassociation">allowReassociation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#allow_reassociation EipAssociation#allow_reassociation}. |
-| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#id EipAssociation#id}. |
-| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#instance_id EipAssociation#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.networkInterfaceId">networkInterfaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#network_interface_id EipAssociation#network_interface_id}. |
-| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.privateIpAddress">privateIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#private_ip_address EipAssociation#private_ip_address}. |
-| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.publicIp">publicIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#public_ip EipAssociation#public_ip}. |
+| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#allocation_id EipAssociation#allocation_id}. |
+| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.allowReassociation">allowReassociation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#allow_reassociation EipAssociation#allow_reassociation}. |
+| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#id EipAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#instance_id EipAssociation#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.networkInterfaceId">networkInterfaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#network_interface_id EipAssociation#network_interface_id}. |
+| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.privateIpAddress">privateIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#private_ip_address EipAssociation#private_ip_address}. |
+| <code><a href="#@cdktf/provider-aws.eipAssociation.EipAssociationConfig.property.publicIp">publicIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#public_ip EipAssociation#public_ip}. |
 
 ---
 
@@ -928,7 +928,7 @@ public readonly allocationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#allocation_id EipAssociation#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#allocation_id EipAssociation#allocation_id}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly allowReassociation: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#allow_reassociation EipAssociation#allow_reassociation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#allow_reassociation EipAssociation#allow_reassociation}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#id EipAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#id EipAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -967,7 +967,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#instance_id EipAssociation#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#instance_id EipAssociation#instance_id}.
 
 ---
 
@@ -979,7 +979,7 @@ public readonly networkInterfaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#network_interface_id EipAssociation#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#network_interface_id EipAssociation#network_interface_id}.
 
 ---
 
@@ -991,7 +991,7 @@ public readonly privateIpAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#private_ip_address EipAssociation#private_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#private_ip_address EipAssociation#private_ip_address}.
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly publicIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/eip_association#public_ip EipAssociation#public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/eip_association#public_ip EipAssociation#public_ip}.
 
 ---
 

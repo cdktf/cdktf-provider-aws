@@ -1,6 +1,6 @@
 # `data_aws_bedrock_foundation_model`
 
-Refer to the Terraform Registory for docs: [`data_aws_bedrock_foundation_model`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/bedrock_foundation_model).
+Refer to the Terraform Registory for docs: [`data_aws_bedrock_foundation_model`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/bedrock_foundation_model).
 
 # `dataAwsBedrockFoundationModel` Submodule <a name="`dataAwsBedrockFoundationModel` Submodule" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_bedrock_foundation_model`]
 
 ### DataAwsBedrockFoundationModel <a name="DataAwsBedrockFoundationModel" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel.Initializer"></a>
 
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataAwsBedrockFoundationMo
 
 The id of the existing DataAwsBedrockFoundationModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,7 +675,7 @@ const dataAwsBedrockFoundationModelConfig: dataAwsBedrockFoundationModel.DataAws
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.modelId">modelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.modelId">modelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}. |
 
 ---
 
@@ -757,7 +757,7 @@ public readonly modelId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}.
 
 ---
 

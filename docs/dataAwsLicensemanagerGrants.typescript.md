@@ -1,6 +1,6 @@
 # `data_aws_licensemanager_grants`
 
-Refer to the Terraform Registory for docs: [`data_aws_licensemanager_grants`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants).
+Refer to the Terraform Registory for docs: [`data_aws_licensemanager_grants`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants).
 
 # `dataAwsLicensemanagerGrants` Submodule <a name="`dataAwsLicensemanagerGrants` Submodule" id="@cdktf/provider-aws.dataAwsLicensemanagerGrants"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_licensemanager_grants`](ht
 
 ### DataAwsLicensemanagerGrants <a name="DataAwsLicensemanagerGrants" id="@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataAwsLicensemanagerGrant
 
 The id of the existing DataAwsLicensemanagerGrants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -637,7 +637,7 @@ const dataAwsLicensemanagerGrantsConfig: dataAwsLicensemanagerGrants.DataAwsLice
 | <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter">DataAwsLicensemanagerGrantsFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}. |
 
 ---
 
@@ -721,7 +721,7 @@ public readonly filter: IResolvable | DataAwsLicensemanagerGrantsFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#filter DataAwsLicensemanagerGrants#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#filter DataAwsLicensemanagerGrants#filter}
 
 ---
 
@@ -733,7 +733,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -754,8 +754,8 @@ const dataAwsLicensemanagerGrantsFilter: dataAwsLicensemanagerGrants.DataAwsLice
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}. |
 
 ---
 
@@ -767,7 +767,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}.
 
 ---
 
@@ -779,7 +779,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}.
 
 ---
 
