@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.NewAuditmanagerFramework(scope Construct, id *string, config AuditmanagerFrameworkConfig) AuditmanagerFramework
 ```
@@ -373,7 +373,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.AuditmanagerFramework_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.AuditmanagerFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ auditmanagerframework.AuditmanagerFramework_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.AuditmanagerFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ auditmanagerframework.AuditmanagerFramework_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.AuditmanagerFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 &auditmanagerframework.AuditmanagerFrameworkConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 &auditmanagerframework.AuditmanagerFrameworkControlSets {
 	Name: *string,
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 &auditmanagerframework.AuditmanagerFrameworkControlSetsControls {
 	Id: *string,
@@ -1075,7 +1075,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.NewAuditmanagerFrameworkControlSetsControlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerFrameworkControlSetsControlsList
 ```
@@ -1218,7 +1218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.NewAuditmanagerFrameworkControlSetsControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerFrameworkControlSetsControlsOutputReference
 ```
@@ -1507,7 +1507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.NewAuditmanagerFrameworkControlSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerFrameworkControlSetsList
 ```
@@ -1650,7 +1650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerframework"
 
 auditmanagerframework.NewAuditmanagerFrameworkControlSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerFrameworkControlSetsOutputReference
 ```

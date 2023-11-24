@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigdeploymentstrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigdeploymentstrategy"
 
 appconfigdeploymentstrategy.NewAppconfigDeploymentStrategy(scope Construct, id *string, config AppconfigDeploymentStrategyConfig) AppconfigDeploymentStrategy
 ```
@@ -374,7 +374,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigdeploymentstrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigdeploymentstrategy"
 
 appconfigdeploymentstrategy.AppconfigDeploymentStrategy_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigdeploymentstrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigdeploymentstrategy"
 
 appconfigdeploymentstrategy.AppconfigDeploymentStrategy_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ appconfigdeploymentstrategy.AppconfigDeploymentStrategy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigdeploymentstrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigdeploymentstrategy"
 
 appconfigdeploymentstrategy.AppconfigDeploymentStrategy_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ appconfigdeploymentstrategy.AppconfigDeploymentStrategy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigdeploymentstrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigdeploymentstrategy"
 
 appconfigdeploymentstrategy.AppconfigDeploymentStrategy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -894,7 +894,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigdeploymentstrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigdeploymentstrategy"
 
 &appconfigdeploymentstrategy.AppconfigDeploymentStrategyConfig {
 	Connection: interface{},

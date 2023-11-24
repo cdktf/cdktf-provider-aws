@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategory(scope Construct, id *string, config DataAwsCeCostCategoryConfig) DataAwsCeCostCategory
 ```
@@ -285,7 +285,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.DataAwsCeCostCategory_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.DataAwsCeCostCategory_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawscecostcategory.DataAwsCeCostCategory_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.DataAwsCeCostCategory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawscecostcategory.DataAwsCeCostCategory_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.DataAwsCeCostCategory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRule {
 
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleInheritedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleInheritedValue {
 
@@ -868,7 +868,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRule {
 
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleAnd {
 
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleAndCostCategory {
 
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleAndDimension {
 
@@ -920,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleAndTags {
 
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleCostCategory {
 
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleDimension {
 
@@ -959,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleNot {
 
@@ -972,7 +972,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleNotCostCategory {
 
@@ -985,7 +985,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleNotDimension {
 
@@ -998,7 +998,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleNotTags {
 
@@ -1011,7 +1011,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleOr {
 
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleOrCostCategory {
 
@@ -1037,7 +1037,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleOrDimension {
 
@@ -1050,7 +1050,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleOrTags {
 
@@ -1063,7 +1063,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategoryRuleRuleTags {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategorySplitChargeRule {
 
@@ -1089,7 +1089,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 &dataawscecostcategory.DataAwsCeCostCategorySplitChargeRuleParameter {
 
@@ -1104,7 +1104,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleInheritedValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleInheritedValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleInheritedValueList
 ```
@@ -1236,7 +1236,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleInheritedValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleInheritedValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleInheritedValueOutputReference
 ```
@@ -1525,7 +1525,7 @@ func InternalValue() DataAwsCeCostCategoryRuleInheritedValue
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleList
 ```
@@ -1657,7 +1657,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleOutputReference
 ```
@@ -1968,7 +1968,7 @@ func InternalValue() DataAwsCeCostCategoryRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndCostCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndCostCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleAndCostCategoryList
 ```
@@ -2100,7 +2100,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference
 ```
@@ -2400,7 +2400,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleAndDimensionList
 ```
@@ -2532,7 +2532,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleAndDimensionOutputReference
 ```
@@ -2832,7 +2832,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleAndDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleAndList
 ```
@@ -2964,7 +2964,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleAndOutputReference
 ```
@@ -3264,7 +3264,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleAnd
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleAndTagsList
 ```
@@ -3396,7 +3396,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleAndTagsOutputReference
 ```
@@ -3696,7 +3696,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleAndTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleCostCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleCostCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleCostCategoryList
 ```
@@ -3828,7 +3828,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleCostCategoryOutputReference
 ```
@@ -4128,7 +4128,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleDimensionList
 ```
@@ -4260,7 +4260,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleDimensionOutputReference
 ```
@@ -4560,7 +4560,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleList
 ```
@@ -4692,7 +4692,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotCostCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotCostCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleNotCostCategoryList
 ```
@@ -4824,7 +4824,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference
 ```
@@ -5124,7 +5124,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleNotDimensionList
 ```
@@ -5256,7 +5256,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleNotDimensionOutputReference
 ```
@@ -5556,7 +5556,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleNotDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleNotList
 ```
@@ -5688,7 +5688,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleNotOutputReference
 ```
@@ -5988,7 +5988,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleNot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleNotTagsList
 ```
@@ -6120,7 +6120,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleNotTagsOutputReference
 ```
@@ -6420,7 +6420,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleNotTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrCostCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrCostCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleOrCostCategoryList
 ```
@@ -6552,7 +6552,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference
 ```
@@ -6852,7 +6852,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleOrDimensionList
 ```
@@ -6984,7 +6984,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleOrDimensionOutputReference
 ```
@@ -7284,7 +7284,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleOrDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleOrList
 ```
@@ -7416,7 +7416,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleOrOutputReference
 ```
@@ -7716,7 +7716,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleOr
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleOrTagsList
 ```
@@ -7848,7 +7848,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleOrTagsOutputReference
 ```
@@ -8148,7 +8148,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleOrTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleOutputReference
 ```
@@ -8481,7 +8481,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategoryRuleRuleTagsList
 ```
@@ -8613,7 +8613,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategoryRuleRuleTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategoryRuleRuleTagsOutputReference
 ```
@@ -8913,7 +8913,7 @@ func InternalValue() DataAwsCeCostCategoryRuleRuleTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategorySplitChargeRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategorySplitChargeRuleList
 ```
@@ -9045,7 +9045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategorySplitChargeRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategorySplitChargeRuleOutputReference
 ```
@@ -9356,7 +9356,7 @@ func InternalValue() DataAwsCeCostCategorySplitChargeRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategorySplitChargeRuleParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeCostCategorySplitChargeRuleParameterList
 ```
@@ -9488,7 +9488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscecostcategory"
 
 dataawscecostcategory.NewDataAwsCeCostCategorySplitChargeRuleParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeCostCategorySplitChargeRuleParameterOutputReference
 ```

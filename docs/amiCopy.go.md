@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.NewAmiCopy(scope Construct, id *string, config AmiCopyConfig) AmiCopy
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amiCopy.AmiCopy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.AmiCopy_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amiCopy.AmiCopy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.AmiCopy_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ amicopy.AmiCopy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amiCopy.AmiCopy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.AmiCopy_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ amicopy.AmiCopy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.amiCopy.AmiCopy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.AmiCopy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1287,7 +1287,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 &amicopy.AmiCopyConfig {
 	Connection: interface{},
@@ -1310,7 +1310,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
 	KmsKeyId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.amiCopy.AmiCopyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.amiCopy.AmiCopyTimeouts,
 }
 ```
 
@@ -1594,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 &amicopy.AmiCopyEbsBlockDevice {
 
@@ -1607,7 +1607,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 &amicopy.AmiCopyEphemeralBlockDevice {
 
@@ -1620,7 +1620,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 &amicopy.AmiCopyTimeouts {
 	Create: *string,
@@ -1682,7 +1682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.NewAmiCopyEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiCopyEbsBlockDeviceList
 ```
@@ -1825,7 +1825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.NewAmiCopyEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiCopyEbsBlockDeviceOutputReference
 ```
@@ -2191,7 +2191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.NewAmiCopyEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiCopyEphemeralBlockDeviceList
 ```
@@ -2334,7 +2334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.NewAmiCopyEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiCopyEphemeralBlockDeviceOutputReference
 ```
@@ -2623,7 +2623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amicopy"
 
 amicopy.NewAmiCopyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AmiCopyTimeoutsOutputReference
 ```

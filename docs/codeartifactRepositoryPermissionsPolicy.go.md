@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codeartifactrepositorypermissionspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepositorypermissionspolicy"
 
 codeartifactrepositorypermissionspolicy.NewCodeartifactRepositoryPermissionsPolicy(scope Construct, id *string, config CodeartifactRepositoryPermissionsPolicyConfig) CodeartifactRepositoryPermissionsPolicy
 ```
@@ -353,7 +353,7 @@ func ResetPolicyRevision()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codeartifactrepositorypermissionspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepositorypermissionspolicy"
 
 codeartifactrepositorypermissionspolicy.CodeartifactRepositoryPermissionsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codeartifactrepositorypermissionspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepositorypermissionspolicy"
 
 codeartifactrepositorypermissionspolicy.CodeartifactRepositoryPermissionsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ codeartifactrepositorypermissionspolicy.CodeartifactRepositoryPermissionsPolicy_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codeartifactrepositorypermissionspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepositorypermissionspolicy"
 
 codeartifactrepositorypermissionspolicy.CodeartifactRepositoryPermissionsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ codeartifactrepositorypermissionspolicy.CodeartifactRepositoryPermissionsPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codeartifactrepositorypermissionspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepositorypermissionspolicy"
 
 codeartifactrepositorypermissionspolicy.CodeartifactRepositoryPermissionsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -785,7 +785,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codeartifactrepositorypermissionspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepositorypermissionspolicy"
 
 &codeartifactrepositorypermissionspolicy.CodeartifactRepositoryPermissionsPolicyConfig {
 	Connection: interface{},

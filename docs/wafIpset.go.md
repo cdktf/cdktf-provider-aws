@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafIpset.WafIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 wafipset.NewWafIpset(scope Construct, id *string, config WafIpsetConfig) WafIpset
 ```
@@ -359,7 +359,7 @@ func ResetIpSetDescriptors()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafIpset.WafIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 wafipset.WafIpset_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafIpset.WafIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 wafipset.WafIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ wafipset.WafIpset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafIpset.WafIpset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 wafipset.WafIpset_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ wafipset.WafIpset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafIpset.WafIpset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 wafipset.WafIpset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafIpset.WafIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 &wafipset.WafIpsetConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 &wafipset.WafIpsetIpSetDescriptors {
 	Type: *string,
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 wafipset.NewWafIpsetIpSetDescriptorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafIpsetIpSetDescriptorsList
 ```
@@ -1065,7 +1065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafipset"
 
 wafipset.NewWafIpsetIpSetDescriptorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafIpsetIpSetDescriptorsOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.NewDataAwsIamSessionContext(scope Construct, id *string, config DataAwsIamSessionContextConfig) DataAwsIamSessionContext
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 &dataawsiamsessioncontext.DataAwsIamSessionContextConfig {
 	Connection: interface{},

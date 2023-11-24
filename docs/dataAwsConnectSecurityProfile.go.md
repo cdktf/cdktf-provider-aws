@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectsecurityprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectsecurityprofile"
 
 dataawsconnectsecurityprofile.NewDataAwsConnectSecurityProfile(scope Construct, id *string, config DataAwsConnectSecurityProfileConfig) DataAwsConnectSecurityProfile
 ```
@@ -299,7 +299,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectsecurityprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectsecurityprofile"
 
 dataawsconnectsecurityprofile.DataAwsConnectSecurityProfile_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectsecurityprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectsecurityprofile"
 
 dataawsconnectsecurityprofile.DataAwsConnectSecurityProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsconnectsecurityprofile.DataAwsConnectSecurityProfile_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectsecurityprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectsecurityprofile"
 
 dataawsconnectsecurityprofile.DataAwsConnectSecurityProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataawsconnectsecurityprofile.DataAwsConnectSecurityProfile_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectsecurityprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectsecurityprofile"
 
 dataawsconnectsecurityprofile.DataAwsConnectSecurityProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -720,7 +720,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectsecurityprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectsecurityprofile"
 
 &dataawsconnectsecurityprofile.DataAwsConnectSecurityProfileConfig {
 	Connection: interface{},
