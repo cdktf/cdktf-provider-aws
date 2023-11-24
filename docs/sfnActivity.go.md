@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sfnActivity.SfnActivity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sfnactivity"
 
 sfnactivity.NewSfnActivity(scope Construct, id *string, config SfnActivityConfig) SfnActivity
 ```
@@ -353,7 +353,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sfnActivity.SfnActivity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sfnactivity"
 
 sfnactivity.SfnActivity_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sfnActivity.SfnActivity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sfnactivity"
 
 sfnactivity.SfnActivity_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ sfnactivity.SfnActivity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sfnActivity.SfnActivity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sfnactivity"
 
 sfnactivity.SfnActivity_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ sfnactivity.SfnActivity_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sfnActivity.SfnActivity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sfnactivity"
 
 sfnactivity.SfnActivity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -741,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sfnActivity.SfnActivityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sfnactivity"
 
 &sfnactivity.SfnActivityConfig {
 	Connection: interface{},

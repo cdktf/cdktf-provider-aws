@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.NewDataAwsLbHostedZoneId(scope Construct, id *string, config DataAwsLbHostedZoneIdConfig) DataAwsLbHostedZoneId
 ```
@@ -292,7 +292,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataawslbhostedzoneid.DataAwsLbHostedZoneId_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
 
 dataawslbhostedzoneid.DataAwsLbHostedZoneId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -625,7 +625,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslbhostedzoneid"
 
 &dataawslbhostedzoneid.DataAwsLbHostedZoneIdConfig {
 	Connection: interface{},
