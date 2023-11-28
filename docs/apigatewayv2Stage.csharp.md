@@ -1,7 +1,3 @@
-# `aws_apigatewayv2_stage`
-
-Refer to the Terraform Registory for docs: [`aws_apigatewayv2_stage`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apigatewayv2_stage).
-
 # `apigatewayv2Stage` Submodule <a name="`apigatewayv2Stage` Submodule" id="@cdktf/provider-aws.apigatewayv2Stage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

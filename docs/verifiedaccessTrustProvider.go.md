@@ -1,7 +1,3 @@
-# `aws_verifiedaccess_trust_provider`
-
-Refer to the Terraform Registory for docs: [`aws_verifiedaccess_trust_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/verifiedaccess_trust_provider).
-
 # `verifiedaccessTrustProvider` Submodule <a name="`verifiedaccessTrustProvider` Submodule" id="@cdktf/provider-aws.verifiedaccessTrustProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.NewVerifiedaccessTrustProvider(scope Construct, id *string, config VerifiedaccessTrustProviderConfig) VerifiedaccessTrustProvider
 ```
@@ -434,7 +430,7 @@ func ResetUserTrustProviderType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.VerifiedaccessTrustProvider_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +462,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.VerifiedaccessTrustProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +476,7 @@ verifiedaccesstrustprovider.VerifiedaccessTrustProvider_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.VerifiedaccessTrustProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +490,7 @@ verifiedaccesstrustprovider.VerifiedaccessTrustProvider_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.VerifiedaccessTrustProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -965,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 &verifiedaccesstrustprovider.VerifiedaccessTrustProviderConfig {
 	Connection: interface{},
@@ -978,13 +974,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovid
 	PolicyReferenceName: *string,
 	TrustProviderType: *string,
 	Description: *string,
-	DeviceOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.verifiedaccessTrustProvider.VerifiedaccessTrustProviderDeviceOptions,
+	DeviceOptions: github.com/cdktf/cdktf-provider-aws-go/aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderDeviceOptions,
 	DeviceTrustProviderType: *string,
 	Id: *string,
-	OidcOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.verifiedaccessTrustProvider.VerifiedaccessTrustProviderOidcOptions,
+	OidcOptions: github.com/cdktf/cdktf-provider-aws-go/aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderOidcOptions,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.verifiedaccessTrustProvider.VerifiedaccessTrustProviderTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderTimeouts,
 	UserTrustProviderType: *string,
 }
 ```
@@ -1230,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderDeviceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 &verifiedaccesstrustprovider.VerifiedaccessTrustProviderDeviceOptions {
 	TenantId: *string,
@@ -1262,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderOidcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 &verifiedaccesstrustprovider.VerifiedaccessTrustProviderOidcOptions {
 	ClientSecret: *string,
@@ -1378,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 &verifiedaccesstrustprovider.VerifiedaccessTrustProviderTimeouts {
 	Create: *string,
@@ -1440,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderDeviceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.NewVerifiedaccessTrustProviderDeviceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessTrustProviderDeviceOptionsOutputReference
 ```
@@ -1718,7 +1714,7 @@ func InternalValue() VerifiedaccessTrustProviderDeviceOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderOidcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.NewVerifiedaccessTrustProviderOidcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessTrustProviderOidcOptionsOutputReference
 ```
@@ -2163,7 +2159,7 @@ func InternalValue() VerifiedaccessTrustProviderOidcOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessTrustProvider.VerifiedaccessTrustProviderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccesstrustprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccesstrustprovider"
 
 verifiedaccesstrustprovider.NewVerifiedaccessTrustProviderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessTrustProviderTimeoutsOutputReference
 ```

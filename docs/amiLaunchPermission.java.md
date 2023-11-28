@@ -1,7 +1,3 @@
-# `aws_ami_launch_permission`
-
-Refer to the Terraform Registory for docs: [`aws_ami_launch_permission`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ami_launch_permission).
-
 # `amiLaunchPermission` Submodule <a name="`amiLaunchPermission` Submodule" id="@cdktf/provider-aws.amiLaunchPermission"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

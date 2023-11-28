@@ -1,7 +1,3 @@
-# `aws_quicksight_dashboard`
-
-Refer to the Terraform Registory for docs: [`aws_quicksight_dashboard`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/quicksight_dashboard).
-
 # `quicksightDashboard` Submodule <a name="`quicksightDashboard` Submodule" id="@cdktf/provider-aws.quicksightDashboard"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboard(scope Construct, id *string, config QuicksightDashboardConfig) QuicksightDashboard
 ```
@@ -474,7 +470,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.QuicksightDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.QuicksightDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +516,7 @@ quicksightdashboard.QuicksightDashboard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.QuicksightDashboard_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +530,7 @@ quicksightdashboard.QuicksightDashboard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.QuicksightDashboard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1148,7 +1144,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardConfig {
 	Connection: interface{},
@@ -1162,16 +1158,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
 	Name: *string,
 	VersionDescription: *string,
 	AwsAccountId: *string,
-	DashboardPublishOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptions,
+	DashboardPublishOptions: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptions,
 	Definition: interface{},
 	Id: *string,
-	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardParameters,
+	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardParameters,
 	Permissions: interface{},
-	SourceEntity: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardSourceEntity,
+	SourceEntity: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardSourceEntity,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	ThemeArn: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardTimeouts,
 }
 ```
 
@@ -1461,19 +1457,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptions {
-	AdHocFilteringOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption,
-	DataPointDrillUpDownOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption,
-	DataPointMenuLabelOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption,
-	DataPointTooltipOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption,
-	ExportToCsvOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportToCsvOption,
-	ExportWithHiddenFieldsOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption,
-	SheetControlsOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetControlsOption,
-	SheetLayoutElementMaximizationOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption,
-	VisualAxisSortOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption,
-	VisualMenuOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualMenuOption,
+	AdHocFilteringOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption,
+	DataPointDrillUpDownOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption,
+	DataPointMenuLabelOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption,
+	DataPointTooltipOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption,
+	ExportToCsvOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportToCsvOption,
+	ExportWithHiddenFieldsOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption,
+	SheetControlsOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetControlsOption,
+	SheetLayoutElementMaximizationOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption,
+	VisualAxisSortOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption,
+	VisualMenuOption: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualMenuOption,
 }
 ```
 
@@ -1639,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption {
 	AvailabilityStatus: *string,
@@ -1671,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption {
 	AvailabilityStatus: *string,
@@ -1703,7 +1699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption {
 	AvailabilityStatus: *string,
@@ -1735,7 +1731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption {
 	AvailabilityStatus: *string,
@@ -1767,7 +1763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportToCsvOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsExportToCsvOption {
 	AvailabilityStatus: *string,
@@ -1799,7 +1795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption {
 	AvailabilityStatus: *string,
@@ -1831,7 +1827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetControlsOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsSheetControlsOption {
 	VisibilityState: *string,
@@ -1863,7 +1859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption {
 	AvailabilityStatus: *string,
@@ -1895,7 +1891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption {
 	AvailabilityStatus: *string,
@@ -1927,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualMenuOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardDashboardPublishOptionsVisualMenuOption {
 	AvailabilityStatus: *string,
@@ -1959,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardParameters {
 	DateTimeParameters: interface{},
@@ -2041,7 +2037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersDateTimeParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardParametersDateTimeParameters {
 	Name: *string,
@@ -2087,7 +2083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersDecimalParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardParametersDecimalParameters {
 	Name: *string,
@@ -2133,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersIntegerParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardParametersIntegerParameters {
 	Name: *string,
@@ -2179,7 +2175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersStringParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardParametersStringParameters {
 	Name: *string,
@@ -2225,7 +2221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardPermissions {
 	Actions: *[]*string,
@@ -2271,10 +2267,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardSourceEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardSourceEntity {
-	SourceTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDashboard.QuicksightDashboardSourceEntitySourceTemplate,
+	SourceTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDashboard.QuicksightDashboardSourceEntitySourceTemplate,
 }
 ```
 
@@ -2305,7 +2301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardSourceEntitySourceTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardSourceEntitySourceTemplate {
 	Arn: *string,
@@ -2353,7 +2349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardSourceEntitySourceTemplateDataSetReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardSourceEntitySourceTemplateDataSetReferences {
 	DataSetArn: *string,
@@ -2399,7 +2395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 &quicksightdashboard.QuicksightDashboardTimeouts {
 	Create: *string,
@@ -2461,7 +2457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsAdHocFilteringOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsAdHocFilteringOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsAdHocFilteringOptionOutputReference
 ```
@@ -2739,7 +2735,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsAdHocFilteringOpt
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptionOutputReference
 ```
@@ -3017,7 +3013,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsDataPointDrillUpD
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionOutputReference
 ```
@@ -3295,7 +3291,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsDataPointMenuLabe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference
 ```
@@ -3573,7 +3569,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsDataPointTooltipO
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportToCsvOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsExportToCsvOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsExportToCsvOptionOutputReference
 ```
@@ -3851,7 +3847,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsExportToCsvOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference
 ```
@@ -4129,7 +4125,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsExportWithHiddenF
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsOutputReference
 ```
@@ -4798,7 +4794,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetControlsOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsSheetControlsOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsSheetControlsOptionOutputReference
 ```
@@ -5076,7 +5072,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsSheetControlsOpti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionOutputReference
 ```
@@ -5354,7 +5350,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsSheetLayoutElemen
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualAxisSortOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsVisualAxisSortOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsVisualAxisSortOptionOutputReference
 ```
@@ -5632,7 +5628,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsVisualAxisSortOpt
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardDashboardPublishOptionsVisualMenuOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardDashboardPublishOptionsVisualMenuOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardDashboardPublishOptionsVisualMenuOptionOutputReference
 ```
@@ -5910,7 +5906,7 @@ func InternalValue() QuicksightDashboardDashboardPublishOptionsVisualMenuOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersDateTimeParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersDateTimeParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDashboardParametersDateTimeParametersList
 ```
@@ -6053,7 +6049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersDateTimeParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersDateTimeParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDashboardParametersDateTimeParametersOutputReference
 ```
@@ -6364,7 +6360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersDecimalParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersDecimalParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDashboardParametersDecimalParametersList
 ```
@@ -6507,7 +6503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersDecimalParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersDecimalParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDashboardParametersDecimalParametersOutputReference
 ```
@@ -6818,7 +6814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersIntegerParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersIntegerParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDashboardParametersIntegerParametersList
 ```
@@ -6961,7 +6957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersIntegerParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersIntegerParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDashboardParametersIntegerParametersOutputReference
 ```
@@ -7272,7 +7268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardParametersOutputReference
 ```
@@ -7689,7 +7685,7 @@ func InternalValue() QuicksightDashboardParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersStringParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersStringParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDashboardParametersStringParametersList
 ```
@@ -7832,7 +7828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardParametersStringParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardParametersStringParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDashboardParametersStringParametersOutputReference
 ```
@@ -8143,7 +8139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDashboardPermissionsList
 ```
@@ -8286,7 +8282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDashboardPermissionsOutputReference
 ```
@@ -8597,7 +8593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardSourceEntityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardSourceEntityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardSourceEntityOutputReference
 ```
@@ -8888,7 +8884,7 @@ func InternalValue() QuicksightDashboardSourceEntity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardSourceEntitySourceTemplateDataSetReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardSourceEntitySourceTemplateDataSetReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDashboardSourceEntitySourceTemplateDataSetReferencesList
 ```
@@ -9031,7 +9027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardSourceEntitySourceTemplateDataSetReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardSourceEntitySourceTemplateDataSetReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDashboardSourceEntitySourceTemplateDataSetReferencesOutputReference
 ```
@@ -9342,7 +9338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardSourceEntitySourceTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardSourceEntitySourceTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardSourceEntitySourceTemplateOutputReference
 ```
@@ -9648,7 +9644,7 @@ func InternalValue() QuicksightDashboardSourceEntitySourceTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDashboard.QuicksightDashboardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdashboard"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdashboard"
 
 quicksightdashboard.NewQuicksightDashboardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDashboardTimeoutsOutputReference
 ```

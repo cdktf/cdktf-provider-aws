@@ -1,7 +1,3 @@
-# `aws_dataexchange_revision`
-
-Refer to the Terraform Registory for docs: [`aws_dataexchange_revision`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dataexchange_revision).
-
 # `dataexchangeRevision` Submodule <a name="`dataexchangeRevision` Submodule" id="@cdktf/provider-aws.dataexchangeRevision"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
 
 dataexchangerevision.NewDataexchangeRevision(scope Construct, id *string, config DataexchangeRevisionConfig) DataexchangeRevision
 ```
@@ -360,7 +356,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
 
 dataexchangerevision.DataexchangeRevision_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
 
 dataexchangerevision.DataexchangeRevision_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ dataexchangerevision.DataexchangeRevision_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
 
 dataexchangerevision.DataexchangeRevision_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ dataexchangerevision.DataexchangeRevision_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
 
 dataexchangerevision.DataexchangeRevision_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
 
 &dataexchangerevision.DataexchangeRevisionConfig {
 	Connection: interface{},

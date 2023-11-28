@@ -1,7 +1,3 @@
-# `aws_opensearchserverless_access_policy`
-
-Refer to the Terraform Registory for docs: [`aws_opensearchserverless_access_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opensearchserverless_access_policy).
-
 # `opensearchserverlessAccessPolicy` Submodule <a name="`opensearchserverlessAccessPolicy` Submodule" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

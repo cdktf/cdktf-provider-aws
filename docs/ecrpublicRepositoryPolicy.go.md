@@ -1,7 +1,3 @@
-# `aws_ecrpublic_repository_policy`
-
-Refer to the Terraform Registory for docs: [`aws_ecrpublic_repository_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecrpublic_repository_policy).
-
 # `ecrpublicRepositoryPolicy` Submodule <a name="`ecrpublicRepositoryPolicy` Submodule" id="@cdktf/provider-aws.ecrpublicRepositoryPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepositorypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrpublicrepositorypolicy"
 
 ecrpublicrepositorypolicy.NewEcrpublicRepositoryPolicy(scope Construct, id *string, config EcrpublicRepositoryPolicyConfig) EcrpublicRepositoryPolicy
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepositorypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrpublicrepositorypolicy"
 
 ecrpublicrepositorypolicy.EcrpublicRepositoryPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepositorypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrpublicrepositorypolicy"
 
 ecrpublicrepositorypolicy.EcrpublicRepositoryPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ ecrpublicrepositorypolicy.EcrpublicRepositoryPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepositorypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrpublicrepositorypolicy"
 
 ecrpublicrepositorypolicy.EcrpublicRepositoryPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ ecrpublicrepositorypolicy.EcrpublicRepositoryPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepositorypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrpublicrepositorypolicy"
 
 ecrpublicrepositorypolicy.EcrpublicRepositoryPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepositorypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrpublicrepositorypolicy"
 
 &ecrpublicrepositorypolicy.EcrpublicRepositoryPolicyConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `aws_cloudwatch_metric_stream`
-
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_metric_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_metric_stream).
-
 # `cloudwatchMetricStream` Submodule <a name="`cloudwatchMetricStream` Submodule" id="@cdktf/provider-aws.cloudwatchMetricStream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_chimesdkvoice_voice_profile_domain`
-
-Refer to the Terraform Registory for docs: [`aws_chimesdkvoice_voice_profile_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/chimesdkvoice_voice_profile_domain).
-
 # `chimesdkvoiceVoiceProfileDomain` Submodule <a name="`chimesdkvoiceVoiceProfileDomain` Submodule" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_auditmanager_organization_admin_account_registration`
-
-Refer to the Terraform Registory for docs: [`aws_auditmanager_organization_admin_account_registration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/auditmanager_organization_admin_account_registration).
-
 # `auditmanagerOrganizationAdminAccountRegistration` Submodule <a name="`auditmanagerOrganizationAdminAccountRegistration` Submodule" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.NewAuditmanagerOrganizationAdminAccountRegistration(scope Construct, id *string, config AuditmanagerOrganizationAdminAccountRegistrationConfig) AuditmanagerOrganizationAdminAccountRegistration
 ```
@@ -332,7 +328,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -665,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 &auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistrationConfig {
 	Connection: interface{},

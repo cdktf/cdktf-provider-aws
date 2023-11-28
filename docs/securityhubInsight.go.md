@@ -1,7 +1,3 @@
-# `aws_securityhub_insight`
-
-Refer to the Terraform Registory for docs: [`aws_securityhub_insight`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/securityhub_insight).
-
 # `securityhubInsight` Submodule <a name="`securityhubInsight` Submodule" id="@cdktf/provider-aws.securityhubInsight"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsight(scope Construct, id *string, config SecurityhubInsightConfig) SecurityhubInsight
 ```
@@ -352,7 +348,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ securityhubinsight.SecurityhubInsight_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ securityhubinsight.SecurityhubInsight_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightConfig {
 	Connection: interface{},
@@ -750,7 +746,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFilters,
+	Filters: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFilters,
 	GroupByAttribute: *string,
 	Name: *string,
 	Id: *string,
@@ -903,7 +899,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFilters {
 	AwsAccountId: interface{},
@@ -2332,7 +2328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersAwsAccountId {
 	Comparison: *string,
@@ -2378,7 +2374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCompanyName {
 	Comparison: *string,
@@ -2424,7 +2420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersComplianceStatus {
 	Comparison: *string,
@@ -2470,7 +2466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersConfidence {
 	Eq: *string,
@@ -2530,10 +2526,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCreatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -2592,7 +2588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCreatedAtDateRange {
 	Unit: *string,
@@ -2638,7 +2634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCriticality {
 	Eq: *string,
@@ -2698,7 +2694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersDescription {
 	Comparison: *string,
@@ -2744,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence {
 	Eq: *string,
@@ -2804,7 +2800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality {
 	Eq: *string,
@@ -2864,7 +2860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId {
 	Comparison: *string,
@@ -2910,7 +2906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn {
 	Comparison: *string,
@@ -2956,7 +2952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel {
 	Comparison: *string,
@@ -3002,7 +2998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal {
 	Comparison: *string,
@@ -3048,7 +3044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsTypes {
 	Comparison: *string,
@@ -3094,10 +3090,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFirstObservedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -3156,7 +3152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFirstObservedAtDateRange {
 	Unit: *string,
@@ -3202,7 +3198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersGeneratorId {
 	Comparison: *string,
@@ -3248,7 +3244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersId {
 	Comparison: *string,
@@ -3294,7 +3290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersKeyword {
 	Value: *string,
@@ -3326,10 +3322,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersLastObservedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -3388,7 +3384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersLastObservedAtDateRange {
 	Unit: *string,
@@ -3434,7 +3430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwareName {
 	Comparison: *string,
@@ -3480,7 +3476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwarePath {
 	Comparison: *string,
@@ -3526,7 +3522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwareState {
 	Comparison: *string,
@@ -3572,7 +3568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwareType {
 	Comparison: *string,
@@ -3618,7 +3614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationDomain {
 	Comparison: *string,
@@ -3664,7 +3660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationIpv4 {
 	Cidr: *string,
@@ -3696,7 +3692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationIpv6 {
 	Cidr: *string,
@@ -3728,7 +3724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationPort {
 	Eq: *string,
@@ -3788,7 +3784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDirection {
 	Comparison: *string,
@@ -3834,7 +3830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkProtocol {
 	Comparison: *string,
@@ -3880,7 +3876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceDomain {
 	Comparison: *string,
@@ -3926,7 +3922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceIpv4 {
 	Cidr: *string,
@@ -3958,7 +3954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceIpv6 {
 	Cidr: *string,
@@ -3990,7 +3986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceMac {
 	Comparison: *string,
@@ -4036,7 +4032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourcePort {
 	Eq: *string,
@@ -4096,7 +4092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteText {
 	Comparison: *string,
@@ -4142,10 +4138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteUpdatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -4204,7 +4200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange {
 	Unit: *string,
@@ -4250,7 +4246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteUpdatedBy {
 	Comparison: *string,
@@ -4296,10 +4292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessLaunchedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -4358,7 +4354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange {
 	Unit: *string,
@@ -4404,7 +4400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessName {
 	Comparison: *string,
@@ -4450,7 +4446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessParentPid {
 	Eq: *string,
@@ -4510,7 +4506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessPath {
 	Comparison: *string,
@@ -4556,7 +4552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessPid {
 	Eq: *string,
@@ -4616,10 +4612,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessTerminatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -4678,7 +4674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange {
 	Unit: *string,
@@ -4724,7 +4720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProductArn {
 	Comparison: *string,
@@ -4770,7 +4766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProductFields {
 	Comparison: *string,
@@ -4830,7 +4826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProductName {
 	Comparison: *string,
@@ -4876,7 +4872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRecommendationText {
 	Comparison: *string,
@@ -4922,7 +4918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRecordState {
 	Comparison: *string,
@@ -4968,7 +4964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRelatedFindingsId {
 	Comparison: *string,
@@ -5014,7 +5010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRelatedFindingsProductArn {
 	Comparison: *string,
@@ -5060,7 +5056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn {
 	Comparison: *string,
@@ -5106,7 +5102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId {
 	Comparison: *string,
@@ -5152,7 +5148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses {
 	Cidr: *string,
@@ -5184,7 +5180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses {
 	Cidr: *string,
@@ -5216,7 +5212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName {
 	Comparison: *string,
@@ -5262,10 +5258,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -5324,7 +5320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange {
 	Unit: *string,
@@ -5370,7 +5366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId {
 	Comparison: *string,
@@ -5416,7 +5412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType {
 	Comparison: *string,
@@ -5462,7 +5458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId {
 	Comparison: *string,
@@ -5508,10 +5504,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -5570,7 +5566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange {
 	Unit: *string,
@@ -5616,7 +5612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus {
 	Comparison: *string,
@@ -5662,7 +5658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName {
 	Comparison: *string,
@@ -5708,7 +5704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId {
 	Comparison: *string,
@@ -5754,7 +5750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName {
 	Comparison: *string,
@@ -5800,7 +5796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerImageId {
 	Comparison: *string,
@@ -5846,7 +5842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerImageName {
 	Comparison: *string,
@@ -5892,10 +5888,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerLaunchedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -5954,7 +5950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange {
 	Unit: *string,
@@ -6000,7 +5996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerName {
 	Comparison: *string,
@@ -6046,7 +6042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceDetailsOther {
 	Comparison: *string,
@@ -6106,7 +6102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceId {
 	Comparison: *string,
@@ -6152,7 +6148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourcePartition {
 	Comparison: *string,
@@ -6198,7 +6194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceRegion {
 	Comparison: *string,
@@ -6244,7 +6240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceTags {
 	Comparison: *string,
@@ -6304,7 +6300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceType {
 	Comparison: *string,
@@ -6350,7 +6346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersSeverityLabel {
 	Comparison: *string,
@@ -6396,7 +6392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersSourceUrl {
 	Comparison: *string,
@@ -6442,7 +6438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory {
 	Comparison: *string,
@@ -6488,10 +6484,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -6550,7 +6546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange {
 	Unit: *string,
@@ -6596,7 +6592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorSource {
 	Comparison: *string,
@@ -6642,7 +6638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl {
 	Comparison: *string,
@@ -6688,7 +6684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorType {
 	Comparison: *string,
@@ -6734,7 +6730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorValue {
 	Comparison: *string,
@@ -6780,7 +6776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersTitle {
 	Comparison: *string,
@@ -6826,7 +6822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersType {
 	Comparison: *string,
@@ -6872,10 +6868,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersUpdatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v18.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -6934,7 +6930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersUpdatedAtDateRange {
 	Unit: *string,
@@ -6980,7 +6976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersUserDefinedValues {
 	Comparison: *string,
@@ -7040,7 +7036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersVerificationState {
 	Comparison: *string,
@@ -7086,7 +7082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersWorkflowStatus {
 	Comparison: *string,
@@ -7134,7 +7130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersAwsAccountIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersAwsAccountIdList
 ```
@@ -7277,7 +7273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersAwsAccountIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersAwsAccountIdOutputReference
 ```
@@ -7588,7 +7584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCompanyNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersCompanyNameList
 ```
@@ -7731,7 +7727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCompanyNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersCompanyNameOutputReference
 ```
@@ -8042,7 +8038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersComplianceStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersComplianceStatusList
 ```
@@ -8185,7 +8181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersComplianceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersComplianceStatusOutputReference
 ```
@@ -8496,7 +8492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersConfidenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersConfidenceList
 ```
@@ -8639,7 +8635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersConfidenceOutputReference
 ```
@@ -8993,7 +8989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCreatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersCreatedAtDateRangeOutputReference
 ```
@@ -9286,7 +9282,7 @@ func InternalValue() SecurityhubInsightFiltersCreatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCreatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersCreatedAtList
 ```
@@ -9429,7 +9425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCreatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersCreatedAtOutputReference
 ```
@@ -9796,7 +9792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCriticalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersCriticalityList
 ```
@@ -9939,7 +9935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersCriticalityOutputReference
 ```
@@ -10293,7 +10289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersDescriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersDescriptionList
 ```
@@ -10436,7 +10432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersDescriptionOutputReference
 ```
@@ -10747,7 +10743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsConfidenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsConfidenceList
 ```
@@ -10890,7 +10886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference
 ```
@@ -11244,7 +11240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsCriticalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsCriticalityList
 ```
@@ -11387,7 +11383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference
 ```
@@ -11741,7 +11737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList
 ```
@@ -11884,7 +11880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference
 ```
@@ -12195,7 +12191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList
 ```
@@ -12338,7 +12334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference
 ```
@@ -12649,7 +12645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList
 ```
@@ -12792,7 +12788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference
 ```
@@ -13103,7 +13099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList
 ```
@@ -13246,7 +13242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference
 ```
@@ -13557,7 +13553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsTypesList
 ```
@@ -13700,7 +13696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference
 ```
@@ -14011,7 +14007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference
 ```
@@ -14304,7 +14300,7 @@ func InternalValue() SecurityhubInsightFiltersFirstObservedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFirstObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFirstObservedAtList
 ```
@@ -14447,7 +14443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFirstObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFirstObservedAtOutputReference
 ```
@@ -14814,7 +14810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersGeneratorIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersGeneratorIdList
 ```
@@ -14957,7 +14953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersGeneratorIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersGeneratorIdOutputReference
 ```
@@ -15268,7 +15264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersIdList
 ```
@@ -15411,7 +15407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersIdOutputReference
 ```
@@ -15722,7 +15718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersKeywordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersKeywordList
 ```
@@ -15865,7 +15861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersKeywordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersKeywordOutputReference
 ```
@@ -16154,7 +16150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersLastObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference
 ```
@@ -16447,7 +16443,7 @@ func InternalValue() SecurityhubInsightFiltersLastObservedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersLastObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersLastObservedAtList
 ```
@@ -16590,7 +16586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersLastObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersLastObservedAtOutputReference
 ```
@@ -16957,7 +16953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwareNameList
 ```
@@ -17100,7 +17096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwareNameOutputReference
 ```
@@ -17411,7 +17407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwarePathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwarePathList
 ```
@@ -17554,7 +17550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwarePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwarePathOutputReference
 ```
@@ -17865,7 +17861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwareStateList
 ```
@@ -18008,7 +18004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwareStateOutputReference
 ```
@@ -18319,7 +18315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwareTypeList
 ```
@@ -18462,7 +18458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwareTypeOutputReference
 ```
@@ -18773,7 +18769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationDomainList
 ```
@@ -18916,7 +18912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationDomainOutputReference
 ```
@@ -19227,7 +19223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv4List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv4List
 ```
@@ -19370,7 +19366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference
 ```
@@ -19659,7 +19655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv6List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv6List
 ```
@@ -19802,7 +19798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference
 ```
@@ -20091,7 +20087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationPortList
 ```
@@ -20234,7 +20230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationPortOutputReference
 ```
@@ -20588,7 +20584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDirectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDirectionList
 ```
@@ -20731,7 +20727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDirectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDirectionOutputReference
 ```
@@ -21042,7 +21038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkProtocolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkProtocolList
 ```
@@ -21185,7 +21181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkProtocolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkProtocolOutputReference
 ```
@@ -21496,7 +21492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceDomainList
 ```
@@ -21639,7 +21635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceDomainOutputReference
 ```
@@ -21950,7 +21946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv4List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceIpv4List
 ```
@@ -22093,7 +22089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceIpv4OutputReference
 ```
@@ -22382,7 +22378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv6List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceIpv6List
 ```
@@ -22525,7 +22521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceIpv6OutputReference
 ```
@@ -22814,7 +22810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceMacList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceMacList
 ```
@@ -22957,7 +22953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceMacOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceMacOutputReference
 ```
@@ -23268,7 +23264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourcePortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourcePortList
 ```
@@ -23411,7 +23407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourcePortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourcePortOutputReference
 ```
@@ -23765,7 +23761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNoteTextList
 ```
@@ -23908,7 +23904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNoteTextOutputReference
 ```
@@ -24219,7 +24215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference
 ```
@@ -24512,7 +24508,7 @@ func InternalValue() SecurityhubInsightFiltersNoteUpdatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNoteUpdatedAtList
 ```
@@ -24655,7 +24651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNoteUpdatedAtOutputReference
 ```
@@ -25022,7 +25018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNoteUpdatedByList
 ```
@@ -25165,7 +25161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNoteUpdatedByOutputReference
 ```
@@ -25476,7 +25472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersOutputReference
 ```
@@ -29421,7 +29417,7 @@ func InternalValue() SecurityhubInsightFilters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference
 ```
@@ -29714,7 +29710,7 @@ func InternalValue() SecurityhubInsightFiltersProcessLaunchedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessLaunchedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessLaunchedAtList
 ```
@@ -29857,7 +29853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessLaunchedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessLaunchedAtOutputReference
 ```
@@ -30224,7 +30220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessNameList
 ```
@@ -30367,7 +30363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessNameOutputReference
 ```
@@ -30678,7 +30674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessParentPidList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessParentPidList
 ```
@@ -30821,7 +30817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessParentPidOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessParentPidOutputReference
 ```
@@ -31175,7 +31171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessPathList
 ```
@@ -31318,7 +31314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessPathOutputReference
 ```
@@ -31629,7 +31625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPidList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessPidList
 ```
@@ -31772,7 +31768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPidOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessPidOutputReference
 ```
@@ -32126,7 +32122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference
 ```
@@ -32419,7 +32415,7 @@ func InternalValue() SecurityhubInsightFiltersProcessTerminatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessTerminatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessTerminatedAtList
 ```
@@ -32562,7 +32558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessTerminatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessTerminatedAtOutputReference
 ```
@@ -32929,7 +32925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProductArnList
 ```
@@ -33072,7 +33068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProductArnOutputReference
 ```
@@ -33383,7 +33379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProductFieldsList
 ```
@@ -33526,7 +33522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProductFieldsOutputReference
 ```
@@ -33859,7 +33855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProductNameList
 ```
@@ -34002,7 +33998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProductNameOutputReference
 ```
@@ -34313,7 +34309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecommendationTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRecommendationTextList
 ```
@@ -34456,7 +34452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecommendationTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRecommendationTextOutputReference
 ```
@@ -34767,7 +34763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecordStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRecordStateList
 ```
@@ -34910,7 +34906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecordStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRecordStateOutputReference
 ```
@@ -35221,7 +35217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRelatedFindingsIdList
 ```
@@ -35364,7 +35360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRelatedFindingsIdOutputReference
 ```
@@ -35675,7 +35671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRelatedFindingsProductArnList
 ```
@@ -35818,7 +35814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference
 ```
@@ -36129,7 +36125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList
 ```
@@ -36272,7 +36268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference
 ```
@@ -36583,7 +36579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList
 ```
@@ -36726,7 +36722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference
 ```
@@ -37037,7 +37033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList
 ```
@@ -37180,7 +37176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference
 ```
@@ -37469,7 +37465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList
 ```
@@ -37612,7 +37608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference
 ```
@@ -37901,7 +37897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList
 ```
@@ -38044,7 +38040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference
 ```
@@ -38355,7 +38351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference
 ```
@@ -38648,7 +38644,7 @@ func InternalValue() SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList
 ```
@@ -38791,7 +38787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference
 ```
@@ -39158,7 +39154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList
 ```
@@ -39301,7 +39297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference
 ```
@@ -39612,7 +39608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList
 ```
@@ -39755,7 +39751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference
 ```
@@ -40066,7 +40062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList
 ```
@@ -40209,7 +40205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference
 ```
@@ -40520,7 +40516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference
 ```
@@ -40813,7 +40809,7 @@ func InternalValue() SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList
 ```
@@ -40956,7 +40952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference
 ```
@@ -41323,7 +41319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList
 ```
@@ -41466,7 +41462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference
 ```
@@ -41777,7 +41773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList
 ```
@@ -41920,7 +41916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference
 ```
@@ -42231,7 +42227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList
 ```
@@ -42374,7 +42370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference
 ```
@@ -42685,7 +42681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList
 ```
@@ -42828,7 +42824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference
 ```
@@ -43139,7 +43135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerImageIdList
 ```
@@ -43282,7 +43278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerImageIdOutputReference
 ```
@@ -43593,7 +43589,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerImageNameList
 ```
@@ -43736,7 +43732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerImageNameOutputReference
 ```
@@ -44047,7 +44043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference
 ```
@@ -44340,7 +44336,7 @@ func InternalValue() SecurityhubInsightFiltersResourceContainerLaunchedAtDateRan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerLaunchedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerLaunchedAtList
 ```
@@ -44483,7 +44479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference
 ```
@@ -44850,7 +44846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerNameList
 ```
@@ -44993,7 +44989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerNameOutputReference
 ```
@@ -45304,7 +45300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceDetailsOtherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceDetailsOtherList
 ```
@@ -45447,7 +45443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceDetailsOtherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceDetailsOtherOutputReference
 ```
@@ -45780,7 +45776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceIdList
 ```
@@ -45923,7 +45919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceIdOutputReference
 ```
@@ -46234,7 +46230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourcePartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourcePartitionList
 ```
@@ -46377,7 +46373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourcePartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourcePartitionOutputReference
 ```
@@ -46688,7 +46684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceRegionList
 ```
@@ -46831,7 +46827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceRegionOutputReference
 ```
@@ -47142,7 +47138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceTagsList
 ```
@@ -47285,7 +47281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceTagsOutputReference
 ```
@@ -47618,7 +47614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceTypeList
 ```
@@ -47761,7 +47757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceTypeOutputReference
 ```
@@ -48072,7 +48068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSeverityLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersSeverityLabelList
 ```
@@ -48215,7 +48211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSeverityLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersSeverityLabelOutputReference
 ```
@@ -48526,7 +48522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSourceUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersSourceUrlList
 ```
@@ -48669,7 +48665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSourceUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersSourceUrlOutputReference
 ```
@@ -48980,7 +48976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorCategoryList
 ```
@@ -49123,7 +49119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference
 ```
@@ -49434,7 +49430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference
 ```
@@ -49727,7 +49723,7 @@ func InternalValue() SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList
 ```
@@ -49870,7 +49866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference
 ```
@@ -50237,7 +50233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceList
 ```
@@ -50380,7 +50376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference
 ```
@@ -50691,7 +50687,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList
 ```
@@ -50834,7 +50830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference
 ```
@@ -51145,7 +51141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorTypeList
 ```
@@ -51288,7 +51284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference
 ```
@@ -51599,7 +51595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorValueList
 ```
@@ -51742,7 +51738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference
 ```
@@ -52053,7 +52049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTitleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersTitleList
 ```
@@ -52196,7 +52192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTitleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersTitleOutputReference
 ```
@@ -52507,7 +52503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersTypeList
 ```
@@ -52650,7 +52646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersTypeOutputReference
 ```
@@ -52961,7 +52957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference
 ```
@@ -53254,7 +53250,7 @@ func InternalValue() SecurityhubInsightFiltersUpdatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersUpdatedAtList
 ```
@@ -53397,7 +53393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersUpdatedAtOutputReference
 ```
@@ -53764,7 +53760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUserDefinedValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersUserDefinedValuesList
 ```
@@ -53907,7 +53903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUserDefinedValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersUserDefinedValuesOutputReference
 ```
@@ -54240,7 +54236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersVerificationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersVerificationStateList
 ```
@@ -54383,7 +54379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersVerificationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersVerificationStateOutputReference
 ```
@@ -54694,7 +54690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersWorkflowStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersWorkflowStatusList
 ```
@@ -54837,7 +54833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersWorkflowStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersWorkflowStatusOutputReference
 ```

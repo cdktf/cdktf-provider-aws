@@ -1,7 +1,3 @@
-# `data_aws_opensearchserverless_vpc_endpoint`
-
-Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_vpc_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/opensearchserverless_vpc_endpoint).
-
 # `dataAwsOpensearchserverlessVpcEndpoint` Submodule <a name="`dataAwsOpensearchserverlessVpcEndpoint` Submodule" id="@cdktf/provider-aws.dataAwsOpensearchserverlessVpcEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchserverlessVpcEndpoint.DataAwsOpensearchserverlessVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlessvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlessvpcendpoint"
 
 dataawsopensearchserverlessvpcendpoint.NewDataAwsOpensearchserverlessVpcEndpoint(scope Construct, id *string, config DataAwsOpensearchserverlessVpcEndpointConfig) DataAwsOpensearchserverlessVpcEndpoint
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOpensearchserverlessVpcEndpoint.DataAwsOpensearchserverlessVpcEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlessvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlessvpcendpoint"
 
 dataawsopensearchserverlessvpcendpoint.DataAwsOpensearchserverlessVpcEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOpensearchserverlessVpcEndpoint.DataAwsOpensearchserverlessVpcEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlessvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlessvpcendpoint"
 
 dataawsopensearchserverlessvpcendpoint.DataAwsOpensearchserverlessVpcEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsopensearchserverlessvpcendpoint.DataAwsOpensearchserverlessVpcEndpoint_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOpensearchserverlessVpcEndpoint.DataAwsOpensearchserverlessVpcEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlessvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlessvpcendpoint"
 
 dataawsopensearchserverlessvpcendpoint.DataAwsOpensearchserverlessVpcEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsopensearchserverlessvpcendpoint.DataAwsOpensearchserverlessVpcEndpoint_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOpensearchserverlessVpcEndpoint.DataAwsOpensearchserverlessVpcEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlessvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlessvpcendpoint"
 
 dataawsopensearchserverlessvpcendpoint.DataAwsOpensearchserverlessVpcEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -644,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchserverlessVpcEndpoint.DataAwsOpensearchserverlessVpcEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlessvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlessvpcendpoint"
 
 &dataawsopensearchserverlessvpcendpoint.DataAwsOpensearchserverlessVpcEndpointConfig {
 	Connection: interface{},

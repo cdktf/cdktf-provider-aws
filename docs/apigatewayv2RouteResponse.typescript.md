@@ -1,7 +1,3 @@
-# `aws_apigatewayv2_route_response`
-
-Refer to the Terraform Registory for docs: [`aws_apigatewayv2_route_response`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apigatewayv2_route_response).
-
 # `apigatewayv2RouteResponse` Submodule <a name="`apigatewayv2RouteResponse` Submodule" id="@cdktf/provider-aws.apigatewayv2RouteResponse"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_opensearchserverless_security_policy`
-
-Refer to the Terraform Registory for docs: [`aws_opensearchserverless_security_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opensearchserverless_security_policy).
-
 # `opensearchserverlessSecurityPolicy` Submodule <a name="`opensearchserverlessSecurityPolicy` Submodule" id="@cdktf/provider-aws.opensearchserverlessSecurityPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

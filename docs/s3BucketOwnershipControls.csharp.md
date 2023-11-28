@@ -1,7 +1,3 @@
-# `aws_s3_bucket_ownership_controls`
-
-Refer to the Terraform Registory for docs: [`aws_s3_bucket_ownership_controls`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_ownership_controls).
-
 # `s3BucketOwnershipControls` Submodule <a name="`s3BucketOwnershipControls` Submodule" id="@cdktf/provider-aws.s3BucketOwnershipControls"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_wafv2_web_acl`
-
-Refer to the Terraform Registory for docs: [`data_aws_wafv2_web_acl`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/wafv2_web_acl).
-
 # `dataAwsWafv2WebAcl` Submodule <a name="`dataAwsWafv2WebAcl` Submodule" id="@cdktf/provider-aws.dataAwsWafv2WebAcl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

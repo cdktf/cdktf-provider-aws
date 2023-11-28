@@ -1,7 +1,3 @@
-# `data_aws_networkmanager_devices`
-
-Refer to the Terraform Registory for docs: [`data_aws_networkmanager_devices`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_devices).
-
 # `dataAwsNetworkmanagerDevices` Submodule <a name="`dataAwsNetworkmanagerDevices` Submodule" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.NewDataAwsNetworkmanagerDevices(scope Construct, id *string, config DataAwsNetworkmanagerDevicesConfig) DataAwsNetworkmanagerDevices
 ```
@@ -292,7 +288,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 &dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevicesConfig {
 	Connection: interface{},

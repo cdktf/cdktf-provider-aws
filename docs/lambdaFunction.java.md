@@ -1,7 +1,3 @@
-# `aws_lambda_function`
-
-Refer to the Terraform Registory for docs: [`aws_lambda_function`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lambda_function).
-
 # `lambdaFunction` Submodule <a name="`lambdaFunction` Submodule" id="@cdktf/provider-aws.lambdaFunction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

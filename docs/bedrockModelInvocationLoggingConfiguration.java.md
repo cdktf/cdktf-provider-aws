@@ -1,7 +1,3 @@
-# `aws_bedrock_model_invocation_logging_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_bedrock_model_invocation_logging_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/bedrock_model_invocation_logging_configuration).
-
 # `bedrockModelInvocationLoggingConfiguration` Submodule <a name="`bedrockModelInvocationLoggingConfiguration` Submodule" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

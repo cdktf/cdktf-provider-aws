@@ -1,7 +1,3 @@
-# `data_aws_wafregional_subscribed_rule_group`
-
-Refer to the Terraform Registory for docs: [`data_aws_wafregional_subscribed_rule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/wafregional_subscribed_rule_group).
-
 # `dataAwsWafregionalSubscribedRuleGroup` Submodule <a name="`dataAwsWafregionalSubscribedRuleGroup` Submodule" id="@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

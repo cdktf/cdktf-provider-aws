@@ -1,7 +1,3 @@
-# `aws_lightsail_lb`
-
-Refer to the Terraform Registory for docs: [`aws_lightsail_lb`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lightsail_lb).
-
 # `lightsailLb` Submodule <a name="`lightsailLb` Submodule" id="@cdktf/provider-aws.lightsailLb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

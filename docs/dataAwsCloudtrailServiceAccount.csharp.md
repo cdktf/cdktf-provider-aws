@@ -1,7 +1,3 @@
-# `data_aws_cloudtrail_service_account`
-
-Refer to the Terraform Registory for docs: [`data_aws_cloudtrail_service_account`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudtrail_service_account).
-
 # `dataAwsCloudtrailServiceAccount` Submodule <a name="`dataAwsCloudtrailServiceAccount` Submodule" id="@cdktf/provider-aws.dataAwsCloudtrailServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

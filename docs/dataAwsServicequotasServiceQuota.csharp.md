@@ -1,7 +1,3 @@
-# `data_aws_servicequotas_service_quota`
-
-Refer to the Terraform Registory for docs: [`data_aws_servicequotas_service_quota`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/servicequotas_service_quota).
-
 # `dataAwsServicequotasServiceQuota` Submodule <a name="`dataAwsServicequotasServiceQuota` Submodule" id="@cdktf/provider-aws.dataAwsServicequotasServiceQuota"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

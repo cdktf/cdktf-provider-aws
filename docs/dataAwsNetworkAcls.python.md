@@ -1,7 +1,3 @@
-# `data_aws_network_acls`
-
-Refer to the Terraform Registory for docs: [`data_aws_network_acls`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/network_acls).
-
 # `dataAwsNetworkAcls` Submodule <a name="`dataAwsNetworkAcls` Submodule" id="@cdktf/provider-aws.dataAwsNetworkAcls"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

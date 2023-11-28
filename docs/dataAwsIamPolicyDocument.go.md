@@ -1,7 +1,3 @@
-# `data_aws_iam_policy_document`
-
-Refer to the Terraform Registory for docs: [`data_aws_iam_policy_document`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_policy_document).
-
 # `dataAwsIamPolicyDocument` Submodule <a name="`dataAwsIamPolicyDocument` Submodule" id="@cdktf/provider-aws.dataAwsIamPolicyDocument"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocument(scope Construct, id *string, config DataAwsIamPolicyDocumentConfig) DataAwsIamPolicyDocument
 ```
@@ -326,7 +322,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.DataAwsIamPolicyDocument_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.DataAwsIamPolicyDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +368,7 @@ dataawsiampolicydocument.DataAwsIamPolicyDocument_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.DataAwsIamPolicyDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +382,7 @@ dataawsiampolicydocument.DataAwsIamPolicyDocument_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.DataAwsIamPolicyDocument_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 &dataawsiampolicydocument.DataAwsIamPolicyDocumentConfig {
 	Connection: interface{},
@@ -927,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 &dataawsiampolicydocument.DataAwsIamPolicyDocumentStatement {
 	Actions: *[]*string,
@@ -1077,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 &dataawsiampolicydocument.DataAwsIamPolicyDocumentStatementCondition {
 	Test: *string,
@@ -1137,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 &dataawsiampolicydocument.DataAwsIamPolicyDocumentStatementNotPrincipals {
 	Identifiers: *[]*string,
@@ -1183,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementPrincipals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 &dataawsiampolicydocument.DataAwsIamPolicyDocumentStatementPrincipals {
 	Identifiers: *[]*string,
@@ -1231,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamPolicyDocumentStatementConditionList
 ```
@@ -1374,7 +1370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamPolicyDocumentStatementConditionOutputReference
 ```
@@ -1707,7 +1703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamPolicyDocumentStatementList
 ```
@@ -1850,7 +1846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementNotPrincipalsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamPolicyDocumentStatementNotPrincipalsList
 ```
@@ -1993,7 +1989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 ```
@@ -2304,7 +2300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamPolicyDocumentStatementOutputReference
 ```
@@ -2871,7 +2867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementPrincipalsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementPrincipalsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamPolicyDocumentStatementPrincipalsList
 ```
@@ -3014,7 +3010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementPrincipalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiampolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiampolicydocument"
 
 dataawsiampolicydocument.NewDataAwsIamPolicyDocumentStatementPrincipalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamPolicyDocumentStatementPrincipalsOutputReference
 ```

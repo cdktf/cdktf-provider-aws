@@ -1,7 +1,3 @@
-# `aws_api_gateway_request_validator`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_request_validator`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_request_validator).
-
 # `apiGatewayRequestValidator` Submodule <a name="`apiGatewayRequestValidator` Submodule" id="@cdktf/provider-aws.apiGatewayRequestValidator"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.NewApiGatewayRequestValidator(scope Construct, id *string, config ApiGatewayRequestValidatorConfig) ApiGatewayRequestValidator
 ```
@@ -353,7 +349,7 @@ func ResetValidateRequestParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 &apigatewayrequestvalidator.ApiGatewayRequestValidatorConfig {
 	Connection: interface{},

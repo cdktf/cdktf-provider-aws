@@ -1,7 +1,3 @@
-# `aws_route53_vpc_association_authorization`
-
-Refer to the Terraform Registory for docs: [`aws_route53_vpc_association_authorization`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/route53_vpc_association_authorization).
-
 # `route53VpcAssociationAuthorization` Submodule <a name="`route53VpcAssociationAuthorization` Submodule" id="@cdktf/provider-aws.route53VpcAssociationAuthorization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

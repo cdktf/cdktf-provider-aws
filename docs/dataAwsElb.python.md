@@ -1,7 +1,3 @@
-# `data_aws_elb`
-
-Refer to the Terraform Registory for docs: [`data_aws_elb`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/elb).
-
 # `dataAwsElb` Submodule <a name="`dataAwsElb` Submodule" id="@cdktf/provider-aws.dataAwsElb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

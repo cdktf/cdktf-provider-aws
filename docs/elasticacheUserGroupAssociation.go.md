@@ -1,7 +1,3 @@
-# `aws_elasticache_user_group_association`
-
-Refer to the Terraform Registory for docs: [`aws_elasticache_user_group_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/elasticache_user_group_association).
-
 # `elasticacheUserGroupAssociation` Submodule <a name="`elasticacheUserGroupAssociation` Submodule" id="@cdktf/provider-aws.elasticacheUserGroupAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheusergroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.NewElasticacheUserGroupAssociation(scope Construct, id *string, config ElasticacheUserGroupAssociationConfig) ElasticacheUserGroupAssociation
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheusergroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheusergroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheusergroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheusergroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheusergroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheusergroupassociation"
 
 &elasticacheusergroupassociation.ElasticacheUserGroupAssociationConfig {
 	Connection: interface{},

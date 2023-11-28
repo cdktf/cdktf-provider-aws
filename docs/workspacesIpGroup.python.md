@@ -1,7 +1,3 @@
-# `aws_workspaces_ip_group`
-
-Refer to the Terraform Registory for docs: [`aws_workspaces_ip_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/workspaces_ip_group).
-
 # `workspacesIpGroup` Submodule <a name="`workspacesIpGroup` Submodule" id="@cdktf/provider-aws.workspacesIpGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

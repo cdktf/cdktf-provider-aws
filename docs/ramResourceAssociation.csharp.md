@@ -1,7 +1,3 @@
-# `aws_ram_resource_association`
-
-Refer to the Terraform Registory for docs: [`aws_ram_resource_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ram_resource_association).
-
 # `ramResourceAssociation` Submodule <a name="`ramResourceAssociation` Submodule" id="@cdktf/provider-aws.ramResourceAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

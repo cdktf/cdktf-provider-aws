@@ -1,7 +1,3 @@
-# `aws_ec2_traffic_mirror_target`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_traffic_mirror_target`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_traffic_mirror_target).
-
 # `ec2TrafficMirrorTarget` Submodule <a name="`ec2TrafficMirrorTarget` Submodule" id="@cdktf/provider-aws.ec2TrafficMirrorTarget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

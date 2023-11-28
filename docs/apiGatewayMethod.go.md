@@ -1,7 +1,3 @@
-# `aws_api_gateway_method`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_method`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_method).
-
 # `apiGatewayMethod` Submodule <a name="`apiGatewayMethod` Submodule" id="@cdktf/provider-aws.apiGatewayMethod"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayMethod.ApiGatewayMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethod"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethod"
 
 apigatewaymethod.NewApiGatewayMethod(scope Construct, id *string, config ApiGatewayMethodConfig) ApiGatewayMethod
 ```
@@ -388,7 +384,7 @@ func ResetRequestValidatorId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayMethod.ApiGatewayMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethod"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethod"
 
 apigatewaymethod.ApiGatewayMethod_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayMethod.ApiGatewayMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethod"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethod"
 
 apigatewaymethod.ApiGatewayMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +430,7 @@ apigatewaymethod.ApiGatewayMethod_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayMethod.ApiGatewayMethod.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethod"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethod"
 
 apigatewaymethod.ApiGatewayMethod_IsTerraformResource(x interface{}) *bool
 ```
@@ -448,7 +444,7 @@ apigatewaymethod.ApiGatewayMethod_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayMethod.ApiGatewayMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethod"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethod"
 
 apigatewaymethod.ApiGatewayMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -941,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethod"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethod"
 
 &apigatewaymethod.ApiGatewayMethodConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `aws_sagemaker_image`
-
-Refer to the Terraform Registory for docs: [`aws_sagemaker_image`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_image).
-
 # `sagemakerImage` Submodule <a name="`sagemakerImage` Submodule" id="@cdktf/provider-aws.sagemakerImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.NewSagemakerImage(scope Construct, id *string, config SagemakerImageConfig) SagemakerImage
 ```
@@ -367,7 +363,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.SagemakerImage_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.SagemakerImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ sagemakerimage.SagemakerImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.SagemakerImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ sagemakerimage.SagemakerImage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.SagemakerImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -821,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerImage.SagemakerImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 &sagemakerimage.SagemakerImageConfig {
 	Connection: interface{},

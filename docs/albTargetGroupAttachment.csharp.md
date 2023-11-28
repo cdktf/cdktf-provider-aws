@@ -1,7 +1,3 @@
-# `aws_alb_target_group_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_alb_target_group_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_target_group_attachment).
-
 # `albTargetGroupAttachment` Submodule <a name="`albTargetGroupAttachment` Submodule" id="@cdktf/provider-aws.albTargetGroupAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_ivs_channel`
-
-Refer to the Terraform Registory for docs: [`aws_ivs_channel`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ivs_channel).
-
 # `ivsChannel` Submodule <a name="`ivsChannel` Submodule" id="@cdktf/provider-aws.ivsChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_availability_zone`
-
-Refer to the Terraform Registory for docs: [`data_aws_availability_zone`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/availability_zone).
-
 # `dataAwsAvailabilityZone` Submodule <a name="`dataAwsAvailabilityZone` Submodule" id="@cdktf/provider-aws.dataAwsAvailabilityZone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.NewDataAwsAvailabilityZone(scope Construct, id *string, config DataAwsAvailabilityZoneConfig) DataAwsAvailabilityZone
 ```
@@ -346,7 +342,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.DataAwsAvailabilityZone_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.DataAwsAvailabilityZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ dataawsavailabilityzone.DataAwsAvailabilityZone_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.DataAwsAvailabilityZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ dataawsavailabilityzone.DataAwsAvailabilityZone_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.DataAwsAvailabilityZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 &dataawsavailabilityzone.DataAwsAvailabilityZoneConfig {
 	Connection: interface{},
@@ -870,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
 	Id: *string,
 	Name: *string,
 	State: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeouts,
 	ZoneId: *string,
 }
 ```
@@ -1062,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 &dataawsavailabilityzone.DataAwsAvailabilityZoneFilter {
 	Name: *string,
@@ -1108,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 &dataawsavailabilityzone.DataAwsAvailabilityZoneTimeouts {
 	Read: *string,
@@ -1142,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.NewDataAwsAvailabilityZoneFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAvailabilityZoneFilterList
 ```
@@ -1285,7 +1281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.NewDataAwsAvailabilityZoneFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAvailabilityZoneFilterOutputReference
 ```
@@ -1596,7 +1592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsavailabilityzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsavailabilityzone"
 
 dataawsavailabilityzone.NewDataAwsAvailabilityZoneTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAvailabilityZoneTimeoutsOutputReference
 ```

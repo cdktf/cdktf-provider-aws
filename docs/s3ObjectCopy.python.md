@@ -1,7 +1,3 @@
-# `aws_s3_object_copy`
-
-Refer to the Terraform Registory for docs: [`aws_s3_object_copy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_object_copy).
-
 # `s3ObjectCopy` Submodule <a name="`s3ObjectCopy` Submodule" id="@cdktf/provider-aws.s3ObjectCopy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_eks_addon_version`
-
-Refer to the Terraform Registory for docs: [`data_aws_eks_addon_version`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/eks_addon_version).
-
 # `dataAwsEksAddonVersion` Submodule <a name="`dataAwsEksAddonVersion` Submodule" id="@cdktf/provider-aws.dataAwsEksAddonVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksaddonversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddonversion"
 
 dataawseksaddonversion.NewDataAwsEksAddonVersion(scope Construct, id *string, config DataAwsEksAddonVersionConfig) DataAwsEksAddonVersion
 ```
@@ -285,7 +281,7 @@ func ResetMostRecent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksaddonversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksaddonversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksaddonversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksaddonversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksaddonversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddonversion"
 
 &dataawseksaddonversion.DataAwsEksAddonVersionConfig {
 	Connection: interface{},

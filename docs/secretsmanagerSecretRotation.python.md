@@ -1,7 +1,3 @@
-# `aws_secretsmanager_secret_rotation`
-
-Refer to the Terraform Registory for docs: [`aws_secretsmanager_secret_rotation`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/secretsmanager_secret_rotation).
-
 # `secretsmanagerSecretRotation` Submodule <a name="`secretsmanagerSecretRotation` Submodule" id="@cdktf/provider-aws.secretsmanagerSecretRotation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

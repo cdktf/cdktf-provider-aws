@@ -1,7 +1,3 @@
-# `aws_iam_security_token_service_preferences`
-
-Refer to the Terraform Registory for docs: [`aws_iam_security_token_service_preferences`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iam_security_token_service_preferences).
-
 # `iamSecurityTokenServicePreferences` Submodule <a name="`iamSecurityTokenServicePreferences` Submodule" id="@cdktf/provider-aws.iamSecurityTokenServicePreferences"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamSecurityTokenServicePreferences.IamSecurityTokenServicePreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsecuritytokenservicepreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsecuritytokenservicepreferences"
 
 iamsecuritytokenservicepreferences.NewIamSecurityTokenServicePreferences(scope Construct, id *string, config IamSecurityTokenServicePreferencesConfig) IamSecurityTokenServicePreferences
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamSecurityTokenServicePreferences.IamSecurityTokenServicePreferences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsecuritytokenservicepreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsecuritytokenservicepreferences"
 
 iamsecuritytokenservicepreferences.IamSecurityTokenServicePreferences_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamSecurityTokenServicePreferences.IamSecurityTokenServicePreferences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsecuritytokenservicepreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsecuritytokenservicepreferences"
 
 iamsecuritytokenservicepreferences.IamSecurityTokenServicePreferences_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ iamsecuritytokenservicepreferences.IamSecurityTokenServicePreferences_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamSecurityTokenServicePreferences.IamSecurityTokenServicePreferences.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsecuritytokenservicepreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsecuritytokenservicepreferences"
 
 iamsecuritytokenservicepreferences.IamSecurityTokenServicePreferences_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ iamsecuritytokenservicepreferences.IamSecurityTokenServicePreferences_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamSecurityTokenServicePreferences.IamSecurityTokenServicePreferences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsecuritytokenservicepreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsecuritytokenservicepreferences"
 
 iamsecuritytokenservicepreferences.IamSecurityTokenServicePreferences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -672,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamSecurityTokenServicePreferences.IamSecurityTokenServicePreferencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsecuritytokenservicepreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsecuritytokenservicepreferences"
 
 &iamsecuritytokenservicepreferences.IamSecurityTokenServicePreferencesConfig {
 	Connection: interface{},

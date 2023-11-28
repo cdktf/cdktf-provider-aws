@@ -1,7 +1,3 @@
-# `aws_elasticsearch_vpc_endpoint`
-
-Refer to the Terraform Registory for docs: [`aws_elasticsearch_vpc_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/elasticsearch_vpc_endpoint).
-
 # `elasticsearchVpcEndpoint` Submodule <a name="`elasticsearchVpcEndpoint` Submodule" id="@cdktf/provider-aws.elasticsearchVpcEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

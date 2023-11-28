@@ -1,7 +1,3 @@
-# `aws_dx_connection_association`
-
-Refer to the Terraform Registory for docs: [`aws_dx_connection_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_connection_association).
-
 # `dxConnectionAssociation` Submodule <a name="`dxConnectionAssociation` Submodule" id="@cdktf/provider-aws.dxConnectionAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

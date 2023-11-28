@@ -1,7 +1,3 @@
-# `data_aws_rds_clusters`
-
-Refer to the Terraform Registory for docs: [`data_aws_rds_clusters`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/rds_clusters).
-
 # `dataAwsRdsClusters` Submodule <a name="`dataAwsRdsClusters` Submodule" id="@cdktf/provider-aws.dataAwsRdsClusters"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 dataawsrdsclusters.NewDataAwsRdsClusters(scope Construct, id *string, config DataAwsRdsClustersConfig) DataAwsRdsClusters
 ```
@@ -298,7 +294,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 dataawsrdsclusters.DataAwsRdsClusters_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 dataawsrdsclusters.DataAwsRdsClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +340,7 @@ dataawsrdsclusters.DataAwsRdsClusters_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 dataawsrdsclusters.DataAwsRdsClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +354,7 @@ dataawsrdsclusters.DataAwsRdsClusters_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 dataawsrdsclusters.DataAwsRdsClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 &dataawsrdsclusters.DataAwsRdsClustersConfig {
 	Connection: interface{},
@@ -766,7 +762,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 &dataawsrdsclusters.DataAwsRdsClustersFilter {
 	Name: *string,
@@ -814,7 +810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 dataawsrdsclusters.NewDataAwsRdsClustersFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRdsClustersFilterList
 ```
@@ -957,7 +953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusters"
 
 dataawsrdsclusters.NewDataAwsRdsClustersFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRdsClustersFilterOutputReference
 ```

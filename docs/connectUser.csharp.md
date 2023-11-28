@@ -1,7 +1,3 @@
-# `aws_connect_user`
-
-Refer to the Terraform Registory for docs: [`aws_connect_user`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/connect_user).
-
 # `connectUser` Submodule <a name="`connectUser` Submodule" id="@cdktf/provider-aws.connectUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_vpc_security_group_egress_rule`
-
-Refer to the Terraform Registory for docs: [`aws_vpc_security_group_egress_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpc_security_group_egress_rule).
-
 # `vpcSecurityGroupEgressRule` Submodule <a name="`vpcSecurityGroupEgressRule` Submodule" id="@cdktf/provider-aws.vpcSecurityGroupEgressRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_route53_zone`
-
-Refer to the Terraform Registory for docs: [`data_aws_route53_zone`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/route53_zone).
-
 # `dataAwsRoute53Zone` Submodule <a name="`dataAwsRoute53Zone` Submodule" id="@cdktf/provider-aws.dataAwsRoute53Zone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

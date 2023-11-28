@@ -1,7 +1,3 @@
-# `aws_cloudwatch_query_definition`
-
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_query_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_query_definition).
-
 # `cloudwatchQueryDefinition` Submodule <a name="`cloudwatchQueryDefinition` Submodule" id="@cdktf/provider-aws.cloudwatchQueryDefinition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchquerydefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.NewCloudwatchQueryDefinition(scope Construct, id *string, config CloudwatchQueryDefinitionConfig) CloudwatchQueryDefinition
 ```
@@ -346,7 +342,7 @@ func ResetLogGroupNames()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchquerydefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchquerydefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchquerydefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchquerydefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -734,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchquerydefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchquerydefinition"
 
 &cloudwatchquerydefinition.CloudwatchQueryDefinitionConfig {
 	Connection: interface{},

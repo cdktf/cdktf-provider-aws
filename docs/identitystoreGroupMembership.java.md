@@ -1,7 +1,3 @@
-# `aws_identitystore_group_membership`
-
-Refer to the Terraform Registory for docs: [`aws_identitystore_group_membership`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/identitystore_group_membership).
-
 # `identitystoreGroupMembership` Submodule <a name="`identitystoreGroupMembership` Submodule" id="@cdktf/provider-aws.identitystoreGroupMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

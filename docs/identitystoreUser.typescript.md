@@ -1,7 +1,3 @@
-# `aws_identitystore_user`
-
-Refer to the Terraform Registory for docs: [`aws_identitystore_user`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/identitystore_user).
-
 # `identitystoreUser` Submodule <a name="`identitystoreUser` Submodule" id="@cdktf/provider-aws.identitystoreUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

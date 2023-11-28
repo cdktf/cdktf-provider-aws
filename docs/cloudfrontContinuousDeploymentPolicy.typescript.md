@@ -1,7 +1,3 @@
-# `aws_cloudfront_continuous_deployment_policy`
-
-Refer to the Terraform Registory for docs: [`aws_cloudfront_continuous_deployment_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudfront_continuous_deployment_policy).
-
 # `cloudfrontContinuousDeploymentPolicy` Submodule <a name="`cloudfrontContinuousDeploymentPolicy` Submodule" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

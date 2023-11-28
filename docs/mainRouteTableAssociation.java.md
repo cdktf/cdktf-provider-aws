@@ -1,7 +1,3 @@
-# `aws_main_route_table_association`
-
-Refer to the Terraform Registory for docs: [`aws_main_route_table_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/main_route_table_association).
-
 # `mainRouteTableAssociation` Submodule <a name="`mainRouteTableAssociation` Submodule" id="@cdktf/provider-aws.mainRouteTableAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

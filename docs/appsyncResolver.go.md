@@ -1,7 +1,3 @@
-# `aws_appsync_resolver`
-
-Refer to the Terraform Registory for docs: [`aws_appsync_resolver`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appsync_resolver).
-
 # `appsyncResolver` Submodule <a name="`appsyncResolver` Submodule" id="@cdktf/provider-aws.appsyncResolver"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolver(scope Construct, id *string, config AppsyncResolverConfig) AppsyncResolver
 ```
@@ -461,7 +457,7 @@ func ResetSyncConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +489,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +503,7 @@ appsyncresolver.AppsyncResolver_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +517,7 @@ appsyncresolver.AppsyncResolver_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1069,7 +1065,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverCachingConfig {
 	CachingKeys: *[]*string,
@@ -1115,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverConfig {
 	Connection: interface{},
@@ -1128,17 +1124,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
 	ApiId: *string,
 	Field: *string,
 	Type: *string,
-	CachingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverCachingConfig,
+	CachingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverCachingConfig,
 	Code: *string,
 	DataSource: *string,
 	Id: *string,
 	Kind: *string,
 	MaxBatchSize: *f64,
-	PipelineConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverPipelineConfig,
+	PipelineConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverPipelineConfig,
 	RequestTemplate: *string,
 	ResponseTemplate: *string,
-	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverRuntime,
-	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverSyncConfig,
+	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverRuntime,
+	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverSyncConfig,
 }
 ```
 
@@ -1424,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverPipelineConfig {
 	Functions: *[]*string,
@@ -1456,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverRuntime {
 	Name: *string,
@@ -1502,12 +1498,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverSyncConfig {
 	ConflictDetection: *string,
 	ConflictHandler: *string,
-	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig,
+	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig,
 }
 ```
 
@@ -1564,7 +1560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig {
 	LambdaConflictHandlerArn: *string,
@@ -1598,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverCachingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverCachingConfigOutputReference
 ```
@@ -1905,7 +1901,7 @@ func InternalValue() AppsyncResolverCachingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverPipelineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverPipelineConfigOutputReference
 ```
@@ -2183,7 +2179,7 @@ func InternalValue() AppsyncResolverPipelineConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverRuntimeOutputReference
 ```
@@ -2476,7 +2472,7 @@ func InternalValue() AppsyncResolverRuntime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference
 ```
@@ -2754,7 +2750,7 @@ func InternalValue() AppsyncResolverSyncConfigLambdaConflictHandlerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverSyncConfigOutputReference
 ```

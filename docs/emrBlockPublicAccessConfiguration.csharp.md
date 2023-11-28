@@ -1,7 +1,3 @@
-# `aws_emr_block_public_access_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_emr_block_public_access_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emr_block_public_access_configuration).
-
 # `emrBlockPublicAccessConfiguration` Submodule <a name="`emrBlockPublicAccessConfiguration` Submodule" id="@cdktf/provider-aws.emrBlockPublicAccessConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

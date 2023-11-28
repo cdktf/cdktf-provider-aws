@@ -1,7 +1,3 @@
-# `aws_dlm_lifecycle_policy`
-
-Refer to the Terraform Registory for docs: [`aws_dlm_lifecycle_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dlm_lifecycle_policy).
-
 # `dlmLifecyclePolicy` Submodule <a name="`dlmLifecyclePolicy` Submodule" id="@cdktf/provider-aws.dlmLifecyclePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

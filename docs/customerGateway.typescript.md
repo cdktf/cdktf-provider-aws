@@ -1,7 +1,3 @@
-# `aws_customer_gateway`
-
-Refer to the Terraform Registory for docs: [`aws_customer_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/customer_gateway).
-
 # `customerGateway` Submodule <a name="`customerGateway` Submodule" id="@cdktf/provider-aws.customerGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

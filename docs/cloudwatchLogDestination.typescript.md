@@ -1,7 +1,3 @@
-# `aws_cloudwatch_log_destination`
-
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_destination`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_destination).
-
 # `cloudwatchLogDestination` Submodule <a name="`cloudwatchLogDestination` Submodule" id="@cdktf/provider-aws.cloudwatchLogDestination"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

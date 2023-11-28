@@ -1,7 +1,3 @@
-# `data_aws_organizations_policy`
-
-Refer to the Terraform Registory for docs: [`data_aws_organizations_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/organizations_policy).
-
 # `dataAwsOrganizationsPolicy` Submodule <a name="`dataAwsOrganizationsPolicy` Submodule" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.NewDataAwsOrganizationsPolicy(scope Construct, id *string, config DataAwsOrganizationsPolicyConfig) DataAwsOrganizationsPolicy
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -655,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 &dataawsorganizationspolicy.DataAwsOrganizationsPolicyConfig {
 	Connection: interface{},

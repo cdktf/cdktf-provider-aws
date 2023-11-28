@@ -1,7 +1,3 @@
-# `aws_vpclattice_listener_rule`
-
-Refer to the Terraform Registory for docs: [`aws_vpclattice_listener_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpclattice_listener_rule).
-
 # `vpclatticeListenerRule` Submodule <a name="`vpclatticeListenerRule` Submodule" id="@cdktf/provider-aws.vpclatticeListenerRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

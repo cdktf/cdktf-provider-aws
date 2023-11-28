@@ -1,7 +1,3 @@
-# `data_aws_ssmcontacts_contact`
-
-Refer to the Terraform Registory for docs: [`data_aws_ssmcontacts_contact`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ssmcontacts_contact).
-
 # `dataAwsSsmcontactsContact` Submodule <a name="`dataAwsSsmcontactsContact` Submodule" id="@cdktf/provider-aws.dataAwsSsmcontactsContact"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_organizations_organization`
-
-Refer to the Terraform Registory for docs: [`aws_organizations_organization`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_organization).
-
 # `organizationsOrganization` Submodule <a name="`organizationsOrganization` Submodule" id="@cdktf/provider-aws.organizationsOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganization(scope Construct, id *string, config OrganizationsOrganizationConfig) OrganizationsOrganization
 ```
@@ -360,7 +356,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.OrganizationsOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.OrganizationsOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ organizationsorganization.OrganizationsOrganization_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.OrganizationsOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ organizationsorganization.OrganizationsOrganization_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.OrganizationsOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -814,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 &organizationsorganization.OrganizationsOrganizationAccounts {
 
@@ -827,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 &organizationsorganization.OrganizationsOrganizationConfig {
 	Connection: interface{},
@@ -988,7 +984,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationNonMasterAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 &organizationsorganization.OrganizationsOrganizationNonMasterAccounts {
 
@@ -1001,7 +997,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRoots.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 &organizationsorganization.OrganizationsOrganizationRoots {
 
@@ -1014,7 +1010,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 &organizationsorganization.OrganizationsOrganizationRootsPolicyTypes {
 
@@ -1029,7 +1025,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationAccountsList
 ```
@@ -1161,7 +1157,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationsOrganizationAccountsOutputReference
 ```
@@ -1483,7 +1479,7 @@ func InternalValue() OrganizationsOrganizationAccounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationNonMasterAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationNonMasterAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationNonMasterAccountsList
 ```
@@ -1615,7 +1611,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationNonMasterAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationNonMasterAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationsOrganizationNonMasterAccountsOutputReference
 ```
@@ -1937,7 +1933,7 @@ func InternalValue() OrganizationsOrganizationNonMasterAccounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationRootsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationRootsList
 ```
@@ -2069,7 +2065,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationRootsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationsOrganizationRootsOutputReference
 ```
@@ -2380,7 +2376,7 @@ func InternalValue() OrganizationsOrganizationRoots
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationRootsPolicyTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationRootsPolicyTypesList
 ```
@@ -2512,7 +2508,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsorganization"
 
 organizationsorganization.NewOrganizationsOrganizationRootsPolicyTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationsOrganizationRootsPolicyTypesOutputReference
 ```

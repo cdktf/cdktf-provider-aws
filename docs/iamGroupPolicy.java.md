@@ -1,7 +1,3 @@
-# `aws_iam_group_policy`
-
-Refer to the Terraform Registory for docs: [`aws_iam_group_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iam_group_policy).
-
 # `iamGroupPolicy` Submodule <a name="`iamGroupPolicy` Submodule" id="@cdktf/provider-aws.iamGroupPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

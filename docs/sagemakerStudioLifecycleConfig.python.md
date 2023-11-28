@@ -1,7 +1,3 @@
-# `aws_sagemaker_studio_lifecycle_config`
-
-Refer to the Terraform Registory for docs: [`aws_sagemaker_studio_lifecycle_config`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_studio_lifecycle_config).
-
 # `sagemakerStudioLifecycleConfig` Submodule <a name="`sagemakerStudioLifecycleConfig` Submodule" id="@cdktf/provider-aws.sagemakerStudioLifecycleConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

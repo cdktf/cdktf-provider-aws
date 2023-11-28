@@ -1,7 +1,3 @@
-# `aws_storagegateway_working_storage`
-
-Refer to the Terraform Registory for docs: [`aws_storagegateway_working_storage`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/storagegateway_working_storage).
-
 # `storagegatewayWorkingStorage` Submodule <a name="`storagegatewayWorkingStorage` Submodule" id="@cdktf/provider-aws.storagegatewayWorkingStorage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

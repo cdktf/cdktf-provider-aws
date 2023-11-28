@@ -1,7 +1,3 @@
-# `aws_fsx_backup`
-
-Refer to the Terraform Registory for docs: [`aws_fsx_backup`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/fsx_backup).
-
 # `fsxBackup` Submodule <a name="`fsxBackup` Submodule" id="@cdktf/provider-aws.fsxBackup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_fsx_ontap_volume`
-
-Refer to the Terraform Registory for docs: [`aws_fsx_ontap_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/fsx_ontap_volume).
-
 # `fsxOntapVolume` Submodule <a name="`fsxOntapVolume` Submodule" id="@cdktf/provider-aws.fsxOntapVolume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolume(scope Construct, id *string, config FsxOntapVolumeConfig) FsxOntapVolume
 ```
@@ -476,7 +472,7 @@ func ResetVolumeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +518,7 @@ fsxontapvolume.FsxOntapVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +532,7 @@ fsxontapvolume.FsxOntapVolume_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1205,7 +1201,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeConfig {
 	Connection: interface{},
@@ -1225,13 +1221,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 	OntapVolumeType: *string,
 	SecurityStyle: *string,
 	SkipFinalBackup: interface{},
-	SnaplockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration,
+	SnaplockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration,
 	SnapshotPolicy: *string,
 	StorageEfficiencyEnabled: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TieringPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeTieringPolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeTimeouts,
+	TieringPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeTimeouts,
 	VolumeType: *string,
 }
 ```
@@ -1568,14 +1564,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfiguration {
 	SnaplockType: *string,
 	AuditLogVolume: interface{},
-	AutocommitPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod,
+	AutocommitPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod,
 	PrivilegedDelete: *string,
-	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod,
+	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod,
 	VolumeAppendModeEnabled: interface{},
 }
 ```
@@ -1674,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod {
 	Type: *string,
@@ -1720,12 +1716,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod {
-	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention,
-	MaximumRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention,
-	MinimumRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention,
+	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention,
+	MaximumRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention,
+	MinimumRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention,
 }
 ```
 
@@ -1786,7 +1782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention {
 	Type: *string,
@@ -1832,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention {
 	Type: *string,
@@ -1878,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention {
 	Type: *string,
@@ -1924,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeTieringPolicy {
 	CoolingPeriod: *f64,
@@ -1970,7 +1966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeTimeouts {
 	Create: *string,
@@ -2032,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference
 ```
@@ -2339,7 +2335,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationAutocommitPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationOutputReference
 ```
@@ -2781,7 +2777,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference
 ```
@@ -3088,7 +3084,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference
 ```
@@ -3395,7 +3391,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference
 ```
@@ -3702,7 +3698,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference
 ```
@@ -4077,7 +4073,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeTieringPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeTieringPolicyOutputReference
 ```
@@ -4384,7 +4380,7 @@ func InternalValue() FsxOntapVolumeTieringPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeTimeoutsOutputReference
 ```

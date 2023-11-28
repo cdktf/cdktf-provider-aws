@@ -1,7 +1,3 @@
-# `aws_cloudwatch_event_endpoint`
-
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_event_endpoint).
-
 # `cloudwatchEventEndpoint` Submodule <a name="`cloudwatchEventEndpoint` Submodule" id="@cdktf/provider-aws.cloudwatchEventEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

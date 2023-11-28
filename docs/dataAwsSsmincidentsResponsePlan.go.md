@@ -1,7 +1,3 @@
-# `data_aws_ssmincidents_response_plan`
-
-Refer to the Terraform Registory for docs: [`data_aws_ssmincidents_response_plan`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ssmincidents_response_plan).
-
 # `dataAwsSsmincidentsResponsePlan` Submodule <a name="`dataAwsSsmincidentsResponsePlan` Submodule" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlan(scope Construct, id *string, config DataAwsSsmincidentsResponsePlanConfig) DataAwsSsmincidentsResponsePlan
 ```
@@ -285,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlan_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlan_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlan_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -695,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanAction {
 
@@ -708,7 +704,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsrespon
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionSsmAutomation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanActionSsmAutomation {
 
@@ -721,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsrespon
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter {
 
@@ -734,7 +730,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsrespon
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanConfig {
 	Connection: interface{},
@@ -881,7 +877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIncidentTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanIncidentTemplate {
 
@@ -894,7 +890,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsrespon
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarget {
 
@@ -907,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsrespon
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanIntegration {
 
@@ -920,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsrespon
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIntegrationPagerduty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 &dataawsssmincidentsresponseplan.DataAwsSsmincidentsResponsePlanIntegrationPagerduty {
 
@@ -935,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsrespon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsResponsePlanActionList
 ```
@@ -1067,7 +1063,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsResponsePlanActionOutputReference
 ```
@@ -1345,7 +1341,7 @@ func InternalValue() DataAwsSsmincidentsResponsePlanAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionSsmAutomationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanActionSsmAutomationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsResponsePlanActionSsmAutomationList
 ```
@@ -1477,7 +1473,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionSsmAutomationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanActionSsmAutomationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsResponsePlanActionSsmAutomationOutputReference
 ```
@@ -1810,7 +1806,7 @@ func InternalValue() DataAwsSsmincidentsResponsePlanActionSsmAutomation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanActionSsmAutomationParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterList
 ```
@@ -1942,7 +1938,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference
 ```
@@ -2231,7 +2227,7 @@ func InternalValue() DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIncidentTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIncidentTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsResponsePlanIncidentTemplateList
 ```
@@ -2363,7 +2359,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetList
 ```
@@ -2495,7 +2491,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputReference
 ```
@@ -2773,7 +2769,7 @@ func InternalValue() DataAwsSsmincidentsResponsePlanIncidentTemplateNotification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIncidentTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIncidentTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsResponsePlanIncidentTemplateOutputReference
 ```
@@ -3106,7 +3102,7 @@ func InternalValue() DataAwsSsmincidentsResponsePlanIncidentTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsResponsePlanIntegrationList
 ```
@@ -3238,7 +3234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsResponsePlanIntegrationOutputReference
 ```
@@ -3516,7 +3512,7 @@ func InternalValue() DataAwsSsmincidentsResponsePlanIntegration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIntegrationPagerdutyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIntegrationPagerdutyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsResponsePlanIntegrationPagerdutyList
 ```
@@ -3648,7 +3644,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsResponsePlan.DataAwsSsmincidentsResponsePlanIntegrationPagerdutyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmincidentsresponseplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsresponseplan"
 
 dataawsssmincidentsresponseplan.NewDataAwsSsmincidentsResponsePlanIntegrationPagerdutyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsResponsePlanIntegrationPagerdutyOutputReference
 ```

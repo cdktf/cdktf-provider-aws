@@ -1,7 +1,3 @@
-# `aws_applicationinsights_application`
-
-Refer to the Terraform Registory for docs: [`aws_applicationinsights_application`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/applicationinsights_application).
-
 # `applicationinsightsApplication` Submodule <a name="`applicationinsightsApplication` Submodule" id="@cdktf/provider-aws.applicationinsightsApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/applicationinsightsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/applicationinsightsapplication"
 
 applicationinsightsapplication.NewApplicationinsightsApplication(scope Construct, id *string, config ApplicationinsightsApplicationConfig) ApplicationinsightsApplication
 ```
@@ -395,7 +391,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/applicationinsightsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/applicationinsightsapplication"
 
 applicationinsightsapplication.ApplicationinsightsApplication_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/applicationinsightsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/applicationinsightsapplication"
 
 applicationinsightsapplication.ApplicationinsightsApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ applicationinsightsapplication.ApplicationinsightsApplication_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/applicationinsightsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/applicationinsightsapplication"
 
 applicationinsightsapplication.ApplicationinsightsApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -455,7 +451,7 @@ applicationinsightsapplication.ApplicationinsightsApplication_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/applicationinsightsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/applicationinsightsapplication"
 
 applicationinsightsapplication.ApplicationinsightsApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/applicationinsightsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/applicationinsightsapplication"
 
 &applicationinsightsapplication.ApplicationinsightsApplicationConfig {
 	Connection: interface{},

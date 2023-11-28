@@ -1,7 +1,3 @@
-# `data_aws_db_cluster_snapshot`
-
-Refer to the Terraform Registory for docs: [`data_aws_db_cluster_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/db_cluster_snapshot).
-
 # `dataAwsDbClusterSnapshot` Submodule <a name="`dataAwsDbClusterSnapshot` Submodule" id="@cdktf/provider-aws.dataAwsDbClusterSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

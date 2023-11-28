@@ -1,7 +1,3 @@
-# `aws_db_option_group`
-
-Refer to the Terraform Registory for docs: [`aws_db_option_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/db_option_group).
-
 # `dbOptionGroup` Submodule <a name="`dbOptionGroup` Submodule" id="@cdktf/provider-aws.dbOptionGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

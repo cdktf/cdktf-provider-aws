@@ -1,7 +1,3 @@
-# `aws_ec2_instance_connect_endpoint`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_instance_connect_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_instance_connect_endpoint).
-
 # `ec2InstanceConnectEndpoint` Submodule <a name="`ec2InstanceConnectEndpoint` Submodule" id="@cdktf/provider-aws.ec2InstanceConnectEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

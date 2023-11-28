@@ -1,7 +1,3 @@
-# `aws_waf_rule_group`
-
-Refer to the Terraform Registory for docs: [`aws_waf_rule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/waf_rule_group).
-
 # `wafRuleGroup` Submodule <a name="`wafRuleGroup` Submodule" id="@cdktf/provider-aws.wafRuleGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.NewWafRuleGroup(scope Construct, id *string, config WafRuleGroupConfig) WafRuleGroup
 ```
@@ -373,7 +369,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.WafRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.WafRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ wafrulegroup.WafRuleGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.WafRuleGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ wafrulegroup.WafRuleGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.WafRuleGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,10 +801,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 &wafrulegroup.WafRuleGroupActivatedRule {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.wafRuleGroup.WafRuleGroupActivatedRuleAction,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.wafRuleGroup.WafRuleGroupActivatedRuleAction,
 	Priority: *f64,
 	RuleId: *string,
 	Type: *string,
@@ -881,7 +877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 &wafrulegroup.WafRuleGroupActivatedRuleAction {
 	Type: *string,
@@ -913,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 &wafrulegroup.WafRuleGroupConfig {
 	Connection: interface{},
@@ -1106,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.NewWafRuleGroupActivatedRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafRuleGroupActivatedRuleActionOutputReference
 ```
@@ -1377,7 +1373,7 @@ func InternalValue() WafRuleGroupActivatedRuleAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.NewWafRuleGroupActivatedRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafRuleGroupActivatedRuleList
 ```
@@ -1520,7 +1516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafrulegroup"
 
 wafrulegroup.NewWafRuleGroupActivatedRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafRuleGroupActivatedRuleOutputReference
 ```

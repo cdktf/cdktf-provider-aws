@@ -1,7 +1,3 @@
-# `aws_transcribe_vocabulary_filter`
-
-Refer to the Terraform Registory for docs: [`aws_transcribe_vocabulary_filter`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transcribe_vocabulary_filter).
-
 # `transcribeVocabularyFilter` Submodule <a name="`transcribeVocabularyFilter` Submodule" id="@cdktf/provider-aws.transcribeVocabularyFilter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

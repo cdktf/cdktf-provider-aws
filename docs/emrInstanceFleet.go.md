@@ -1,7 +1,3 @@
-# `aws_emr_instance_fleet`
-
-Refer to the Terraform Registory for docs: [`aws_emr_instance_fleet`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emr_instance_fleet).
-
 # `emrInstanceFleet` Submodule <a name="`emrInstanceFleet` Submodule" id="@cdktf/provider-aws.emrInstanceFleet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleet(scope Construct, id *string, config EmrInstanceFleetConfig) EmrInstanceFleet
 ```
@@ -400,7 +396,7 @@ func ResetTargetSpotCapacity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.EmrInstanceFleet_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +428,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.EmrInstanceFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +442,7 @@ emrinstancefleet.EmrInstanceFleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.EmrInstanceFleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +456,7 @@ emrinstancefleet.EmrInstanceFleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.EmrInstanceFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -865,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 &emrinstancefleet.EmrInstanceFleetConfig {
 	Connection: interface{},
@@ -878,7 +874,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
 	ClusterId: *string,
 	Id: *string,
 	InstanceTypeConfigs: interface{},
-	LaunchSpecifications: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrInstanceFleet.EmrInstanceFleetLaunchSpecifications,
+	LaunchSpecifications: github.com/cdktf/cdktf-provider-aws-go/aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecifications,
 	Name: *string,
 	TargetOnDemandCapacity: *f64,
 	TargetSpotCapacity: *f64,
@@ -1072,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 &emrinstancefleet.EmrInstanceFleetInstanceTypeConfigs {
 	InstanceType: *string,
@@ -1178,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 &emrinstancefleet.EmrInstanceFleetInstanceTypeConfigsConfigurations {
 	Classification: *string,
@@ -1224,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 &emrinstancefleet.EmrInstanceFleetInstanceTypeConfigsEbsConfig {
 	Size: *f64,
@@ -1298,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 &emrinstancefleet.EmrInstanceFleetLaunchSpecifications {
 	OnDemandSpecification: interface{},
@@ -1348,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 &emrinstancefleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecification {
 	AllocationStrategy: *string,
@@ -1380,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 &emrinstancefleet.EmrInstanceFleetLaunchSpecificationsSpotSpecification {
 	AllocationStrategy: *string,
@@ -1456,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetInstanceTypeConfigsConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrInstanceFleetInstanceTypeConfigsConfigurationsList
 ```
@@ -1599,7 +1595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference
 ```
@@ -1924,7 +1920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetInstanceTypeConfigsEbsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrInstanceFleetInstanceTypeConfigsEbsConfigList
 ```
@@ -2067,7 +2063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference
 ```
@@ -2436,7 +2432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetInstanceTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrInstanceFleetInstanceTypeConfigsList
 ```
@@ -2579,7 +2575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetInstanceTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrInstanceFleetInstanceTypeConfigsOutputReference
 ```
@@ -3039,7 +3035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList
 ```
@@ -3182,7 +3178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference
 ```
@@ -3471,7 +3467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetLaunchSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrInstanceFleetLaunchSpecificationsOutputReference
 ```
@@ -3804,7 +3800,7 @@ func InternalValue() EmrInstanceFleetLaunchSpecifications
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetLaunchSpecificationsSpotSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrInstanceFleetLaunchSpecificationsSpotSpecificationList
 ```
@@ -3947,7 +3943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrinstancefleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrinstancefleet"
 
 emrinstancefleet.NewEmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference
 ```

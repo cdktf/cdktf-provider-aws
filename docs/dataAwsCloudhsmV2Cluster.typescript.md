@@ -1,7 +1,3 @@
-# `data_aws_cloudhsm_v2_cluster`
-
-Refer to the Terraform Registory for docs: [`data_aws_cloudhsm_v2_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudhsm_v2_cluster).
-
 # `dataAwsCloudhsmV2Cluster` Submodule <a name="`dataAwsCloudhsmV2Cluster` Submodule" id="@cdktf/provider-aws.dataAwsCloudhsmV2Cluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

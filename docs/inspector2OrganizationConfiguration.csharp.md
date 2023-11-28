@@ -1,7 +1,3 @@
-# `aws_inspector2_organization_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_inspector2_organization_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/inspector2_organization_configuration).
-
 # `inspector2OrganizationConfiguration` Submodule <a name="`inspector2OrganizationConfiguration` Submodule" id="@cdktf/provider-aws.inspector2OrganizationConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

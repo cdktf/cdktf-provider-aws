@@ -1,7 +1,3 @@
-# `aws_ivs_playback_key_pair`
-
-Refer to the Terraform Registory for docs: [`aws_ivs_playback_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ivs_playback_key_pair).
-
 # `ivsPlaybackKeyPair` Submodule <a name="`ivsPlaybackKeyPair` Submodule" id="@cdktf/provider-aws.ivsPlaybackKeyPair"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

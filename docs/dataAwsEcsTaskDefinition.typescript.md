@@ -1,7 +1,3 @@
-# `data_aws_ecs_task_definition`
-
-Refer to the Terraform Registory for docs: [`data_aws_ecs_task_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ecs_task_definition).
-
 # `dataAwsEcsTaskDefinition` Submodule <a name="`dataAwsEcsTaskDefinition` Submodule" id="@cdktf/provider-aws.dataAwsEcsTaskDefinition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_caller_identity`
-
-Refer to the Terraform Registory for docs: [`data_aws_caller_identity`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/caller_identity).
-
 # `dataAwsCallerIdentity` Submodule <a name="`dataAwsCallerIdentity` Submodule" id="@cdktf/provider-aws.dataAwsCallerIdentity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

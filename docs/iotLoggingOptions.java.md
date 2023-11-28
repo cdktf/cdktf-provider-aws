@@ -1,7 +1,3 @@
-# `aws_iot_logging_options`
-
-Refer to the Terraform Registory for docs: [`aws_iot_logging_options`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_logging_options).
-
 # `iotLoggingOptions` Submodule <a name="`iotLoggingOptions` Submodule" id="@cdktf/provider-aws.iotLoggingOptions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

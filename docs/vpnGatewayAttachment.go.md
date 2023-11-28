@@ -1,7 +1,3 @@
-# `aws_vpn_gateway_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_vpn_gateway_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpn_gateway_attachment).
-
 # `vpnGatewayAttachment` Submodule <a name="`vpnGatewayAttachment` Submodule" id="@cdktf/provider-aws.vpnGatewayAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.NewVpnGatewayAttachment(scope Construct, id *string, config VpnGatewayAttachmentConfig) VpnGatewayAttachment
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ vpngatewayattachment.VpnGatewayAttachment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ vpngatewayattachment.VpnGatewayAttachment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 &vpngatewayattachment.VpnGatewayAttachmentConfig {
 	Connection: interface{},

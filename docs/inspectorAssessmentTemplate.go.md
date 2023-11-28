@@ -1,7 +1,3 @@
-# `aws_inspector_assessment_template`
-
-Refer to the Terraform Registory for docs: [`aws_inspector_assessment_template`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/inspector_assessment_template).
-
 # `inspectorAssessmentTemplate` Submodule <a name="`inspectorAssessmentTemplate` Submodule" id="@cdktf/provider-aws.inspectorAssessmentTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 inspectorassessmenttemplate.NewInspectorAssessmentTemplate(scope Construct, id *string, config InspectorAssessmentTemplateConfig) InspectorAssessmentTemplate
 ```
@@ -373,7 +369,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 inspectorassessmenttemplate.InspectorAssessmentTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 inspectorassessmenttemplate.InspectorAssessmentTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ inspectorassessmenttemplate.InspectorAssessmentTemplate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 inspectorassessmenttemplate.InspectorAssessmentTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ inspectorassessmenttemplate.InspectorAssessmentTemplate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 inspectorassessmenttemplate.InspectorAssessmentTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 &inspectorassessmenttemplate.InspectorAssessmentTemplateConfig {
 	Connection: interface{},
@@ -1068,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 &inspectorassessmenttemplate.InspectorAssessmentTemplateEventSubscription {
 	Event: *string,
@@ -1116,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 inspectorassessmenttemplate.NewInspectorAssessmentTemplateEventSubscriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InspectorAssessmentTemplateEventSubscriptionList
 ```
@@ -1259,7 +1255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/inspectorassessmenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorassessmenttemplate"
 
 inspectorassessmenttemplate.NewInspectorAssessmentTemplateEventSubscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InspectorAssessmentTemplateEventSubscriptionOutputReference
 ```

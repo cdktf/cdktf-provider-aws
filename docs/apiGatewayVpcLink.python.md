@@ -1,7 +1,3 @@
-# `aws_api_gateway_vpc_link`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_vpc_link`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_vpc_link).
-
 # `apiGatewayVpcLink` Submodule <a name="`apiGatewayVpcLink` Submodule" id="@cdktf/provider-aws.apiGatewayVpcLink"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

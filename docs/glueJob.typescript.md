@@ -1,7 +1,3 @@
-# `aws_glue_job`
-
-Refer to the Terraform Registory for docs: [`aws_glue_job`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/glue_job).
-
 # `glueJob` Submodule <a name="`glueJob` Submodule" id="@cdktf/provider-aws.glueJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

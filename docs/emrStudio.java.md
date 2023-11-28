@@ -1,7 +1,3 @@
-# `aws_emr_studio`
-
-Refer to the Terraform Registory for docs: [`aws_emr_studio`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emr_studio).
-
 # `emrStudio` Submodule <a name="`emrStudio` Submodule" id="@cdktf/provider-aws.emrStudio"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

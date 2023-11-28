@@ -1,7 +1,3 @@
-# `data_aws_ec2_transit_gateway_route_table_associations`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_transit_gateway_route_table_associations`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_transit_gateway_route_table_associations).
-
 # `dataAwsEc2TransitGatewayRouteTableAssociations` Submodule <a name="`dataAwsEc2TransitGatewayRouteTableAssociations` Submodule" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

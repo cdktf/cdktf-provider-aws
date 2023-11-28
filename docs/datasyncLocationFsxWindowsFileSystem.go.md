@@ -1,7 +1,3 @@
-# `aws_datasync_location_fsx_windows_file_system`
-
-Refer to the Terraform Registory for docs: [`aws_datasync_location_fsx_windows_file_system`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/datasync_location_fsx_windows_file_system).
-
 # `datasyncLocationFsxWindowsFileSystem` Submodule <a name="`datasyncLocationFsxWindowsFileSystem` Submodule" id="@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxwindowsfilesystem"
 
 datasynclocationfsxwindowsfilesystem.NewDatasyncLocationFsxWindowsFileSystem(scope Construct, id *string, config DatasyncLocationFsxWindowsFileSystemConfig) DatasyncLocationFsxWindowsFileSystem
 ```
@@ -367,7 +363,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxwindowsfilesystem"
 
 datasynclocationfsxwindowsfilesystem.DatasyncLocationFsxWindowsFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxwindowsfilesystem"
 
 datasynclocationfsxwindowsfilesystem.DatasyncLocationFsxWindowsFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ datasynclocationfsxwindowsfilesystem.DatasyncLocationFsxWindowsFileSystem_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxwindowsfilesystem"
 
 datasynclocationfsxwindowsfilesystem.DatasyncLocationFsxWindowsFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ datasynclocationfsxwindowsfilesystem.DatasyncLocationFsxWindowsFileSystem_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxwindowsfilesystem"
 
 datasynclocationfsxwindowsfilesystem.DatasyncLocationFsxWindowsFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -887,7 +883,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxwindowsfilesystem"
 
 &datasynclocationfsxwindowsfilesystem.DatasyncLocationFsxWindowsFileSystemConfig {
 	Connection: interface{},

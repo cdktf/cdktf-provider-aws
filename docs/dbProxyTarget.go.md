@@ -1,7 +1,3 @@
-# `aws_db_proxy_target`
-
-Refer to the Terraform Registory for docs: [`aws_db_proxy_target`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/db_proxy_target).
-
 # `dbProxyTarget` Submodule <a name="`dbProxyTarget` Submodule" id="@cdktf/provider-aws.dbProxyTarget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.NewDbProxyTarget(scope Construct, id *string, config DbProxyTargetConfig) DbProxyTarget
 ```
@@ -353,7 +349,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.DbProxyTarget_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.DbProxyTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ dbproxytarget.DbProxyTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.DbProxyTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ dbproxytarget.DbProxyTarget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.DbProxyTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +814,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 &dbproxytarget.DbProxyTargetConfig {
 	Connection: interface{},

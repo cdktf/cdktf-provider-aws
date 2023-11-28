@@ -1,7 +1,3 @@
-# `aws_transfer_access`
-
-Refer to the Terraform Registory for docs: [`aws_transfer_access`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transfer_access).
-
 # `transferAccess` Submodule <a name="`transferAccess` Submodule" id="@cdktf/provider-aws.transferAccess"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferAccess.TransferAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.NewTransferAccess(scope Construct, id *string, config TransferAccessConfig) TransferAccess
 ```
@@ -407,7 +403,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferAccess.TransferAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.TransferAccess_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +435,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferAccess.TransferAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.TransferAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +449,7 @@ transferaccess.TransferAccess_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferAccess.TransferAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.TransferAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +463,7 @@ transferaccess.TransferAccess_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.transferAccess.TransferAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.TransferAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -894,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferAccess.TransferAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 &transferaccess.TransferAccessConfig {
 	Connection: interface{},
@@ -911,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
 	HomeDirectoryType: *string,
 	Id: *string,
 	Policy: *string,
-	PosixProfile: github.com/cdktf/cdktf-provider-aws-go/aws/v18.transferAccess.TransferAccessPosixProfile,
+	PosixProfile: github.com/cdktf/cdktf-provider-aws-go/aws.transferAccess.TransferAccessPosixProfile,
 	Role: *string,
 }
 ```
@@ -1129,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 &transferaccess.TransferAccessHomeDirectoryMappings {
 	Entry: *string,
@@ -1175,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 &transferaccess.TransferAccessPosixProfile {
 	Gid: *f64,
@@ -1237,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.NewTransferAccessHomeDirectoryMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferAccessHomeDirectoryMappingsList
 ```
@@ -1380,7 +1376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.NewTransferAccessHomeDirectoryMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferAccessHomeDirectoryMappingsOutputReference
 ```
@@ -1691,7 +1687,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferAccess.TransferAccessPosixProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferaccess"
 
 transferaccess.NewTransferAccessPosixProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferAccessPosixProfileOutputReference
 ```

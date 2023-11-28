@@ -1,7 +1,3 @@
-# `aws_codepipeline_custom_action_type`
-
-Refer to the Terraform Registory for docs: [`aws_codepipeline_custom_action_type`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codepipeline_custom_action_type).
-
 # `codepipelineCustomActionType` Submodule <a name="`codepipelineCustomActionType` Submodule" id="@cdktf/provider-aws.codepipelineCustomActionType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

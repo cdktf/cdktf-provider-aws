@@ -1,7 +1,3 @@
-# `aws_dx_lag`
-
-Refer to the Terraform Registory for docs: [`aws_dx_lag`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag).
-
 # `dxLag` Submodule <a name="`dxLag` Submodule" id="@cdktf/provider-aws.dxLag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

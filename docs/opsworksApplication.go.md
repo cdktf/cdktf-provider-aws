@@ -1,7 +1,3 @@
-# `aws_opsworks_application`
-
-Refer to the Terraform Registory for docs: [`aws_opsworks_application`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opsworks_application).
-
 # `opsworksApplication` Submodule <a name="`opsworksApplication` Submodule" id="@cdktf/provider-aws.opsworksApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.NewOpsworksApplication(scope Construct, id *string, config OpsworksApplicationConfig) OpsworksApplication
 ```
@@ -476,7 +472,7 @@ func ResetSslConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.OpsworksApplication_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.OpsworksApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +518,7 @@ opsworksapplication.OpsworksApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.OpsworksApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +532,7 @@ opsworksapplication.OpsworksApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.OpsworksApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1161,7 +1157,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 &opsworksapplication.OpsworksApplicationAppSource {
 	Type: *string,
@@ -1263,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 &opsworksapplication.OpsworksApplicationConfig {
 	Connection: interface{},
@@ -1626,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 &opsworksapplication.OpsworksApplicationEnvironment {
 	Key: *string,
@@ -1686,7 +1682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 &opsworksapplication.OpsworksApplicationSslConfiguration {
 	Certificate: *string,
@@ -1748,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.NewOpsworksApplicationAppSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksApplicationAppSourceList
 ```
@@ -1891,7 +1887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.NewOpsworksApplicationAppSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksApplicationAppSourceOutputReference
 ```
@@ -2325,7 +2321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.NewOpsworksApplicationEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksApplicationEnvironmentList
 ```
@@ -2468,7 +2464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.NewOpsworksApplicationEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksApplicationEnvironmentOutputReference
 ```
@@ -2808,7 +2804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.NewOpsworksApplicationSslConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksApplicationSslConfigurationList
 ```
@@ -2951,7 +2947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksapplication"
 
 opsworksapplication.NewOpsworksApplicationSslConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksApplicationSslConfigurationOutputReference
 ```

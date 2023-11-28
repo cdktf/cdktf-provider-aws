@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway_policy_table`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_policy_table`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway_policy_table).
-
 # `ec2TransitGatewayPolicyTable` Submodule <a name="`ec2TransitGatewayPolicyTable` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.NewEc2TransitGatewayPolicyTable(scope Construct, id *string, config Ec2TransitGatewayPolicyTableConfig) Ec2TransitGatewayPolicyTable
 ```
@@ -353,7 +349,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypolicytable"
 
 &ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTableConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `data_aws_redshiftserverless_namespace`
-
-Refer to the Terraform Registory for docs: [`data_aws_redshiftserverless_namespace`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/redshiftserverless_namespace).
-
 # `dataAwsRedshiftserverlessNamespace` Submodule <a name="`dataAwsRedshiftserverlessNamespace` Submodule" id="@cdktf/provider-aws.dataAwsRedshiftserverlessNamespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

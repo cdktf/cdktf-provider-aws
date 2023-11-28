@@ -1,7 +1,3 @@
-# `data_aws_billing_service_account`
-
-Refer to the Terraform Registory for docs: [`data_aws_billing_service_account`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/billing_service_account).
-
 # `dataAwsBillingServiceAccount` Submodule <a name="`dataAwsBillingServiceAccount` Submodule" id="@cdktf/provider-aws.dataAwsBillingServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.NewDataAwsBillingServiceAccount(scope Construct, id *string, config DataAwsBillingServiceAccountConfig) DataAwsBillingServiceAccount
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 &dataawsbillingserviceaccount.DataAwsBillingServiceAccountConfig {
 	Connection: interface{},

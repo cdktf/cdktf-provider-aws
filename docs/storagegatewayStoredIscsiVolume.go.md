@@ -1,7 +1,3 @@
-# `aws_storagegateway_stored_iscsi_volume`
-
-Refer to the Terraform Registory for docs: [`aws_storagegateway_stored_iscsi_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/storagegateway_stored_iscsi_volume).
-
 # `storagegatewayStoredIscsiVolume` Submodule <a name="`storagegatewayStoredIscsiVolume` Submodule" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaystorediscsivolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaystorediscsivolume"
 
 storagegatewaystorediscsivolume.NewStoragegatewayStoredIscsiVolume(scope Construct, id *string, config StoragegatewayStoredIscsiVolumeConfig) StoragegatewayStoredIscsiVolume
 ```
@@ -374,7 +370,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaystorediscsivolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaystorediscsivolume"
 
 storagegatewaystorediscsivolume.StoragegatewayStoredIscsiVolume_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaystorediscsivolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaystorediscsivolume"
 
 storagegatewaystorediscsivolume.StoragegatewayStoredIscsiVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ storagegatewaystorediscsivolume.StoragegatewayStoredIscsiVolume_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaystorediscsivolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaystorediscsivolume"
 
 storagegatewaystorediscsivolume.StoragegatewayStoredIscsiVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +430,7 @@ storagegatewaystorediscsivolume.StoragegatewayStoredIscsiVolume_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaystorediscsivolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaystorediscsivolume"
 
 storagegatewaystorediscsivolume.StoragegatewayStoredIscsiVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1015,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaystorediscsivolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaystorediscsivolume"
 
 &storagegatewaystorediscsivolume.StoragegatewayStoredIscsiVolumeConfig {
 	Connection: interface{},

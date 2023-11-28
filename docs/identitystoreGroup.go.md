@@ -1,7 +1,3 @@
-# `aws_identitystore_group`
-
-Refer to the Terraform Registory for docs: [`aws_identitystore_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/identitystore_group).
-
 # `identitystoreGroup` Submodule <a name="`identitystoreGroup` Submodule" id="@cdktf/provider-aws.identitystoreGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 identitystoregroup.NewIdentitystoreGroup(scope Construct, id *string, config IdentitystoreGroupConfig) IdentitystoreGroup
 ```
@@ -346,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 identitystoregroup.IdentitystoreGroup_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 identitystoregroup.IdentitystoreGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ identitystoregroup.IdentitystoreGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 identitystoregroup.IdentitystoreGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ identitystoregroup.IdentitystoreGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 identitystoregroup.IdentitystoreGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 &identitystoregroup.IdentitystoreGroupConfig {
 	Connection: interface{},
@@ -906,7 +902,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 &identitystoregroup.IdentitystoreGroupExternalIds {
 
@@ -921,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 identitystoregroup.NewIdentitystoreGroupExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentitystoreGroupExternalIdsList
 ```
@@ -1053,7 +1049,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroup"
 
 identitystoregroup.NewIdentitystoreGroupExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentitystoreGroupExternalIdsOutputReference
 ```

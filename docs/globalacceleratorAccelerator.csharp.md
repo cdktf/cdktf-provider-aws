@@ -1,7 +1,3 @@
-# `aws_globalaccelerator_accelerator`
-
-Refer to the Terraform Registory for docs: [`aws_globalaccelerator_accelerator`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/globalaccelerator_accelerator).
-
 # `globalacceleratorAccelerator` Submodule <a name="`globalacceleratorAccelerator` Submodule" id="@cdktf/provider-aws.globalacceleratorAccelerator"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

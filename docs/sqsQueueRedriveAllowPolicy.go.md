@@ -1,7 +1,3 @@
-# `aws_sqs_queue_redrive_allow_policy`
-
-Refer to the Terraform Registory for docs: [`aws_sqs_queue_redrive_allow_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sqs_queue_redrive_allow_policy).
-
 # `sqsQueueRedriveAllowPolicy` Submodule <a name="`sqsQueueRedriveAllowPolicy` Submodule" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueueredriveallowpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueueredriveallowpolicy"
 
 sqsqueueredriveallowpolicy.NewSqsQueueRedriveAllowPolicy(scope Construct, id *string, config SqsQueueRedriveAllowPolicyConfig) SqsQueueRedriveAllowPolicy
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueueredriveallowpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueueredriveallowpolicy"
 
 sqsqueueredriveallowpolicy.SqsQueueRedriveAllowPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueueredriveallowpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueueredriveallowpolicy"
 
 sqsqueueredriveallowpolicy.SqsQueueRedriveAllowPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ sqsqueueredriveallowpolicy.SqsQueueRedriveAllowPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueueredriveallowpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueueredriveallowpolicy"
 
 sqsqueueredriveallowpolicy.SqsQueueRedriveAllowPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ sqsqueueredriveallowpolicy.SqsQueueRedriveAllowPolicy_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueueredriveallowpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueueredriveallowpolicy"
 
 sqsqueueredriveallowpolicy.SqsQueueRedriveAllowPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueueredriveallowpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueueredriveallowpolicy"
 
 &sqsqueueredriveallowpolicy.SqsQueueRedriveAllowPolicyConfig {
 	Connection: interface{},

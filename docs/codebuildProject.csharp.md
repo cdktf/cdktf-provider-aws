@@ -1,7 +1,3 @@
-# `aws_codebuild_project`
-
-Refer to the Terraform Registory for docs: [`aws_codebuild_project`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_project).
-
 # `codebuildProject` Submodule <a name="`codebuildProject` Submodule" id="@cdktf/provider-aws.codebuildProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

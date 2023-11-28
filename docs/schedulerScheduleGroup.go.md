@@ -1,7 +1,3 @@
-# `aws_scheduler_schedule_group`
-
-Refer to the Terraform Registory for docs: [`aws_scheduler_schedule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/scheduler_schedule_group).
-
 # `schedulerScheduleGroup` Submodule <a name="`schedulerScheduleGroup` Submodule" id="@cdktf/provider-aws.schedulerScheduleGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 schedulerschedulegroup.NewSchedulerScheduleGroup(scope Construct, id *string, config SchedulerScheduleGroupConfig) SchedulerScheduleGroup
 ```
@@ -387,7 +383,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 schedulerschedulegroup.SchedulerScheduleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 schedulerschedulegroup.SchedulerScheduleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ schedulerschedulegroup.SchedulerScheduleGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 schedulerschedulegroup.SchedulerScheduleGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ schedulerschedulegroup.SchedulerScheduleGroup_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 schedulerschedulegroup.SchedulerScheduleGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -852,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 &schedulerschedulegroup.SchedulerScheduleGroupConfig {
 	Connection: interface{},
@@ -867,7 +863,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
 	NamePrefix: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts,
 }
 ```
 
@@ -1043,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 &schedulerschedulegroup.SchedulerScheduleGroupTimeouts {
 	Create: *string,
@@ -1091,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/schedulerschedulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedulegroup"
 
 schedulerschedulegroup.NewSchedulerScheduleGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleGroupTimeoutsOutputReference
 ```

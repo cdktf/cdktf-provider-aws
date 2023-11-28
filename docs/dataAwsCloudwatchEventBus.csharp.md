@@ -1,7 +1,3 @@
-# `data_aws_cloudwatch_event_bus`
-
-Refer to the Terraform Registory for docs: [`data_aws_cloudwatch_event_bus`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudwatch_event_bus).
-
 # `dataAwsCloudwatchEventBus` Submodule <a name="`dataAwsCloudwatchEventBus` Submodule" id="@cdktf/provider-aws.dataAwsCloudwatchEventBus"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

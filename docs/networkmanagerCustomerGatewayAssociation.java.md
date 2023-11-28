@@ -1,7 +1,3 @@
-# `aws_networkmanager_customer_gateway_association`
-
-Refer to the Terraform Registory for docs: [`aws_networkmanager_customer_gateway_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_customer_gateway_association).
-
 # `networkmanagerCustomerGatewayAssociation` Submodule <a name="`networkmanagerCustomerGatewayAssociation` Submodule" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

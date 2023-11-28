@@ -1,7 +1,3 @@
-# `aws_lakeformation_permissions`
-
-Refer to the Terraform Registory for docs: [`aws_lakeformation_permissions`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lakeformation_permissions).
-
 # `lakeformationPermissions` Submodule <a name="`lakeformationPermissions` Submodule" id="@cdktf/provider-aws.lakeformationPermissions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

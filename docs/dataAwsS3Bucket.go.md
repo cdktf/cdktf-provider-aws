@@ -1,7 +1,3 @@
-# `data_aws_s3_bucket`
-
-Refer to the Terraform Registory for docs: [`data_aws_s3_bucket`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/s3_bucket).
-
 # `dataAwsS3Bucket` Submodule <a name="`dataAwsS3Bucket` Submodule" id="@cdktf/provider-aws.dataAwsS3Bucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3Bucket.DataAwsS3Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucket"
 
 dataawss3bucket.NewDataAwsS3Bucket(scope Construct, id *string, config DataAwsS3BucketConfig) DataAwsS3Bucket
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3Bucket.DataAwsS3Bucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucket"
 
 dataawss3bucket.DataAwsS3Bucket_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3Bucket.DataAwsS3Bucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucket"
 
 dataawss3bucket.DataAwsS3Bucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawss3bucket.DataAwsS3Bucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3Bucket.DataAwsS3Bucket.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucket"
 
 dataawss3bucket.DataAwsS3Bucket_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawss3bucket.DataAwsS3Bucket_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsS3Bucket.DataAwsS3Bucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucket"
 
 dataawss3bucket.DataAwsS3Bucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -666,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3Bucket.DataAwsS3BucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucket"
 
 &dataawss3bucket.DataAwsS3BucketConfig {
 	Connection: interface{},

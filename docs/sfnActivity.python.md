@@ -1,7 +1,3 @@
-# `aws_sfn_activity`
-
-Refer to the Terraform Registory for docs: [`aws_sfn_activity`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sfn_activity).
-
 # `sfnActivity` Submodule <a name="`sfnActivity` Submodule" id="@cdktf/provider-aws.sfnActivity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

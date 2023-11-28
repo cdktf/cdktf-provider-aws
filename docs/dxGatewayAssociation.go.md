@@ -1,7 +1,3 @@
-# `aws_dx_gateway_association`
-
-Refer to the Terraform Registory for docs: [`aws_dx_gateway_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_gateway_association).
-
 # `dxGatewayAssociation` Submodule <a name="`dxGatewayAssociation` Submodule" id="@cdktf/provider-aws.dxGatewayAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 dxgatewayassociation.NewDxGatewayAssociation(scope Construct, id *string, config DxGatewayAssociationConfig) DxGatewayAssociation
 ```
@@ -394,7 +390,7 @@ func ResetVpnGatewayId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 dxgatewayassociation.DxGatewayAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 dxgatewayassociation.DxGatewayAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ dxgatewayassociation.DxGatewayAssociation_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 dxgatewayassociation.DxGatewayAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -454,7 +450,7 @@ dxgatewayassociation.DxGatewayAssociation_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 dxgatewayassociation.DxGatewayAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 &dxgatewayassociation.DxGatewayAssociationConfig {
 	Connection: interface{},
@@ -908,7 +904,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
 	AssociatedGatewayOwnerAccountId: *string,
 	Id: *string,
 	ProposalId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dxGatewayAssociation.DxGatewayAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dxGatewayAssociation.DxGatewayAssociationTimeouts,
 	VpnGatewayId: *string,
 }
 ```
@@ -1111,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 &dxgatewayassociation.DxGatewayAssociationTimeouts {
 	Create: *string,
@@ -1173,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxgatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociation"
 
 dxgatewayassociation.NewDxGatewayAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxGatewayAssociationTimeoutsOutputReference
 ```

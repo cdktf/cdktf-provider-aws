@@ -1,7 +1,3 @@
-# `aws_ses_template`
-
-Refer to the Terraform Registory for docs: [`aws_ses_template`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ses_template).
-
 # `sesTemplate` Submodule <a name="`sesTemplate` Submodule" id="@cdktf/provider-aws.sesTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

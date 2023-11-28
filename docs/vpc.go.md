@@ -1,7 +1,3 @@
-# `aws_vpc`
-
-Refer to the Terraform Registory for docs: [`aws_vpc`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpc).
-
 # `vpc` Submodule <a name="`vpc` Submodule" id="@cdktf/provider-aws.vpc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpc.Vpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpc"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpc"
 
 vpc.NewVpc(scope Construct, id *string, config VpcConfig) Vpc
 ```
@@ -437,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpc.Vpc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpc"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpc"
 
 vpc.Vpc_IsConstruct(x interface{}) *bool
 ```
@@ -469,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpc.Vpc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpc"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpc"
 
 vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ```
@@ -483,7 +479,7 @@ vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpc.Vpc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpc"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpc"
 
 vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ```
@@ -497,7 +493,7 @@ vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpc.Vpc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpc"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpc"
 
 vpc.Vpc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1144,7 +1140,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpc.VpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpc"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpc"
 
 &vpc.VpcConfig {
 	Connection: interface{},

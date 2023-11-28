@@ -1,7 +1,3 @@
-# `aws_api_gateway_deployment`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_deployment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_deployment).
-
 # `apiGatewayDeployment` Submodule <a name="`apiGatewayDeployment` Submodule" id="@cdktf/provider-aws.apiGatewayDeployment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

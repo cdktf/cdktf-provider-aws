@@ -1,7 +1,3 @@
-# `aws_gamelift_fleet`
-
-Refer to the Terraform Registory for docs: [`aws_gamelift_fleet`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/gamelift_fleet).
-
 # `gameliftFleet` Submodule <a name="`gameliftFleet` Submodule" id="@cdktf/provider-aws.gameliftFleet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

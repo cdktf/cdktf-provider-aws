@@ -1,7 +1,3 @@
-# `aws_mwaa_environment`
-
-Refer to the Terraform Registory for docs: [`aws_mwaa_environment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/mwaa_environment).
-
 # `mwaaEnvironment` Submodule <a name="`mwaaEnvironment` Submodule" id="@cdktf/provider-aws.mwaaEnvironment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

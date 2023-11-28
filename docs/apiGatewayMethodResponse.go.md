@@ -1,7 +1,3 @@
-# `aws_api_gateway_method_response`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_method_response`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_method_response).
-
 # `apiGatewayMethodResponse` Submodule <a name="`apiGatewayMethodResponse` Submodule" id="@cdktf/provider-aws.apiGatewayMethodResponse"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayMethodResponse.ApiGatewayMethodResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethodresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodresponse"
 
 apigatewaymethodresponse.NewApiGatewayMethodResponse(scope Construct, id *string, config ApiGatewayMethodResponseConfig) ApiGatewayMethodResponse
 ```
@@ -353,7 +349,7 @@ func ResetResponseParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayMethodResponse.ApiGatewayMethodResponse.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethodresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodresponse"
 
 apigatewaymethodresponse.ApiGatewayMethodResponse_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayMethodResponse.ApiGatewayMethodResponse.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethodresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodresponse"
 
 apigatewaymethodresponse.ApiGatewayMethodResponse_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ apigatewaymethodresponse.ApiGatewayMethodResponse_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayMethodResponse.ApiGatewayMethodResponse.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethodresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodresponse"
 
 apigatewaymethodresponse.ApiGatewayMethodResponse_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ apigatewaymethodresponse.ApiGatewayMethodResponse_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayMethodResponse.ApiGatewayMethodResponse.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethodresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodresponse"
 
 apigatewaymethodresponse.ApiGatewayMethodResponse_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -796,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayMethodResponse.ApiGatewayMethodResponseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaymethodresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodresponse"
 
 &apigatewaymethodresponse.ApiGatewayMethodResponseConfig {
 	Connection: interface{},

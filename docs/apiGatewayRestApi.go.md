@@ -1,7 +1,3 @@
-# `aws_api_gateway_rest_api`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_rest_api`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_rest_api).
-
 # `apiGatewayRestApi` Submodule <a name="`apiGatewayRestApi` Submodule" id="@cdktf/provider-aws.apiGatewayRestApi"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.NewApiGatewayRestApi(scope Construct, id *string, config ApiGatewayRestApiConfig) ApiGatewayRestApi
 ```
@@ -443,7 +439,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.ApiGatewayRestApi_IsConstruct(x interface{}) *bool
 ```
@@ -475,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -489,7 +485,7 @@ apigatewayrestapi.ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.ApiGatewayRestApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -503,7 +499,7 @@ apigatewayrestapi.ApiGatewayRestApi_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.ApiGatewayRestApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1106,7 +1102,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 &apigatewayrestapi.ApiGatewayRestApiConfig {
 	Connection: interface{},
@@ -1122,7 +1118,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
 	Body: *string,
 	Description: *string,
 	DisableExecuteApiEndpoint: interface{},
-	EndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration,
+	EndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration,
 	FailOnWarnings: interface{},
 	Id: *string,
 	MinimumCompressionSize: *string,
@@ -1423,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 &apigatewayrestapi.ApiGatewayRestApiEndpointConfiguration {
 	Types: *[]*string,
@@ -1471,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.NewApiGatewayRestApiEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayRestApiEndpointConfigurationOutputReference
 ```

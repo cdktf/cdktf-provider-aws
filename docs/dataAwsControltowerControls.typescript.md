@@ -1,7 +1,3 @@
-# `data_aws_controltower_controls`
-
-Refer to the Terraform Registory for docs: [`data_aws_controltower_controls`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/controltower_controls).
-
 # `dataAwsControltowerControls` Submodule <a name="`dataAwsControltowerControls` Submodule" id="@cdktf/provider-aws.dataAwsControltowerControls"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_connect_instance`
-
-Refer to the Terraform Registory for docs: [`aws_connect_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/connect_instance).
-
 # `connectInstance` Submodule <a name="`connectInstance` Submodule" id="@cdktf/provider-aws.connectInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

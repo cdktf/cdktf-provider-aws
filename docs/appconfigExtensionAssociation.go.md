@@ -1,7 +1,3 @@
-# `aws_appconfig_extension_association`
-
-Refer to the Terraform Registory for docs: [`aws_appconfig_extension_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appconfig_extension_association).
-
 # `appconfigExtensionAssociation` Submodule <a name="`appconfigExtensionAssociation` Submodule" id="@cdktf/provider-aws.appconfigExtensionAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigextensionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextensionassociation"
 
 appconfigextensionassociation.NewAppconfigExtensionAssociation(scope Construct, id *string, config AppconfigExtensionAssociationConfig) AppconfigExtensionAssociation
 ```
@@ -346,7 +342,7 @@ func ResetParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigextensionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextensionassociation"
 
 appconfigextensionassociation.AppconfigExtensionAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigextensionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextensionassociation"
 
 appconfigextensionassociation.AppconfigExtensionAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ appconfigextensionassociation.AppconfigExtensionAssociation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigextensionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextensionassociation"
 
 appconfigextensionassociation.AppconfigExtensionAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ appconfigextensionassociation.AppconfigExtensionAssociation_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigextensionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextensionassociation"
 
 appconfigextensionassociation.AppconfigExtensionAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appconfigextensionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextensionassociation"
 
 &appconfigextensionassociation.AppconfigExtensionAssociationConfig {
 	Connection: interface{},

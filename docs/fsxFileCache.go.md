@@ -1,7 +1,3 @@
-# `aws_fsx_file_cache`
-
-Refer to the Terraform Registory for docs: [`aws_fsx_file_cache`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/fsx_file_cache).
-
 # `fsxFileCache` Submodule <a name="`fsxFileCache` Submodule" id="@cdktf/provider-aws.fsxFileCache"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCache(scope Construct, id *string, config FsxFileCacheConfig) FsxFileCache
 ```
@@ -434,7 +430,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxFileCache.FsxFileCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.FsxFileCache_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +462,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxFileCache.FsxFileCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.FsxFileCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +476,7 @@ fsxfilecache.FsxFileCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxFileCache.FsxFileCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.FsxFileCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +490,7 @@ fsxfilecache.FsxFileCache_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxFileCache.FsxFileCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.FsxFileCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1086,7 +1082,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 &fsxfilecache.FsxFileCacheConfig {
 	Connection: interface{},
@@ -1108,7 +1104,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
 	SecurityGroupIds: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxFileCache.FsxFileCacheTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxFileCache.FsxFileCacheTimeouts,
 }
 ```
 
@@ -1379,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 &fsxfilecache.FsxFileCacheDataRepositoryAssociation {
 	DataRepositoryPath: *string,
@@ -1469,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 &fsxfilecache.FsxFileCacheDataRepositoryAssociationNfs {
 	Version: *string,
@@ -1515,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 &fsxfilecache.FsxFileCacheLustreConfiguration {
 	DeploymentType: *string,
@@ -1591,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 &fsxfilecache.FsxFileCacheLustreConfigurationLogConfiguration {
 
@@ -1604,7 +1600,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 &fsxfilecache.FsxFileCacheLustreConfigurationMetadataConfiguration {
 	StorageCapacity: *f64,
@@ -1636,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 &fsxfilecache.FsxFileCacheTimeouts {
 	Create: *string,
@@ -1698,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheDataRepositoryAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxFileCacheDataRepositoryAssociationList
 ```
@@ -1841,7 +1837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheDataRepositoryAssociationNfsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxFileCacheDataRepositoryAssociationNfsList
 ```
@@ -1984,7 +1980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheDataRepositoryAssociationNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxFileCacheDataRepositoryAssociationNfsOutputReference
 ```
@@ -2302,7 +2298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheDataRepositoryAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxFileCacheDataRepositoryAssociationOutputReference
 ```
@@ -2779,7 +2775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheLustreConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxFileCacheLustreConfigurationList
 ```
@@ -2922,7 +2918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheLustreConfigurationLogConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxFileCacheLustreConfigurationLogConfigurationList
 ```
@@ -3054,7 +3050,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheLustreConfigurationLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxFileCacheLustreConfigurationLogConfigurationOutputReference
 ```
@@ -3343,7 +3339,7 @@ func InternalValue() FsxFileCacheLustreConfigurationLogConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheLustreConfigurationMetadataConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxFileCacheLustreConfigurationMetadataConfigurationList
 ```
@@ -3486,7 +3482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheLustreConfigurationMetadataConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference
 ```
@@ -3775,7 +3771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheLustreConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxFileCacheLustreConfigurationOutputReference
 ```
@@ -4172,7 +4168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxFileCache.FsxFileCacheTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxfilecache"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxfilecache"
 
 fsxfilecache.NewFsxFileCacheTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxFileCacheTimeoutsOutputReference
 ```

@@ -1,7 +1,3 @@
-# `aws_securityhub_insight`
-
-Refer to the Terraform Registory for docs: [`aws_securityhub_insight`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/securityhub_insight).
-
 # `securityhubInsight` Submodule <a name="`securityhubInsight` Submodule" id="@cdktf/provider-aws.securityhubInsight"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

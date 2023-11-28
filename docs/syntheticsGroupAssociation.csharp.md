@@ -1,7 +1,3 @@
-# `aws_synthetics_group_association`
-
-Refer to the Terraform Registory for docs: [`aws_synthetics_group_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/synthetics_group_association).
-
 # `syntheticsGroupAssociation` Submodule <a name="`syntheticsGroupAssociation` Submodule" id="@cdktf/provider-aws.syntheticsGroupAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

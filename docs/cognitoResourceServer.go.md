@@ -1,7 +1,3 @@
-# `aws_cognito_resource_server`
-
-Refer to the Terraform Registory for docs: [`aws_cognito_resource_server`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cognito_resource_server).
-
 # `cognitoResourceServer` Submodule <a name="`cognitoResourceServer` Submodule" id="@cdktf/provider-aws.cognitoResourceServer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 cognitoresourceserver.NewCognitoResourceServer(scope Construct, id *string, config CognitoResourceServerConfig) CognitoResourceServer
 ```
@@ -359,7 +355,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 cognitoresourceserver.CognitoResourceServer_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 cognitoresourceserver.CognitoResourceServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ cognitoresourceserver.CognitoResourceServer_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 cognitoresourceserver.CognitoResourceServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ cognitoresourceserver.CognitoResourceServer_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 cognitoresourceserver.CognitoResourceServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 &cognitoresourceserver.CognitoResourceServerConfig {
 	Connection: interface{},
@@ -946,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 &cognitoresourceserver.CognitoResourceServerScope {
 	ScopeDescription: *string,
@@ -994,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 cognitoresourceserver.NewCognitoResourceServerScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoResourceServerScopeList
 ```
@@ -1137,7 +1133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoresourceserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoresourceserver"
 
 cognitoresourceserver.NewCognitoResourceServerScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoResourceServerScopeOutputReference
 ```

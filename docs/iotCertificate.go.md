@@ -1,7 +1,3 @@
-# `aws_iot_certificate`
-
-Refer to the Terraform Registory for docs: [`aws_iot_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_certificate).
-
 # `iotCertificate` Submodule <a name="`iotCertificate` Submodule" id="@cdktf/provider-aws.iotCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotcertificate"
 
 iotcertificate.NewIotCertificate(scope Construct, id *string, config IotCertificateConfig) IotCertificate
 ```
@@ -360,7 +356,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotCertificate.IotCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotcertificate"
 
 iotcertificate.IotCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotCertificate.IotCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotcertificate"
 
 iotcertificate.IotCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ iotcertificate.IotCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotCertificate.IotCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotcertificate"
 
 iotcertificate.IotCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ iotcertificate.IotCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotCertificate.IotCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotcertificate"
 
 iotcertificate.IotCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -803,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotCertificate.IotCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotcertificate"
 
 &iotcertificate.IotCertificateConfig {
 	Connection: interface{},

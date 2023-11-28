@@ -1,7 +1,3 @@
-# `data_aws_sfn_state_machine_versions`
-
-Refer to the Terraform Registory for docs: [`data_aws_sfn_state_machine_versions`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/sfn_state_machine_versions).
-
 # `dataAwsSfnStateMachineVersions` Submodule <a name="`dataAwsSfnStateMachineVersions` Submodule" id="@cdktf/provider-aws.dataAwsSfnStateMachineVersions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

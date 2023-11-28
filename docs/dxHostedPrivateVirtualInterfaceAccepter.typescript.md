@@ -1,7 +1,3 @@
-# `aws_dx_hosted_private_virtual_interface_accepter`
-
-Refer to the Terraform Registory for docs: [`aws_dx_hosted_private_virtual_interface_accepter`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_hosted_private_virtual_interface_accepter).
-
 # `dxHostedPrivateVirtualInterfaceAccepter` Submodule <a name="`dxHostedPrivateVirtualInterfaceAccepter` Submodule" id="@cdktf/provider-aws.dxHostedPrivateVirtualInterfaceAccepter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

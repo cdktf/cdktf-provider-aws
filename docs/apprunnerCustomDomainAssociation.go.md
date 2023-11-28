@@ -1,7 +1,3 @@
-# `aws_apprunner_custom_domain_association`
-
-Refer to the Terraform Registory for docs: [`aws_apprunner_custom_domain_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_custom_domain_association).
-
 # `apprunnerCustomDomainAssociation` Submodule <a name="`apprunnerCustomDomainAssociation` Submodule" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 apprunnercustomdomainassociation.NewApprunnerCustomDomainAssociation(scope Construct, id *string, config ApprunnerCustomDomainAssociationConfig) ApprunnerCustomDomainAssociation
 ```
@@ -346,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 apprunnercustomdomainassociation.ApprunnerCustomDomainAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 apprunnercustomdomainassociation.ApprunnerCustomDomainAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ apprunnercustomdomainassociation.ApprunnerCustomDomainAssociation_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 apprunnercustomdomainassociation.ApprunnerCustomDomainAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ apprunnercustomdomainassociation.ApprunnerCustomDomainAssociation_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 apprunnercustomdomainassociation.ApprunnerCustomDomainAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 &apprunnercustomdomainassociation.ApprunnerCustomDomainAssociationCertificateValidationRecords {
 
@@ -769,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainasso
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 &apprunnercustomdomainassociation.ApprunnerCustomDomainAssociationConfig {
 	Connection: interface{},
@@ -932,7 +928,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 apprunnercustomdomainassociation.NewApprunnerCustomDomainAssociationCertificateValidationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApprunnerCustomDomainAssociationCertificateValidationRecordsList
 ```
@@ -1064,7 +1060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnercustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnercustomdomainassociation"
 
 apprunnercustomdomainassociation.NewApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference
 ```

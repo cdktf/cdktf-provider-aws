@@ -1,7 +1,3 @@
-# `aws_servicecatalog_product_portfolio_association`
-
-Refer to the Terraform Registory for docs: [`aws_servicecatalog_product_portfolio_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/servicecatalog_product_portfolio_association).
-
 # `servicecatalogProductPortfolioAssociation` Submodule <a name="`servicecatalogProductPortfolioAssociation` Submodule" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 servicecatalogproductportfolioassociation.NewServicecatalogProductPortfolioAssociation(scope Construct, id *string, config ServicecatalogProductPortfolioAssociationConfig) ServicecatalogProductPortfolioAssociation
 ```
@@ -373,7 +369,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -794,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 &servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociationConfig {
 	Connection: interface{},
@@ -809,7 +805,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductport
 	AcceptLanguage: *string,
 	Id: *string,
 	SourcePortfolioId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeouts,
 }
 ```
 
@@ -985,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 &servicecatalogproductportfolioassociation.ServicecatalogProductPortfolioAssociationTimeouts {
 	Create: *string,
@@ -1047,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogproductportfolioassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogproductportfolioassociation"
 
 servicecatalogproductportfolioassociation.NewServicecatalogProductPortfolioAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogProductPortfolioAssociationTimeoutsOutputReference
 ```

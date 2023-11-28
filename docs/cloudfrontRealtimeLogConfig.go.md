@@ -1,7 +1,3 @@
-# `aws_cloudfront_realtime_log_config`
-
-Refer to the Terraform Registory for docs: [`aws_cloudfront_realtime_log_config`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudfront_realtime_log_config).
-
 # `cloudfrontRealtimeLogConfig` Submodule <a name="`cloudfrontRealtimeLogConfig` Submodule" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 cloudfrontrealtimelogconfig.NewCloudfrontRealtimeLogConfig(scope Construct, id *string, config CloudfrontRealtimeLogConfigConfig) CloudfrontRealtimeLogConfig
 ```
@@ -352,7 +348,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfig_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfig_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfig_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 &cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfigConfig {
 	Connection: interface{},
@@ -772,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconf
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Endpoint: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpoint,
+	Endpoint: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpoint,
 	Fields: *[]*string,
 	Name: *string,
 	SamplingRate: *f64,
@@ -939,10 +935,10 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 &cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfigEndpoint {
-	KinesisStreamConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig,
+	KinesisStreamConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig,
 	StreamType: *string,
 }
 ```
@@ -987,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 &cloudfrontrealtimelogconfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig {
 	RoleArn: *string,
@@ -1035,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 cloudfrontrealtimelogconfig.NewCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference
 ```
@@ -1328,7 +1324,7 @@ func InternalValue() CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontrealtimelogconfig"
 
 cloudfrontrealtimelogconfig.NewCloudfrontRealtimeLogConfigEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontRealtimeLogConfigEndpointOutputReference
 ```

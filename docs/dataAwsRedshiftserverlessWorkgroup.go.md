@@ -1,7 +1,3 @@
-# `data_aws_redshiftserverless_workgroup`
-
-Refer to the Terraform Registory for docs: [`data_aws_redshiftserverless_workgroup`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/redshiftserverless_workgroup).
-
 # `dataAwsRedshiftserverlessWorkgroup` Submodule <a name="`dataAwsRedshiftserverlessWorkgroup` Submodule" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.NewDataAwsRedshiftserverlessWorkgroup(scope Construct, id *string, config DataAwsRedshiftserverlessWorkgroupConfig) DataAwsRedshiftserverlessWorkgroup
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroup_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroup_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroup_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -677,7 +673,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 &dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroupConfig {
 	Connection: interface{},
@@ -810,7 +806,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 &dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroupEndpoint {
 
@@ -823,7 +819,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverless
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 &dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpoint {
 
@@ -836,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverless
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 &dataawsredshiftserverlessworkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterface {
 
@@ -851,7 +847,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverless
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.NewDataAwsRedshiftserverlessWorkgroupEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRedshiftserverlessWorkgroupEndpointList
 ```
@@ -983,7 +979,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.NewDataAwsRedshiftserverlessWorkgroupEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRedshiftserverlessWorkgroupEndpointOutputReference
 ```
@@ -1283,7 +1279,7 @@ func InternalValue() DataAwsRedshiftserverlessWorkgroupEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.NewDataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointList
 ```
@@ -1415,7 +1411,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.NewDataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList
 ```
@@ -1547,7 +1543,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.NewDataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference
 ```
@@ -1858,7 +1854,7 @@ func InternalValue() DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointNetwor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessWorkgroup.DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftserverlessworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlessworkgroup"
 
 dataawsredshiftserverlessworkgroup.NewDataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference
 ```

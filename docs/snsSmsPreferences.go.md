@@ -1,7 +1,3 @@
-# `aws_sns_sms_preferences`
-
-Refer to the Terraform Registory for docs: [`aws_sns_sms_preferences`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sns_sms_preferences).
-
 # `snsSmsPreferences` Submodule <a name="`snsSmsPreferences` Submodule" id="@cdktf/provider-aws.snsSmsPreferences"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snssmspreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snssmspreferences"
 
 snssmspreferences.NewSnsSmsPreferences(scope Construct, id *string, config SnsSmsPreferencesConfig) SnsSmsPreferences
 ```
@@ -381,7 +377,7 @@ func ResetUsageReportS3Bucket()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snssmspreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snssmspreferences"
 
 snssmspreferences.SnsSmsPreferences_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snssmspreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snssmspreferences"
 
 snssmspreferences.SnsSmsPreferences_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ snssmspreferences.SnsSmsPreferences_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snssmspreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snssmspreferences"
 
 snssmspreferences.SnsSmsPreferences_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ snssmspreferences.SnsSmsPreferences_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snssmspreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snssmspreferences"
 
 snssmspreferences.SnsSmsPreferences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snssmspreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snssmspreferences"
 
 &snssmspreferences.SnsSmsPreferencesConfig {
 	Connection: interface{},

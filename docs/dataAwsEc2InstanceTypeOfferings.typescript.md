@@ -1,7 +1,3 @@
-# `data_aws_ec2_instance_type_offerings`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_instance_type_offerings`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_instance_type_offerings).
-
 # `dataAwsEc2InstanceTypeOfferings` Submodule <a name="`dataAwsEc2InstanceTypeOfferings` Submodule" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

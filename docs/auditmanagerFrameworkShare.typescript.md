@@ -1,7 +1,3 @@
-# `aws_auditmanager_framework_share`
-
-Refer to the Terraform Registory for docs: [`aws_auditmanager_framework_share`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/auditmanager_framework_share).
-
 # `auditmanagerFrameworkShare` Submodule <a name="`auditmanagerFrameworkShare` Submodule" id="@cdktf/provider-aws.auditmanagerFrameworkShare"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

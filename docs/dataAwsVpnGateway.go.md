@@ -1,7 +1,3 @@
-# `data_aws_vpn_gateway`
-
-Refer to the Terraform Registory for docs: [`data_aws_vpn_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/vpn_gateway).
-
 # `dataAwsVpnGateway` Submodule <a name="`dataAwsVpnGateway` Submodule" id="@cdktf/provider-aws.dataAwsVpnGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.NewDataAwsVpnGateway(scope Construct, id *string, config DataAwsVpnGatewayConfig) DataAwsVpnGateway
 ```
@@ -353,7 +349,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.DataAwsVpnGateway_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.DataAwsVpnGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ dataawsvpngateway.DataAwsVpnGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.DataAwsVpnGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ dataawsvpngateway.DataAwsVpnGateway_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.DataAwsVpnGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -807,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 &dataawsvpngateway.DataAwsVpnGatewayConfig {
 	Connection: interface{},
@@ -824,7 +820,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
 	Id: *string,
 	State: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsVpnGateway.DataAwsVpnGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsVpnGateway.DataAwsVpnGatewayTimeouts,
 }
 ```
 
@@ -1028,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 &dataawsvpngateway.DataAwsVpnGatewayFilter {
 	Name: *string,
@@ -1074,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 &dataawsvpngateway.DataAwsVpnGatewayTimeouts {
 	Read: *string,
@@ -1108,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.NewDataAwsVpnGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpnGatewayFilterList
 ```
@@ -1251,7 +1247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.NewDataAwsVpnGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpnGatewayFilterOutputReference
 ```
@@ -1562,7 +1558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpngateway"
 
 dataawsvpngateway.NewDataAwsVpnGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpnGatewayTimeoutsOutputReference
 ```

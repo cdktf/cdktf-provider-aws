@@ -1,7 +1,3 @@
-# `data_aws_sfn_alias`
-
-Refer to the Terraform Registory for docs: [`data_aws_sfn_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/sfn_alias).
-
 # `dataAwsSfnAlias` Submodule <a name="`dataAwsSfnAlias` Submodule" id="@cdktf/provider-aws.dataAwsSfnAlias"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

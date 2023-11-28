@@ -1,7 +1,3 @@
-# `aws_dx_hosted_public_virtual_interface`
-
-Refer to the Terraform Registory for docs: [`aws_dx_hosted_public_virtual_interface`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_hosted_public_virtual_interface).
-
 # `dxHostedPublicVirtualInterface` Submodule <a name="`dxHostedPublicVirtualInterface` Submodule" id="@cdktf/provider-aws.dxHostedPublicVirtualInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

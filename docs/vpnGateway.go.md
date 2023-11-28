@@ -1,7 +1,3 @@
-# `aws_vpn_gateway`
-
-Refer to the Terraform Registory for docs: [`aws_vpn_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpn_gateway).
-
 # `vpnGateway` Submodule <a name="`vpnGateway` Submodule" id="@cdktf/provider-aws.vpnGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngateway"
 
 vpngateway.NewVpnGateway(scope Construct, id *string, config VpnGatewayConfig) VpnGateway
 ```
@@ -374,7 +370,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpnGateway.VpnGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngateway"
 
 vpngateway.VpnGateway_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpnGateway.VpnGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngateway"
 
 vpngateway.VpnGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ vpngateway.VpnGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpnGateway.VpnGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngateway"
 
 vpngateway.VpnGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +430,7 @@ vpngateway.VpnGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpnGateway.VpnGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngateway"
 
 vpngateway.VpnGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpngateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngateway"
 
 &vpngateway.VpnGatewayConfig {
 	Connection: interface{},

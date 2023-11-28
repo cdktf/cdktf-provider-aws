@@ -1,7 +1,3 @@
-# `data_aws_dms_replication_task`
-
-Refer to the Terraform Registory for docs: [`data_aws_dms_replication_task`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/dms_replication_task).
-
 # `dataAwsDmsReplicationTask` Submodule <a name="`dataAwsDmsReplicationTask` Submodule" id="@cdktf/provider-aws.dataAwsDmsReplicationTask"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

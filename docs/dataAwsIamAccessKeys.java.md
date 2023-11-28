@@ -1,7 +1,3 @@
-# `data_aws_iam_access_keys`
-
-Refer to the Terraform Registory for docs: [`data_aws_iam_access_keys`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_access_keys).
-
 # `dataAwsIamAccessKeys` Submodule <a name="`dataAwsIamAccessKeys` Submodule" id="@cdktf/provider-aws.dataAwsIamAccessKeys"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

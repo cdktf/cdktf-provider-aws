@@ -1,7 +1,3 @@
-# `aws_connect_vocabulary`
-
-Refer to the Terraform Registory for docs: [`aws_connect_vocabulary`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/connect_vocabulary).
-
 # `connectVocabulary` Submodule <a name="`connectVocabulary` Submodule" id="@cdktf/provider-aws.connectVocabulary"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

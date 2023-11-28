@@ -1,7 +1,3 @@
-# `aws_connect_hours_of_operation`
-
-Refer to the Terraform Registory for docs: [`aws_connect_hours_of_operation`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/connect_hours_of_operation).
-
 # `connectHoursOfOperation` Submodule <a name="`connectHoursOfOperation` Submodule" id="@cdktf/provider-aws.connectHoursOfOperation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

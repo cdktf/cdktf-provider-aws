@@ -1,7 +1,3 @@
-# `aws_route53recoveryreadiness_cell`
-
-Refer to the Terraform Registory for docs: [`aws_route53recoveryreadiness_cell`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/route53recoveryreadiness_cell).
-
 # `route53RecoveryreadinessCell` Submodule <a name="`route53RecoveryreadinessCell` Submodule" id="@cdktf/provider-aws.route53RecoveryreadinessCell"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

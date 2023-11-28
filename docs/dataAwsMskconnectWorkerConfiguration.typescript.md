@@ -1,7 +1,3 @@
-# `data_aws_mskconnect_worker_configuration`
-
-Refer to the Terraform Registory for docs: [`data_aws_mskconnect_worker_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/mskconnect_worker_configuration).
-
 # `dataAwsMskconnectWorkerConfiguration` Submodule <a name="`dataAwsMskconnectWorkerConfiguration` Submodule" id="@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

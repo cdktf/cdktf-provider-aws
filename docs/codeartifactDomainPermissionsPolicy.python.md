@@ -1,7 +1,3 @@
-# `aws_codeartifact_domain_permissions_policy`
-
-Refer to the Terraform Registory for docs: [`aws_codeartifact_domain_permissions_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codeartifact_domain_permissions_policy).
-
 # `codeartifactDomainPermissionsPolicy` Submodule <a name="`codeartifactDomainPermissionsPolicy` Submodule" id="@cdktf/provider-aws.codeartifactDomainPermissionsPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

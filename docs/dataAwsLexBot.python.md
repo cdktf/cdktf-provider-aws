@@ -1,7 +1,3 @@
-# `data_aws_lex_bot`
-
-Refer to the Terraform Registory for docs: [`data_aws_lex_bot`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/lex_bot).
-
 # `dataAwsLexBot` Submodule <a name="`dataAwsLexBot` Submodule" id="@cdktf/provider-aws.dataAwsLexBot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_securityhub_action_target`
-
-Refer to the Terraform Registory for docs: [`aws_securityhub_action_target`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/securityhub_action_target).
-
 # `securityhubActionTarget` Submodule <a name="`securityhubActionTarget` Submodule" id="@cdktf/provider-aws.securityhubActionTarget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

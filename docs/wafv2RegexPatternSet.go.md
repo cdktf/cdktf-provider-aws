@@ -1,7 +1,3 @@
-# `aws_wafv2_regex_pattern_set`
-
-Refer to the Terraform Registory for docs: [`aws_wafv2_regex_pattern_set`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafv2_regex_pattern_set).
-
 # `wafv2RegexPatternSet` Submodule <a name="`wafv2RegexPatternSet` Submodule" id="@cdktf/provider-aws.wafv2RegexPatternSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 wafv2regexpatternset.NewWafv2RegexPatternSet(scope Construct, id *string, config Wafv2RegexPatternSetConfig) Wafv2RegexPatternSet
 ```
@@ -380,7 +376,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 wafv2regexpatternset.Wafv2RegexPatternSet_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 wafv2regexpatternset.Wafv2RegexPatternSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ wafv2regexpatternset.Wafv2RegexPatternSet_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 wafv2regexpatternset.Wafv2RegexPatternSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ wafv2regexpatternset.Wafv2RegexPatternSet_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 wafv2regexpatternset.Wafv2RegexPatternSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -845,7 +841,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 &wafv2regexpatternset.Wafv2RegexPatternSetConfig {
 	Connection: interface{},
@@ -1050,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 &wafv2regexpatternset.Wafv2RegexPatternSetRegularExpression {
 	RegexString: *string,
@@ -1084,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 wafv2regexpatternset.NewWafv2RegexPatternSetRegularExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RegexPatternSetRegularExpressionList
 ```
@@ -1227,7 +1223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2regexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2regexpatternset"
 
 wafv2regexpatternset.NewWafv2RegexPatternSetRegularExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RegexPatternSetRegularExpressionOutputReference
 ```

@@ -1,7 +1,3 @@
-# `data_aws_ec2_local_gateway_virtual_interface`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_local_gateway_virtual_interface`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_local_gateway_virtual_interface).
-
 # `dataAwsEc2LocalGatewayVirtualInterface` Submodule <a name="`dataAwsEc2LocalGatewayVirtualInterface` Submodule" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

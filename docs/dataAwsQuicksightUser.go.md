@@ -1,7 +1,3 @@
-# `data_aws_quicksight_user`
-
-Refer to the Terraform Registory for docs: [`data_aws_quicksight_user`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/quicksight_user).
-
 # `dataAwsQuicksightUser` Submodule <a name="`dataAwsQuicksightUser` Submodule" id="@cdktf/provider-aws.dataAwsQuicksightUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.NewDataAwsQuicksightUser(scope Construct, id *string, config DataAwsQuicksightUserConfig) DataAwsQuicksightUser
 ```
@@ -292,7 +288,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +709,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 &dataawsquicksightuser.DataAwsQuicksightUserConfig {
 	Connection: interface{},

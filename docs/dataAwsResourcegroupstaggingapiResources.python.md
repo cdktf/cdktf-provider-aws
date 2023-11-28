@@ -1,7 +1,3 @@
-# `data_aws_resourcegroupstaggingapi_resources`
-
-Refer to the Terraform Registory for docs: [`data_aws_resourcegroupstaggingapi_resources`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/resourcegroupstaggingapi_resources).
-
 # `dataAwsResourcegroupstaggingapiResources` Submodule <a name="`dataAwsResourcegroupstaggingapiResources` Submodule" id="@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

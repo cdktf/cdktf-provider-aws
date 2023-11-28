@@ -1,7 +1,3 @@
-# `data_aws_apigatewayv2_vpc_link`
-
-Refer to the Terraform Registory for docs: [`data_aws_apigatewayv2_vpc_link`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/apigatewayv2_vpc_link).
-
 # `dataAwsApigatewayv2VpcLink` Submodule <a name="`dataAwsApigatewayv2VpcLink` Submodule" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink.DataAwsApigatewayv2VpcLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsapigatewayv2vpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2vpclink"
 
 dataawsapigatewayv2vpclink.NewDataAwsApigatewayv2VpcLink(scope Construct, id *string, config DataAwsApigatewayv2VpcLinkConfig) DataAwsApigatewayv2VpcLink
 ```
@@ -285,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink.DataAwsApigatewayv2VpcLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsapigatewayv2vpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2vpclink"
 
 dataawsapigatewayv2vpclink.DataAwsApigatewayv2VpcLink_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink.DataAwsApigatewayv2VpcLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsapigatewayv2vpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2vpclink"
 
 dataawsapigatewayv2vpclink.DataAwsApigatewayv2VpcLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataawsapigatewayv2vpclink.DataAwsApigatewayv2VpcLink_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink.DataAwsApigatewayv2VpcLink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsapigatewayv2vpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2vpclink"
 
 dataawsapigatewayv2vpclink.DataAwsApigatewayv2VpcLink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataawsapigatewayv2vpclink.DataAwsApigatewayv2VpcLink_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink.DataAwsApigatewayv2VpcLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsapigatewayv2vpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2vpclink"
 
 dataawsapigatewayv2vpclink.DataAwsApigatewayv2VpcLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -662,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink.DataAwsApigatewayv2VpcLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsapigatewayv2vpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2vpclink"
 
 &dataawsapigatewayv2vpclink.DataAwsApigatewayv2VpcLinkConfig {
 	Connection: interface{},

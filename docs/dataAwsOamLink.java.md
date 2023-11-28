@@ -1,7 +1,3 @@
-# `data_aws_oam_link`
-
-Refer to the Terraform Registory for docs: [`data_aws_oam_link`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/oam_link).
-
 # `dataAwsOamLink` Submodule <a name="`dataAwsOamLink` Submodule" id="@cdktf/provider-aws.dataAwsOamLink"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

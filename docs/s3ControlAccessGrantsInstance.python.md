@@ -1,7 +1,3 @@
-# `aws_s3control_access_grants_instance`
-
-Refer to the Terraform Registory for docs: [`aws_s3control_access_grants_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance).
-
 # `s3ControlAccessGrantsInstance` Submodule <a name="`s3ControlAccessGrantsInstance` Submodule" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

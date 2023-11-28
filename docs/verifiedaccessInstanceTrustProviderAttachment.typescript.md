@@ -1,7 +1,3 @@
-# `aws_verifiedaccess_instance_trust_provider_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_verifiedaccess_instance_trust_provider_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/verifiedaccess_instance_trust_provider_attachment).
-
 # `verifiedaccessInstanceTrustProviderAttachment` Submodule <a name="`verifiedaccessInstanceTrustProviderAttachment` Submodule" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

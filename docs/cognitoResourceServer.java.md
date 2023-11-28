@@ -1,7 +1,3 @@
-# `aws_cognito_resource_server`
-
-Refer to the Terraform Registory for docs: [`aws_cognito_resource_server`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cognito_resource_server).
-
 # `cognitoResourceServer` Submodule <a name="`cognitoResourceServer` Submodule" id="@cdktf/provider-aws.cognitoResourceServer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_workspaces_image`
-
-Refer to the Terraform Registory for docs: [`data_aws_workspaces_image`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_image).
-
 # `dataAwsWorkspacesImage` Submodule <a name="`dataAwsWorkspacesImage` Submodule" id="@cdktf/provider-aws.dataAwsWorkspacesImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.NewDataAwsWorkspacesImage(scope Construct, id *string, config DataAwsWorkspacesImageConfig) DataAwsWorkspacesImage
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -644,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 &dataawsworkspacesimage.DataAwsWorkspacesImageConfig {
 	Connection: interface{},

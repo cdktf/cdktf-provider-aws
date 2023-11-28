@@ -1,7 +1,3 @@
-# `aws_xray_encryption_config`
-
-Refer to the Terraform Registory for docs: [`aws_xray_encryption_config`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/xray_encryption_config).
-
 # `xrayEncryptionConfig` Submodule <a name="`xrayEncryptionConfig` Submodule" id="@cdktf/provider-aws.xrayEncryptionConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/xrayencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xrayencryptionconfig"
 
 xrayencryptionconfig.NewXrayEncryptionConfig(scope Construct, id *string, config XrayEncryptionConfigConfig) XrayEncryptionConfig
 ```
@@ -346,7 +342,7 @@ func ResetKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/xrayencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/xrayencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ xrayencryptionconfig.XrayEncryptionConfig_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/xrayencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ xrayencryptionconfig.XrayEncryptionConfig_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/xrayencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/xrayencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xrayencryptionconfig"
 
 &xrayencryptionconfig.XrayEncryptionConfigConfig {
 	Connection: interface{},

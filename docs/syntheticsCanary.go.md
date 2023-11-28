@@ -1,7 +1,3 @@
-# `aws_synthetics_canary`
-
-Refer to the Terraform Registory for docs: [`aws_synthetics_canary`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/synthetics_canary).
-
 # `syntheticsCanary` Submodule <a name="`syntheticsCanary` Submodule" id="@cdktf/provider-aws.syntheticsCanary"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanary(scope Construct, id *string, config SyntheticsCanaryConfig) SyntheticsCanary
 ```
@@ -482,7 +478,7 @@ func ResetZipFile()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.SyntheticsCanary_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +510,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.SyntheticsCanary_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +524,7 @@ syntheticscanary.SyntheticsCanary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.SyntheticsCanary_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +538,7 @@ syntheticscanary.SyntheticsCanary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.SyntheticsCanary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1266,10 +1262,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 &syntheticscanary.SyntheticsCanaryArtifactConfig {
-	S3Encryption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.syntheticsCanary.SyntheticsCanaryArtifactConfigS3Encryption,
+	S3Encryption: github.com/cdktf/cdktf-provider-aws-go/aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3Encryption,
 }
 ```
 
@@ -1300,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3Encryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 &syntheticscanary.SyntheticsCanaryArtifactConfigS3Encryption {
 	EncryptionMode: *string,
@@ -1346,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 &syntheticscanary.SyntheticsCanaryConfig {
 	Connection: interface{},
@@ -1361,12 +1357,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
 	Handler: *string,
 	Name: *string,
 	RuntimeVersion: *string,
-	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws/v18.syntheticsCanary.SyntheticsCanarySchedule,
-	ArtifactConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.syntheticsCanary.SyntheticsCanaryArtifactConfig,
+	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws.syntheticsCanary.SyntheticsCanarySchedule,
+	ArtifactConfig: github.com/cdktf/cdktf-provider-aws-go/aws.syntheticsCanary.SyntheticsCanaryArtifactConfig,
 	DeleteLambda: interface{},
 	FailureRetentionPeriod: *f64,
 	Id: *string,
-	RunConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.syntheticsCanary.SyntheticsCanaryRunConfig,
+	RunConfig: github.com/cdktf/cdktf-provider-aws-go/aws.syntheticsCanary.SyntheticsCanaryRunConfig,
 	S3Bucket: *string,
 	S3Key: *string,
 	S3Version: *string,
@@ -1374,7 +1370,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
 	SuccessRetentionPeriod: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.syntheticsCanary.SyntheticsCanaryVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.syntheticsCanary.SyntheticsCanaryVpcConfig,
 	ZipFile: *string,
 }
 ```
@@ -1739,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 &syntheticscanary.SyntheticsCanaryRunConfig {
 	ActiveTracing: interface{},
@@ -1813,7 +1809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanarySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 &syntheticscanary.SyntheticsCanarySchedule {
 	Expression: *string,
@@ -1859,7 +1855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 &syntheticscanary.SyntheticsCanaryTimeline {
 
@@ -1872,7 +1868,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 &syntheticscanary.SyntheticsCanaryVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1920,7 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanaryArtifactConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsCanaryArtifactConfigOutputReference
 ```
@@ -2211,7 +2207,7 @@ func InternalValue() SyntheticsCanaryArtifactConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanaryArtifactConfigS3EncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsCanaryArtifactConfigS3EncryptionOutputReference
 ```
@@ -2518,7 +2514,7 @@ func InternalValue() SyntheticsCanaryArtifactConfigS3Encryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanaryRunConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsCanaryRunConfigOutputReference
 ```
@@ -2883,7 +2879,7 @@ func InternalValue() SyntheticsCanaryRunConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanaryScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsCanaryScheduleOutputReference
 ```
@@ -3183,7 +3179,7 @@ func InternalValue() SyntheticsCanarySchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanaryTimelineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsCanaryTimelineList
 ```
@@ -3315,7 +3311,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanaryTimelineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsCanaryTimelineOutputReference
 ```
@@ -3626,7 +3622,7 @@ func InternalValue() SyntheticsCanaryTimeline
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/syntheticscanary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticscanary"
 
 syntheticscanary.NewSyntheticsCanaryVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsCanaryVpcConfigOutputReference
 ```

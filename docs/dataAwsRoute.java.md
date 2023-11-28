@@ -1,7 +1,3 @@
-# `data_aws_route`
-
-Refer to the Terraform Registory for docs: [`data_aws_route`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/route).
-
 # `dataAwsRoute` Submodule <a name="`dataAwsRoute` Submodule" id="@cdktf/provider-aws.dataAwsRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

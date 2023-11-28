@@ -1,7 +1,3 @@
-# `aws_detective_organization_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_detective_organization_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration).
-
 # `detectiveOrganizationConfiguration` Submodule <a name="`detectiveOrganizationConfiguration` Submodule" id="@cdktf/provider-aws.detectiveOrganizationConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.NewDetectiveOrganizationConfiguration(scope Construct, id *string, config DetectiveOrganizationConfigurationConfig) DetectiveOrganizationConfiguration
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 &detectiveorganizationconfiguration.DetectiveOrganizationConfigurationConfig {
 	Connection: interface{},

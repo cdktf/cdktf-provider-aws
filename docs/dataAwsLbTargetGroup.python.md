@@ -1,7 +1,3 @@
-# `data_aws_lb_target_group`
-
-Refer to the Terraform Registory for docs: [`data_aws_lb_target_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/lb_target_group).
-
 # `dataAwsLbTargetGroup` Submodule <a name="`dataAwsLbTargetGroup` Submodule" id="@cdktf/provider-aws.dataAwsLbTargetGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_shield_drt_access_log_bucket_association`
-
-Refer to the Terraform Registory for docs: [`aws_shield_drt_access_log_bucket_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_log_bucket_association).
-
 # `shieldDrtAccessLogBucketAssociation` Submodule <a name="`shieldDrtAccessLogBucketAssociation` Submodule" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

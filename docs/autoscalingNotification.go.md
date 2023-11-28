@@ -1,7 +1,3 @@
-# `aws_autoscaling_notification`
-
-Refer to the Terraform Registory for docs: [`aws_autoscaling_notification`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/autoscaling_notification).
-
 # `autoscalingNotification` Submodule <a name="`autoscalingNotification` Submodule" id="@cdktf/provider-aws.autoscalingNotification"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingnotification"
 
 autoscalingnotification.NewAutoscalingNotification(scope Construct, id *string, config AutoscalingNotificationConfig) AutoscalingNotification
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ autoscalingnotification.AutoscalingNotification_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ autoscalingnotification.AutoscalingNotification_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingnotification"
 
 &autoscalingnotification.AutoscalingNotificationConfig {
 	Connection: interface{},

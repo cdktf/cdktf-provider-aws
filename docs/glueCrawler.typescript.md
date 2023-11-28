@@ -1,7 +1,3 @@
-# `aws_glue_crawler`
-
-Refer to the Terraform Registory for docs: [`aws_glue_crawler`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/glue_crawler).
-
 # `glueCrawler` Submodule <a name="`glueCrawler` Submodule" id="@cdktf/provider-aws.glueCrawler"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_api_gateway_domain_name`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_domain_name`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_domain_name).
-
 # `apiGatewayDomainName` Submodule <a name="`apiGatewayDomainName` Submodule" id="@cdktf/provider-aws.apiGatewayDomainName"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

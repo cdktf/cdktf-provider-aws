@@ -1,7 +1,3 @@
-# `aws_transfer_certificate`
-
-Refer to the Terraform Registory for docs: [`aws_transfer_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transfer_certificate).
-
 # `transferCertificate` Submodule <a name="`transferCertificate` Submodule" id="@cdktf/provider-aws.transferCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

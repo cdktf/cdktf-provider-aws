@@ -1,7 +1,3 @@
-# `aws_opensearch_package_association`
-
-Refer to the Terraform Registory for docs: [`aws_opensearch_package_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opensearch_package_association).
-
 # `opensearchPackageAssociation` Submodule <a name="`opensearchPackageAssociation` Submodule" id="@cdktf/provider-aws.opensearchPackageAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

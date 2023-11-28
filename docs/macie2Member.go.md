@@ -1,7 +1,3 @@
-# `aws_macie2_member`
-
-Refer to the Terraform Registory for docs: [`aws_macie2_member`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/macie2_member).
-
 # `macie2Member` Submodule <a name="`macie2Member` Submodule" id="@cdktf/provider-aws.macie2Member"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2Member.Macie2Member.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 macie2member.NewMacie2Member(scope Construct, id *string, config Macie2MemberConfig) Macie2Member
 ```
@@ -401,7 +397,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2Member.Macie2Member.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 macie2member.Macie2Member_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2Member.Macie2Member.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 macie2member.Macie2Member_IsTerraformElement(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ macie2member.Macie2Member_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2Member.Macie2Member.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 macie2member.Macie2Member_IsTerraformResource(x interface{}) *bool
 ```
@@ -461,7 +457,7 @@ macie2member.Macie2Member_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.macie2Member.Macie2Member.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 macie2member.Macie2Member_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -976,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2Member.Macie2MemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 &macie2member.Macie2MemberConfig {
 	Connection: interface{},
@@ -995,7 +991,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
 	Status: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2Member.Macie2MemberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.macie2Member.Macie2MemberTimeouts,
 }
 ```
 
@@ -1223,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2Member.Macie2MemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 &macie2member.Macie2MemberTimeouts {
 	Create: *string,
@@ -1271,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2Member.Macie2MemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2member"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2member"
 
 macie2member.NewMacie2MemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2MemberTimeoutsOutputReference
 ```

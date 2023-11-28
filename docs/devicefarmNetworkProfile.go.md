@@ -1,7 +1,3 @@
-# `aws_devicefarm_network_profile`
-
-Refer to the Terraform Registory for docs: [`aws_devicefarm_network_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/devicefarm_network_profile).
-
 # `devicefarmNetworkProfile` Submodule <a name="`devicefarmNetworkProfile` Submodule" id="@cdktf/provider-aws.devicefarmNetworkProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.NewDevicefarmNetworkProfile(scope Construct, id *string, config DevicefarmNetworkProfileConfig) DevicefarmNetworkProfile
 ```
@@ -423,7 +419,7 @@ func ResetUplinkLossPercent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_IsConstruct(x interface{}) *bool
 ```
@@ -455,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -469,7 +465,7 @@ devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -483,7 +479,7 @@ devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1053,7 +1049,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmnetworkprofile"
 
 &devicefarmnetworkprofile.DevicefarmNetworkProfileConfig {
 	Connection: interface{},

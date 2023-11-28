@@ -1,7 +1,3 @@
-# `data_aws_opensearchserverless_lifecycle_policy`
-
-Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_lifecycle_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/opensearchserverless_lifecycle_policy).
-
 # `dataAwsOpensearchserverlessLifecyclePolicy` Submodule <a name="`dataAwsOpensearchserverlessLifecyclePolicy` Submodule" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

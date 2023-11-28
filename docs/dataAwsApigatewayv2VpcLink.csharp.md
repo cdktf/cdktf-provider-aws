@@ -1,7 +1,3 @@
-# `data_aws_apigatewayv2_vpc_link`
-
-Refer to the Terraform Registory for docs: [`data_aws_apigatewayv2_vpc_link`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/apigatewayv2_vpc_link).
-
 # `dataAwsApigatewayv2VpcLink` Submodule <a name="`dataAwsApigatewayv2VpcLink` Submodule" id="@cdktf/provider-aws.dataAwsApigatewayv2VpcLink"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

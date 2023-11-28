@@ -1,7 +1,3 @@
-# `data_aws_network_interface`
-
-Refer to the Terraform Registory for docs: [`data_aws_network_interface`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/network_interface).
-
 # `dataAwsNetworkInterface` Submodule <a name="`dataAwsNetworkInterface` Submodule" id="@cdktf/provider-aws.dataAwsNetworkInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterface(scope Construct, id *string, config DataAwsNetworkInterfaceConfig) DataAwsNetworkInterface
 ```
@@ -325,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.DataAwsNetworkInterface_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.DataAwsNetworkInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ dataawsnetworkinterface.DataAwsNetworkInterface_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.DataAwsNetworkInterface_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ dataawsnetworkinterface.DataAwsNetworkInterface_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.DataAwsNetworkInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 &dataawsnetworkinterface.DataAwsNetworkInterfaceAssociation {
 
@@ -880,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 &dataawsnetworkinterface.DataAwsNetworkInterfaceAttachment {
 
@@ -893,7 +889,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 &dataawsnetworkinterface.DataAwsNetworkInterfaceConfig {
 	Connection: interface{},
@@ -906,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeouts,
 }
 ```
 
@@ -1058,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 &dataawsnetworkinterface.DataAwsNetworkInterfaceFilter {
 	Name: *string,
@@ -1104,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 &dataawsnetworkinterface.DataAwsNetworkInterfaceTimeouts {
 	Read: *string,
@@ -1138,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterfaceAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkInterfaceAssociationList
 ```
@@ -1270,7 +1266,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterfaceAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkInterfaceAssociationOutputReference
 ```
@@ -1614,7 +1610,7 @@ func InternalValue() DataAwsNetworkInterfaceAssociation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterfaceAttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkInterfaceAttachmentList
 ```
@@ -1746,7 +1742,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterfaceAttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkInterfaceAttachmentOutputReference
 ```
@@ -2057,7 +2053,7 @@ func InternalValue() DataAwsNetworkInterfaceAttachment
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterfaceFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkInterfaceFilterList
 ```
@@ -2200,7 +2196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterfaceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkInterfaceFilterOutputReference
 ```
@@ -2511,7 +2507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkinterface"
 
 dataawsnetworkinterface.NewDataAwsNetworkInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsNetworkInterfaceTimeoutsOutputReference
 ```

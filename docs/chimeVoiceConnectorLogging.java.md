@@ -1,7 +1,3 @@
-# `aws_chime_voice_connector_logging`
-
-Refer to the Terraform Registory for docs: [`aws_chime_voice_connector_logging`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/chime_voice_connector_logging).
-
 # `chimeVoiceConnectorLogging` Submodule <a name="`chimeVoiceConnectorLogging` Submodule" id="@cdktf/provider-aws.chimeVoiceConnectorLogging"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

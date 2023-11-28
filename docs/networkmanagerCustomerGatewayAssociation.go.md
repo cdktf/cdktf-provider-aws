@@ -1,7 +1,3 @@
-# `aws_networkmanager_customer_gateway_association`
-
-Refer to the Terraform Registory for docs: [`aws_networkmanager_customer_gateway_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_customer_gateway_association).
-
 # `networkmanagerCustomerGatewayAssociation` Submodule <a name="`networkmanagerCustomerGatewayAssociation` Submodule" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 networkmanagercustomergatewayassociation.NewNetworkmanagerCustomerGatewayAssociation(scope Construct, id *string, config NetworkmanagerCustomerGatewayAssociationConfig) NetworkmanagerCustomerGatewayAssociation
 ```
@@ -366,7 +362,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociatio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociatio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 &networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociationConfig {
 	Connection: interface{},
@@ -802,7 +798,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergat
 	GlobalNetworkId: *string,
 	Id: *string,
 	LinkId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeouts,
 }
 ```
 
@@ -978,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 &networkmanagercustomergatewayassociation.NetworkmanagerCustomerGatewayAssociationTimeouts {
 	Create: *string,
@@ -1026,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagercustomergatewayassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercustomergatewayassociation"
 
 networkmanagercustomergatewayassociation.NewNetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference
 ```

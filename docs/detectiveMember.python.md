@@ -1,7 +1,3 @@
-# `aws_detective_member`
-
-Refer to the Terraform Registory for docs: [`aws_detective_member`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_member).
-
 # `detectiveMember` Submodule <a name="`detectiveMember` Submodule" id="@cdktf/provider-aws.detectiveMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

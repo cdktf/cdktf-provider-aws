@@ -1,7 +1,3 @@
-# `aws_storagegateway_nfs_file_share`
-
-Refer to the Terraform Registory for docs: [`aws_storagegateway_nfs_file_share`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/storagegateway_nfs_file_share).
-
 # `storagegatewayNfsFileShare` Submodule <a name="`storagegatewayNfsFileShare` Submodule" id="@cdktf/provider-aws.storagegatewayNfsFileShare"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

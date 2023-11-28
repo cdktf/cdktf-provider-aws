@@ -1,7 +1,3 @@
-# `aws_cloudfront_field_level_encryption_profile`
-
-Refer to the Terraform Registory for docs: [`aws_cloudfront_field_level_encryption_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudfront_field_level_encryption_profile).
-
 # `cloudfrontFieldLevelEncryptionProfile` Submodule <a name="`cloudfrontFieldLevelEncryptionProfile` Submodule" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

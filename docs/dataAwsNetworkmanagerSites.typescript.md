@@ -1,7 +1,3 @@
-# `data_aws_networkmanager_sites`
-
-Refer to the Terraform Registory for docs: [`data_aws_networkmanager_sites`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites).
-
 # `dataAwsNetworkmanagerSites` Submodule <a name="`dataAwsNetworkmanagerSites` Submodule" id="@cdktf/provider-aws.dataAwsNetworkmanagerSites"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

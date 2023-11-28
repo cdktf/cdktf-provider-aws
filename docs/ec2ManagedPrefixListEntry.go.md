@@ -1,7 +1,3 @@
-# `aws_ec2_managed_prefix_list_entry`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_managed_prefix_list_entry`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_managed_prefix_list_entry).
-
 # `ec2ManagedPrefixListEntry` Submodule <a name="`ec2ManagedPrefixListEntry` Submodule" id="@cdktf/provider-aws.ec2ManagedPrefixListEntry"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2managedprefixlistentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2managedprefixlistentry"
 
 ec2managedprefixlistentry.NewEc2ManagedPrefixListEntryA(scope Construct, id *string, config Ec2ManagedPrefixListEntryAConfig) Ec2ManagedPrefixListEntryA
 ```
@@ -346,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2managedprefixlistentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2managedprefixlistentry"
 
 ec2managedprefixlistentry.Ec2ManagedPrefixListEntryA_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2managedprefixlistentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2managedprefixlistentry"
 
 ec2managedprefixlistentry.Ec2ManagedPrefixListEntryA_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ ec2managedprefixlistentry.Ec2ManagedPrefixListEntryA_IsTerraformElement(x interf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2managedprefixlistentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2managedprefixlistentry"
 
 ec2managedprefixlistentry.Ec2ManagedPrefixListEntryA_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ ec2managedprefixlistentry.Ec2ManagedPrefixListEntryA_IsTerraformResource(x inter
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2managedprefixlistentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2managedprefixlistentry"
 
 ec2managedprefixlistentry.Ec2ManagedPrefixListEntryA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2managedprefixlistentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2managedprefixlistentry"
 
 &ec2managedprefixlistentry.Ec2ManagedPrefixListEntryAConfig {
 	Connection: interface{},

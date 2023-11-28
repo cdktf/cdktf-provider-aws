@@ -1,7 +1,3 @@
-# `data_aws_identitystore_group`
-
-Refer to the Terraform Registory for docs: [`data_aws_identitystore_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/identitystore_group).
-
 # `dataAwsIdentitystoreGroup` Submodule <a name="`dataAwsIdentitystoreGroup` Submodule" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

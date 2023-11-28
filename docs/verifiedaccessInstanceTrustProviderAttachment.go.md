@@ -1,7 +1,3 @@
-# `aws_verifiedaccess_instance_trust_provider_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_verifiedaccess_instance_trust_provider_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/verifiedaccess_instance_trust_provider_attachment).
-
 # `verifiedaccessInstanceTrustProviderAttachment` Submodule <a name="`verifiedaccessInstanceTrustProviderAttachment` Submodule" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.NewVerifiedaccessInstanceTrustProviderAttachment(scope Construct, id *string, config VerifiedaccessInstanceTrustProviderAttachmentConfig) VerifiedaccessInstanceTrustProviderAttachment
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProvide
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProvide
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
 
 &verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachmentConfig {
 	Connection: interface{},

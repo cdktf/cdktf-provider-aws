@@ -1,7 +1,3 @@
-# `aws_rds_cluster_activity_stream`
-
-Refer to the Terraform Registory for docs: [`aws_rds_cluster_activity_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/rds_cluster_activity_stream).
-
 # `rdsClusterActivityStream` Submodule <a name="`rdsClusterActivityStream` Submodule" id="@cdktf/provider-aws.rdsClusterActivityStream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.NewRdsClusterActivityStream(scope Construct, id *string, config RdsClusterActivityStreamConfig) RdsClusterActivityStream
 ```
@@ -346,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 &rdsclusteractivitystream.RdsClusterActivityStreamConfig {
 	Connection: interface{},

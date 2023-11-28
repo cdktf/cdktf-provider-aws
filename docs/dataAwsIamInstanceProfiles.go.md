@@ -1,7 +1,3 @@
-# `data_aws_iam_instance_profiles`
-
-Refer to the Terraform Registory for docs: [`data_aws_iam_instance_profiles`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_instance_profiles).
-
 # `dataAwsIamInstanceProfiles` Submodule <a name="`dataAwsIamInstanceProfiles` Submodule" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiaminstanceprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofiles"
 
 dataawsiaminstanceprofiles.NewDataAwsIamInstanceProfiles(scope Construct, id *string, config DataAwsIamInstanceProfilesConfig) DataAwsIamInstanceProfiles
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiaminstanceprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofiles"
 
 dataawsiaminstanceprofiles.DataAwsIamInstanceProfiles_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiaminstanceprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofiles"
 
 dataawsiaminstanceprofiles.DataAwsIamInstanceProfiles_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsiaminstanceprofiles.DataAwsIamInstanceProfiles_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiaminstanceprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofiles"
 
 dataawsiaminstanceprofiles.DataAwsIamInstanceProfiles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsiaminstanceprofiles.DataAwsIamInstanceProfiles_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiaminstanceprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofiles"
 
 dataawsiaminstanceprofiles.DataAwsIamInstanceProfiles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiaminstanceprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofiles"
 
 &dataawsiaminstanceprofiles.DataAwsIamInstanceProfilesConfig {
 	Connection: interface{},

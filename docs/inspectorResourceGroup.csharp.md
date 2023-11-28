@@ -1,7 +1,3 @@
-# `aws_inspector_resource_group`
-
-Refer to the Terraform Registory for docs: [`aws_inspector_resource_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/inspector_resource_group).
-
 # `inspectorResourceGroup` Submodule <a name="`inspectorResourceGroup` Submodule" id="@cdktf/provider-aws.inspectorResourceGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

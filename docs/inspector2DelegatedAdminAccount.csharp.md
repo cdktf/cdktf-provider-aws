@@ -1,7 +1,3 @@
-# `aws_inspector2_delegated_admin_account`
-
-Refer to the Terraform Registory for docs: [`aws_inspector2_delegated_admin_account`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/inspector2_delegated_admin_account).
-
 # `inspector2DelegatedAdminAccount` Submodule <a name="`inspector2DelegatedAdminAccount` Submodule" id="@cdktf/provider-aws.inspector2DelegatedAdminAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

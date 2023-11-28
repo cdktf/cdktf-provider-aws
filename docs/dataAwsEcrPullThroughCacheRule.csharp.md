@@ -1,7 +1,3 @@
-# `data_aws_ecr_pull_through_cache_rule`
-
-Refer to the Terraform Registory for docs: [`data_aws_ecr_pull_through_cache_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ecr_pull_through_cache_rule).
-
 # `dataAwsEcrPullThroughCacheRule` Submodule <a name="`dataAwsEcrPullThroughCacheRule` Submodule" id="@cdktf/provider-aws.dataAwsEcrPullThroughCacheRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

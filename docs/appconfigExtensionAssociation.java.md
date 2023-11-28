@@ -1,7 +1,3 @@
-# `aws_appconfig_extension_association`
-
-Refer to the Terraform Registory for docs: [`aws_appconfig_extension_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appconfig_extension_association).
-
 # `appconfigExtensionAssociation` Submodule <a name="`appconfigExtensionAssociation` Submodule" id="@cdktf/provider-aws.appconfigExtensionAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

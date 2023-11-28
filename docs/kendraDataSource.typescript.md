@@ -1,7 +1,3 @@
-# `aws_kendra_data_source`
-
-Refer to the Terraform Registory for docs: [`aws_kendra_data_source`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kendra_data_source).
-
 # `kendraDataSource` Submodule <a name="`kendraDataSource` Submodule" id="@cdktf/provider-aws.kendraDataSource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

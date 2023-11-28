@@ -1,7 +1,3 @@
-# `aws_simpledb_domain`
-
-Refer to the Terraform Registory for docs: [`aws_simpledb_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/simpledb_domain).
-
 # `simpledbDomain` Submodule <a name="`simpledbDomain` Submodule" id="@cdktf/provider-aws.simpledbDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.NewSimpledbDomain(scope Construct, id *string, config SimpledbDomainConfig) SimpledbDomain
 ```
@@ -332,7 +328,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ simpledbdomain.SimpledbDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 &simpledbdomain.SimpledbDomainConfig {
 	Connection: interface{},

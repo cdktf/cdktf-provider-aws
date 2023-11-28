@@ -1,7 +1,3 @@
-# `aws_securityhub_invite_accepter`
-
-Refer to the Terraform Registory for docs: [`aws_securityhub_invite_accepter`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/securityhub_invite_accepter).
-
 # `securityhubInviteAccepter` Submodule <a name="`securityhubInviteAccepter` Submodule" id="@cdktf/provider-aws.securityhubInviteAccepter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

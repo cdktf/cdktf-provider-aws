@@ -1,7 +1,3 @@
-# `data_aws_fsx_ontap_file_system`
-
-Refer to the Terraform Registory for docs: [`data_aws_fsx_ontap_file_system`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/fsx_ontap_file_system).
-
 # `dataAwsFsxOntapFileSystem` Submodule <a name="`dataAwsFsxOntapFileSystem` Submodule" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

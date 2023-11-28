@@ -1,7 +1,3 @@
-# `aws_vpn_connection_route`
-
-Refer to the Terraform Registory for docs: [`aws_vpn_connection_route`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpn_connection_route).
-
 # `vpnConnectionRoute` Submodule <a name="`vpnConnectionRoute` Submodule" id="@cdktf/provider-aws.vpnConnectionRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnectionroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnectionroute"
 
 vpnconnectionroute.NewVpnConnectionRoute(scope Construct, id *string, config VpnConnectionRouteConfig) VpnConnectionRoute
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnectionroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnectionroute"
 
 vpnconnectionroute.VpnConnectionRoute_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnectionroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnectionroute"
 
 vpnconnectionroute.VpnConnectionRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ vpnconnectionroute.VpnConnectionRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnectionroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnectionroute"
 
 vpnconnectionroute.VpnConnectionRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ vpnconnectionroute.VpnConnectionRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnectionroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnectionroute"
 
 vpnconnectionroute.VpnConnectionRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnectionroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnectionroute"
 
 &vpnconnectionroute.VpnConnectionRouteConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `data_aws_mq_broker`
-
-Refer to the Terraform Registory for docs: [`data_aws_mq_broker`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/mq_broker).
-
 # `dataAwsMqBroker` Submodule <a name="`dataAwsMqBroker` Submodule" id="@cdktf/provider-aws.dataAwsMqBroker"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

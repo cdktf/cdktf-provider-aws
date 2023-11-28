@@ -1,7 +1,3 @@
-# `data_aws_redshift_subnet_group`
-
-Refer to the Terraform Registory for docs: [`data_aws_redshift_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/redshift_subnet_group).
-
 # `dataAwsRedshiftSubnetGroup` Submodule <a name="`dataAwsRedshiftSubnetGroup` Submodule" id="@cdktf/provider-aws.dataAwsRedshiftSubnetGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftsubnetgroup"
 
 dataawsredshiftsubnetgroup.NewDataAwsRedshiftSubnetGroup(scope Construct, id *string, config DataAwsRedshiftSubnetGroupConfig) DataAwsRedshiftSubnetGroup
 ```
@@ -285,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftsubnetgroup"
 
 dataawsredshiftsubnetgroup.DataAwsRedshiftSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftsubnetgroup"
 
 dataawsredshiftsubnetgroup.DataAwsRedshiftSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataawsredshiftsubnetgroup.DataAwsRedshiftSubnetGroup_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftsubnetgroup"
 
 dataawsredshiftsubnetgroup.DataAwsRedshiftSubnetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataawsredshiftsubnetgroup.DataAwsRedshiftSubnetGroup_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftsubnetgroup"
 
 dataawsredshiftsubnetgroup.DataAwsRedshiftSubnetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsredshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftsubnetgroup"
 
 &dataawsredshiftsubnetgroup.DataAwsRedshiftSubnetGroupConfig {
 	Connection: interface{},

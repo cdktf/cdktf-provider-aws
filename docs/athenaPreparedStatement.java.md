@@ -1,7 +1,3 @@
-# `aws_athena_prepared_statement`
-
-Refer to the Terraform Registory for docs: [`aws_athena_prepared_statement`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_prepared_statement).
-
 # `athenaPreparedStatement` Submodule <a name="`athenaPreparedStatement` Submodule" id="@cdktf/provider-aws.athenaPreparedStatement"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

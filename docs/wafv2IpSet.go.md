@@ -1,7 +1,3 @@
-# `aws_wafv2_ip_set`
-
-Refer to the Terraform Registory for docs: [`aws_wafv2_ip_set`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafv2_ip_set).
-
 # `wafv2IpSet` Submodule <a name="`wafv2IpSet` Submodule" id="@cdktf/provider-aws.wafv2IpSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2ipset"
 
 wafv2ipset.NewWafv2IpSet(scope Construct, id *string, config Wafv2IpSetConfig) Wafv2IpSet
 ```
@@ -367,7 +363,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2ipset"
 
 wafv2ipset.Wafv2IpSet_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2ipset"
 
 wafv2ipset.Wafv2IpSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ wafv2ipset.Wafv2IpSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2ipset"
 
 wafv2ipset.Wafv2IpSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ wafv2ipset.Wafv2IpSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2ipset"
 
 wafv2ipset.Wafv2IpSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -854,7 +850,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2IpSet.Wafv2IpSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2ipset"
 
 &wafv2ipset.Wafv2IpSetConfig {
 	Connection: interface{},

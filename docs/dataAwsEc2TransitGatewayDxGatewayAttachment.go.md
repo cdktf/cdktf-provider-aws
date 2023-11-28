@@ -1,7 +1,3 @@
-# `data_aws_ec2_transit_gateway_dx_gateway_attachment`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_transit_gateway_dx_gateway_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment).
-
 # `dataAwsEc2TransitGatewayDxGatewayAttachment` Submodule <a name="`dataAwsEc2TransitGatewayDxGatewayAttachment` Submodule" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.NewDataAwsEc2TransitGatewayDxGatewayAttachment(scope Construct, id *string, config DataAwsEc2TransitGatewayDxGatewayAttachmentConfig) DataAwsEc2TransitGatewayDxGatewayAttachment
 ```
@@ -339,7 +335,7 @@ func ResetTransitGatewayId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAtt
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAttachment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAtt
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 &dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAttachmentConfig {
 	Connection: interface{},
@@ -752,7 +748,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayd
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts,
 	TransitGatewayId: *string,
 }
 ```
@@ -931,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 &dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAttachmentFilter {
 	Name: *string,
@@ -977,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 &dataawsec2transitgatewaydxgatewayattachment.DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts {
 	Read: *string,
@@ -1011,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.NewDataAwsEc2TransitGatewayDxGatewayAttachmentFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList
 ```
@@ -1154,7 +1150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.NewDataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference
 ```
@@ -1465,7 +1461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayDxGatewayAttachment.DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewaydxgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewaydxgatewayattachment"
 
 dataawsec2transitgatewaydxgatewayattachment.NewDataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference
 ```

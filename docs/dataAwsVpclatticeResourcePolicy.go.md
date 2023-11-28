@@ -1,7 +1,3 @@
-# `data_aws_vpclattice_resource_policy`
-
-Refer to the Terraform Registory for docs: [`data_aws_vpclattice_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/vpclattice_resource_policy).
-
 # `dataAwsVpclatticeResourcePolicy` Submodule <a name="`dataAwsVpclatticeResourcePolicy` Submodule" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.NewDataAwsVpclatticeResourcePolicy(scope Construct, id *string, config DataAwsVpclatticeResourcePolicyConfig) DataAwsVpclatticeResourcePolicy
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeresourcepolicy"
 
 &dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicyConfig {
 	Connection: interface{},

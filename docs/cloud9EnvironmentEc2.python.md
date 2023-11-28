@@ -1,7 +1,3 @@
-# `aws_cloud9_environment_ec2`
-
-Refer to the Terraform Registory for docs: [`aws_cloud9_environment_ec2`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloud9_environment_ec2).
-
 # `cloud9EnvironmentEc2` Submodule <a name="`cloud9EnvironmentEc2` Submodule" id="@cdktf/provider-aws.cloud9EnvironmentEc2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

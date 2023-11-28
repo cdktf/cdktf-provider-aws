@@ -1,7 +1,3 @@
-# `data_aws_workspaces_bundle`
-
-Refer to the Terraform Registory for docs: [`data_aws_workspaces_bundle`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_bundle).
-
 # `dataAwsWorkspacesBundle` Submodule <a name="`dataAwsWorkspacesBundle` Submodule" id="@cdktf/provider-aws.dataAwsWorkspacesBundle"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.NewDataAwsWorkspacesBundle(scope Construct, id *string, config DataAwsWorkspacesBundleConfig) DataAwsWorkspacesBundle
 ```
@@ -299,7 +295,7 @@ func ResetOwner()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.DataAwsWorkspacesBundle_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.DataAwsWorkspacesBundle_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataawsworkspacesbundle.DataAwsWorkspacesBundle_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.DataAwsWorkspacesBundle_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +355,7 @@ dataawsworkspacesbundle.DataAwsWorkspacesBundle_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.DataAwsWorkspacesBundle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 &dataawsworkspacesbundle.DataAwsWorkspacesBundleComputeType {
 
@@ -711,7 +707,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 &dataawsworkspacesbundle.DataAwsWorkspacesBundleConfig {
 	Connection: interface{},
@@ -872,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 &dataawsworkspacesbundle.DataAwsWorkspacesBundleRootStorage {
 
@@ -885,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 &dataawsworkspacesbundle.DataAwsWorkspacesBundleUserStorage {
 
@@ -900,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.NewDataAwsWorkspacesBundleComputeTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesBundleComputeTypeList
 ```
@@ -1032,7 +1028,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.NewDataAwsWorkspacesBundleComputeTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesBundleComputeTypeOutputReference
 ```
@@ -1310,7 +1306,7 @@ func InternalValue() DataAwsWorkspacesBundleComputeType
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.NewDataAwsWorkspacesBundleRootStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesBundleRootStorageList
 ```
@@ -1442,7 +1438,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.NewDataAwsWorkspacesBundleRootStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesBundleRootStorageOutputReference
 ```
@@ -1720,7 +1716,7 @@ func InternalValue() DataAwsWorkspacesBundleRootStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.NewDataAwsWorkspacesBundleUserStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesBundleUserStorageList
 ```
@@ -1852,7 +1848,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesbundle"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesbundle"
 
 dataawsworkspacesbundle.NewDataAwsWorkspacesBundleUserStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesBundleUserStorageOutputReference
 ```

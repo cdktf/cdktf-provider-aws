@@ -1,7 +1,3 @@
-# `aws_acm_certificate`
-
-Refer to the Terraform Registory for docs: [`aws_acm_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/acm_certificate).
-
 # `acmCertificate` Submodule <a name="`acmCertificate` Submodule" id="@cdktf/provider-aws.acmCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificate(scope Construct, id *string, config AcmCertificateConfig) AcmCertificate
 ```
@@ -456,7 +452,7 @@ func ResetValidationOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.acmCertificate.AcmCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.AcmCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -488,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.acmCertificate.AcmCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.AcmCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -502,7 +498,7 @@ acmcertificate.AcmCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.acmCertificate.AcmCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.AcmCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,7 +512,7 @@ acmcertificate.AcmCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.acmCertificate.AcmCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.AcmCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1163,7 +1159,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificate.AcmCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 &acmcertificate.AcmCertificateConfig {
 	Connection: interface{},
@@ -1180,7 +1176,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
 	EarlyRenewalDuration: *string,
 	Id: *string,
 	KeyAlgorithm: *string,
-	Options: github.com/cdktf/cdktf-provider-aws-go/aws/v18.acmCertificate.AcmCertificateOptions,
+	Options: github.com/cdktf/cdktf-provider-aws-go/aws.acmCertificate.AcmCertificateOptions,
 	PrivateKey: *string,
 	SubjectAlternativeNames: *[]*string,
 	Tags: *map[string]*string,
@@ -1468,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 &acmcertificate.AcmCertificateDomainValidationOptions {
 
@@ -1481,7 +1477,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificate.AcmCertificateOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 &acmcertificate.AcmCertificateOptions {
 	CertificateTransparencyLoggingPreference: *string,
@@ -1513,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 &acmcertificate.AcmCertificateRenewalSummary {
 
@@ -1526,7 +1522,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 &acmcertificate.AcmCertificateValidationOption {
 	DomainName: *string,
@@ -1574,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificateDomainValidationOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AcmCertificateDomainValidationOptionsList
 ```
@@ -1706,7 +1702,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificateDomainValidationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AcmCertificateDomainValidationOptionsOutputReference
 ```
@@ -2017,7 +2013,7 @@ func InternalValue() AcmCertificateDomainValidationOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificateOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmCertificateOptionsOutputReference
 ```
@@ -2295,7 +2291,7 @@ func InternalValue() AcmCertificateOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificateRenewalSummaryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AcmCertificateRenewalSummaryList
 ```
@@ -2427,7 +2423,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificateRenewalSummaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AcmCertificateRenewalSummaryOutputReference
 ```
@@ -2727,7 +2723,7 @@ func InternalValue() AcmCertificateRenewalSummary
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificateValidationOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AcmCertificateValidationOptionList
 ```
@@ -2870,7 +2866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/acmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificate"
 
 acmcertificate.NewAcmCertificateValidationOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AcmCertificateValidationOptionOutputReference
 ```

@@ -1,7 +1,3 @@
-# `aws_ivschat_logging_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_ivschat_logging_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ivschat_logging_configuration).
-
 # `ivschatLoggingConfiguration` Submodule <a name="`ivschatLoggingConfiguration` Submodule" id="@cdktf/provider-aws.ivschatLoggingConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

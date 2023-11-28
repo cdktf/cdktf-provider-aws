@@ -1,7 +1,3 @@
-# `aws_msk_cluster_policy`
-
-Refer to the Terraform Registory for docs: [`aws_msk_cluster_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/msk_cluster_policy).
-
 # `mskClusterPolicy` Submodule <a name="`mskClusterPolicy` Submodule" id="@cdktf/provider-aws.mskClusterPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

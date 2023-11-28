@@ -1,7 +1,3 @@
-# `aws_dynamodb_contributor_insights`
-
-Refer to the Terraform Registory for docs: [`aws_dynamodb_contributor_insights`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dynamodb_contributor_insights).
-
 # `dynamodbContributorInsights` Submodule <a name="`dynamodbContributorInsights` Submodule" id="@cdktf/provider-aws.dynamodbContributorInsights"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 dynamodbcontributorinsights.NewDynamodbContributorInsights(scope Construct, id *string, config DynamodbContributorInsightsConfig) DynamodbContributorInsights
 ```
@@ -366,7 +362,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 dynamodbcontributorinsights.DynamodbContributorInsights_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 dynamodbcontributorinsights.DynamodbContributorInsights_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ dynamodbcontributorinsights.DynamodbContributorInsights_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 dynamodbcontributorinsights.DynamodbContributorInsights_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ dynamodbcontributorinsights.DynamodbContributorInsights_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 dynamodbcontributorinsights.DynamodbContributorInsights_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -743,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 &dynamodbcontributorinsights.DynamodbContributorInsightsConfig {
 	Connection: interface{},
@@ -756,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsigh
 	TableName: *string,
 	Id: *string,
 	IndexName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts,
 }
 ```
 
@@ -906,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 &dynamodbcontributorinsights.DynamodbContributorInsightsTimeouts {
 	Create: *string,
@@ -954,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbcontributorinsights"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbcontributorinsights"
 
 dynamodbcontributorinsights.NewDynamodbContributorInsightsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbContributorInsightsTimeoutsOutputReference
 ```

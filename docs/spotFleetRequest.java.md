@@ -1,7 +1,3 @@
-# `aws_spot_fleet_request`
-
-Refer to the Terraform Registory for docs: [`aws_spot_fleet_request`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/spot_fleet_request).
-
 # `spotFleetRequest` Submodule <a name="`spotFleetRequest` Submodule" id="@cdktf/provider-aws.spotFleetRequest"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

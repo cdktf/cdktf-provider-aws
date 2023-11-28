@@ -1,7 +1,3 @@
-# `data_aws_wafregional_rate_based_rule`
-
-Refer to the Terraform Registory for docs: [`data_aws_wafregional_rate_based_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/wafregional_rate_based_rule).
-
 # `dataAwsWafregionalRateBasedRule` Submodule <a name="`dataAwsWafregionalRateBasedRule` Submodule" id="@cdktf/provider-aws.dataAwsWafregionalRateBasedRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalratebasedrule"
 
 dataawswafregionalratebasedrule.NewDataAwsWafregionalRateBasedRule(scope Construct, id *string, config DataAwsWafregionalRateBasedRuleConfig) DataAwsWafregionalRateBasedRule
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalratebasedrule"
 
 dataawswafregionalratebasedrule.DataAwsWafregionalRateBasedRule_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalratebasedrule"
 
 dataawswafregionalratebasedrule.DataAwsWafregionalRateBasedRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawswafregionalratebasedrule.DataAwsWafregionalRateBasedRule_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalratebasedrule"
 
 dataawswafregionalratebasedrule.DataAwsWafregionalRateBasedRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawswafregionalratebasedrule.DataAwsWafregionalRateBasedRule_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalratebasedrule"
 
 dataawswafregionalratebasedrule.DataAwsWafregionalRateBasedRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalratebasedrule"
 
 &dataawswafregionalratebasedrule.DataAwsWafregionalRateBasedRuleConfig {
 	Connection: interface{},

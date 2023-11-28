@@ -1,7 +1,3 @@
-# `aws_chime_voice_connector_streaming`
-
-Refer to the Terraform Registory for docs: [`aws_chime_voice_connector_streaming`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/chime_voice_connector_streaming).
-
 # `chimeVoiceConnectorStreaming` Submodule <a name="`chimeVoiceConnectorStreaming` Submodule" id="@cdktf/provider-aws.chimeVoiceConnectorStreaming"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

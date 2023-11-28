@@ -1,7 +1,3 @@
-# `data_aws_prometheus_workspace`
-
-Refer to the Terraform Registory for docs: [`data_aws_prometheus_workspace`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/prometheus_workspace).
-
 # `dataAwsPrometheusWorkspace` Submodule <a name="`dataAwsPrometheusWorkspace` Submodule" id="@cdktf/provider-aws.dataAwsPrometheusWorkspace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

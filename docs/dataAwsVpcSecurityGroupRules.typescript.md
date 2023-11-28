@@ -1,7 +1,3 @@
-# `data_aws_vpc_security_group_rules`
-
-Refer to the Terraform Registory for docs: [`data_aws_vpc_security_group_rules`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/vpc_security_group_rules).
-
 # `dataAwsVpcSecurityGroupRules` Submodule <a name="`dataAwsVpcSecurityGroupRules` Submodule" id="@cdktf/provider-aws.dataAwsVpcSecurityGroupRules"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

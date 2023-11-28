@@ -1,7 +1,3 @@
-# `aws_sagemaker_domain`
-
-Refer to the Terraform Registory for docs: [`aws_sagemaker_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_domain).
-
 # `sagemakerDomain` Submodule <a name="`sagemakerDomain` Submodule" id="@cdktf/provider-aws.sagemakerDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

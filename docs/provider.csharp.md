@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`aws`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-aws.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

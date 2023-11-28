@@ -1,7 +1,3 @@
-# `aws_load_balancer_listener_policy`
-
-Refer to the Terraform Registory for docs: [`aws_load_balancer_listener_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/load_balancer_listener_policy).
-
 # `loadBalancerListenerPolicy` Submodule <a name="`loadBalancerListenerPolicy` Submodule" id="@cdktf/provider-aws.loadBalancerListenerPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/loadbalancerlistenerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/loadbalancerlistenerpolicy"
 
 loadbalancerlistenerpolicy.NewLoadBalancerListenerPolicy(scope Construct, id *string, config LoadBalancerListenerPolicyConfig) LoadBalancerListenerPolicy
 ```
@@ -353,7 +349,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/loadbalancerlistenerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/loadbalancerlistenerpolicy"
 
 loadbalancerlistenerpolicy.LoadBalancerListenerPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/loadbalancerlistenerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/loadbalancerlistenerpolicy"
 
 loadbalancerlistenerpolicy.LoadBalancerListenerPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ loadbalancerlistenerpolicy.LoadBalancerListenerPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/loadbalancerlistenerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/loadbalancerlistenerpolicy"
 
 loadbalancerlistenerpolicy.LoadBalancerListenerPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ loadbalancerlistenerpolicy.LoadBalancerListenerPolicy_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/loadbalancerlistenerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/loadbalancerlistenerpolicy"
 
 loadbalancerlistenerpolicy.LoadBalancerListenerPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/loadbalancerlistenerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/loadbalancerlistenerpolicy"
 
 &loadbalancerlistenerpolicy.LoadBalancerListenerPolicyConfig {
 	Connection: interface{},

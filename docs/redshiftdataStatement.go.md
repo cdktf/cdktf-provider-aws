@@ -1,7 +1,3 @@
-# `aws_redshiftdata_statement`
-
-Refer to the Terraform Registory for docs: [`aws_redshiftdata_statement`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftdata_statement).
-
 # `redshiftdataStatement` Submodule <a name="`redshiftdataStatement` Submodule" id="@cdktf/provider-aws.redshiftdataStatement"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatement(scope Construct, id *string, config RedshiftdataStatementConfig) RedshiftdataStatement
 ```
@@ -421,7 +417,7 @@ func ResetWorkgroupName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +449,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +463,7 @@ redshiftdatastatement.RedshiftdataStatement_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +477,7 @@ redshiftdatastatement.RedshiftdataStatement_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -952,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 &redshiftdatastatement.RedshiftdataStatementConfig {
 	Connection: interface{},
@@ -970,7 +966,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
 	Parameters: interface{},
 	SecretArn: *string,
 	StatementName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.redshiftdataStatement.RedshiftdataStatementTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.redshiftdataStatement.RedshiftdataStatementTimeouts,
 	WithEvent: interface{},
 	WorkgroupName: *string,
 }
@@ -1215,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 &redshiftdatastatement.RedshiftdataStatementParameters {
 	Name: *string,
@@ -1261,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 &redshiftdatastatement.RedshiftdataStatementTimeouts {
 	Create: *string,
@@ -1295,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatementParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftdataStatementParametersList
 ```
@@ -1438,7 +1434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatementParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftdataStatementParametersOutputReference
 ```
@@ -1749,7 +1745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftdatastatement"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftdataStatementTimeoutsOutputReference
 ```

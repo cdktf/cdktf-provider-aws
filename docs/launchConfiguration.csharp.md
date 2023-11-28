@@ -1,7 +1,3 @@
-# `aws_launch_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_launch_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/launch_configuration).
-
 # `launchConfiguration` Submodule <a name="`launchConfiguration` Submodule" id="@cdktf/provider-aws.launchConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

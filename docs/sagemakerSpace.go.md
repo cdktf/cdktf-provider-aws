@@ -1,7 +1,3 @@
-# `aws_sagemaker_space`
-
-Refer to the Terraform Registory for docs: [`aws_sagemaker_space`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_space).
-
 # `sagemakerSpace` Submodule <a name="`sagemakerSpace` Submodule" id="@cdktf/provider-aws.sagemakerSpace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpace(scope Construct, id *string, config SagemakerSpaceConfig) SagemakerSpace
 ```
@@ -373,7 +369,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.SagemakerSpace_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.SagemakerSpace_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ sagemakerspace.SagemakerSpace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.SagemakerSpace_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ sagemakerspace.SagemakerSpace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.SagemakerSpace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceConfig {
 	Connection: interface{},
@@ -829,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
 	DomainId: *string,
 	SpaceName: *string,
 	Id: *string,
-	SpaceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerSpace.SagemakerSpaceSpaceSettings,
+	SpaceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerSpace.SagemakerSpaceSpaceSettings,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1007,11 +1003,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceSpaceSettings {
-	JupyterServerAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettings,
-	KernelGatewayAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettings,
+	JupyterServerAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettings,
+	KernelGatewayAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettings,
 }
 ```
 
@@ -1057,10 +1053,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceSpaceSettingsJupyterServerAppSettings {
-	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec,
 	CodeRepository: interface{},
 	LifecycleConfigArns: *[]*string,
 }
@@ -1121,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository {
 	RepositoryUrl: *string,
@@ -1153,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -1227,10 +1223,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettings {
-	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec,
 	CustomImage: interface{},
 	LifecycleConfigArns: *[]*string,
 }
@@ -1291,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage {
 	AppImageConfigName: *string,
@@ -1351,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 &sagemakerspace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -1427,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList
 ```
@@ -1570,7 +1566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOutputReference
 ```
@@ -1859,7 +1855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -2224,7 +2220,7 @@ func InternalValue() SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultR
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference
 ```
@@ -2579,7 +2575,7 @@ func InternalValue() SagemakerSpaceSpaceSettingsJupyterServerAppSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageList
 ```
@@ -2722,7 +2718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutputReference
 ```
@@ -3062,7 +3058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -3427,7 +3423,7 @@ func InternalValue() SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultR
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference
 ```
@@ -3782,7 +3778,7 @@ func InternalValue() SagemakerSpaceSpaceSettingsKernelGatewayAppSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerspace"
 
 sagemakerspace.NewSagemakerSpaceSpaceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerSpaceSpaceSettingsOutputReference
 ```

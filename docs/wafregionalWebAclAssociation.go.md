@@ -1,7 +1,3 @@
-# `aws_wafregional_web_acl_association`
-
-Refer to the Terraform Registory for docs: [`aws_wafregional_web_acl_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafregional_web_acl_association).
-
 # `wafregionalWebAclAssociation` Submodule <a name="`wafregionalWebAclAssociation` Submodule" id="@cdktf/provider-aws.wafregionalWebAclAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.NewWafregionalWebAclAssociation(scope Construct, id *string, config WafregionalWebAclAssociationConfig) WafregionalWebAclAssociation
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebaclassociation"
 
 &wafregionalwebaclassociation.WafregionalWebAclAssociationConfig {
 	Connection: interface{},

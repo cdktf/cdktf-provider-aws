@@ -1,7 +1,3 @@
-# `aws_api_gateway_base_path_mapping`
-
-Refer to the Terraform Registory for docs: [`aws_api_gateway_base_path_mapping`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_base_path_mapping).
-
 # `apiGatewayBasePathMapping` Submodule <a name="`apiGatewayBasePathMapping` Submodule" id="@cdktf/provider-aws.apiGatewayBasePathMapping"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaybasepathmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaybasepathmapping"
 
 apigatewaybasepathmapping.NewApiGatewayBasePathMapping(scope Construct, id *string, config ApiGatewayBasePathMappingConfig) ApiGatewayBasePathMapping
 ```
@@ -353,7 +349,7 @@ func ResetStageName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaybasepathmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaybasepathmapping"
 
 apigatewaybasepathmapping.ApiGatewayBasePathMapping_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaybasepathmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaybasepathmapping"
 
 apigatewaybasepathmapping.ApiGatewayBasePathMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ apigatewaybasepathmapping.ApiGatewayBasePathMapping_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaybasepathmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaybasepathmapping"
 
 apigatewaybasepathmapping.ApiGatewayBasePathMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ apigatewaybasepathmapping.ApiGatewayBasePathMapping_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaybasepathmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaybasepathmapping"
 
 apigatewaybasepathmapping.ApiGatewayBasePathMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaybasepathmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaybasepathmapping"
 
 &apigatewaybasepathmapping.ApiGatewayBasePathMappingConfig {
 	Connection: interface{},

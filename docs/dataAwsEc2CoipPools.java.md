@@ -1,7 +1,3 @@
-# `data_aws_ec2_coip_pools`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_coip_pools`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_coip_pools).
-
 # `dataAwsEc2CoipPools` Submodule <a name="`dataAwsEc2CoipPools` Submodule" id="@cdktf/provider-aws.dataAwsEc2CoipPools"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

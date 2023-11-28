@@ -1,7 +1,3 @@
-# `aws_redshiftserverless_endpoint_access`
-
-Refer to the Terraform Registory for docs: [`aws_redshiftserverless_endpoint_access`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_endpoint_access).
-
 # `redshiftserverlessEndpointAccess` Submodule <a name="`redshiftserverlessEndpointAccess` Submodule" id="@cdktf/provider-aws.redshiftserverlessEndpointAccess"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

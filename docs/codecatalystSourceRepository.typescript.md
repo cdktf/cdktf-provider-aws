@@ -1,7 +1,3 @@
-# `aws_codecatalyst_source_repository`
-
-Refer to the Terraform Registory for docs: [`aws_codecatalyst_source_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codecatalyst_source_repository).
-
 # `codecatalystSourceRepository` Submodule <a name="`codecatalystSourceRepository` Submodule" id="@cdktf/provider-aws.codecatalystSourceRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

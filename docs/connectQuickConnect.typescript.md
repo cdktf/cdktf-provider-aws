@@ -1,7 +1,3 @@
-# `aws_connect_quick_connect`
-
-Refer to the Terraform Registory for docs: [`aws_connect_quick_connect`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/connect_quick_connect).
-
 # `connectQuickConnect` Submodule <a name="`connectQuickConnect` Submodule" id="@cdktf/provider-aws.connectQuickConnect"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

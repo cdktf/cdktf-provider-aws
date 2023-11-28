@@ -1,7 +1,3 @@
-# `aws_transfer_profile`
-
-Refer to the Terraform Registory for docs: [`aws_transfer_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transfer_profile).
-
 # `transferProfile` Submodule <a name="`transferProfile` Submodule" id="@cdktf/provider-aws.transferProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

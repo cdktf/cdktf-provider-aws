@@ -1,7 +1,3 @@
-# `aws_opsworks_memcached_layer`
-
-Refer to the Terraform Registory for docs: [`aws_opsworks_memcached_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opsworks_memcached_layer).
-
 # `opsworksMemcachedLayer` Submodule <a name="`opsworksMemcachedLayer` Submodule" id="@cdktf/provider-aws.opsworksMemcachedLayer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

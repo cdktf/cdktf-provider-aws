@@ -45,25 +45,24 @@
   },
   "devDependencies": {
     "@actions/core": "^1.1.0",
-    "@cdktf/provider-project": "^0.3.0",
+    "@cdktf/provider-project": "^0.4.0",
     "@types/node": "^18",
     "cdktf": "^0.19.0",
     "cdktf-cli": "^0.19.0",
-    "constructs": "^10.0.0",
+    "constructs": "^10.3.0",
     "dot-prop": "^5.2.0",
-    "jsii": "^5.0.1",
+    "jsii": "~5.2.0",
     "jsii-diff": "^1.92.0",
-    "jsii-docgen": "~9.0.0",
+    "jsii-docgen": "^10.2.3",
     "jsii-pacmak": "^1.92.0",
     "jsii-rosetta": "~5.1.2",
-    "node-fetch": "cjs",
-    "projen": "^0.77.2",
+    "projen": "^0.77.3",
     "standard-version": "^9",
-    "typescript": "^3.9.10"
+    "typescript": "~5.2.0"
   },
   "peerDependencies": {
     "cdktf": "^0.19.0",
-    "constructs": "^10.0.0"
+    "constructs": "^10.3.0"
   },
   "resolutions": {
     "@types/yargs": "17.0.13"

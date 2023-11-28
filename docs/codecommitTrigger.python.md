@@ -1,7 +1,3 @@
-# `aws_codecommit_trigger`
-
-Refer to the Terraform Registory for docs: [`aws_codecommit_trigger`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codecommit_trigger).
-
 # `codecommitTrigger` Submodule <a name="`codecommitTrigger` Submodule" id="@cdktf/provider-aws.codecommitTrigger"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

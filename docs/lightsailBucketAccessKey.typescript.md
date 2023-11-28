@@ -1,7 +1,3 @@
-# `aws_lightsail_bucket_access_key`
-
-Refer to the Terraform Registory for docs: [`aws_lightsail_bucket_access_key`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lightsail_bucket_access_key).
-
 # `lightsailBucketAccessKey` Submodule <a name="`lightsailBucketAccessKey` Submodule" id="@cdktf/provider-aws.lightsailBucketAccessKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

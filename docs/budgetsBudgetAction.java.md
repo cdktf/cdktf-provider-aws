@@ -1,7 +1,3 @@
-# `aws_budgets_budget_action`
-
-Refer to the Terraform Registory for docs: [`aws_budgets_budget_action`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/budgets_budget_action).
-
 # `budgetsBudgetAction` Submodule <a name="`budgetsBudgetAction` Submodule" id="@cdktf/provider-aws.budgetsBudgetAction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

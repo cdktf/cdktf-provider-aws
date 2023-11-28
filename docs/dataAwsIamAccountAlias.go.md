@@ -1,7 +1,3 @@
-# `data_aws_iam_account_alias`
-
-Refer to the Terraform Registory for docs: [`data_aws_iam_account_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_account_alias).
-
 # `dataAwsIamAccountAlias` Submodule <a name="`dataAwsIamAccountAlias` Submodule" id="@cdktf/provider-aws.dataAwsIamAccountAlias"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.NewDataAwsIamAccountAlias(scope Construct, id *string, config DataAwsIamAccountAliasConfig) DataAwsIamAccountAlias
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.DataAwsIamAccountAlias_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.DataAwsIamAccountAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ dataawsiamaccountalias.DataAwsIamAccountAlias_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.DataAwsIamAccountAlias_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataawsiamaccountalias.DataAwsIamAccountAlias_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.DataAwsIamAccountAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 &dataawsiamaccountalias.DataAwsIamAccountAliasConfig {
 	Connection: interface{},

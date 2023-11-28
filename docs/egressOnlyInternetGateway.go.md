@@ -1,7 +1,3 @@
-# `aws_egress_only_internet_gateway`
-
-Refer to the Terraform Registory for docs: [`aws_egress_only_internet_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/egress_only_internet_gateway).
-
 # `egressOnlyInternetGateway` Submodule <a name="`egressOnlyInternetGateway` Submodule" id="@cdktf/provider-aws.egressOnlyInternetGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/egressonlyinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/egressonlyinternetgateway"
 
 egressonlyinternetgateway.NewEgressOnlyInternetGateway(scope Construct, id *string, config EgressOnlyInternetGatewayConfig) EgressOnlyInternetGateway
 ```
@@ -353,7 +349,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/egressonlyinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/egressonlyinternetgateway"
 
 egressonlyinternetgateway.EgressOnlyInternetGateway_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/egressonlyinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/egressonlyinternetgateway"
 
 egressonlyinternetgateway.EgressOnlyInternetGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ egressonlyinternetgateway.EgressOnlyInternetGateway_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/egressonlyinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/egressonlyinternetgateway"
 
 egressonlyinternetgateway.EgressOnlyInternetGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ egressonlyinternetgateway.EgressOnlyInternetGateway_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/egressonlyinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/egressonlyinternetgateway"
 
 egressonlyinternetgateway.EgressOnlyInternetGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -730,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/egressonlyinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/egressonlyinternetgateway"
 
 &egressonlyinternetgateway.EgressOnlyInternetGatewayConfig {
 	Connection: interface{},

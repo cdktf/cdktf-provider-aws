@@ -1,7 +1,3 @@
-# `aws_ec2_traffic_mirror_session`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_traffic_mirror_session`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_traffic_mirror_session).
-
 # `ec2TrafficMirrorSession` Submodule <a name="`ec2TrafficMirrorSession` Submodule" id="@cdktf/provider-aws.ec2TrafficMirrorSession"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

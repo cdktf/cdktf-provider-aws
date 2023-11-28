@@ -1,7 +1,3 @@
-# `aws_vpclattice_target_group_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_vpclattice_target_group_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpclattice_target_group_attachment).
-
 # `vpclatticeTargetGroupAttachment` Submodule <a name="`vpclatticeTargetGroupAttachment` Submodule" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

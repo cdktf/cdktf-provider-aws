@@ -1,7 +1,3 @@
-# `aws_apprunner_connection`
-
-Refer to the Terraform Registory for docs: [`aws_apprunner_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_connection).
-
 # `apprunnerConnection` Submodule <a name="`apprunnerConnection` Submodule" id="@cdktf/provider-aws.apprunnerConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerconnection"
 
 apprunnerconnection.NewApprunnerConnection(scope Construct, id *string, config ApprunnerConnectionConfig) ApprunnerConnection
 ```
@@ -353,7 +349,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ apprunnerconnection.ApprunnerConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ apprunnerconnection.ApprunnerConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -774,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerconnection"
 
 &apprunnerconnection.ApprunnerConnectionConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `aws_kendra_index`
-
-Refer to the Terraform Registory for docs: [`aws_kendra_index`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kendra_index).
-
 # `kendraIndex` Submodule <a name="`kendraIndex` Submodule" id="@cdktf/provider-aws.kendraIndex"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndex(scope Construct, id *string, config KendraIndexConfig) KendraIndex
 ```
@@ -494,7 +490,7 @@ func ResetUserTokenConfigurations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kendraIndex.KendraIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.KendraIndex_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kendraIndex.KendraIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.KendraIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +536,7 @@ kendraindex.KendraIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kendraIndex.KendraIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.KendraIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +550,7 @@ kendraindex.KendraIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.kendraIndex.KendraIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.KendraIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1157,7 +1153,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexCapacityUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexCapacityUnits {
 	QueryCapacityUnits: *f64,
@@ -1203,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexConfig {
 	Connection: interface{},
@@ -1215,18 +1211,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
 	Provisioners: *[]interface{},
 	Name: *string,
 	RoleArn: *string,
-	CapacityUnits: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexCapacityUnits,
+	CapacityUnits: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexCapacityUnits,
 	Description: *string,
 	DocumentMetadataConfigurationUpdates: interface{},
 	Edition: *string,
 	Id: *string,
-	ServerSideEncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexServerSideEncryptionConfiguration,
+	ServerSideEncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexServerSideEncryptionConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexTimeouts,
 	UserContextPolicy: *string,
-	UserGroupResolutionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexUserGroupResolutionConfiguration,
-	UserTokenConfigurations: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexUserTokenConfigurations,
+	UserGroupResolutionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexUserGroupResolutionConfiguration,
+	UserTokenConfigurations: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexUserTokenConfigurations,
 }
 ```
 
@@ -1516,13 +1512,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexDocumentMetadataConfigurationUpdates {
 	Name: *string,
 	Type: *string,
-	Relevance: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevance,
-	Search: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearch,
+	Relevance: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevance,
+	Search: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearch,
 }
 ```
 
@@ -1594,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexDocumentMetadataConfigurationUpdatesRelevance {
 	Duration: *string,
@@ -1682,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexDocumentMetadataConfigurationUpdatesSearch {
 	Displayable: interface{},
@@ -1756,7 +1752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatistics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexIndexStatistics {
 
@@ -1769,7 +1765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsFaqStatistics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexIndexStatisticsFaqStatistics {
 
@@ -1782,7 +1778,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatistics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexIndexStatisticsTextDocumentStatistics {
 
@@ -1795,7 +1791,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexServerSideEncryptionConfiguration {
 	KmsKeyId: *string,
@@ -1827,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexTimeouts {
 	Create: *string,
@@ -1887,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserGroupResolutionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexUserGroupResolutionConfiguration {
 	UserGroupResolutionMode: *string,
@@ -1919,11 +1915,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexUserTokenConfigurations {
-	JsonTokenTypeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration,
-	JwtTokenTypeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration,
+	JsonTokenTypeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration,
+	JwtTokenTypeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration,
 }
 ```
 
@@ -1969,7 +1965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration {
 	GroupAttributeField: *string,
@@ -2015,7 +2011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 &kendraindex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration {
 	KeyLocation: *string,
@@ -2133,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexCapacityUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexCapacityUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexCapacityUnitsOutputReference
 ```
@@ -2440,7 +2436,7 @@ func InternalValue() KendraIndexCapacityUnits
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexDocumentMetadataConfigurationUpdatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraIndexDocumentMetadataConfigurationUpdatesList
 ```
@@ -2583,7 +2579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexDocumentMetadataConfigurationUpdatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KendraIndexDocumentMetadataConfigurationUpdatesOutputReference
 ```
@@ -2978,7 +2974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference
 ```
@@ -3372,7 +3368,7 @@ func InternalValue() KendraIndexDocumentMetadataConfigurationUpdatesRelevance
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference
 ```
@@ -3737,7 +3733,7 @@ func InternalValue() KendraIndexDocumentMetadataConfigurationUpdatesSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsFaqStatisticsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexIndexStatisticsFaqStatisticsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraIndexIndexStatisticsFaqStatisticsList
 ```
@@ -3869,7 +3865,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsFaqStatisticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexIndexStatisticsFaqStatisticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KendraIndexIndexStatisticsFaqStatisticsOutputReference
 ```
@@ -4147,7 +4143,7 @@ func InternalValue() KendraIndexIndexStatisticsFaqStatistics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexIndexStatisticsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraIndexIndexStatisticsList
 ```
@@ -4279,7 +4275,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexIndexStatisticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KendraIndexIndexStatisticsOutputReference
 ```
@@ -4568,7 +4564,7 @@ func InternalValue() KendraIndexIndexStatistics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexIndexStatisticsTextDocumentStatisticsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraIndexIndexStatisticsTextDocumentStatisticsList
 ```
@@ -4700,7 +4696,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexIndexStatisticsTextDocumentStatisticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference
 ```
@@ -4989,7 +4985,7 @@ func InternalValue() KendraIndexIndexStatisticsTextDocumentStatistics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexServerSideEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexServerSideEncryptionConfigurationOutputReference
 ```
@@ -5267,7 +5263,7 @@ func InternalValue() KendraIndexServerSideEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexTimeoutsOutputReference
 ```
@@ -5603,7 +5599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserGroupResolutionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexUserGroupResolutionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexUserGroupResolutionConfigurationOutputReference
 ```
@@ -5874,7 +5870,7 @@ func InternalValue() KendraIndexUserGroupResolutionConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference
 ```
@@ -6167,7 +6163,7 @@ func InternalValue() KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguratio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference
 ```
@@ -6612,7 +6608,7 @@ func InternalValue() KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendraindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendraindex"
 
 kendraindex.NewKendraIndexUserTokenConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraIndexUserTokenConfigurationsOutputReference
 ```

@@ -1,7 +1,3 @@
-# `data_aws_apigatewayv2_api`
-
-Refer to the Terraform Registory for docs: [`data_aws_apigatewayv2_api`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/apigatewayv2_api).
-
 # `dataAwsApigatewayv2Api` Submodule <a name="`dataAwsApigatewayv2Api` Submodule" id="@cdktf/provider-aws.dataAwsApigatewayv2Api"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

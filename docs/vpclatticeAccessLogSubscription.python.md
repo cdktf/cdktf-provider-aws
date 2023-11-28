@@ -1,7 +1,3 @@
-# `aws_vpclattice_access_log_subscription`
-
-Refer to the Terraform Registory for docs: [`aws_vpclattice_access_log_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpclattice_access_log_subscription).
-
 # `vpclatticeAccessLogSubscription` Submodule <a name="`vpclatticeAccessLogSubscription` Submodule" id="@cdktf/provider-aws.vpclatticeAccessLogSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
