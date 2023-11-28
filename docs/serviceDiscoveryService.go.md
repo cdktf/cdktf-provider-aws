@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryService(scope Construct, id *string, config ServiceDiscoveryServiceConfig) ServiceDiscoveryService
 ```
@@ -437,7 +437,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_IsConstruct(x interface{}) *bool
 ```
@@ -469,7 +469,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ servicediscoveryservice.ServiceDiscoveryService_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_IsTerraformResource(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ servicediscoveryservice.ServiceDiscoveryService_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceConfig {
 	Connection: interface{},
@@ -991,10 +991,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Description: *string,
-	DnsConfig: github.com/cdktf/cdktf-provider-aws-go/aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig,
+	DnsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig,
 	ForceDestroy: interface{},
-	HealthCheckConfig: github.com/cdktf/cdktf-provider-aws-go/aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig,
-	HealthCheckCustomConfig: github.com/cdktf/cdktf-provider-aws-go/aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig,
+	HealthCheckConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig,
+	HealthCheckCustomConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig,
 	Id: *string,
 	NamespaceId: *string,
 	Tags: *map[string]*string,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceDnsConfig {
 	DnsRecords: interface{},
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceDnsConfigDnsRecords {
 	Ttl: *f64,
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceHealthCheckConfig {
 	FailureThreshold: *f64,
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceHealthCheckCustomConfig {
 	FailureThreshold: *f64,
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceDnsConfigDnsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDiscoveryServiceDnsConfigDnsRecordsList
 ```
@@ -1589,7 +1589,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference
 ```
@@ -1900,7 +1900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDiscoveryServiceDnsConfigOutputReference
 ```
@@ -2235,7 +2235,7 @@ func InternalValue() ServiceDiscoveryServiceDnsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceHealthCheckConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDiscoveryServiceHealthCheckConfigOutputReference
 ```
@@ -2571,7 +2571,7 @@ func InternalValue() ServiceDiscoveryServiceHealthCheckConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceHealthCheckCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference
 ```

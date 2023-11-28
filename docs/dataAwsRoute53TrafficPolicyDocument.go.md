@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocument(scope Construct, id *string, config DataAwsRoute53TrafficPolicyDocumentConfig) DataAwsRoute53TrafficPolicyDocument
 ```
@@ -342,7 +342,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocument_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocument_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocument_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocument_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -774,7 +774,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentEndpoint {
 	Id: *string,
@@ -1058,16 +1058,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentRule {
 	Id: *string,
 	GeoProximityLocation: interface{},
 	Items: interface{},
 	Location: interface{},
-	Primary: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRulePrimary,
+	Primary: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRulePrimary,
 	Region: interface{},
-	Secondary: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondary,
+	Secondary: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondary,
 	Type: *string,
 }
 ```
@@ -1203,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation {
 	Bias: *string,
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentRuleItems {
 	EndpointReference: *string,
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentRuleLocation {
 	Continent: *string,
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRulePrimary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentRulePrimary {
 	EndpointReference: *string,
@@ -1583,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentRuleRegion {
 	EndpointReference: *string,
@@ -1671,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 &dataawsroute53trafficpolicydocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondary {
 	EndpointReference: *string,
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53TrafficPolicyDocumentEndpointList
 ```
@@ -1890,7 +1890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference
 ```
@@ -2266,7 +2266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList
 ```
@@ -2409,7 +2409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference
 ```
@@ -2908,7 +2908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleItemsList
 ```
@@ -3051,7 +3051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference
 ```
@@ -3376,7 +3376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleList
 ```
@@ -3519,7 +3519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleLocationList
 ```
@@ -3662,7 +3662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference
 ```
@@ -4161,7 +4161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleOutputReference
 ```
@@ -4731,7 +4731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference
 ```
@@ -5096,7 +5096,7 @@ func InternalValue() DataAwsRoute53TrafficPolicyDocumentRulePrimary
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleRegionList
 ```
@@ -5239,7 +5239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference
 ```
@@ -5651,7 +5651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53trafficpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53trafficpolicydocument"
 
 dataawsroute53trafficpolicydocument.NewDataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference
 ```

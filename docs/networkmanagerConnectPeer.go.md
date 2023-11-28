@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NewNetworkmanagerConnectPeer(scope Construct, id *string, config NetworkmanagerConnectPeerConfig) NetworkmanagerConnectPeer
 ```
@@ -410,7 +410,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NetworkmanagerConnectPeer_IsConstruct(x interface{}) *bool
 ```
@@ -442,7 +442,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NetworkmanagerConnectPeer_IsTerraformElement(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ networkmanagerconnectpeer.NetworkmanagerConnectPeer_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NetworkmanagerConnectPeer_IsTerraformResource(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ networkmanagerconnectpeer.NetworkmanagerConnectPeer_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NetworkmanagerConnectPeer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -996,7 +996,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerBgpOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 &networkmanagerconnectpeer.NetworkmanagerConnectPeerBgpOptions {
 	PeerAsn: *f64,
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 &networkmanagerconnectpeer.NetworkmanagerConnectPeerConfig {
 	Connection: interface{},
@@ -1040,14 +1040,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
 	Provisioners: *[]interface{},
 	ConnectAttachmentId: *string,
 	PeerAddress: *string,
-	BgpOptions: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerBgpOptions,
+	BgpOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerConnectPeer.NetworkmanagerConnectPeerBgpOptions,
 	CoreNetworkAddress: *string,
 	Id: *string,
 	InsideCidrBlocks: *[]*string,
 	SubnetArn: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerConnectPeer.NetworkmanagerConnectPeerTimeouts,
 }
 ```
 
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 &networkmanagerconnectpeer.NetworkmanagerConnectPeerConfiguration {
 
@@ -1290,7 +1290,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerConfigurationBgpConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 &networkmanagerconnectpeer.NetworkmanagerConnectPeerConfigurationBgpConfigurations {
 
@@ -1303,7 +1303,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 &networkmanagerconnectpeer.NetworkmanagerConnectPeerTimeouts {
 	Create: *string,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerBgpOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NewNetworkmanagerConnectPeerBgpOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerConnectPeerBgpOptionsOutputReference
 ```
@@ -1629,7 +1629,7 @@ func InternalValue() NetworkmanagerConnectPeerBgpOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerConfigurationBgpConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NewNetworkmanagerConnectPeerConfigurationBgpConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkmanagerConnectPeerConfigurationBgpConfigurationsList
 ```
@@ -1761,7 +1761,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NewNetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() NetworkmanagerConnectPeerConfigurationBgpConfigurations
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NewNetworkmanagerConnectPeerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkmanagerConnectPeerConfigurationList
 ```
@@ -2204,7 +2204,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NewNetworkmanagerConnectPeerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkmanagerConnectPeerConfigurationOutputReference
 ```
@@ -2526,7 +2526,7 @@ func InternalValue() NetworkmanagerConnectPeerConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectPeer.NetworkmanagerConnectPeerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer"
 
 networkmanagerconnectpeer.NewNetworkmanagerConnectPeerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerConnectPeerTimeoutsOutputReference
 ```

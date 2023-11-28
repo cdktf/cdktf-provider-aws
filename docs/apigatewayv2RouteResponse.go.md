@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.NewApigatewayv2RouteResponse(scope Construct, id *string, config Apigatewayv2RouteResponseConfig) Apigatewayv2RouteResponse
 ```
@@ -349,7 +349,7 @@ func ResetResponseModels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2routeresponse"
 
 &apigatewayv2routeresponse.Apigatewayv2RouteResponseConfig {
 	Connection: interface{},

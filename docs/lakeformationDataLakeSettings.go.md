@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.NewLakeformationDataLakeSettings(scope Construct, id *string, config LakeformationDataLakeSettingsConfig) LakeformationDataLakeSettings
 ```
@@ -424,7 +424,7 @@ func ResetTrustedResourceOwners()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.LakeformationDataLakeSettings_IsConstruct(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.LakeformationDataLakeSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ lakeformationdatalakesettings.LakeformationDataLakeSettings_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.LakeformationDataLakeSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ lakeformationdatalakesettings.LakeformationDataLakeSettings_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.LakeformationDataLakeSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -933,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 &lakeformationdatalakesettings.LakeformationDataLakeSettingsConfig {
 	Connection: interface{},
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 &lakeformationdatalakesettings.LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions {
 	Permissions: *[]*string,
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateTableDefaultPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 &lakeformationdatalakesettings.LakeformationDataLakeSettingsCreateTableDefaultPermissions {
 	Permissions: *[]*string,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.NewLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList
 ```
@@ -1419,7 +1419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.NewLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateTableDefaultPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.NewLakeformationDataLakeSettingsCreateTableDefaultPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationDataLakeSettingsCreateTableDefaultPermissionsList
 ```
@@ -1887,7 +1887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatalakesettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lakeformationdatalakesettings"
 
 lakeformationdatalakesettings.NewLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTask(scope Construct, id *string, config DatasyncTaskConfig) DatasyncTask
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncTask.DatasyncTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.DatasyncTask_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncTask.DatasyncTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.DatasyncTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ datasynctask.DatasyncTask_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncTask.DatasyncTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.DatasyncTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ datasynctask.DatasyncTask_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datasyncTask.DatasyncTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.DatasyncTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1069,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskConfig {
 	Connection: interface{},
@@ -1082,16 +1082,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
 	DestinationLocationArn: *string,
 	SourceLocationArn: *string,
 	CloudwatchLogGroupArn: *string,
-	Excludes: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskExcludes,
+	Excludes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskExcludes,
 	Id: *string,
-	Includes: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskIncludes,
+	Includes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskIncludes,
 	Name: *string,
-	Options: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskOptions,
-	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskSchedule,
+	Options: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskOptions,
+	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskSchedule,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TaskReportConfig: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskTaskReportConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskTimeouts,
+	TaskReportConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskTaskReportConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskTimeouts,
 }
 ```
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskExcludes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskExcludes {
 	FilterType: *string,
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskIncludes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskIncludes {
 	FilterType: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskOptions {
 	Atime: *string,
@@ -1688,7 +1688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskSchedule {
 	ScheduleExpression: *string,
@@ -1720,13 +1720,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTaskReportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskTaskReportConfig {
-	S3Destination: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskTaskReportConfigS3Destination,
+	S3Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskTaskReportConfigS3Destination,
 	OutputType: *string,
 	ReportLevel: *string,
-	ReportOverrides: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncTask.DatasyncTaskTaskReportConfigReportOverrides,
+	ReportOverrides: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncTask.DatasyncTaskTaskReportConfigReportOverrides,
 	S3ObjectVersioning: *string,
 }
 ```
@@ -1812,7 +1812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTaskReportConfigReportOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskTaskReportConfigReportOverrides {
 	DeletedOverride: *string,
@@ -1886,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTaskReportConfigS3Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskTaskReportConfigS3Destination {
 	BucketAccessRoleArn: *string,
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 &datasynctask.DatasyncTaskTimeouts {
 	Create: *string,
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskExcludesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskExcludesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskExcludesOutputReference
 ```
@@ -2287,7 +2287,7 @@ func InternalValue() DatasyncTaskExcludes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskIncludesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskIncludesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskIncludesOutputReference
 ```
@@ -2594,7 +2594,7 @@ func InternalValue() DatasyncTaskIncludes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskOptionsOutputReference
 ```
@@ -3278,7 +3278,7 @@ func InternalValue() DatasyncTaskOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskScheduleOutputReference
 ```
@@ -3549,7 +3549,7 @@ func InternalValue() DatasyncTaskSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTaskReportConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskTaskReportConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskTaskReportConfigOutputReference
 ```
@@ -3962,7 +3962,7 @@ func InternalValue() DatasyncTaskTaskReportConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTaskReportConfigReportOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskTaskReportConfigReportOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskTaskReportConfigReportOverridesOutputReference
 ```
@@ -4327,7 +4327,7 @@ func InternalValue() DatasyncTaskTaskReportConfigReportOverrides
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTaskReportConfigS3DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskTaskReportConfigS3DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskTaskReportConfigS3DestinationOutputReference
 ```
@@ -4649,7 +4649,7 @@ func InternalValue() DatasyncTaskTaskReportConfigS3Destination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncTask.DatasyncTaskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynctask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynctask"
 
 datasynctask.NewDatasyncTaskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncTaskTimeoutsOutputReference
 ```

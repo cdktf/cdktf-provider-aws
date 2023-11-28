@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesssecuritypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.NewOpensearchserverlessSecurityPolicy(scope Construct, id *string, config OpensearchserverlessSecurityPolicyConfig) OpensearchserverlessSecurityPolicy
 ```
@@ -335,7 +335,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesssecuritypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesssecuritypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesssecuritypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesssecuritypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -734,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesssecuritypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchserverlesssecuritypolicy"
 
 &opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicyConfig {
 	Connection: interface{},

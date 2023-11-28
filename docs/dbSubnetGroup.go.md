@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbsubnetgroup"
 
 dbsubnetgroup.NewDbSubnetGroup(scope Construct, id *string, config DbSubnetGroupConfig) DbSubnetGroup
 ```
@@ -370,7 +370,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbsubnetgroup"
 
 dbsubnetgroup.DbSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbsubnetgroup"
 
 dbsubnetgroup.DbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ dbsubnetgroup.DbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbsubnetgroup"
 
 dbsubnetgroup.DbSubnetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ dbsubnetgroup.DbSubnetGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbsubnetgroup"
 
 dbsubnetgroup.DbSubnetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbsubnetgroup"
 
 &dbsubnetgroup.DbSubnetGroupConfig {
 	Connection: interface{},

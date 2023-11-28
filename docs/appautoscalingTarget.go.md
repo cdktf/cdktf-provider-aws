@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingtarget"
 
 appautoscalingtarget.NewAppautoscalingTarget(scope Construct, id *string, config AppautoscalingTargetConfig) AppautoscalingTarget
 ```
@@ -356,7 +356,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ appautoscalingtarget.AppautoscalingTarget_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ appautoscalingtarget.AppautoscalingTarget_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingtarget"
 
 &appautoscalingtarget.AppautoscalingTargetConfig {
 	Connection: interface{},

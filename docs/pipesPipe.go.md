@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipe(scope Construct, id *string, config PipesPipeConfig) PipesPipe
 ```
@@ -464,7 +464,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.pipesPipe.PipesPipe.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.PipesPipe_IsConstruct(x interface{}) *bool
 ```
@@ -496,7 +496,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.pipesPipe.PipesPipe.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.PipesPipe_IsTerraformElement(x interface{}) *bool
 ```
@@ -510,7 +510,7 @@ pipespipe.PipesPipe_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.pipesPipe.PipesPipe.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.PipesPipe_IsTerraformResource(x interface{}) *bool
 ```
@@ -524,7 +524,7 @@ pipespipe.PipesPipe_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.pipesPipe.PipesPipe.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.PipesPipe_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1094,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeConfig {
 	Connection: interface{},
@@ -1110,15 +1110,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
 	Description: *string,
 	DesiredState: *string,
 	Enrichment: *string,
-	EnrichmentParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeEnrichmentParameters,
+	EnrichmentParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeEnrichmentParameters,
 	Id: *string,
 	Name: *string,
 	NamePrefix: *string,
-	SourceParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParameters,
+	SourceParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParameters,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TargetParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParameters,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTimeouts,
+	TargetParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParameters,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTimeouts,
 }
 ```
 
@@ -1417,10 +1417,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeEnrichmentParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeEnrichmentParameters {
-	HttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeEnrichmentParametersHttpParameters,
+	HttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeEnrichmentParametersHttpParameters,
 	InputTemplate: *string,
 }
 ```
@@ -1465,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeEnrichmentParametersHttpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeEnrichmentParametersHttpParameters {
 	HeaderParameters: *map[string]*string,
@@ -1525,17 +1525,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParameters {
-	ActivemqBrokerParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersActivemqBrokerParameters,
-	DynamodbStreamParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersDynamodbStreamParameters,
-	FilterCriteria: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersFilterCriteria,
-	KinesisStreamParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersKinesisStreamParameters,
-	ManagedStreamingKafkaParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParameters,
-	RabbitmqBrokerParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParameters,
-	SelfManagedKafkaParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParameters,
-	SqsQueueParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersSqsQueueParameters,
+	ActivemqBrokerParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersActivemqBrokerParameters,
+	DynamodbStreamParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersDynamodbStreamParameters,
+	FilterCriteria: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersFilterCriteria,
+	KinesisStreamParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersKinesisStreamParameters,
+	ManagedStreamingKafkaParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParameters,
+	RabbitmqBrokerParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParameters,
+	SelfManagedKafkaParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParameters,
+	SqsQueueParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersSqsQueueParameters,
 }
 ```
 
@@ -1671,10 +1671,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersActivemqBrokerParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersActivemqBrokerParameters {
-	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersActivemqBrokerParametersCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersActivemqBrokerParametersCredentials,
 	QueueName: *string,
 	BatchSize: *f64,
 	MaximumBatchingWindowInSeconds: *f64,
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersActivemqBrokerParametersCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersActivemqBrokerParametersCredentials {
 	BasicAuth: *string,
@@ -1779,12 +1779,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersDynamodbStreamParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersDynamodbStreamParameters {
 	StartingPosition: *string,
 	BatchSize: *f64,
-	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfig,
+	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfig,
 	MaximumBatchingWindowInSeconds: *f64,
 	MaximumRecordAgeInSeconds: *f64,
 	MaximumRetryAttempts: *f64,
@@ -1911,7 +1911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfig {
 	Arn: *string,
@@ -1943,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersFilterCriteria {
 	Filter: interface{},
@@ -1977,7 +1977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersFilterCriteriaFilter {
 	Pattern: *string,
@@ -2009,12 +2009,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersKinesisStreamParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersKinesisStreamParameters {
 	StartingPosition: *string,
 	BatchSize: *f64,
-	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfig,
+	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfig,
 	MaximumBatchingWindowInSeconds: *f64,
 	MaximumRecordAgeInSeconds: *f64,
 	MaximumRetryAttempts: *f64,
@@ -2155,7 +2155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfig {
 	Arn: *string,
@@ -2187,13 +2187,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersManagedStreamingKafkaParameters {
 	TopicName: *string,
 	BatchSize: *f64,
 	ConsumerGroupId: *string,
-	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParametersCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParametersCredentials,
 	MaximumBatchingWindowInSeconds: *f64,
 	StartingPosition: *string,
 }
@@ -2291,7 +2291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParametersCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersManagedStreamingKafkaParametersCredentials {
 	ClientCertificateTlsAuth: *string,
@@ -2337,10 +2337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersRabbitmqBrokerParameters {
-	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParametersCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParametersCredentials,
 	QueueName: *string,
 	BatchSize: *f64,
 	MaximumBatchingWindowInSeconds: *f64,
@@ -2427,7 +2427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParametersCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersRabbitmqBrokerParametersCredentials {
 	BasicAuth: *string,
@@ -2459,18 +2459,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersSelfManagedKafkaParameters {
 	TopicName: *string,
 	AdditionalBootstrapServers: *[]*string,
 	BatchSize: *f64,
 	ConsumerGroupId: *string,
-	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersCredentials,
 	MaximumBatchingWindowInSeconds: *f64,
 	ServerRootCaCertificate: *string,
 	StartingPosition: *string,
-	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersVpc,
+	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersVpc,
 }
 ```
 
@@ -2607,7 +2607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersSelfManagedKafkaParametersCredentials {
 	BasicAuth: *string,
@@ -2681,7 +2681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersSelfManagedKafkaParametersVpc {
 	SecurityGroups: *[]*string,
@@ -2727,7 +2727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSqsQueueParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeSourceParametersSqsQueueParameters {
 	BatchSize: *f64,
@@ -2773,21 +2773,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParameters {
-	BatchJobParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters,
-	CloudwatchLogsParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersCloudwatchLogsParameters,
-	EcsTaskParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters,
-	EventbridgeEventBusParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersEventbridgeEventBusParameters,
-	HttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersHttpParameters,
+	BatchJobParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersBatchJobParameters,
+	CloudwatchLogsParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersCloudwatchLogsParameters,
+	EcsTaskParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersEcsTaskParameters,
+	EventbridgeEventBusParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersEventbridgeEventBusParameters,
+	HttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersHttpParameters,
 	InputTemplate: *string,
-	KinesisStreamParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersKinesisStreamParameters,
-	LambdaFunctionParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersLambdaFunctionParameters,
-	RedshiftDataParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters,
-	SagemakerPipelineParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters,
-	SqsQueueParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersSqsQueueParameters,
-	StepFunctionStateMachineParameters: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersStepFunctionStateMachineParameters,
+	KinesisStreamParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersKinesisStreamParameters,
+	LambdaFunctionParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersLambdaFunctionParameters,
+	RedshiftDataParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters,
+	SagemakerPipelineParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters,
+	SqsQueueParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersSqsQueueParameters,
+	StepFunctionStateMachineParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersStepFunctionStateMachineParameters,
 }
 ```
 
@@ -2981,16 +2981,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersBatchJobParameters {
 	JobDefinition: *string,
 	JobName: *string,
-	ArrayProperties: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayProperties,
-	ContainerOverrides: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides,
+	ArrayProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayProperties,
+	ContainerOverrides: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides,
 	DependsOn: interface{},
 	Parameters: *map[string]*string,
-	RetryStrategy: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategy,
+	RetryStrategy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategy,
 }
 ```
 
@@ -3105,7 +3105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersBatchJobParametersArrayProperties {
 	Size: *f64,
@@ -3137,7 +3137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides {
 	Command: *[]*string,
@@ -3215,7 +3215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment {
 	Name: *string,
@@ -3261,7 +3261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement {
 	Type: *string,
@@ -3307,7 +3307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersBatchJobParametersDependsOn {
 	JobId: *string,
@@ -3353,7 +3353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersBatchJobParametersRetryStrategy {
 	Attempts: *f64,
@@ -3385,7 +3385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersCloudwatchLogsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersCloudwatchLogsParameters {
 	LogStreamName: *string,
@@ -3431,7 +3431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParameters {
 	TaskDefinitionArn: *string,
@@ -3440,8 +3440,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
 	EnableExecuteCommand: interface{},
 	Group: *string,
 	LaunchType: *string,
-	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration,
-	Overrides: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides,
+	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration,
+	Overrides: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides,
 	PlacementConstraint: interface{},
 	PlacementStrategy: interface{},
 	PlatformVersion: *string,
@@ -3669,7 +3669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -3729,10 +3729,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration {
-	AwsVpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration,
+	AwsVpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration,
 }
 ```
 
@@ -3763,7 +3763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration {
 	AssignPublicIp: *string,
@@ -3823,12 +3823,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersOverrides {
 	ContainerOverride: interface{},
 	Cpu: *string,
-	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage,
+	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws/v18.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage,
 	ExecutionRoleArn: *string,
 	InferenceAcceleratorOverride: interface{},
 	Memory: *string,
@@ -3945,7 +3945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride {
 	Command: *[]*string,
@@ -4081,7 +4081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment {
 	Name: *string,
@@ -4127,7 +4127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile {
 	Type: *string,
@@ -4173,7 +4173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement {
 	Type: *string,
@@ -4219,7 +4219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage {
 	SizeInGib: *f64,
@@ -4251,7 +4251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride {
 	DeviceName: *string,
@@ -4297,7 +4297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint {
 	Expression: *string,
@@ -4343,7 +4343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy {
 	Field: *string,
@@ -4389,7 +4389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEventbridgeEventBusParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersEventbridgeEventBusParameters {
 	DetailType: *string,
@@ -4477,7 +4477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersHttpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersHttpParameters {
 	HeaderParameters: *map[string]*string,
@@ -4537,7 +4537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersKinesisStreamParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersKinesisStreamParameters {
 	PartitionKey: *string,
@@ -4569,7 +4569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersLambdaFunctionParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersLambdaFunctionParameters {
 	InvocationType: *string,
@@ -4601,7 +4601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersRedshiftDataParameters {
 	Database: *string,
@@ -4703,7 +4703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersSagemakerPipelineParameters {
 	PipelineParameter: interface{},
@@ -4737,7 +4737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter {
 	Name: *string,
@@ -4783,7 +4783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSqsQueueParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersSqsQueueParameters {
 	MessageDeduplicationId: *string,
@@ -4829,7 +4829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersStepFunctionStateMachineParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTargetParametersStepFunctionStateMachineParameters {
 	InvocationType: *string,
@@ -4861,7 +4861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 &pipespipe.PipesPipeTimeouts {
 	Create: *string,
@@ -4923,7 +4923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeEnrichmentParametersHttpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeEnrichmentParametersHttpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeEnrichmentParametersHttpParametersOutputReference
 ```
@@ -5259,7 +5259,7 @@ func InternalValue() PipesPipeEnrichmentParametersHttpParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeEnrichmentParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeEnrichmentParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeEnrichmentParametersOutputReference
 ```
@@ -5579,7 +5579,7 @@ func InternalValue() PipesPipeEnrichmentParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersActivemqBrokerParametersCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersActivemqBrokerParametersCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersActivemqBrokerParametersCredentialsOutputReference
 ```
@@ -5850,7 +5850,7 @@ func InternalValue() PipesPipeSourceParametersActivemqBrokerParametersCredential
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersActivemqBrokerParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersActivemqBrokerParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersActivemqBrokerParametersOutputReference
 ```
@@ -6214,7 +6214,7 @@ func InternalValue() PipesPipeSourceParametersActivemqBrokerParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference
 ```
@@ -6492,7 +6492,7 @@ func InternalValue() PipesPipeSourceParametersDynamodbStreamParametersDeadLetter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersDynamodbStreamParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersDynamodbStreamParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersDynamodbStreamParametersOutputReference
 ```
@@ -6979,7 +6979,7 @@ func InternalValue() PipesPipeSourceParametersDynamodbStreamParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersFilterCriteriaFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeSourceParametersFilterCriteriaFilterList
 ```
@@ -7122,7 +7122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersFilterCriteriaFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeSourceParametersFilterCriteriaFilterOutputReference
 ```
@@ -7411,7 +7411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersFilterCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersFilterCriteriaOutputReference
 ```
@@ -7702,7 +7702,7 @@ func InternalValue() PipesPipeSourceParametersFilterCriteria
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigOutputReference
 ```
@@ -7980,7 +7980,7 @@ func InternalValue() PipesPipeSourceParametersKinesisStreamParametersDeadLetterC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersKinesisStreamParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersKinesisStreamParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersKinesisStreamParametersOutputReference
 ```
@@ -8496,7 +8496,7 @@ func InternalValue() PipesPipeSourceParametersKinesisStreamParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsOutputReference
 ```
@@ -8803,7 +8803,7 @@ func InternalValue() PipesPipeSourceParametersManagedStreamingKafkaParametersCre
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference
 ```
@@ -9232,7 +9232,7 @@ func InternalValue() PipesPipeSourceParametersManagedStreamingKafkaParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersOutputReference
 ```
@@ -9817,7 +9817,7 @@ func InternalValue() PipesPipeSourceParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference
 ```
@@ -10088,7 +10088,7 @@ func InternalValue() PipesPipeSourceParametersRabbitmqBrokerParametersCredential
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersRabbitmqBrokerParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference
 ```
@@ -10481,7 +10481,7 @@ func InternalValue() PipesPipeSourceParametersRabbitmqBrokerParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference
 ```
@@ -10839,7 +10839,7 @@ func InternalValue() PipesPipeSourceParametersSelfManagedKafkaParametersCredenti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersSelfManagedKafkaParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference
 ```
@@ -11368,7 +11368,7 @@ func InternalValue() PipesPipeSourceParametersSelfManagedKafkaParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference
 ```
@@ -11675,7 +11675,7 @@ func InternalValue() PipesPipeSourceParametersSelfManagedKafkaParametersVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersSqsQueueParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeSourceParametersSqsQueueParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeSourceParametersSqsQueueParametersOutputReference
 ```
@@ -11982,7 +11982,7 @@ func InternalValue() PipesPipeSourceParametersSqsQueueParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersArrayPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersBatchJobParametersArrayPropertiesOutputReference
 ```
@@ -12260,7 +12260,7 @@ func InternalValue() PipesPipeTargetParametersBatchJobParametersArrayProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList
 ```
@@ -12403,7 +12403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference
 ```
@@ -12728,7 +12728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference
 ```
@@ -13119,7 +13119,7 @@ func InternalValue() PipesPipeTargetParametersBatchJobParametersContainerOverrid
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList
 ```
@@ -13262,7 +13262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference
 ```
@@ -13573,7 +13573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersDependsOnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersBatchJobParametersDependsOnList
 ```
@@ -13716,7 +13716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersDependsOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference
 ```
@@ -14041,7 +14041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersBatchJobParametersOutputReference
 ```
@@ -14531,7 +14531,7 @@ func InternalValue() PipesPipeTargetParametersBatchJobParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference
 ```
@@ -14809,7 +14809,7 @@ func InternalValue() PipesPipeTargetParametersBatchJobParametersRetryStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersCloudwatchLogsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersCloudwatchLogsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersCloudwatchLogsParametersOutputReference
 ```
@@ -15116,7 +15116,7 @@ func InternalValue() PipesPipeTargetParametersCloudwatchLogsParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList
 ```
@@ -15259,7 +15259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference
 ```
@@ -15606,7 +15606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationOutputReference
 ```
@@ -15942,7 +15942,7 @@ func InternalValue() PipesPipeTargetParametersEcsTaskParametersNetworkConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationOutputReference
 ```
@@ -16233,7 +16233,7 @@ func InternalValue() PipesPipeTargetParametersEcsTaskParametersNetworkConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersEcsTaskParametersOutputReference
 ```
@@ -16975,7 +16975,7 @@ func InternalValue() PipesPipeTargetParametersEcsTaskParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList
 ```
@@ -17118,7 +17118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference
 ```
@@ -17429,7 +17429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList
 ```
@@ -17572,7 +17572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference
 ```
@@ -17897,7 +17897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList
 ```
@@ -18040,7 +18040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference
 ```
@@ -18578,7 +18578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList
 ```
@@ -18721,7 +18721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference
 ```
@@ -19032,7 +19032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference
 ```
@@ -19303,7 +19303,7 @@ func InternalValue() PipesPipeTargetParametersEcsTaskParametersOverridesEphemera
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList
 ```
@@ -19446,7 +19446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference
 ```
@@ -19771,7 +19771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference
 ```
@@ -20262,7 +20262,7 @@ func InternalValue() PipesPipeTargetParametersEcsTaskParametersOverrides
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersPlacementConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList
 ```
@@ -20405,7 +20405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference
 ```
@@ -20730,7 +20730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersPlacementStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList
 ```
@@ -20873,7 +20873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference
 ```
@@ -21198,7 +21198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersEventbridgeEventBusParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference
 ```
@@ -21592,7 +21592,7 @@ func InternalValue() PipesPipeTargetParametersEventbridgeEventBusParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersHttpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersHttpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersHttpParametersOutputReference
 ```
@@ -21928,7 +21928,7 @@ func InternalValue() PipesPipeTargetParametersHttpParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersKinesisStreamParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersKinesisStreamParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersKinesisStreamParametersOutputReference
 ```
@@ -22199,7 +22199,7 @@ func InternalValue() PipesPipeTargetParametersKinesisStreamParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersLambdaFunctionParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersLambdaFunctionParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersLambdaFunctionParametersOutputReference
 ```
@@ -22470,7 +22470,7 @@ func InternalValue() PipesPipeTargetParametersLambdaFunctionParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersOutputReference
 ```
@@ -23210,7 +23210,7 @@ func InternalValue() PipesPipeTargetParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersRedshiftDataParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersRedshiftDataParametersOutputReference
 ```
@@ -23619,7 +23619,7 @@ func InternalValue() PipesPipeTargetParametersRedshiftDataParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersSagemakerPipelineParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersSagemakerPipelineParametersOutputReference
 ```
@@ -23910,7 +23910,7 @@ func InternalValue() PipesPipeTargetParametersSagemakerPipelineParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList
 ```
@@ -24053,7 +24053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference
 ```
@@ -24364,7 +24364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSqsQueueParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersSqsQueueParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersSqsQueueParametersOutputReference
 ```
@@ -24671,7 +24671,7 @@ func InternalValue() PipesPipeTargetParametersSqsQueueParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference
 ```
@@ -24942,7 +24942,7 @@ func InternalValue() PipesPipeTargetParametersStepFunctionStateMachineParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pipespipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pipespipe"
 
 pipespipe.NewPipesPipeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipesPipeTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 dataawsrdscluster.NewDataAwsRdsCluster(scope Construct, id *string, config DataAwsRdsClusterConfig) DataAwsRdsCluster
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 dataawsrdscluster.DataAwsRdsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 dataawsrdscluster.DataAwsRdsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawsrdscluster.DataAwsRdsCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 dataawsrdscluster.DataAwsRdsCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawsrdscluster.DataAwsRdsCluster_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 dataawsrdscluster.DataAwsRdsCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 &dataawsrdscluster.DataAwsRdsClusterConfig {
 	Connection: interface{},
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsClusterMasterUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 &dataawsrdscluster.DataAwsRdsClusterMasterUserSecret {
 
@@ -1106,7 +1106,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsClusterMasterUserSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 dataawsrdscluster.NewDataAwsRdsClusterMasterUserSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRdsClusterMasterUserSecretList
 ```
@@ -1238,7 +1238,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsClusterMasterUserSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdscluster"
 
 dataawsrdscluster.NewDataAwsRdsClusterMasterUserSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRdsClusterMasterUserSecretOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDatabase.LightsailDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildatabase"
 
 lightsaildatabase.NewLightsailDatabase(scope Construct, id *string, config LightsailDatabaseConfig) LightsailDatabase
 ```
@@ -405,7 +405,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailDatabase.LightsailDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildatabase"
 
 lightsaildatabase.LightsailDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailDatabase.LightsailDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildatabase"
 
 lightsaildatabase.LightsailDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ lightsaildatabase.LightsailDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailDatabase.LightsailDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildatabase"
 
 lightsaildatabase.LightsailDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ lightsaildatabase.LightsailDatabase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailDatabase.LightsailDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildatabase"
 
 lightsaildatabase.LightsailDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1200,7 +1200,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDatabase.LightsailDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildatabase"
 
 &lightsaildatabase.LightsailDatabaseConfig {
 	Connection: interface{},

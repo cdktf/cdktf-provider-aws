@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleet(scope Construct, id *string, config AppstreamFleetConfig) AppstreamFleet
 ```
@@ -479,7 +479,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ appstreamfleet.AppstreamFleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ appstreamfleet.AppstreamFleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1219,7 +1219,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetComputeCapacity {
 	DesiredInstances: *f64,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetConfig {
 	Connection: interface{},
@@ -1261,13 +1261,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ComputeCapacity: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamFleet.AppstreamFleetComputeCapacity,
+	ComputeCapacity: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamFleet.AppstreamFleetComputeCapacity,
 	InstanceType: *string,
 	Name: *string,
 	Description: *string,
 	DisconnectTimeoutInSeconds: *f64,
 	DisplayName: *string,
-	DomainJoinInfo: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamFleet.AppstreamFleetDomainJoinInfo,
+	DomainJoinInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamFleet.AppstreamFleetDomainJoinInfo,
 	EnableDefaultInternetAccess: interface{},
 	FleetType: *string,
 	IamRoleArn: *string,
@@ -1279,7 +1279,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 	StreamView: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamFleet.AppstreamFleetVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamFleet.AppstreamFleetVpcConfig,
 }
 ```
 
@@ -1628,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetDomainJoinInfo {
 	DirectoryName: *string,
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleetComputeCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamFleetComputeCapacityOutputReference
 ```
@@ -2026,7 +2026,7 @@ func InternalValue() AppstreamFleetComputeCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleetDomainJoinInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamFleetDomainJoinInfoOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() AppstreamFleetDomainJoinInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleetVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamFleetVpcConfigOutputReference
 ```

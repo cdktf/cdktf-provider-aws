@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.NewDataAwsEc2TransitGatewayVpcAttachment(scope Construct, id *string, config DataAwsEc2TransitGatewayVpcAttachmentConfig) DataAwsEc2TransitGatewayVpcAttachment
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachment_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachment_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 &dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachmentConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcat
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentTimeouts,
 }
 ```
 
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 &dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachmentFilter {
 	Name: *string,
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 &dataawsec2transitgatewayvpcattachment.DataAwsEc2TransitGatewayVpcAttachmentTimeouts {
 	Read: *string,
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.NewDataAwsEc2TransitGatewayVpcAttachmentFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayVpcAttachmentFilterList
 ```
@@ -1141,7 +1141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.NewDataAwsEc2TransitGatewayVpcAttachmentFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayVpcAttachmentFilterOutputReference
 ```
@@ -1452,7 +1452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayvpcattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2transitgatewayvpcattachment"
 
 dataawsec2transitgatewayvpcattachment.NewDataAwsEc2TransitGatewayVpcAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2TransitGatewayVpcAttachmentTimeoutsOutputReference
 ```

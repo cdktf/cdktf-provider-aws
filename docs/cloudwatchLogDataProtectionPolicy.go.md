@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchlogdataprotectionpolicy"
 
 cloudwatchlogdataprotectionpolicy.NewCloudwatchLogDataProtectionPolicy(scope Construct, id *string, config CloudwatchLogDataProtectionPolicyConfig) CloudwatchLogDataProtectionPolicy
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchlogdataprotectionpolicy"
 
 cloudwatchlogdataprotectionpolicy.CloudwatchLogDataProtectionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchlogdataprotectionpolicy"
 
 cloudwatchlogdataprotectionpolicy.CloudwatchLogDataProtectionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ cloudwatchlogdataprotectionpolicy.CloudwatchLogDataProtectionPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchlogdataprotectionpolicy"
 
 cloudwatchlogdataprotectionpolicy.CloudwatchLogDataProtectionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ cloudwatchlogdataprotectionpolicy.CloudwatchLogDataProtectionPolicy_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchlogdataprotectionpolicy"
 
 cloudwatchlogdataprotectionpolicy.CloudwatchLogDataProtectionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchlogdataprotectionpolicy"
 
 &cloudwatchlogdataprotectionpolicy.CloudwatchLogDataProtectionPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 iotprovisioningtemplate.NewIotProvisioningTemplate(scope Construct, id *string, config IotProvisioningTemplateConfig) IotProvisioningTemplate
 ```
@@ -390,7 +390,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -921,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 &iotprovisioningtemplate.IotProvisioningTemplateConfig {
 	Connection: interface{},
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 	Description: *string,
 	Enabled: interface{},
 	Id: *string,
-	PreProvisioningHook: github.com/cdktf/cdktf-provider-aws-go/aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook,
+	PreProvisioningHook: github.com/cdktf/cdktf-provider-aws-go/aws/v18.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Type: *string,
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 &iotprovisioningtemplate.IotProvisioningTemplatePreProvisioningHook {
 	TargetArn: *string,
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 iotprovisioningtemplate.NewIotProvisioningTemplatePreProvisioningHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotProvisioningTemplatePreProvisioningHookOutputReference
 ```

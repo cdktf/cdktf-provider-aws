@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.NewDataAwsInternetGateway(scope Construct, id *string, config DataAwsInternetGatewayConfig) DataAwsInternetGateway
 ```
@@ -328,7 +328,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.DataAwsInternetGateway_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.DataAwsInternetGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ dataawsinternetgateway.DataAwsInternetGateway_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.DataAwsInternetGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ dataawsinternetgateway.DataAwsInternetGateway_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.DataAwsInternetGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +738,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 &dataawsinternetgateway.DataAwsInternetGatewayAttachments {
 
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 &dataawsinternetgateway.DataAwsInternetGatewayConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
 	Id: *string,
 	InternetGatewayId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsInternetGateway.DataAwsInternetGatewayTimeouts,
 }
 ```
 
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 &dataawsinternetgateway.DataAwsInternetGatewayFilter {
 	Name: *string,
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 &dataawsinternetgateway.DataAwsInternetGatewayTimeouts {
 	Read: *string,
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.NewDataAwsInternetGatewayAttachmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInternetGatewayAttachmentsList
 ```
@@ -1142,7 +1142,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.NewDataAwsInternetGatewayAttachmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInternetGatewayAttachmentsOutputReference
 ```
@@ -1431,7 +1431,7 @@ func InternalValue() DataAwsInternetGatewayAttachments
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.NewDataAwsInternetGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInternetGatewayFilterList
 ```
@@ -1574,7 +1574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.NewDataAwsInternetGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInternetGatewayFilterOutputReference
 ```
@@ -1885,7 +1885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinternetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsinternetgateway"
 
 dataawsinternetgateway.NewDataAwsInternetGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsInternetGatewayTimeoutsOutputReference
 ```

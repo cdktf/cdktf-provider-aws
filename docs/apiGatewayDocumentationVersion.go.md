@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.NewApiGatewayDocumentationVersion(scope Construct, id *string, config ApiGatewayDocumentationVersionConfig) ApiGatewayDocumentationVersion
 ```
@@ -342,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationversion"
 
 &apigatewaydocumentationversion.ApiGatewayDocumentationVersionConfig {
 	Connection: interface{},

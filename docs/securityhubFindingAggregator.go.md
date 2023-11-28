@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubfindingaggregator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubfindingaggregator"
 
 securityhubfindingaggregator.NewSecurityhubFindingAggregator(scope Construct, id *string, config SecurityhubFindingAggregatorConfig) SecurityhubFindingAggregator
 ```
@@ -342,7 +342,7 @@ func ResetSpecifiedRegions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubfindingaggregator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubfindingaggregator"
 
 securityhubfindingaggregator.SecurityhubFindingAggregator_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubfindingaggregator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubfindingaggregator"
 
 securityhubfindingaggregator.SecurityhubFindingAggregator_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ securityhubfindingaggregator.SecurityhubFindingAggregator_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubfindingaggregator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubfindingaggregator"
 
 securityhubfindingaggregator.SecurityhubFindingAggregator_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ securityhubfindingaggregator.SecurityhubFindingAggregator_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubfindingaggregator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubfindingaggregator"
 
 securityhubfindingaggregator.SecurityhubFindingAggregator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubfindingaggregator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubfindingaggregator"
 
 &securityhubfindingaggregator.SecurityhubFindingAggregatorConfig {
 	Connection: interface{},
