@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservicenetwork"
 
 vpclatticeservicenetwork.NewVpclatticeServiceNetwork(scope Construct, id *string, config VpclatticeServiceNetworkConfig) VpclatticeServiceNetwork
 ```
@@ -360,7 +360,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservicenetwork"
 
 vpclatticeservicenetwork.VpclatticeServiceNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservicenetwork"
 
 vpclatticeservicenetwork.VpclatticeServiceNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ vpclatticeservicenetwork.VpclatticeServiceNetwork_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservicenetwork"
 
 vpclatticeservicenetwork.VpclatticeServiceNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ vpclatticeservicenetwork.VpclatticeServiceNetwork_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservicenetwork"
 
 vpclatticeservicenetwork.VpclatticeServiceNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservicenetwork"
 
 &vpclatticeservicenetwork.VpclatticeServiceNetworkConfig {
 	Connection: interface{},

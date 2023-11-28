@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcnetworkperformancemetricsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcnetworkperformancemetricsubscription"
 
 vpcnetworkperformancemetricsubscription.NewVpcNetworkPerformanceMetricSubscription(scope Construct, id *string, config VpcNetworkPerformanceMetricSubscriptionConfig) VpcNetworkPerformanceMetricSubscription
 ```
@@ -353,7 +353,7 @@ func ResetStatistic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcnetworkperformancemetricsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcnetworkperformancemetricsubscription"
 
 vpcnetworkperformancemetricsubscription.VpcNetworkPerformanceMetricSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcnetworkperformancemetricsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcnetworkperformancemetricsubscription"
 
 vpcnetworkperformancemetricsubscription.VpcNetworkPerformanceMetricSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ vpcnetworkperformancemetricsubscription.VpcNetworkPerformanceMetricSubscription_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcnetworkperformancemetricsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcnetworkperformancemetricsubscription"
 
 vpcnetworkperformancemetricsubscription.VpcNetworkPerformanceMetricSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ vpcnetworkperformancemetricsubscription.VpcNetworkPerformanceMetricSubscription_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcnetworkperformancemetricsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcnetworkperformancemetricsubscription"
 
 vpcnetworkperformancemetricsubscription.VpcNetworkPerformanceMetricSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcnetworkperformancemetricsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcnetworkperformancemetricsubscription"
 
 &vpcnetworkperformancemetricsubscription.VpcNetworkPerformanceMetricSubscriptionConfig {
 	Connection: interface{},

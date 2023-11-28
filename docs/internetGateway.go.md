@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.internetGateway.InternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 internetgateway.NewInternetGateway(scope Construct, id *string, config InternetGatewayConfig) InternetGateway
 ```
@@ -380,7 +380,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.internetGateway.InternetGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 internetgateway.InternetGateway_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.internetGateway.InternetGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 internetgateway.InternetGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ internetgateway.InternetGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.internetGateway.InternetGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 internetgateway.InternetGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ internetgateway.InternetGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.internetGateway.InternetGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 internetgateway.InternetGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.internetGateway.InternetGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 &internetgateway.InternetGatewayConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.internetGateway.InternetGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.internetGateway.InternetGatewayTimeouts,
 	VpcId: *string,
 }
 ```
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 &internetgateway.InternetGatewayTimeouts {
 	Create: *string,
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetgateway"
 
 internetgateway.NewInternetGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InternetGatewayTimeoutsOutputReference
 ```

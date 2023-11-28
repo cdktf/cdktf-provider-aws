@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.NewConnectRoutingProfile(scope Construct, id *string, config ConnectRoutingProfileConfig) ConnectRoutingProfile
 ```
@@ -386,7 +386,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.ConnectRoutingProfile_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.ConnectRoutingProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ connectroutingprofile.ConnectRoutingProfile_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.ConnectRoutingProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ connectroutingprofile.ConnectRoutingProfile_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.ConnectRoutingProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 &connectroutingprofile.ConnectRoutingProfileConfig {
 	Connection: interface{},
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrencies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 &connectroutingprofile.ConnectRoutingProfileMediaConcurrencies {
 	Channel: *string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 &connectroutingprofile.ConnectRoutingProfileQueueConfigs {
 	Channel: *string,
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.NewConnectRoutingProfileMediaConcurrenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectRoutingProfileMediaConcurrenciesList
 ```
@@ -1395,7 +1395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.NewConnectRoutingProfileMediaConcurrenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectRoutingProfileMediaConcurrenciesOutputReference
 ```
@@ -1706,7 +1706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.NewConnectRoutingProfileQueueConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectRoutingProfileQueueConfigsList
 ```
@@ -1849,7 +1849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectroutingprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectroutingprofile"
 
 connectroutingprofile.NewConnectRoutingProfileQueueConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectRoutingProfileQueueConfigsOutputReference
 ```

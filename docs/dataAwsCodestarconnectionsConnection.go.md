@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodestarconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodestarconnectionsconnection"
 
 dataawscodestarconnectionsconnection.NewDataAwsCodestarconnectionsConnection(scope Construct, id *string, config DataAwsCodestarconnectionsConnectionConfig) DataAwsCodestarconnectionsConnection
 ```
@@ -299,7 +299,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodestarconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodestarconnectionsconnection"
 
 dataawscodestarconnectionsconnection.DataAwsCodestarconnectionsConnection_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodestarconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodestarconnectionsconnection"
 
 dataawscodestarconnectionsconnection.DataAwsCodestarconnectionsConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawscodestarconnectionsconnection.DataAwsCodestarconnectionsConnection_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodestarconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodestarconnectionsconnection"
 
 dataawscodestarconnectionsconnection.DataAwsCodestarconnectionsConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataawscodestarconnectionsconnection.DataAwsCodestarconnectionsConnection_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodestarconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodestarconnectionsconnection"
 
 dataawscodestarconnectionsconnection.DataAwsCodestarconnectionsConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -687,7 +687,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodestarconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodestarconnectionsconnection"
 
 &dataawscodestarconnectionsconnection.DataAwsCodestarconnectionsConnectionConfig {
 	Connection: interface{},

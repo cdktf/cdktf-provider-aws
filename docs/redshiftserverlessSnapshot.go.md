@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.NewRedshiftserverlessSnapshot(scope Construct, id *string, config RedshiftserverlessSnapshotConfig) RedshiftserverlessSnapshot
 ```
@@ -346,7 +346,7 @@ func ResetRetentionPeriod()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
 
 &redshiftserverlesssnapshot.RedshiftserverlessSnapshotConfig {
 	Connection: interface{},

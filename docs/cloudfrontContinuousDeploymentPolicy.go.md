@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicy(scope Construct, id *string, config CloudfrontContinuousDeploymentPolicyConfig) CloudfrontContinuousDeploymentPolicy
 ```
@@ -372,7 +372,7 @@ func ResetTrafficConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 &cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicyConfig {
 	Connection: interface{},
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 &cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNames {
 	Quantity: *f64,
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 &cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicyTrafficConfig {
 	Type: *string,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 &cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfig {
 	Header: *string,
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 &cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfig {
 	Weight: *f64,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 &cloudfrontcontinuousdeploymentpolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfig {
 	IdleTtl: *f64,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesList
 ```
@@ -1303,7 +1303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference
 ```
@@ -1621,7 +1621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigList
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigOutputReference
 ```
@@ -2137,7 +2137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigList
 ```
@@ -2280,7 +2280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference
 ```
@@ -2591,7 +2591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigList
 ```
@@ -2734,7 +2734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference
 ```
@@ -3065,7 +3065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigList
 ```
@@ -3208,7 +3208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontContinuousDeploymentPolicy.CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcontinuousdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontcontinuousdeploymentpolicy"
 
 cloudfrontcontinuousdeploymentpolicy.NewCloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigOutputReference
 ```

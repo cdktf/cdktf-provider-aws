@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfiguration(scope Construct, id *string, config S3BucketLifecycleConfigurationConfig) S3BucketLifecycleConfiguration
 ```
@@ -379,7 +379,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.S3BucketLifecycleConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.S3BucketLifecycleConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ s3bucketlifecycleconfiguration.S3BucketLifecycleConfiguration_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.S3BucketLifecycleConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ s3bucketlifecycleconfiguration.S3BucketLifecycleConfiguration_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.S3BucketLifecycleConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -778,7 +778,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationConfig {
 	Connection: interface{},
@@ -792,7 +792,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguratio
 	Rule: interface{},
 	ExpectedBucketOwner: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationTimeouts,
 }
 ```
 
@@ -957,15 +957,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRule {
 	Id: *string,
 	Status: *string,
-	AbortIncompleteMultipartUpload: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload,
-	Expiration: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpiration,
-	Filter: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilter,
-	NoncurrentVersionExpiration: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration,
+	AbortIncompleteMultipartUpload: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload,
+	Expiration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpiration,
+	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilter,
+	NoncurrentVersionExpiration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration,
 	NoncurrentVersionTransition: interface{},
 	Prefix: *string,
 	Transition: interface{},
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload {
 	DaysAfterInitiation: *f64,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleExpiration {
 	Date: *string,
@@ -1208,14 +1208,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleFilter {
-	And: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAnd,
+	And: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAnd,
 	ObjectSizeGreaterThan: *string,
 	ObjectSizeLessThan: *string,
 	Prefix: *string,
-	Tag: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTag,
+	Tag: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTag,
 }
 ```
 
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleFilterAnd {
 	ObjectSizeGreaterThan: *f64,
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleFilterTag {
 	Key: *string,
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration {
 	NewerNoncurrentVersions: *string,
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition {
 	StorageClass: *string,
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationRuleTransition {
 	StorageClass: *string,
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 &s3bucketlifecycleconfiguration.S3BucketLifecycleConfigurationTimeouts {
 	Create: *string,
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference
 ```
@@ -1912,7 +1912,7 @@ func InternalValue() S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartU
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleExpirationOutputReference
 ```
@@ -2248,7 +2248,7 @@ func InternalValue() S3BucketLifecycleConfigurationRuleExpiration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleFilterAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleFilterAndOutputReference
 ```
@@ -2613,7 +2613,7 @@ func InternalValue() S3BucketLifecycleConfigurationRuleFilterAnd
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleFilterOutputReference
 ```
@@ -3033,7 +3033,7 @@ func InternalValue() S3BucketLifecycleConfigurationRuleFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleFilterTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleFilterTagOutputReference
 ```
@@ -3326,7 +3326,7 @@ func InternalValue() S3BucketLifecycleConfigurationRuleFilterTag
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLifecycleConfigurationRuleList
 ```
@@ -3469,7 +3469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference
 ```
@@ -3776,7 +3776,7 @@ func InternalValue() S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList
 ```
@@ -3919,7 +3919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference
 ```
@@ -4266,7 +4266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleOutputReference
 ```
@@ -4858,7 +4858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleTransitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLifecycleConfigurationRuleTransitionList
 ```
@@ -5001,7 +5001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationRuleTransitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleTransitionOutputReference
 ```
@@ -5348,7 +5348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketlifecycleconfiguration"
 
 s3bucketlifecycleconfiguration.NewS3BucketLifecycleConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationTimeoutsOutputReference
 ```

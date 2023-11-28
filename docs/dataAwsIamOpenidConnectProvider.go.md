@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.NewDataAwsIamOpenidConnectProvider(scope Construct, id *string, config DataAwsIamOpenidConnectProviderConfig) DataAwsIamOpenidConnectProvider
 ```
@@ -299,7 +299,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
 
 &dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProviderConfig {
 	Connection: interface{},

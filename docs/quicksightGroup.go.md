@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
 
 quicksightgroup.NewQuicksightGroup(scope Construct, id *string, config QuicksightGroupConfig) QuicksightGroup
 ```
@@ -360,7 +360,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ quicksightgroup.QuicksightGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ quicksightgroup.QuicksightGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
 
 &quicksightgroup.QuicksightGroupConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.NewDataAwsBedrockFoundationModels(scope Construct, id *string, config DataAwsBedrockFoundationModelsConfig) DataAwsBedrockFoundationModels
 ```
@@ -319,7 +319,7 @@ func ResetModelSummaries()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 &dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModelsConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsModelSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 &dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModelsModelSummaries {
 
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodel
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsModelSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.NewDataAwsBedrockFoundationModelsModelSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelsModelSummariesList
 ```
@@ -1039,7 +1039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsModelSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodels"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.NewDataAwsBedrockFoundationModelsModelSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelsModelSummariesOutputReference
 ```

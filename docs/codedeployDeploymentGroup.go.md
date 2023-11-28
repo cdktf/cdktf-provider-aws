@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroup(scope Construct, id *string, config CodedeployDeploymentGroupConfig) CodedeployDeploymentGroup
 ```
@@ -574,7 +574,7 @@ func ResetTriggerConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.CodedeployDeploymentGroup_IsConstruct(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.CodedeployDeploymentGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ codedeploydeploymentgroup.CodedeployDeploymentGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.CodedeployDeploymentGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ codedeploydeploymentgroup.CodedeployDeploymentGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.CodedeployDeploymentGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1314,7 +1314,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupAlarmConfiguration {
 	Alarms: *[]*string,
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupAutoRollbackConfiguration {
 	Enabled: interface{},
@@ -1420,12 +1420,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupBlueGreenDeploymentConfig {
-	DeploymentReadyOption: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption,
-	GreenFleetProvisioningOption: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption,
-	TerminateBlueInstancesOnDeploymentSuccess: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess,
+	DeploymentReadyOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption,
+	GreenFleetProvisioningOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption,
+	TerminateBlueInstancesOnDeploymentSuccess: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess,
 }
 ```
 
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption {
 	ActionOnTimeout: *string,
@@ -1532,7 +1532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption {
 	Action: *string,
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess {
 	Action: *string,
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupConfig {
 	Connection: interface{},
@@ -1623,17 +1623,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
 	AppName: *string,
 	DeploymentGroupName: *string,
 	ServiceRoleArn: *string,
-	AlarmConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfiguration,
-	AutoRollbackConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfiguration,
+	AlarmConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfiguration,
+	AutoRollbackConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfiguration,
 	AutoscalingGroups: *[]*string,
-	BlueGreenDeploymentConfig: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfig,
+	BlueGreenDeploymentConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfig,
 	DeploymentConfigName: *string,
-	DeploymentStyle: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyle,
+	DeploymentStyle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyle,
 	Ec2TagFilter: interface{},
 	Ec2TagSet: interface{},
-	EcsService: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsService,
+	EcsService: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsService,
 	Id: *string,
-	LoadBalancerInfo: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfo,
+	LoadBalancerInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfo,
 	OnPremisesInstanceTagFilter: interface{},
 	OutdatedInstancesStrategy: *string,
 	Tags: *map[string]*string,
@@ -2001,7 +2001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupDeploymentStyle {
 	DeploymentOption: *string,
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupEc2TagFilter {
 	Key: *string,
@@ -2107,7 +2107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupEc2TagSet {
 	Ec2TagFilter: interface{},
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilter {
 	Key: *string,
@@ -2201,7 +2201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupEcsService {
 	ClusterName: *string,
@@ -2247,12 +2247,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupLoadBalancerInfo {
 	ElbInfo: interface{},
 	TargetGroupInfo: interface{},
-	TargetGroupPairInfo: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo,
+	TargetGroupPairInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo,
 }
 ```
 
@@ -2313,7 +2313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfo {
 	Name: *string,
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo {
 	Name: *string,
@@ -2377,12 +2377,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
-	ProdTrafficRoute: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute,
+	ProdTrafficRoute: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute,
 	TargetGroup: interface{},
-	TestTrafficRoute: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute,
+	TestTrafficRoute: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute,
 }
 ```
 
@@ -2443,7 +2443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute {
 	ListenerArns: *[]*string,
@@ -2475,7 +2475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup {
 	Name: *string,
@@ -2507,7 +2507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute {
 	ListenerArns: *[]*string,
@@ -2539,7 +2539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilter {
 	Key: *string,
@@ -2599,7 +2599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 &codedeploydeploymentgroup.CodedeployDeploymentGroupTriggerConfiguration {
 	TriggerEvents: *[]*string,
@@ -2661,7 +2661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupAlarmConfigurationOutputReference
 ```
@@ -2997,7 +2997,7 @@ func InternalValue() CodedeployDeploymentGroupAlarmConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupAutoRollbackConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference
 ```
@@ -3304,7 +3304,7 @@ func InternalValue() CodedeployDeploymentGroupAutoRollbackConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference
 ```
@@ -3611,7 +3611,7 @@ func InternalValue() CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymen
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference
 ```
@@ -3889,7 +3889,7 @@ func InternalValue() CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFlee
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference
 ```
@@ -4264,7 +4264,7 @@ func InternalValue() CodedeployDeploymentGroupBlueGreenDeploymentConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference
 ```
@@ -4571,7 +4571,7 @@ func InternalValue() CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupDeploymentStyleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupDeploymentStyleOutputReference
 ```
@@ -4878,7 +4878,7 @@ func InternalValue() CodedeployDeploymentGroupDeploymentStyle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupEc2TagFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupEc2TagFilterList
 ```
@@ -5021,7 +5021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupEc2TagFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupEc2TagFilterOutputReference
 ```
@@ -5375,7 +5375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupEc2TagSetEc2TagFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupEc2TagSetEc2TagFilterList
 ```
@@ -5518,7 +5518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupEc2TagSetEc2TagFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupEc2TagSetEc2TagFilterOutputReference
 ```
@@ -5872,7 +5872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupEc2TagSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupEc2TagSetList
 ```
@@ -6015,7 +6015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupEc2TagSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupEc2TagSetOutputReference
 ```
@@ -6324,7 +6324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupEcsServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupEcsServiceOutputReference
 ```
@@ -6617,7 +6617,7 @@ func InternalValue() CodedeployDeploymentGroupEcsService
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoElbInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupLoadBalancerInfoElbInfoList
 ```
@@ -6760,7 +6760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference
 ```
@@ -7056,7 +7056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupLoadBalancerInfoOutputReference
 ```
@@ -7431,7 +7431,7 @@ func InternalValue() CodedeployDeploymentGroupLoadBalancerInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList
 ```
@@ -7574,7 +7574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoOutputReference
 ```
@@ -7870,7 +7870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference
 ```
@@ -8231,7 +8231,7 @@ func InternalValue() CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInf
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference
 ```
@@ -8502,7 +8502,7 @@ func InternalValue() CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInf
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList
 ```
@@ -8645,7 +8645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupOutputReference
 ```
@@ -8934,7 +8934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference
 ```
@@ -9205,7 +9205,7 @@ func InternalValue() CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInf
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupOnPremisesInstanceTagFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupOnPremisesInstanceTagFilterList
 ```
@@ -9348,7 +9348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference
 ```
@@ -9702,7 +9702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupTriggerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodedeployDeploymentGroupTriggerConfigurationList
 ```
@@ -9845,7 +9845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentgroup"
 
 codedeploydeploymentgroup.NewCodedeployDeploymentGroupTriggerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupTriggerConfigurationOutputReference
 ```
