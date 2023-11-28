@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging
+// https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,59 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketLoggingAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}
   */
   readonly targetBucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}
   */
   readonly targetPrefix: string;
   /**
   * target_grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
   */
   readonly targetGrant?: S3BucketLoggingTargetGrant[] | cdktf.IResolvable;
+  /**
+  * target_object_key_format block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#target_object_key_format S3BucketLoggingA#target_object_key_format}
+  */
+  readonly targetObjectKeyFormat?: S3BucketLoggingTargetObjectKeyFormat;
 }
 export interface S3BucketLoggingTargetGrantGrantee {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}
   */
   readonly emailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}
   */
   readonly uri?: string;
 }
@@ -195,13 +201,13 @@ export class S3BucketLoggingTargetGrantGranteeOutputReference extends cdktf.Comp
 }
 export interface S3BucketLoggingTargetGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}
   */
   readonly permission: string;
   /**
   * grantee block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#grantee S3BucketLoggingA#grantee}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#grantee S3BucketLoggingA#grantee}
   */
   readonly grantee: S3BucketLoggingTargetGrantGrantee;
 }
@@ -313,9 +319,205 @@ export class S3BucketLoggingTargetGrantList extends cdktf.ComplexList {
     return new S3BucketLoggingTargetGrantOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#partition_date_source S3BucketLoggingA#partition_date_source}
+  */
+  readonly partitionDateSource: string;
+}
+
+export function s3BucketLoggingTargetObjectKeyFormatPartitionedPrefixToTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference | S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    partition_date_source: cdktf.stringToTerraform(struct!.partitionDateSource),
+  }
+}
+
+export class S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._partitionDateSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partitionDateSource = this._partitionDateSource;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._partitionDateSource = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._partitionDateSource = value.partitionDateSource;
+    }
+  }
+
+  // partition_date_source - computed: false, optional: false, required: true
+  private _partitionDateSource?: string; 
+  public get partitionDateSource() {
+    return this.getStringAttribute('partition_date_source');
+  }
+  public set partitionDateSource(value: string) {
+    this._partitionDateSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionDateSourceInput() {
+    return this._partitionDateSource;
+  }
+}
+export interface S3BucketLoggingTargetObjectKeyFormatSimplePrefix {
+}
+
+export function s3BucketLoggingTargetObjectKeyFormatSimplePrefixToTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference | S3BucketLoggingTargetObjectKeyFormatSimplePrefix): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): S3BucketLoggingTargetObjectKeyFormatSimplePrefix | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketLoggingTargetObjectKeyFormatSimplePrefix | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface S3BucketLoggingTargetObjectKeyFormat {
+  /**
+  * partitioned_prefix block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#partitioned_prefix S3BucketLoggingA#partitioned_prefix}
+  */
+  readonly partitionedPrefix?: S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix;
+  /**
+  * simple_prefix block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#simple_prefix S3BucketLoggingA#simple_prefix}
+  */
+  readonly simplePrefix?: S3BucketLoggingTargetObjectKeyFormatSimplePrefix;
+}
+
+export function s3BucketLoggingTargetObjectKeyFormatToTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatOutputReference | S3BucketLoggingTargetObjectKeyFormat): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    partitioned_prefix: s3BucketLoggingTargetObjectKeyFormatPartitionedPrefixToTerraform(struct!.partitionedPrefix),
+    simple_prefix: s3BucketLoggingTargetObjectKeyFormatSimplePrefixToTerraform(struct!.simplePrefix),
+  }
+}
+
+export class S3BucketLoggingTargetObjectKeyFormatOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): S3BucketLoggingTargetObjectKeyFormat | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._partitionedPrefix?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partitionedPrefix = this._partitionedPrefix?.internalValue;
+    }
+    if (this._simplePrefix?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.simplePrefix = this._simplePrefix?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketLoggingTargetObjectKeyFormat | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._partitionedPrefix.internalValue = undefined;
+      this._simplePrefix.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._partitionedPrefix.internalValue = value.partitionedPrefix;
+      this._simplePrefix.internalValue = value.simplePrefix;
+    }
+  }
+
+  // partitioned_prefix - computed: false, optional: true, required: false
+  private _partitionedPrefix = new S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference(this, "partitioned_prefix");
+  public get partitionedPrefix() {
+    return this._partitionedPrefix;
+  }
+  public putPartitionedPrefix(value: S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix) {
+    this._partitionedPrefix.internalValue = value;
+  }
+  public resetPartitionedPrefix() {
+    this._partitionedPrefix.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionedPrefixInput() {
+    return this._partitionedPrefix.internalValue;
+  }
+
+  // simple_prefix - computed: false, optional: true, required: false
+  private _simplePrefix = new S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference(this, "simple_prefix");
+  public get simplePrefix() {
+    return this._simplePrefix;
+  }
+  public putSimplePrefix(value: S3BucketLoggingTargetObjectKeyFormatSimplePrefix) {
+    this._simplePrefix.internalValue = value;
+  }
+  public resetSimplePrefix() {
+    this._simplePrefix.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get simplePrefixInput() {
+    return this._simplePrefix.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}
 */
 export class S3BucketLoggingA extends cdktf.TerraformResource {
 
@@ -331,7 +533,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3BucketLoggingA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketLoggingA to import
-  * @param importFromId The id of the existing S3BucketLoggingA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketLoggingA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketLoggingA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -343,7 +545,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -354,7 +556,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_logging',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -371,6 +573,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
     this._targetBucket = config.targetBucket;
     this._targetPrefix = config.targetPrefix;
     this._targetGrant.internalValue = config.targetGrant;
+    this._targetObjectKeyFormat.internalValue = config.targetObjectKeyFormat;
   }
 
   // ==========
@@ -464,6 +667,22 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
     return this._targetGrant.internalValue;
   }
 
+  // target_object_key_format - computed: false, optional: true, required: false
+  private _targetObjectKeyFormat = new S3BucketLoggingTargetObjectKeyFormatOutputReference(this, "target_object_key_format");
+  public get targetObjectKeyFormat() {
+    return this._targetObjectKeyFormat;
+  }
+  public putTargetObjectKeyFormat(value: S3BucketLoggingTargetObjectKeyFormat) {
+    this._targetObjectKeyFormat.internalValue = value;
+  }
+  public resetTargetObjectKeyFormat() {
+    this._targetObjectKeyFormat.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetObjectKeyFormatInput() {
+    return this._targetObjectKeyFormat.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -476,6 +695,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
       target_bucket: cdktf.stringToTerraform(this._targetBucket),
       target_prefix: cdktf.stringToTerraform(this._targetPrefix),
       target_grant: cdktf.listMapper(s3BucketLoggingTargetGrantToTerraform, true)(this._targetGrant.internalValue),
+      target_object_key_format: s3BucketLoggingTargetObjectKeyFormatToTerraform(this._targetObjectKeyFormat.internalValue),
     };
   }
 }

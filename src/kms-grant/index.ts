@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant
+// https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface KmsGrantConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}
   */
   readonly grantCreationTokens?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}
   */
   readonly granteePrincipal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#id KmsGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#id KmsGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#key_id KmsGrant#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#key_id KmsGrant#key_id}
   */
   readonly keyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#name KmsGrant#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#name KmsGrant#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#operations KmsGrant#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#operations KmsGrant#operations}
   */
   readonly operations: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}
   */
   readonly retireOnDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}
   */
   readonly retiringPrincipal?: string;
   /**
   * constraints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#constraints KmsGrant#constraints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#constraints KmsGrant#constraints}
   */
   readonly constraints?: KmsGrantConstraints[] | cdktf.IResolvable;
 }
 export interface KmsGrantConstraints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#encryption_context_equals KmsGrant#encryption_context_equals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#encryption_context_equals KmsGrant#encryption_context_equals}
   */
   readonly encryptionContextEquals?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#encryption_context_subset KmsGrant#encryption_context_subset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#encryption_context_subset KmsGrant#encryption_context_subset}
   */
   readonly encryptionContextSubset?: { [key: string]: string };
 }
@@ -180,7 +180,7 @@ export class KmsGrantConstraintsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant aws_kms_grant}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant aws_kms_grant}
 */
 export class KmsGrant extends cdktf.TerraformResource {
 
@@ -196,7 +196,7 @@ export class KmsGrant extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KmsGrant resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsGrant to import
-  * @param importFromId The id of the existing KmsGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmsGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsGrant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -208,7 +208,7 @@ export class KmsGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/kms_grant aws_kms_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_grant aws_kms_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +219,7 @@ export class KmsGrant extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kms_grant',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

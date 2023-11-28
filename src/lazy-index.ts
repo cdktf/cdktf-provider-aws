@@ -93,6 +93,7 @@ Object.defineProperty(exports, 'appmeshVirtualService', { get: function () { ret
 Object.defineProperty(exports, 'apprunnerAutoScalingConfigurationVersion', { get: function () { return require('./apprunner-auto-scaling-configuration-version'); } });
 Object.defineProperty(exports, 'apprunnerConnection', { get: function () { return require('./apprunner-connection'); } });
 Object.defineProperty(exports, 'apprunnerCustomDomainAssociation', { get: function () { return require('./apprunner-custom-domain-association'); } });
+Object.defineProperty(exports, 'apprunnerDefaultAutoScalingConfigurationVersion', { get: function () { return require('./apprunner-default-auto-scaling-configuration-version'); } });
 Object.defineProperty(exports, 'apprunnerObservabilityConfiguration', { get: function () { return require('./apprunner-observability-configuration'); } });
 Object.defineProperty(exports, 'apprunnerService', { get: function () { return require('./apprunner-service'); } });
 Object.defineProperty(exports, 'apprunnerVpcConnector', { get: function () { return require('./apprunner-vpc-connector'); } });
@@ -705,6 +706,7 @@ Object.defineProperty(exports, 'lexIntent', { get: function () { return require(
 Object.defineProperty(exports, 'lexSlotType', { get: function () { return require('./lex-slot-type'); } });
 Object.defineProperty(exports, 'lexv2ModelsBot', { get: function () { return require('./lexv2models-bot'); } });
 Object.defineProperty(exports, 'lexv2ModelsBotLocale', { get: function () { return require('./lexv2models-bot-locale'); } });
+Object.defineProperty(exports, 'lexv2ModelsBotVersion', { get: function () { return require('./lexv2models-bot-version'); } });
 Object.defineProperty(exports, 'licensemanagerAssociation', { get: function () { return require('./licensemanager-association'); } });
 Object.defineProperty(exports, 'licensemanagerGrant', { get: function () { return require('./licensemanager-grant'); } });
 Object.defineProperty(exports, 'licensemanagerGrantAccepter', { get: function () { return require('./licensemanager-grant-accepter'); } });
@@ -1006,6 +1008,10 @@ Object.defineProperty(exports, 's3BucketVersioning', { get: function () { return
 Object.defineProperty(exports, 's3BucketWebsiteConfiguration', { get: function () { return require('./s3-bucket-website-configuration'); } });
 Object.defineProperty(exports, 's3Object', { get: function () { return require('./s3-object'); } });
 Object.defineProperty(exports, 's3ObjectCopy', { get: function () { return require('./s3-object-copy'); } });
+Object.defineProperty(exports, 's3ControlAccessGrant', { get: function () { return require('./s3control-access-grant'); } });
+Object.defineProperty(exports, 's3ControlAccessGrantsInstance', { get: function () { return require('./s3control-access-grants-instance'); } });
+Object.defineProperty(exports, 's3ControlAccessGrantsInstanceResourcePolicy', { get: function () { return require('./s3control-access-grants-instance-resource-policy'); } });
+Object.defineProperty(exports, 's3ControlAccessGrantsLocation', { get: function () { return require('./s3control-access-grants-location'); } });
 Object.defineProperty(exports, 's3ControlAccessPointPolicy', { get: function () { return require('./s3control-access-point-policy'); } });
 Object.defineProperty(exports, 's3ControlBucket', { get: function () { return require('./s3control-bucket'); } });
 Object.defineProperty(exports, 's3ControlBucketLifecycleConfiguration', { get: function () { return require('./s3control-bucket-lifecycle-configuration'); } });
@@ -1499,6 +1505,7 @@ Object.defineProperty(exports, 'dataAwsElb', { get: function () { return require
 Object.defineProperty(exports, 'dataAwsElbHostedZoneId', { get: function () { return require('./data-aws-elb-hosted-zone-id'); } });
 Object.defineProperty(exports, 'dataAwsElbServiceAccount', { get: function () { return require('./data-aws-elb-service-account'); } });
 Object.defineProperty(exports, 'dataAwsEmrReleaseLabels', { get: function () { return require('./data-aws-emr-release-labels'); } });
+Object.defineProperty(exports, 'dataAwsEmrSupportedInstanceTypes', { get: function () { return require('./data-aws-emr-supported-instance-types'); } });
 Object.defineProperty(exports, 'dataAwsEmrcontainersVirtualCluster', { get: function () { return require('./data-aws-emrcontainers-virtual-cluster'); } });
 Object.defineProperty(exports, 'dataAwsFsxOntapFileSystem', { get: function () { return require('./data-aws-fsx-ontap-file-system'); } });
 Object.defineProperty(exports, 'dataAwsFsxOntapStorageVirtualMachine', { get: function () { return require('./data-aws-fsx-ontap-storage-virtual-machine'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature
+// https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface GuarddutyDetectorFeatureConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#detector_id GuarddutyDetectorFeature#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#detector_id GuarddutyDetectorFeature#detector_id}
   */
   readonly detectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#id GuarddutyDetectorFeature#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#id GuarddutyDetectorFeature#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#name GuarddutyDetectorFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#name GuarddutyDetectorFeature#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#status GuarddutyDetectorFeature#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#status GuarddutyDetectorFeature#status}
   */
   readonly status: string;
   /**
   * additional_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#additional_configuration GuarddutyDetectorFeature#additional_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#additional_configuration GuarddutyDetectorFeature#additional_configuration}
   */
   readonly additionalConfiguration?: GuarddutyDetectorFeatureAdditionalConfiguration[] | cdktf.IResolvable;
 }
 export interface GuarddutyDetectorFeatureAdditionalConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#name GuarddutyDetectorFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#name GuarddutyDetectorFeature#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#status GuarddutyDetectorFeature#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#status GuarddutyDetectorFeature#status}
   */
   readonly status: string;
 }
@@ -158,7 +158,7 @@ export class GuarddutyDetectorFeatureAdditionalConfigurationList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature aws_guardduty_detector_feature}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature aws_guardduty_detector_feature}
 */
 export class GuarddutyDetectorFeature extends cdktf.TerraformResource {
 
@@ -174,7 +174,7 @@ export class GuarddutyDetectorFeature extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GuarddutyDetectorFeature resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyDetectorFeature to import
-  * @param importFromId The id of the existing GuarddutyDetectorFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GuarddutyDetectorFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyDetectorFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -186,7 +186,7 @@ export class GuarddutyDetectorFeature extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/guardduty_detector_feature aws_guardduty_detector_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_detector_feature aws_guardduty_detector_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +197,7 @@ export class GuarddutyDetectorFeature extends cdktf.TerraformResource {
       terraformResourceType: 'aws_guardduty_detector_feature',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
