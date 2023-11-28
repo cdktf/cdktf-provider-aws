@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationsResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}
 */
 export class OrganizationsResourcePolicy extends cdktf.TerraformResource {
 
@@ -50,7 +45,7 @@ export class OrganizationsResourcePolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationsResourcePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationsResourcePolicy to import
-  * @param importFromId The id of the existing OrganizationsResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationsResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationsResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class OrganizationsResourcePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class OrganizationsResourcePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_organizations_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

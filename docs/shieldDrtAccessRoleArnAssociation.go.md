@@ -1,6 +1,6 @@
 # `aws_shield_drt_access_role_arn_association`
 
-Refer to the Terraform Registory for docs: [`aws_shield_drt_access_role_arn_association`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association).
+Refer to the Terraform Registory for docs: [`aws_shield_drt_access_role_arn_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association).
 
 # `shieldDrtAccessRoleArnAssociation` Submodule <a name="`shieldDrtAccessRoleArnAssociation` Submodule" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_shield_drt_access_role_arn_asso
 
 ### ShieldDrtAccessRoleArnAssociation <a name="ShieldDrtAccessRoleArnAssociation" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 shielddrtaccessrolearnassociation.NewShieldDrtAccessRoleArnAssociation(scope Construct, id *string, config ShieldDrtAccessRoleArnAssociationConfig) ShieldDrtAccessRoleArnAssociation
 ```
@@ -352,7 +352,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociation_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociation_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -441,7 +441,7 @@ The construct id used in the generated config for the ShieldDrtAccessRoleArnAsso
 
 The id of the existing ShieldDrtAccessRoleArnAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 &shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociationConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnass
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	RoleArn: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationTimeouts,
 }
 ```
 
@@ -722,7 +722,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnass
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationTimeouts">ShieldDrtAccessRoleArnAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -805,7 +805,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}.
 
 ---
 
@@ -819,7 +819,7 @@ Timeouts ShieldDrtAccessRoleArnAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association#timeouts ShieldDrtAccessRoleArnAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association#timeouts ShieldDrtAccessRoleArnAssociation#timeouts}
 
 ---
 
@@ -828,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 &shielddrtaccessrolearnassociation.ShieldDrtAccessRoleArnAssociationTimeouts {
 	Create: *string,
@@ -857,7 +857,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association#create ShieldDrtAccessRoleArnAssociation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association#create ShieldDrtAccessRoleArnAssociation#create}
 
 ---
 
@@ -871,7 +871,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association#delete ShieldDrtAccessRoleArnAssociation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association#delete ShieldDrtAccessRoleArnAssociation#delete}
 
 ---
 
@@ -885,7 +885,7 @@ Read *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association#read ShieldDrtAccessRoleArnAssociation#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/shield_drt_access_role_arn_association#read ShieldDrtAccessRoleArnAssociation#read}
 
 ---
 
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccessrolearnassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccessrolearnassociation"
 
 shielddrtaccessrolearnassociation.NewShieldDrtAccessRoleArnAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference
 ```

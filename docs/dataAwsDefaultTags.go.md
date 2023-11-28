@@ -1,6 +1,6 @@
 # `data_aws_default_tags`
 
-Refer to the Terraform Registory for docs: [`data_aws_default_tags`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/default_tags).
+Refer to the Terraform Registory for docs: [`data_aws_default_tags`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/default_tags).
 
 # `dataAwsDefaultTags` Submodule <a name="`dataAwsDefaultTags` Submodule" id="@cdktf/provider-aws.dataAwsDefaultTags"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_default_tags`](https://reg
 
 ### DataAwsDefaultTags <a name="DataAwsDefaultTags" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/default_tags aws_default_tags}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/default_tags aws_default_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
 
 dataawsdefaulttags.NewDataAwsDefaultTags(scope Construct, id *string, config DataAwsDefaultTagsConfig) DataAwsDefaultTags
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsdefaulttags.DataAwsDefaultTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsdefaulttags.DataAwsDefaultTags_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsDefaultTags to impo
 
 The id of the existing DataAwsDefaultTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/default_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/default_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
 
 &dataawsdefaulttags.DataAwsDefaultTagsConfig {
 	Connection: interface{},
@@ -603,7 +603,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdefaulttags"
 | <code><a href="#@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/default_tags#id DataAwsDefaultTags#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/default_tags#id DataAwsDefaultTags#id}. |
 
 ---
 
@@ -685,7 +685,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/default_tags#id DataAwsDefaultTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/default_tags#id DataAwsDefaultTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

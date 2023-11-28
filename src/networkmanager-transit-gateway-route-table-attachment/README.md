@@ -1,3 +1,3 @@
 # `aws_networkmanager_transit_gateway_route_table_attachment`
 
-Refer to the Terraform Registory for docs: [`aws_networkmanager_transit_gateway_route_table_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkmanager_transit_gateway_route_table_attachment).
+Refer to the Terraform Registory for docs: [`aws_networkmanager_transit_gateway_route_table_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_transit_gateway_route_table_attachment).

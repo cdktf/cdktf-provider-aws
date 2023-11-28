@@ -1,3 +1,3 @@
 # `aws_glue_registry`
 
-Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/glue_registry).
+Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/glue_registry).

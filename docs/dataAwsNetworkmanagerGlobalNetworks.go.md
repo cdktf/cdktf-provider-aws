@@ -1,6 +1,6 @@
 # `data_aws_networkmanager_global_networks`
 
-Refer to the Terraform Registory for docs: [`data_aws_networkmanager_global_networks`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/networkmanager_global_networks).
+Refer to the Terraform Registory for docs: [`data_aws_networkmanager_global_networks`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_global_networks).
 
 # `dataAwsNetworkmanagerGlobalNetworks` Submodule <a name="`dataAwsNetworkmanagerGlobalNetworks` Submodule" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_networkmanager_global_netw
 
 ### DataAwsNetworkmanagerGlobalNetworks <a name="DataAwsNetworkmanagerGlobalNetworks" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/networkmanager_global_networks aws_networkmanager_global_networks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_global_networks aws_networkmanager_global_networks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.NewDataAwsNetworkmanagerGlobalNetworks(scope Construct, id *string, config DataAwsNetworkmanagerGlobalNetworksConfig) DataAwsNetworkmanagerGlobalNetworks
 ```
@@ -285,7 +285,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataAwsNetworkmanagerGloba
 
 The id of the existing DataAwsNetworkmanagerGlobalNetworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/networkmanager_global_networks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_global_networks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 &dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworksConfig {
 	Connection: interface{},
@@ -633,8 +633,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsnetworkmanagerglob
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/networkmanager_global_networks#id DataAwsNetworkmanagerGlobalNetworks#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/networkmanager_global_networks#tags DataAwsNetworkmanagerGlobalNetworks#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_global_networks#id DataAwsNetworkmanagerGlobalNetworks#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_global_networks#tags DataAwsNetworkmanagerGlobalNetworks#tags}. |
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/networkmanager_global_networks#id DataAwsNetworkmanagerGlobalNetworks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_global_networks#id DataAwsNetworkmanagerGlobalNetworks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -731,7 +731,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/networkmanager_global_networks#tags DataAwsNetworkmanagerGlobalNetworks#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_global_networks#tags DataAwsNetworkmanagerGlobalNetworks#tags}.
 
 ---
 

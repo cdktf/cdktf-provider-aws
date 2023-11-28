@@ -1,3 +1,3 @@
 # `aws_sesv2_account_vdm_attributes`
 
-Refer to the Terraform Registory for docs: [`aws_sesv2_account_vdm_attributes`](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sesv2_account_vdm_attributes).
+Refer to the Terraform Registory for docs: [`aws_sesv2_account_vdm_attributes`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sesv2_account_vdm_attributes).
