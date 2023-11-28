@@ -1,7 +1,3 @@
-# `aws_route53_key_signing_key`
-
-Refer to the Terraform Registory for docs: [`aws_route53_key_signing_key`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/route53_key_signing_key).
-
 # `route53KeySigningKey` Submodule <a name="`route53KeySigningKey` Submodule" id="@cdktf/provider-aws.route53KeySigningKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

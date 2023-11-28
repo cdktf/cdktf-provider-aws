@@ -1,7 +1,3 @@
-# `aws_quicksight_ingestion`
-
-Refer to the Terraform Registory for docs: [`aws_quicksight_ingestion`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/quicksight_ingestion).
-
 # `quicksightIngestion` Submodule <a name="`quicksightIngestion` Submodule" id="@cdktf/provider-aws.quicksightIngestion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

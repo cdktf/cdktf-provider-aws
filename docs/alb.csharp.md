@@ -1,7 +1,3 @@
-# `aws_alb`
-
-Refer to the Terraform Registory for docs: [`aws_alb`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb).
-
 # `alb` Submodule <a name="`alb` Submodule" id="@cdktf/provider-aws.alb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

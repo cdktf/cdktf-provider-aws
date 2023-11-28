@@ -1,7 +1,3 @@
-# `data_aws_nat_gateway`
-
-Refer to the Terraform Registory for docs: [`data_aws_nat_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/nat_gateway).
-
 # `dataAwsNatGateway` Submodule <a name="`dataAwsNatGateway` Submodule" id="@cdktf/provider-aws.dataAwsNatGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

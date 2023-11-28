@@ -1,7 +1,3 @@
-# `aws_quicksight_template`
-
-Refer to the Terraform Registory for docs: [`aws_quicksight_template`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/quicksight_template).
-
 # `quicksightTemplate` Submodule <a name="`quicksightTemplate` Submodule" id="@cdktf/provider-aws.quicksightTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

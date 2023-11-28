@@ -1,7 +1,3 @@
-# `aws_ssm_maintenance_window`
-
-Refer to the Terraform Registory for docs: [`aws_ssm_maintenance_window`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ssm_maintenance_window).
-
 # `ssmMaintenanceWindow` Submodule <a name="`ssmMaintenanceWindow` Submodule" id="@cdktf/provider-aws.ssmMaintenanceWindow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

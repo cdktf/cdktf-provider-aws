@@ -1,7 +1,3 @@
-# `data_aws_organizations_policy`
-
-Refer to the Terraform Registory for docs: [`data_aws_organizations_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/organizations_policy).
-
 # `dataAwsOrganizationsPolicy` Submodule <a name="`dataAwsOrganizationsPolicy` Submodule" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

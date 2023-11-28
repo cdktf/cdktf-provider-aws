@@ -1,7 +1,3 @@
-# `aws_codecatalyst_project`
-
-Refer to the Terraform Registory for docs: [`aws_codecatalyst_project`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codecatalyst_project).
-
 # `codecatalystProject` Submodule <a name="`codecatalystProject` Submodule" id="@cdktf/provider-aws.codecatalystProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

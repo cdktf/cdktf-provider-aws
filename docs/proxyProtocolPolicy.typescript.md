@@ -1,7 +1,3 @@
-# `aws_proxy_protocol_policy`
-
-Refer to the Terraform Registory for docs: [`aws_proxy_protocol_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/proxy_protocol_policy).
-
 # `proxyProtocolPolicy` Submodule <a name="`proxyProtocolPolicy` Submodule" id="@cdktf/provider-aws.proxyProtocolPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_elastictranscoder_preset`
-
-Refer to the Terraform Registory for docs: [`aws_elastictranscoder_preset`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/elastictranscoder_preset).
-
 # `elastictranscoderPreset` Submodule <a name="`elastictranscoderPreset` Submodule" id="@cdktf/provider-aws.elastictranscoderPreset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

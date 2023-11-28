@@ -1,7 +1,3 @@
-# `aws_chimesdkvoice_sip_media_application`
-
-Refer to the Terraform Registory for docs: [`aws_chimesdkvoice_sip_media_application`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/chimesdkvoice_sip_media_application).
-
 # `chimesdkvoiceSipMediaApplication` Submodule <a name="`chimesdkvoiceSipMediaApplication` Submodule" id="@cdktf/provider-aws.chimesdkvoiceSipMediaApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

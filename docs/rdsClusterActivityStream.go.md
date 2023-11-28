@@ -1,7 +1,3 @@
-# `aws_rds_cluster_activity_stream`
-
-Refer to the Terraform Registory for docs: [`aws_rds_cluster_activity_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/rds_cluster_activity_stream).
-
 # `rdsClusterActivityStream` Submodule <a name="`rdsClusterActivityStream` Submodule" id="@cdktf/provider-aws.rdsClusterActivityStream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

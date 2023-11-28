@@ -1,7 +1,3 @@
-# `aws_datasync_location_s3`
-
-Refer to the Terraform Registory for docs: [`aws_datasync_location_s3`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/datasync_location_s3).
-
 # `datasyncLocationS3` Submodule <a name="`datasyncLocationS3` Submodule" id="@cdktf/provider-aws.datasyncLocationS3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

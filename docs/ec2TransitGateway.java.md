@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway).
-
 # `ec2TransitGateway` Submodule <a name="`ec2TransitGateway` Submodule" id="@cdktf/provider-aws.ec2TransitGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

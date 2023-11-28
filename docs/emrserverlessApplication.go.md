@@ -1,7 +1,3 @@
-# `aws_emrserverless_application`
-
-Refer to the Terraform Registory for docs: [`aws_emrserverless_application`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emrserverless_application).
-
 # `emrserverlessApplication` Submodule <a name="`emrserverlessApplication` Submodule" id="@cdktf/provider-aws.emrserverlessApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

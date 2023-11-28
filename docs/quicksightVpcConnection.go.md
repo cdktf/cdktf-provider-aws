@@ -1,7 +1,3 @@
-# `aws_quicksight_vpc_connection`
-
-Refer to the Terraform Registory for docs: [`aws_quicksight_vpc_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/quicksight_vpc_connection).
-
 # `quicksightVpcConnection` Submodule <a name="`quicksightVpcConnection` Submodule" id="@cdktf/provider-aws.quicksightVpcConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

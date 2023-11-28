@@ -1,7 +1,3 @@
-# `aws_s3control_object_lambda_access_point_policy`
-
-Refer to the Terraform Registory for docs: [`aws_s3control_object_lambda_access_point_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_object_lambda_access_point_policy).
-
 # `s3ControlObjectLambdaAccessPointPolicy` Submodule <a name="`s3ControlObjectLambdaAccessPointPolicy` Submodule" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

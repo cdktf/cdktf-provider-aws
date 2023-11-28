@@ -1,7 +1,3 @@
-# `aws_lexv2models_bot_locale`
-
-Refer to the Terraform Registory for docs: [`aws_lexv2models_bot_locale`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lexv2models_bot_locale).
-
 # `lexv2ModelsBotLocale` Submodule <a name="`lexv2ModelsBotLocale` Submodule" id="@cdktf/provider-aws.lexv2ModelsBotLocale"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_ecr_registry_policy`
-
-Refer to the Terraform Registory for docs: [`aws_ecr_registry_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_registry_policy).
-
 # `ecrRegistryPolicy` Submodule <a name="`ecrRegistryPolicy` Submodule" id="@cdktf/provider-aws.ecrRegistryPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_guardduty_ipset`
-
-Refer to the Terraform Registory for docs: [`aws_guardduty_ipset`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_ipset).
-
 # `guarddutyIpset` Submodule <a name="`guarddutyIpset` Submodule" id="@cdktf/provider-aws.guarddutyIpset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

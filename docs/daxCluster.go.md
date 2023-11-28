@@ -1,7 +1,3 @@
-# `aws_dax_cluster`
-
-Refer to the Terraform Registory for docs: [`aws_dax_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dax_cluster).
-
 # `daxCluster` Submodule <a name="`daxCluster` Submodule" id="@cdktf/provider-aws.daxCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

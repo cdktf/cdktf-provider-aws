@@ -1,7 +1,3 @@
-# `aws_imagebuilder_image_pipeline`
-
-Refer to the Terraform Registory for docs: [`aws_imagebuilder_image_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/imagebuilder_image_pipeline).
-
 # `imagebuilderImagePipeline` Submodule <a name="`imagebuilderImagePipeline` Submodule" id="@cdktf/provider-aws.imagebuilderImagePipeline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

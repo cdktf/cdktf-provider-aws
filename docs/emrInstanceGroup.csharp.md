@@ -1,7 +1,3 @@
-# `aws_emr_instance_group`
-
-Refer to the Terraform Registory for docs: [`aws_emr_instance_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emr_instance_group).
-
 # `emrInstanceGroup` Submodule <a name="`emrInstanceGroup` Submodule" id="@cdktf/provider-aws.emrInstanceGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_cognito_managed_user_pool_client`
-
-Refer to the Terraform Registory for docs: [`aws_cognito_managed_user_pool_client`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cognito_managed_user_pool_client).
-
 # `cognitoManagedUserPoolClient` Submodule <a name="`cognitoManagedUserPoolClient` Submodule" id="@cdktf/provider-aws.cognitoManagedUserPoolClient"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

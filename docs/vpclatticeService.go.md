@@ -1,7 +1,3 @@
-# `aws_vpclattice_service`
-
-Refer to the Terraform Registory for docs: [`aws_vpclattice_service`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpclattice_service).
-
 # `vpclatticeService` Submodule <a name="`vpclatticeService` Submodule" id="@cdktf/provider-aws.vpclatticeService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_docdb_global_cluster`
-
-Refer to the Terraform Registory for docs: [`aws_docdb_global_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_global_cluster).
-
 # `docdbGlobalCluster` Submodule <a name="`docdbGlobalCluster` Submodule" id="@cdktf/provider-aws.docdbGlobalCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

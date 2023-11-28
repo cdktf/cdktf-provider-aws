@@ -23,3 +23,7 @@ tsconfig.tsbuildinfo
 cdktf.json
 API.md
 docs
+scripts
+.projenrc.js
+.copywrite.hcl
+.mergify.yml

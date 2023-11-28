@@ -1,7 +1,3 @@
-# `data_aws_rds_certificate`
-
-Refer to the Terraform Registory for docs: [`data_aws_rds_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/rds_certificate).
-
 # `dataAwsRdsCertificate` Submodule <a name="`dataAwsRdsCertificate` Submodule" id="@cdktf/provider-aws.dataAwsRdsCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

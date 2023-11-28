@@ -1,7 +1,3 @@
-# `aws_appmesh_virtual_node`
-
-Refer to the Terraform Registory for docs: [`aws_appmesh_virtual_node`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appmesh_virtual_node).
-
 # `appmeshVirtualNode` Submodule <a name="`appmeshVirtualNode` Submodule" id="@cdktf/provider-aws.appmeshVirtualNode"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

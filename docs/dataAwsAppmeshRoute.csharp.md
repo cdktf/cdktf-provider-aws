@@ -1,7 +1,3 @@
-# `data_aws_appmesh_route`
-
-Refer to the Terraform Registory for docs: [`data_aws_appmesh_route`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/appmesh_route).
-
 # `dataAwsAppmeshRoute` Submodule <a name="`dataAwsAppmeshRoute` Submodule" id="@cdktf/provider-aws.dataAwsAppmeshRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

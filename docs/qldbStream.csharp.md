@@ -1,7 +1,3 @@
-# `aws_qldb_stream`
-
-Refer to the Terraform Registory for docs: [`aws_qldb_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/qldb_stream).
-
 # `qldbStream` Submodule <a name="`qldbStream` Submodule" id="@cdktf/provider-aws.qldbStream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

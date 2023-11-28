@@ -1,7 +1,3 @@
-# `data_aws_workspaces_image`
-
-Refer to the Terraform Registory for docs: [`data_aws_workspaces_image`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_image).
-
 # `dataAwsWorkspacesImage` Submodule <a name="`dataAwsWorkspacesImage` Submodule" id="@cdktf/provider-aws.dataAwsWorkspacesImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

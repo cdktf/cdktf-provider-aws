@@ -1,7 +1,3 @@
-# `aws_iot_provisioning_template`
-
-Refer to the Terraform Registory for docs: [`aws_iot_provisioning_template`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_provisioning_template).
-
 # `iotProvisioningTemplate` Submodule <a name="`iotProvisioningTemplate` Submodule" id="@cdktf/provider-aws.iotProvisioningTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

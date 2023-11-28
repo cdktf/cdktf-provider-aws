@@ -1,7 +1,3 @@
-# `aws_datasync_location_smb`
-
-Refer to the Terraform Registory for docs: [`aws_datasync_location_smb`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/datasync_location_smb).
-
 # `datasyncLocationSmb` Submodule <a name="`datasyncLocationSmb` Submodule" id="@cdktf/provider-aws.datasyncLocationSmb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

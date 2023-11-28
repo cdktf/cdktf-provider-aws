@@ -1,7 +1,3 @@
-# `data_aws_rds_engine_version`
-
-Refer to the Terraform Registory for docs: [`data_aws_rds_engine_version`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/rds_engine_version).
-
 # `dataAwsRdsEngineVersion` Submodule <a name="`dataAwsRdsEngineVersion` Submodule" id="@cdktf/provider-aws.dataAwsRdsEngineVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

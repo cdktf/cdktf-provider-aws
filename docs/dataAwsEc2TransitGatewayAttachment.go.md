@@ -1,7 +1,3 @@
-# `data_aws_ec2_transit_gateway_attachment`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_transit_gateway_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_transit_gateway_attachment).
-
 # `dataAwsEc2TransitGatewayAttachment` Submodule <a name="`dataAwsEc2TransitGatewayAttachment` Submodule" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

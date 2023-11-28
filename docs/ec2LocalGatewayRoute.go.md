@@ -1,7 +1,3 @@
-# `aws_ec2_local_gateway_route`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_local_gateway_route`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_local_gateway_route).
-
 # `ec2LocalGatewayRoute` Submodule <a name="`ec2LocalGatewayRoute` Submodule" id="@cdktf/provider-aws.ec2LocalGatewayRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_cloudwatch_log_data_protection_policy_document`
-
-Refer to the Terraform Registory for docs: [`data_aws_cloudwatch_log_data_protection_policy_document`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudwatch_log_data_protection_policy_document).
-
 # `dataAwsCloudwatchLogDataProtectionPolicyDocument` Submodule <a name="`dataAwsCloudwatchLogDataProtectionPolicyDocument` Submodule" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

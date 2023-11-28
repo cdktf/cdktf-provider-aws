@@ -1,7 +1,3 @@
-# `aws_athena_named_query`
-
-Refer to the Terraform Registory for docs: [`aws_athena_named_query`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query).
-
 # `athenaNamedQuery` Submodule <a name="`athenaNamedQuery` Submodule" id="@cdktf/provider-aws.athenaNamedQuery"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

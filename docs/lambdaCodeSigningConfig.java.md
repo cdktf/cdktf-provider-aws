@@ -1,7 +1,3 @@
-# `aws_lambda_code_signing_config`
-
-Refer to the Terraform Registory for docs: [`aws_lambda_code_signing_config`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lambda_code_signing_config).
-
 # `lambdaCodeSigningConfig` Submodule <a name="`lambdaCodeSigningConfig` Submodule" id="@cdktf/provider-aws.lambdaCodeSigningConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

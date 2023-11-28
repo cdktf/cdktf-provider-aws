@@ -1,7 +1,3 @@
-# `aws_vpc_endpoint_policy`
-
-Refer to the Terraform Registory for docs: [`aws_vpc_endpoint_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpc_endpoint_policy).
-
 # `vpcEndpointPolicy` Submodule <a name="`vpcEndpointPolicy` Submodule" id="@cdktf/provider-aws.vpcEndpointPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

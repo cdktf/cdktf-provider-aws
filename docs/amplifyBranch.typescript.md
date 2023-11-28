@@ -1,7 +1,3 @@
-# `aws_amplify_branch`
-
-Refer to the Terraform Registory for docs: [`aws_amplify_branch`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/amplify_branch).
-
 # `amplifyBranch` Submodule <a name="`amplifyBranch` Submodule" id="@cdktf/provider-aws.amplifyBranch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

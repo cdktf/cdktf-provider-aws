@@ -1,7 +1,3 @@
-# `aws_redshift_scheduled_action`
-
-Refer to the Terraform Registory for docs: [`aws_redshift_scheduled_action`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshift_scheduled_action).
-
 # `redshiftScheduledAction` Submodule <a name="`redshiftScheduledAction` Submodule" id="@cdktf/provider-aws.redshiftScheduledAction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

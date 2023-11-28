@@ -1,7 +1,3 @@
-# `aws_redshift_resource_policy`
-
-Refer to the Terraform Registory for docs: [`aws_redshift_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshift_resource_policy).
-
 # `redshiftResourcePolicy` Submodule <a name="`redshiftResourcePolicy` Submodule" id="@cdktf/provider-aws.redshiftResourcePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

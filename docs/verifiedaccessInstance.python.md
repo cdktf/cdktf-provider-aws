@@ -1,7 +1,3 @@
-# `aws_verifiedaccess_instance`
-
-Refer to the Terraform Registory for docs: [`aws_verifiedaccess_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/verifiedaccess_instance).
-
 # `verifiedaccessInstance` Submodule <a name="`verifiedaccessInstance` Submodule" id="@cdktf/provider-aws.verifiedaccessInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

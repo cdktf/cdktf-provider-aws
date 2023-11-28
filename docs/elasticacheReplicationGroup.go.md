@@ -1,7 +1,3 @@
-# `aws_elasticache_replication_group`
-
-Refer to the Terraform Registory for docs: [`aws_elasticache_replication_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/elasticache_replication_group).
-
 # `elasticacheReplicationGroup` Submodule <a name="`elasticacheReplicationGroup` Submodule" id="@cdktf/provider-aws.elasticacheReplicationGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

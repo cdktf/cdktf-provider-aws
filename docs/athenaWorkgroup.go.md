@@ -1,7 +1,3 @@
-# `aws_athena_workgroup`
-
-Refer to the Terraform Registory for docs: [`aws_athena_workgroup`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_workgroup).
-
 # `athenaWorkgroup` Submodule <a name="`athenaWorkgroup` Submodule" id="@cdktf/provider-aws.athenaWorkgroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

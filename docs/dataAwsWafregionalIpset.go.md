@@ -1,7 +1,3 @@
-# `data_aws_wafregional_ipset`
-
-Refer to the Terraform Registory for docs: [`data_aws_wafregional_ipset`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/wafregional_ipset).
-
 # `dataAwsWafregionalIpset` Submodule <a name="`dataAwsWafregionalIpset` Submodule" id="@cdktf/provider-aws.dataAwsWafregionalIpset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

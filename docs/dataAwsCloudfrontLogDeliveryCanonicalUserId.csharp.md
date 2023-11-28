@@ -1,7 +1,3 @@
-# `data_aws_cloudfront_log_delivery_canonical_user_id`
-
-Refer to the Terraform Registory for docs: [`data_aws_cloudfront_log_delivery_canonical_user_id`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudfront_log_delivery_canonical_user_id).
-
 # `dataAwsCloudfrontLogDeliveryCanonicalUserId` Submodule <a name="`dataAwsCloudfrontLogDeliveryCanonicalUserId` Submodule" id="@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

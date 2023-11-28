@@ -1,7 +1,3 @@
-# `aws_organizations_resource_policy`
-
-Refer to the Terraform Registory for docs: [`aws_organizations_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/organizations_resource_policy).
-
 # `organizationsResourcePolicy` Submodule <a name="`organizationsResourcePolicy` Submodule" id="@cdktf/provider-aws.organizationsResourcePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

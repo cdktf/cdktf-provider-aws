@@ -1,7 +1,3 @@
-# `data_aws_lb_listener`
-
-Refer to the Terraform Registory for docs: [`data_aws_lb_listener`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/lb_listener).
-
 # `dataAwsLbListener` Submodule <a name="`dataAwsLbListener` Submodule" id="@cdktf/provider-aws.dataAwsLbListener"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

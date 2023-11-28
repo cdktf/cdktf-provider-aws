@@ -1,7 +1,3 @@
-# `data_aws_ce_tags`
-
-Refer to the Terraform Registory for docs: [`data_aws_ce_tags`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ce_tags).
-
 # `dataAwsCeTags` Submodule <a name="`dataAwsCeTags` Submodule" id="@cdktf/provider-aws.dataAwsCeTags"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

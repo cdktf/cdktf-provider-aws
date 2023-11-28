@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway_vpc_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_vpc_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway_vpc_attachment).
-
 # `ec2TransitGatewayVpcAttachment` Submodule <a name="`ec2TransitGatewayVpcAttachment` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayVpcAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_workspaces_connection_alias`
-
-Refer to the Terraform Registory for docs: [`aws_workspaces_connection_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/workspaces_connection_alias).
-
 # `workspacesConnectionAlias` Submodule <a name="`workspacesConnectionAlias` Submodule" id="@cdktf/provider-aws.workspacesConnectionAlias"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

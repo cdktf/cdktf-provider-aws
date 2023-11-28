@@ -1,7 +1,3 @@
-# `data_aws_ec2_spot_price`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_spot_price`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_spot_price).
-
 # `dataAwsEc2SpotPrice` Submodule <a name="`dataAwsEc2SpotPrice` Submodule" id="@cdktf/provider-aws.dataAwsEc2SpotPrice"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

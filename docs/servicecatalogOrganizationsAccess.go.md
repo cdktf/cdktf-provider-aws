@@ -1,7 +1,3 @@
-# `aws_servicecatalog_organizations_access`
-
-Refer to the Terraform Registory for docs: [`aws_servicecatalog_organizations_access`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/servicecatalog_organizations_access).
-
 # `servicecatalogOrganizationsAccess` Submodule <a name="`servicecatalogOrganizationsAccess` Submodule" id="@cdktf/provider-aws.servicecatalogOrganizationsAccess"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

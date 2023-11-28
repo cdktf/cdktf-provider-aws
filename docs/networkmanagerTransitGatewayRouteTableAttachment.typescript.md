@@ -1,7 +1,3 @@
-# `aws_networkmanager_transit_gateway_route_table_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_networkmanager_transit_gateway_route_table_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_transit_gateway_route_table_attachment).
-
 # `networkmanagerTransitGatewayRouteTableAttachment` Submodule <a name="`networkmanagerTransitGatewayRouteTableAttachment` Submodule" id="@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

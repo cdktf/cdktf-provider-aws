@@ -1,7 +1,3 @@
-# `aws_msk_cluster`
-
-Refer to the Terraform Registory for docs: [`aws_msk_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/msk_cluster).
-
 # `mskCluster` Submodule <a name="`mskCluster` Submodule" id="@cdktf/provider-aws.mskCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_ecs_capacity_provider`
-
-Refer to the Terraform Registory for docs: [`aws_ecs_capacity_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecs_capacity_provider).
-
 # `ecsCapacityProvider` Submodule <a name="`ecsCapacityProvider` Submodule" id="@cdktf/provider-aws.ecsCapacityProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

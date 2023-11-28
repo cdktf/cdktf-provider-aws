@@ -1,7 +1,3 @@
-# `aws_connect_bot_association`
-
-Refer to the Terraform Registory for docs: [`aws_connect_bot_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/connect_bot_association).
-
 # `connectBotAssociation` Submodule <a name="`connectBotAssociation` Submodule" id="@cdktf/provider-aws.connectBotAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

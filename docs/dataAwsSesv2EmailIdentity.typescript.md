@@ -1,7 +1,3 @@
-# `data_aws_sesv2_email_identity`
-
-Refer to the Terraform Registory for docs: [`data_aws_sesv2_email_identity`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/sesv2_email_identity).
-
 # `dataAwsSesv2EmailIdentity` Submodule <a name="`dataAwsSesv2EmailIdentity` Submodule" id="@cdktf/provider-aws.dataAwsSesv2EmailIdentity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

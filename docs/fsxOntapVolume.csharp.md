@@ -1,7 +1,3 @@
-# `aws_fsx_ontap_volume`
-
-Refer to the Terraform Registory for docs: [`aws_fsx_ontap_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/fsx_ontap_volume).
-
 # `fsxOntapVolume` Submodule <a name="`fsxOntapVolume` Submodule" id="@cdktf/provider-aws.fsxOntapVolume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

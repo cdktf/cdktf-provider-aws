@@ -1,7 +1,3 @@
-# `aws_wafregional_regex_match_set`
-
-Refer to the Terraform Registory for docs: [`aws_wafregional_regex_match_set`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafregional_regex_match_set).
-
 # `wafregionalRegexMatchSet` Submodule <a name="`wafregionalRegexMatchSet` Submodule" id="@cdktf/provider-aws.wafregionalRegexMatchSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

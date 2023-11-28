@@ -1,7 +1,3 @@
-# `aws_sesv2_contact_list`
-
-Refer to the Terraform Registory for docs: [`aws_sesv2_contact_list`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sesv2_contact_list).
-
 # `sesv2ContactList` Submodule <a name="`sesv2ContactList` Submodule" id="@cdktf/provider-aws.sesv2ContactList"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

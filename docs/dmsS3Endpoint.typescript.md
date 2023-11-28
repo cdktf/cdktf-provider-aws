@@ -1,7 +1,3 @@
-# `aws_dms_s3_endpoint`
-
-Refer to the Terraform Registory for docs: [`aws_dms_s3_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dms_s3_endpoint).
-
 # `dmsS3Endpoint` Submodule <a name="`dmsS3Endpoint` Submodule" id="@cdktf/provider-aws.dmsS3Endpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_detective_graph`
-
-Refer to the Terraform Registory for docs: [`aws_detective_graph`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_graph).
-
 # `detectiveGraph` Submodule <a name="`detectiveGraph` Submodule" id="@cdktf/provider-aws.detectiveGraph"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

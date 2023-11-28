@@ -1,7 +1,3 @@
-# `aws_evidently_segment`
-
-Refer to the Terraform Registory for docs: [`aws_evidently_segment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/evidently_segment).
-
 # `evidentlySegment` Submodule <a name="`evidentlySegment` Submodule" id="@cdktf/provider-aws.evidentlySegment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

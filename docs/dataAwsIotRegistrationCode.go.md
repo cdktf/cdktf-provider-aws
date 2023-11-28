@@ -1,7 +1,3 @@
-# `data_aws_iot_registration_code`
-
-Refer to the Terraform Registory for docs: [`data_aws_iot_registration_code`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iot_registration_code).
-
 # `dataAwsIotRegistrationCode` Submodule <a name="`dataAwsIotRegistrationCode` Submodule" id="@cdktf/provider-aws.dataAwsIotRegistrationCode"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

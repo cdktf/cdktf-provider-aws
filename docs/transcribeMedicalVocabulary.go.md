@@ -1,7 +1,3 @@
-# `aws_transcribe_medical_vocabulary`
-
-Refer to the Terraform Registory for docs: [`aws_transcribe_medical_vocabulary`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transcribe_medical_vocabulary).
-
 # `transcribeMedicalVocabulary` Submodule <a name="`transcribeMedicalVocabulary` Submodule" id="@cdktf/provider-aws.transcribeMedicalVocabulary"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

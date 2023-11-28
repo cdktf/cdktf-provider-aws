@@ -1,7 +1,3 @@
-# `data_aws_service_discovery_dns_namespace`
-
-Refer to the Terraform Registory for docs: [`data_aws_service_discovery_dns_namespace`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/service_discovery_dns_namespace).
-
 # `dataAwsServiceDiscoveryDnsNamespace` Submodule <a name="`dataAwsServiceDiscoveryDnsNamespace` Submodule" id="@cdktf/provider-aws.dataAwsServiceDiscoveryDnsNamespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

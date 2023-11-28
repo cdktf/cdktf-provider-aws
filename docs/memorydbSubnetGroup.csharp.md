@@ -1,7 +1,3 @@
-# `aws_memorydb_subnet_group`
-
-Refer to the Terraform Registory for docs: [`aws_memorydb_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_subnet_group).
-
 # `memorydbSubnetGroup` Submodule <a name="`memorydbSubnetGroup` Submodule" id="@cdktf/provider-aws.memorydbSubnetGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

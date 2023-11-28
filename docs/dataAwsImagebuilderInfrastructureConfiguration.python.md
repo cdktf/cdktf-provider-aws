@@ -1,7 +1,3 @@
-# `data_aws_imagebuilder_infrastructure_configuration`
-
-Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_infrastructure_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/imagebuilder_infrastructure_configuration).
-
 # `dataAwsImagebuilderInfrastructureConfiguration` Submodule <a name="`dataAwsImagebuilderInfrastructureConfiguration` Submodule" id="@cdktf/provider-aws.dataAwsImagebuilderInfrastructureConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

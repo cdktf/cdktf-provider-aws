@@ -1,7 +1,3 @@
-# `aws_rbin_rule`
-
-Refer to the Terraform Registory for docs: [`aws_rbin_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/rbin_rule).
-
 # `rbinRule` Submodule <a name="`rbinRule` Submodule" id="@cdktf/provider-aws.rbinRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_eip_association`
-
-Refer to the Terraform Registory for docs: [`aws_eip_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/eip_association).
-
 # `eipAssociation` Submodule <a name="`eipAssociation` Submodule" id="@cdktf/provider-aws.eipAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

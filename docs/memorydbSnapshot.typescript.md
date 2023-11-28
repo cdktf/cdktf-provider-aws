@@ -1,7 +1,3 @@
-# `aws_memorydb_snapshot`
-
-Refer to the Terraform Registory for docs: [`aws_memorydb_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_snapshot).
-
 # `memorydbSnapshot` Submodule <a name="`memorydbSnapshot` Submodule" id="@cdktf/provider-aws.memorydbSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

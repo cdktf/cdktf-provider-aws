@@ -1,7 +1,3 @@
-# `aws_db_snapshot_copy`
-
-Refer to the Terraform Registory for docs: [`aws_db_snapshot_copy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/db_snapshot_copy).
-
 # `dbSnapshotCopy` Submodule <a name="`dbSnapshotCopy` Submodule" id="@cdktf/provider-aws.dbSnapshotCopy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

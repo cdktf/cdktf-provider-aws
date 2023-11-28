@@ -1,7 +1,3 @@
-# `aws_connect_phone_number`
-
-Refer to the Terraform Registory for docs: [`aws_connect_phone_number`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/connect_phone_number).
-
 # `connectPhoneNumber` Submodule <a name="`connectPhoneNumber` Submodule" id="@cdktf/provider-aws.connectPhoneNumber"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

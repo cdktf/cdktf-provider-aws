@@ -1,7 +1,3 @@
-# `data_aws_connect_prompt`
-
-Refer to the Terraform Registory for docs: [`data_aws_connect_prompt`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/connect_prompt).
-
 # `dataAwsConnectPrompt` Submodule <a name="`dataAwsConnectPrompt` Submodule" id="@cdktf/provider-aws.dataAwsConnectPrompt"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_lightsail_key_pair`
-
-Refer to the Terraform Registory for docs: [`aws_lightsail_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lightsail_key_pair).
-
 # `lightsailKeyPair` Submodule <a name="`lightsailKeyPair` Submodule" id="@cdktf/provider-aws.lightsailKeyPair"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

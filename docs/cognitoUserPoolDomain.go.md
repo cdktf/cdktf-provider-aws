@@ -1,7 +1,3 @@
-# `aws_cognito_user_pool_domain`
-
-Refer to the Terraform Registory for docs: [`aws_cognito_user_pool_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cognito_user_pool_domain).
-
 # `cognitoUserPoolDomain` Submodule <a name="`cognitoUserPoolDomain` Submodule" id="@cdktf/provider-aws.cognitoUserPoolDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_redshift_usage_limit`
-
-Refer to the Terraform Registory for docs: [`aws_redshift_usage_limit`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshift_usage_limit).
-
 # `redshiftUsageLimit` Submodule <a name="`redshiftUsageLimit` Submodule" id="@cdktf/provider-aws.redshiftUsageLimit"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

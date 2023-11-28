@@ -1,7 +1,3 @@
-# `aws_eks_fargate_profile`
-
-Refer to the Terraform Registory for docs: [`aws_eks_fargate_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/eks_fargate_profile).
-
 # `eksFargateProfile` Submodule <a name="`eksFargateProfile` Submodule" id="@cdktf/provider-aws.eksFargateProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_macie2_organization_admin_account`
-
-Refer to the Terraform Registory for docs: [`aws_macie2_organization_admin_account`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/macie2_organization_admin_account).
-
 # `macie2OrganizationAdminAccount` Submodule <a name="`macie2OrganizationAdminAccount` Submodule" id="@cdktf/provider-aws.macie2OrganizationAdminAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

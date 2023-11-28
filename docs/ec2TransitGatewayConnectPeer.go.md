@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway_connect_peer`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_connect_peer`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway_connect_peer).
-
 # `ec2TransitGatewayConnectPeer` Submodule <a name="`ec2TransitGatewayConnectPeer` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayConnectPeer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

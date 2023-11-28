@@ -1,7 +1,3 @@
-# `aws_docdb_event_subscription`
-
-Refer to the Terraform Registory for docs: [`aws_docdb_event_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription).
-
 # `docdbEventSubscription` Submodule <a name="`docdbEventSubscription` Submodule" id="@cdktf/provider-aws.docdbEventSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

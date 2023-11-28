@@ -1,7 +1,3 @@
-# `aws_ecs_task_set`
-
-Refer to the Terraform Registory for docs: [`aws_ecs_task_set`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecs_task_set).
-
 # `ecsTaskSet` Submodule <a name="`ecsTaskSet` Submodule" id="@cdktf/provider-aws.ecsTaskSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_msk_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_msk_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/msk_configuration).
-
 # `mskConfiguration` Submodule <a name="`mskConfiguration` Submodule" id="@cdktf/provider-aws.mskConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_chimesdkvoice_global_settings`
-
-Refer to the Terraform Registory for docs: [`aws_chimesdkvoice_global_settings`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/chimesdkvoice_global_settings).
-
 # `chimesdkvoiceGlobalSettings` Submodule <a name="`chimesdkvoiceGlobalSettings` Submodule" id="@cdktf/provider-aws.chimesdkvoiceGlobalSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_backup_plan`
-
-Refer to the Terraform Registory for docs: [`aws_backup_plan`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/backup_plan).
-
 # `backupPlan` Submodule <a name="`backupPlan` Submodule" id="@cdktf/provider-aws.backupPlan"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

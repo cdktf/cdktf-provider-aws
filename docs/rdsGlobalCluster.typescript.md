@@ -1,7 +1,3 @@
-# `aws_rds_global_cluster`
-
-Refer to the Terraform Registory for docs: [`aws_rds_global_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/rds_global_cluster).
-
 # `rdsGlobalCluster` Submodule <a name="`rdsGlobalCluster` Submodule" id="@cdktf/provider-aws.rdsGlobalCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

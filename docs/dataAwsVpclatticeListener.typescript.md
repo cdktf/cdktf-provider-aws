@@ -1,7 +1,3 @@
-# `data_aws_vpclattice_listener`
-
-Refer to the Terraform Registory for docs: [`data_aws_vpclattice_listener`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/vpclattice_listener).
-
 # `dataAwsVpclatticeListener` Submodule <a name="`dataAwsVpclatticeListener` Submodule" id="@cdktf/provider-aws.dataAwsVpclatticeListener"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

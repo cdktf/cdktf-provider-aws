@@ -1,7 +1,3 @@
-# `aws_lightsail_database`
-
-Refer to the Terraform Registory for docs: [`aws_lightsail_database`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lightsail_database).
-
 # `lightsailDatabase` Submodule <a name="`lightsailDatabase` Submodule" id="@cdktf/provider-aws.lightsailDatabase"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

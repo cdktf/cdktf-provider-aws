@@ -1,7 +1,3 @@
-# `data_aws_msk_kafka_version`
-
-Refer to the Terraform Registory for docs: [`data_aws_msk_kafka_version`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/msk_kafka_version).
-
 # `dataAwsMskKafkaVersion` Submodule <a name="`dataAwsMskKafkaVersion` Submodule" id="@cdktf/provider-aws.dataAwsMskKafkaVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

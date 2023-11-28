@@ -1,7 +1,3 @@
-# `aws_kms_key`
-
-Refer to the Terraform Registory for docs: [`aws_kms_key`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/kms_key).
-
 # `kmsKey` Submodule <a name="`kmsKey` Submodule" id="@cdktf/provider-aws.kmsKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

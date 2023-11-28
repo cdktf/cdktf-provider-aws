@@ -1,7 +1,3 @@
-# `aws_finspace_kx_database`
-
-Refer to the Terraform Registory for docs: [`aws_finspace_kx_database`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/finspace_kx_database).
-
 # `finspaceKxDatabase` Submodule <a name="`finspaceKxDatabase` Submodule" id="@cdktf/provider-aws.finspaceKxDatabase"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

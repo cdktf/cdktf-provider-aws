@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway_multicast_group_source`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_multicast_group_source`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway_multicast_group_source).
-
 # `ec2TransitGatewayMulticastGroupSource` Submodule <a name="`ec2TransitGatewayMulticastGroupSource` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayMulticastGroupSource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

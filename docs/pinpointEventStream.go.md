@@ -1,7 +1,3 @@
-# `aws_pinpoint_event_stream`
-
-Refer to the Terraform Registory for docs: [`aws_pinpoint_event_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/pinpoint_event_stream).
-
 # `pinpointEventStream` Submodule <a name="`pinpointEventStream` Submodule" id="@cdktf/provider-aws.pinpointEventStream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

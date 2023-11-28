@@ -1,7 +1,3 @@
-# `data_aws_vpc_ipam_pool`
-
-Refer to the Terraform Registory for docs: [`data_aws_vpc_ipam_pool`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/vpc_ipam_pool).
-
 # `dataAwsVpcIpamPool` Submodule <a name="`dataAwsVpcIpamPool` Submodule" id="@cdktf/provider-aws.dataAwsVpcIpamPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

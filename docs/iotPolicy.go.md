@@ -1,7 +1,3 @@
-# `aws_iot_policy`
-
-Refer to the Terraform Registory for docs: [`aws_iot_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_policy).
-
 # `iotPolicy` Submodule <a name="`iotPolicy` Submodule" id="@cdktf/provider-aws.iotPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

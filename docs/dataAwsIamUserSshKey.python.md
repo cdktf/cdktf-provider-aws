@@ -1,7 +1,3 @@
-# `data_aws_iam_user_ssh_key`
-
-Refer to the Terraform Registory for docs: [`data_aws_iam_user_ssh_key`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_user_ssh_key).
-
 # `dataAwsIamUserSshKey` Submodule <a name="`dataAwsIamUserSshKey` Submodule" id="@cdktf/provider-aws.dataAwsIamUserSshKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

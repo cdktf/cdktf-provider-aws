@@ -1,7 +1,3 @@
-# `aws_transfer_tag`
-
-Refer to the Terraform Registory for docs: [`aws_transfer_tag`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transfer_tag).
-
 # `transferTag` Submodule <a name="`transferTag` Submodule" id="@cdktf/provider-aws.transferTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

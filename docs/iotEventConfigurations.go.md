@@ -1,7 +1,3 @@
-# `aws_iot_event_configurations`
-
-Refer to the Terraform Registory for docs: [`aws_iot_event_configurations`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_event_configurations).
-
 # `iotEventConfigurations` Submodule <a name="`iotEventConfigurations` Submodule" id="@cdktf/provider-aws.iotEventConfigurations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

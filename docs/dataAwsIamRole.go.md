@@ -1,7 +1,3 @@
-# `data_aws_iam_role`
-
-Refer to the Terraform Registory for docs: [`data_aws_iam_role`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_role).
-
 # `dataAwsIamRole` Submodule <a name="`dataAwsIamRole` Submodule" id="@cdktf/provider-aws.dataAwsIamRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

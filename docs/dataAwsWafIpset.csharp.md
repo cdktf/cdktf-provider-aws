@@ -1,7 +1,3 @@
-# `data_aws_waf_ipset`
-
-Refer to the Terraform Registory for docs: [`data_aws_waf_ipset`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/waf_ipset).
-
 # `dataAwsWafIpset` Submodule <a name="`dataAwsWafIpset` Submodule" id="@cdktf/provider-aws.dataAwsWafIpset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

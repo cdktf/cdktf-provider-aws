@@ -1,7 +1,3 @@
-# `aws_sagemaker_image`
-
-Refer to the Terraform Registory for docs: [`aws_sagemaker_image`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_image).
-
 # `sagemakerImage` Submodule <a name="`sagemakerImage` Submodule" id="@cdktf/provider-aws.sagemakerImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

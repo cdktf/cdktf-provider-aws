@@ -1,7 +1,3 @@
-# `aws_sfn_alias`
-
-Refer to the Terraform Registory for docs: [`aws_sfn_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sfn_alias).
-
 # `sfnAlias` Submodule <a name="`sfnAlias` Submodule" id="@cdktf/provider-aws.sfnAlias"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

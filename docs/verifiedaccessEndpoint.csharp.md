@@ -1,7 +1,3 @@
-# `aws_verifiedaccess_endpoint`
-
-Refer to the Terraform Registory for docs: [`aws_verifiedaccess_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/verifiedaccess_endpoint).
-
 # `verifiedaccessEndpoint` Submodule <a name="`verifiedaccessEndpoint` Submodule" id="@cdktf/provider-aws.verifiedaccessEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

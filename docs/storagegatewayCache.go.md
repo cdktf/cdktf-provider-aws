@@ -1,7 +1,3 @@
-# `aws_storagegateway_cache`
-
-Refer to the Terraform Registory for docs: [`aws_storagegateway_cache`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/storagegateway_cache).
-
 # `storagegatewayCache` Submodule <a name="`storagegatewayCache` Submodule" id="@cdktf/provider-aws.storagegatewayCache"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

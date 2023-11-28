@@ -1,7 +1,3 @@
-# `aws_opensearch_domain`
-
-Refer to the Terraform Registory for docs: [`aws_opensearch_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opensearch_domain).
-
 # `opensearchDomain` Submodule <a name="`opensearchDomain` Submodule" id="@cdktf/provider-aws.opensearchDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

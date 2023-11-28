@@ -1,7 +1,3 @@
-# `aws_glue_data_quality_ruleset`
-
-Refer to the Terraform Registory for docs: [`aws_glue_data_quality_ruleset`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/glue_data_quality_ruleset).
-
 # `glueDataQualityRuleset` Submodule <a name="`glueDataQualityRuleset` Submodule" id="@cdktf/provider-aws.glueDataQualityRuleset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

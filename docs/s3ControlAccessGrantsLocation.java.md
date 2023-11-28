@@ -1,7 +1,3 @@
-# `aws_s3control_access_grants_location`
-
-Refer to the Terraform Registory for docs: [`aws_s3control_access_grants_location`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_location).
-
 # `s3ControlAccessGrantsLocation` Submodule <a name="`s3ControlAccessGrantsLocation` Submodule" id="@cdktf/provider-aws.s3ControlAccessGrantsLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

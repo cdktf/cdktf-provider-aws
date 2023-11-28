@@ -1,7 +1,3 @@
-# `aws_route53_resolver_config`
-
-Refer to the Terraform Registory for docs: [`aws_route53_resolver_config`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/route53_resolver_config).
-
 # `route53ResolverConfig` Submodule <a name="`route53ResolverConfig` Submodule" id="@cdktf/provider-aws.route53ResolverConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

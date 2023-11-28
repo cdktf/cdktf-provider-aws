@@ -1,7 +1,3 @@
-# `data_aws_budgets_budget`
-
-Refer to the Terraform Registory for docs: [`data_aws_budgets_budget`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/budgets_budget).
-
 # `dataAwsBudgetsBudget` Submodule <a name="`dataAwsBudgetsBudget` Submodule" id="@cdktf/provider-aws.dataAwsBudgetsBudget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

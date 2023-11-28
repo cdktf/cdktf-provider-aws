@@ -1,7 +1,3 @@
-# `data_aws_ec2_transit_gateway_peering_attachment`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_transit_gateway_peering_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_transit_gateway_peering_attachment).
-
 # `dataAwsEc2TransitGatewayPeeringAttachment` Submodule <a name="`dataAwsEc2TransitGatewayPeeringAttachment` Submodule" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayPeeringAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

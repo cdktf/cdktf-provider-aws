@@ -1,7 +1,3 @@
-# `aws_appflow_flow`
-
-Refer to the Terraform Registory for docs: [`aws_appflow_flow`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow).
-
 # `appflowFlow` Submodule <a name="`appflowFlow` Submodule" id="@cdktf/provider-aws.appflowFlow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

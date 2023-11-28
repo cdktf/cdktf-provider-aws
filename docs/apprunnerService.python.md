@@ -1,7 +1,3 @@
-# `aws_apprunner_service`
-
-Refer to the Terraform Registory for docs: [`aws_apprunner_service`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_service).
-
 # `apprunnerService` Submodule <a name="`apprunnerService` Submodule" id="@cdktf/provider-aws.apprunnerService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

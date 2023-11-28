@@ -1,7 +1,3 @@
-# `aws_appmesh_virtual_router`
-
-Refer to the Terraform Registory for docs: [`aws_appmesh_virtual_router`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appmesh_virtual_router).
-
 # `appmeshVirtualRouter` Submodule <a name="`appmeshVirtualRouter` Submodule" id="@cdktf/provider-aws.appmeshVirtualRouter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

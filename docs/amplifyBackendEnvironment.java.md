@@ -1,7 +1,3 @@
-# `aws_amplify_backend_environment`
-
-Refer to the Terraform Registory for docs: [`aws_amplify_backend_environment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/amplify_backend_environment).
-
 # `amplifyBackendEnvironment` Submodule <a name="`amplifyBackendEnvironment` Submodule" id="@cdktf/provider-aws.amplifyBackendEnvironment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

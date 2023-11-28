@@ -1,7 +1,3 @@
-# `aws_directory_service_trust`
-
-Refer to the Terraform Registory for docs: [`aws_directory_service_trust`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/directory_service_trust).
-
 # `directoryServiceTrust` Submodule <a name="`directoryServiceTrust` Submodule" id="@cdktf/provider-aws.directoryServiceTrust"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

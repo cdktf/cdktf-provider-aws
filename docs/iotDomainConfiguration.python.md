@@ -1,7 +1,3 @@
-# `aws_iot_domain_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_iot_domain_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_domain_configuration).
-
 # `iotDomainConfiguration` Submodule <a name="`iotDomainConfiguration` Submodule" id="@cdktf/provider-aws.iotDomainConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

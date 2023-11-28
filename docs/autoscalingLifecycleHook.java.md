@@ -1,7 +1,3 @@
-# `aws_autoscaling_lifecycle_hook`
-
-Refer to the Terraform Registory for docs: [`aws_autoscaling_lifecycle_hook`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/autoscaling_lifecycle_hook).
-
 # `autoscalingLifecycleHook` Submodule <a name="`autoscalingLifecycleHook` Submodule" id="@cdktf/provider-aws.autoscalingLifecycleHook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

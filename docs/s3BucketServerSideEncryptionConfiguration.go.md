@@ -1,7 +1,3 @@
-# `aws_s3_bucket_server_side_encryption_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_s3_bucket_server_side_encryption_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_server_side_encryption_configuration).
-
 # `s3BucketServerSideEncryptionConfiguration` Submodule <a name="`s3BucketServerSideEncryptionConfiguration` Submodule" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

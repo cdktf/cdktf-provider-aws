@@ -1,7 +1,3 @@
-# `aws_route53_traffic_policy_instance`
-
-Refer to the Terraform Registory for docs: [`aws_route53_traffic_policy_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/route53_traffic_policy_instance).
-
 # `route53TrafficPolicyInstance` Submodule <a name="`route53TrafficPolicyInstance` Submodule" id="@cdktf/provider-aws.route53TrafficPolicyInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

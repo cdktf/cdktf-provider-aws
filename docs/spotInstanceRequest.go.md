@@ -1,7 +1,3 @@
-# `aws_spot_instance_request`
-
-Refer to the Terraform Registory for docs: [`aws_spot_instance_request`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/spot_instance_request).
-
 # `spotInstanceRequest` Submodule <a name="`spotInstanceRequest` Submodule" id="@cdktf/provider-aws.spotInstanceRequest"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

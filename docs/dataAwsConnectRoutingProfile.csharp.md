@@ -1,7 +1,3 @@
-# `data_aws_connect_routing_profile`
-
-Refer to the Terraform Registory for docs: [`data_aws_connect_routing_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/connect_routing_profile).
-
 # `dataAwsConnectRoutingProfile` Submodule <a name="`dataAwsConnectRoutingProfile` Submodule" id="@cdktf/provider-aws.dataAwsConnectRoutingProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

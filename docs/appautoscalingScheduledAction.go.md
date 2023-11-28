@@ -1,7 +1,3 @@
-# `aws_appautoscaling_scheduled_action`
-
-Refer to the Terraform Registory for docs: [`aws_appautoscaling_scheduled_action`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appautoscaling_scheduled_action).
-
 # `appautoscalingScheduledAction` Submodule <a name="`appautoscalingScheduledAction` Submodule" id="@cdktf/provider-aws.appautoscalingScheduledAction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

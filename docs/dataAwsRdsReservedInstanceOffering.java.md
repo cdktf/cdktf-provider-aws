@@ -1,7 +1,3 @@
-# `data_aws_rds_reserved_instance_offering`
-
-Refer to the Terraform Registory for docs: [`data_aws_rds_reserved_instance_offering`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/rds_reserved_instance_offering).
-
 # `dataAwsRdsReservedInstanceOffering` Submodule <a name="`dataAwsRdsReservedInstanceOffering` Submodule" id="@cdktf/provider-aws.dataAwsRdsReservedInstanceOffering"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

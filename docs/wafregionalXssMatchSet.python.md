@@ -1,7 +1,3 @@
-# `aws_wafregional_xss_match_set`
-
-Refer to the Terraform Registory for docs: [`aws_wafregional_xss_match_set`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafregional_xss_match_set).
-
 # `wafregionalXssMatchSet` Submodule <a name="`wafregionalXssMatchSet` Submodule" id="@cdktf/provider-aws.wafregionalXssMatchSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

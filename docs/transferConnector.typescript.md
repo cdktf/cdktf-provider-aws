@@ -1,7 +1,3 @@
-# `aws_transfer_connector`
-
-Refer to the Terraform Registory for docs: [`aws_transfer_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transfer_connector).
-
 # `transferConnector` Submodule <a name="`transferConnector` Submodule" id="@cdktf/provider-aws.transferConnector"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

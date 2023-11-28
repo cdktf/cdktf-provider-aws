@@ -1,7 +1,3 @@
-# `aws_security_group_rule`
-
-Refer to the Terraform Registory for docs: [`aws_security_group_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/security_group_rule).
-
 # `securityGroupRule` Submodule <a name="`securityGroupRule` Submodule" id="@cdktf/provider-aws.securityGroupRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

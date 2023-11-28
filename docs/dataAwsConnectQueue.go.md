@@ -1,7 +1,3 @@
-# `data_aws_connect_queue`
-
-Refer to the Terraform Registory for docs: [`data_aws_connect_queue`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/connect_queue).
-
 # `dataAwsConnectQueue` Submodule <a name="`dataAwsConnectQueue` Submodule" id="@cdktf/provider-aws.dataAwsConnectQueue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

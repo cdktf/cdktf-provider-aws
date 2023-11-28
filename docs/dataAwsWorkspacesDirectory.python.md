@@ -1,7 +1,3 @@
-# `data_aws_workspaces_directory`
-
-Refer to the Terraform Registory for docs: [`data_aws_workspaces_directory`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory).
-
 # `dataAwsWorkspacesDirectory` Submodule <a name="`dataAwsWorkspacesDirectory` Submodule" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

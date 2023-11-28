@@ -1,7 +1,3 @@
-# `data_aws_ec2_public_ipv4_pool`
-
-Refer to the Terraform Registory for docs: [`data_aws_ec2_public_ipv4_pool`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ec2_public_ipv4_pool).
-
 # `dataAwsEc2PublicIpv4Pool` Submodule <a name="`dataAwsEc2PublicIpv4Pool` Submodule" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

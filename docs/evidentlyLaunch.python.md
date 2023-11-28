@@ -1,7 +1,3 @@
-# `aws_evidently_launch`
-
-Refer to the Terraform Registory for docs: [`aws_evidently_launch`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/evidently_launch).
-
 # `evidentlyLaunch` Submodule <a name="`evidentlyLaunch` Submodule" id="@cdktf/provider-aws.evidentlyLaunch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

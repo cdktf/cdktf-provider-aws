@@ -1,7 +1,3 @@
-# `data_aws_glue_connection`
-
-Refer to the Terraform Registory for docs: [`data_aws_glue_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/glue_connection).
-
 # `dataAwsGlueConnection` Submodule <a name="`dataAwsGlueConnection` Submodule" id="@cdktf/provider-aws.dataAwsGlueConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

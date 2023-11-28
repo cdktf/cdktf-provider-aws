@@ -1,7 +1,3 @@
-# `aws_pinpoint_apns_sandbox_channel`
-
-Refer to the Terraform Registory for docs: [`aws_pinpoint_apns_sandbox_channel`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/pinpoint_apns_sandbox_channel).
-
 # `pinpointApnsSandboxChannel` Submodule <a name="`pinpointApnsSandboxChannel` Submodule" id="@cdktf/provider-aws.pinpointApnsSandboxChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_transfer_access`
-
-Refer to the Terraform Registory for docs: [`aws_transfer_access`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/transfer_access).
-
 # `transferAccess` Submodule <a name="`transferAccess` Submodule" id="@cdktf/provider-aws.transferAccess"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

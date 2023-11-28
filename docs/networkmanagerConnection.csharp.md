@@ -1,7 +1,3 @@
-# `aws_networkmanager_connection`
-
-Refer to the Terraform Registory for docs: [`aws_networkmanager_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_connection).
-
 # `networkmanagerConnection` Submodule <a name="`networkmanagerConnection` Submodule" id="@cdktf/provider-aws.networkmanagerConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

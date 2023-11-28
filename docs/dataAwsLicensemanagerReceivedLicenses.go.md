@@ -1,7 +1,3 @@
-# `data_aws_licensemanager_received_licenses`
-
-Refer to the Terraform Registory for docs: [`data_aws_licensemanager_received_licenses`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/licensemanager_received_licenses).
-
 # `dataAwsLicensemanagerReceivedLicenses` Submodule <a name="`dataAwsLicensemanagerReceivedLicenses` Submodule" id="@cdktf/provider-aws.dataAwsLicensemanagerReceivedLicenses"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

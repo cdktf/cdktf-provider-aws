@@ -1,7 +1,3 @@
-# `aws_sesv2_email_identity_mail_from_attributes`
-
-Refer to the Terraform Registory for docs: [`aws_sesv2_email_identity_mail_from_attributes`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sesv2_email_identity_mail_from_attributes).
-
 # `sesv2EmailIdentityMailFromAttributes` Submodule <a name="`sesv2EmailIdentityMailFromAttributes` Submodule" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

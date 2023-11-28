@@ -1,7 +1,3 @@
-# `aws_network_acl_association`
-
-Refer to the Terraform Registory for docs: [`aws_network_acl_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/network_acl_association).
-
 # `networkAclAssociation` Submodule <a name="`networkAclAssociation` Submodule" id="@cdktf/provider-aws.networkAclAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

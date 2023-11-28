@@ -1,7 +1,3 @@
-# `aws_apprunner_default_auto_scaling_configuration_version`
-
-Refer to the Terraform Registory for docs: [`aws_apprunner_default_auto_scaling_configuration_version`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_default_auto_scaling_configuration_version).
-
 # `apprunnerDefaultAutoScalingConfigurationVersion` Submodule <a name="`apprunnerDefaultAutoScalingConfigurationVersion` Submodule" id="@cdktf/provider-aws.apprunnerDefaultAutoScalingConfigurationVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

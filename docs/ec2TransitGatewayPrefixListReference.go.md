@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway_prefix_list_reference`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_prefix_list_reference`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway_prefix_list_reference).
-
 # `ec2TransitGatewayPrefixListReference` Submodule <a name="`ec2TransitGatewayPrefixListReference` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayPrefixListReference"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

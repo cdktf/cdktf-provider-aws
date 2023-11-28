@@ -1,7 +1,3 @@
-# `aws_resourceexplorer2_view`
-
-Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_view`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/resourceexplorer2_view).
-
 # `resourceexplorer2View` Submodule <a name="`resourceexplorer2View` Submodule" id="@cdktf/provider-aws.resourceexplorer2View"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

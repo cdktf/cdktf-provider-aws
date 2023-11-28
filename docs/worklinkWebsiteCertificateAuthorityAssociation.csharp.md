@@ -1,7 +1,3 @@
-# `aws_worklink_website_certificate_authority_association`
-
-Refer to the Terraform Registory for docs: [`aws_worklink_website_certificate_authority_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/worklink_website_certificate_authority_association).
-
 # `worklinkWebsiteCertificateAuthorityAssociation` Submodule <a name="`worklinkWebsiteCertificateAuthorityAssociation` Submodule" id="@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_memorydb_cluster`
-
-Refer to the Terraform Registory for docs: [`aws_memorydb_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster).
-
 # `memorydbCluster` Submodule <a name="`memorydbCluster` Submodule" id="@cdktf/provider-aws.memorydbCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

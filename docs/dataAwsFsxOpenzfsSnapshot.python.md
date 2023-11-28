@@ -1,7 +1,3 @@
-# `data_aws_fsx_openzfs_snapshot`
-
-Refer to the Terraform Registory for docs: [`data_aws_fsx_openzfs_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/fsx_openzfs_snapshot).
-
 # `dataAwsFsxOpenzfsSnapshot` Submodule <a name="`dataAwsFsxOpenzfsSnapshot` Submodule" id="@cdktf/provider-aws.dataAwsFsxOpenzfsSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

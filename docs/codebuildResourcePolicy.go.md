@@ -1,7 +1,3 @@
-# `aws_codebuild_resource_policy`
-
-Refer to the Terraform Registory for docs: [`aws_codebuild_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_resource_policy).
-
 # `codebuildResourcePolicy` Submodule <a name="`codebuildResourcePolicy` Submodule" id="@cdktf/provider-aws.codebuildResourcePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

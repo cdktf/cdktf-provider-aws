@@ -1,7 +1,3 @@
-# `aws_macie2_member`
-
-Refer to the Terraform Registory for docs: [`aws_macie2_member`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/macie2_member).
-
 # `macie2Member` Submodule <a name="`macie2Member` Submodule" id="@cdktf/provider-aws.macie2Member"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

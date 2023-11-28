@@ -1,7 +1,3 @@
-# `aws_opsworks_nodejs_app_layer`
-
-Refer to the Terraform Registory for docs: [`aws_opsworks_nodejs_app_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opsworks_nodejs_app_layer).
-
 # `opsworksNodejsAppLayer` Submodule <a name="`opsworksNodejsAppLayer` Submodule" id="@cdktf/provider-aws.opsworksNodejsAppLayer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

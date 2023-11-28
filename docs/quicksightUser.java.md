@@ -1,7 +1,3 @@
-# `aws_quicksight_user`
-
-Refer to the Terraform Registory for docs: [`aws_quicksight_user`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/quicksight_user).
-
 # `quicksightUser` Submodule <a name="`quicksightUser` Submodule" id="@cdktf/provider-aws.quicksightUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

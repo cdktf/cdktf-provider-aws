@@ -1,7 +1,3 @@
-# `aws_ssmincidents_response_plan`
-
-Refer to the Terraform Registory for docs: [`aws_ssmincidents_response_plan`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ssmincidents_response_plan).
-
 # `ssmincidentsResponsePlan` Submodule <a name="`ssmincidentsResponsePlan` Submodule" id="@cdktf/provider-aws.ssmincidentsResponsePlan"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

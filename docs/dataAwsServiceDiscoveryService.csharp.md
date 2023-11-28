@@ -1,7 +1,3 @@
-# `data_aws_service_discovery_service`
-
-Refer to the Terraform Registory for docs: [`data_aws_service_discovery_service`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/service_discovery_service).
-
 # `dataAwsServiceDiscoveryService` Submodule <a name="`dataAwsServiceDiscoveryService` Submodule" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

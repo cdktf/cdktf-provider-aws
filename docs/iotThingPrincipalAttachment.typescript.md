@@ -1,7 +1,3 @@
-# `aws_iot_thing_principal_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_iot_thing_principal_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_thing_principal_attachment).
-
 # `iotThingPrincipalAttachment` Submodule <a name="`iotThingPrincipalAttachment` Submodule" id="@cdktf/provider-aws.iotThingPrincipalAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

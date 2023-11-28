@@ -1,7 +1,3 @@
-# `aws_storagegateway_smb_file_share`
-
-Refer to the Terraform Registory for docs: [`aws_storagegateway_smb_file_share`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/storagegateway_smb_file_share).
-
 # `storagegatewaySmbFileShare` Submodule <a name="`storagegatewaySmbFileShare` Submodule" id="@cdktf/provider-aws.storagegatewaySmbFileShare"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

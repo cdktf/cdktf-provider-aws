@@ -1,7 +1,3 @@
-# `aws_db_instance`
-
-Refer to the Terraform Registory for docs: [`aws_db_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/db_instance).
-
 # `dbInstance` Submodule <a name="`dbInstance` Submodule" id="@cdktf/provider-aws.dbInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

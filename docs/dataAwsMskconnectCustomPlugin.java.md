@@ -1,7 +1,3 @@
-# `data_aws_mskconnect_custom_plugin`
-
-Refer to the Terraform Registory for docs: [`data_aws_mskconnect_custom_plugin`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/mskconnect_custom_plugin).
-
 # `dataAwsMskconnectCustomPlugin` Submodule <a name="`dataAwsMskconnectCustomPlugin` Submodule" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

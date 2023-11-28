@@ -1,7 +1,3 @@
-# `aws_networkmanager_connect_peer`
-
-Refer to the Terraform Registory for docs: [`aws_networkmanager_connect_peer`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_connect_peer).
-
 # `networkmanagerConnectPeer` Submodule <a name="`networkmanagerConnectPeer` Submodule" id="@cdktf/provider-aws.networkmanagerConnectPeer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

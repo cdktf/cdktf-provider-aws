@@ -1,7 +1,3 @@
-# `aws_grafana_role_association`
-
-Refer to the Terraform Registory for docs: [`aws_grafana_role_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/grafana_role_association).
-
 # `grafanaRoleAssociation` Submodule <a name="`grafanaRoleAssociation` Submodule" id="@cdktf/provider-aws.grafanaRoleAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

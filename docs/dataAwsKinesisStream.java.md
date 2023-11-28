@@ -1,7 +1,3 @@
-# `data_aws_kinesis_stream`
-
-Refer to the Terraform Registory for docs: [`data_aws_kinesis_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/kinesis_stream).
-
 # `dataAwsKinesisStream` Submodule <a name="`dataAwsKinesisStream` Submodule" id="@cdktf/provider-aws.dataAwsKinesisStream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

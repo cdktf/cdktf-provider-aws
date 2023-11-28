@@ -1,7 +1,3 @@
-# `data_aws_appmesh_virtual_gateway`
-
-Refer to the Terraform Registory for docs: [`data_aws_appmesh_virtual_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/appmesh_virtual_gateway).
-
 # `dataAwsAppmeshVirtualGateway` Submodule <a name="`dataAwsAppmeshVirtualGateway` Submodule" id="@cdktf/provider-aws.dataAwsAppmeshVirtualGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

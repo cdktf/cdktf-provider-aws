@@ -1,7 +1,3 @@
-# `data_aws_connect_user_hierarchy_group`
-
-Refer to the Terraform Registory for docs: [`data_aws_connect_user_hierarchy_group`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/connect_user_hierarchy_group).
-
 # `dataAwsConnectUserHierarchyGroup` Submodule <a name="`dataAwsConnectUserHierarchyGroup` Submodule" id="@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

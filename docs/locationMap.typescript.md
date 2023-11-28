@@ -1,7 +1,3 @@
-# `aws_location_map`
-
-Refer to the Terraform Registory for docs: [`aws_location_map`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/location_map).
-
 # `locationMap` Submodule <a name="`locationMap` Submodule" id="@cdktf/provider-aws.locationMap"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

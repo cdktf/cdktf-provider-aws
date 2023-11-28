@@ -1,7 +1,3 @@
-# `aws_db_event_subscription`
-
-Refer to the Terraform Registory for docs: [`aws_db_event_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/db_event_subscription).
-
 # `dbEventSubscription` Submodule <a name="`dbEventSubscription` Submodule" id="@cdktf/provider-aws.dbEventSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

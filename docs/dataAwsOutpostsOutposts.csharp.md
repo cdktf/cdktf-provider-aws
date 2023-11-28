@@ -1,7 +1,3 @@
-# `data_aws_outposts_outposts`
-
-Refer to the Terraform Registory for docs: [`data_aws_outposts_outposts`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/outposts_outposts).
-
 # `dataAwsOutpostsOutposts` Submodule <a name="`dataAwsOutpostsOutposts` Submodule" id="@cdktf/provider-aws.dataAwsOutpostsOutposts"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

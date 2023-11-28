@@ -1,7 +1,3 @@
-# `aws_backup_vault_policy`
-
-Refer to the Terraform Registory for docs: [`aws_backup_vault_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/backup_vault_policy).
-
 # `backupVaultPolicy` Submodule <a name="`backupVaultPolicy` Submodule" id="@cdktf/provider-aws.backupVaultPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

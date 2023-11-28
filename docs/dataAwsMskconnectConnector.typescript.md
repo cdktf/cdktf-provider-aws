@@ -1,7 +1,3 @@
-# `data_aws_mskconnect_connector`
-
-Refer to the Terraform Registory for docs: [`data_aws_mskconnect_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/mskconnect_connector).
-
 # `dataAwsMskconnectConnector` Submodule <a name="`dataAwsMskconnectConnector` Submodule" id="@cdktf/provider-aws.dataAwsMskconnectConnector"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_appsync_type`
-
-Refer to the Terraform Registory for docs: [`aws_appsync_type`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appsync_type).
-
 # `appsyncType` Submodule <a name="`appsyncType` Submodule" id="@cdktf/provider-aws.appsyncType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

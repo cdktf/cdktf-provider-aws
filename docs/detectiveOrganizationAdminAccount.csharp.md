@@ -1,7 +1,3 @@
-# `aws_detective_organization_admin_account`
-
-Refer to the Terraform Registory for docs: [`aws_detective_organization_admin_account`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_admin_account).
-
 # `detectiveOrganizationAdminAccount` Submodule <a name="`detectiveOrganizationAdminAccount` Submodule" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

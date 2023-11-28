@@ -1,7 +1,3 @@
-# `data_aws_api_gateway_api_key`
-
-Refer to the Terraform Registory for docs: [`data_aws_api_gateway_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/api_gateway_api_key).
-
 # `dataAwsApiGatewayApiKey` Submodule <a name="`dataAwsApiGatewayApiKey` Submodule" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

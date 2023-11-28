@@ -1,7 +1,3 @@
-# `aws_chime_voice_connector`
-
-Refer to the Terraform Registory for docs: [`aws_chime_voice_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/chime_voice_connector).
-
 # `chimeVoiceConnector` Submodule <a name="`chimeVoiceConnector` Submodule" id="@cdktf/provider-aws.chimeVoiceConnector"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

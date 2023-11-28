@@ -1,7 +1,3 @@
-# `data_aws_route53_resolver_endpoint`
-
-Refer to the Terraform Registory for docs: [`data_aws_route53_resolver_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/route53_resolver_endpoint).
-
 # `dataAwsRoute53ResolverEndpoint` Submodule <a name="`dataAwsRoute53ResolverEndpoint` Submodule" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

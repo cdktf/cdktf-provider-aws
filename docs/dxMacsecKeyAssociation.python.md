@@ -1,7 +1,3 @@
-# `aws_dx_macsec_key_association`
-
-Refer to the Terraform Registory for docs: [`aws_dx_macsec_key_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_macsec_key_association).
-
 # `dxMacsecKeyAssociation` Submodule <a name="`dxMacsecKeyAssociation` Submodule" id="@cdktf/provider-aws.dxMacsecKeyAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

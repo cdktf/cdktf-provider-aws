@@ -1,7 +1,3 @@
-# `data_aws_servicequotas_templates`
-
-Refer to the Terraform Registory for docs: [`data_aws_servicequotas_templates`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/servicequotas_templates).
-
 # `dataAwsServicequotasTemplates` Submodule <a name="`dataAwsServicequotasTemplates` Submodule" id="@cdktf/provider-aws.dataAwsServicequotasTemplates"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

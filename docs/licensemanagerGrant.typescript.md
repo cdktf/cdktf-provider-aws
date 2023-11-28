@@ -1,7 +1,3 @@
-# `aws_licensemanager_grant`
-
-Refer to the Terraform Registory for docs: [`aws_licensemanager_grant`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/licensemanager_grant).
-
 # `licensemanagerGrant` Submodule <a name="`licensemanagerGrant` Submodule" id="@cdktf/provider-aws.licensemanagerGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

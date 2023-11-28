@@ -1,7 +1,3 @@
-# `aws_storagegateway_stored_iscsi_volume`
-
-Refer to the Terraform Registory for docs: [`aws_storagegateway_stored_iscsi_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/storagegateway_stored_iscsi_volume).
-
 # `storagegatewayStoredIscsiVolume` Submodule <a name="`storagegatewayStoredIscsiVolume` Submodule" id="@cdktf/provider-aws.storagegatewayStoredIscsiVolume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

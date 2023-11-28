@@ -1,7 +1,3 @@
-# `aws_lambda_layer_version`
-
-Refer to the Terraform Registory for docs: [`aws_lambda_layer_version`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/lambda_layer_version).
-
 # `lambdaLayerVersion` Submodule <a name="`lambdaLayerVersion` Submodule" id="@cdktf/provider-aws.lambdaLayerVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

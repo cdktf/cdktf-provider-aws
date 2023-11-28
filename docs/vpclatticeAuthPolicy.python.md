@@ -1,7 +1,3 @@
-# `aws_vpclattice_auth_policy`
-
-Refer to the Terraform Registory for docs: [`aws_vpclattice_auth_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/vpclattice_auth_policy).
-
 # `vpclatticeAuthPolicy` Submodule <a name="`vpclatticeAuthPolicy` Submodule" id="@cdktf/provider-aws.vpclatticeAuthPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

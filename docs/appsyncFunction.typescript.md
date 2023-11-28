@@ -1,7 +1,3 @@
-# `aws_appsync_function`
-
-Refer to the Terraform Registory for docs: [`aws_appsync_function`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appsync_function).
-
 # `appsyncFunction` Submodule <a name="`appsyncFunction` Submodule" id="@cdktf/provider-aws.appsyncFunction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

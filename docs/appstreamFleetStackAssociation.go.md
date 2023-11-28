@@ -1,7 +1,3 @@
-# `aws_appstream_fleet_stack_association`
-
-Refer to the Terraform Registory for docs: [`aws_appstream_fleet_stack_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet_stack_association).
-
 # `appstreamFleetStackAssociation` Submodule <a name="`appstreamFleetStackAssociation` Submodule" id="@cdktf/provider-aws.appstreamFleetStackAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

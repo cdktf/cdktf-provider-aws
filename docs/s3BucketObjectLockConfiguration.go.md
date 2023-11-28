@@ -1,7 +1,3 @@
-# `aws_s3_bucket_object_lock_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_s3_bucket_object_lock_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_object_lock_configuration).
-
 # `s3BucketObjectLockConfiguration` Submodule <a name="`s3BucketObjectLockConfiguration` Submodule" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

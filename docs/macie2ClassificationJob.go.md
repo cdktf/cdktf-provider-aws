@@ -1,7 +1,3 @@
-# `aws_macie2_classification_job`
-
-Refer to the Terraform Registory for docs: [`aws_macie2_classification_job`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/macie2_classification_job).
-
 # `macie2ClassificationJob` Submodule <a name="`macie2ClassificationJob` Submodule" id="@cdktf/provider-aws.macie2ClassificationJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

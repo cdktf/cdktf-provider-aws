@@ -1,7 +1,3 @@
-# `aws_memorydb_user`
-
-Refer to the Terraform Registory for docs: [`aws_memorydb_user`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_user).
-
 # `memorydbUser` Submodule <a name="`memorydbUser` Submodule" id="@cdktf/provider-aws.memorydbUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_s3_bucket_policy`
-
-Refer to the Terraform Registory for docs: [`data_aws_s3_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/s3_bucket_policy).
-
 # `dataAwsS3BucketPolicy` Submodule <a name="`dataAwsS3BucketPolicy` Submodule" id="@cdktf/provider-aws.dataAwsS3BucketPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

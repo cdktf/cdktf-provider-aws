@@ -1,7 +1,3 @@
-# `aws_route53_hosted_zone_dnssec`
-
-Refer to the Terraform Registory for docs: [`aws_route53_hosted_zone_dnssec`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/route53_hosted_zone_dnssec).
-
 # `route53HostedZoneDnssec` Submodule <a name="`route53HostedZoneDnssec` Submodule" id="@cdktf/provider-aws.route53HostedZoneDnssec"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_cloudwatch_metric_alarm`
-
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_metric_alarm`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_metric_alarm).
-
 # `cloudwatchMetricAlarm` Submodule <a name="`cloudwatchMetricAlarm` Submodule" id="@cdktf/provider-aws.cloudwatchMetricAlarm"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

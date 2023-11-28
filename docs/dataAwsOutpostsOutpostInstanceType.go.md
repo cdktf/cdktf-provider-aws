@@ -1,7 +1,3 @@
-# `data_aws_outposts_outpost_instance_type`
-
-Refer to the Terraform Registory for docs: [`data_aws_outposts_outpost_instance_type`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/outposts_outpost_instance_type).
-
 # `dataAwsOutpostsOutpostInstanceType` Submodule <a name="`dataAwsOutpostsOutpostInstanceType` Submodule" id="@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

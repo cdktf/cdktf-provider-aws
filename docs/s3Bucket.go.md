@@ -1,7 +1,3 @@
-# `aws_s3_bucket`
-
-Refer to the Terraform Registory for docs: [`aws_s3_bucket`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket).
-
 # `s3Bucket` Submodule <a name="`s3Bucket` Submodule" id="@cdktf/provider-aws.s3Bucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

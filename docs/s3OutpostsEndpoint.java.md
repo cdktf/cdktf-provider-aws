@@ -1,7 +1,3 @@
-# `aws_s3outposts_endpoint`
-
-Refer to the Terraform Registory for docs: [`aws_s3outposts_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3outposts_endpoint).
-
 # `s3OutpostsEndpoint` Submodule <a name="`s3OutpostsEndpoint` Submodule" id="@cdktf/provider-aws.s3OutpostsEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

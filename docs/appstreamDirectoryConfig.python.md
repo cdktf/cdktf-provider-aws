@@ -1,7 +1,3 @@
-# `aws_appstream_directory_config`
-
-Refer to the Terraform Registory for docs: [`aws_appstream_directory_config`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_directory_config).
-
 # `appstreamDirectoryConfig` Submodule <a name="`appstreamDirectoryConfig` Submodule" id="@cdktf/provider-aws.appstreamDirectoryConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

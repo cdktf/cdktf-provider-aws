@@ -1,7 +1,3 @@
-# `aws_s3_bucket_replication_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_s3_bucket_replication_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_replication_configuration).
-
 # `s3BucketReplicationConfiguration` Submodule <a name="`s3BucketReplicationConfiguration` Submodule" id="@cdktf/provider-aws.s3BucketReplicationConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

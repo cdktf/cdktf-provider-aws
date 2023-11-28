@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway_multicast_domain_association`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_multicast_domain_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway_multicast_domain_association).
-
 # `ec2TransitGatewayMulticastDomainAssociation` Submodule <a name="`ec2TransitGatewayMulticastDomainAssociation` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_verifiedaccess_trust_provider`
-
-Refer to the Terraform Registory for docs: [`aws_verifiedaccess_trust_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/verifiedaccess_trust_provider).
-
 # `verifiedaccessTrustProvider` Submodule <a name="`verifiedaccessTrustProvider` Submodule" id="@cdktf/provider-aws.verifiedaccessTrustProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

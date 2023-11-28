@@ -1,7 +1,3 @@
-# `data_aws_sesv2_dedicated_ip_pool`
-
-Refer to the Terraform Registory for docs: [`data_aws_sesv2_dedicated_ip_pool`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/sesv2_dedicated_ip_pool).
-
 # `dataAwsSesv2DedicatedIpPool` Submodule <a name="`dataAwsSesv2DedicatedIpPool` Submodule" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

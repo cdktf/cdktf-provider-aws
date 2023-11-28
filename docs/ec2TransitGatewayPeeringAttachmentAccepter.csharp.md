@@ -1,7 +1,3 @@
-# `aws_ec2_transit_gateway_peering_attachment_accepter`
-
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_peering_attachment_accepter`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ec2_transit_gateway_peering_attachment_accepter).
-
 # `ec2TransitGatewayPeeringAttachmentAccepter` Submodule <a name="`ec2TransitGatewayPeeringAttachmentAccepter` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

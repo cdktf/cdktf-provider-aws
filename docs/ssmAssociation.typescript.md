@@ -1,7 +1,3 @@
-# `aws_ssm_association`
-
-Refer to the Terraform Registory for docs: [`aws_ssm_association`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ssm_association).
-
 # `ssmAssociation` Submodule <a name="`ssmAssociation` Submodule" id="@cdktf/provider-aws.ssmAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

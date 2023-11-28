@@ -1,7 +1,3 @@
-# `aws_internet_gateway_attachment`
-
-Refer to the Terraform Registory for docs: [`aws_internet_gateway_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/internet_gateway_attachment).
-
 # `internetGatewayAttachment` Submodule <a name="`internetGatewayAttachment` Submodule" id="@cdktf/provider-aws.internetGatewayAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

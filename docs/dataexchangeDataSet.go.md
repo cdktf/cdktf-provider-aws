@@ -1,7 +1,3 @@
-# `aws_dataexchange_data_set`
-
-Refer to the Terraform Registory for docs: [`aws_dataexchange_data_set`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dataexchange_data_set).
-
 # `dataexchangeDataSet` Submodule <a name="`dataexchangeDataSet` Submodule" id="@cdktf/provider-aws.dataexchangeDataSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_glue_resource_policy`
-
-Refer to the Terraform Registory for docs: [`aws_glue_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/glue_resource_policy).
-
 # `glueResourcePolicy` Submodule <a name="`glueResourcePolicy` Submodule" id="@cdktf/provider-aws.glueResourcePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

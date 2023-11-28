@@ -1,7 +1,3 @@
-# `data_aws_iam_openid_connect_provider`
-
-Refer to the Terraform Registory for docs: [`data_aws_iam_openid_connect_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_openid_connect_provider).
-
 # `dataAwsIamOpenidConnectProvider` Submodule <a name="`dataAwsIamOpenidConnectProvider` Submodule" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

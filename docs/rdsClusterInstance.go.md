@@ -1,7 +1,3 @@
-# `aws_rds_cluster_instance`
-
-Refer to the Terraform Registory for docs: [`aws_rds_cluster_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/rds_cluster_instance).
-
 # `rdsClusterInstance` Submodule <a name="`rdsClusterInstance` Submodule" id="@cdktf/provider-aws.rdsClusterInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

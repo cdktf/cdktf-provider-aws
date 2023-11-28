@@ -1,7 +1,3 @@
-# `aws_ce_anomaly_monitor`
-
-Refer to the Terraform Registory for docs: [`aws_ce_anomaly_monitor`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ce_anomaly_monitor).
-
 # `ceAnomalyMonitor` Submodule <a name="`ceAnomalyMonitor` Submodule" id="@cdktf/provider-aws.ceAnomalyMonitor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_aws_sns_topic`
-
-Refer to the Terraform Registory for docs: [`data_aws_sns_topic`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/sns_topic).
-
 # `dataAwsSnsTopic` Submodule <a name="`dataAwsSnsTopic` Submodule" id="@cdktf/provider-aws.dataAwsSnsTopic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

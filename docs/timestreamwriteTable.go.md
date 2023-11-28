@@ -1,7 +1,3 @@
-# `aws_timestreamwrite_table`
-
-Refer to the Terraform Registory for docs: [`aws_timestreamwrite_table`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/timestreamwrite_table).
-
 # `timestreamwriteTable` Submodule <a name="`timestreamwriteTable` Submodule" id="@cdktf/provider-aws.timestreamwriteTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

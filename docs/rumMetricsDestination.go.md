@@ -1,7 +1,3 @@
-# `aws_rum_metrics_destination`
-
-Refer to the Terraform Registory for docs: [`aws_rum_metrics_destination`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/rum_metrics_destination).
-
 # `rumMetricsDestination` Submodule <a name="`rumMetricsDestination` Submodule" id="@cdktf/provider-aws.rumMetricsDestination"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

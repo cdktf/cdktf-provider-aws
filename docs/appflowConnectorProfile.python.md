@@ -1,7 +1,3 @@
-# `aws_appflow_connector_profile`
-
-Refer to the Terraform Registory for docs: [`aws_appflow_connector_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_connector_profile).
-
 # `appflowConnectorProfile` Submodule <a name="`appflowConnectorProfile` Submodule" id="@cdktf/provider-aws.appflowConnectorProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

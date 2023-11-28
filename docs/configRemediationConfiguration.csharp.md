@@ -1,7 +1,3 @@
-# `aws_config_remediation_configuration`
-
-Refer to the Terraform Registory for docs: [`aws_config_remediation_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/config_remediation_configuration).
-
 # `configRemediationConfiguration` Submodule <a name="`configRemediationConfiguration` Submodule" id="@cdktf/provider-aws.configRemediationConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

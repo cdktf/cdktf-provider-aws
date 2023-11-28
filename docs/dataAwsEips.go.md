@@ -1,7 +1,3 @@
-# `data_aws_eips`
-
-Refer to the Terraform Registory for docs: [`data_aws_eips`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/eips).
-
 # `dataAwsEips` Submodule <a name="`dataAwsEips` Submodule" id="@cdktf/provider-aws.dataAwsEips"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

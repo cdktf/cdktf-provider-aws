@@ -1,7 +1,3 @@
-# `data_aws_dms_replication_instance`
-
-Refer to the Terraform Registory for docs: [`data_aws_dms_replication_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/dms_replication_instance).
-
 # `dataAwsDmsReplicationInstance` Submodule <a name="`dataAwsDmsReplicationInstance` Submodule" id="@cdktf/provider-aws.dataAwsDmsReplicationInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

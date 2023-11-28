@@ -1,7 +1,3 @@
-# `aws_cloudcontrolapi_resource`
-
-Refer to the Terraform Registory for docs: [`aws_cloudcontrolapi_resource`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudcontrolapi_resource).
-
 # `cloudcontrolapiResource` Submodule <a name="`cloudcontrolapiResource` Submodule" id="@cdktf/provider-aws.cloudcontrolapiResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

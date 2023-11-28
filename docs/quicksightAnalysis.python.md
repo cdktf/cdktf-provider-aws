@@ -1,7 +1,3 @@
-# `aws_quicksight_analysis`
-
-Refer to the Terraform Registory for docs: [`aws_quicksight_analysis`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/quicksight_analysis).
-
 # `quicksightAnalysis` Submodule <a name="`quicksightAnalysis` Submodule" id="@cdktf/provider-aws.quicksightAnalysis"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

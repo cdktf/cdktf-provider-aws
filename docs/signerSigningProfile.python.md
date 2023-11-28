@@ -1,7 +1,3 @@
-# `aws_signer_signing_profile`
-
-Refer to the Terraform Registory for docs: [`aws_signer_signing_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/signer_signing_profile).
-
 # `signerSigningProfile` Submodule <a name="`signerSigningProfile` Submodule" id="@cdktf/provider-aws.signerSigningProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

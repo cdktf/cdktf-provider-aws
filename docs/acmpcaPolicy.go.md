@@ -1,7 +1,3 @@
-# `aws_acmpca_policy`
-
-Refer to the Terraform Registory for docs: [`aws_acmpca_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/acmpca_policy).
-
 # `acmpcaPolicy` Submodule <a name="`acmpcaPolicy` Submodule" id="@cdktf/provider-aws.acmpcaPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

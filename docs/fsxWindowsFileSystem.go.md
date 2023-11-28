@@ -1,7 +1,3 @@
-# `aws_fsx_windows_file_system`
-
-Refer to the Terraform Registory for docs: [`aws_fsx_windows_file_system`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/fsx_windows_file_system).
-
 # `fsxWindowsFileSystem` Submodule <a name="`fsxWindowsFileSystem` Submodule" id="@cdktf/provider-aws.fsxWindowsFileSystem"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

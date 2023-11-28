@@ -1,7 +1,3 @@
-# `data_aws_vpclattice_resource_policy`
-
-Refer to the Terraform Registory for docs: [`data_aws_vpclattice_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/vpclattice_resource_policy).
-
 # `dataAwsVpclatticeResourcePolicy` Submodule <a name="`dataAwsVpclatticeResourcePolicy` Submodule" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

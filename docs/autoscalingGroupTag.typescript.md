@@ -1,7 +1,3 @@
-# `aws_autoscaling_group_tag`
-
-Refer to the Terraform Registory for docs: [`aws_autoscaling_group_tag`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/autoscaling_group_tag).
-
 # `autoscalingGroupTag` Submodule <a name="`autoscalingGroupTag` Submodule" id="@cdktf/provider-aws.autoscalingGroupTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

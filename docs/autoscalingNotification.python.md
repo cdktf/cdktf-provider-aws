@@ -1,7 +1,3 @@
-# `aws_autoscaling_notification`
-
-Refer to the Terraform Registory for docs: [`aws_autoscaling_notification`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/autoscaling_notification).
-
 # `autoscalingNotification` Submodule <a name="`autoscalingNotification` Submodule" id="@cdktf/provider-aws.autoscalingNotification"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `aws_batch_job_queue`
-
-Refer to the Terraform Registory for docs: [`aws_batch_job_queue`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/batch_job_queue).
-
 # `batchJobQueue` Submodule <a name="`batchJobQueue` Submodule" id="@cdktf/provider-aws.batchJobQueue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

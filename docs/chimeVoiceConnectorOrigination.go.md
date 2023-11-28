@@ -1,7 +1,3 @@
-# `aws_chime_voice_connector_origination`
-
-Refer to the Terraform Registory for docs: [`aws_chime_voice_connector_origination`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/chime_voice_connector_origination).
-
 # `chimeVoiceConnectorOrigination` Submodule <a name="`chimeVoiceConnectorOrigination` Submodule" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

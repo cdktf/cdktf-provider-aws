@@ -1,7 +1,3 @@
-# `aws_ssm_document`
-
-Refer to the Terraform Registory for docs: [`aws_ssm_document`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ssm_document).
-
 # `ssmDocument` Submodule <a name="`ssmDocument` Submodule" id="@cdktf/provider-aws.ssmDocument"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

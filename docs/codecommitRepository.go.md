@@ -1,7 +1,3 @@
-# `aws_codecommit_repository`
-
-Refer to the Terraform Registory for docs: [`aws_codecommit_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codecommit_repository).
-
 # `codecommitRepository` Submodule <a name="`codecommitRepository` Submodule" id="@cdktf/provider-aws.codecommitRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

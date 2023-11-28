@@ -1,7 +1,3 @@
-# `data_aws_cognito_user_pool_signing_certificate`
-
-Refer to the Terraform Registory for docs: [`data_aws_cognito_user_pool_signing_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cognito_user_pool_signing_certificate).
-
 # `dataAwsCognitoUserPoolSigningCertificate` Submodule <a name="`dataAwsCognitoUserPoolSigningCertificate` Submodule" id="@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

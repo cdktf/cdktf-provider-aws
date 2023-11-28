@@ -1,7 +1,3 @@
-# `aws_timestreamwrite_database`
-
-Refer to the Terraform Registory for docs: [`aws_timestreamwrite_database`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/timestreamwrite_database).
-
 # `timestreamwriteDatabase` Submodule <a name="`timestreamwriteDatabase` Submodule" id="@cdktf/provider-aws.timestreamwriteDatabase"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

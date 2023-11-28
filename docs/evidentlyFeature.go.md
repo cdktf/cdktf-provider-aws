@@ -1,7 +1,3 @@
-# `aws_evidently_feature`
-
-Refer to the Terraform Registory for docs: [`aws_evidently_feature`](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/evidently_feature).
-
 # `evidentlyFeature` Submodule <a name="`evidentlyFeature` Submodule" id="@cdktf/provider-aws.evidentlyFeature"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
