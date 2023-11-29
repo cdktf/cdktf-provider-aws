@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance
+// https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface S3ControlAccessGrantsInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#account_id S3ControlAccessGrantsInstance#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#account_id S3ControlAccessGrantsInstance#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#tags S3ControlAccessGrantsInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#identity_center_arn S3ControlAccessGrantsInstance#identity_center_arn}
+  */
+  readonly identityCenterArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#tags S3ControlAccessGrantsInstance#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}
 */
 export class S3ControlAccessGrantsInstance extends cdktf.TerraformResource {
 
@@ -39,7 +43,7 @@ export class S3ControlAccessGrantsInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3ControlAccessGrantsInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3ControlAccessGrantsInstance to import
-  * @param importFromId The id of the existing S3ControlAccessGrantsInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3ControlAccessGrantsInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3ControlAccessGrantsInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +55,7 @@ export class S3ControlAccessGrantsInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +66,7 @@ export class S3ControlAccessGrantsInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3control_access_grants_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.27.0',
+        providerVersion: '5.28.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -74,6 +78,7 @@ export class S3ControlAccessGrantsInstance extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._identityCenterArn = config.identityCenterArn;
     this._tags = config.tags;
   }
 
@@ -112,6 +117,27 @@ export class S3ControlAccessGrantsInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // identity_center_application_arn - computed: true, optional: false, required: false
+  public get identityCenterApplicationArn() {
+    return this.getStringAttribute('identity_center_application_arn');
+  }
+
+  // identity_center_arn - computed: false, optional: true, required: false
+  private _identityCenterArn?: string; 
+  public get identityCenterArn() {
+    return this.getStringAttribute('identity_center_arn');
+  }
+  public set identityCenterArn(value: string) {
+    this._identityCenterArn = value;
+  }
+  public resetIdentityCenterArn() {
+    this._identityCenterArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityCenterArnInput() {
+    return this._identityCenterArn;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -141,6 +167,7 @@ export class S3ControlAccessGrantsInstance extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      identity_center_arn: cdktf.stringToTerraform(this._identityCenterArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }

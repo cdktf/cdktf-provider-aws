@@ -1006,6 +1006,7 @@ Object.defineProperty(exports, 's3BucketRequestPaymentConfiguration', { get: fun
 Object.defineProperty(exports, 's3BucketServerSideEncryptionConfiguration', { get: function () { return require('./s3-bucket-server-side-encryption-configuration'); } });
 Object.defineProperty(exports, 's3BucketVersioning', { get: function () { return require('./s3-bucket-versioning'); } });
 Object.defineProperty(exports, 's3BucketWebsiteConfiguration', { get: function () { return require('./s3-bucket-website-configuration'); } });
+Object.defineProperty(exports, 's3DirectoryBucket', { get: function () { return require('./s3-directory-bucket'); } });
 Object.defineProperty(exports, 's3Object', { get: function () { return require('./s3-object'); } });
 Object.defineProperty(exports, 's3ObjectCopy', { get: function () { return require('./s3-object-copy'); } });
 Object.defineProperty(exports, 's3ControlAccessGrant', { get: function () { return require('./s3control-access-grant'); } });
@@ -1724,6 +1725,7 @@ Object.defineProperty(exports, 'dataAwsS3Bucket', { get: function () { return re
 Object.defineProperty(exports, 'dataAwsS3BucketObject', { get: function () { return require('./data-aws-s3-bucket-object'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketObjects', { get: function () { return require('./data-aws-s3-bucket-objects'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketPolicy', { get: function () { return require('./data-aws-s3-bucket-policy'); } });
+Object.defineProperty(exports, 'dataAwsS3DirectoryBuckets', { get: function () { return require('./data-aws-s3-directory-buckets'); } });
 Object.defineProperty(exports, 'dataAwsS3Object', { get: function () { return require('./data-aws-s3-object'); } });
 Object.defineProperty(exports, 'dataAwsS3Objects', { get: function () { return require('./data-aws-s3-objects'); } });
 Object.defineProperty(exports, 'dataAwsS3ControlMultiRegionAccessPoint', { get: function () { return require('./data-aws-s3control-multi-region-access-point'); } });

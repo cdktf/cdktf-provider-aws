@@ -4,7 +4,7 @@
 
 ### AlbListenerRule <a name="AlbListenerRule" id="@cdktf/provider-aws.albListenerRule.AlbListenerRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule aws_alb_listener_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule aws_alb_listener_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListenerRule.AlbListenerRule.Initializer"></a>
 
@@ -471,7 +471,7 @@ The construct id used in the generated config for the AlbListenerRule to import.
 
 The id of the existing AlbListenerRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,14 +854,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#type AlbListenerRule#type}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#type AlbListenerRule#type}. |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.authenticateCognito">AuthenticateCognito</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito">AlbListenerRuleActionAuthenticateCognito</a></code> | authenticate_cognito block. |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.authenticateOidc">AuthenticateOidc</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc">AlbListenerRuleActionAuthenticateOidc</a></code> | authenticate_oidc block. |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.fixedResponse">FixedResponse</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse">AlbListenerRuleActionFixedResponse</a></code> | fixed_response block. |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.forward">Forward</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForward">AlbListenerRuleActionForward</a></code> | forward block. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#order AlbListenerRule#order}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#order AlbListenerRule#order}. |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.redirect">Redirect</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect">AlbListenerRuleActionRedirect</a></code> | redirect block. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#target_group_arn AlbListenerRule#target_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#target_group_arn AlbListenerRule#target_group_arn}. |
 
 ---
 
@@ -873,7 +873,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#type AlbListenerRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#type AlbListenerRule#type}.
 
 ---
 
@@ -887,7 +887,7 @@ AuthenticateCognito AlbListenerRuleActionAuthenticateCognito
 
 authenticate_cognito block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authenticate_cognito AlbListenerRule#authenticate_cognito}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authenticate_cognito AlbListenerRule#authenticate_cognito}
 
 ---
 
@@ -901,7 +901,7 @@ AuthenticateOidc AlbListenerRuleActionAuthenticateOidc
 
 authenticate_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authenticate_oidc AlbListenerRule#authenticate_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authenticate_oidc AlbListenerRule#authenticate_oidc}
 
 ---
 
@@ -915,7 +915,7 @@ FixedResponse AlbListenerRuleActionFixedResponse
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#fixed_response AlbListenerRule#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#fixed_response AlbListenerRule#fixed_response}
 
 ---
 
@@ -929,7 +929,7 @@ Forward AlbListenerRuleActionForward
 
 forward block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#forward AlbListenerRule#forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#forward AlbListenerRule#forward}
 
 ---
 
@@ -941,7 +941,7 @@ Order *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#order AlbListenerRule#order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#order AlbListenerRule#order}.
 
 ---
 
@@ -955,7 +955,7 @@ Redirect AlbListenerRuleActionRedirect
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#redirect AlbListenerRule#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#redirect AlbListenerRule#redirect}
 
 ---
 
@@ -967,7 +967,7 @@ TargetGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#target_group_arn AlbListenerRule#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#target_group_arn AlbListenerRule#target_group_arn}.
 
 ---
 
@@ -994,14 +994,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.userPoolArn">UserPoolArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_pool_arn AlbListenerRule#user_pool_arn}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.userPoolClientId">UserPoolClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_pool_client_id AlbListenerRule#user_pool_client_id}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.userPoolDomain">UserPoolDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_pool_domain AlbListenerRule#user_pool_domain}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.userPoolArn">UserPoolArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_pool_arn AlbListenerRule#user_pool_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.userPoolClientId">UserPoolClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_pool_client_id AlbListenerRule#user_pool_client_id}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.userPoolDomain">UserPoolDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_pool_domain AlbListenerRule#user_pool_domain}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}. |
 
 ---
 
@@ -1013,7 +1013,7 @@ UserPoolArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_pool_arn AlbListenerRule#user_pool_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_pool_arn AlbListenerRule#user_pool_arn}.
 
 ---
 
@@ -1025,7 +1025,7 @@ UserPoolClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_pool_client_id AlbListenerRule#user_pool_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_pool_client_id AlbListenerRule#user_pool_client_id}.
 
 ---
 
@@ -1037,7 +1037,7 @@ UserPoolDomain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_pool_domain AlbListenerRule#user_pool_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_pool_domain AlbListenerRule#user_pool_domain}.
 
 ---
 
@@ -1049,7 +1049,7 @@ AuthenticationRequestExtraParams *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}.
 
 ---
 
@@ -1061,7 +1061,7 @@ OnUnauthenticatedRequest *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}.
 
 ---
 
@@ -1085,7 +1085,7 @@ SessionCookieName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}.
 
 ---
 
@@ -1097,7 +1097,7 @@ SessionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}.
 
 ---
 
@@ -1127,17 +1127,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authorization_endpoint AlbListenerRule#authorization_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#client_id AlbListenerRule#client_id}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#client_secret AlbListenerRule#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#issuer AlbListenerRule#issuer}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.tokenEndpoint">TokenEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#token_endpoint AlbListenerRule#token_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.userInfoEndpoint">UserInfoEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_info_endpoint AlbListenerRule#user_info_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authorization_endpoint AlbListenerRule#authorization_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#client_id AlbListenerRule#client_id}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#client_secret AlbListenerRule#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#issuer AlbListenerRule#issuer}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.tokenEndpoint">TokenEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#token_endpoint AlbListenerRule#token_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.userInfoEndpoint">UserInfoEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_info_endpoint AlbListenerRule#user_info_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}. |
 
 ---
 
@@ -1149,7 +1149,7 @@ AuthorizationEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authorization_endpoint AlbListenerRule#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authorization_endpoint AlbListenerRule#authorization_endpoint}.
 
 ---
 
@@ -1161,7 +1161,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#client_id AlbListenerRule#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#client_id AlbListenerRule#client_id}.
 
 ---
 
@@ -1173,7 +1173,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#client_secret AlbListenerRule#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#client_secret AlbListenerRule#client_secret}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Issuer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#issuer AlbListenerRule#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#issuer AlbListenerRule#issuer}.
 
 ---
 
@@ -1197,7 +1197,7 @@ TokenEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#token_endpoint AlbListenerRule#token_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#token_endpoint AlbListenerRule#token_endpoint}.
 
 ---
 
@@ -1209,7 +1209,7 @@ UserInfoEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#user_info_endpoint AlbListenerRule#user_info_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#user_info_endpoint AlbListenerRule#user_info_endpoint}.
 
 ---
 
@@ -1221,7 +1221,7 @@ AuthenticationRequestExtraParams *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}.
 
 ---
 
@@ -1233,7 +1233,7 @@ OnUnauthenticatedRequest *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}.
 
 ---
 
@@ -1245,7 +1245,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#scope AlbListenerRule#scope}.
 
 ---
 
@@ -1257,7 +1257,7 @@ SessionCookieName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_cookie_name AlbListenerRule#session_cookie_name}.
 
 ---
 
@@ -1269,7 +1269,7 @@ SessionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#session_timeout AlbListenerRule#session_timeout}.
 
 ---
 
@@ -1291,9 +1291,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#content_type AlbListenerRule#content_type}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse.property.messageBody">MessageBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#message_body AlbListenerRule#message_body}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#content_type AlbListenerRule#content_type}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse.property.messageBody">MessageBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#message_body AlbListenerRule#message_body}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}. |
 
 ---
 
@@ -1305,7 +1305,7 @@ ContentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#content_type AlbListenerRule#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#content_type AlbListenerRule#content_type}.
 
 ---
 
@@ -1317,7 +1317,7 @@ MessageBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#message_body AlbListenerRule#message_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#message_body AlbListenerRule#message_body}.
 
 ---
 
@@ -1329,7 +1329,7 @@ StatusCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}.
 
 ---
 
@@ -1365,7 +1365,7 @@ TargetGroup interface{}
 
 target_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#target_group AlbListenerRule#target_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#target_group AlbListenerRule#target_group}
 
 ---
 
@@ -1379,7 +1379,7 @@ Stickiness AlbListenerRuleActionForwardStickiness
 
 stickiness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#stickiness AlbListenerRule#stickiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#stickiness AlbListenerRule#stickiness}
 
 ---
 
@@ -1400,8 +1400,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickiness.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#duration AlbListenerRule#duration}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickiness.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#enabled AlbListenerRule#enabled}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickiness.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#duration AlbListenerRule#duration}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickiness.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#enabled AlbListenerRule#enabled}. |
 
 ---
 
@@ -1413,7 +1413,7 @@ Duration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#duration AlbListenerRule#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#duration AlbListenerRule#duration}.
 
 ---
 
@@ -1425,7 +1425,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#enabled AlbListenerRule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#enabled AlbListenerRule#enabled}.
 
 ---
 
@@ -1446,8 +1446,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#arn AlbListenerRule#arn}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#weight AlbListenerRule#weight}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#arn AlbListenerRule#arn}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#weight AlbListenerRule#weight}. |
 
 ---
 
@@ -1459,7 +1459,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#arn AlbListenerRule#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#arn AlbListenerRule#arn}.
 
 ---
 
@@ -1471,7 +1471,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#weight AlbListenerRule#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#weight AlbListenerRule#weight}.
 
 ---
 
@@ -1496,12 +1496,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#host AlbListenerRule#host}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#path AlbListenerRule#path}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.port">Port</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#port AlbListenerRule#port}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#protocol AlbListenerRule#protocol}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#query AlbListenerRule#query}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#host AlbListenerRule#host}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#path AlbListenerRule#path}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.port">Port</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#port AlbListenerRule#port}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#protocol AlbListenerRule#protocol}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#query AlbListenerRule#query}. |
 
 ---
 
@@ -1513,7 +1513,7 @@ StatusCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#status_code AlbListenerRule#status_code}.
 
 ---
 
@@ -1525,7 +1525,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#host AlbListenerRule#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#host AlbListenerRule#host}.
 
 ---
 
@@ -1537,7 +1537,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#path AlbListenerRule#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#path AlbListenerRule#path}.
 
 ---
 
@@ -1549,7 +1549,7 @@ Port *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#port AlbListenerRule#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#port AlbListenerRule#port}.
 
 ---
 
@@ -1561,7 +1561,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#protocol AlbListenerRule#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#protocol AlbListenerRule#protocol}.
 
 ---
 
@@ -1573,7 +1573,7 @@ Query *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#query AlbListenerRule#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#query AlbListenerRule#query}.
 
 ---
 
@@ -1617,7 +1617,7 @@ HostHeader AlbListenerRuleConditionHostHeader
 
 host_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#host_header AlbListenerRule#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#host_header AlbListenerRule#host_header}
 
 ---
 
@@ -1631,7 +1631,7 @@ HttpHeader AlbListenerRuleConditionHttpHeader
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#http_header AlbListenerRule#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#http_header AlbListenerRule#http_header}
 
 ---
 
@@ -1645,7 +1645,7 @@ HttpRequestMethod AlbListenerRuleConditionHttpRequestMethod
 
 http_request_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#http_request_method AlbListenerRule#http_request_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#http_request_method AlbListenerRule#http_request_method}
 
 ---
 
@@ -1659,7 +1659,7 @@ PathPattern AlbListenerRuleConditionPathPattern
 
 path_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#path_pattern AlbListenerRule#path_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#path_pattern AlbListenerRule#path_pattern}
 
 ---
 
@@ -1673,7 +1673,7 @@ QueryString interface{}
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#query_string AlbListenerRule#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#query_string AlbListenerRule#query_string}
 
 ---
 
@@ -1687,7 +1687,7 @@ SourceIp AlbListenerRuleConditionSourceIp
 
 source_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#source_ip AlbListenerRule#source_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#source_ip AlbListenerRule#source_ip}
 
 ---
 
@@ -1707,7 +1707,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHostHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHostHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
 
 ---
 
@@ -1719,7 +1719,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
 
 ---
 
@@ -1740,8 +1740,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeader.property.httpHeaderName">HttpHeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#http_header_name AlbListenerRule#http_header_name}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeader.property.httpHeaderName">HttpHeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#http_header_name AlbListenerRule#http_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
 
 ---
 
@@ -1753,7 +1753,7 @@ HttpHeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#http_header_name AlbListenerRule#http_header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#http_header_name AlbListenerRule#http_header_name}.
 
 ---
 
@@ -1765,7 +1765,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
 
 ---
 
@@ -1785,7 +1785,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethod.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethod.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
 
 ---
 
@@ -1797,7 +1797,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
 
 ---
 
@@ -1817,7 +1817,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPattern.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPattern.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
 
 ---
 
@@ -1829,7 +1829,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
 
 ---
 
@@ -1850,8 +1850,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#value AlbListenerRule#value}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#key AlbListenerRule#key}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#value AlbListenerRule#value}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#key AlbListenerRule#key}. |
 
 ---
 
@@ -1863,7 +1863,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#value AlbListenerRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#value AlbListenerRule#value}.
 
 ---
 
@@ -1875,7 +1875,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#key AlbListenerRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#key AlbListenerRule#key}.
 
 ---
 
@@ -1895,7 +1895,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIp.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIp.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}. |
 
 ---
 
@@ -1907,7 +1907,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
 
 ---
 
@@ -1949,11 +1949,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistenerrule"
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.action">Action</a></code> | <code>interface{}</code> | action block. |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.condition">Condition</a></code> | <code>interface{}</code> | condition block. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#listener_arn AlbListenerRule#listener_arn}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#id AlbListenerRule#id}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#priority AlbListenerRule#priority}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#tags AlbListenerRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#tags_all AlbListenerRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#listener_arn AlbListenerRule#listener_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#id AlbListenerRule#id}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#priority AlbListenerRule#priority}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#tags AlbListenerRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#tags_all AlbListenerRule#tags_all}. |
 
 ---
 
@@ -2037,7 +2037,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#action AlbListenerRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#action AlbListenerRule#action}
 
 ---
 
@@ -2051,7 +2051,7 @@ Condition interface{}
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#condition AlbListenerRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#condition AlbListenerRule#condition}
 
 ---
 
@@ -2063,7 +2063,7 @@ ListenerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#listener_arn AlbListenerRule#listener_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#listener_arn AlbListenerRule#listener_arn}.
 
 ---
 
@@ -2075,7 +2075,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#id AlbListenerRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#id AlbListenerRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2090,7 +2090,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#priority AlbListenerRule#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#priority AlbListenerRule#priority}.
 
 ---
 
@@ -2102,7 +2102,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#tags AlbListenerRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#tags AlbListenerRule#tags}.
 
 ---
 
@@ -2114,7 +2114,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/alb_listener_rule#tags_all AlbListenerRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/alb_listener_rule#tags_all AlbListenerRule#tags_all}.
 
 ---
 

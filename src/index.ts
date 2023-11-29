@@ -1006,6 +1006,7 @@ export * as s3BucketRequestPaymentConfiguration from './s3-bucket-request-paymen
 export * as s3BucketServerSideEncryptionConfiguration from './s3-bucket-server-side-encryption-configuration';
 export * as s3BucketVersioning from './s3-bucket-versioning';
 export * as s3BucketWebsiteConfiguration from './s3-bucket-website-configuration';
+export * as s3DirectoryBucket from './s3-directory-bucket';
 export * as s3Object from './s3-object';
 export * as s3ObjectCopy from './s3-object-copy';
 export * as s3ControlAccessGrant from './s3control-access-grant';
@@ -1724,6 +1725,7 @@ export * as dataAwsS3Bucket from './data-aws-s3-bucket';
 export * as dataAwsS3BucketObject from './data-aws-s3-bucket-object';
 export * as dataAwsS3BucketObjects from './data-aws-s3-bucket-objects';
 export * as dataAwsS3BucketPolicy from './data-aws-s3-bucket-policy';
+export * as dataAwsS3DirectoryBuckets from './data-aws-s3-directory-buckets';
 export * as dataAwsS3Object from './data-aws-s3-object';
 export * as dataAwsS3Objects from './data-aws-s3-objects';
 export * as dataAwsS3ControlMultiRegionAccessPoint from './data-aws-s3control-multi-region-access-point';

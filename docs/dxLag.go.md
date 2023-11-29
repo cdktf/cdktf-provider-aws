@@ -4,7 +4,7 @@
 
 ### DxLag <a name="DxLag" id="@cdktf/provider-aws.dxLag.DxLag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag aws_dx_lag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag aws_dx_lag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxLag.DxLag.Initializer"></a>
 
@@ -459,7 +459,7 @@ The construct id used in the generated config for the DxLag to import.
 
 The id of the existing DxLag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,15 +934,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxlag"
 | <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.connectionsBandwidth">ConnectionsBandwidth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#connections_bandwidth DxLag#connections_bandwidth}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#location DxLag#location}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#name DxLag#name}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#connection_id DxLag#connection_id}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#force_destroy DxLag#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#id DxLag#id}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#provider_name DxLag#provider_name}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#tags DxLag#tags}. |
-| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#tags_all DxLag#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.connectionsBandwidth">ConnectionsBandwidth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#connections_bandwidth DxLag#connections_bandwidth}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#location DxLag#location}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#name DxLag#name}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#connection_id DxLag#connection_id}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#force_destroy DxLag#force_destroy}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#id DxLag#id}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#provider_name DxLag#provider_name}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#tags DxLag#tags}. |
+| <code><a href="#@cdktf/provider-aws.dxLag.DxLagConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#tags_all DxLag#tags_all}. |
 
 ---
 
@@ -1024,7 +1024,7 @@ ConnectionsBandwidth *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#connections_bandwidth DxLag#connections_bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#connections_bandwidth DxLag#connections_bandwidth}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#location DxLag#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#location DxLag#location}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#name DxLag#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#name DxLag#name}.
 
 ---
 
@@ -1060,7 +1060,7 @@ ConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#connection_id DxLag#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#connection_id DxLag#connection_id}.
 
 ---
 
@@ -1072,7 +1072,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#force_destroy DxLag#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#force_destroy DxLag#force_destroy}.
 
 ---
 
@@ -1084,7 +1084,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#id DxLag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#id DxLag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1099,7 +1099,7 @@ ProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#provider_name DxLag#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#provider_name DxLag#provider_name}.
 
 ---
 
@@ -1111,7 +1111,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#tags DxLag#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#tags DxLag#tags}.
 
 ---
 
@@ -1123,7 +1123,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dx_lag#tags_all DxLag#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/dx_lag#tags_all DxLag#tags_all}.
 
 ---
 
