@@ -4,12 +4,12 @@
 
 ### DocdbEventSubscription <a name="DocdbEventSubscription" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription aws_docdb_event_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription aws_docdb_event_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.NewDocdbEventSubscription(scope Construct, id *string, config DocdbEventSubscriptionConfig) DocdbEventSubscription
 ```
@@ -411,7 +411,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.DocdbEventSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.DocdbEventSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ docdbeventsubscription.DocdbEventSubscription_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.DocdbEventSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ docdbeventsubscription.DocdbEventSubscription_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.DocdbEventSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -500,7 +500,7 @@ The construct id used in the generated config for the DocdbEventSubscription to 
 
 The id of the existing DocdbEventSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 &docdbeventsubscription.DocdbEventSubscriptionConfig {
 	Connection: interface{},
@@ -984,7 +984,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
 	SourceType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.docdbEventSubscription.DocdbEventSubscriptionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts,
 }
 ```
 
@@ -999,16 +999,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
 | <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.snsTopicArn">SnsTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#sns_topic_arn DocdbEventSubscription#sns_topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#enabled DocdbEventSubscription#enabled}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.eventCategories">EventCategories</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#event_categories DocdbEventSubscription#event_categories}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#id DocdbEventSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#name DocdbEventSubscription#name}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#name_prefix DocdbEventSubscription#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.sourceIds">SourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#source_ids DocdbEventSubscription#source_ids}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#source_type DocdbEventSubscription#source_type}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#tags DocdbEventSubscription#tags}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#tags_all DocdbEventSubscription#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.snsTopicArn">SnsTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#sns_topic_arn DocdbEventSubscription#sns_topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#enabled DocdbEventSubscription#enabled}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.eventCategories">EventCategories</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#event_categories DocdbEventSubscription#event_categories}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#id DocdbEventSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#name DocdbEventSubscription#name}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#name_prefix DocdbEventSubscription#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.sourceIds">SourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#source_ids DocdbEventSubscription#source_ids}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#source_type DocdbEventSubscription#source_type}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#tags DocdbEventSubscription#tags}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#tags_all DocdbEventSubscription#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts">DocdbEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1091,7 +1091,7 @@ SnsTopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#sns_topic_arn DocdbEventSubscription#sns_topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#sns_topic_arn DocdbEventSubscription#sns_topic_arn}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#enabled DocdbEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#enabled DocdbEventSubscription#enabled}.
 
 ---
 
@@ -1115,7 +1115,7 @@ EventCategories *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#event_categories DocdbEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#event_categories DocdbEventSubscription#event_categories}.
 
 ---
 
@@ -1127,7 +1127,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#id DocdbEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#id DocdbEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1142,7 +1142,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#name DocdbEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#name DocdbEventSubscription#name}.
 
 ---
 
@@ -1154,7 +1154,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#name_prefix DocdbEventSubscription#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#name_prefix DocdbEventSubscription#name_prefix}.
 
 ---
 
@@ -1166,7 +1166,7 @@ SourceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#source_ids DocdbEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#source_ids DocdbEventSubscription#source_ids}.
 
 ---
 
@@ -1178,7 +1178,7 @@ SourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#source_type DocdbEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#source_type DocdbEventSubscription#source_type}.
 
 ---
 
@@ -1190,7 +1190,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#tags DocdbEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#tags DocdbEventSubscription#tags}.
 
 ---
 
@@ -1202,7 +1202,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#tags_all DocdbEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#tags_all DocdbEventSubscription#tags_all}.
 
 ---
 
@@ -1216,7 +1216,7 @@ Timeouts DocdbEventSubscriptionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#timeouts DocdbEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#timeouts DocdbEventSubscription#timeouts}
 
 ---
 
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 &docdbeventsubscription.DocdbEventSubscriptionTimeouts {
 	Create: *string,
@@ -1238,9 +1238,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#create DocdbEventSubscription#create}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#delete DocdbEventSubscription#delete}. |
-| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#update DocdbEventSubscription#update}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#create DocdbEventSubscription#create}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#delete DocdbEventSubscription#delete}. |
+| <code><a href="#@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#update DocdbEventSubscription#update}. |
 
 ---
 
@@ -1252,7 +1252,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#create DocdbEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#create DocdbEventSubscription#create}.
 
 ---
 
@@ -1264,7 +1264,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#delete DocdbEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#delete DocdbEventSubscription#delete}.
 
 ---
 
@@ -1276,7 +1276,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_event_subscription#update DocdbEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_event_subscription#update DocdbEventSubscription#update}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.NewDocdbEventSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocdbEventSubscriptionTimeoutsOutputReference
 ```

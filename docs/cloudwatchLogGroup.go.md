@@ -4,12 +4,12 @@
 
 ### CloudwatchLogGroup <a name="CloudwatchLogGroup" id="@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchloggroup"
 
 cloudwatchloggroup.NewCloudwatchLogGroup(scope Construct, id *string, config CloudwatchLogGroupConfig) CloudwatchLogGroup
 ```
@@ -384,7 +384,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchloggroup"
 
 cloudwatchloggroup.CloudwatchLogGroup_IsConstruct(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchloggroup"
 
 cloudwatchloggroup.CloudwatchLogGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ cloudwatchloggroup.CloudwatchLogGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchloggroup"
 
 cloudwatchloggroup.CloudwatchLogGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ cloudwatchloggroup.CloudwatchLogGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchloggroup"
 
 cloudwatchloggroup.CloudwatchLogGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -473,7 +473,7 @@ The construct id used in the generated config for the CloudwatchLogGroup to impo
 
 The id of the existing CloudwatchLogGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchloggroup"
 
 &cloudwatchloggroup.CloudwatchLogGroupConfig {
 	Connection: interface{},
@@ -892,14 +892,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchloggroup"
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}. |
 
 ---
 
@@ -981,7 +981,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +996,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}.
 
 ---
 
@@ -1020,7 +1020,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}.
 
 ---
 
@@ -1032,7 +1032,7 @@ RetentionInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}.
 
 ---
 
@@ -1044,7 +1044,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}.
 
 ---
 
@@ -1068,7 +1068,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}.
 
 ---
 

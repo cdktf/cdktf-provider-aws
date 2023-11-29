@@ -4,12 +4,12 @@
 
 ### DetectiveOrganizationConfiguration <a name="DetectiveOrganizationConfiguration" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration aws_detective_organization_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration aws_detective_organization_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.NewDetectiveOrganizationConfiguration(scope Construct, id *string, config DetectiveOrganizationConfigurationConfig) DetectiveOrganizationConfiguration
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 detectiveorganizationconfiguration.DetectiveOrganizationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -424,7 +424,7 @@ The construct id used in the generated config for the DetectiveOrganizationConfi
 
 The id of the existing DetectiveOrganizationConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationconfiguration"
 
 &detectiveorganizationconfiguration.DetectiveOrganizationConfigurationConfig {
 	Connection: interface{},
@@ -717,9 +717,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationconf
 | <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.autoEnable">AutoEnable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration#auto_enable DetectiveOrganizationConfiguration#auto_enable}. |
-| <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.graphArn">GraphArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration#graph_arn DetectiveOrganizationConfiguration#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration#id DetectiveOrganizationConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.autoEnable">AutoEnable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration#auto_enable DetectiveOrganizationConfiguration#auto_enable}. |
+| <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.graphArn">GraphArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration#graph_arn DetectiveOrganizationConfiguration#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveOrganizationConfiguration.DetectiveOrganizationConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration#id DetectiveOrganizationConfiguration#id}. |
 
 ---
 
@@ -801,7 +801,7 @@ AutoEnable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration#auto_enable DetectiveOrganizationConfiguration#auto_enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration#auto_enable DetectiveOrganizationConfiguration#auto_enable}.
 
 ---
 
@@ -813,7 +813,7 @@ GraphArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration#graph_arn DetectiveOrganizationConfiguration#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration#graph_arn DetectiveOrganizationConfiguration#graph_arn}.
 
 ---
 
@@ -825,7 +825,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/detective_organization_configuration#id DetectiveOrganizationConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/detective_organization_configuration#id DetectiveOrganizationConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

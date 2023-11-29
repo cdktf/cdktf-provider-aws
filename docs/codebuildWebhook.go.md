@@ -4,12 +4,12 @@
 
 ### CodebuildWebhook <a name="CodebuildWebhook" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhook(scope Construct, id *string, config CodebuildWebhookConfig) CodebuildWebhook
 ```
@@ -369,7 +369,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ codebuildwebhook.CodebuildWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ codebuildwebhook.CodebuildWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -458,7 +458,7 @@ The construct id used in the generated config for the CodebuildWebhook to import
 
 The id of the existing CodebuildWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookConfig {
 	Connection: interface{},
@@ -830,11 +830,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.projectName">ProjectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.branchFilter">BranchFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.buildType">BuildType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.projectName">ProjectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.branchFilter">BranchFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.buildType">BuildType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}. |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.filterGroup">FilterGroup</a></code> | <code>interface{}</code> | filter_group block. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}. |
 
 ---
 
@@ -916,7 +916,7 @@ ProjectName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}.
 
 ---
 
@@ -928,7 +928,7 @@ BranchFilter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}.
 
 ---
 
@@ -940,7 +940,7 @@ BuildType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}.
 
 ---
 
@@ -954,7 +954,7 @@ FilterGroup interface{}
 
 filter_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
 
 ---
 
@@ -966,7 +966,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookFilterGroup {
 	Filter: interface{},
@@ -1003,7 +1003,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
 
 ---
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookFilterGroupFilter {
 	Pattern: *string,
@@ -1025,9 +1025,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.excludeMatchedPattern">ExcludeMatchedPattern</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.excludeMatchedPattern">ExcludeMatchedPattern</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}. |
 
 ---
 
@@ -1039,7 +1039,7 @@ Pattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}.
 
 ---
 
@@ -1063,7 +1063,7 @@ ExcludeMatchedPattern interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildWebhookFilterGroupFilterList
 ```
@@ -1217,7 +1217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildWebhookFilterGroupFilterOutputReference
 ```
@@ -1557,7 +1557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildWebhookFilterGroupList
 ```
@@ -1700,7 +1700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildWebhookFilterGroupOutputReference
 ```

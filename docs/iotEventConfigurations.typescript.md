@@ -4,7 +4,7 @@
 
 ### IotEventConfigurations <a name="IotEventConfigurations" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_event_configurations aws_iot_event_configurations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/iot_event_configurations aws_iot_event_configurations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer"></a>
 
@@ -424,7 +424,7 @@ The construct id used in the generated config for the IotEventConfigurations to 
 
 The id of the existing IotEventConfigurations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_event_configurations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/iot_event_configurations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -684,8 +684,8 @@ const iotEventConfigurationsConfig: iotEventConfigurations.IotEventConfiguration
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.eventConfigurations">eventConfigurations</a></code> | <code>{[ key: string ]: boolean \| cdktf.IResolvable}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}. |
-| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.eventConfigurations">eventConfigurations</a></code> | <code>{[ key: string ]: boolean \| cdktf.IResolvable}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}. |
 
 ---
 
@@ -767,7 +767,7 @@ public readonly eventConfigurations: {[ key: string ]: boolean | IResolvable};
 
 - *Type:* {[ key: string ]: boolean | cdktf.IResolvable}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}.
 
 ---
 
@@ -779,7 +779,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

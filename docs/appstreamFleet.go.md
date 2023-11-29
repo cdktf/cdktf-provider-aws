@@ -4,12 +4,12 @@
 
 ### AppstreamFleet <a name="AppstreamFleet" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet aws_appstream_fleet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet aws_appstream_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleet(scope Construct, id *string, config AppstreamFleetConfig) AppstreamFleet
 ```
@@ -479,7 +479,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ appstreamfleet.AppstreamFleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ appstreamfleet.AppstreamFleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.AppstreamFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -568,7 +568,7 @@ The construct id used in the generated config for the AppstreamFleet to import.
 
 The id of the existing AppstreamFleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1219,7 +1219,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetComputeCapacity {
 	DesiredInstances: *f64,
@@ -1230,7 +1230,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity.property.desiredInstances">DesiredInstances</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#desired_instances AppstreamFleet#desired_instances}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity.property.desiredInstances">DesiredInstances</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#desired_instances AppstreamFleet#desired_instances}. |
 
 ---
 
@@ -1242,7 +1242,7 @@ DesiredInstances *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#desired_instances AppstreamFleet#desired_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#desired_instances AppstreamFleet#desired_instances}.
 
 ---
 
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetConfig {
 	Connection: interface{},
@@ -1261,13 +1261,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ComputeCapacity: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamFleet.AppstreamFleetComputeCapacity,
+	ComputeCapacity: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamFleet.AppstreamFleetComputeCapacity,
 	InstanceType: *string,
 	Name: *string,
 	Description: *string,
 	DisconnectTimeoutInSeconds: *f64,
 	DisplayName: *string,
-	DomainJoinInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamFleet.AppstreamFleetDomainJoinInfo,
+	DomainJoinInfo: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamFleet.AppstreamFleetDomainJoinInfo,
 	EnableDefaultInternetAccess: interface{},
 	FleetType: *string,
 	IamRoleArn: *string,
@@ -1279,7 +1279,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 	StreamView: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamFleet.AppstreamFleetVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamFleet.AppstreamFleetVpcConfig,
 }
 ```
 
@@ -1295,23 +1295,23 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.computeCapacity">ComputeCapacity</a></code> | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity">AppstreamFleetComputeCapacity</a></code> | compute_capacity block. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#instance_type AppstreamFleet#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#name AppstreamFleet#name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#description AppstreamFleet#description}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.disconnectTimeoutInSeconds">DisconnectTimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#disconnect_timeout_in_seconds AppstreamFleet#disconnect_timeout_in_seconds}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#display_name AppstreamFleet#display_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#instance_type AppstreamFleet#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#name AppstreamFleet#name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#description AppstreamFleet#description}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.disconnectTimeoutInSeconds">DisconnectTimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#disconnect_timeout_in_seconds AppstreamFleet#disconnect_timeout_in_seconds}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#display_name AppstreamFleet#display_name}. |
 | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.domainJoinInfo">DomainJoinInfo</a></code> | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo">AppstreamFleetDomainJoinInfo</a></code> | domain_join_info block. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.enableDefaultInternetAccess">EnableDefaultInternetAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#enable_default_internet_access AppstreamFleet#enable_default_internet_access}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.fleetType">FleetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#fleet_type AppstreamFleet#fleet_type}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#iam_role_arn AppstreamFleet#iam_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#id AppstreamFleet#id}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.idleDisconnectTimeoutInSeconds">IdleDisconnectTimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#idle_disconnect_timeout_in_seconds AppstreamFleet#idle_disconnect_timeout_in_seconds}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.imageArn">ImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#image_arn AppstreamFleet#image_arn}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#image_name AppstreamFleet#image_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.maxUserDurationInSeconds">MaxUserDurationInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#max_user_duration_in_seconds AppstreamFleet#max_user_duration_in_seconds}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.streamView">StreamView</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#stream_view AppstreamFleet#stream_view}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#tags AppstreamFleet#tags}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#tags_all AppstreamFleet#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.enableDefaultInternetAccess">EnableDefaultInternetAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#enable_default_internet_access AppstreamFleet#enable_default_internet_access}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.fleetType">FleetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#fleet_type AppstreamFleet#fleet_type}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#iam_role_arn AppstreamFleet#iam_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#id AppstreamFleet#id}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.idleDisconnectTimeoutInSeconds">IdleDisconnectTimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#idle_disconnect_timeout_in_seconds AppstreamFleet#idle_disconnect_timeout_in_seconds}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.imageArn">ImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#image_arn AppstreamFleet#image_arn}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#image_name AppstreamFleet#image_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.maxUserDurationInSeconds">MaxUserDurationInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#max_user_duration_in_seconds AppstreamFleet#max_user_duration_in_seconds}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.streamView">StreamView</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#stream_view AppstreamFleet#stream_view}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#tags AppstreamFleet#tags}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#tags_all AppstreamFleet#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig.property.vpcConfig">VpcConfig</a></code> | <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig">AppstreamFleetVpcConfig</a></code> | vpc_config block. |
 
 ---
@@ -1396,7 +1396,7 @@ ComputeCapacity AppstreamFleetComputeCapacity
 
 compute_capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#compute_capacity AppstreamFleet#compute_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#compute_capacity AppstreamFleet#compute_capacity}
 
 ---
 
@@ -1408,7 +1408,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#instance_type AppstreamFleet#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#instance_type AppstreamFleet#instance_type}.
 
 ---
 
@@ -1420,7 +1420,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#name AppstreamFleet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#name AppstreamFleet#name}.
 
 ---
 
@@ -1432,7 +1432,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#description AppstreamFleet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#description AppstreamFleet#description}.
 
 ---
 
@@ -1444,7 +1444,7 @@ DisconnectTimeoutInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#disconnect_timeout_in_seconds AppstreamFleet#disconnect_timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#disconnect_timeout_in_seconds AppstreamFleet#disconnect_timeout_in_seconds}.
 
 ---
 
@@ -1456,7 +1456,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#display_name AppstreamFleet#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#display_name AppstreamFleet#display_name}.
 
 ---
 
@@ -1470,7 +1470,7 @@ DomainJoinInfo AppstreamFleetDomainJoinInfo
 
 domain_join_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#domain_join_info AppstreamFleet#domain_join_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#domain_join_info AppstreamFleet#domain_join_info}
 
 ---
 
@@ -1482,7 +1482,7 @@ EnableDefaultInternetAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#enable_default_internet_access AppstreamFleet#enable_default_internet_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#enable_default_internet_access AppstreamFleet#enable_default_internet_access}.
 
 ---
 
@@ -1494,7 +1494,7 @@ FleetType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#fleet_type AppstreamFleet#fleet_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#fleet_type AppstreamFleet#fleet_type}.
 
 ---
 
@@ -1506,7 +1506,7 @@ IamRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#iam_role_arn AppstreamFleet#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#iam_role_arn AppstreamFleet#iam_role_arn}.
 
 ---
 
@@ -1518,7 +1518,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#id AppstreamFleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#id AppstreamFleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1533,7 +1533,7 @@ IdleDisconnectTimeoutInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#idle_disconnect_timeout_in_seconds AppstreamFleet#idle_disconnect_timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#idle_disconnect_timeout_in_seconds AppstreamFleet#idle_disconnect_timeout_in_seconds}.
 
 ---
 
@@ -1545,7 +1545,7 @@ ImageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#image_arn AppstreamFleet#image_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#image_arn AppstreamFleet#image_arn}.
 
 ---
 
@@ -1557,7 +1557,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#image_name AppstreamFleet#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#image_name AppstreamFleet#image_name}.
 
 ---
 
@@ -1569,7 +1569,7 @@ MaxUserDurationInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#max_user_duration_in_seconds AppstreamFleet#max_user_duration_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#max_user_duration_in_seconds AppstreamFleet#max_user_duration_in_seconds}.
 
 ---
 
@@ -1581,7 +1581,7 @@ StreamView *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#stream_view AppstreamFleet#stream_view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#stream_view AppstreamFleet#stream_view}.
 
 ---
 
@@ -1593,7 +1593,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#tags AppstreamFleet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#tags AppstreamFleet#tags}.
 
 ---
 
@@ -1605,7 +1605,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#tags_all AppstreamFleet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#tags_all AppstreamFleet#tags_all}.
 
 ---
 
@@ -1619,7 +1619,7 @@ VpcConfig AppstreamFleetVpcConfig
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#vpc_config AppstreamFleet#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#vpc_config AppstreamFleet#vpc_config}
 
 ---
 
@@ -1628,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetDomainJoinInfo {
 	DirectoryName: *string,
@@ -1640,8 +1640,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo.property.directoryName">DirectoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#directory_name AppstreamFleet#directory_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo.property.organizationalUnitDistinguishedName">OrganizationalUnitDistinguishedName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#organizational_unit_distinguished_name AppstreamFleet#organizational_unit_distinguished_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo.property.directoryName">DirectoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#directory_name AppstreamFleet#directory_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo.property.organizationalUnitDistinguishedName">OrganizationalUnitDistinguishedName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#organizational_unit_distinguished_name AppstreamFleet#organizational_unit_distinguished_name}. |
 
 ---
 
@@ -1653,7 +1653,7 @@ DirectoryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#directory_name AppstreamFleet#directory_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#directory_name AppstreamFleet#directory_name}.
 
 ---
 
@@ -1665,7 +1665,7 @@ OrganizationalUnitDistinguishedName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#organizational_unit_distinguished_name AppstreamFleet#organizational_unit_distinguished_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#organizational_unit_distinguished_name AppstreamFleet#organizational_unit_distinguished_name}.
 
 ---
 
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 &appstreamfleet.AppstreamFleetVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1686,8 +1686,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#security_group_ids AppstreamFleet#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#subnet_ids AppstreamFleet#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#security_group_ids AppstreamFleet#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#subnet_ids AppstreamFleet#subnet_ids}. |
 
 ---
 
@@ -1699,7 +1699,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#security_group_ids AppstreamFleet#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#security_group_ids AppstreamFleet#security_group_ids}.
 
 ---
 
@@ -1711,7 +1711,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_fleet#subnet_ids AppstreamFleet#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_fleet#subnet_ids AppstreamFleet#subnet_ids}.
 
 ---
 
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleetComputeCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamFleetComputeCapacityOutputReference
 ```
@@ -2026,7 +2026,7 @@ func InternalValue() AppstreamFleetComputeCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleetDomainJoinInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamFleetDomainJoinInfoOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() AppstreamFleetDomainJoinInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamfleet"
 
 appstreamfleet.NewAppstreamFleetVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamFleetVpcConfigOutputReference
 ```

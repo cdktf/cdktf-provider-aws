@@ -4,12 +4,12 @@
 
 ### DataAwsWorkspacesDirectory <a name="DataAwsWorkspacesDirectory" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory aws_workspaces_directory}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory aws_workspaces_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectory(scope Construct, id *string, config DataAwsWorkspacesDirectoryConfig) DataAwsWorkspacesDirectory
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataAwsWorkspacesDirectory
 
 The id of the existing DataAwsWorkspacesDirectory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryConfig {
 	Connection: interface{},
@@ -784,9 +784,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirector
 | <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory#directory_id DataAwsWorkspacesDirectory#directory_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory#id DataAwsWorkspacesDirectory#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory#tags DataAwsWorkspacesDirectory#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory#directory_id DataAwsWorkspacesDirectory#directory_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory#id DataAwsWorkspacesDirectory#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory#tags DataAwsWorkspacesDirectory#tags}. |
 
 ---
 
@@ -868,7 +868,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory#directory_id DataAwsWorkspacesDirectory#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory#directory_id DataAwsWorkspacesDirectory#directory_id}.
 
 ---
 
@@ -880,7 +880,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory#id DataAwsWorkspacesDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory#id DataAwsWorkspacesDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -895,7 +895,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/workspaces_directory#tags DataAwsWorkspacesDirectory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/workspaces_directory#tags DataAwsWorkspacesDirectory#tags}.
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectorySelfServicePermissions {
 
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirector
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceAccessProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryWorkspaceAccessProperties {
 
@@ -930,7 +930,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirector
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryWorkspaceCreationProperties {
 
@@ -945,7 +945,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirector
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectorySelfServicePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectorySelfServicePermissionsList
 ```
@@ -1077,7 +1077,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectorySelfServicePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference
 ```
@@ -1399,7 +1399,7 @@ func InternalValue() DataAwsWorkspacesDirectorySelfServicePermissions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList
 ```
@@ -1531,7 +1531,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference
 ```
@@ -1886,7 +1886,7 @@ func InternalValue() DataAwsWorkspacesDirectoryWorkspaceAccessProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList
 ```
@@ -2018,7 +2018,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsworkspacesdirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 ```

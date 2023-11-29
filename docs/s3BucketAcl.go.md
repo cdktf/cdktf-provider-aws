@@ -4,12 +4,12 @@
 
 ### S3BucketAcl <a name="S3BucketAcl" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl aws_s3_bucket_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl aws_s3_bucket_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAcl(scope Construct, id *string, config S3BucketAclConfig) S3BucketAcl
 ```
@@ -369,7 +369,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ s3bucketacl.S3BucketAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ s3bucketacl.S3BucketAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -458,7 +458,7 @@ The construct id used in the generated config for the S3BucketAcl to import.
 
 The id of the existing S3BucketAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,10 +768,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicy {
-	Owner: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketAcl.S3BucketAclAccessControlPolicyOwner,
+	Owner: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner,
 	Grant: interface{},
 }
 ```
@@ -795,7 +795,7 @@ Owner S3BucketAclAccessControlPolicyOwner
 
 owner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#owner S3BucketAcl#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#owner S3BucketAcl#owner}
 
 ---
 
@@ -809,7 +809,7 @@ Grant interface{}
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#grant S3BucketAcl#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#grant S3BucketAcl#grant}
 
 ---
 
@@ -818,11 +818,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicyGrant {
 	Permission: *string,
-	Grantee: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee,
+	Grantee: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee,
 }
 ```
 
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#permission S3BucketAcl#permission}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#permission S3BucketAcl#permission}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant.property.grantee">Grantee</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee">S3BucketAclAccessControlPolicyGrantGrantee</a></code> | grantee block. |
 
 ---
@@ -843,7 +843,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#permission S3BucketAcl#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#permission S3BucketAcl#permission}.
 
 ---
 
@@ -857,7 +857,7 @@ Grantee S3BucketAclAccessControlPolicyGrantGrantee
 
 grantee block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#grantee S3BucketAcl#grantee}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#grantee S3BucketAcl#grantee}
 
 ---
 
@@ -866,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicyGrantGrantee {
 	Type: *string,
@@ -880,10 +880,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#type S3BucketAcl#type}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#email_address S3BucketAcl#email_address}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#uri S3BucketAcl#uri}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#type S3BucketAcl#type}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#email_address S3BucketAcl#email_address}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#uri S3BucketAcl#uri}. |
 
 ---
 
@@ -895,7 +895,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#type S3BucketAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#type S3BucketAcl#type}.
 
 ---
 
@@ -907,7 +907,7 @@ EmailAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#email_address S3BucketAcl#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#email_address S3BucketAcl#email_address}.
 
 ---
 
@@ -919,7 +919,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -934,7 +934,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#uri S3BucketAcl#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#uri S3BucketAcl#uri}.
 
 ---
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicyOwner {
 	Id: *string,
@@ -955,8 +955,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#display_name S3BucketAcl#display_name}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#display_name S3BucketAcl#display_name}. |
 
 ---
 
@@ -968,7 +968,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#display_name S3BucketAcl#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#display_name S3BucketAcl#display_name}.
 
 ---
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclConfig {
 	Connection: interface{},
@@ -1003,7 +1003,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	AccessControlPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketAcl.S3BucketAclAccessControlPolicy,
+	AccessControlPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketAcl.S3BucketAclAccessControlPolicy,
 	Acl: *string,
 	ExpectedBucketOwner: *string,
 	Id: *string,
@@ -1021,11 +1021,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#bucket S3BucketAcl#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#bucket S3BucketAcl#bucket}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.accessControlPolicy">AccessControlPolicy</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicy">S3BucketAclAccessControlPolicy</a></code> | access_control_policy block. |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.acl">Acl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#acl S3BucketAcl#acl}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#expected_bucket_owner S3BucketAcl#expected_bucket_owner}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.acl">Acl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#acl S3BucketAcl#acl}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#expected_bucket_owner S3BucketAcl#expected_bucket_owner}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}. |
 
 ---
 
@@ -1107,7 +1107,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#bucket S3BucketAcl#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#bucket S3BucketAcl#bucket}.
 
 ---
 
@@ -1121,7 +1121,7 @@ AccessControlPolicy S3BucketAclAccessControlPolicy
 
 access_control_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#access_control_policy S3BucketAcl#access_control_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#access_control_policy S3BucketAcl#access_control_policy}
 
 ---
 
@@ -1133,7 +1133,7 @@ Acl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#acl S3BucketAcl#acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#acl S3BucketAcl#acl}.
 
 ---
 
@@ -1145,7 +1145,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#expected_bucket_owner S3BucketAcl#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#expected_bucket_owner S3BucketAcl#expected_bucket_owner}.
 
 ---
 
@@ -1157,7 +1157,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1171,7 +1171,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGranteeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyGrantGranteeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAclAccessControlPolicyGrantGranteeOutputReference
 ```
@@ -1540,7 +1540,7 @@ func InternalValue() S3BucketAclAccessControlPolicyGrantGrantee
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketAclAccessControlPolicyGrantList
 ```
@@ -1683,7 +1683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketAclAccessControlPolicyGrantOutputReference
 ```
@@ -2014,7 +2014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAclAccessControlPolicyOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() S3BucketAclAccessControlPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyOwnerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAclAccessControlPolicyOwnerOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### EcrLifecyclePolicy <a name="EcrLifecyclePolicy" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.NewEcrLifecyclePolicy(scope Construct, id *string, config EcrLifecyclePolicyConfig) EcrLifecyclePolicy
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -424,7 +424,7 @@ The construct id used in the generated config for the EcrLifecyclePolicy to impo
 
 The id of the existing EcrLifecyclePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 &ecrlifecyclepolicy.EcrLifecyclePolicyConfig {
 	Connection: interface{},
@@ -728,9 +728,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrlifecyclepolicy"
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
 
 ---
 
@@ -812,7 +812,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
 
 ---
 
@@ -824,7 +824,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
 
 ---
 
@@ -836,7 +836,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

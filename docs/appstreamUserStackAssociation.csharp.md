@@ -4,7 +4,7 @@
 
 ### AppstreamUserStackAssociation <a name="AppstreamUserStackAssociation" id="@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.Initializer"></a>
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the AppstreamUserStackAssociat
 
 The id of the existing AppstreamUserStackAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,11 +770,11 @@ new AppstreamUserStackAssociationConfig {
 | <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.stackName">StackName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.sendEmailNotification">SendEmailNotification</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.stackName">StackName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.sendEmailNotification">SendEmailNotification</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}. |
 
 ---
 
@@ -856,7 +856,7 @@ public string AuthenticationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}.
 
 ---
 
@@ -868,7 +868,7 @@ public string StackName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}.
 
 ---
 
@@ -880,7 +880,7 @@ public string UserName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}.
 
 ---
 
@@ -892,7 +892,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ public object SendEmailNotification { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}.
 
 ---
 

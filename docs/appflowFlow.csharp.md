@@ -4,7 +4,7 @@
 
 ### AppflowFlow <a name="AppflowFlow" id="@cdktf/provider-aws.appflowFlow.AppflowFlow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow aws_appflow_flow}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow aws_appflow_flow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer"></a>
 
@@ -504,7 +504,7 @@ The construct id used in the generated config for the AppflowFlow to import.
 
 The id of the existing AppflowFlow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,15 +970,15 @@ new AppflowFlowConfig {
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.destinationFlowConfig">DestinationFlowConfig</a></code> | <code>object</code> | destination_flow_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#name AppflowFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#name AppflowFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.sourceFlowConfig">SourceFlowConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig">AppflowFlowSourceFlowConfig</a></code> | source_flow_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.task">Task</a></code> | <code>object</code> | task block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.triggerConfig">TriggerConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig">AppflowFlowTriggerConfig</a></code> | trigger_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#description AppflowFlow#description}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id AppflowFlow#id}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.kmsArn">KmsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#kms_arn AppflowFlow#kms_arn}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#tags AppflowFlow#tags}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#tags_all AppflowFlow#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#description AppflowFlow#description}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id AppflowFlow#id}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.kmsArn">KmsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#kms_arn AppflowFlow#kms_arn}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#tags AppflowFlow#tags}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#tags_all AppflowFlow#tags_all}. |
 
 ---
 
@@ -1062,7 +1062,7 @@ public object DestinationFlowConfig { get; set; }
 
 destination_flow_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#destination_flow_config AppflowFlow#destination_flow_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#destination_flow_config AppflowFlow#destination_flow_config}
 
 ---
 
@@ -1074,7 +1074,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#name AppflowFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#name AppflowFlow#name}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public AppflowFlowSourceFlowConfig SourceFlowConfig { get; set; }
 
 source_flow_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#source_flow_config AppflowFlow#source_flow_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#source_flow_config AppflowFlow#source_flow_config}
 
 ---
 
@@ -1102,7 +1102,7 @@ public object Task { get; set; }
 
 task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#task AppflowFlow#task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#task AppflowFlow#task}
 
 ---
 
@@ -1116,7 +1116,7 @@ public AppflowFlowTriggerConfig TriggerConfig { get; set; }
 
 trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#trigger_config AppflowFlow#trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#trigger_config AppflowFlow#trigger_config}
 
 ---
 
@@ -1128,7 +1128,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#description AppflowFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#description AppflowFlow#description}.
 
 ---
 
@@ -1140,7 +1140,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id AppflowFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id AppflowFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ public string KmsArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#kms_arn AppflowFlow#kms_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#kms_arn AppflowFlow#kms_arn}.
 
 ---
 
@@ -1167,7 +1167,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#tags AppflowFlow#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#tags AppflowFlow#tags}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#tags_all AppflowFlow#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#tags_all AppflowFlow#tags_all}.
 
 ---
 
@@ -1202,10 +1202,10 @@ new AppflowFlowDestinationFlowConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.property.connectorType">ConnectorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.property.connectorType">ConnectorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.property.destinationConnectorProperties">DestinationConnectorProperties</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties">AppflowFlowDestinationFlowConfigDestinationConnectorProperties</a></code> | destination_connector_properties block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.property.apiVersion">ApiVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.property.connectorProfileName">ConnectorProfileName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.property.apiVersion">ApiVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.property.connectorProfileName">ConnectorProfileName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}. |
 
 ---
 
@@ -1217,7 +1217,7 @@ public string ConnectorType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}.
 
 ---
 
@@ -1231,7 +1231,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorProperties Destinatio
 
 destination_connector_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#destination_connector_properties AppflowFlow#destination_connector_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#destination_connector_properties AppflowFlow#destination_connector_properties}
 
 ---
 
@@ -1243,7 +1243,7 @@ public string ApiVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}.
 
 ---
 
@@ -1255,7 +1255,7 @@ public string ConnectorProfileName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}.
 
 ---
 
@@ -1313,7 +1313,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConne
 
 custom_connector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}
 
 ---
 
@@ -1327,7 +1327,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerPro
 
 customer_profiles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#customer_profiles AppflowFlow#customer_profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#customer_profiles AppflowFlow#customer_profiles}
 
 ---
 
@@ -1341,7 +1341,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 
 event_bridge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#event_bridge AppflowFlow#event_bridge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#event_bridge AppflowFlow#event_bridge}
 
 ---
 
@@ -1355,7 +1355,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode H
 
 honeycode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#honeycode AppflowFlow#honeycode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#honeycode AppflowFlow#honeycode}
 
 ---
 
@@ -1369,7 +1369,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetr
 
 lookout_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#lookout_metrics AppflowFlow#lookout_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#lookout_metrics AppflowFlow#lookout_metrics}
 
 ---
 
@@ -1383,7 +1383,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo Mar
 
 marketo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}
 
 ---
 
@@ -1397,7 +1397,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift Re
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#redshift AppflowFlow#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#redshift AppflowFlow#redshift}
 
 ---
 
@@ -1411,7 +1411,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3 S3 { get
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}
 
 ---
 
@@ -1425,7 +1425,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce 
 
 salesforce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}
 
 ---
 
@@ -1439,7 +1439,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData Sa
 
 sapo_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}
 
 ---
 
@@ -1453,7 +1453,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake S
 
 snowflake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#snowflake AppflowFlow#snowflake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#snowflake AppflowFlow#snowflake}
 
 ---
 
@@ -1467,7 +1467,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver Up
 
 upsolver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#upsolver AppflowFlow#upsolver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#upsolver AppflowFlow#upsolver}
 
 ---
 
@@ -1481,7 +1481,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk Zen
 
 zendesk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}
 
 ---
 
@@ -1505,11 +1505,11 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnecto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.entityName">EntityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.customProperties">CustomProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.entityName">EntityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.customProperties">CustomProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig</a></code> | error_handling_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
 
 ---
 
@@ -1521,7 +1521,7 @@ public string EntityName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}.
 
 ---
 
@@ -1533,7 +1533,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomProperties {
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}.
 
 ---
 
@@ -1547,7 +1547,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConne
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -1559,7 +1559,7 @@ public string[] IdFieldNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
 
 ---
 
@@ -1571,7 +1571,7 @@ public string WriteOperationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
 
 ---
 
@@ -1593,9 +1593,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnecto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -1607,7 +1607,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -1619,7 +1619,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -1631,7 +1631,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -1652,8 +1652,8 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#domain_name AppflowFlow#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles.property.objectTypeName">ObjectTypeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object_type_name AppflowFlow#object_type_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#domain_name AppflowFlow#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles.property.objectTypeName">ObjectTypeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object_type_name AppflowFlow#object_type_name}. |
 
 ---
 
@@ -1665,7 +1665,7 @@ public string DomainName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#domain_name AppflowFlow#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#domain_name AppflowFlow#domain_name}.
 
 ---
 
@@ -1677,7 +1677,7 @@ public string ObjectTypeName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object_type_name AppflowFlow#object_type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object_type_name AppflowFlow#object_type_name}.
 
 ---
 
@@ -1698,7 +1698,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig</a></code> | error_handling_config block. |
 
 ---
@@ -1711,7 +1711,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -1725,7 +1725,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -1747,9 +1747,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -1761,7 +1761,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -1773,7 +1773,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -1785,7 +1785,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -1806,7 +1806,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig</a></code> | error_handling_config block. |
 
 ---
@@ -1819,7 +1819,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -1833,7 +1833,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeEr
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -1855,9 +1855,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeError
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -1869,7 +1869,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -1881,7 +1881,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -1893,7 +1893,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -1927,7 +1927,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig</a></code> | error_handling_config block. |
 
 ---
@@ -1940,7 +1940,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -1954,7 +1954,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErro
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -1976,9 +1976,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -1990,7 +1990,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2002,7 +2002,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2014,7 +2014,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -2037,9 +2037,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.property.intermediateBucketName">IntermediateBucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.property.intermediateBucketName">IntermediateBucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig</a></code> | error_handling_config block. |
 
 ---
@@ -2052,7 +2052,7 @@ public string IntermediateBucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}.
 
 ---
 
@@ -2064,7 +2064,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -2076,7 +2076,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2090,7 +2090,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErr
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -2112,9 +2112,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorH
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2126,7 +2126,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2138,7 +2138,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2150,7 +2150,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -2172,8 +2172,8 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3.property.s3OutputFormatConfig">S3OutputFormatConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig</a></code> | s3_output_format_config block. |
 
 ---
@@ -2186,7 +2186,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2198,7 +2198,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2212,7 +2212,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputF
 
 s3_output_format_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3_output_format_config AppflowFlow#s3_output_format_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3_output_format_config AppflowFlow#s3_output_format_config}
 
 ---
 
@@ -2236,9 +2236,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputForm
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.aggregationConfig">AggregationConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig</a></code> | aggregation_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.fileType">FileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.fileType">FileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.prefixConfig">PrefixConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig</a></code> | prefix_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}. |
 
 ---
 
@@ -2252,7 +2252,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputF
 
 aggregation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#aggregation_config AppflowFlow#aggregation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#aggregation_config AppflowFlow#aggregation_config}
 
 ---
 
@@ -2264,7 +2264,7 @@ public string FileType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}.
 
 ---
 
@@ -2278,7 +2278,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputF
 
 prefix_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_config AppflowFlow#prefix_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_config AppflowFlow#prefix_config}
 
 ---
 
@@ -2290,7 +2290,7 @@ public object PreserveSourceDataTyping { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}.
 
 ---
 
@@ -2310,7 +2310,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputForm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig.property.aggregationType">AggregationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig.property.aggregationType">AggregationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}. |
 
 ---
 
@@ -2322,7 +2322,7 @@ public string AggregationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}.
 
 ---
 
@@ -2343,8 +2343,8 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputForm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig.property.prefixFormat">PrefixFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig.property.prefixType">PrefixType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig.property.prefixFormat">PrefixFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig.property.prefixType">PrefixType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}. |
 
 ---
 
@@ -2356,7 +2356,7 @@ public string PrefixFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}.
 
 ---
 
@@ -2368,7 +2368,7 @@ public string PrefixType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}.
 
 ---
 
@@ -2391,10 +2391,10 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig</a></code> | error_handling_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
 
 ---
 
@@ -2406,7 +2406,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -2420,7 +2420,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceE
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -2432,7 +2432,7 @@ public string[] IdFieldNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
 
 ---
 
@@ -2444,7 +2444,7 @@ public string WriteOperationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
 
 ---
 
@@ -2466,9 +2466,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2480,7 +2480,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2492,7 +2492,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2504,7 +2504,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -2528,11 +2528,11 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.objectPath">ObjectPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.objectPath">ObjectPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig</a></code> | error_handling_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.successResponseHandlingConfig">SuccessResponseHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig</a></code> | success_response_handling_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
 
 ---
 
@@ -2544,7 +2544,7 @@ public string ObjectPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}.
 
 ---
 
@@ -2558,7 +2558,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErr
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -2570,7 +2570,7 @@ public string[] IdFieldNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
 
 ---
 
@@ -2584,7 +2584,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuc
 
 success_response_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#success_response_handling_config AppflowFlow#success_response_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#success_response_handling_config AppflowFlow#success_response_handling_config}
 
 ---
 
@@ -2596,7 +2596,7 @@ public string WriteOperationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
 
 ---
 
@@ -2618,9 +2618,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorH
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2632,7 +2632,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2644,7 +2644,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2656,7 +2656,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -2677,8 +2677,8 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSucces
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
 
 ---
 
@@ -2690,7 +2690,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2702,7 +2702,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2725,9 +2725,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.property.intermediateBucketName">IntermediateBucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.property.intermediateBucketName">IntermediateBucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig</a></code> | error_handling_config block. |
 
 ---
@@ -2740,7 +2740,7 @@ public string IntermediateBucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#intermediate_bucket_name AppflowFlow#intermediate_bucket_name}.
 
 ---
 
@@ -2752,7 +2752,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -2764,7 +2764,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2778,7 +2778,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeEr
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -2800,9 +2800,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeError
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2814,7 +2814,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2826,7 +2826,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2838,7 +2838,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -2860,9 +2860,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver.property.s3OutputFormatConfig">S3OutputFormatConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig</a></code> | s3_output_format_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
 
 ---
 
@@ -2874,7 +2874,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -2888,7 +2888,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3O
 
 s3_output_format_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3_output_format_config AppflowFlow#s3_output_format_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3_output_format_config AppflowFlow#s3_output_format_config}
 
 ---
 
@@ -2900,7 +2900,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -2924,7 +2924,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3Outp
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig.property.prefixConfig">PrefixConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig</a></code> | prefix_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig.property.aggregationConfig">AggregationConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig</a></code> | aggregation_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig.property.fileType">FileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig.property.fileType">FileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}. |
 
 ---
 
@@ -2938,7 +2938,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3O
 
 prefix_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_config AppflowFlow#prefix_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_config AppflowFlow#prefix_config}
 
 ---
 
@@ -2952,7 +2952,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3O
 
 aggregation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#aggregation_config AppflowFlow#aggregation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#aggregation_config AppflowFlow#aggregation_config}
 
 ---
 
@@ -2964,7 +2964,7 @@ public string FileType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}.
 
 ---
 
@@ -2984,7 +2984,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3Outp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig.property.aggregationType">AggregationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig.property.aggregationType">AggregationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}. |
 
 ---
 
@@ -2996,7 +2996,7 @@ public string AggregationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#aggregation_type AppflowFlow#aggregation_type}.
 
 ---
 
@@ -3017,8 +3017,8 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3Outp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig.property.prefixType">PrefixType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig.property.prefixFormat">PrefixFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig.property.prefixType">PrefixType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig.property.prefixFormat">PrefixFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}. |
 
 ---
 
@@ -3030,7 +3030,7 @@ public string PrefixType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_type AppflowFlow#prefix_type}.
 
 ---
 
@@ -3042,7 +3042,7 @@ public string PrefixFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#prefix_format AppflowFlow#prefix_format}.
 
 ---
 
@@ -3065,10 +3065,10 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.property.errorHandlingConfig">ErrorHandlingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig</a></code> | error_handling_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.property.idFieldNames">IdFieldNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.property.writeOperationType">WriteOperationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}. |
 
 ---
 
@@ -3080,7 +3080,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3094,7 +3094,7 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErro
 
 error_handling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
 
 ---
 
@@ -3106,7 +3106,7 @@ public string[] IdFieldNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#id_field_names AppflowFlow#id_field_names}.
 
 ---
 
@@ -3118,7 +3118,7 @@ public string WriteOperationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#write_operation_type AppflowFlow#write_operation_type}.
 
 ---
 
@@ -3140,9 +3140,9 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -3154,7 +3154,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -3166,7 +3166,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -3178,7 +3178,7 @@ public object FailOnFirstDestinationError { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
 ---
 
@@ -3202,10 +3202,10 @@ new AppflowFlowSourceFlowConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.connectorType">ConnectorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.connectorType">ConnectorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.sourceConnectorProperties">SourceConnectorProperties</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorProperties">AppflowFlowSourceFlowConfigSourceConnectorProperties</a></code> | source_connector_properties block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.apiVersion">ApiVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.connectorProfileName">ConnectorProfileName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.apiVersion">ApiVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.connectorProfileName">ConnectorProfileName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.property.incrementalPullConfig">IncrementalPullConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig">AppflowFlowSourceFlowConfigIncrementalPullConfig</a></code> | incremental_pull_config block. |
 
 ---
@@ -3218,7 +3218,7 @@ public string ConnectorType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_type AppflowFlow#connector_type}.
 
 ---
 
@@ -3232,7 +3232,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorProperties SourceConnectorPrope
 
 source_connector_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#source_connector_properties AppflowFlow#source_connector_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#source_connector_properties AppflowFlow#source_connector_properties}
 
 ---
 
@@ -3244,7 +3244,7 @@ public string ApiVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#api_version AppflowFlow#api_version}.
 
 ---
 
@@ -3256,7 +3256,7 @@ public string ConnectorProfileName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_profile_name AppflowFlow#connector_profile_name}.
 
 ---
 
@@ -3270,7 +3270,7 @@ public AppflowFlowSourceFlowConfigIncrementalPullConfig IncrementalPullConfig { 
 
 incremental_pull_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#incremental_pull_config AppflowFlow#incremental_pull_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#incremental_pull_config AppflowFlow#incremental_pull_config}
 
 ---
 
@@ -3290,7 +3290,7 @@ new AppflowFlowSourceFlowConfigIncrementalPullConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig.property.datetimeTypeFieldName">DatetimeTypeFieldName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#datetime_type_field_name AppflowFlow#datetime_type_field_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig.property.datetimeTypeFieldName">DatetimeTypeFieldName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#datetime_type_field_name AppflowFlow#datetime_type_field_name}. |
 
 ---
 
@@ -3302,7 +3302,7 @@ public string DatetimeTypeFieldName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#datetime_type_field_name AppflowFlow#datetime_type_field_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#datetime_type_field_name AppflowFlow#datetime_type_field_name}.
 
 ---
 
@@ -3366,7 +3366,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude Amplitude {
 
 amplitude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#amplitude AppflowFlow#amplitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#amplitude AppflowFlow#amplitude}
 
 ---
 
@@ -3380,7 +3380,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector Custo
 
 custom_connector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}
 
 ---
 
@@ -3394,7 +3394,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog Datadog { get
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#datadog AppflowFlow#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#datadog AppflowFlow#datadog}
 
 ---
 
@@ -3408,7 +3408,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace Dynatrace {
 
 dynatrace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#dynatrace AppflowFlow#dynatrace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#dynatrace AppflowFlow#dynatrace}
 
 ---
 
@@ -3422,7 +3422,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics Googl
 
 google_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#google_analytics AppflowFlow#google_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#google_analytics AppflowFlow#google_analytics}
 
 ---
 
@@ -3436,7 +3436,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus InforNexus
 
 infor_nexus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#infor_nexus AppflowFlow#infor_nexus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#infor_nexus AppflowFlow#infor_nexus}
 
 ---
 
@@ -3450,7 +3450,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo Marketo { get
 
 marketo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}
 
 ---
 
@@ -3464,7 +3464,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3 S3 { get; set; }
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}
 
 ---
 
@@ -3478,7 +3478,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce Salesforce
 
 salesforce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}
 
 ---
 
@@ -3492,7 +3492,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData SapoData { g
 
 sapo_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}
 
 ---
 
@@ -3506,7 +3506,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow ServiceNow
 
 service_now block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#service_now AppflowFlow#service_now}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#service_now AppflowFlow#service_now}
 
 ---
 
@@ -3520,7 +3520,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular Singular { g
 
 singular block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#singular AppflowFlow#singular}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#singular AppflowFlow#singular}
 
 ---
 
@@ -3534,7 +3534,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack Slack { get; se
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#slack AppflowFlow#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#slack AppflowFlow#slack}
 
 ---
 
@@ -3548,7 +3548,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro Trendmicro
 
 trendmicro block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#trendmicro AppflowFlow#trendmicro}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#trendmicro AppflowFlow#trendmicro}
 
 ---
 
@@ -3562,7 +3562,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva Veeva { get; se
 
 veeva block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#veeva AppflowFlow#veeva}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#veeva AppflowFlow#veeva}
 
 ---
 
@@ -3576,7 +3576,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk Zendesk { get
 
 zendesk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}
 
 ---
 
@@ -3596,7 +3596,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -3608,7 +3608,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3629,8 +3629,8 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector.property.entityName">EntityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector.property.customProperties">CustomProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector.property.entityName">EntityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector.property.customProperties">CustomProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}. |
 
 ---
 
@@ -3642,7 +3642,7 @@ public string EntityName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#entity_name AppflowFlow#entity_name}.
 
 ---
 
@@ -3654,7 +3654,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomProperties {
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_properties AppflowFlow#custom_properties}.
 
 ---
 
@@ -3674,7 +3674,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -3686,7 +3686,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3706,7 +3706,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -3718,7 +3718,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3738,7 +3738,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -3750,7 +3750,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3770,7 +3770,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -3782,7 +3782,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3802,7 +3802,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -3814,7 +3814,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3836,8 +3836,8 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3.property.s3InputFormatConfig">S3InputFormatConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig">AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig</a></code> | s3_input_format_config block. |
 
 ---
@@ -3850,7 +3850,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 
 ---
 
@@ -3862,7 +3862,7 @@ public string BucketPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 
 ---
 
@@ -3876,7 +3876,7 @@ public AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
 
 s3_input_format_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3_input_format_config AppflowFlow#s3_input_format_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3_input_format_config AppflowFlow#s3_input_format_config}
 
 ---
 
@@ -3896,7 +3896,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig.property.s3InputFileType">S3InputFileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3_input_file_type AppflowFlow#s3_input_file_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig.property.s3InputFileType">S3InputFileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3_input_file_type AppflowFlow#s3_input_file_type}. |
 
 ---
 
@@ -3908,7 +3908,7 @@ public string S3InputFileType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3_input_file_type AppflowFlow#s3_input_file_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3_input_file_type AppflowFlow#s3_input_file_type}.
 
 ---
 
@@ -3930,9 +3930,9 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate">EnableDynamicFieldUpdate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords">IncludeDeletedRecords</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate">EnableDynamicFieldUpdate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords">IncludeDeletedRecords</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}. |
 
 ---
 
@@ -3944,7 +3944,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -3956,7 +3956,7 @@ public object EnableDynamicFieldUpdate { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}.
 
 ---
 
@@ -3968,7 +3968,7 @@ public object IncludeDeletedRecords { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}.
 
 ---
 
@@ -3988,7 +3988,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData.property.objectPath">ObjectPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData.property.objectPath">ObjectPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}. |
 
 ---
 
@@ -4000,7 +4000,7 @@ public string ObjectPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object_path AppflowFlow#object_path}.
 
 ---
 
@@ -4020,7 +4020,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -4032,7 +4032,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -4052,7 +4052,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -4064,7 +4064,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -4084,7 +4084,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -4096,7 +4096,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -4116,7 +4116,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -4128,7 +4128,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -4152,11 +4152,11 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.documentType">DocumentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#document_type AppflowFlow#document_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions">IncludeAllVersions</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions">IncludeRenditions</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles">IncludeSourceFiles</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.documentType">DocumentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#document_type AppflowFlow#document_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions">IncludeAllVersions</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions">IncludeRenditions</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles">IncludeSourceFiles</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}. |
 
 ---
 
@@ -4168,7 +4168,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -4180,7 +4180,7 @@ public string DocumentType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#document_type AppflowFlow#document_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#document_type AppflowFlow#document_type}.
 
 ---
 
@@ -4192,7 +4192,7 @@ public object IncludeAllVersions { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}.
 
 ---
 
@@ -4204,7 +4204,7 @@ public object IncludeRenditions { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}.
 
 ---
 
@@ -4216,7 +4216,7 @@ public object IncludeSourceFiles { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}.
 
 ---
 
@@ -4236,7 +4236,7 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 
 ---
 
@@ -4248,7 +4248,7 @@ public string Object { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 
 ---
 
@@ -4272,11 +4272,11 @@ new AppflowFlowTask {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.sourceFields">SourceFields</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskType">TaskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.sourceFields">SourceFields</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskType">TaskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.connectorOperator">ConnectorOperator</a></code> | <code>object</code> | connector_operator block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.destinationField">DestinationField</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskProperties">TaskProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.destinationField">DestinationField</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskProperties">TaskProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}. |
 
 ---
 
@@ -4288,7 +4288,7 @@ public string[] SourceFields { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}.
 
 ---
 
@@ -4300,7 +4300,7 @@ public string TaskType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}.
 
 ---
 
@@ -4314,7 +4314,7 @@ public object ConnectorOperator { get; set; }
 
 connector_operator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#connector_operator AppflowFlow#connector_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#connector_operator AppflowFlow#connector_operator}
 
 ---
 
@@ -4326,7 +4326,7 @@ public string DestinationField { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}.
 
 ---
 
@@ -4338,7 +4338,7 @@ public System.Collections.Generic.IDictionary<string, string> TaskProperties { g
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}.
 
 ---
 
@@ -4373,22 +4373,22 @@ new AppflowFlowTaskConnectorOperator {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.amplitude">Amplitude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#amplitude AppflowFlow#amplitude}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.customConnector">CustomConnector</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.datadog">Datadog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#datadog AppflowFlow#datadog}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.dynatrace">Dynatrace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#dynatrace AppflowFlow#dynatrace}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.googleAnalytics">GoogleAnalytics</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#google_analytics AppflowFlow#google_analytics}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.inforNexus">InforNexus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#infor_nexus AppflowFlow#infor_nexus}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.marketo">Marketo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.s3">S3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.salesforce">Salesforce</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.sapoData">SapoData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.serviceNow">ServiceNow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#service_now AppflowFlow#service_now}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.singular">Singular</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#singular AppflowFlow#singular}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.slack">Slack</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#slack AppflowFlow#slack}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.trendmicro">Trendmicro</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#trendmicro AppflowFlow#trendmicro}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.veeva">Veeva</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#veeva AppflowFlow#veeva}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.zendesk">Zendesk</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.amplitude">Amplitude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#amplitude AppflowFlow#amplitude}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.customConnector">CustomConnector</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.datadog">Datadog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#datadog AppflowFlow#datadog}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.dynatrace">Dynatrace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#dynatrace AppflowFlow#dynatrace}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.googleAnalytics">GoogleAnalytics</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#google_analytics AppflowFlow#google_analytics}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.inforNexus">InforNexus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#infor_nexus AppflowFlow#infor_nexus}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.marketo">Marketo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.s3">S3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.salesforce">Salesforce</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.sapoData">SapoData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.serviceNow">ServiceNow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#service_now AppflowFlow#service_now}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.singular">Singular</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#singular AppflowFlow#singular}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.slack">Slack</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#slack AppflowFlow#slack}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.trendmicro">Trendmicro</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#trendmicro AppflowFlow#trendmicro}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.veeva">Veeva</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#veeva AppflowFlow#veeva}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.property.zendesk">Zendesk</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}. |
 
 ---
 
@@ -4400,7 +4400,7 @@ public string Amplitude { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#amplitude AppflowFlow#amplitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#amplitude AppflowFlow#amplitude}.
 
 ---
 
@@ -4412,7 +4412,7 @@ public string CustomConnector { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}.
 
 ---
 
@@ -4424,7 +4424,7 @@ public string Datadog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#datadog AppflowFlow#datadog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#datadog AppflowFlow#datadog}.
 
 ---
 
@@ -4436,7 +4436,7 @@ public string Dynatrace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#dynatrace AppflowFlow#dynatrace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#dynatrace AppflowFlow#dynatrace}.
 
 ---
 
@@ -4448,7 +4448,7 @@ public string GoogleAnalytics { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#google_analytics AppflowFlow#google_analytics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#google_analytics AppflowFlow#google_analytics}.
 
 ---
 
@@ -4460,7 +4460,7 @@ public string InforNexus { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#infor_nexus AppflowFlow#infor_nexus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#infor_nexus AppflowFlow#infor_nexus}.
 
 ---
 
@@ -4472,7 +4472,7 @@ public string Marketo { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}.
 
 ---
 
@@ -4484,7 +4484,7 @@ public string S3 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}.
 
 ---
 
@@ -4496,7 +4496,7 @@ public string Salesforce { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}.
 
 ---
 
@@ -4508,7 +4508,7 @@ public string SapoData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}.
 
 ---
 
@@ -4520,7 +4520,7 @@ public string ServiceNow { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#service_now AppflowFlow#service_now}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#service_now AppflowFlow#service_now}.
 
 ---
 
@@ -4532,7 +4532,7 @@ public string Singular { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#singular AppflowFlow#singular}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#singular AppflowFlow#singular}.
 
 ---
 
@@ -4544,7 +4544,7 @@ public string Slack { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#slack AppflowFlow#slack}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#slack AppflowFlow#slack}.
 
 ---
 
@@ -4556,7 +4556,7 @@ public string Trendmicro { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#trendmicro AppflowFlow#trendmicro}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#trendmicro AppflowFlow#trendmicro}.
 
 ---
 
@@ -4568,7 +4568,7 @@ public string Veeva { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#veeva AppflowFlow#veeva}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#veeva AppflowFlow#veeva}.
 
 ---
 
@@ -4580,7 +4580,7 @@ public string Zendesk { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}.
 
 ---
 
@@ -4601,7 +4601,7 @@ new AppflowFlowTriggerConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig.property.triggerType">TriggerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#trigger_type AppflowFlow#trigger_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig.property.triggerType">TriggerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#trigger_type AppflowFlow#trigger_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig.property.triggerProperties">TriggerProperties</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerProperties">AppflowFlowTriggerConfigTriggerProperties</a></code> | trigger_properties block. |
 
 ---
@@ -4614,7 +4614,7 @@ public string TriggerType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#trigger_type AppflowFlow#trigger_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#trigger_type AppflowFlow#trigger_type}.
 
 ---
 
@@ -4628,7 +4628,7 @@ public AppflowFlowTriggerConfigTriggerProperties TriggerProperties { get; set; }
 
 trigger_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#trigger_properties AppflowFlow#trigger_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#trigger_properties AppflowFlow#trigger_properties}
 
 ---
 
@@ -4662,7 +4662,7 @@ public AppflowFlowTriggerConfigTriggerPropertiesScheduled Scheduled { get; set; 
 
 scheduled block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#scheduled AppflowFlow#scheduled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#scheduled AppflowFlow#scheduled}
 
 ---
 
@@ -4688,13 +4688,13 @@ new AppflowFlowTriggerConfigTriggerPropertiesScheduled {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleExpression">ScheduleExpression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_expression AppflowFlow#schedule_expression}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.dataPullMode">DataPullMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#data_pull_mode AppflowFlow#data_pull_mode}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.firstExecutionFrom">FirstExecutionFrom</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#first_execution_from AppflowFlow#first_execution_from}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleEndTime">ScheduleEndTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_end_time AppflowFlow#schedule_end_time}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleOffset">ScheduleOffset</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_offset AppflowFlow#schedule_offset}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleStartTime">ScheduleStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_start_time AppflowFlow#schedule_start_time}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.timezone">Timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#timezone AppflowFlow#timezone}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleExpression">ScheduleExpression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_expression AppflowFlow#schedule_expression}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.dataPullMode">DataPullMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#data_pull_mode AppflowFlow#data_pull_mode}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.firstExecutionFrom">FirstExecutionFrom</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#first_execution_from AppflowFlow#first_execution_from}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleEndTime">ScheduleEndTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_end_time AppflowFlow#schedule_end_time}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleOffset">ScheduleOffset</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_offset AppflowFlow#schedule_offset}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.scheduleStartTime">ScheduleStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_start_time AppflowFlow#schedule_start_time}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.property.timezone">Timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#timezone AppflowFlow#timezone}. |
 
 ---
 
@@ -4706,7 +4706,7 @@ public string ScheduleExpression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_expression AppflowFlow#schedule_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_expression AppflowFlow#schedule_expression}.
 
 ---
 
@@ -4718,7 +4718,7 @@ public string DataPullMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#data_pull_mode AppflowFlow#data_pull_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#data_pull_mode AppflowFlow#data_pull_mode}.
 
 ---
 
@@ -4730,7 +4730,7 @@ public string FirstExecutionFrom { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#first_execution_from AppflowFlow#first_execution_from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#first_execution_from AppflowFlow#first_execution_from}.
 
 ---
 
@@ -4742,7 +4742,7 @@ public string ScheduleEndTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_end_time AppflowFlow#schedule_end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_end_time AppflowFlow#schedule_end_time}.
 
 ---
 
@@ -4754,7 +4754,7 @@ public double ScheduleOffset { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_offset AppflowFlow#schedule_offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_offset AppflowFlow#schedule_offset}.
 
 ---
 
@@ -4766,7 +4766,7 @@ public string ScheduleStartTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#schedule_start_time AppflowFlow#schedule_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#schedule_start_time AppflowFlow#schedule_start_time}.
 
 ---
 
@@ -4778,7 +4778,7 @@ public string Timezone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#timezone AppflowFlow#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appflow_flow#timezone AppflowFlow#timezone}.
 
 ---
 

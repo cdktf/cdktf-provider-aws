@@ -4,7 +4,7 @@
 
 ### DataAwsNetworkmanagerSites <a name="DataAwsNetworkmanagerSites" id="@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites.Initializer"></a>
 
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataAwsNetworkmanagerSites
 
 The id of the existing DataAwsNetworkmanagerSites that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,9 +641,9 @@ const dataAwsNetworkmanagerSitesConfig: dataAwsNetworkmanagerSites.DataAwsNetwor
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.globalNetworkId">globalNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.globalNetworkId">globalNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}. |
 
 ---
 
@@ -725,7 +725,7 @@ public readonly globalNetworkId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}.
 
 ---
 
@@ -737,7 +737,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -752,7 +752,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}.
 
 ---
 

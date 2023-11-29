@@ -4,12 +4,12 @@
 
 ### DataAwsOamSinks <a name="DataAwsOamSinks" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/oam_sinks aws_oam_sinks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/oam_sinks aws_oam_sinks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.NewDataAwsOamSinks(scope Construct, id *string, config DataAwsOamSinksConfig) DataAwsOamSinks
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.DataAwsOamSinks_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.DataAwsOamSinks_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawsoamsinks.DataAwsOamSinks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.DataAwsOamSinks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawsoamsinks.DataAwsOamSinks_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.DataAwsOamSinks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataAwsOamSinks to import.
 
 The id of the existing DataAwsOamSinks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/oam_sinks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/oam_sinks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -574,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 &dataawsoamsinks.DataAwsOamSinksConfig {
 	Connection: interface{},
@@ -599,7 +599,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamsinks"
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}. |
 
 ---
 
@@ -681,7 +681,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

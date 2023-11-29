@@ -4,12 +4,12 @@
 
 ### MemorydbCluster <a name="MemorydbCluster" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster aws_memorydb_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster aws_memorydb_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbCluster(scope Construct, id *string, config MemorydbClusterConfig) MemorydbCluster
 ```
@@ -516,7 +516,7 @@ func ResetTlsEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ memorydbcluster.MemorydbCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ memorydbcluster.MemorydbCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ The construct id used in the generated config for the MemorydbCluster to import.
 
 The id of the existing MemorydbCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1443,7 +1443,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterClusterEndpoint {
 
@@ -1456,7 +1456,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterConfig {
 	Connection: interface{},
@@ -1491,7 +1491,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 	SubnetGroupName: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.memorydbCluster.MemorydbClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.memorydbCluster.MemorydbClusterTimeouts,
 	TlsEnabled: interface{},
 }
 ```
@@ -1507,33 +1507,33 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.aclName">AclName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#acl_name MemorydbCluster#acl_name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#node_type MemorydbCluster#node_type}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#auto_minor_version_upgrade MemorydbCluster#auto_minor_version_upgrade}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.dataTiering">DataTiering</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#data_tiering MemorydbCluster#data_tiering}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#description MemorydbCluster#description}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#engine_version MemorydbCluster#engine_version}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.finalSnapshotName">FinalSnapshotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#final_snapshot_name MemorydbCluster#final_snapshot_name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#id MemorydbCluster#id}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#kms_key_arn MemorydbCluster#kms_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#maintenance_window MemorydbCluster#maintenance_window}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#name MemorydbCluster#name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#name_prefix MemorydbCluster#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.numReplicasPerShard">NumReplicasPerShard</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#num_replicas_per_shard MemorydbCluster#num_replicas_per_shard}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.numShards">NumShards</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#num_shards MemorydbCluster#num_shards}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#parameter_group_name MemorydbCluster#parameter_group_name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#port MemorydbCluster#port}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#security_group_ids MemorydbCluster#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotArns">SnapshotArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_arns MemorydbCluster#snapshot_arns}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotName">SnapshotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_name MemorydbCluster#snapshot_name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotRetentionLimit">SnapshotRetentionLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_retention_limit MemorydbCluster#snapshot_retention_limit}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotWindow">SnapshotWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_window MemorydbCluster#snapshot_window}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snsTopicArn">SnsTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#sns_topic_arn MemorydbCluster#sns_topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.subnetGroupName">SubnetGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#subnet_group_name MemorydbCluster#subnet_group_name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#tags MemorydbCluster#tags}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#tags_all MemorydbCluster#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.aclName">AclName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#acl_name MemorydbCluster#acl_name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#node_type MemorydbCluster#node_type}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#auto_minor_version_upgrade MemorydbCluster#auto_minor_version_upgrade}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.dataTiering">DataTiering</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#data_tiering MemorydbCluster#data_tiering}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#description MemorydbCluster#description}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#engine_version MemorydbCluster#engine_version}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.finalSnapshotName">FinalSnapshotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#final_snapshot_name MemorydbCluster#final_snapshot_name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#id MemorydbCluster#id}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#kms_key_arn MemorydbCluster#kms_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#maintenance_window MemorydbCluster#maintenance_window}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#name MemorydbCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#name_prefix MemorydbCluster#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.numReplicasPerShard">NumReplicasPerShard</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#num_replicas_per_shard MemorydbCluster#num_replicas_per_shard}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.numShards">NumShards</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#num_shards MemorydbCluster#num_shards}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#parameter_group_name MemorydbCluster#parameter_group_name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#port MemorydbCluster#port}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#security_group_ids MemorydbCluster#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotArns">SnapshotArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_arns MemorydbCluster#snapshot_arns}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotName">SnapshotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_name MemorydbCluster#snapshot_name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotRetentionLimit">SnapshotRetentionLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_retention_limit MemorydbCluster#snapshot_retention_limit}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snapshotWindow">SnapshotWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_window MemorydbCluster#snapshot_window}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.snsTopicArn">SnsTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#sns_topic_arn MemorydbCluster#sns_topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.subnetGroupName">SubnetGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#subnet_group_name MemorydbCluster#subnet_group_name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#tags MemorydbCluster#tags}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#tags_all MemorydbCluster#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts">MemorydbClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.tlsEnabled">TlsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#tls_enabled MemorydbCluster#tls_enabled}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.property.tlsEnabled">TlsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#tls_enabled MemorydbCluster#tls_enabled}. |
 
 ---
 
@@ -1615,7 +1615,7 @@ AclName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#acl_name MemorydbCluster#acl_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#acl_name MemorydbCluster#acl_name}.
 
 ---
 
@@ -1627,7 +1627,7 @@ NodeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#node_type MemorydbCluster#node_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#node_type MemorydbCluster#node_type}.
 
 ---
 
@@ -1639,7 +1639,7 @@ AutoMinorVersionUpgrade interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#auto_minor_version_upgrade MemorydbCluster#auto_minor_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#auto_minor_version_upgrade MemorydbCluster#auto_minor_version_upgrade}.
 
 ---
 
@@ -1651,7 +1651,7 @@ DataTiering interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#data_tiering MemorydbCluster#data_tiering}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#data_tiering MemorydbCluster#data_tiering}.
 
 ---
 
@@ -1663,7 +1663,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#description MemorydbCluster#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#description MemorydbCluster#description}.
 
 ---
 
@@ -1675,7 +1675,7 @@ EngineVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#engine_version MemorydbCluster#engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#engine_version MemorydbCluster#engine_version}.
 
 ---
 
@@ -1687,7 +1687,7 @@ FinalSnapshotName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#final_snapshot_name MemorydbCluster#final_snapshot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#final_snapshot_name MemorydbCluster#final_snapshot_name}.
 
 ---
 
@@ -1699,7 +1699,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#id MemorydbCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#id MemorydbCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1714,7 +1714,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#kms_key_arn MemorydbCluster#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#kms_key_arn MemorydbCluster#kms_key_arn}.
 
 ---
 
@@ -1726,7 +1726,7 @@ MaintenanceWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#maintenance_window MemorydbCluster#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#maintenance_window MemorydbCluster#maintenance_window}.
 
 ---
 
@@ -1738,7 +1738,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#name MemorydbCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#name MemorydbCluster#name}.
 
 ---
 
@@ -1750,7 +1750,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#name_prefix MemorydbCluster#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#name_prefix MemorydbCluster#name_prefix}.
 
 ---
 
@@ -1762,7 +1762,7 @@ NumReplicasPerShard *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#num_replicas_per_shard MemorydbCluster#num_replicas_per_shard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#num_replicas_per_shard MemorydbCluster#num_replicas_per_shard}.
 
 ---
 
@@ -1774,7 +1774,7 @@ NumShards *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#num_shards MemorydbCluster#num_shards}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#num_shards MemorydbCluster#num_shards}.
 
 ---
 
@@ -1786,7 +1786,7 @@ ParameterGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#parameter_group_name MemorydbCluster#parameter_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#parameter_group_name MemorydbCluster#parameter_group_name}.
 
 ---
 
@@ -1798,7 +1798,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#port MemorydbCluster#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#port MemorydbCluster#port}.
 
 ---
 
@@ -1810,7 +1810,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#security_group_ids MemorydbCluster#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#security_group_ids MemorydbCluster#security_group_ids}.
 
 ---
 
@@ -1822,7 +1822,7 @@ SnapshotArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_arns MemorydbCluster#snapshot_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_arns MemorydbCluster#snapshot_arns}.
 
 ---
 
@@ -1834,7 +1834,7 @@ SnapshotName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_name MemorydbCluster#snapshot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_name MemorydbCluster#snapshot_name}.
 
 ---
 
@@ -1846,7 +1846,7 @@ SnapshotRetentionLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_retention_limit MemorydbCluster#snapshot_retention_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_retention_limit MemorydbCluster#snapshot_retention_limit}.
 
 ---
 
@@ -1858,7 +1858,7 @@ SnapshotWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#snapshot_window MemorydbCluster#snapshot_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#snapshot_window MemorydbCluster#snapshot_window}.
 
 ---
 
@@ -1870,7 +1870,7 @@ SnsTopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#sns_topic_arn MemorydbCluster#sns_topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#sns_topic_arn MemorydbCluster#sns_topic_arn}.
 
 ---
 
@@ -1882,7 +1882,7 @@ SubnetGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#subnet_group_name MemorydbCluster#subnet_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#subnet_group_name MemorydbCluster#subnet_group_name}.
 
 ---
 
@@ -1894,7 +1894,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#tags MemorydbCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#tags MemorydbCluster#tags}.
 
 ---
 
@@ -1906,7 +1906,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#tags_all MemorydbCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#tags_all MemorydbCluster#tags_all}.
 
 ---
 
@@ -1920,7 +1920,7 @@ Timeouts MemorydbClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#timeouts MemorydbCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#timeouts MemorydbCluster#timeouts}
 
 ---
 
@@ -1932,7 +1932,7 @@ TlsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#tls_enabled MemorydbCluster#tls_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#tls_enabled MemorydbCluster#tls_enabled}.
 
 ---
 
@@ -1941,7 +1941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterShards {
 
@@ -1954,7 +1954,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterShardsNodes {
 
@@ -1967,7 +1967,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterShardsNodesEndpoint {
 
@@ -1980,7 +1980,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterTimeouts {
 	Create: *string,
@@ -1993,9 +1993,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#create MemorydbCluster#create}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#delete MemorydbCluster#delete}. |
-| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#update MemorydbCluster#update}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#create MemorydbCluster#create}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#delete MemorydbCluster#delete}. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#update MemorydbCluster#update}. |
 
 ---
 
@@ -2007,7 +2007,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#create MemorydbCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#create MemorydbCluster#create}.
 
 ---
 
@@ -2019,7 +2019,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#delete MemorydbCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#delete MemorydbCluster#delete}.
 
 ---
 
@@ -2031,7 +2031,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/memorydb_cluster#update MemorydbCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/memorydb_cluster#update MemorydbCluster#update}.
 
 ---
 
@@ -2042,7 +2042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterClusterEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterClusterEndpointList
 ```
@@ -2174,7 +2174,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterClusterEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterClusterEndpointOutputReference
 ```
@@ -2463,7 +2463,7 @@ func InternalValue() MemorydbClusterClusterEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterShardsList
 ```
@@ -2595,7 +2595,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterShardsNodesEndpointList
 ```
@@ -2727,7 +2727,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterShardsNodesEndpointOutputReference
 ```
@@ -3016,7 +3016,7 @@ func InternalValue() MemorydbClusterShardsNodesEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterShardsNodesList
 ```
@@ -3148,7 +3148,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterShardsNodesOutputReference
 ```
@@ -3459,7 +3459,7 @@ func InternalValue() MemorydbClusterShardsNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterShardsOutputReference
 ```
@@ -3770,7 +3770,7 @@ func InternalValue() MemorydbClusterShards
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MemorydbClusterTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAwsGlobalacceleratorAccelerator <a name="DataAwsGlobalacceleratorAccelerator" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAccelerator(scope Construct, id *string, config DataAwsGlobalacceleratorAcceleratorConfig) DataAwsGlobalacceleratorAccelerator
 ```
@@ -288,7 +288,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -377,7 +377,7 @@ The construct id used in the generated config for the DataAwsGlobalacceleratorAc
 
 The id of the existing DataAwsGlobalacceleratorAccelerator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,7 +709,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 &dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAcceleratorAttributes {
 
@@ -722,7 +722,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratora
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 &dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAcceleratorConfig {
 	Connection: interface{},
@@ -749,9 +749,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratora
 | <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator#arn DataAwsGlobalacceleratorAccelerator#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator#id DataAwsGlobalacceleratorAccelerator#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator#arn DataAwsGlobalacceleratorAccelerator#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator#id DataAwsGlobalacceleratorAccelerator#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}. |
 
 ---
 
@@ -833,7 +833,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator#arn DataAwsGlobalacceleratorAccelerator#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator#arn DataAwsGlobalacceleratorAccelerator#arn}.
 
 ---
 
@@ -845,7 +845,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator#id DataAwsGlobalacceleratorAccelerator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator#id DataAwsGlobalacceleratorAccelerator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}.
 
 ---
 
@@ -869,7 +869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorIpSets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 &dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAcceleratorIpSets {
 
@@ -884,7 +884,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratora
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlobalacceleratorAcceleratorAttributesList
 ```
@@ -1016,7 +1016,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlobalacceleratorAcceleratorAttributesOutputReference
 ```
@@ -1316,7 +1316,7 @@ func InternalValue() DataAwsGlobalacceleratorAcceleratorAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorIpSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorIpSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlobalacceleratorAcceleratorIpSetsList
 ```
@@ -1448,7 +1448,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorIpSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference
 ```

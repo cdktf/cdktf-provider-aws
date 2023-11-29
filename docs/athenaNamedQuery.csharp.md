@@ -4,7 +4,7 @@
 
 ### AthenaNamedQuery <a name="AthenaNamedQuery" id="@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query aws_athena_named_query}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query aws_athena_named_query}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer"></a>
 
@@ -438,7 +438,7 @@ The construct id used in the generated config for the AthenaNamedQuery to import
 
 The id of the existing AthenaNamedQuery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,12 +800,12 @@ new AthenaNamedQueryConfig {
 | <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}. |
-| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}. |
-| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.query">Query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}. |
-| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}. |
-| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}. |
-| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.workgroup">Workgroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}. |
+| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}. |
+| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}. |
+| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.query">Query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}. |
+| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}. |
+| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}. |
+| <code><a href="#@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.workgroup">Workgroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}. |
 
 ---
 
@@ -887,7 +887,7 @@ public string Database { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}.
 
 ---
 
@@ -899,7 +899,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}.
 
 ---
 
@@ -911,7 +911,7 @@ public string Query { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}.
 
 ---
 
@@ -923,7 +923,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}.
 
 ---
 
@@ -935,7 +935,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public string Workgroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### NetworkmanagerDevice <a name="NetworkmanagerDevice" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device aws_networkmanager_device}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device aws_networkmanager_device}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NewNetworkmanagerDevice(scope Construct, id *string, config NetworkmanagerDeviceConfig) NetworkmanagerDevice
 ```
@@ -451,7 +451,7 @@ func ResetVendor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NetworkmanagerDevice_IsConstruct(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NetworkmanagerDevice_IsTerraformElement(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ networkmanagerdevice.NetworkmanagerDevice_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NetworkmanagerDevice_IsTerraformResource(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ networkmanagerdevice.NetworkmanagerDevice_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NetworkmanagerDevice_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -540,7 +540,7 @@ The construct id used in the generated config for the NetworkmanagerDevice to im
 
 The id of the existing NetworkmanagerDevice that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1037,7 +1037,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 &networkmanagerdevice.NetworkmanagerDeviceAwsLocation {
 	SubnetArn: *string,
@@ -1049,8 +1049,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.subnetArn">SubnetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.subnetArn">SubnetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}. |
 
 ---
 
@@ -1062,7 +1062,7 @@ SubnetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 &networkmanagerdevice.NetworkmanagerDeviceConfig {
 	Connection: interface{},
@@ -1094,16 +1094,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	GlobalNetworkId: *string,
-	AwsLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerDevice.NetworkmanagerDeviceAwsLocation,
+	AwsLocation: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation,
 	Description: *string,
 	Id: *string,
-	Location: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerDevice.NetworkmanagerDeviceLocation,
+	Location: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerDevice.NetworkmanagerDeviceLocation,
 	Model: *string,
 	SerialNumber: *string,
 	SiteId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerDevice.NetworkmanagerDeviceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts,
 	Type: *string,
 	Vendor: *string,
 }
@@ -1120,19 +1120,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
 | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}. |
 | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.awsLocation">AwsLocation</a></code> | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation">NetworkmanagerDeviceAwsLocation</a></code> | aws_location block. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}. |
 | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.location">Location</a></code> | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation">NetworkmanagerDeviceLocation</a></code> | location block. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.model">Model</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.serialNumber">SerialNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.model">Model</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.serialNumber">SerialNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts">NetworkmanagerDeviceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.vendor">Vendor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.vendor">Vendor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}. |
 
 ---
 
@@ -1214,7 +1214,7 @@ GlobalNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}.
 
 ---
 
@@ -1228,7 +1228,7 @@ AwsLocation NetworkmanagerDeviceAwsLocation
 
 aws_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
 
 ---
 
@@ -1240,7 +1240,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}.
 
 ---
 
@@ -1252,7 +1252,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1269,7 +1269,7 @@ Location NetworkmanagerDeviceLocation
 
 location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
 
 ---
 
@@ -1281,7 +1281,7 @@ Model *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}.
 
 ---
 
@@ -1293,7 +1293,7 @@ SerialNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}.
 
 ---
 
@@ -1305,7 +1305,7 @@ SiteId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}.
 
 ---
 
@@ -1317,7 +1317,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}.
 
 ---
 
@@ -1329,7 +1329,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}.
 
 ---
 
@@ -1343,7 +1343,7 @@ Timeouts NetworkmanagerDeviceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
 
 ---
 
@@ -1355,7 +1355,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}.
 
 ---
 
@@ -1367,7 +1367,7 @@ Vendor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}.
 
 ---
 
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 &networkmanagerdevice.NetworkmanagerDeviceLocation {
 	Address: *string,
@@ -1389,9 +1389,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.latitude">Latitude</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.longitude">Longitude</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.latitude">Latitude</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.longitude">Longitude</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}. |
 
 ---
 
@@ -1403,7 +1403,7 @@ Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}.
 
 ---
 
@@ -1415,7 +1415,7 @@ Latitude *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}.
 
 ---
 
@@ -1427,7 +1427,7 @@ Longitude *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}.
 
 ---
 
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 &networkmanagerdevice.NetworkmanagerDeviceTimeouts {
 	Create: *string,
@@ -1449,9 +1449,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}. |
-| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}.
 
 ---
 
@@ -1475,7 +1475,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}.
 
 ---
 
@@ -1487,7 +1487,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}.
 
 ---
 
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NewNetworkmanagerDeviceAwsLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerDeviceAwsLocationOutputReference
 ```
@@ -1805,7 +1805,7 @@ func InternalValue() NetworkmanagerDeviceAwsLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NewNetworkmanagerDeviceLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerDeviceLocationOutputReference
 ```
@@ -2141,7 +2141,7 @@ func InternalValue() NetworkmanagerDeviceLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerdevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerdevice"
 
 networkmanagerdevice.NewNetworkmanagerDeviceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerDeviceTimeoutsOutputReference
 ```

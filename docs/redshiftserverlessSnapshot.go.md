@@ -4,12 +4,12 @@
 
 ### RedshiftserverlessSnapshot <a name="RedshiftserverlessSnapshot" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.NewRedshiftserverlessSnapshot(scope Construct, id *string, config RedshiftserverlessSnapshotConfig) RedshiftserverlessSnapshot
 ```
@@ -342,7 +342,7 @@ func ResetRetentionPeriod()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ redshiftserverlesssnapshot.RedshiftserverlessSnapshot_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
 
 redshiftserverlesssnapshot.RedshiftserverlessSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -431,7 +431,7 @@ The construct id used in the generated config for the RedshiftserverlessSnapshot
 
 The id of the existing RedshiftserverlessSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesssnapshot"
 
 &redshiftserverlesssnapshot.RedshiftserverlessSnapshotConfig {
 	Connection: interface{},
@@ -824,10 +824,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlesssnapsho
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.namespaceName">NamespaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#namespace_name RedshiftserverlessSnapshot#namespace_name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.snapshotName">SnapshotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#snapshot_name RedshiftserverlessSnapshot#snapshot_name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#id RedshiftserverlessSnapshot#id}. |
-| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.retentionPeriod">RetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#retention_period RedshiftserverlessSnapshot#retention_period}. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.namespaceName">NamespaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#namespace_name RedshiftserverlessSnapshot#namespace_name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.snapshotName">SnapshotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#snapshot_name RedshiftserverlessSnapshot#snapshot_name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#id RedshiftserverlessSnapshot#id}. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshotConfig.property.retentionPeriod">RetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#retention_period RedshiftserverlessSnapshot#retention_period}. |
 
 ---
 
@@ -909,7 +909,7 @@ NamespaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#namespace_name RedshiftserverlessSnapshot#namespace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#namespace_name RedshiftserverlessSnapshot#namespace_name}.
 
 ---
 
@@ -921,7 +921,7 @@ SnapshotName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#snapshot_name RedshiftserverlessSnapshot#snapshot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#snapshot_name RedshiftserverlessSnapshot#snapshot_name}.
 
 ---
 
@@ -933,7 +933,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#id RedshiftserverlessSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#id RedshiftserverlessSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -948,7 +948,7 @@ RetentionPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_snapshot#retention_period RedshiftserverlessSnapshot#retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_snapshot#retention_period RedshiftserverlessSnapshot#retention_period}.
 
 ---
 

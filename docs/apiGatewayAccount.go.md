@@ -4,12 +4,12 @@
 
 ### ApiGatewayAccount <a name="ApiGatewayAccount" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_account aws_api_gateway_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_account aws_api_gateway_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.NewApiGatewayAccount(scope Construct, id *string, config ApiGatewayAccountConfig) ApiGatewayAccount
 ```
@@ -342,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.ApiGatewayAccount_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.ApiGatewayAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ apigatewayaccount.ApiGatewayAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.ApiGatewayAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ apigatewayaccount.ApiGatewayAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.ApiGatewayAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -431,7 +431,7 @@ The construct id used in the generated config for the ApiGatewayAccount to impor
 
 The id of the existing ApiGatewayAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 &apigatewayaccount.ApiGatewayAccountConfig {
 	Connection: interface{},
@@ -734,8 +734,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.cloudwatchRoleArn">CloudwatchRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_account#id ApiGatewayAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.cloudwatchRoleArn">CloudwatchRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_account#id ApiGatewayAccount#id}. |
 
 ---
 
@@ -817,7 +817,7 @@ CloudwatchRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}.
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/api_gateway_account#id ApiGatewayAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_account#id ApiGatewayAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -841,7 +841,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 &apigatewayaccount.ApiGatewayAccountThrottleSettings {
 
@@ -856,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.NewApiGatewayAccountThrottleSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiGatewayAccountThrottleSettingsList
 ```
@@ -988,7 +988,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.NewApiGatewayAccountThrottleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiGatewayAccountThrottleSettingsOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### RedshiftserverlessResourcePolicy <a name="RedshiftserverlessResourcePolicy" id="@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy.Initializer"></a>
 
@@ -424,7 +424,7 @@ The construct id used in the generated config for the RedshiftserverlessResource
 
 The id of the existing RedshiftserverlessResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,9 +706,9 @@ const redshiftserverlessResourcePolicyConfig: redshiftserverlessResourcePolicy.R
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy#policy RedshiftserverlessResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy#resource_arn RedshiftserverlessResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy#id RedshiftserverlessResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy#policy RedshiftserverlessResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy#resource_arn RedshiftserverlessResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy#id RedshiftserverlessResourcePolicy#id}. |
 
 ---
 
@@ -790,7 +790,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy#policy RedshiftserverlessResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy#policy RedshiftserverlessResourcePolicy#policy}.
 
 ---
 
@@ -802,7 +802,7 @@ public readonly resourceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy#resource_arn RedshiftserverlessResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy#resource_arn RedshiftserverlessResourcePolicy#resource_arn}.
 
 ---
 
@@ -814,7 +814,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/redshiftserverless_resource_policy#id RedshiftserverlessResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/redshiftserverless_resource_policy#id RedshiftserverlessResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

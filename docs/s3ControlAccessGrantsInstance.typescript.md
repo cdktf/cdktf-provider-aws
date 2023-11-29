@@ -4,7 +4,7 @@
 
 ### S3ControlAccessGrantsInstance <a name="S3ControlAccessGrantsInstance" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.Initializer"></a>
 
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.resetIdentityCenterArn">resetIdentityCenterArn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.resetTags">resetTags</a></code> | *No description.* |
 
 ---
@@ -322,6 +323,12 @@ Optional The index corresponding to the key the resource is to appear in the for
 public resetAccountId(): void
 ```
 
+##### `resetIdentityCenterArn` <a name="resetIdentityCenterArn" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.resetIdentityCenterArn"></a>
+
+```typescript
+public resetIdentityCenterArn(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.resetTags"></a>
 
 ```typescript
@@ -431,7 +438,7 @@ The construct id used in the generated config for the S3ControlAccessGrantsInsta
 
 The id of the existing S3ControlAccessGrantsInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -464,10 +471,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.accessGrantsInstanceArn">accessGrantsInstanceArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.accessGrantsInstanceId">accessGrantsInstanceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.identityCenterApplicationArn">identityCenterApplicationArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.tagsAll">tagsAll</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.identityCenterArnInput">identityCenterArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.identityCenterArn">identityCenterArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
@@ -644,6 +654,16 @@ public readonly id: string;
 
 ---
 
+##### `identityCenterApplicationArn`<sup>Required</sup> <a name="identityCenterApplicationArn" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.identityCenterApplicationArn"></a>
+
+```typescript
+public readonly identityCenterApplicationArn: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.tagsAll"></a>
 
 ```typescript
@@ -664,6 +684,16 @@ public readonly accountIdInput: string;
 
 ---
 
+##### `identityCenterArnInput`<sup>Optional</sup> <a name="identityCenterArnInput" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.identityCenterArnInput"></a>
+
+```typescript
+public readonly identityCenterArnInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.tagsInput"></a>
 
 ```typescript
@@ -678,6 +708,16 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ```typescript
 public readonly accountId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityCenterArn`<sup>Required</sup> <a name="identityCenterArn" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.property.identityCenterArn"></a>
+
+```typescript
+public readonly identityCenterArn: string;
 ```
 
 - *Type:* string
@@ -735,8 +775,9 @@ const s3ControlAccessGrantsInstanceConfig: s3ControlAccessGrantsInstance.S3Contr
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#account_id S3ControlAccessGrantsInstance#account_id}. |
-| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#tags S3ControlAccessGrantsInstance#tags}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#account_id S3ControlAccessGrantsInstance#account_id}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.identityCenterArn">identityCenterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#identity_center_arn S3ControlAccessGrantsInstance#identity_center_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#tags S3ControlAccessGrantsInstance#tags}. |
 
 ---
 
@@ -818,7 +859,19 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#account_id S3ControlAccessGrantsInstance#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#account_id S3ControlAccessGrantsInstance#account_id}.
+
+---
+
+##### `identityCenterArn`<sup>Optional</sup> <a name="identityCenterArn" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.property.identityCenterArn"></a>
+
+```typescript
+public readonly identityCenterArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#identity_center_arn S3ControlAccessGrantsInstance#identity_center_arn}.
 
 ---
 
@@ -830,7 +883,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance#tags S3ControlAccessGrantsInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance#tags S3ControlAccessGrantsInstance#tags}.
 
 ---
 

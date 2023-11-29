@@ -4,7 +4,7 @@
 
 ### DataAwsCloudformationExport <a name="DataAwsCloudformationExport" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudformation_export aws_cloudformation_export}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/cloudformation_export aws_cloudformation_export}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.Initializer"></a>
 
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataAwsCloudformationExpor
 
 The id of the existing DataAwsCloudformationExport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudformation_export#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/cloudformation_export#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -633,8 +633,8 @@ new DataAwsCloudformationExportConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}. |
 
 ---
 
@@ -716,7 +716,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}.
 
 ---
 
@@ -728,7 +728,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
