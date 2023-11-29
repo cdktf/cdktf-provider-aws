@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnection(scope Construct, id *string, config VpnConnectionConfig) VpnConnection
 ```
@@ -732,7 +732,7 @@ func ResetVpnGatewayId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.VpnConnection_IsConstruct(x interface{}) *bool
 ```
@@ -764,7 +764,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.VpnConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -778,7 +778,7 @@ vpnconnection.VpnConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.VpnConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -792,7 +792,7 @@ vpnconnection.VpnConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpnConnection.VpnConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.VpnConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2440,7 +2440,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 &vpnconnection.VpnConnectionConfig {
 	Connection: interface{},
@@ -2470,7 +2470,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
 	Tunnel1IkeVersions: *[]*string,
 	Tunnel1InsideCidr: *string,
 	Tunnel1InsideIpv6Cidr: *string,
-	Tunnel1LogOptions: github.com/cdktf/cdktf-provider-aws-go/aws.vpnConnection.VpnConnectionTunnel1LogOptions,
+	Tunnel1LogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpnConnection.VpnConnectionTunnel1LogOptions,
 	Tunnel1Phase1DhGroupNumbers: *[]*f64,
 	Tunnel1Phase1EncryptionAlgorithms: *[]*string,
 	Tunnel1Phase1IntegrityAlgorithms: *[]*string,
@@ -2490,7 +2490,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
 	Tunnel2IkeVersions: *[]*string,
 	Tunnel2InsideCidr: *string,
 	Tunnel2InsideIpv6Cidr: *string,
-	Tunnel2LogOptions: github.com/cdktf/cdktf-provider-aws-go/aws.vpnConnection.VpnConnectionTunnel2LogOptions,
+	Tunnel2LogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpnConnection.VpnConnectionTunnel2LogOptions,
 	Tunnel2Phase1DhGroupNumbers: *[]*f64,
 	Tunnel2Phase1EncryptionAlgorithms: *[]*string,
 	Tunnel2Phase1IntegrityAlgorithms: *[]*string,
@@ -3333,7 +3333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 &vpnconnection.VpnConnectionRoutes {
 
@@ -3346,10 +3346,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel1LogOptions {
-	CloudwatchLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions,
+	CloudwatchLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions,
 }
 ```
 
@@ -3380,7 +3380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions {
 	LogEnabled: interface{},
@@ -3440,10 +3440,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel2LogOptions {
-	CloudwatchLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions,
+	CloudwatchLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions,
 }
 ```
 
@@ -3474,7 +3474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions {
 	LogEnabled: interface{},
@@ -3534,7 +3534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 &vpnconnection.VpnConnectionVgwTelemetry {
 
@@ -3549,7 +3549,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnConnectionRoutesList
 ```
@@ -3681,7 +3681,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnConnectionRoutesOutputReference
 ```
@@ -3981,7 +3981,7 @@ func InternalValue() VpnConnectionRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference
 ```
@@ -4317,7 +4317,7 @@ func InternalValue() VpnConnectionTunnel1LogOptionsCloudwatchLogOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel1LogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel1LogOptionsOutputReference
 ```
@@ -4608,7 +4608,7 @@ func InternalValue() VpnConnectionTunnel1LogOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference
 ```
@@ -4944,7 +4944,7 @@ func InternalValue() VpnConnectionTunnel2LogOptionsCloudwatchLogOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel2LogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel2LogOptionsOutputReference
 ```
@@ -5235,7 +5235,7 @@ func InternalValue() VpnConnectionTunnel2LogOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionVgwTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnConnectionVgwTelemetryList
 ```
@@ -5367,7 +5367,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpnconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpnconnection"
 
 vpnconnection.NewVpnConnectionVgwTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnConnectionVgwTelemetryOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocument(scope Construct, id *string, config DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig) DataAwsCloudwatchLogDataProtectionPolicyDocument
 ```
@@ -301,7 +301,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocument_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtect
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtect
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocument_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig {
 	Connection: interface{},
@@ -866,11 +866,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement {
 	DataIdentifiers: *[]*string,
-	Operation: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation,
+	Operation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation,
 	Sid: *string,
 }
 ```
@@ -928,11 +928,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation {
-	Audit: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit,
-	Deidentify: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify,
+	Audit: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit,
+	Deidentify: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify,
 }
 ```
 
@@ -978,10 +978,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit {
-	FindingsDestination: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination,
+	FindingsDestination: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination,
 }
 ```
 
@@ -1012,12 +1012,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination {
-	CloudwatchLogs: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs,
-	Firehose: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose,
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3,
+	CloudwatchLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs,
+	Firehose: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs {
 	LogGroup: *string,
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose {
 	DeliveryStream: *string,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3 {
 	Bucket: *string,
@@ -1174,10 +1174,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify {
-	MaskConfig: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig,
+	MaskConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig,
 }
 ```
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 &dataawscloudwatchlogdataprotectionpolicydocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig {
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprote
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList
 ```
@@ -1366,7 +1366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference
 ```
@@ -1637,7 +1637,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference
 ```
@@ -1908,7 +1908,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference
 ```
@@ -2283,7 +2283,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference
 ```
@@ -2554,7 +2554,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference
 ```
@@ -2838,7 +2838,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference
 ```
@@ -3087,7 +3087,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference
 ```
@@ -3371,7 +3371,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference
 ```
@@ -3704,7 +3704,7 @@ func InternalValue() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchlogdataprotectionpolicydocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchlogdataprotectionpolicydocument"
 
 dataawscloudwatchlogdataprotectionpolicydocument.NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputReference
 ```

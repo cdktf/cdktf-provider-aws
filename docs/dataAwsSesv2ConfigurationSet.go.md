@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSet(scope Construct, id *string, config DataAwsSesv2ConfigurationSetConfig) DataAwsSesv2ConfigurationSet
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.DataAwsSesv2ConfigurationSet_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.DataAwsSesv2ConfigurationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawssesv2configurationset.DataAwsSesv2ConfigurationSet_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.DataAwsSesv2ConfigurationSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawssesv2configurationset.DataAwsSesv2ConfigurationSet_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.DataAwsSesv2ConfigurationSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetConfig {
 	Connection: interface{},
@@ -838,7 +838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetDeliveryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetDeliveryOptions {
 
@@ -851,7 +851,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetReputationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetReputationOptions {
 
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetSendingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetSendingOptions {
 
@@ -877,7 +877,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetSuppressionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetSuppressionOptions {
 
@@ -890,7 +890,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetTrackingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetTrackingOptions {
 
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetVdmOptions {
 
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptions {
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 &dataawssesv2configurationset.DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptions {
 
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetDeliveryOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetDeliveryOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetDeliveryOptionsList
 ```
@@ -1076,7 +1076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetDeliveryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetDeliveryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetDeliveryOptionsOutputReference
 ```
@@ -1365,7 +1365,7 @@ func InternalValue() DataAwsSesv2ConfigurationSetDeliveryOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetReputationOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetReputationOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetReputationOptionsList
 ```
@@ -1497,7 +1497,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetReputationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetReputationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetReputationOptionsOutputReference
 ```
@@ -1786,7 +1786,7 @@ func InternalValue() DataAwsSesv2ConfigurationSetReputationOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetSendingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetSendingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetSendingOptionsList
 ```
@@ -1918,7 +1918,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetSendingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetSendingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetSendingOptionsOutputReference
 ```
@@ -2196,7 +2196,7 @@ func InternalValue() DataAwsSesv2ConfigurationSetSendingOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetSuppressionOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetSuppressionOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetSuppressionOptionsList
 ```
@@ -2328,7 +2328,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetSuppressionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetSuppressionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetSuppressionOptionsOutputReference
 ```
@@ -2606,7 +2606,7 @@ func InternalValue() DataAwsSesv2ConfigurationSetSuppressionOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetTrackingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetTrackingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetTrackingOptionsList
 ```
@@ -2738,7 +2738,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetTrackingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference
 ```
@@ -3016,7 +3016,7 @@ func InternalValue() DataAwsSesv2ConfigurationSetTrackingOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsList
 ```
@@ -3148,7 +3148,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference
 ```
@@ -3426,7 +3426,7 @@ func InternalValue() DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsList
 ```
@@ -3558,7 +3558,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference
 ```
@@ -3836,7 +3836,7 @@ func InternalValue() DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetVdmOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2ConfigurationSetVdmOptionsList
 ```
@@ -3968,7 +3968,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2ConfigurationSet.DataAwsSesv2ConfigurationSetVdmOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesv2configurationset"
 
 dataawssesv2configurationset.NewDataAwsSesv2ConfigurationSetVdmOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2ConfigurationSetVdmOptionsOutputReference
 ```

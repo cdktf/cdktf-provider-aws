@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediastorecontainerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediastorecontainerpolicy"
 
 mediastorecontainerpolicy.NewMediaStoreContainerPolicy(scope Construct, id *string, config MediaStoreContainerPolicyConfig) MediaStoreContainerPolicy
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediastorecontainerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediastorecontainerpolicy"
 
 mediastorecontainerpolicy.MediaStoreContainerPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediastorecontainerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediastorecontainerpolicy"
 
 mediastorecontainerpolicy.MediaStoreContainerPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ mediastorecontainerpolicy.MediaStoreContainerPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediastorecontainerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediastorecontainerpolicy"
 
 mediastorecontainerpolicy.MediaStoreContainerPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ mediastorecontainerpolicy.MediaStoreContainerPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediastorecontainerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediastorecontainerpolicy"
 
 mediastorecontainerpolicy.MediaStoreContainerPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediastorecontainerpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediastorecontainerpolicy"
 
 &mediastorecontainerpolicy.MediaStoreContainerPolicyConfig {
 	Connection: interface{},

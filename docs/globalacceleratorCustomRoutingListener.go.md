@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.NewGlobalacceleratorCustomRoutingListener(scope Construct, id *string, config GlobalacceleratorCustomRoutingListenerConfig) GlobalacceleratorCustomRoutingListener
 ```
@@ -368,7 +368,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListener.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListener_IsConstruct(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListener.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListener_IsTerraformElement(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListener_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListener.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListener_IsTerraformResource(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListener_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListener.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListener_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 &globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListenerConfig {
 	Connection: interface{},
@@ -758,7 +758,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutin
 	AcceleratorArn: *string,
 	PortRange: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerTimeouts,
 }
 ```
 
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 &globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListenerPortRange {
 	FromPort: *f64,
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 &globalacceleratorcustomroutinglistener.GlobalacceleratorCustomRoutingListenerTimeouts {
 	Create: *string,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerPortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.NewGlobalacceleratorCustomRoutingListenerPortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlobalacceleratorCustomRoutingListenerPortRangeList
 ```
@@ -1161,7 +1161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.NewGlobalacceleratorCustomRoutingListenerPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlobalacceleratorCustomRoutingListenerPortRangeOutputReference
 ```
@@ -1486,7 +1486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorCustomRoutingListener.GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorcustomroutinglistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/globalacceleratorcustomroutinglistener"
 
 globalacceleratorcustomroutinglistener.NewGlobalacceleratorCustomRoutingListenerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference
 ```

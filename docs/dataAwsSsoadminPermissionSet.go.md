@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.NewDataAwsSsoadminPermissionSet(scope Construct, id *string, config DataAwsSsoadminPermissionSetConfig) DataAwsSsoadminPermissionSet
 ```
@@ -295,7 +295,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminpermissionset"
 
 &dataawsssoadminpermissionset.DataAwsSsoadminPermissionSetConfig {
 	Connection: interface{},

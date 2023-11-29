@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.NewDataAwsCloudfrontFunction(scope Construct, id *string, config DataAwsCloudfrontFunctionConfig) DataAwsCloudfrontFunction
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.DataAwsCloudfrontFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontfunction"
 
 &dataawscloudfrontfunction.DataAwsCloudfrontFunctionConfig {
 	Connection: interface{},

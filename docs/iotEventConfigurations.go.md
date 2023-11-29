@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ioteventconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ioteventconfigurations"
 
 ioteventconfigurations.NewIotEventConfigurations(scope Construct, id *string, config IotEventConfigurationsConfig) IotEventConfigurations
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ioteventconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ioteventconfigurations"
 
 ioteventconfigurations.IotEventConfigurations_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ioteventconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ioteventconfigurations"
 
 ioteventconfigurations.IotEventConfigurations_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ ioteventconfigurations.IotEventConfigurations_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ioteventconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ioteventconfigurations"
 
 ioteventconfigurations.IotEventConfigurations_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ ioteventconfigurations.IotEventConfigurations_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ioteventconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ioteventconfigurations"
 
 ioteventconfigurations.IotEventConfigurations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ioteventconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ioteventconfigurations"
 
 &ioteventconfigurations.IotEventConfigurationsConfig {
 	Connection: interface{},

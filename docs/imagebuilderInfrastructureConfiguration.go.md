@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.NewImagebuilderInfrastructureConfiguration(scope Construct, id *string, config ImagebuilderInfrastructureConfigurationConfig) ImagebuilderInfrastructureConfiguration
 ```
@@ -445,7 +445,7 @@ func ResetTerminateInstanceOnFailure()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfiguration_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfiguration_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1097,7 +1097,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 &imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfigurationConfig {
 	Connection: interface{},
@@ -1111,10 +1111,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructurecon
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	InstanceMetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptions,
+	InstanceMetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptions,
 	InstanceTypes: *[]*string,
 	KeyPair: *string,
-	Logging: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLogging,
+	Logging: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLogging,
 	ResourceTags: *map[string]*string,
 	SecurityGroupIds: *[]*string,
 	SnsTopicArn: *string,
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 &imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptions {
 	HttpPutResponseHopLimit: *f64,
@@ -1462,10 +1462,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 &imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfigurationLogging {
-	S3Logs: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingS3Logs,
+	S3Logs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingS3Logs,
 }
 ```
 
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingS3Logs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 &imagebuilderinfrastructureconfiguration.ImagebuilderInfrastructureConfigurationLoggingS3Logs {
 	S3BucketName: *string,
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference
 ```
@@ -1851,7 +1851,7 @@ func InternalValue() ImagebuilderInfrastructureConfigurationInstanceMetadataOpti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.NewImagebuilderInfrastructureConfigurationLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderInfrastructureConfigurationLoggingOutputReference
 ```
@@ -2135,7 +2135,7 @@ func InternalValue() ImagebuilderInfrastructureConfigurationLogging
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderinfrastructureconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderinfrastructureconfiguration"
 
 imagebuilderinfrastructureconfiguration.NewImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference
 ```

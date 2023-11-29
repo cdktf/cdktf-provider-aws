@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.NewGlueMlTransform(scope Construct, id *string, config GlueMlTransformConfig) GlueMlTransform
 ```
@@ -424,7 +424,7 @@ func ResetWorkerType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.GlueMlTransform_IsConstruct(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.GlueMlTransform_IsTerraformElement(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ gluemltransform.GlueMlTransform_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.GlueMlTransform_IsTerraformResource(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ gluemltransform.GlueMlTransform_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.GlueMlTransform_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1054,7 +1054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 &gluemltransform.GlueMlTransformConfig {
 	Connection: interface{},
@@ -1066,7 +1066,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
 	Provisioners: *[]interface{},
 	InputRecordTables: interface{},
 	Name: *string,
-	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws.glueMlTransform.GlueMlTransformParameters,
+	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueMlTransform.GlueMlTransformParameters,
 	RoleArn: *string,
 	Description: *string,
 	GlueVersion: *string,
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 &gluemltransform.GlueMlTransformInputRecordTables {
 	DatabaseName: *string,
@@ -1433,10 +1433,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 &gluemltransform.GlueMlTransformParameters {
-	FindMatchesParameters: github.com/cdktf/cdktf-provider-aws-go/aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters,
+	FindMatchesParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueMlTransform.GlueMlTransformParametersFindMatchesParameters,
 	TransformType: *string,
 }
 ```
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 &gluemltransform.GlueMlTransformParametersFindMatchesParameters {
 	AccuracyCostTradeOff: *f64,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 &gluemltransform.GlueMlTransformSchema {
 
@@ -1570,7 +1570,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.NewGlueMlTransformInputRecordTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueMlTransformInputRecordTablesList
 ```
@@ -1713,7 +1713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.NewGlueMlTransformInputRecordTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueMlTransformInputRecordTablesOutputReference
 ```
@@ -2082,7 +2082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.NewGlueMlTransformParametersFindMatchesParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueMlTransformParametersFindMatchesParametersOutputReference
 ```
@@ -2447,7 +2447,7 @@ func InternalValue() GlueMlTransformParametersFindMatchesParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.NewGlueMlTransformParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueMlTransformParametersOutputReference
 ```
@@ -2753,7 +2753,7 @@ func InternalValue() GlueMlTransformParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.NewGlueMlTransformSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueMlTransformSchemaList
 ```
@@ -2885,7 +2885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluemltransform"
 
 gluemltransform.NewGlueMlTransformSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueMlTransformSchemaOutputReference
 ```

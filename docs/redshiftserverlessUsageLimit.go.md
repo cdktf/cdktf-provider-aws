@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.NewRedshiftserverlessUsageLimit(scope Construct, id *string, config RedshiftserverlessUsageLimitConfig) RedshiftserverlessUsageLimit
 ```
@@ -349,7 +349,7 @@ func ResetPeriod()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
 
 &redshiftserverlessusagelimit.RedshiftserverlessUsageLimitConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.NewBatchComputeEnvironment(scope Construct, id *string, config BatchComputeEnvironmentConfig) BatchComputeEnvironment
 ```
@@ -417,7 +417,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.BatchComputeEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -449,7 +449,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.BatchComputeEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ batchcomputeenvironment.BatchComputeEnvironment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.BatchComputeEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ batchcomputeenvironment.BatchComputeEnvironment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.BatchComputeEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 &batchcomputeenvironment.BatchComputeEnvironmentComputeResources {
 	MaxVcpus: *f64,
@@ -984,7 +984,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
 	ImageId: *string,
 	InstanceRole: *string,
 	InstanceType: *[]*string,
-	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplate,
+	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplate,
 	MinVcpus: *f64,
 	PlacementGroup: *string,
 	SecurityGroupIds: *[]*string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesEc2Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 &batchcomputeenvironment.BatchComputeEnvironmentComputeResourcesEc2Configuration {
 	ImageIdOverride: *string,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 &batchcomputeenvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplate {
 	LaunchTemplateId: *string,
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 &batchcomputeenvironment.BatchComputeEnvironmentConfig {
 	Connection: interface{},
@@ -1349,8 +1349,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
 	Type: *string,
 	ComputeEnvironmentName: *string,
 	ComputeEnvironmentNamePrefix: *string,
-	ComputeResources: github.com/cdktf/cdktf-provider-aws-go/aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResources,
-	EksConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.batchComputeEnvironment.BatchComputeEnvironmentEksConfiguration,
+	ComputeResources: github.com/cdktf/cdktf-provider-aws-go/aws/v18.batchComputeEnvironment.BatchComputeEnvironmentComputeResources,
+	EksConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.batchComputeEnvironment.BatchComputeEnvironmentEksConfiguration,
 	Id: *string,
 	ServiceRole: *string,
 	State: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentEksConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 &batchcomputeenvironment.BatchComputeEnvironmentEksConfiguration {
 	EksClusterArn: *string,
@@ -1633,7 +1633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesEc2ConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.NewBatchComputeEnvironmentComputeResourcesEc2ConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchComputeEnvironmentComputeResourcesEc2ConfigurationList
 ```
@@ -1776,7 +1776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.NewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference
 ```
@@ -2101,7 +2101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.NewBatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference
 ```
@@ -2437,7 +2437,7 @@ func InternalValue() BatchComputeEnvironmentComputeResourcesLaunchTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.NewBatchComputeEnvironmentComputeResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchComputeEnvironmentComputeResourcesOutputReference
 ```
@@ -3184,7 +3184,7 @@ func InternalValue() BatchComputeEnvironmentComputeResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentEksConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchcomputeenvironment"
 
 batchcomputeenvironment.NewBatchComputeEnvironmentEksConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchComputeEnvironmentEksConfigurationOutputReference
 ```

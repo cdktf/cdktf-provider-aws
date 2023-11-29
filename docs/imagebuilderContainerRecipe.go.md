@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipe(scope Construct, id *string, config ImagebuilderContainerRecipeConfig) ImagebuilderContainerRecipe
 ```
@@ -437,7 +437,7 @@ func ResetWorkingDirectory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsConstruct(x interface{}) *bool
 ```
@@ -469,7 +469,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformElement(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformResource(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1133,7 +1133,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeComponent {
 	ComponentArn: *string,
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeComponentParameter {
 	Name: *string,
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeConfig {
 	Connection: interface{},
@@ -1241,13 +1241,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 	ContainerType: *string,
 	Name: *string,
 	ParentImage: *string,
-	TargetRepository: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepository,
+	TargetRepository: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepository,
 	Version: *string,
 	Description: *string,
 	DockerfileTemplateData: *string,
 	DockerfileTemplateUri: *string,
 	Id: *string,
-	InstanceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfiguration,
+	InstanceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfiguration,
 	KmsKeyId: *string,
 	PlatformOverride: *string,
 	Tags: *map[string]*string,
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeInstanceConfiguration {
 	BlockDeviceMapping: interface{},
@@ -1610,11 +1610,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping {
 	DeviceName: *string,
-	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs,
+	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs,
 	NoDevice: interface{},
 	VirtualName: *string,
 }
@@ -1686,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs {
 	DeleteOnTermination: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeTargetRepository {
 	RepositoryName: *string,
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderContainerRecipeComponentList
 ```
@@ -2007,7 +2007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderContainerRecipeComponentOutputReference
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderContainerRecipeComponentParameterList
 ```
@@ -2481,7 +2481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderContainerRecipeComponentParameterOutputReference
 ```
@@ -2792,7 +2792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference
 ```
@@ -3273,7 +3273,7 @@ func InternalValue() ImagebuilderContainerRecipeInstanceConfigurationBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList
 ```
@@ -3416,7 +3416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference
 ```
@@ -3812,7 +3812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderContainerRecipeInstanceConfigurationOutputReference
 ```
@@ -4132,7 +4132,7 @@ func InternalValue() ImagebuilderContainerRecipeInstanceConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeTargetRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderContainerRecipeTargetRepositoryOutputReference
 ```

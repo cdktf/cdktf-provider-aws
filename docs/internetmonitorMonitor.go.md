@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.NewInternetmonitorMonitor(scope Construct, id *string, config InternetmonitorMonitorConfig) InternetmonitorMonitor
 ```
@@ -417,7 +417,7 @@ func ResetTrafficPercentageToMonitor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.InternetmonitorMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -449,7 +449,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.InternetmonitorMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ internetmonitormonitor.InternetmonitorMonitor_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.InternetmonitorMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ internetmonitormonitor.InternetmonitorMonitor_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.InternetmonitorMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 &internetmonitormonitor.InternetmonitorMonitorConfig {
 	Connection: interface{},
@@ -948,9 +948,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	MonitorName: *string,
-	HealthEventsConfig: github.com/cdktf/cdktf-provider-aws-go/aws.internetmonitorMonitor.InternetmonitorMonitorHealthEventsConfig,
+	HealthEventsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.internetmonitorMonitor.InternetmonitorMonitorHealthEventsConfig,
 	Id: *string,
-	InternetMeasurementsLogDelivery: github.com/cdktf/cdktf-provider-aws-go/aws.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDelivery,
+	InternetMeasurementsLogDelivery: github.com/cdktf/cdktf-provider-aws-go/aws/v18.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDelivery,
 	MaxCityNetworksToMonitor: *f64,
 	Resources: *[]*string,
 	Status: *string,
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitorHealthEventsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 &internetmonitormonitor.InternetmonitorMonitorHealthEventsConfig {
 	AvailabilityScoreThreshold: *f64,
@@ -1232,10 +1232,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDelivery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 &internetmonitormonitor.InternetmonitorMonitorInternetMeasurementsLogDelivery {
-	S3Config: github.com/cdktf/cdktf-provider-aws-go/aws.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDeliveryS3Config,
+	S3Config: github.com/cdktf/cdktf-provider-aws-go/aws/v18.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDeliveryS3Config,
 }
 ```
 
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDeliveryS3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 &internetmonitormonitor.InternetmonitorMonitorInternetMeasurementsLogDeliveryS3Config {
 	BucketName: *string,
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitorHealthEventsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.NewInternetmonitorMonitorHealthEventsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InternetmonitorMonitorHealthEventsConfigOutputReference
 ```
@@ -1635,7 +1635,7 @@ func InternalValue() InternetmonitorMonitorHealthEventsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.NewInternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference
 ```
@@ -1926,7 +1926,7 @@ func InternalValue() InternetmonitorMonitorInternetMeasurementsLogDelivery
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.internetmonitorMonitor.InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/internetmonitormonitor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/internetmonitormonitor"
 
 internetmonitormonitor.NewInternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference
 ```

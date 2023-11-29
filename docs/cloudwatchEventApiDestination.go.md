@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventapidestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventapidestination"
 
 cloudwatcheventapidestination.NewCloudwatchEventApiDestination(scope Construct, id *string, config CloudwatchEventApiDestinationConfig) CloudwatchEventApiDestination
 ```
@@ -349,7 +349,7 @@ func ResetInvocationRateLimitPerSecond()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventapidestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventapidestination"
 
 cloudwatcheventapidestination.CloudwatchEventApiDestination_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventapidestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventapidestination"
 
 cloudwatcheventapidestination.CloudwatchEventApiDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ cloudwatcheventapidestination.CloudwatchEventApiDestination_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventapidestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventapidestination"
 
 cloudwatcheventapidestination.CloudwatchEventApiDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ cloudwatcheventapidestination.CloudwatchEventApiDestination_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventapidestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventapidestination"
 
 cloudwatcheventapidestination.CloudwatchEventApiDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -803,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventapidestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventapidestination"
 
 &cloudwatcheventapidestination.CloudwatchEventApiDestinationConfig {
 	Connection: interface{},

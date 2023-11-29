@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImage(scope Construct, id *string, config ImagebuilderImageConfig) ImagebuilderImage
 ```
@@ -437,7 +437,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_IsConstruct(x interface{}) *bool
 ```
@@ -469,7 +469,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ imagebuilderimage.ImagebuilderImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ imagebuilderimage.ImagebuilderImage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1045,7 +1045,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageConfig {
 	Connection: interface{},
@@ -1061,11 +1061,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
 	EnhancedImageMetadataEnabled: interface{},
 	Id: *string,
 	ImageRecipeArn: *string,
-	ImageScanningConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderImage.ImagebuilderImageImageScanningConfiguration,
-	ImageTestsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration,
+	ImageScanningConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderImage.ImagebuilderImageImageScanningConfiguration,
+	ImageTestsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderImage.ImagebuilderImageImageTestsConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderImage.ImagebuilderImageTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderImage.ImagebuilderImageTimeouts,
 }
 ```
 
@@ -1310,10 +1310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageImageScanningConfiguration {
-	EcrConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration,
+	EcrConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration,
 	ImageScanningEnabled: interface{},
 }
 ```
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageImageScanningConfigurationEcrConfiguration {
 	ContainerTags: *[]*string,
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageImageTestsConfiguration {
 	ImageTestsEnabled: interface{},
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageOutputResources {
 
@@ -1463,7 +1463,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageOutputResourcesAmis {
 
@@ -1476,7 +1476,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageOutputResourcesContainers {
 
@@ -1489,7 +1489,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageTimeouts {
 	Create: *string,
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() ImagebuilderImageImageScanningConfigurationEcrConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageImageScanningConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageImageScanningConfigurationOutputReference
 ```
@@ -2150,7 +2150,7 @@ func InternalValue() ImagebuilderImageImageScanningConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageImageTestsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageImageTestsConfigurationOutputReference
 ```
@@ -2457,7 +2457,7 @@ func InternalValue() ImagebuilderImageImageTestsConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesAmisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageOutputResourcesAmisList
 ```
@@ -2589,7 +2589,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesAmisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageOutputResourcesAmisOutputReference
 ```
@@ -2911,7 +2911,7 @@ func InternalValue() ImagebuilderImageOutputResourcesAmis
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageOutputResourcesContainersList
 ```
@@ -3043,7 +3043,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageOutputResourcesContainersOutputReference
 ```
@@ -3332,7 +3332,7 @@ func InternalValue() ImagebuilderImageOutputResourcesContainers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageOutputResourcesList
 ```
@@ -3464,7 +3464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageOutputResourcesOutputReference
 ```
@@ -3753,7 +3753,7 @@ func InternalValue() ImagebuilderImageOutputResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageTimeoutsOutputReference
 ```
