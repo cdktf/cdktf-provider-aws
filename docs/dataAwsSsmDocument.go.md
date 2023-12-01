@@ -4,12 +4,12 @@
 
 ### DataAwsSsmDocument <a name="DataAwsSsmDocument" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document aws_ssm_document}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document aws_ssm_document}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.NewDataAwsSsmDocument(scope Construct, id *string, config DataAwsSsmDocumentConfig) DataAwsSsmDocument
 ```
@@ -288,7 +288,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.DataAwsSsmDocument_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.DataAwsSsmDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawsssmdocument.DataAwsSsmDocument_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.DataAwsSsmDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ dataawsssmdocument.DataAwsSsmDocument_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.DataAwsSsmDocument_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -377,7 +377,7 @@ The construct id used in the generated config for the DataAwsSsmDocument to impo
 
 The id of the existing DataAwsSsmDocument that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 &dataawsssmdocument.DataAwsSsmDocumentConfig {
 	Connection: interface{},
@@ -704,10 +704,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssmdocument"
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentFormat">DocumentFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentVersion">DocumentVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentFormat">DocumentFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentVersion">DocumentVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
 
 ---
 
@@ -789,7 +789,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
 
 ---
 
@@ -801,7 +801,7 @@ DocumentFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
 
 ---
 
@@ -813,7 +813,7 @@ DocumentVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
 
 ---
 
@@ -825,7 +825,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

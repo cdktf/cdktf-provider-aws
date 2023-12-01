@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets
+// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsKmsSecretsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#id DataAwsKmsSecrets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#id DataAwsKmsSecrets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,33 +17,33 @@ export interface DataAwsKmsSecretsConfig extends cdktf.TerraformMetaArguments {
   /**
   * secret block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#secret DataAwsKmsSecrets#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#secret DataAwsKmsSecrets#secret}
   */
   readonly secret: DataAwsKmsSecretsSecret[] | cdktf.IResolvable;
 }
 export interface DataAwsKmsSecretsSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#context DataAwsKmsSecrets#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#context DataAwsKmsSecrets#context}
   */
   readonly context?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#encryption_algorithm DataAwsKmsSecrets#encryption_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#encryption_algorithm DataAwsKmsSecrets#encryption_algorithm}
   */
   readonly encryptionAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#grant_tokens DataAwsKmsSecrets#grant_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#grant_tokens DataAwsKmsSecrets#grant_tokens}
   */
   readonly grantTokens?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#key_id DataAwsKmsSecrets#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#key_id DataAwsKmsSecrets#key_id}
   */
   readonly keyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#name DataAwsKmsSecrets#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#name DataAwsKmsSecrets#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#payload DataAwsKmsSecrets#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#payload DataAwsKmsSecrets#payload}
   */
   readonly payload: string;
 }
@@ -254,7 +249,7 @@ export class DataAwsKmsSecretsSecretList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets aws_kms_secrets}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets aws_kms_secrets}
 */
 export class DataAwsKmsSecrets extends cdktf.TerraformDataSource {
 
@@ -270,7 +265,7 @@ export class DataAwsKmsSecrets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsKmsSecrets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsKmsSecrets to import
-  * @param importFromId The id of the existing DataAwsKmsSecrets that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsKmsSecrets that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsKmsSecrets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -282,7 +277,7 @@ export class DataAwsKmsSecrets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/kms_secrets aws_kms_secrets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/kms_secrets aws_kms_secrets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +288,7 @@ export class DataAwsKmsSecrets extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_kms_secrets',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

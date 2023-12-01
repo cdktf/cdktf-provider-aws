@@ -4,12 +4,12 @@
 
 ### PinpointSmsChannel <a name="PinpointSmsChannel" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointsmschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmschannel"
 
 pinpointsmschannel.NewPinpointSmsChannel(scope Construct, id *string, config PinpointSmsChannelConfig) PinpointSmsChannel
 ```
@@ -356,7 +356,7 @@ func ResetShortCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointsmschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointsmschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ pinpointsmschannel.PinpointSmsChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointsmschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ pinpointsmschannel.PinpointSmsChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointsmschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -445,7 +445,7 @@ The construct id used in the generated config for the PinpointSmsChannel to impo
 
 The id of the existing PinpointSmsChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointsmschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmschannel"
 
 &pinpointsmschannel.PinpointSmsChannelConfig {
 	Connection: interface{},
@@ -806,11 +806,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointsmschannel"
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.senderId">SenderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.shortCode">ShortCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.senderId">SenderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.shortCode">ShortCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}. |
 
 ---
 
@@ -892,7 +892,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
 
 ---
 
@@ -904,7 +904,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
 
 ---
 
@@ -916,7 +916,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ SenderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
 
 ---
 
@@ -943,7 +943,7 @@ ShortCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
 
 ---
 

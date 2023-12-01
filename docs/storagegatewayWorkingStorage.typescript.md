@@ -4,7 +4,7 @@
 
 ### StoragegatewayWorkingStorage <a name="StoragegatewayWorkingStorage" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer"></a>
 
@@ -424,7 +424,7 @@ The construct id used in the generated config for the StoragegatewayWorkingStora
 
 The id of the existing StoragegatewayWorkingStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,9 +706,9 @@ const storagegatewayWorkingStorageConfig: storagegatewayWorkingStorage.Storagega
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.diskId">diskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.gatewayArn">gatewayArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.diskId">diskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.gatewayArn">gatewayArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}. |
 
 ---
 
@@ -790,7 +790,7 @@ public readonly diskId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
 
 ---
 
@@ -802,7 +802,7 @@ public readonly gatewayArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
 
 ---
 
@@ -814,7 +814,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
