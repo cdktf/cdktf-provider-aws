@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation
+// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface VpnGatewayRoutePropagationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation#id VpnGatewayRoutePropagation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation#id VpnGatewayRoutePropagation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation#route_table_id VpnGatewayRoutePropagation#route_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation#route_table_id VpnGatewayRoutePropagation#route_table_id}
   */
   readonly routeTableId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation#vpn_gateway_id VpnGatewayRoutePropagation#vpn_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation#vpn_gateway_id VpnGatewayRoutePropagation#vpn_gateway_id}
   */
   readonly vpnGatewayId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation#timeouts VpnGatewayRoutePropagation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation#timeouts VpnGatewayRoutePropagation#timeouts}
   */
   readonly timeouts?: VpnGatewayRoutePropagationTimeouts;
 }
 export interface VpnGatewayRoutePropagationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation#create VpnGatewayRoutePropagation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation#create VpnGatewayRoutePropagation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation#delete VpnGatewayRoutePropagation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation#delete VpnGatewayRoutePropagation#delete}
   */
   readonly delete?: string;
 }
@@ -138,7 +138,7 @@ export class VpnGatewayRoutePropagationTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation}
 */
 export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
 
@@ -154,7 +154,7 @@ export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpnGatewayRoutePropagation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnGatewayRoutePropagation to import
-  * @param importFromId The id of the existing VpnGatewayRoutePropagation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpnGatewayRoutePropagation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnGatewayRoutePropagation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -166,7 +166,7 @@ export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,7 +177,7 @@ export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpn_gateway_route_propagation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

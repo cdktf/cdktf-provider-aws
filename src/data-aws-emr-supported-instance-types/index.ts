@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/emr_supported_instance_types
+// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/emr_supported_instance_types
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEmrSupportedInstanceTypesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}
   */
   readonly releaseLabel: string;
   /**
   * supported_instance_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/emr_supported_instance_types#supported_instance_types DataAwsEmrSupportedInstanceTypes#supported_instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/emr_supported_instance_types#supported_instance_types DataAwsEmrSupportedInstanceTypes#supported_instance_types}
   */
   readonly supportedInstanceTypes?: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes[] | cdktf.IResolvable;
 }
@@ -150,7 +150,7 @@ export class DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}
 */
 export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource {
 
@@ -166,7 +166,7 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataAwsEmrSupportedInstanceTypes resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEmrSupportedInstanceTypes to import
-  * @param importFromId The id of the existing DataAwsEmrSupportedInstanceTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/emr_supported_instance_types#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEmrSupportedInstanceTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/emr_supported_instance_types#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEmrSupportedInstanceTypes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -178,7 +178,7 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -189,7 +189,7 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
       terraformResourceType: 'aws_emr_supported_instance_types',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

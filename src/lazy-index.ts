@@ -368,6 +368,7 @@ Object.defineProperty(exports, 'docdbClusterSnapshot', { get: function () { retu
 Object.defineProperty(exports, 'docdbEventSubscription', { get: function () { return require('./docdb-event-subscription'); } });
 Object.defineProperty(exports, 'docdbGlobalCluster', { get: function () { return require('./docdb-global-cluster'); } });
 Object.defineProperty(exports, 'docdbSubnetGroup', { get: function () { return require('./docdb-subnet-group'); } });
+Object.defineProperty(exports, 'docdbelasticCluster', { get: function () { return require('./docdbelastic-cluster'); } });
 Object.defineProperty(exports, 'dxBgpPeer', { get: function () { return require('./dx-bgp-peer'); } });
 Object.defineProperty(exports, 'dxConnection', { get: function () { return require('./dx-connection'); } });
 Object.defineProperty(exports, 'dxConnectionAssociation', { get: function () { return require('./dx-connection-association'); } });
@@ -474,6 +475,7 @@ Object.defineProperty(exports, 'eksCluster', { get: function () { return require
 Object.defineProperty(exports, 'eksFargateProfile', { get: function () { return require('./eks-fargate-profile'); } });
 Object.defineProperty(exports, 'eksIdentityProviderConfig', { get: function () { return require('./eks-identity-provider-config'); } });
 Object.defineProperty(exports, 'eksNodeGroup', { get: function () { return require('./eks-node-group'); } });
+Object.defineProperty(exports, 'eksPodIdentityAssociation', { get: function () { return require('./eks-pod-identity-association'); } });
 Object.defineProperty(exports, 'elasticBeanstalkApplication', { get: function () { return require('./elastic-beanstalk-application'); } });
 Object.defineProperty(exports, 'elasticBeanstalkApplicationVersion', { get: function () { return require('./elastic-beanstalk-application-version'); } });
 Object.defineProperty(exports, 'elasticBeanstalkConfigurationTemplate', { get: function () { return require('./elastic-beanstalk-configuration-template'); } });

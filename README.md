@@ -3,7 +3,7 @@
 
 This repo builds and publishes the Terraform aws Provider bindings for [CDK for Terraform](https://cdk.tf).
 
-Is based directly on aws 5.28.0
+Is based directly on aws 5.29.0
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform aws Provider version 1:1. 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform aws Provider](https://registry.terraform.io/providers/hashicorp/aws/5.28.0)
+- [Terraform aws Provider](https://registry.terraform.io/providers/hashicorp/aws/5.29.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-aws/releases)
 - [Terraform Engine](https://terraform.io)
 

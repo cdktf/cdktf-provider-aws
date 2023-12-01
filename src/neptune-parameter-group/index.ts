@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface NeptuneParameterGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#description NeptuneParameterGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#description NeptuneParameterGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#family NeptuneParameterGroup#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#family NeptuneParameterGroup#family}
   */
   readonly family: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#id NeptuneParameterGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#id NeptuneParameterGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#name NeptuneParameterGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#name NeptuneParameterGroup#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#tags NeptuneParameterGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#name_prefix NeptuneParameterGroup#name_prefix}
+  */
+  readonly namePrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#tags NeptuneParameterGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#tags_all NeptuneParameterGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#tags_all NeptuneParameterGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#parameter NeptuneParameterGroup#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#parameter NeptuneParameterGroup#parameter}
   */
   readonly parameter?: NeptuneParameterGroupParameter[] | cdktf.IResolvable;
 }
 export interface NeptuneParameterGroupParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#apply_method NeptuneParameterGroup#apply_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#apply_method NeptuneParameterGroup#apply_method}
   */
   readonly applyMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#name NeptuneParameterGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#name NeptuneParameterGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#value NeptuneParameterGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#value NeptuneParameterGroup#value}
   */
   readonly value: string;
 }
@@ -193,7 +197,7 @@ export class NeptuneParameterGroupParameterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group}
 */
 export class NeptuneParameterGroup extends cdktf.TerraformResource {
 
@@ -209,7 +213,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NeptuneParameterGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NeptuneParameterGroup to import
-  * @param importFromId The id of the existing NeptuneParameterGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NeptuneParameterGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NeptuneParameterGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -221,7 +225,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -232,7 +236,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_parameter_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -247,6 +251,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
     this._family = config.family;
     this._id = config.id;
     this._name = config.name;
+    this._namePrefix = config.namePrefix;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._parameter.internalValue = config.parameter;
@@ -306,7 +311,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -314,9 +319,28 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
   public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // name_prefix - computed: true, optional: true, required: false
+  private _namePrefix?: string; 
+  public get namePrefix() {
+    return this.getStringAttribute('name_prefix');
+  }
+  public set namePrefix(value: string) {
+    this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -377,6 +401,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
       family: cdktf.stringToTerraform(this._family),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       parameter: cdktf.listMapper(neptuneParameterGroupParameterToTerraform, true)(this._parameter.internalValue),

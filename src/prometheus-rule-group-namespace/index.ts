@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace
+// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface PrometheusRuleGroupNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace#data PrometheusRuleGroupNamespace#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace#data PrometheusRuleGroupNamespace#data}
   */
   readonly data: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace#id PrometheusRuleGroupNamespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace#id PrometheusRuleGroupNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace#name PrometheusRuleGroupNamespace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace#name PrometheusRuleGroupNamespace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace#workspace_id PrometheusRuleGroupNamespace#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace#workspace_id PrometheusRuleGroupNamespace#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}
 */
 export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PrometheusRuleGroupNamespace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrometheusRuleGroupNamespace to import
-  * @param importFromId The id of the existing PrometheusRuleGroupNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrometheusRuleGroupNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrometheusRuleGroupNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_prometheus_rule_group_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
