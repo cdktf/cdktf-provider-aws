@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.NewDataAwsDbSubnetGroup(scope Construct, id *string, config DataAwsDbSubnetGroupConfig) DataAwsDbSubnetGroup
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbsubnetgroup"
 
 &dataawsdbsubnetgroup.DataAwsDbSubnetGroupConfig {
 	Connection: interface{},

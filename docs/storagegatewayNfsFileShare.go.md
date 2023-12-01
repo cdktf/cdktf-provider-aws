@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShare(scope Construct, id *string, config StoragegatewayNfsFileShareConfig) StoragegatewayNfsFileShare
 ```
@@ -500,7 +500,7 @@ func ResetVpcEndpointDnsName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsConstruct(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformResource(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1328,7 +1328,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareCacheAttributes {
 	CacheStaleTimeoutInSeconds: *f64,
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareConfig {
 	Connection: interface{},
@@ -1376,14 +1376,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
 	RoleArn: *string,
 	AuditDestinationArn: *string,
 	BucketRegion: *string,
-	CacheAttributes: github.com/cdktf/cdktf-provider-aws-go/aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes,
+	CacheAttributes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes,
 	DefaultStorageClass: *string,
 	FileShareName: *string,
 	GuessMimeTypeEnabled: interface{},
 	Id: *string,
 	KmsEncrypted: interface{},
 	KmsKeyArn: *string,
-	NfsFileShareDefaults: github.com/cdktf/cdktf-provider-aws-go/aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults,
+	NfsFileShareDefaults: github.com/cdktf/cdktf-provider-aws-go/aws/v18.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults,
 	NotificationPolicy: *string,
 	ObjectAcl: *string,
 	ReadOnly: interface{},
@@ -1391,7 +1391,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
 	Squash: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts,
 	VpcEndpointDnsName: *string,
 }
 ```
@@ -1793,7 +1793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareNfsFileShareDefaults {
 	DirectoryMode: *string,
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareTimeouts {
 	Create: *string,
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShareCacheAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayNfsFileShareCacheAttributesOutputReference
 ```
@@ -2207,7 +2207,7 @@ func InternalValue() StoragegatewayNfsFileShareCacheAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference
 ```
@@ -2572,7 +2572,7 @@ func InternalValue() StoragegatewayNfsFileShareNfsFileShareDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShareTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayNfsFileShareTimeoutsOutputReference
 ```

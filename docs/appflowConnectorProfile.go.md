@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfile(scope Construct, id *string, config AppflowConnectorProfileConfig) AppflowConnectorProfile
 ```
@@ -362,7 +362,7 @@ func ResetKmsArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_IsConstruct(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ appflowconnectorprofile.AppflowConnectorProfile_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ appflowconnectorprofile.AppflowConnectorProfile_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConfig {
 	Connection: interface{},
@@ -838,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConnectionMode: *string,
-	ConnectorProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig,
+	ConnectorProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig,
 	ConnectorType: *string,
 	Name: *string,
 	ConnectorLabel: *string,
@@ -1032,11 +1032,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfig {
-	ConnectorProfileCredentials: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials,
-	ConnectorProfileProperties: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties,
+	ConnectorProfileCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials,
+	ConnectorProfileProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties,
 }
 ```
 
@@ -1082,27 +1082,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials {
-	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude,
-	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector,
-	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog,
-	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace,
-	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics,
-	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode,
-	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus,
-	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo,
-	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift,
-	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce,
-	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData,
-	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow,
-	Singular: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular,
-	Slack: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack,
-	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake,
-	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro,
-	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva,
-	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk,
+	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude,
+	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector,
+	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog,
+	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace,
+	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics,
+	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode,
+	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus,
+	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo,
+	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift,
+	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce,
+	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData,
+	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow,
+	Singular: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular,
+	Slack: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack,
+	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake,
+	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro,
+	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva,
+	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk,
 }
 ```
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude {
 	ApiKey: *string,
@@ -1434,14 +1434,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector {
 	AuthenticationType: *string,
-	ApiKey: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey,
-	Basic: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic,
-	Custom: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom,
-	Oauth2: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2,
+	ApiKey: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey,
+	Basic: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic,
+	Custom: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom,
+	Oauth2: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2,
 }
 ```
 
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey {
 	ApiKey: *string,
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic {
 	Password: *string,
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom {
 	CustomAuthenticationType: *string,
@@ -1668,13 +1668,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2 {
 	AccessToken: *string,
 	ClientId: *string,
 	ClientSecret: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -1758,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest {
 	AuthCode: *string,
@@ -1804,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog {
 	ApiKey: *string,
@@ -1850,7 +1850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace {
 	ApiToken: *string,
@@ -1882,13 +1882,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -1972,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest {
 	AuthCode: *string,
@@ -2018,11 +2018,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode {
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest {
 	AuthCode: *string,
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus {
 	AccessKeyId: *string,
@@ -2200,13 +2200,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest,
 }
 ```
 
@@ -2276,7 +2276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest {
 	AuthCode: *string,
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift {
 	Password: *string,
@@ -2368,14 +2368,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce {
 	AccessToken: *string,
 	ClientCredentialsArn: *string,
 	JwtToken: *string,
 	Oauth2GrantType: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -2472,7 +2472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest {
 	AuthCode: *string,
@@ -2518,11 +2518,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData {
-	BasicAuthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials,
-	OauthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials,
+	BasicAuthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials,
+	OauthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials,
 }
 ```
 
@@ -2568,7 +2568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials {
 	Password: *string,
@@ -2614,13 +2614,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -2704,7 +2704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest {
 	AuthCode: *string,
@@ -2750,7 +2750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow {
 	Password: *string,
@@ -2796,7 +2796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular {
 	ApiKey: *string,
@@ -2828,13 +2828,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest,
 }
 ```
 
@@ -2904,7 +2904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest {
 	AuthCode: *string,
@@ -2950,7 +2950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake {
 	Password: *string,
@@ -2996,7 +2996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro {
 	ApiSecretKey: *string,
@@ -3028,7 +3028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva {
 	Password: *string,
@@ -3074,13 +3074,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest,
 }
 ```
 
@@ -3150,7 +3150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest {
 	AuthCode: *string,
@@ -3196,27 +3196,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties {
-	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude,
-	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector,
-	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog,
-	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace,
-	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics,
-	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode,
-	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus,
-	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo,
-	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift,
-	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce,
-	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData,
-	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow,
-	Singular: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular,
-	Slack: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack,
-	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake,
-	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro,
-	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva,
-	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk,
+	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude,
+	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector,
+	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog,
+	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace,
+	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics,
+	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode,
+	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus,
+	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo,
+	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift,
+	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce,
+	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData,
+	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow,
+	Singular: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular,
+	Slack: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack,
+	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake,
+	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro,
+	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva,
+	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk,
 }
 ```
 
@@ -3502,7 +3502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude {
 
@@ -3515,10 +3515,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector {
-	Oauth2Properties: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties,
+	Oauth2Properties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties,
 	ProfileProperties: *map[string]*string,
 }
 ```
@@ -3563,7 +3563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties {
 	Oauth2GrantType: *string,
@@ -3623,7 +3623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog {
 	InstanceUrl: *string,
@@ -3655,7 +3655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace {
 	InstanceUrl: *string,
@@ -3687,7 +3687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics {
 
@@ -3700,7 +3700,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode {
 
@@ -3713,7 +3713,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus {
 	InstanceUrl: *string,
@@ -3745,7 +3745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo {
 	InstanceUrl: *string,
@@ -3777,7 +3777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift {
 	BucketName: *string,
@@ -3893,7 +3893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce {
 	InstanceUrl: *string,
@@ -3939,7 +3939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData {
 	ApplicationHostUrl: *string,
@@ -3947,7 +3947,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
 	ClientNumber: *string,
 	PortNumber: *f64,
 	LogonLanguage: *string,
-	OauthProperties: github.com/cdktf/cdktf-provider-aws-go/aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties,
+	OauthProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties,
 	PrivateLinkServiceName: *string,
 }
 ```
@@ -4057,7 +4057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties {
 	AuthCodeUrl: *string,
@@ -4117,7 +4117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow {
 	InstanceUrl: *string,
@@ -4149,7 +4149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular {
 
@@ -4162,7 +4162,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack {
 	InstanceUrl: *string,
@@ -4194,7 +4194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake {
 	BucketName: *string,
@@ -4310,7 +4310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro {
 
@@ -4323,7 +4323,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva {
 	InstanceUrl: *string,
@@ -4355,7 +4355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk {
 	InstanceUrl: *string,
@@ -4389,7 +4389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference
 ```
@@ -4682,7 +4682,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference
 ```
@@ -4982,7 +4982,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference
 ```
@@ -5275,7 +5275,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference
 ```
@@ -5575,7 +5575,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference
 ```
@@ -5882,7 +5882,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference
 ```
@@ -6289,7 +6289,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference
 ```
@@ -6728,7 +6728,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference
 ```
@@ -7021,7 +7021,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference
 ```
@@ -7292,7 +7292,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference
 ```
@@ -7599,7 +7599,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference
 ```
@@ -7992,7 +7992,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference
 ```
@@ -8299,7 +8299,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference
 ```
@@ -8648,7 +8648,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference
 ```
@@ -8985,7 +8985,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference
 ```
@@ -9292,7 +9292,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference
 ```
@@ -9656,7 +9656,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference
 ```
@@ -10661,7 +10661,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference
 ```
@@ -10954,7 +10954,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference
 ```
@@ -11261,7 +11261,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference
 ```
@@ -11697,7 +11697,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference
 ```
@@ -11990,7 +11990,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference
 ```
@@ -12297,7 +12297,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference
 ```
@@ -12690,7 +12690,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference
 ```
@@ -13023,7 +13023,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference
 ```
@@ -13316,7 +13316,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference
 ```
@@ -13587,7 +13587,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference
 ```
@@ -13894,7 +13894,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference
 ```
@@ -14258,7 +14258,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference
 ```
@@ -14551,7 +14551,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference
 ```
@@ -14822,7 +14822,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference
 ```
@@ -15115,7 +15115,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference
 ```
@@ -15422,7 +15422,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference
 ```
@@ -15786,7 +15786,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference
 ```
@@ -16035,7 +16035,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference
 ```
@@ -16357,7 +16357,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference
 ```
@@ -16677,7 +16677,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference
 ```
@@ -16948,7 +16948,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference
 ```
@@ -17219,7 +17219,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference
 ```
@@ -17468,7 +17468,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference
 ```
@@ -17717,7 +17717,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference
 ```
@@ -17988,7 +17988,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference
 ```
@@ -18259,7 +18259,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference
 ```
@@ -19264,7 +19264,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference
 ```
@@ -19702,7 +19702,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference
 ```
@@ -20009,7 +20009,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference
 ```
@@ -20324,7 +20324,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference
 ```
@@ -20761,7 +20761,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference
 ```
@@ -21032,7 +21032,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference
 ```
@@ -21281,7 +21281,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference
 ```
@@ -21552,7 +21552,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference
 ```
@@ -21983,7 +21983,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference
 ```
@@ -22232,7 +22232,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference
 ```
@@ -22503,7 +22503,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference
 ```
@@ -22774,7 +22774,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigOutputReference
 ```

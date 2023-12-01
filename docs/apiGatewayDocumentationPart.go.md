@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 apigatewaydocumentationpart.NewApiGatewayDocumentationPart(scope Construct, id *string, config ApiGatewayDocumentationPartConfig) ApiGatewayDocumentationPart
 ```
@@ -348,7 +348,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 apigatewaydocumentationpart.ApiGatewayDocumentationPart_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 apigatewaydocumentationpart.ApiGatewayDocumentationPart_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ apigatewaydocumentationpart.ApiGatewayDocumentationPart_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 apigatewaydocumentationpart.ApiGatewayDocumentationPart_IsTerraformResource(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ apigatewaydocumentationpart.ApiGatewayDocumentationPart_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 apigatewaydocumentationpart.ApiGatewayDocumentationPart_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 &apigatewaydocumentationpart.ApiGatewayDocumentationPartConfig {
 	Connection: interface{},
@@ -735,7 +735,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Location: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocation,
+	Location: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocation,
 	Properties: *string,
 	RestApiId: *string,
 	Id: *string,
@@ -888,7 +888,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 &apigatewaydocumentationpart.ApiGatewayDocumentationPartLocation {
 	Type: *string,
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydocumentationpart"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewaydocumentationpart"
 
 apigatewaydocumentationpart.NewApiGatewayDocumentationPartLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayDocumentationPartLocationOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserloginprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuserloginprofile"
 
 iamuserloginprofile.NewIamUserLoginProfile(scope Construct, id *string, config IamUserLoginProfileConfig) IamUserLoginProfile
 ```
@@ -356,7 +356,7 @@ func ResetPgpKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserloginprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuserloginprofile"
 
 iamuserloginprofile.IamUserLoginProfile_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserloginprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuserloginprofile"
 
 iamuserloginprofile.IamUserLoginProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ iamuserloginprofile.IamUserLoginProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserloginprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuserloginprofile"
 
 iamuserloginprofile.IamUserLoginProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ iamuserloginprofile.IamUserLoginProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserloginprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuserloginprofile"
 
 iamuserloginprofile.IamUserLoginProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserloginprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamuserloginprofile"
 
 &iamuserloginprofile.IamUserLoginProfileConfig {
 	Connection: interface{},

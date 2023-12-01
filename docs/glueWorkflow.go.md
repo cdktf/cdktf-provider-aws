@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueWorkflow.GlueWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/glueworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueworkflow"
 
 glueworkflow.NewGlueWorkflow(scope Construct, id *string, config GlueWorkflowConfig) GlueWorkflow
 ```
@@ -377,7 +377,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueWorkflow.GlueWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/glueworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueworkflow"
 
 glueworkflow.GlueWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueWorkflow.GlueWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/glueworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueworkflow"
 
 glueworkflow.GlueWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ glueworkflow.GlueWorkflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueWorkflow.GlueWorkflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/glueworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueworkflow"
 
 glueworkflow.GlueWorkflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ glueworkflow.GlueWorkflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueWorkflow.GlueWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/glueworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueworkflow"
 
 glueworkflow.GlueWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueWorkflow.GlueWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/glueworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueworkflow"
 
 &glueworkflow.GlueWorkflowConfig {
 	Connection: interface{},

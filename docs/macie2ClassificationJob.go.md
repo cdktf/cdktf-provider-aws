@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJob(scope Construct, id *string, config Macie2ClassificationJobConfig) Macie2ClassificationJob
 ```
@@ -431,7 +431,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.Macie2ClassificationJob_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.Macie2ClassificationJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ macie2classificationjob.Macie2ClassificationJob_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.Macie2ClassificationJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ macie2classificationjob.Macie2ClassificationJob_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.Macie2ClassificationJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1050,7 +1050,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobConfig {
 	Connection: interface{},
@@ -1061,7 +1061,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	JobType: *string,
-	S3JobDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinition,
+	S3JobDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinition,
 	CustomDataIdentifierIds: *[]*string,
 	Description: *string,
 	Id: *string,
@@ -1070,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
 	Name: *string,
 	NamePrefix: *string,
 	SamplingPercentage: *f64,
-	ScheduleFrequency: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequency,
+	ScheduleFrequency: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequency,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1341,12 +1341,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinition {
-	BucketCriteria: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteria,
+	BucketCriteria: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteria,
 	BucketDefinitions: interface{},
-	Scoping: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScoping,
+	Scoping: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScoping,
 }
 ```
 
@@ -1407,11 +1407,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteria {
-	Excludes: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes,
-	Includes: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes,
+	Excludes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes,
+	Includes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes,
 }
 ```
 
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes {
 	And: interface{},
@@ -1491,11 +1491,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd {
-	SimpleCriterion: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion,
-	TagCriterion: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion,
+	SimpleCriterion: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion,
+	TagCriterion: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion,
 }
 ```
 
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion {
 	Comparator: *string,
@@ -1601,7 +1601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion {
 	Comparator: *string,
@@ -1649,7 +1649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues {
 	Key: *string,
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes {
 	And: interface{},
@@ -1729,11 +1729,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd {
-	SimpleCriterion: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion,
-	TagCriterion: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion,
+	SimpleCriterion: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion,
+	TagCriterion: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion,
 }
 ```
 
@@ -1779,7 +1779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion {
 	Comparator: *string,
@@ -1839,7 +1839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion {
 	Comparator: *string,
@@ -1887,7 +1887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues {
 	Key: *string,
@@ -1933,7 +1933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionBucketDefinitions {
 	AccountId: *string,
@@ -1979,11 +1979,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScoping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScoping {
-	Excludes: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludes,
-	Includes: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludes,
+	Excludes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludes,
+	Includes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludes,
 }
 ```
 
@@ -2029,7 +2029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingExcludes {
 	And: interface{},
@@ -2063,11 +2063,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd {
-	SimpleScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm,
-	TagScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm,
+	SimpleScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm,
+	TagScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm,
 }
 ```
 
@@ -2113,7 +2113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm {
 	Comparator: *string,
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm {
 	Comparator: *string,
@@ -2249,7 +2249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues {
 	Key: *string,
@@ -2295,7 +2295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingIncludes {
 	And: interface{},
@@ -2329,11 +2329,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd {
-	SimpleScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm,
-	TagScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm,
+	SimpleScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm,
+	TagScopeTerm: github.com/cdktf/cdktf-provider-aws-go/aws/v18.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm,
 }
 ```
 
@@ -2379,7 +2379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm {
 	Comparator: *string,
@@ -2439,7 +2439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm {
 	Comparator: *string,
@@ -2515,7 +2515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues {
 	Key: *string,
@@ -2561,7 +2561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobScheduleFrequency {
 	DailySchedule: interface{},
@@ -2621,7 +2621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 &macie2classificationjob.Macie2ClassificationJobUserPausedDetails {
 
@@ -2636,7 +2636,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList
 ```
@@ -2779,7 +2779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference
 ```
@@ -3130,7 +3130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference
 ```
@@ -3466,7 +3466,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionBucketCriteriaExclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference
 ```
@@ -3786,7 +3786,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionBucketCriteriaExclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesList
 ```
@@ -3929,7 +3929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesOutputReference
 ```
@@ -4254,7 +4254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference
 ```
@@ -4545,7 +4545,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionBucketCriteriaExclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList
 ```
@@ -4688,7 +4688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndOutputReference
 ```
@@ -5039,7 +5039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference
 ```
@@ -5375,7 +5375,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionBucketCriteriaInclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference
 ```
@@ -5695,7 +5695,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionBucketCriteriaInclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesList
 ```
@@ -5838,7 +5838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesOutputReference
 ```
@@ -6163,7 +6163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference
 ```
@@ -6454,7 +6454,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionBucketCriteriaInclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference
 ```
@@ -6787,7 +6787,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionBucketCriteria
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketDefinitionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList
 ```
@@ -6930,7 +6930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference
 ```
@@ -7241,7 +7241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionOutputReference
 ```
@@ -7616,7 +7616,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList
 ```
@@ -7759,7 +7759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference
 ```
@@ -8110,7 +8110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference
 ```
@@ -8446,7 +8446,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSim
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference
 ```
@@ -8824,7 +8824,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTag
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList
 ```
@@ -8967,7 +8967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference
 ```
@@ -9292,7 +9292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference
 ```
@@ -9583,7 +9583,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionScopingExcludes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList
 ```
@@ -9726,7 +9726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference
 ```
@@ -10077,7 +10077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference
 ```
@@ -10413,7 +10413,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSim
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference
 ```
@@ -10791,7 +10791,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTag
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList
 ```
@@ -10934,7 +10934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference
 ```
@@ -11259,7 +11259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference
 ```
@@ -11550,7 +11550,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionScopingIncludes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobS3JobDefinitionScopingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobS3JobDefinitionScopingOutputReference
 ```
@@ -11883,7 +11883,7 @@ func InternalValue() Macie2ClassificationJobS3JobDefinitionScoping
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobScheduleFrequencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationJobScheduleFrequencyOutputReference
 ```
@@ -12219,7 +12219,7 @@ func InternalValue() Macie2ClassificationJobScheduleFrequency
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobUserPausedDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2ClassificationJobUserPausedDetailsList
 ```
@@ -12351,7 +12351,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/macie2classificationjob"
 
 macie2classificationjob.NewMacie2ClassificationJobUserPausedDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2ClassificationJobUserPausedDetailsOutputReference
 ```

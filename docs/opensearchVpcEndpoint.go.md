@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 opensearchvpcendpoint.NewOpensearchVpcEndpoint(scope Construct, id *string, config OpensearchVpcEndpointConfig) OpensearchVpcEndpoint
 ```
@@ -368,7 +368,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 &opensearchvpcendpoint.OpensearchVpcEndpointConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DomainArn: *string,
-	VpcOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions,
+	VpcOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts,
 }
 ```
 
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 &opensearchvpcendpoint.OpensearchVpcEndpointTimeouts {
 	Create: *string,
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 &opensearchvpcendpoint.OpensearchVpcEndpointVpcOptions {
 	SubnetIds: *[]*string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 opensearchvpcendpoint.NewOpensearchVpcEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchVpcEndpointTimeoutsOutputReference
 ```
@@ -1365,7 +1365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint"
 
 opensearchvpcendpoint.NewOpensearchVpcEndpointVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchVpcEndpointVpcOptionsOutputReference
 ```

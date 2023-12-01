@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistribution(scope Construct, id *string, config LightsailDistributionConfig) LightsailDistribution
 ```
@@ -456,7 +456,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistribution.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.LightsailDistribution_IsConstruct(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistribution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.LightsailDistribution_IsTerraformElement(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ lightsaildistribution.LightsailDistribution_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistribution.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.LightsailDistribution_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ lightsaildistribution.LightsailDistribution_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistribution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.LightsailDistribution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1130,7 +1130,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionCacheBehavior {
 	Behavior: *string,
@@ -1182,15 +1182,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionCacheBehaviorSettings {
 	AllowedHttpMethods: *string,
 	CachedHttpMethods: *string,
 	DefaultTtl: *f64,
-	ForwardedCookies: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedCookies,
-	ForwardedHeaders: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedHeaders,
-	ForwardedQueryStrings: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings,
+	ForwardedCookies: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedCookies,
+	ForwardedHeaders: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedHeaders,
+	ForwardedQueryStrings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings,
 	MaximumTtl: *f64,
 	MinimumTtl: *f64,
 }
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionCacheBehaviorSettingsForwardedCookies {
 	CookiesAllowList: *[]*string,
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionCacheBehaviorSettingsForwardedHeaders {
 	HeadersAllowList: *[]*string,
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings {
 	Option: interface{},
@@ -1478,7 +1478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionConfig {
 	Connection: interface{},
@@ -1489,18 +1489,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	BundleId: *string,
-	DefaultCacheBehavior: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailDistribution.LightsailDistributionDefaultCacheBehavior,
+	DefaultCacheBehavior: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailDistribution.LightsailDistributionDefaultCacheBehavior,
 	Name: *string,
-	Origin: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailDistribution.LightsailDistributionOrigin,
+	Origin: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailDistribution.LightsailDistributionOrigin,
 	CacheBehavior: interface{},
-	CacheBehaviorSettings: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettings,
+	CacheBehaviorSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailDistribution.LightsailDistributionCacheBehaviorSettings,
 	CertificateName: *string,
 	Id: *string,
 	IpAddressType: *string,
 	IsEnabled: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailDistribution.LightsailDistributionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailDistribution.LightsailDistributionTimeouts,
 }
 ```
 
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionDefaultCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionDefaultCacheBehavior {
 	Behavior: *string,
@@ -1819,7 +1819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionLocation {
 
@@ -1832,7 +1832,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionOrigin {
 	Name: *string,
@@ -1898,7 +1898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 &lightsaildistribution.LightsailDistributionTimeouts {
 	Create: *string,
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionCacheBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailDistributionCacheBehaviorList
 ```
@@ -2103,7 +2103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LightsailDistributionCacheBehaviorOutputReference
 ```
@@ -2414,7 +2414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference
 ```
@@ -2721,7 +2721,7 @@ func InternalValue() LightsailDistributionCacheBehaviorSettingsForwardedCookies
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference
 ```
@@ -3028,7 +3028,7 @@ func InternalValue() LightsailDistributionCacheBehaviorSettingsForwardedHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference
 ```
@@ -3335,7 +3335,7 @@ func InternalValue() LightsailDistributionCacheBehaviorSettingsForwardedQueryStr
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionCacheBehaviorSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailDistributionCacheBehaviorSettingsOutputReference
 ```
@@ -3855,7 +3855,7 @@ func InternalValue() LightsailDistributionCacheBehaviorSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionDefaultCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionDefaultCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailDistributionDefaultCacheBehaviorOutputReference
 ```
@@ -4126,7 +4126,7 @@ func InternalValue() LightsailDistributionDefaultCacheBehavior
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailDistributionLocationList
 ```
@@ -4258,7 +4258,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LightsailDistributionLocationOutputReference
 ```
@@ -4547,7 +4547,7 @@ func InternalValue() LightsailDistributionLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailDistributionOriginOutputReference
 ```
@@ -4880,7 +4880,7 @@ func InternalValue() LightsailDistributionOrigin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildistribution"
 
 lightsaildistribution.NewLightsailDistributionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailDistributionTimeoutsOutputReference
 ```

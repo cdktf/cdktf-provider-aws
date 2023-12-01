@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstanceresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlaccessgrantsinstanceresourcepolicy"
 
 s3controlaccessgrantsinstanceresourcepolicy.NewS3ControlAccessGrantsInstanceResourcePolicy(scope Construct, id *string, config S3ControlAccessGrantsInstanceResourcePolicyConfig) S3ControlAccessGrantsInstanceResourcePolicy
 ```
@@ -335,7 +335,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstanceresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlaccessgrantsinstanceresourcepolicy"
 
 s3controlaccessgrantsinstanceresourcepolicy.S3ControlAccessGrantsInstanceResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstanceresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlaccessgrantsinstanceresourcepolicy"
 
 s3controlaccessgrantsinstanceresourcepolicy.S3ControlAccessGrantsInstanceResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ s3controlaccessgrantsinstanceresourcepolicy.S3ControlAccessGrantsInstanceResourc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstanceresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlaccessgrantsinstanceresourcepolicy"
 
 s3controlaccessgrantsinstanceresourcepolicy.S3ControlAccessGrantsInstanceResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ s3controlaccessgrantsinstanceresourcepolicy.S3ControlAccessGrantsInstanceResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstanceresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlaccessgrantsinstanceresourcepolicy"
 
 s3controlaccessgrantsinstanceresourcepolicy.S3ControlAccessGrantsInstanceResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstanceresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlaccessgrantsinstanceresourcepolicy"
 
 &s3controlaccessgrantsinstanceresourcepolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig {
 	Connection: interface{},

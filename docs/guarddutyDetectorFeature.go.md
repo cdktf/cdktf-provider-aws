@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 guarddutydetectorfeature.NewGuarddutyDetectorFeature(scope Construct, id *string, config GuarddutyDetectorFeatureConfig) GuarddutyDetectorFeature
 ```
@@ -355,7 +355,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 guarddutydetectorfeature.GuarddutyDetectorFeature_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 guarddutydetectorfeature.GuarddutyDetectorFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ guarddutydetectorfeature.GuarddutyDetectorFeature_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 guarddutydetectorfeature.GuarddutyDetectorFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ guarddutydetectorfeature.GuarddutyDetectorFeature_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 guarddutydetectorfeature.GuarddutyDetectorFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -754,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeatureAdditionalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 &guarddutydetectorfeature.GuarddutyDetectorFeatureAdditionalConfiguration {
 	Name: *string,
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 &guarddutydetectorfeature.GuarddutyDetectorFeatureConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeatureAdditionalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 guarddutydetectorfeature.NewGuarddutyDetectorFeatureAdditionalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GuarddutyDetectorFeatureAdditionalConfigurationList
 ```
@@ -1122,7 +1122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetectorFeature.GuarddutyDetectorFeatureAdditionalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutydetectorfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutydetectorfeature"
 
 guarddutydetectorfeature.NewGuarddutyDetectorFeatureAdditionalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GuarddutyDetectorFeatureAdditionalConfigurationOutputReference
 ```

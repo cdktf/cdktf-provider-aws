@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailBucketResourceAccess.LightsailBucketResourceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailbucketresourceaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailbucketresourceaccess"
 
 lightsailbucketresourceaccess.NewLightsailBucketResourceAccess(scope Construct, id *string, config LightsailBucketResourceAccessConfig) LightsailBucketResourceAccess
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailBucketResourceAccess.LightsailBucketResourceAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailbucketresourceaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailbucketresourceaccess"
 
 lightsailbucketresourceaccess.LightsailBucketResourceAccess_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailBucketResourceAccess.LightsailBucketResourceAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailbucketresourceaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailbucketresourceaccess"
 
 lightsailbucketresourceaccess.LightsailBucketResourceAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ lightsailbucketresourceaccess.LightsailBucketResourceAccess_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailBucketResourceAccess.LightsailBucketResourceAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailbucketresourceaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailbucketresourceaccess"
 
 lightsailbucketresourceaccess.LightsailBucketResourceAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ lightsailbucketresourceaccess.LightsailBucketResourceAccess_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailBucketResourceAccess.LightsailBucketResourceAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailbucketresourceaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailbucketresourceaccess"
 
 lightsailbucketresourceaccess.LightsailBucketResourceAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailBucketResourceAccess.LightsailBucketResourceAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailbucketresourceaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailbucketresourceaccess"
 
 &lightsailbucketresourceaccess.LightsailBucketResourceAccessConfig {
 	Connection: interface{},
