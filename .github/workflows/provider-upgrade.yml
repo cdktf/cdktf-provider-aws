@@ -37,6 +37,19 @@ jobs:
         id: new_version
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
         run: echo "value=$(jq -r '. | to_entries[] | .value' src/version.json)" >> $GITHUB_OUTPUT
+      - name: Determine if this is a minor or patch release
+        id: release
+        if: ${{ steps.check_version.outputs.new_version == 'available' }}
+        env:
+          CURRENT_VERSION: ${{ steps.current_version.outputs.value }}
+          NEW_VERSION: ${{ steps.new_version.outputs.value }}
+        run: |-
+          CURRENT_VERSION_MINOR=$(cut -d "." -f 1 <<< "$CURRENT_VERSION")
+          NEW_VERSION_MINOR=$(cut -d "." -f 1 <<< "$NEW_VERSION")
+          [[ "$CURRENT_VERSION_MINOR" != "$NEW_VERSION_MINOR" ]] && IS_MINOR_RELEASE=true || IS_MINOR_RELEASE=false
+          [[ "$IS_MINOR_RELEASE" == "true" ]] && SEMANTIC_TYPE=feat || SEMANTIC_TYPE=fix
+          echo "is_minor=$IS_MINOR_RELEASE" >> $GITHUB_OUTPUT
+          echo "type=$SEMANTIC_TYPE" >> $GITHUB_OUTPUT
       - if: ${{ steps.check_version.outputs.new_version == 'available' }}
         run: yarn compile
       - if: ${{ steps.check_version.outputs.new_version == 'available' }}
@@ -45,11 +58,11 @@ jobs:
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
         uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         with:
-          commit-message: "fix: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
           branch: auto/provider-upgrade
-          title: "fix: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
+          commit-message: "${{ steps.release.outputs.type }}: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
+          title: "${{ steps.release.outputs.type }}: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
           body: This PR upgrades the underlying Terraform provider to version ${{ steps.new_version.outputs.value }}
-          labels: automerge
+          labels: automerge,auto-approve
           token: ${{ secrets.GH_TOKEN }}
           delete-branch: true
           committer: team-tf-cdk <github-team-tf-cdk@hashicorp.com>
