@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.NewDataAwsWafregionalWebAcl(scope Construct, id *string, config DataAwsWafregionalWebAclConfig) DataAwsWafregionalWebAcl
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalwebacl"
 
 &dataawswafregionalwebacl.DataAwsWafregionalWebAclConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2Fleet(scope Construct, id *string, config Ec2FleetConfig) Ec2Fleet
 ```
@@ -575,7 +575,7 @@ func ResetValidUntil()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.Ec2Fleet_IsConstruct(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.Ec2Fleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ ec2fleet.Ec2Fleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.Ec2Fleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ ec2fleet.Ec2Fleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.Ec2Fleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1315,7 +1315,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetConfig {
 	Connection: interface{},
@@ -1326,7 +1326,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	LaunchTemplateConfig: interface{},
-	TargetCapacitySpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetTargetCapacitySpecification,
+	TargetCapacitySpecification: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetTargetCapacitySpecification,
 	Context: *string,
 	ExcessCapacityTerminationPolicy: *string,
 	FleetInstanceSet: interface{},
@@ -1334,14 +1334,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
 	FulfilledCapacity: *f64,
 	FulfilledOnDemandCapacity: *f64,
 	Id: *string,
-	OnDemandOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetOnDemandOptions,
+	OnDemandOptions: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetOnDemandOptions,
 	ReplaceUnhealthyInstances: interface{},
-	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetSpotOptions,
+	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetSpotOptions,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TerminateInstances: interface{},
 	TerminateInstancesWithExpiration: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetTimeouts,
 	Type: *string,
 	ValidFrom: *string,
 	ValidUntil: *string,
@@ -1712,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetFleetInstanceSet {
 	InstanceIds: *[]*string,
@@ -1786,10 +1786,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfig {
-	LaunchTemplateSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification,
+	LaunchTemplateSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification,
 	Override: interface{},
 }
 ```
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification {
 	Version: *string,
@@ -1896,11 +1896,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverride {
 	AvailabilityZone: *string,
-	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements,
+	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements,
 	InstanceType: *string,
 	MaxPrice: *string,
 	Priority: *f64,
@@ -2014,32 +2014,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements {
-	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib,
-	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCount,
-	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCount,
+	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib,
+	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCount,
+	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCount,
 	AcceleratorManufacturers: *[]*string,
 	AcceleratorNames: *[]*string,
-	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib,
+	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib,
 	AcceleratorTypes: *[]*string,
 	AllowedInstanceTypes: *[]*string,
 	BareMetal: *string,
-	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps,
+	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps,
 	BurstablePerformance: *string,
 	CpuManufacturers: *[]*string,
 	ExcludedInstanceTypes: *[]*string,
 	InstanceGenerations: *[]*string,
 	LocalStorage: *string,
 	LocalStorageTypes: *[]*string,
-	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu,
-	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps,
-	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount,
+	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu,
+	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps,
+	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount,
 	OnDemandMaxPricePercentageOverLowestPrice: *f64,
 	RequireHibernateSupport: interface{},
 	SpotMaxPricePercentageOverLowestPrice: *f64,
-	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGb,
+	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGb,
 }
 ```
 
@@ -2372,7 +2372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCount {
 	Max: *f64,
@@ -2418,7 +2418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib {
 	Max: *f64,
@@ -2464,7 +2464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps {
 	Max: *f64,
@@ -2510,7 +2510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu {
 	Max: *f64,
@@ -2556,7 +2556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib {
 	Min: *f64,
@@ -2602,7 +2602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps {
 	Max: *f64,
@@ -2648,7 +2648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount {
 	Max: *f64,
@@ -2694,7 +2694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGb {
 	Max: *f64,
@@ -2740,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCount {
 	Min: *f64,
@@ -2786,7 +2786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetOnDemandOptions {
 	AllocationStrategy: *string,
@@ -2874,13 +2874,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetSpotOptions {
 	AllocationStrategy: *string,
 	InstanceInterruptionBehavior: *string,
 	InstancePoolsToUseCount: *f64,
-	MaintenanceStrategies: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategies,
+	MaintenanceStrategies: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategies,
 }
 ```
 
@@ -2950,10 +2950,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetSpotOptionsMaintenanceStrategies {
-	CapacityRebalance: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance,
+	CapacityRebalance: github.com/cdktf/cdktf-provider-aws-go/aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance,
 }
 ```
 
@@ -2984,7 +2984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance {
 	ReplacementStrategy: *string,
@@ -3030,7 +3030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetTargetCapacitySpecification {
 	DefaultTargetCapacityType: *string,
@@ -3118,7 +3118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 &ec2fleet.Ec2FleetTimeouts {
 	Create: *string,
@@ -3180,7 +3180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetFleetInstanceSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2FleetFleetInstanceSetList
 ```
@@ -3323,7 +3323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetFleetInstanceSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2FleetFleetInstanceSetOutputReference
 ```
@@ -3706,7 +3706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference
 ```
@@ -4035,7 +4035,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2FleetLaunchTemplateConfigList
 ```
@@ -4178,7 +4178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2FleetLaunchTemplateConfigOutputReference
 ```
@@ -4529,7 +4529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountOutputReference
 ```
@@ -4836,7 +4836,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMibOutputReference
 ```
@@ -5143,7 +5143,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference
 ```
@@ -5450,7 +5450,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBas
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference
 ```
@@ -5757,7 +5757,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMem
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference
 ```
@@ -6057,7 +6057,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMem
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference
 ```
@@ -6364,7 +6364,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference
 ```
@@ -6671,7 +6671,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference
 ```
@@ -7690,7 +7690,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbOutputReference
 ```
@@ -7997,7 +7997,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference
 ```
@@ -8297,7 +8297,7 @@ func InternalValue() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2FleetLaunchTemplateConfigOverrideList
 ```
@@ -8440,7 +8440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetLaunchTemplateConfigOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2FleetLaunchTemplateConfigOverrideOutputReference
 ```
@@ -8923,7 +8923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetOnDemandOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetOnDemandOptionsOutputReference
 ```
@@ -9317,7 +9317,7 @@ func InternalValue() Ec2FleetOnDemandOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference
 ```
@@ -9624,7 +9624,7 @@ func InternalValue() Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetSpotOptionsMaintenanceStrategiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference
 ```
@@ -9915,7 +9915,7 @@ func InternalValue() Ec2FleetSpotOptionsMaintenanceStrategies
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetSpotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetSpotOptionsOutputReference
 ```
@@ -10293,7 +10293,7 @@ func InternalValue() Ec2FleetSpotOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetTargetCapacitySpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetTargetCapacitySpecificationOutputReference
 ```
@@ -10673,7 +10673,7 @@ func InternalValue() Ec2FleetTargetCapacitySpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2fleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2fleet"
 
 ec2fleet.NewEc2FleetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2FleetTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftClusterSnapshot.RedshiftClusterSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclustersnapshot"
 
 redshiftclustersnapshot.NewRedshiftClusterSnapshot(scope Construct, id *string, config RedshiftClusterSnapshotConfig) RedshiftClusterSnapshot
 ```
@@ -399,7 +399,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftClusterSnapshot.RedshiftClusterSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclustersnapshot"
 
 redshiftclustersnapshot.RedshiftClusterSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftClusterSnapshot.RedshiftClusterSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclustersnapshot"
 
 redshiftclustersnapshot.RedshiftClusterSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ redshiftclustersnapshot.RedshiftClusterSnapshot_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftClusterSnapshot.RedshiftClusterSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclustersnapshot"
 
 redshiftclustersnapshot.RedshiftClusterSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ redshiftclustersnapshot.RedshiftClusterSnapshot_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftClusterSnapshot.RedshiftClusterSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclustersnapshot"
 
 redshiftclustersnapshot.RedshiftClusterSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftClusterSnapshot.RedshiftClusterSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclustersnapshot"
 
 &redshiftclustersnapshot.RedshiftClusterSnapshotConfig {
 	Connection: interface{},
