@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.hasResourceMove">HasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.putBatchTarget">PutBatchTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.putDeadLetterConfig">PutDeadLetterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.putEcsTarget">PutEcsTarget</a></code> | *No description.* |
@@ -288,6 +291,12 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 
 ---
 
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.hasResourceMove"></a>
+
+```csharp
+private object HasResourceMove()
+```
+
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.importFrom"></a>
 
 ```csharp
@@ -318,6 +327,24 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveFromId"></a>
+
+```csharp
+private void MoveFromId(string Id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveTo"></a>
 
 ```csharp
@@ -339,6 +366,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* object
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveToId"></a>
+
+```csharp
+private void MoveToId(string Id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
