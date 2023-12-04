@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodeartifactauthorizationtoken"
 
 dataawscodeartifactauthorizationtoken.NewDataAwsCodeartifactAuthorizationToken(scope Construct, id *string, config DataAwsCodeartifactAuthorizationTokenConfig) DataAwsCodeartifactAuthorizationToken
 ```
@@ -288,7 +288,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodeartifactauthorizationtoken"
 
 dataawscodeartifactauthorizationtoken.DataAwsCodeartifactAuthorizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodeartifactauthorizationtoken"
 
 dataawscodeartifactauthorizationtoken.DataAwsCodeartifactAuthorizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawscodeartifactauthorizationtoken.DataAwsCodeartifactAuthorizationToken_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodeartifactauthorizationtoken"
 
 dataawscodeartifactauthorizationtoken.DataAwsCodeartifactAuthorizationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ dataawscodeartifactauthorizationtoken.DataAwsCodeartifactAuthorizationToken_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodeartifactauthorizationtoken"
 
 dataawscodeartifactauthorizationtoken.DataAwsCodeartifactAuthorizationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -665,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscodeartifactauthorizationtoken"
 
 &dataawscodeartifactauthorizationtoken.DataAwsCodeartifactAuthorizationTokenConfig {
 	Connection: interface{},

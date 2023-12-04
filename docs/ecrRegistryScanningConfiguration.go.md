@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.NewEcrRegistryScanningConfiguration(scope Construct, id *string, config EcrRegistryScanningConfigurationConfig) EcrRegistryScanningConfiguration
 ```
@@ -398,7 +398,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.EcrRegistryScanningConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.EcrRegistryScanningConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ ecrregistryscanningconfiguration.EcrRegistryScanningConfiguration_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.EcrRegistryScanningConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ ecrregistryscanningconfiguration.EcrRegistryScanningConfiguration_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.EcrRegistryScanningConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 &ecrregistryscanningconfiguration.EcrRegistryScanningConfigurationConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 &ecrregistryscanningconfiguration.EcrRegistryScanningConfigurationRule {
 	RepositoryFilter: interface{},
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 &ecrregistryscanningconfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilter {
 	Filter: *string,
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.NewEcrRegistryScanningConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrRegistryScanningConfigurationRuleList
 ```
@@ -1152,7 +1152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.NewEcrRegistryScanningConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrRegistryScanningConfigurationRuleOutputReference
 ```
@@ -1476,7 +1476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.NewEcrRegistryScanningConfigurationRuleRepositoryFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrRegistryScanningConfigurationRuleRepositoryFilterList
 ```
@@ -1619,7 +1619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrregistryscanningconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrregistryscanningconfiguration"
 
 ecrregistryscanningconfiguration.NewEcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference
 ```
