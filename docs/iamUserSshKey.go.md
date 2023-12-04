@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamusersshkey"
 
 iamusersshkey.NewIamUserSshKey(scope Construct, id *string, config IamUserSshKeyConfig) IamUserSshKey
 ```
@@ -385,7 +385,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamusersshkey"
 
 iamusersshkey.IamUserSshKey_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamusersshkey"
 
 iamusersshkey.IamUserSshKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ iamusersshkey.IamUserSshKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamusersshkey"
 
 iamusersshkey.IamUserSshKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ iamusersshkey.IamUserSshKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamusersshkey"
 
 iamusersshkey.IamUserSshKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamusersshkey"
 
 &iamusersshkey.IamUserSshKeyConfig {
 	Connection: interface{},

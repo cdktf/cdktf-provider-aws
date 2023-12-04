@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.NewDataAwsGlueScript(scope Construct, id *string, config DataAwsGlueScriptConfig) DataAwsGlueScript
 ```
@@ -307,7 +307,7 @@ func ResetLanguage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.DataAwsGlueScript_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.DataAwsGlueScript_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ dataawsgluescript.DataAwsGlueScript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.DataAwsGlueScript_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ dataawsgluescript.DataAwsGlueScript_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.DataAwsGlueScript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 &dataawsgluescript.DataAwsGlueScriptConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagEdge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 &dataawsgluescript.DataAwsGlueScriptDagEdge {
 	Source: *string,
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 &dataawsgluescript.DataAwsGlueScriptDagNode {
 	Args: interface{},
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 &dataawsgluescript.DataAwsGlueScriptDagNodeArgs {
 	Name: *string,
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.NewDataAwsGlueScriptDagEdgeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueScriptDagEdgeList
 ```
@@ -1193,7 +1193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.NewDataAwsGlueScriptDagEdgeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueScriptDagEdgeOutputReference
 ```
@@ -1533,7 +1533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.NewDataAwsGlueScriptDagNodeArgsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueScriptDagNodeArgsList
 ```
@@ -1676,7 +1676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.NewDataAwsGlueScriptDagNodeArgsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueScriptDagNodeArgsOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.NewDataAwsGlueScriptDagNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueScriptDagNodeList
 ```
@@ -2159,7 +2159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluescript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsgluescript"
 
 dataawsgluescript.NewDataAwsGlueScriptDagNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueScriptDagNodeOutputReference
 ```

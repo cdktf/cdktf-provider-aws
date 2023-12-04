@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 dataawspricingproduct.NewDataAwsPricingProduct(scope Construct, id *string, config DataAwsPricingProductConfig) DataAwsPricingProduct
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 dataawspricingproduct.DataAwsPricingProduct_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 dataawspricingproduct.DataAwsPricingProduct_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawspricingproduct.DataAwsPricingProduct_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 dataawspricingproduct.DataAwsPricingProduct_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataawspricingproduct.DataAwsPricingProduct_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 dataawspricingproduct.DataAwsPricingProduct_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 &dataawspricingproduct.DataAwsPricingProductConfig {
 	Connection: interface{},
@@ -780,7 +780,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 &dataawspricingproduct.DataAwsPricingProductFilters {
 	Field: *string,
@@ -828,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 dataawspricingproduct.NewDataAwsPricingProductFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsPricingProductFiltersList
 ```
@@ -971,7 +971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspricingproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawspricingproduct"
 
 dataawspricingproduct.NewDataAwsPricingProductFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsPricingProductFiltersOutputReference
 ```
