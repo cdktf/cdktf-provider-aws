@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnector(scope Construct, id *string, config MskconnectConnectorConfig) MskconnectConnector
 ```
@@ -510,7 +510,7 @@ func ResetWorkerConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.MskconnectConnector_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.MskconnectConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ mskconnectconnector.MskconnectConnector_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.MskconnectConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ mskconnectconnector.MskconnectConnector_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.MskconnectConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1129,11 +1129,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorCapacity {
-	Autoscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorCapacityAutoscaling,
-	ProvisionedCapacity: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity,
+	Autoscaling: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling,
+	ProvisionedCapacity: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity,
 }
 ```
 
@@ -1179,14 +1179,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorCapacityAutoscaling {
 	MaxWorkerCount: *f64,
 	MinWorkerCount: *f64,
 	McuCount: *f64,
-	ScaleInPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy,
-	ScaleOutPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy,
+	ScaleInPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy,
+	ScaleOutPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy,
 }
 ```
 
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy {
 	CpuUtilizationPercentage: *f64,
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy {
 	CpuUtilizationPercentage: *f64,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorCapacityProvisionedCapacity {
 	WorkerCount: *f64,
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorConfig {
 	Connection: interface{},
@@ -1391,20 +1391,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Capacity: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorCapacity,
+	Capacity: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorCapacity,
 	ConnectorConfiguration: *map[string]*string,
-	KafkaCluster: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorKafkaCluster,
-	KafkaClusterClientAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthentication,
-	KafkaClusterEncryptionInTransit: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransit,
+	KafkaCluster: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorKafkaCluster,
+	KafkaClusterClientAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthentication,
+	KafkaClusterEncryptionInTransit: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransit,
 	KafkaconnectVersion: *string,
 	Name: *string,
 	Plugin: interface{},
 	ServiceExecutionRoleArn: *string,
 	Description: *string,
 	Id: *string,
-	LogDelivery: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorLogDelivery,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorTimeouts,
-	WorkerConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorWorkerConfiguration,
+	LogDelivery: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorLogDelivery,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorTimeouts,
+	WorkerConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration,
 }
 ```
 
@@ -1698,10 +1698,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorKafkaCluster {
-	ApacheKafkaCluster: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaCluster,
+	ApacheKafkaCluster: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaCluster,
 }
 ```
 
@@ -1732,11 +1732,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorKafkaClusterApacheKafkaCluster {
 	BootstrapServers: *string,
-	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc,
+	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc,
 }
 ```
 
@@ -1780,7 +1780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc {
 	SecurityGroups: *[]*string,
@@ -1826,7 +1826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorKafkaClusterClientAuthentication {
 	AuthenticationType: *string,
@@ -1858,7 +1858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorKafkaClusterEncryptionInTransit {
 	EncryptionType: *string,
@@ -1890,10 +1890,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDelivery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorLogDelivery {
-	WorkerLogDelivery: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDelivery,
+	WorkerLogDelivery: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDelivery,
 }
 ```
 
@@ -1924,12 +1924,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDelivery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorLogDeliveryWorkerLogDelivery {
-	CloudwatchLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs,
-	Firehose: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose,
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3,
+	CloudwatchLogs: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs,
+	Firehose: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3,
 }
 ```
 
@@ -1990,7 +1990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs {
 	Enabled: interface{},
@@ -2036,7 +2036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose {
 	Enabled: interface{},
@@ -2082,7 +2082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3 {
 	Enabled: interface{},
@@ -2142,10 +2142,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorPlugin {
-	CustomPlugin: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskconnectConnector.MskconnectConnectorPluginCustomPlugin,
+	CustomPlugin: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectConnector.MskconnectConnectorPluginCustomPlugin,
 }
 ```
 
@@ -2176,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorPluginCustomPlugin {
 	Arn: *string,
@@ -2222,7 +2222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorTimeouts {
 	Create: *string,
@@ -2282,7 +2282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 &mskconnectconnector.MskconnectConnectorWorkerConfiguration {
 	Arn: *string,
@@ -2330,7 +2330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorCapacityAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorCapacityAutoscalingOutputReference
 ```
@@ -2736,7 +2736,7 @@ func InternalValue() MskconnectConnectorCapacityAutoscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference
 ```
@@ -3014,7 +3014,7 @@ func InternalValue() MskconnectConnectorCapacityAutoscalingScaleInPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference
 ```
@@ -3292,7 +3292,7 @@ func InternalValue() MskconnectConnectorCapacityAutoscalingScaleOutPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorCapacityOutputReference
 ```
@@ -3625,7 +3625,7 @@ func InternalValue() MskconnectConnectorCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorCapacityProvisionedCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorCapacityProvisionedCapacityOutputReference
 ```
@@ -3925,7 +3925,7 @@ func InternalValue() MskconnectConnectorCapacityProvisionedCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference
 ```
@@ -4231,7 +4231,7 @@ func InternalValue() MskconnectConnectorKafkaClusterApacheKafkaCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference
 ```
@@ -4524,7 +4524,7 @@ func InternalValue() MskconnectConnectorKafkaClusterApacheKafkaClusterVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorKafkaClusterClientAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorKafkaClusterClientAuthenticationOutputReference
 ```
@@ -4802,7 +4802,7 @@ func InternalValue() MskconnectConnectorKafkaClusterClientAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorKafkaClusterEncryptionInTransitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference
 ```
@@ -5080,7 +5080,7 @@ func InternalValue() MskconnectConnectorKafkaClusterEncryptionInTransit
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorKafkaClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorKafkaClusterOutputReference
 ```
@@ -5364,7 +5364,7 @@ func InternalValue() MskconnectConnectorKafkaCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorLogDeliveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorLogDeliveryOutputReference
 ```
@@ -5648,7 +5648,7 @@ func InternalValue() MskconnectConnectorLogDelivery
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference
 ```
@@ -5948,7 +5948,7 @@ func InternalValue() MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference
 ```
@@ -6248,7 +6248,7 @@ func InternalValue() MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference
 ```
@@ -6623,7 +6623,7 @@ func InternalValue() MskconnectConnectorLogDeliveryWorkerLogDelivery
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference
 ```
@@ -6952,7 +6952,7 @@ func InternalValue() MskconnectConnectorLogDeliveryWorkerLogDeliveryS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPluginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorPluginCustomPluginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorPluginCustomPluginOutputReference
 ```
@@ -7245,7 +7245,7 @@ func InternalValue() MskconnectConnectorPluginCustomPlugin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorPluginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskconnectConnectorPluginList
 ```
@@ -7388,7 +7388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorPluginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskconnectConnectorPluginOutputReference
 ```
@@ -7690,7 +7690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorTimeoutsOutputReference
 ```
@@ -8026,7 +8026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectconnector"
 
 mskconnectconnector.NewMskconnectConnectorWorkerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectConnectorWorkerConfigurationOutputReference
 ```

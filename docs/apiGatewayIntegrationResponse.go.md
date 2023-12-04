@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegrationresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayintegrationresponse"
 
 apigatewayintegrationresponse.NewApiGatewayIntegrationResponse(scope Construct, id *string, config ApiGatewayIntegrationResponseConfig) ApiGatewayIntegrationResponse
 ```
@@ -406,7 +406,7 @@ func ResetSelectionPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegrationresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayintegrationresponse"
 
 apigatewayintegrationresponse.ApiGatewayIntegrationResponse_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegrationresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayintegrationresponse"
 
 apigatewayintegrationresponse.ApiGatewayIntegrationResponse_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ apigatewayintegrationresponse.ApiGatewayIntegrationResponse_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegrationresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayintegrationresponse"
 
 apigatewayintegrationresponse.ApiGatewayIntegrationResponse_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ apigatewayintegrationresponse.ApiGatewayIntegrationResponse_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegrationresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayintegrationresponse"
 
 apigatewayintegrationresponse.ApiGatewayIntegrationResponse_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegrationresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayintegrationresponse"
 
 &apigatewayintegrationresponse.ApiGatewayIntegrationResponseConfig {
 	Connection: interface{},
