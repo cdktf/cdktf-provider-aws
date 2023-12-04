@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsService(scope Construct, id *string, config DataAwsEcsServiceConfig) DataAwsEcsService
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawsecsservice.DataAwsEcsService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawsecsservice.DataAwsEcsService_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceConfig {
 	Connection: interface{},
