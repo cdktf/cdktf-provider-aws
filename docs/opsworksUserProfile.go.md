@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksuserprofile"
 
 opsworksuserprofile.NewOpsworksUserProfile(scope Construct, id *string, config OpsworksUserProfileConfig) OpsworksUserProfile
 ```
@@ -392,7 +392,7 @@ func ResetSshPublicKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksuserprofile"
 
 opsworksuserprofile.OpsworksUserProfile_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksuserprofile"
 
 opsworksuserprofile.OpsworksUserProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ opsworksuserprofile.OpsworksUserProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksuserprofile"
 
 opsworksuserprofile.OpsworksUserProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ opsworksuserprofile.OpsworksUserProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksuserprofile"
 
 opsworksuserprofile.OpsworksUserProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksuserprofile"
 
 &opsworksuserprofile.OpsworksUserProfileConfig {
 	Connection: interface{},

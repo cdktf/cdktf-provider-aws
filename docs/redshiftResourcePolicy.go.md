@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftresourcepolicy"
 
 redshiftresourcepolicy.NewRedshiftResourcePolicy(scope Construct, id *string, config RedshiftResourcePolicyConfig) RedshiftResourcePolicy
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftresourcepolicy"
 
 redshiftresourcepolicy.RedshiftResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftresourcepolicy"
 
 redshiftresourcepolicy.RedshiftResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ redshiftresourcepolicy.RedshiftResourcePolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftresourcepolicy"
 
 redshiftresourcepolicy.RedshiftResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ redshiftresourcepolicy.RedshiftResourcePolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftresourcepolicy"
 
 redshiftresourcepolicy.RedshiftResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftresourcepolicy"
 
 &redshiftresourcepolicy.RedshiftResourcePolicyConfig {
 	Connection: interface{},

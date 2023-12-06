@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironment(scope Construct, id *string, config CodecatalystDevEnvironmentConfig) CodecatalystDevEnvironment
 ```
@@ -458,7 +458,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -967,7 +967,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentConfig {
 	Connection: interface{},
@@ -977,16 +977,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironmen
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Ides: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes,
+	Ides: github.com/cdktf/cdktf-provider-aws-go/aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes,
 	InstanceType: *string,
-	PersistentStorage: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage,
+	PersistentStorage: github.com/cdktf/cdktf-provider-aws-go/aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage,
 	ProjectName: *string,
 	SpaceName: *string,
 	Alias: *string,
 	Id: *string,
 	InactivityTimeoutMinutes: *f64,
 	Repositories: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts,
 }
 ```
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentIdes {
 	Name: *string,
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentPersistentStorage {
 	Size: *f64,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentRepositories {
 	RepositoryName: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentTimeouts {
 	Create: *string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentIdesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodecatalystDevEnvironmentIdesOutputReference
 ```
@@ -1713,7 +1713,7 @@ func InternalValue() CodecatalystDevEnvironmentIdes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentPersistentStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodecatalystDevEnvironmentPersistentStorageOutputReference
 ```
@@ -1984,7 +1984,7 @@ func InternalValue() CodecatalystDevEnvironmentPersistentStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentRepositoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodecatalystDevEnvironmentRepositoriesList
 ```
@@ -2127,7 +2127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentRepositoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodecatalystDevEnvironmentRepositoriesOutputReference
 ```
@@ -2445,7 +2445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodecatalystDevEnvironmentTimeoutsOutputReference
 ```
