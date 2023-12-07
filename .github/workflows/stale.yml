@@ -16,12 +16,12 @@ jobs:
         with:
           days-before-stale: -1
           days-before-close: -1
-          days-before-pr-stale: 14
-          days-before-pr-close: 7
-          stale-pr-message: 14 days have passed since this PR was opened, and I assume other builds have succeeded in the meantime. If no one removes the `stale` label or comments, I'm going to auto-close this PR in 7 days.
-          close-pr-message: I'm closing this PR automatically with the assumption that other builds have succeeded in the meantime.
+          days-before-pr-stale: 1
+          days-before-pr-close: 0
+          stale-pr-message: Closing this PR, if it has not merged there is most likely a CI or CDKTF issue preventing it from merging. If this has been a manual PR, please reopen it and add the `no-auto-close` label to prevent this from happening again.
+          close-pr-message: Closing this pull request as it hasn't seen activity for a while. Please add a comment @mentioning a maintainer to reopen. If you wish to exclude this issue from being marked as stale, add the "no-auto-close" label.
           stale-pr-label: stale
-          exempt-pr-labels: backlog
+          exempt-pr-labels: no-auto-close
           days-before-issue-stale: 45
           days-before-issue-close: 14
           stale-issue-message: 45 days have passed since this issue was opened, and I assume other publishes have succeeded in the meantime. If no one removes the `stale` label or comments, I'm going to auto-close this issue in 14 days.
