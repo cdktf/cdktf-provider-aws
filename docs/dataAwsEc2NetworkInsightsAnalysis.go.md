@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysis(scope Construct, id *string, config DataAwsEc2NetworkInsightsAnalysisConfig) DataAwsEc2NetworkInsightsAnalysis
 ```
@@ -308,7 +308,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysis_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysis_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysis_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysis_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysis_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysis_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisAlternatePathHints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisAlternatePathHints {
 
@@ -808,7 +808,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisConfig {
 	Connection: interface{},
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanations {
 
@@ -984,7 +984,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAcl {
 
@@ -997,7 +997,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRule {
 
@@ -1010,7 +1010,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRange {
 
@@ -1023,7 +1023,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAttachedTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAttachedTo {
 
@@ -1036,7 +1036,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener {
 
@@ -1049,7 +1049,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsComponent {
 
@@ -1062,7 +1062,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGateway {
 
@@ -1075,7 +1075,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestination {
 
@@ -1088,7 +1088,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpc {
 
@@ -1101,7 +1101,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener {
 
@@ -1114,7 +1114,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTable {
 
@@ -1127,7 +1127,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsInternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsInternetGateway {
 
@@ -1140,7 +1140,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups {
 
@@ -1166,7 +1166,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNatGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNatGateway {
 
@@ -1179,7 +1179,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterface {
 
@@ -1192,7 +1192,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPortRanges {
 
@@ -1205,7 +1205,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStruct {
 
@@ -1218,7 +1218,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTable {
 
@@ -1231,7 +1231,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRoute {
 
@@ -1244,7 +1244,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroup {
 
@@ -1257,7 +1257,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRule {
 
@@ -1270,7 +1270,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange {
 
@@ -1283,7 +1283,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroups {
 
@@ -1296,7 +1296,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpc {
 
@@ -1309,7 +1309,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnet {
 
@@ -1322,7 +1322,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTable {
 
@@ -1335,7 +1335,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGateway {
 
@@ -1348,7 +1348,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment {
 
@@ -1361,7 +1361,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable {
 
@@ -1374,7 +1374,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute {
 
@@ -1387,7 +1387,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpc {
 
@@ -1400,7 +1400,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpoint {
 
@@ -1413,7 +1413,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnection {
 
@@ -1426,7 +1426,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnection {
 
@@ -1439,7 +1439,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGateway {
 
@@ -1452,7 +1452,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisFilter {
 	Name: *string,
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponents {
 
@@ -1511,7 +1511,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRule {
 
@@ -1524,7 +1524,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange {
 
@@ -1537,7 +1537,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails {
 
@@ -1550,7 +1550,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent {
 
@@ -1563,7 +1563,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedTo {
 
@@ -1576,7 +1576,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponent {
 
@@ -1589,7 +1589,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc {
 
@@ -1602,7 +1602,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeader {
 
@@ -1615,7 +1615,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges {
 
@@ -1628,7 +1628,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges {
 
@@ -1641,7 +1641,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader {
 
@@ -1654,7 +1654,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges {
 
@@ -1667,7 +1667,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges {
 
@@ -1680,7 +1680,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute {
 
@@ -1693,7 +1693,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule {
 
@@ -1706,7 +1706,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange {
 
@@ -1719,7 +1719,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpc {
 
@@ -1732,7 +1732,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnet {
 
@@ -1745,7 +1745,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGateway {
 
@@ -1758,7 +1758,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute {
 
@@ -1771,7 +1771,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpc {
 
@@ -1784,7 +1784,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponents {
 
@@ -1797,7 +1797,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRule {
 
@@ -1810,7 +1810,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange {
 
@@ -1823,7 +1823,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails {
 
@@ -1836,7 +1836,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent {
 
@@ -1849,7 +1849,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedTo {
 
@@ -1862,7 +1862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponent {
 
@@ -1875,7 +1875,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc {
 
@@ -1888,7 +1888,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeader {
 
@@ -1901,7 +1901,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges {
 
@@ -1914,7 +1914,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges {
 
@@ -1927,7 +1927,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader {
 
@@ -1940,7 +1940,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges {
 
@@ -1953,7 +1953,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges {
 
@@ -1966,7 +1966,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute {
 
@@ -1979,7 +1979,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule {
 
@@ -1992,7 +1992,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange {
 
@@ -2005,7 +2005,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpc {
 
@@ -2018,7 +2018,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnet {
 
@@ -2031,7 +2031,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGateway {
 
@@ -2044,7 +2044,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute {
 
@@ -2057,7 +2057,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 &dataawsec2networkinsightsanalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpc {
 
@@ -2072,7 +2072,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsights
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisAlternatePathHintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisAlternatePathHintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisAlternatePathHintsList
 ```
@@ -2204,7 +2204,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisAlternatePathHintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisAlternatePathHintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisAlternatePathHintsOutputReference
 ```
@@ -2493,7 +2493,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisAlternatePathHints
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAclList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAclList
 ```
@@ -2625,7 +2625,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAclOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAclOutputReference
 ```
@@ -2925,7 +2925,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsAcl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAclRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAclRuleList
 ```
@@ -3057,7 +3057,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAclRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAclRuleOutputReference
 ```
@@ -3390,7 +3390,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsAclRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRangeList
 ```
@@ -3522,7 +3522,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference
 ```
@@ -3811,7 +3811,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsAclRulePortRan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAttachedToList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAttachedToList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAttachedToList
 ```
@@ -3943,7 +3943,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsAttachedToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsAttachedToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsAttachedToOutputReference
 ```
@@ -4243,7 +4243,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsAttachedTo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList
 ```
@@ -4375,7 +4375,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference
 ```
@@ -4664,7 +4664,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBal
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsComponentList
 ```
@@ -4796,7 +4796,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsComponentOutputReference
 ```
@@ -5096,7 +5096,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsComponent
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGatewayList
 ```
@@ -5228,7 +5228,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference
 ```
@@ -5528,7 +5528,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsCustomerGatewa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList
 ```
@@ -5660,7 +5660,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationOutputReference
 ```
@@ -5960,7 +5960,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpcList
 ```
@@ -6092,7 +6092,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference
 ```
@@ -6392,7 +6392,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList
 ```
@@ -6524,7 +6524,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference
 ```
@@ -6824,7 +6824,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBal
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTableList
 ```
@@ -6956,7 +6956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference
 ```
@@ -7256,7 +7256,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsIngressRouteTa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsInternetGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsInternetGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsInternetGatewayList
 ```
@@ -7388,7 +7388,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference
 ```
@@ -7688,7 +7688,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsInternetGatewa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsList
 ```
@@ -7820,7 +7820,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList
 ```
@@ -7952,7 +7952,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference
 ```
@@ -8252,7 +8252,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList
 ```
@@ -8384,7 +8384,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference
 ```
@@ -8684,7 +8684,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsLoadBalancerTa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNatGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsNatGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsNatGatewayList
 ```
@@ -8816,7 +8816,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference
 ```
@@ -9116,7 +9116,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsNatGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterfaceList
 ```
@@ -9248,7 +9248,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference
 ```
@@ -9548,7 +9548,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsNetworkInterfa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference
 ```
@@ -10343,7 +10343,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanations
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesList
 ```
@@ -10475,7 +10475,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesOutputReference
 ```
@@ -10764,7 +10764,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsPortRanges
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList
 ```
@@ -10896,7 +10896,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference
 ```
@@ -11196,7 +11196,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStru
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableList
 ```
@@ -11328,7 +11328,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableOutputReference
 ```
@@ -11628,7 +11628,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTable
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList
 ```
@@ -11760,7 +11760,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference
 ```
@@ -12137,7 +12137,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupList
 ```
@@ -12269,7 +12269,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference
 ```
@@ -12569,7 +12569,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList
 ```
@@ -12701,7 +12701,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference
 ```
@@ -13034,7 +13034,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupR
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList
 ```
@@ -13166,7 +13166,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference
 ```
@@ -13455,7 +13455,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupR
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupsList
 ```
@@ -13587,7 +13587,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference
 ```
@@ -13887,7 +13887,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsSecurityGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpcList
 ```
@@ -14019,7 +14019,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference
 ```
@@ -14319,7 +14319,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsSourceVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSubnetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetList
 ```
@@ -14451,7 +14451,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSubnetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetOutputReference
 ```
@@ -14751,7 +14751,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsSubnet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableList
 ```
@@ -14883,7 +14883,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference
 ```
@@ -15183,7 +15183,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsSubnetRouteTab
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList
 ```
@@ -15315,7 +15315,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference
 ```
@@ -15615,7 +15615,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayList
 ```
@@ -15747,7 +15747,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference
 ```
@@ -16047,7 +16047,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList
 ```
@@ -16179,7 +16179,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference
 ```
@@ -16479,7 +16479,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList
 ```
@@ -16611,7 +16611,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference
 ```
@@ -16955,7 +16955,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsTransitGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpointList
 ```
@@ -17087,7 +17087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference
 ```
@@ -17387,7 +17387,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsVpcEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpcList
 ```
@@ -17519,7 +17519,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpcOutputReference
 ```
@@ -17819,7 +17819,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList
 ```
@@ -17951,7 +17951,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference
 ```
@@ -18251,7 +18251,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConn
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnectionList
 ```
@@ -18383,7 +18383,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference
 ```
@@ -18683,7 +18683,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsVpnConnection
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList
 ```
@@ -18815,7 +18815,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference
 ```
@@ -19115,7 +19115,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisFilterList
 ```
@@ -19258,7 +19258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisFilterOutputReference
 ```
@@ -19569,7 +19569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRuleList
 ```
@@ -19701,7 +19701,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference
 ```
@@ -20034,7 +20034,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList
 ```
@@ -20166,7 +20166,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference
 ```
@@ -20455,7 +20455,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAclRu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList
 ```
@@ -20587,7 +20587,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference
 ```
@@ -20887,7 +20887,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAddit
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList
 ```
@@ -21019,7 +21019,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference
 ```
@@ -21308,7 +21308,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAddit
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedToList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedToList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedToList
 ```
@@ -21440,7 +21440,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference
 ```
@@ -21740,7 +21740,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAttac
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponentList
 ```
@@ -21872,7 +21872,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference
 ```
@@ -22172,7 +22172,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsCompo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList
 ```
@@ -22304,7 +22304,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference
 ```
@@ -22604,7 +22604,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDesti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList
 ```
@@ -22736,7 +22736,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference
 ```
@@ -23025,7 +23025,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInbou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList
 ```
@@ -23157,7 +23157,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference
 ```
@@ -23479,7 +23479,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInbou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList
 ```
@@ -23611,7 +23611,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference
 ```
@@ -23900,7 +23900,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInbou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsList
 ```
@@ -24032,7 +24032,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList
 ```
@@ -24164,7 +24164,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference
 ```
@@ -24453,7 +24453,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutbo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList
 ```
@@ -24585,7 +24585,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference
 ```
@@ -24907,7 +24907,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutbo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList
 ```
@@ -25039,7 +25039,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference
 ```
@@ -25328,7 +25328,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutbo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsOutputReference
 ```
@@ -25760,7 +25760,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList
 ```
@@ -25892,7 +25892,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference
 ```
@@ -26269,7 +26269,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList
 ```
@@ -26401,7 +26401,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference
 ```
@@ -26734,7 +26734,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecur
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList
 ```
@@ -26866,7 +26866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference
 ```
@@ -27155,7 +27155,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSecur
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList
 ```
@@ -27287,7 +27287,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference
 ```
@@ -27587,7 +27587,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSourc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnetList
 ```
@@ -27719,7 +27719,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference
 ```
@@ -28019,7 +28019,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsSubne
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList
 ```
@@ -28151,7 +28151,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference
 ```
@@ -28451,7 +28451,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTrans
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList
 ```
@@ -28583,7 +28583,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference
 ```
@@ -28927,7 +28927,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsTrans
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcList
 ```
@@ -29059,7 +29059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference
 ```
@@ -29359,7 +29359,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRuleList
 ```
@@ -29491,7 +29491,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference
 ```
@@ -29824,7 +29824,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRul
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList
 ```
@@ -29956,7 +29956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference
 ```
@@ -30245,7 +30245,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRul
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList
 ```
@@ -30377,7 +30377,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference
 ```
@@ -30677,7 +30677,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList
 ```
@@ -30809,7 +30809,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference
 ```
@@ -31098,7 +31098,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAdditi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToList
 ```
@@ -31230,7 +31230,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference
 ```
@@ -31530,7 +31530,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAttach
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponentList
 ```
@@ -31662,7 +31662,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference
 ```
@@ -31962,7 +31962,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsCompon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList
 ```
@@ -32094,7 +32094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference
 ```
@@ -32394,7 +32394,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsDestin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList
 ```
@@ -32526,7 +32526,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference
 ```
@@ -32815,7 +32815,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboun
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList
 ```
@@ -32947,7 +32947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference
 ```
@@ -33269,7 +33269,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboun
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList
 ```
@@ -33401,7 +33401,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference
 ```
@@ -33690,7 +33690,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsInboun
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsList
 ```
@@ -33822,7 +33822,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList
 ```
@@ -33954,7 +33954,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference
 ```
@@ -34243,7 +34243,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutbou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList
 ```
@@ -34375,7 +34375,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference
 ```
@@ -34697,7 +34697,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutbou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList
 ```
@@ -34829,7 +34829,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference
 ```
@@ -35118,7 +35118,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutbou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsOutputReference
 ```
@@ -35550,7 +35550,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList
 ```
@@ -35682,7 +35682,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference
 ```
@@ -36059,7 +36059,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteT
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList
 ```
@@ -36191,7 +36191,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference
 ```
@@ -36524,7 +36524,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecuri
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList
 ```
@@ -36656,7 +36656,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference
 ```
@@ -36945,7 +36945,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSecuri
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList
 ```
@@ -37077,7 +37077,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference
 ```
@@ -37377,7 +37377,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnetList
 ```
@@ -37509,7 +37509,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference
 ```
@@ -37809,7 +37809,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsSubnet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList
 ```
@@ -37941,7 +37941,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference
 ```
@@ -38241,7 +38241,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList
 ```
@@ -38373,7 +38373,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference
 ```
@@ -38717,7 +38717,7 @@ func InternalValue() DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpcList
 ```
@@ -38849,7 +38849,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2networkinsightsanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2networkinsightsanalysis"
 
 dataawsec2networkinsightsanalysis.NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference
 ```
