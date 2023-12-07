@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/directoryservicelogsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicelogsubscription"
 
 directoryservicelogsubscription.NewDirectoryServiceLogSubscription(scope Construct, id *string, config DirectoryServiceLogSubscriptionConfig) DirectoryServiceLogSubscription
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/directoryservicelogsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/directoryservicelogsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/directoryservicelogsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/directoryservicelogsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/directoryservicelogsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicelogsubscription"
 
 &directoryservicelogsubscription.DirectoryServiceLogSubscriptionConfig {
 	Connection: interface{},

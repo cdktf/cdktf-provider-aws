@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.NewDataAwsOpensearchserverlessCollection(scope Construct, id *string, config DataAwsOpensearchserverlessCollectionConfig) DataAwsOpensearchserverlessCollection
 ```
@@ -281,7 +281,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 &dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollectionConfig {
 	Connection: interface{},
