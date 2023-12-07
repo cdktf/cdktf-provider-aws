@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/snsplatformapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snsplatformapplication"
 
 snsplatformapplication.NewSnsPlatformApplication(scope Construct, id *string, config SnsPlatformApplicationConfig) SnsPlatformApplication
 ```
@@ -448,7 +448,7 @@ func ResetSuccessFeedbackSampleRate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/snsplatformapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snsplatformapplication"
 
 snsplatformapplication.SnsPlatformApplication_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/snsplatformapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snsplatformapplication"
 
 snsplatformapplication.SnsPlatformApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ snsplatformapplication.SnsPlatformApplication_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/snsplatformapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snsplatformapplication"
 
 snsplatformapplication.SnsPlatformApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ snsplatformapplication.SnsPlatformApplication_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/snsplatformapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snsplatformapplication"
 
 snsplatformapplication.SnsPlatformApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1056,7 +1056,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/snsplatformapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snsplatformapplication"
 
 &snsplatformapplication.SnsPlatformApplicationConfig {
 	Connection: interface{},

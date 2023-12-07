@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshifthsmconfiguration"
 
 redshifthsmconfiguration.NewRedshiftHsmConfiguration(scope Construct, id *string, config RedshiftHsmConfigurationConfig) RedshiftHsmConfiguration
 ```
@@ -392,7 +392,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshifthsmconfiguration"
 
 redshifthsmconfiguration.RedshiftHsmConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshifthsmconfiguration"
 
 redshifthsmconfiguration.RedshiftHsmConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ redshifthsmconfiguration.RedshiftHsmConfiguration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshifthsmconfiguration"
 
 redshifthsmconfiguration.RedshiftHsmConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ redshifthsmconfiguration.RedshiftHsmConfiguration_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshifthsmconfiguration"
 
 redshifthsmconfiguration.RedshiftHsmConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshifthsmconfiguration"
 
 &redshifthsmconfiguration.RedshiftHsmConfigurationConfig {
 	Connection: interface{},
