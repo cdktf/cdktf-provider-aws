@@ -1,3 +1,3 @@
 # `aws_opensearchserverless_lifecycle_policy`
 
-Refer to the Terraform Registory for docs: [`aws_opensearchserverless_lifecycle_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opensearchserverless_lifecycle_policy).
+Refer to the Terraform Registory for docs: [`aws_opensearchserverless_lifecycle_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_lifecycle_policy).

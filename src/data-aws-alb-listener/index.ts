@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener
+// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAlbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#arn DataAwsAlbListener#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#arn DataAwsAlbListener#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#id DataAwsAlbListener#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#id DataAwsAlbListener#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#load_balancer_arn DataAwsAlbListener#load_balancer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#load_balancer_arn DataAwsAlbListener#load_balancer_arn}
   */
   readonly loadBalancerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#port DataAwsAlbListener#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#port DataAwsAlbListener#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#tags DataAwsAlbListener#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#tags DataAwsAlbListener#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#timeouts DataAwsAlbListener#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#timeouts DataAwsAlbListener#timeouts}
   */
   readonly timeouts?: DataAwsAlbListenerTimeouts;
 }
@@ -733,9 +728,83 @@ export class DataAwsAlbListenerDefaultActionList extends cdktf.ComplexList {
     return new DataAwsAlbListenerDefaultActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsAlbListenerMutualAuthentication {
+}
+
+export function dataAwsAlbListenerMutualAuthenticationToTerraform(struct?: DataAwsAlbListenerMutualAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAlbListenerMutualAuthenticationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAlbListenerMutualAuthentication | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAlbListenerMutualAuthentication | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ignore_client_certificate_expiry - computed: true, optional: false, required: false
+  public get ignoreClientCertificateExpiry() {
+    return this.getBooleanAttribute('ignore_client_certificate_expiry');
+  }
+
+  // mode - computed: true, optional: false, required: false
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+
+  // trust_store_arn - computed: true, optional: false, required: false
+  public get trustStoreArn() {
+    return this.getStringAttribute('trust_store_arn');
+  }
+}
+
+export class DataAwsAlbListenerMutualAuthenticationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAlbListenerMutualAuthenticationOutputReference {
+    return new DataAwsAlbListenerMutualAuthenticationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsAlbListenerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#read DataAwsAlbListener#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#read DataAwsAlbListener#read}
   */
   readonly read?: string;
 }
@@ -810,7 +879,7 @@ export class DataAwsAlbListenerTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener aws_alb_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener aws_alb_listener}
 */
 export class DataAwsAlbListener extends cdktf.TerraformDataSource {
 
@@ -826,7 +895,7 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAlbListener resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAlbListener to import
-  * @param importFromId The id of the existing DataAwsAlbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAlbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAlbListener to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -838,7 +907,7 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener aws_alb_listener} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener aws_alb_listener} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -849,7 +918,7 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_alb_listener',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.29.0',
+        providerVersion: '5.30.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -934,6 +1003,12 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get loadBalancerArnInput() {
     return this._loadBalancerArn;
+  }
+
+  // mutual_authentication - computed: true, optional: false, required: false
+  private _mutualAuthentication = new DataAwsAlbListenerMutualAuthenticationList(this, "mutual_authentication", false);
+  public get mutualAuthentication() {
+    return this._mutualAuthentication;
   }
 
   // port - computed: true, optional: true, required: false

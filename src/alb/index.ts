@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb
+// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,130 +8,134 @@ import * as cdktf from 'cdktf';
 
 export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#customer_owned_ipv4_pool Alb#customer_owned_ipv4_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#customer_owned_ipv4_pool Alb#customer_owned_ipv4_pool}
   */
   readonly customerOwnedIpv4Pool?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#desync_mitigation_mode Alb#desync_mitigation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#desync_mitigation_mode Alb#desync_mitigation_mode}
   */
   readonly desyncMitigationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#dns_record_client_routing_policy Alb#dns_record_client_routing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#dns_record_client_routing_policy Alb#dns_record_client_routing_policy}
   */
   readonly dnsRecordClientRoutingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#drop_invalid_header_fields Alb#drop_invalid_header_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#drop_invalid_header_fields Alb#drop_invalid_header_fields}
   */
   readonly dropInvalidHeaderFields?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}
   */
   readonly enableCrossZoneLoadBalancing?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#enable_deletion_protection Alb#enable_deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enable_deletion_protection Alb#enable_deletion_protection}
   */
   readonly enableDeletionProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#enable_http2 Alb#enable_http2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enable_http2 Alb#enable_http2}
   */
   readonly enableHttp2?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}
   */
   readonly enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#enable_waf_fail_open Alb#enable_waf_fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enable_waf_fail_open Alb#enable_waf_fail_open}
   */
   readonly enableWafFailOpen?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#enable_xff_client_port Alb#enable_xff_client_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enable_xff_client_port Alb#enable_xff_client_port}
   */
   readonly enableXffClientPort?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#id Alb#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enforce_security_group_inbound_rules_on_private_link_traffic Alb#enforce_security_group_inbound_rules_on_private_link_traffic}
+  */
+  readonly enforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#id Alb#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#idle_timeout Alb#idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#idle_timeout Alb#idle_timeout}
   */
   readonly idleTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#internal Alb#internal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#internal Alb#internal}
   */
   readonly internal?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#ip_address_type Alb#ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#ip_address_type Alb#ip_address_type}
   */
   readonly ipAddressType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#load_balancer_type Alb#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#load_balancer_type Alb#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#name Alb#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#name Alb#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#name_prefix Alb#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#name_prefix Alb#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#preserve_host_header Alb#preserve_host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#preserve_host_header Alb#preserve_host_header}
   */
   readonly preserveHostHeader?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#security_groups Alb#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#security_groups Alb#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#subnets Alb#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#subnets Alb#subnets}
   */
   readonly subnets?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#tags Alb#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#tags Alb#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#tags_all Alb#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#tags_all Alb#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#xff_header_processing_mode Alb#xff_header_processing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#xff_header_processing_mode Alb#xff_header_processing_mode}
   */
   readonly xffHeaderProcessingMode?: string;
   /**
   * access_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#access_logs Alb#access_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#access_logs Alb#access_logs}
   */
   readonly accessLogs?: AlbAccessLogs;
   /**
   * subnet_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#subnet_mapping Alb#subnet_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#subnet_mapping Alb#subnet_mapping}
   */
   readonly subnetMapping?: AlbSubnetMapping[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#timeouts Alb#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#timeouts Alb#timeouts}
   */
   readonly timeouts?: AlbTimeouts;
 }
 export interface AlbAccessLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#bucket Alb#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#bucket Alb#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#enabled Alb#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#enabled Alb#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#prefix Alb#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#prefix Alb#prefix}
   */
   readonly prefix?: string;
 }
@@ -244,19 +243,19 @@ export class AlbAccessLogsOutputReference extends cdktf.ComplexObject {
 }
 export interface AlbSubnetMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#allocation_id Alb#allocation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#allocation_id Alb#allocation_id}
   */
   readonly allocationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#ipv6_address Alb#ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#ipv6_address Alb#ipv6_address}
   */
   readonly ipv6Address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#private_ipv4_address Alb#private_ipv4_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#private_ipv4_address Alb#private_ipv4_address}
   */
   readonly privateIpv4Address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#subnet_id Alb#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#subnet_id Alb#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -424,15 +423,15 @@ export class AlbSubnetMappingList extends cdktf.ComplexList {
 }
 export interface AlbTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#create Alb#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#create Alb#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#delete Alb#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#delete Alb#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#update Alb#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#update Alb#update}
   */
   readonly update?: string;
 }
@@ -553,7 +552,7 @@ export class AlbTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb aws_alb}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb}
 */
 export class Alb extends cdktf.TerraformResource {
 
@@ -569,7 +568,7 @@ export class Alb extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Alb resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Alb to import
-  * @param importFromId The id of the existing Alb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Alb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Alb to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -581,7 +580,7 @@ export class Alb extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb aws_alb} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -592,7 +591,7 @@ export class Alb extends cdktf.TerraformResource {
       terraformResourceType: 'aws_alb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.29.0',
+        providerVersion: '5.30.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -613,6 +612,7 @@ export class Alb extends cdktf.TerraformResource {
     this._enableTlsVersionAndCipherSuiteHeaders = config.enableTlsVersionAndCipherSuiteHeaders;
     this._enableWafFailOpen = config.enableWafFailOpen;
     this._enableXffClientPort = config.enableXffClientPort;
+    this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic = config.enforceSecurityGroupInboundRulesOnPrivateLinkTraffic;
     this._id = config.id;
     this._idleTimeout = config.idleTimeout;
     this._internal = config.internal;
@@ -808,6 +808,22 @@ export class Alb extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableXffClientPortInput() {
     return this._enableXffClientPort;
+  }
+
+  // enforce_security_group_inbound_rules_on_private_link_traffic - computed: true, optional: true, required: false
+  private _enforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string; 
+  public get enforceSecurityGroupInboundRulesOnPrivateLinkTraffic() {
+    return this.getStringAttribute('enforce_security_group_inbound_rules_on_private_link_traffic');
+  }
+  public set enforceSecurityGroupInboundRulesOnPrivateLinkTraffic(value: string) {
+    this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic = value;
+  }
+  public resetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() {
+    this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput() {
+    return this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1092,6 +1108,7 @@ export class Alb extends cdktf.TerraformResource {
       enable_tls_version_and_cipher_suite_headers: cdktf.booleanToTerraform(this._enableTlsVersionAndCipherSuiteHeaders),
       enable_waf_fail_open: cdktf.booleanToTerraform(this._enableWafFailOpen),
       enable_xff_client_port: cdktf.booleanToTerraform(this._enableXffClientPort),
+      enforce_security_group_inbound_rules_on_private_link_traffic: cdktf.stringToTerraform(this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic),
       id: cdktf.stringToTerraform(this._id),
       idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
       internal: cdktf.booleanToTerraform(this._internal),
