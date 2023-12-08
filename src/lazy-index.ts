@@ -239,6 +239,7 @@ Object.defineProperty(exports, 'codecommitTrigger', { get: function () { return 
 Object.defineProperty(exports, 'codedeployApp', { get: function () { return require('./codedeploy-app'); } });
 Object.defineProperty(exports, 'codedeployDeploymentConfig', { get: function () { return require('./codedeploy-deployment-config'); } });
 Object.defineProperty(exports, 'codedeployDeploymentGroup', { get: function () { return require('./codedeploy-deployment-group'); } });
+Object.defineProperty(exports, 'codeguruprofilerProfilingGroup', { get: function () { return require('./codeguruprofiler-profiling-group'); } });
 Object.defineProperty(exports, 'codegurureviewerRepositoryAssociation', { get: function () { return require('./codegurureviewer-repository-association'); } });
 Object.defineProperty(exports, 'codepipeline', { get: function () { return require('./codepipeline'); } });
 Object.defineProperty(exports, 'codepipelineCustomActionType', { get: function () { return require('./codepipeline-custom-action-type'); } });
@@ -293,6 +294,8 @@ Object.defineProperty(exports, 'connectVocabulary', { get: function () { return 
 Object.defineProperty(exports, 'controltowerControl', { get: function () { return require('./controltower-control'); } });
 Object.defineProperty(exports, 'curReportDefinition', { get: function () { return require('./cur-report-definition'); } });
 Object.defineProperty(exports, 'customerGateway', { get: function () { return require('./customer-gateway'); } });
+Object.defineProperty(exports, 'customerprofilesDomain', { get: function () { return require('./customerprofiles-domain'); } });
+Object.defineProperty(exports, 'customerprofilesProfile', { get: function () { return require('./customerprofiles-profile'); } });
 Object.defineProperty(exports, 'dataexchangeDataSet', { get: function () { return require('./dataexchange-data-set'); } });
 Object.defineProperty(exports, 'dataexchangeRevision', { get: function () { return require('./dataexchange-revision'); } });
 Object.defineProperty(exports, 'datapipelinePipeline', { get: function () { return require('./datapipeline-pipeline'); } });
@@ -702,6 +705,8 @@ Object.defineProperty(exports, 'lbListenerRule', { get: function () { return req
 Object.defineProperty(exports, 'lbSslNegotiationPolicy', { get: function () { return require('./lb-ssl-negotiation-policy'); } });
 Object.defineProperty(exports, 'lbTargetGroup', { get: function () { return require('./lb-target-group'); } });
 Object.defineProperty(exports, 'lbTargetGroupAttachment', { get: function () { return require('./lb-target-group-attachment'); } });
+Object.defineProperty(exports, 'lbTrustStore', { get: function () { return require('./lb-trust-store'); } });
+Object.defineProperty(exports, 'lbTrustStoreRevocation', { get: function () { return require('./lb-trust-store-revocation'); } });
 Object.defineProperty(exports, 'lexBot', { get: function () { return require('./lex-bot'); } });
 Object.defineProperty(exports, 'lexBotAlias', { get: function () { return require('./lex-bot-alias'); } });
 Object.defineProperty(exports, 'lexIntent', { get: function () { return require('./lex-intent'); } });
@@ -1076,6 +1081,7 @@ Object.defineProperty(exports, 'securityhubOrganizationConfiguration', { get: fu
 Object.defineProperty(exports, 'securityhubProductSubscription', { get: function () { return require('./securityhub-product-subscription'); } });
 Object.defineProperty(exports, 'securityhubStandardsControl', { get: function () { return require('./securityhub-standards-control'); } });
 Object.defineProperty(exports, 'securityhubStandardsSubscription', { get: function () { return require('./securityhub-standards-subscription'); } });
+Object.defineProperty(exports, 'securitylakeDataLake', { get: function () { return require('./securitylake-data-lake'); } });
 Object.defineProperty(exports, 'serverlessapplicationrepositoryCloudformationStack', { get: function () { return require('./serverlessapplicationrepository-cloudformation-stack'); } });
 Object.defineProperty(exports, 'serviceDiscoveryHttpNamespace', { get: function () { return require('./service-discovery-http-namespace'); } });
 Object.defineProperty(exports, 'serviceDiscoveryInstance', { get: function () { return require('./service-discovery-instance'); } });
@@ -1166,6 +1172,9 @@ Object.defineProperty(exports, 'ssmcontactsPlan', { get: function () { return re
 Object.defineProperty(exports, 'ssmincidentsReplicationSet', { get: function () { return require('./ssmincidents-replication-set'); } });
 Object.defineProperty(exports, 'ssmincidentsResponsePlan', { get: function () { return require('./ssmincidents-response-plan'); } });
 Object.defineProperty(exports, 'ssoadminAccountAssignment', { get: function () { return require('./ssoadmin-account-assignment'); } });
+Object.defineProperty(exports, 'ssoadminApplication', { get: function () { return require('./ssoadmin-application'); } });
+Object.defineProperty(exports, 'ssoadminApplicationAssignment', { get: function () { return require('./ssoadmin-application-assignment'); } });
+Object.defineProperty(exports, 'ssoadminApplicationAssignmentConfiguration', { get: function () { return require('./ssoadmin-application-assignment-configuration'); } });
 Object.defineProperty(exports, 'ssoadminCustomerManagedPolicyAttachment', { get: function () { return require('./ssoadmin-customer-managed-policy-attachment'); } });
 Object.defineProperty(exports, 'ssoadminInstanceAccessControlAttributes', { get: function () { return require('./ssoadmin-instance-access-control-attributes'); } });
 Object.defineProperty(exports, 'ssoadminManagedPolicyAttachment', { get: function () { return require('./ssoadmin-managed-policy-attachment'); } });
@@ -1378,6 +1387,7 @@ Object.defineProperty(exports, 'dataAwsCodeartifactRepositoryEndpoint', { get: f
 Object.defineProperty(exports, 'dataAwsCodecatalystDevEnvironment', { get: function () { return require('./data-aws-codecatalyst-dev-environment'); } });
 Object.defineProperty(exports, 'dataAwsCodecommitApprovalRuleTemplate', { get: function () { return require('./data-aws-codecommit-approval-rule-template'); } });
 Object.defineProperty(exports, 'dataAwsCodecommitRepository', { get: function () { return require('./data-aws-codecommit-repository'); } });
+Object.defineProperty(exports, 'dataAwsCodeguruprofilerProfilingGroup', { get: function () { return require('./data-aws-codeguruprofiler-profiling-group'); } });
 Object.defineProperty(exports, 'dataAwsCodestarconnectionsConnection', { get: function () { return require('./data-aws-codestarconnections-connection'); } });
 Object.defineProperty(exports, 'dataAwsCognitoIdentityPool', { get: function () { return require('./data-aws-cognito-identity-pool'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolClient', { get: function () { return require('./data-aws-cognito-user-pool-client'); } });
@@ -1476,6 +1486,7 @@ Object.defineProperty(exports, 'dataAwsEc2TransitGatewayVpnAttachment', { get: f
 Object.defineProperty(exports, 'dataAwsEcrAuthorizationToken', { get: function () { return require('./data-aws-ecr-authorization-token'); } });
 Object.defineProperty(exports, 'dataAwsEcrImage', { get: function () { return require('./data-aws-ecr-image'); } });
 Object.defineProperty(exports, 'dataAwsEcrPullThroughCacheRule', { get: function () { return require('./data-aws-ecr-pull-through-cache-rule'); } });
+Object.defineProperty(exports, 'dataAwsEcrRepositories', { get: function () { return require('./data-aws-ecr-repositories'); } });
 Object.defineProperty(exports, 'dataAwsEcrRepository', { get: function () { return require('./data-aws-ecr-repository'); } });
 Object.defineProperty(exports, 'dataAwsEcrpublicAuthorizationToken', { get: function () { return require('./data-aws-ecrpublic-authorization-token'); } });
 Object.defineProperty(exports, 'dataAwsEcsCluster', { get: function () { return require('./data-aws-ecs-cluster'); } });
@@ -1596,6 +1607,7 @@ Object.defineProperty(exports, 'dataAwsLb', { get: function () { return require(
 Object.defineProperty(exports, 'dataAwsLbHostedZoneId', { get: function () { return require('./data-aws-lb-hosted-zone-id'); } });
 Object.defineProperty(exports, 'dataAwsLbListener', { get: function () { return require('./data-aws-lb-listener'); } });
 Object.defineProperty(exports, 'dataAwsLbTargetGroup', { get: function () { return require('./data-aws-lb-target-group'); } });
+Object.defineProperty(exports, 'dataAwsLbTrustStore', { get: function () { return require('./data-aws-lb-trust-store'); } });
 Object.defineProperty(exports, 'dataAwsLbs', { get: function () { return require('./data-aws-lbs'); } });
 Object.defineProperty(exports, 'dataAwsLexBot', { get: function () { return require('./data-aws-lex-bot'); } });
 Object.defineProperty(exports, 'dataAwsLexBotAlias', { get: function () { return require('./data-aws-lex-bot-alias'); } });
@@ -1780,6 +1792,8 @@ Object.defineProperty(exports, 'dataAwsSsmcontactsContactChannel', { get: functi
 Object.defineProperty(exports, 'dataAwsSsmcontactsPlan', { get: function () { return require('./data-aws-ssmcontacts-plan'); } });
 Object.defineProperty(exports, 'dataAwsSsmincidentsReplicationSet', { get: function () { return require('./data-aws-ssmincidents-replication-set'); } });
 Object.defineProperty(exports, 'dataAwsSsmincidentsResponsePlan', { get: function () { return require('./data-aws-ssmincidents-response-plan'); } });
+Object.defineProperty(exports, 'dataAwsSsoadminApplication', { get: function () { return require('./data-aws-ssoadmin-application'); } });
+Object.defineProperty(exports, 'dataAwsSsoadminApplicationProviders', { get: function () { return require('./data-aws-ssoadmin-application-providers'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminInstances', { get: function () { return require('./data-aws-ssoadmin-instances'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminPermissionSet', { get: function () { return require('./data-aws-ssoadmin-permission-set'); } });
 Object.defineProperty(exports, 'dataAwsStoragegatewayLocalDisk', { get: function () { return require('./data-aws-storagegateway-local-disk'); } });

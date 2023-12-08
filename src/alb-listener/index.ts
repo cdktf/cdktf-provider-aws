@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener
+// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,94 @@ import * as cdktf from 'cdktf';
 
 export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}
   */
   readonly alpnPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#certificate_arn AlbListener#certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#certificate_arn AlbListener#certificate_arn}
   */
   readonly certificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#id AlbListener#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#id AlbListener#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#load_balancer_arn AlbListener#load_balancer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#load_balancer_arn AlbListener#load_balancer_arn}
   */
   readonly loadBalancerArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#port AlbListener#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#port AlbListener#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#protocol AlbListener#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#protocol AlbListener#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#ssl_policy AlbListener#ssl_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#ssl_policy AlbListener#ssl_policy}
   */
   readonly sslPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#tags AlbListener#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#tags AlbListener#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#tags_all AlbListener#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#tags_all AlbListener#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#default_action AlbListener#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#default_action AlbListener#default_action}
   */
   readonly defaultAction: AlbListenerDefaultAction[] | cdktf.IResolvable;
   /**
+  * mutual_authentication block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#mutual_authentication AlbListener#mutual_authentication}
+  */
+  readonly mutualAuthentication?: AlbListenerMutualAuthentication;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#timeouts AlbListener#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#timeouts AlbListener#timeouts}
   */
   readonly timeouts?: AlbListenerTimeouts;
 }
 export interface AlbListenerDefaultActionAuthenticateCognito {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}
   */
   readonly authenticationRequestExtraParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}
   */
   readonly onUnauthenticatedRequest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#scope AlbListener#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#scope AlbListener#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}
   */
   readonly sessionCookieName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}
   */
   readonly sessionTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#user_pool_arn AlbListener#user_pool_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#user_pool_arn AlbListener#user_pool_arn}
   */
   readonly userPoolArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#user_pool_client_id AlbListener#user_pool_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#user_pool_client_id AlbListener#user_pool_client_id}
   */
   readonly userPoolClientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#user_pool_domain AlbListener#user_pool_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#user_pool_domain AlbListener#user_pool_domain}
   */
   readonly userPoolDomain: string;
 }
@@ -311,47 +317,47 @@ export class AlbListenerDefaultActionAuthenticateCognitoOutputReference extends 
 }
 export interface AlbListenerDefaultActionAuthenticateOidc {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}
   */
   readonly authenticationRequestExtraParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#authorization_endpoint AlbListener#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#authorization_endpoint AlbListener#authorization_endpoint}
   */
   readonly authorizationEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#client_id AlbListener#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#client_id AlbListener#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#client_secret AlbListener#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#client_secret AlbListener#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#issuer AlbListener#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#issuer AlbListener#issuer}
   */
   readonly issuer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}
   */
   readonly onUnauthenticatedRequest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#scope AlbListener#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#scope AlbListener#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}
   */
   readonly sessionCookieName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}
   */
   readonly sessionTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#token_endpoint AlbListener#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#token_endpoint AlbListener#token_endpoint}
   */
   readonly tokenEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#user_info_endpoint AlbListener#user_info_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#user_info_endpoint AlbListener#user_info_endpoint}
   */
   readonly userInfoEndpoint: string;
 }
@@ -628,15 +634,15 @@ export class AlbListenerDefaultActionAuthenticateOidcOutputReference extends cdk
 }
 export interface AlbListenerDefaultActionFixedResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#content_type AlbListener#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#content_type AlbListener#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#message_body AlbListener#message_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#message_body AlbListener#message_body}
   */
   readonly messageBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#status_code AlbListener#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#status_code AlbListener#status_code}
   */
   readonly statusCode?: string;
 }
@@ -744,11 +750,11 @@ export class AlbListenerDefaultActionFixedResponseOutputReference extends cdktf.
 }
 export interface AlbListenerDefaultActionForwardStickiness {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#duration AlbListener#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#duration AlbListener#duration}
   */
   readonly duration: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#enabled AlbListener#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#enabled AlbListener#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -833,11 +839,11 @@ export class AlbListenerDefaultActionForwardStickinessOutputReference extends cd
 }
 export interface AlbListenerDefaultActionForwardTargetGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#arn AlbListener#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#arn AlbListener#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#weight AlbListener#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#weight AlbListener#weight}
   */
   readonly weight?: number;
 }
@@ -956,13 +962,13 @@ export interface AlbListenerDefaultActionForward {
   /**
   * stickiness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#stickiness AlbListener#stickiness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#stickiness AlbListener#stickiness}
   */
   readonly stickiness?: AlbListenerDefaultActionForwardStickiness;
   /**
   * target_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#target_group AlbListener#target_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#target_group AlbListener#target_group}
   */
   readonly targetGroup: AlbListenerDefaultActionForwardTargetGroup[] | cdktf.IResolvable;
 }
@@ -1047,27 +1053,27 @@ export class AlbListenerDefaultActionForwardOutputReference extends cdktf.Comple
 }
 export interface AlbListenerDefaultActionRedirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#host AlbListener#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#host AlbListener#host}
   */
   readonly host?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#path AlbListener#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#path AlbListener#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#port AlbListener#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#port AlbListener#port}
   */
   readonly port?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#protocol AlbListener#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#protocol AlbListener#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#query AlbListener#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#query AlbListener#query}
   */
   readonly query?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#status_code AlbListener#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#status_code AlbListener#status_code}
   */
   readonly statusCode: string;
 }
@@ -1244,45 +1250,45 @@ export class AlbListenerDefaultActionRedirectOutputReference extends cdktf.Compl
 }
 export interface AlbListenerDefaultAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#order AlbListener#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#order AlbListener#order}
   */
   readonly order?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#target_group_arn AlbListener#target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#target_group_arn AlbListener#target_group_arn}
   */
   readonly targetGroupArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#type AlbListener#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#type AlbListener#type}
   */
   readonly type: string;
   /**
   * authenticate_cognito block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#authenticate_cognito AlbListener#authenticate_cognito}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#authenticate_cognito AlbListener#authenticate_cognito}
   */
   readonly authenticateCognito?: AlbListenerDefaultActionAuthenticateCognito;
   /**
   * authenticate_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#authenticate_oidc AlbListener#authenticate_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#authenticate_oidc AlbListener#authenticate_oidc}
   */
   readonly authenticateOidc?: AlbListenerDefaultActionAuthenticateOidc;
   /**
   * fixed_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#fixed_response AlbListener#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#fixed_response AlbListener#fixed_response}
   */
   readonly fixedResponse?: AlbListenerDefaultActionFixedResponse;
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#forward AlbListener#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#forward AlbListener#forward}
   */
   readonly forward?: AlbListenerDefaultActionForward;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#redirect AlbListener#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#redirect AlbListener#redirect}
   */
   readonly redirect?: AlbListenerDefaultActionRedirect;
 }
@@ -1535,11 +1541,131 @@ export class AlbListenerDefaultActionList extends cdktf.ComplexList {
     return new AlbListenerDefaultActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AlbListenerMutualAuthentication {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}
+  */
+  readonly ignoreClientCertificateExpiry?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#mode AlbListener#mode}
+  */
+  readonly mode: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#trust_store_arn AlbListener#trust_store_arn}
+  */
+  readonly trustStoreArn?: string;
+}
+
+export function albListenerMutualAuthenticationToTerraform(struct?: AlbListenerMutualAuthenticationOutputReference | AlbListenerMutualAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ignore_client_certificate_expiry: cdktf.booleanToTerraform(struct!.ignoreClientCertificateExpiry),
+    mode: cdktf.stringToTerraform(struct!.mode),
+    trust_store_arn: cdktf.stringToTerraform(struct!.trustStoreArn),
+  }
+}
+
+export class AlbListenerMutualAuthenticationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AlbListenerMutualAuthentication | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreClientCertificateExpiry !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreClientCertificateExpiry = this._ignoreClientCertificateExpiry;
+    }
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._trustStoreArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trustStoreArn = this._trustStoreArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlbListenerMutualAuthentication | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ignoreClientCertificateExpiry = undefined;
+      this._mode = undefined;
+      this._trustStoreArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ignoreClientCertificateExpiry = value.ignoreClientCertificateExpiry;
+      this._mode = value.mode;
+      this._trustStoreArn = value.trustStoreArn;
+    }
+  }
+
+  // ignore_client_certificate_expiry - computed: false, optional: true, required: false
+  private _ignoreClientCertificateExpiry?: boolean | cdktf.IResolvable; 
+  public get ignoreClientCertificateExpiry() {
+    return this.getBooleanAttribute('ignore_client_certificate_expiry');
+  }
+  public set ignoreClientCertificateExpiry(value: boolean | cdktf.IResolvable) {
+    this._ignoreClientCertificateExpiry = value;
+  }
+  public resetIgnoreClientCertificateExpiry() {
+    this._ignoreClientCertificateExpiry = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreClientCertificateExpiryInput() {
+    return this._ignoreClientCertificateExpiry;
+  }
+
+  // mode - computed: false, optional: false, required: true
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // trust_store_arn - computed: false, optional: true, required: false
+  private _trustStoreArn?: string; 
+  public get trustStoreArn() {
+    return this.getStringAttribute('trust_store_arn');
+  }
+  public set trustStoreArn(value: string) {
+    this._trustStoreArn = value;
+  }
+  public resetTrustStoreArn() {
+    this._trustStoreArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trustStoreArnInput() {
+    return this._trustStoreArn;
+  }
+}
 export interface AlbListenerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#read AlbListener#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#create AlbListener#create}
   */
-  readonly read?: string;
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#update AlbListener#update}
+  */
+  readonly update?: string;
 }
 
 export function albListenerTimeoutsToTerraform(struct?: AlbListenerTimeouts | cdktf.IResolvable): any {
@@ -1548,7 +1674,8 @@ export function albListenerTimeoutsToTerraform(struct?: AlbListenerTimeouts | cd
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -1570,9 +1697,13 @@ export class AlbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._read !== undefined) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
-      internalValueResult.read = this._read;
+      internalValueResult.create = this._create;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1581,7 +1712,8 @@ export class AlbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._read = undefined;
+      this._create = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1590,29 +1722,46 @@ export class AlbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._read = value.read;
+      this._create = value.create;
+      this._update = value.update;
     }
   }
 
-  // read - computed: false, optional: true, required: false
-  private _read?: string; 
-  public get read() {
-    return this.getStringAttribute('read');
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
   }
-  public set read(value: string) {
-    this._read = value;
+  public set create(value: string) {
+    this._create = value;
   }
-  public resetRead() {
-    this._read = undefined;
+  public resetCreate() {
+    this._create = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get readInput() {
-    return this._read;
+  public get createInput() {
+    return this._create;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener aws_alb_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener aws_alb_listener}
 */
 export class AlbListener extends cdktf.TerraformResource {
 
@@ -1628,7 +1777,7 @@ export class AlbListener extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AlbListener resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlbListener to import
-  * @param importFromId The id of the existing AlbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlbListener to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1640,7 +1789,7 @@ export class AlbListener extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener aws_alb_listener} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener aws_alb_listener} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1651,7 +1800,7 @@ export class AlbListener extends cdktf.TerraformResource {
       terraformResourceType: 'aws_alb_listener',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.29.0',
+        providerVersion: '5.30.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1672,6 +1821,7 @@ export class AlbListener extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._defaultAction.internalValue = config.defaultAction;
+    this._mutualAuthentication.internalValue = config.mutualAuthentication;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1838,6 +1988,22 @@ export class AlbListener extends cdktf.TerraformResource {
     return this._defaultAction.internalValue;
   }
 
+  // mutual_authentication - computed: false, optional: true, required: false
+  private _mutualAuthentication = new AlbListenerMutualAuthenticationOutputReference(this, "mutual_authentication");
+  public get mutualAuthentication() {
+    return this._mutualAuthentication;
+  }
+  public putMutualAuthentication(value: AlbListenerMutualAuthentication) {
+    this._mutualAuthentication.internalValue = value;
+  }
+  public resetMutualAuthentication() {
+    this._mutualAuthentication.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mutualAuthenticationInput() {
+    return this._mutualAuthentication.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new AlbListenerTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1870,6 +2036,7 @@ export class AlbListener extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       default_action: cdktf.listMapper(albListenerDefaultActionToTerraform, true)(this._defaultAction.internalValue),
+      mutual_authentication: albListenerMutualAuthenticationToTerraform(this._mutualAuthentication.internalValue),
       timeouts: albListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener
+// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,94 @@ import * as cdktf from 'cdktf';
 
 export interface LbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}
   */
   readonly alpnPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}
   */
   readonly certificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#id LbListener#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#id LbListener#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}
   */
   readonly loadBalancerArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#port LbListener#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#port LbListener#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#protocol LbListener#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#protocol LbListener#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}
   */
   readonly sslPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#tags LbListener#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#tags LbListener#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#tags_all LbListener#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#tags_all LbListener#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#default_action LbListener#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#default_action LbListener#default_action}
   */
   readonly defaultAction: LbListenerDefaultAction[] | cdktf.IResolvable;
   /**
+  * mutual_authentication block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#mutual_authentication LbListener#mutual_authentication}
+  */
+  readonly mutualAuthentication?: LbListenerMutualAuthentication;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#timeouts LbListener#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#timeouts LbListener#timeouts}
   */
   readonly timeouts?: LbListenerTimeouts;
 }
 export interface LbListenerDefaultActionAuthenticateCognito {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}
   */
   readonly authenticationRequestExtraParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}
   */
   readonly onUnauthenticatedRequest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#scope LbListener#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#scope LbListener#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}
   */
   readonly sessionCookieName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}
   */
   readonly sessionTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}
   */
   readonly userPoolArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}
   */
   readonly userPoolClientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}
   */
   readonly userPoolDomain: string;
 }
@@ -311,47 +317,47 @@ export class LbListenerDefaultActionAuthenticateCognitoOutputReference extends c
 }
 export interface LbListenerDefaultActionAuthenticateOidc {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}
   */
   readonly authenticationRequestExtraParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}
   */
   readonly authorizationEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#client_id LbListener#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#client_id LbListener#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#client_secret LbListener#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#client_secret LbListener#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#issuer LbListener#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#issuer LbListener#issuer}
   */
   readonly issuer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}
   */
   readonly onUnauthenticatedRequest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#scope LbListener#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#scope LbListener#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}
   */
   readonly sessionCookieName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}
   */
   readonly sessionTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}
   */
   readonly tokenEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}
   */
   readonly userInfoEndpoint: string;
 }
@@ -628,15 +634,15 @@ export class LbListenerDefaultActionAuthenticateOidcOutputReference extends cdkt
 }
 export interface LbListenerDefaultActionFixedResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#content_type LbListener#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#content_type LbListener#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#message_body LbListener#message_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#message_body LbListener#message_body}
   */
   readonly messageBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#status_code LbListener#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#status_code LbListener#status_code}
   */
   readonly statusCode?: string;
 }
@@ -744,11 +750,11 @@ export class LbListenerDefaultActionFixedResponseOutputReference extends cdktf.C
 }
 export interface LbListenerDefaultActionForwardStickiness {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#duration LbListener#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#duration LbListener#duration}
   */
   readonly duration: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#enabled LbListener#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#enabled LbListener#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -833,11 +839,11 @@ export class LbListenerDefaultActionForwardStickinessOutputReference extends cdk
 }
 export interface LbListenerDefaultActionForwardTargetGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#arn LbListener#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#arn LbListener#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#weight LbListener#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#weight LbListener#weight}
   */
   readonly weight?: number;
 }
@@ -956,13 +962,13 @@ export interface LbListenerDefaultActionForward {
   /**
   * stickiness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#stickiness LbListener#stickiness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#stickiness LbListener#stickiness}
   */
   readonly stickiness?: LbListenerDefaultActionForwardStickiness;
   /**
   * target_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#target_group LbListener#target_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#target_group LbListener#target_group}
   */
   readonly targetGroup: LbListenerDefaultActionForwardTargetGroup[] | cdktf.IResolvable;
 }
@@ -1047,27 +1053,27 @@ export class LbListenerDefaultActionForwardOutputReference extends cdktf.Complex
 }
 export interface LbListenerDefaultActionRedirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#host LbListener#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#host LbListener#host}
   */
   readonly host?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#path LbListener#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#path LbListener#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#port LbListener#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#port LbListener#port}
   */
   readonly port?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#protocol LbListener#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#protocol LbListener#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#query LbListener#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#query LbListener#query}
   */
   readonly query?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#status_code LbListener#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#status_code LbListener#status_code}
   */
   readonly statusCode: string;
 }
@@ -1244,45 +1250,45 @@ export class LbListenerDefaultActionRedirectOutputReference extends cdktf.Comple
 }
 export interface LbListenerDefaultAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#order LbListener#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#order LbListener#order}
   */
   readonly order?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#target_group_arn LbListener#target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#target_group_arn LbListener#target_group_arn}
   */
   readonly targetGroupArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#type LbListener#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#type LbListener#type}
   */
   readonly type: string;
   /**
   * authenticate_cognito block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#authenticate_cognito LbListener#authenticate_cognito}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#authenticate_cognito LbListener#authenticate_cognito}
   */
   readonly authenticateCognito?: LbListenerDefaultActionAuthenticateCognito;
   /**
   * authenticate_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#authenticate_oidc LbListener#authenticate_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#authenticate_oidc LbListener#authenticate_oidc}
   */
   readonly authenticateOidc?: LbListenerDefaultActionAuthenticateOidc;
   /**
   * fixed_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#fixed_response LbListener#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#fixed_response LbListener#fixed_response}
   */
   readonly fixedResponse?: LbListenerDefaultActionFixedResponse;
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#forward LbListener#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#forward LbListener#forward}
   */
   readonly forward?: LbListenerDefaultActionForward;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#redirect LbListener#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#redirect LbListener#redirect}
   */
   readonly redirect?: LbListenerDefaultActionRedirect;
 }
@@ -1535,11 +1541,131 @@ export class LbListenerDefaultActionList extends cdktf.ComplexList {
     return new LbListenerDefaultActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface LbListenerMutualAuthentication {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#ignore_client_certificate_expiry LbListener#ignore_client_certificate_expiry}
+  */
+  readonly ignoreClientCertificateExpiry?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#mode LbListener#mode}
+  */
+  readonly mode: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#trust_store_arn LbListener#trust_store_arn}
+  */
+  readonly trustStoreArn?: string;
+}
+
+export function lbListenerMutualAuthenticationToTerraform(struct?: LbListenerMutualAuthenticationOutputReference | LbListenerMutualAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ignore_client_certificate_expiry: cdktf.booleanToTerraform(struct!.ignoreClientCertificateExpiry),
+    mode: cdktf.stringToTerraform(struct!.mode),
+    trust_store_arn: cdktf.stringToTerraform(struct!.trustStoreArn),
+  }
+}
+
+export class LbListenerMutualAuthenticationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LbListenerMutualAuthentication | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreClientCertificateExpiry !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreClientCertificateExpiry = this._ignoreClientCertificateExpiry;
+    }
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._trustStoreArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trustStoreArn = this._trustStoreArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbListenerMutualAuthentication | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ignoreClientCertificateExpiry = undefined;
+      this._mode = undefined;
+      this._trustStoreArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ignoreClientCertificateExpiry = value.ignoreClientCertificateExpiry;
+      this._mode = value.mode;
+      this._trustStoreArn = value.trustStoreArn;
+    }
+  }
+
+  // ignore_client_certificate_expiry - computed: false, optional: true, required: false
+  private _ignoreClientCertificateExpiry?: boolean | cdktf.IResolvable; 
+  public get ignoreClientCertificateExpiry() {
+    return this.getBooleanAttribute('ignore_client_certificate_expiry');
+  }
+  public set ignoreClientCertificateExpiry(value: boolean | cdktf.IResolvable) {
+    this._ignoreClientCertificateExpiry = value;
+  }
+  public resetIgnoreClientCertificateExpiry() {
+    this._ignoreClientCertificateExpiry = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreClientCertificateExpiryInput() {
+    return this._ignoreClientCertificateExpiry;
+  }
+
+  // mode - computed: false, optional: false, required: true
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // trust_store_arn - computed: false, optional: true, required: false
+  private _trustStoreArn?: string; 
+  public get trustStoreArn() {
+    return this.getStringAttribute('trust_store_arn');
+  }
+  public set trustStoreArn(value: string) {
+    this._trustStoreArn = value;
+  }
+  public resetTrustStoreArn() {
+    this._trustStoreArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trustStoreArnInput() {
+    return this._trustStoreArn;
+  }
+}
 export interface LbListenerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#read LbListener#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#create LbListener#create}
   */
-  readonly read?: string;
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#update LbListener#update}
+  */
+  readonly update?: string;
 }
 
 export function lbListenerTimeoutsToTerraform(struct?: LbListenerTimeouts | cdktf.IResolvable): any {
@@ -1548,7 +1674,8 @@ export function lbListenerTimeoutsToTerraform(struct?: LbListenerTimeouts | cdkt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -1570,9 +1697,13 @@ export class LbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._read !== undefined) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
-      internalValueResult.read = this._read;
+      internalValueResult.create = this._create;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1581,7 +1712,8 @@ export class LbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._read = undefined;
+      this._create = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1590,29 +1722,46 @@ export class LbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._read = value.read;
+      this._create = value.create;
+      this._update = value.update;
     }
   }
 
-  // read - computed: false, optional: true, required: false
-  private _read?: string; 
-  public get read() {
-    return this.getStringAttribute('read');
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
   }
-  public set read(value: string) {
-    this._read = value;
+  public set create(value: string) {
+    this._create = value;
   }
-  public resetRead() {
-    this._read = undefined;
+  public resetCreate() {
+    this._create = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get readInput() {
-    return this._read;
+  public get createInput() {
+    return this._create;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener aws_lb_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener aws_lb_listener}
 */
 export class LbListener extends cdktf.TerraformResource {
 
@@ -1628,7 +1777,7 @@ export class LbListener extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LbListener resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbListener to import
-  * @param importFromId The id of the existing LbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbListener to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1640,7 +1789,7 @@ export class LbListener extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lb_listener aws_lb_listener} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_listener aws_lb_listener} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1651,7 +1800,7 @@ export class LbListener extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb_listener',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.29.0',
+        providerVersion: '5.30.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1672,6 +1821,7 @@ export class LbListener extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._defaultAction.internalValue = config.defaultAction;
+    this._mutualAuthentication.internalValue = config.mutualAuthentication;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1838,6 +1988,22 @@ export class LbListener extends cdktf.TerraformResource {
     return this._defaultAction.internalValue;
   }
 
+  // mutual_authentication - computed: false, optional: true, required: false
+  private _mutualAuthentication = new LbListenerMutualAuthenticationOutputReference(this, "mutual_authentication");
+  public get mutualAuthentication() {
+    return this._mutualAuthentication;
+  }
+  public putMutualAuthentication(value: LbListenerMutualAuthentication) {
+    this._mutualAuthentication.internalValue = value;
+  }
+  public resetMutualAuthentication() {
+    this._mutualAuthentication.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mutualAuthenticationInput() {
+    return this._mutualAuthentication.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new LbListenerTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1870,6 +2036,7 @@ export class LbListener extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       default_action: cdktf.listMapper(lbListenerDefaultActionToTerraform, true)(this._defaultAction.internalValue),
+      mutual_authentication: lbListenerMutualAuthenticationToTerraform(this._mutualAuthentication.internalValue),
       timeouts: lbListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

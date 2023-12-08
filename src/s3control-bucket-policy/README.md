@@ -1,3 +1,3 @@
 # `aws_s3control_bucket_policy`
 
-Refer to the Terraform Registory for docs: [`aws_s3control_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/s3control_bucket_policy).
+Refer to the Terraform Registory for docs: [`aws_s3control_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/s3control_bucket_policy).

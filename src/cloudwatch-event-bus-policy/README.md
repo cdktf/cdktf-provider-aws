@@ -1,3 +1,3 @@
 # `aws_cloudwatch_event_bus_policy`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_bus_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloudwatch_event_bus_policy).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_bus_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloudwatch_event_bus_policy).

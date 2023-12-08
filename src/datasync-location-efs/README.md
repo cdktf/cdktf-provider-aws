@@ -1,3 +1,3 @@
 # `aws_datasync_location_efs`
 
-Refer to the Terraform Registory for docs: [`aws_datasync_location_efs`](https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/datasync_location_efs).
+Refer to the Terraform Registory for docs: [`aws_datasync_location_efs`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_location_efs).
