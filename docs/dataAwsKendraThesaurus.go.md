@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 dataawskendrathesaurus.NewDataAwsKendraThesaurus(scope Construct, id *string, config DataAwsKendraThesaurusConfig) DataAwsKendraThesaurus
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 dataawskendrathesaurus.DataAwsKendraThesaurus_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 dataawskendrathesaurus.DataAwsKendraThesaurus_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawskendrathesaurus.DataAwsKendraThesaurus_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 dataawskendrathesaurus.DataAwsKendraThesaurus_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawskendrathesaurus.DataAwsKendraThesaurus_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 dataawskendrathesaurus.DataAwsKendraThesaurus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 &dataawskendrathesaurus.DataAwsKendraThesaurusConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 &dataawskendrathesaurus.DataAwsKendraThesaurusSourceS3Path {
 
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 dataawskendrathesaurus.NewDataAwsKendraThesaurusSourceS3PathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraThesaurusSourceS3PathList
 ```
@@ -1076,7 +1076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskendrathesaurus"
 
 dataawskendrathesaurus.NewDataAwsKendraThesaurusSourceS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraThesaurusSourceS3PathOutputReference
 ```

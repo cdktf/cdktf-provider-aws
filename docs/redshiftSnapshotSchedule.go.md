@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.NewRedshiftSnapshotSchedule(scope Construct, id *string, config RedshiftSnapshotScheduleConfig) RedshiftSnapshotSchedule
 ```
@@ -420,7 +420,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.RedshiftSnapshotSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -896,7 +896,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftsnapshotschedule"
 
 &redshiftsnapshotschedule.RedshiftSnapshotScheduleConfig {
 	Connection: interface{},

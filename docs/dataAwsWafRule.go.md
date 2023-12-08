@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafrule"
 
 dataawswafrule.NewDataAwsWafRule(scope Construct, id *string, config DataAwsWafRuleConfig) DataAwsWafRule
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafrule"
 
 dataawswafrule.DataAwsWafRule_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafrule"
 
 dataawswafrule.DataAwsWafRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawswafrule.DataAwsWafRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafrule"
 
 dataawswafrule.DataAwsWafRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawswafrule.DataAwsWafRule_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafrule"
 
 dataawswafrule.DataAwsWafRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafrule"
 
 &dataawswafrule.DataAwsWafRuleConfig {
 	Connection: interface{},
