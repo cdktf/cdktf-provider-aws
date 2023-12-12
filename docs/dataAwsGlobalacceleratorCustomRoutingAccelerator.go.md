@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.NewDataAwsGlobalacceleratorCustomRoutingAccelerator(scope Construct, id *string, config DataAwsGlobalacceleratorCustomRoutingAcceleratorConfig) DataAwsGlobalacceleratorCustomRoutingAccelerator
 ```
@@ -295,7 +295,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomR
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomRoutingAccelerator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 &dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributes {
 
@@ -729,7 +729,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcusto
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 &dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 &dataawsglobalacceleratorcustomroutingaccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSets {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcusto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.NewDataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesList
 ```
@@ -1037,7 +1037,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.NewDataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference
 ```
@@ -1337,7 +1337,7 @@ func InternalValue() DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.NewDataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsList
 ```
@@ -1469,7 +1469,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorCustomRoutingAccelerator.DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratorcustomroutingaccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsglobalacceleratorcustomroutingaccelerator"
 
 dataawsglobalacceleratorcustomroutingaccelerator.NewDataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsOutputReference
 ```

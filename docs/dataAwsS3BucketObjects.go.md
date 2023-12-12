@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketobjects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketobjects"
 
 dataawss3bucketobjects.NewDataAwsS3BucketObjects(scope Construct, id *string, config DataAwsS3BucketObjectsConfig) DataAwsS3BucketObjects
 ```
@@ -316,7 +316,7 @@ func ResetStartAfter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketobjects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketobjects"
 
 dataawss3bucketobjects.DataAwsS3BucketObjects_IsConstruct(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketobjects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketobjects"
 
 dataawss3bucketobjects.DataAwsS3BucketObjects_IsTerraformElement(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ dataawss3bucketobjects.DataAwsS3BucketObjects_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketobjects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketobjects"
 
 dataawss3bucketobjects.DataAwsS3BucketObjects_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ dataawss3bucketobjects.DataAwsS3BucketObjects_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketobjects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketobjects"
 
 dataawss3bucketobjects.DataAwsS3BucketObjects_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketobjects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketobjects"
 
 &dataawss3bucketobjects.DataAwsS3BucketObjectsConfig {
 	Connection: interface{},
