@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplate(scope Construct, id *string, config QuicksightTemplateConfig) QuicksightTemplate
 ```
@@ -466,7 +466,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ quicksighttemplate.QuicksightTemplate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ quicksighttemplate.QuicksightTemplate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateConfig {
 	Connection: interface{},
@@ -1080,10 +1080,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
 	Definition: interface{},
 	Id: *string,
 	Permissions: interface{},
-	SourceEntity: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTemplate.QuicksightTemplateSourceEntity,
+	SourceEntity: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTemplate.QuicksightTemplateSourceEntity,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTemplate.QuicksightTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTemplate.QuicksightTemplateTimeouts,
 }
 ```
 
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplatePermissions {
 	Actions: *[]*string,
@@ -1376,11 +1376,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntity {
-	SourceAnalysis: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis,
-	SourceTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate,
+	SourceAnalysis: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis,
+	SourceTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate,
 }
 ```
 
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntitySourceAnalysis {
 	Arn: *string,
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences {
 	DataSetArn: *string,
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntitySourceTemplate {
 	Arn: *string,
@@ -1552,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateTimeouts {
 	Create: *string,
@@ -1614,7 +1614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplatePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplatePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightTemplatePermissionsList
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplatePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplatePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightTemplatePermissionsOutputReference
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateSourceEntityOutputReference
 ```
@@ -2401,7 +2401,7 @@ func InternalValue() QuicksightTemplateSourceEntity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesList
 ```
@@ -2544,7 +2544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesOutputReference
 ```
@@ -2855,7 +2855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateSourceEntitySourceAnalysisOutputReference
 ```
@@ -3161,7 +3161,7 @@ func InternalValue() QuicksightTemplateSourceEntitySourceAnalysis
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateSourceEntitySourceTemplateOutputReference
 ```
@@ -3432,7 +3432,7 @@ func InternalValue() QuicksightTemplateSourceEntitySourceTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplate.QuicksightTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateTimeoutsOutputReference
 ```

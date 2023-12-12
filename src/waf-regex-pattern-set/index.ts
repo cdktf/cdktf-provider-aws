@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_pattern_set
 // generated from terraform resource schema
 
