@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfigurationA(scope Construct, id *string, config S3BucketServerSideEncryptionConfigurationAConfig) S3BucketServerSideEncryptionConfigurationA
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationA_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationA_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationA_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 &s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationAConfig {
 	Connection: interface{},
@@ -938,10 +938,10 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 &s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationRuleA {
-	ApplyServerSideEncryptionByDefault: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA,
+	ApplyServerSideEncryptionByDefault: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA,
 	BucketKeyEnabled: interface{},
 }
 ```
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 &s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA {
 	SseAlgorithm: *string,
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfigurationRuleAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketServerSideEncryptionConfigurationRuleAList
 ```
@@ -1177,7 +1177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfigurationRuleAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 ```
@@ -1515,7 +1515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference
 ```

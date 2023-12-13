@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 appautoscalingscheduledaction.NewAppautoscalingScheduledAction(scope Construct, id *string, config AppautoscalingScheduledActionConfig) AppautoscalingScheduledAction
 ```
@@ -412,7 +412,7 @@ func ResetTimezone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 appautoscalingscheduledaction.AppautoscalingScheduledAction_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 appautoscalingscheduledaction.AppautoscalingScheduledAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ appautoscalingscheduledaction.AppautoscalingScheduledAction_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 appautoscalingscheduledaction.AppautoscalingScheduledAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ appautoscalingscheduledaction.AppautoscalingScheduledAction_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 appautoscalingscheduledaction.AppautoscalingScheduledAction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 &appautoscalingscheduledaction.AppautoscalingScheduledActionConfig {
 	Connection: interface{},
@@ -945,7 +945,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledac
 	Name: *string,
 	ResourceId: *string,
 	ScalableDimension: *string,
-	ScalableTargetAction: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetAction,
+	ScalableTargetAction: github.com/cdktf/cdktf-provider-aws-go/aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetAction,
 	Schedule: *string,
 	ServiceNamespace: *string,
 	EndTime: *string,
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 &appautoscalingscheduledaction.AppautoscalingScheduledActionScalableTargetAction {
 	MaxCapacity: *string,
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appautoscalingscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingscheduledaction"
 
 appautoscalingscheduledaction.NewAppautoscalingScheduledActionScalableTargetActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppautoscalingScheduledActionScalableTargetActionOutputReference
 ```

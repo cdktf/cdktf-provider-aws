@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeService.VpclatticeService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.NewVpclatticeService(scope Construct, id *string, config VpclatticeServiceConfig) VpclatticeService
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpclatticeService.VpclatticeService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.VpclatticeService_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpclatticeService.VpclatticeService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.VpclatticeService_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ vpclatticeservice.VpclatticeService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpclatticeService.VpclatticeService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.VpclatticeService_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ vpclatticeservice.VpclatticeService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpclatticeService.VpclatticeService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.VpclatticeService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeService.VpclatticeServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 &vpclatticeservice.VpclatticeServiceConfig {
 	Connection: interface{},
@@ -948,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeService.VpclatticeServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeService.VpclatticeServiceTimeouts,
 }
 ```
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeService.VpclatticeServiceDnsEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 &vpclatticeservice.VpclatticeServiceDnsEntry {
 
@@ -1163,7 +1163,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeService.VpclatticeServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 &vpclatticeservice.VpclatticeServiceTimeouts {
 	Create: *string,
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeService.VpclatticeServiceDnsEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.NewVpclatticeServiceDnsEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeServiceDnsEntryList
 ```
@@ -1357,7 +1357,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeService.VpclatticeServiceDnsEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.NewVpclatticeServiceDnsEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeServiceDnsEntryOutputReference
 ```
@@ -1646,7 +1646,7 @@ func InternalValue() VpclatticeServiceDnsEntry
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeService.VpclatticeServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeservice"
 
 vpclatticeservice.NewVpclatticeServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeServiceTimeoutsOutputReference
 ```
