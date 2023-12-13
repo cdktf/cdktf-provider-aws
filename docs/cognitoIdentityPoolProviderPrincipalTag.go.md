@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoidentitypoolproviderprincipaltag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoidentitypoolproviderprincipaltag"
 
 cognitoidentitypoolproviderprincipaltag.NewCognitoIdentityPoolProviderPrincipalTag(scope Construct, id *string, config CognitoIdentityPoolProviderPrincipalTagConfig) CognitoIdentityPoolProviderPrincipalTag
 ```
@@ -392,7 +392,7 @@ func ResetUseDefaults()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoidentitypoolproviderprincipaltag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoidentitypoolproviderprincipaltag"
 
 cognitoidentitypoolproviderprincipaltag.CognitoIdentityPoolProviderPrincipalTag_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoidentitypoolproviderprincipaltag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoidentitypoolproviderprincipaltag"
 
 cognitoidentitypoolproviderprincipaltag.CognitoIdentityPoolProviderPrincipalTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ cognitoidentitypoolproviderprincipaltag.CognitoIdentityPoolProviderPrincipalTag_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoidentitypoolproviderprincipaltag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoidentitypoolproviderprincipaltag"
 
 cognitoidentitypoolproviderprincipaltag.CognitoIdentityPoolProviderPrincipalTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ cognitoidentitypoolproviderprincipaltag.CognitoIdentityPoolProviderPrincipalTag_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoidentitypoolproviderprincipaltag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoidentitypoolproviderprincipaltag"
 
 cognitoidentitypoolproviderprincipaltag.CognitoIdentityPoolProviderPrincipalTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitoidentitypoolproviderprincipaltag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoidentitypoolproviderprincipaltag"
 
 &cognitoidentitypoolproviderprincipaltag.CognitoIdentityPoolProviderPrincipalTagConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.Elb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.NewElb(scope Construct, id *string, config ElbConfig) Elb
 ```
@@ -556,7 +556,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elb.Elb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.Elb_IsConstruct(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elb.Elb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.Elb_IsTerraformElement(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ elb.Elb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elb.Elb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.Elb_IsTerraformResource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ elb.Elb_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.elb.Elb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.Elb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1329,7 +1329,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 &elb.ElbAccessLogs {
 	Bucket: *string,
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 &elb.ElbConfig {
 	Connection: interface{},
@@ -1414,13 +1414,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Listener: interface{},
-	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws.elb.ElbAccessLogs,
+	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.elb.ElbAccessLogs,
 	AvailabilityZones: *[]*string,
 	ConnectionDraining: interface{},
 	ConnectionDrainingTimeout: *f64,
 	CrossZoneLoadBalancing: interface{},
 	DesyncMitigationMode: *string,
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws.elb.ElbHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v18.elb.ElbHealthCheck,
 	Id: *string,
 	IdleTimeout: *f64,
 	Instances: *[]*string,
@@ -1432,7 +1432,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 	Subnets: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elb.ElbTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.elb.ElbTimeouts,
 }
 ```
 
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 &elb.ElbHealthCheck {
 	HealthyThreshold: *f64,
@@ -1884,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 &elb.ElbListener {
 	InstancePort: *f64,
@@ -1972,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 &elb.ElbTimeouts {
 	Create: *string,
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.NewElbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbAccessLogsOutputReference
 ```
@@ -2378,7 +2378,7 @@ func InternalValue() ElbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.NewElbHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbHealthCheckOutputReference
 ```
@@ -2737,7 +2737,7 @@ func InternalValue() ElbHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.NewElbListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElbListenerList
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.NewElbListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElbListenerOutputReference
 ```
@@ -3264,7 +3264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elb"
 
 elb.NewElbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbTimeoutsOutputReference
 ```

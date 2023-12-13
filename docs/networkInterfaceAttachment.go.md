@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkinterfaceattachment"
 
 networkinterfaceattachment.NewNetworkInterfaceAttachmentA(scope Construct, id *string, config NetworkInterfaceAttachmentAConfig) NetworkInterfaceAttachmentA
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformElement(x inte
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformResource(x int
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkinterfaceattachment"
 
 &networkinterfaceattachment.NetworkInterfaceAttachmentAConfig {
 	Connection: interface{},
