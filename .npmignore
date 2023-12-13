@@ -25,4 +25,3 @@ docs
 scripts
 .projenrc.js
 .copywrite.hcl
-.mergify.yml

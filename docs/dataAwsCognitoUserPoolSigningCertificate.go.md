@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpoolsigningcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolsigningcertificate"
 
 dataawscognitouserpoolsigningcertificate.NewDataAwsCognitoUserPoolSigningCertificate(scope Construct, id *string, config DataAwsCognitoUserPoolSigningCertificateConfig) DataAwsCognitoUserPoolSigningCertificate
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpoolsigningcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolsigningcertificate"
 
 dataawscognitouserpoolsigningcertificate.DataAwsCognitoUserPoolSigningCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpoolsigningcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolsigningcertificate"
 
 dataawscognitouserpoolsigningcertificate.DataAwsCognitoUserPoolSigningCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawscognitouserpoolsigningcertificate.DataAwsCognitoUserPoolSigningCertificat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpoolsigningcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolsigningcertificate"
 
 dataawscognitouserpoolsigningcertificate.DataAwsCognitoUserPoolSigningCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawscognitouserpoolsigningcertificate.DataAwsCognitoUserPoolSigningCertificat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpoolsigningcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolsigningcertificate"
 
 dataawscognitouserpoolsigningcertificate.DataAwsCognitoUserPoolSigningCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpoolsigningcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolsigningcertificate"
 
 &dataawscognitouserpoolsigningcertificate.DataAwsCognitoUserPoolSigningCertificateConfig {
 	Connection: interface{},
