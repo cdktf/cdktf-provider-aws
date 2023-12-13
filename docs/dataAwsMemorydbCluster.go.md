@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbCluster(scope Construct, id *string, config DataAwsMemorydbClusterConfig) DataAwsMemorydbCluster
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.DataAwsMemorydbCluster_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.DataAwsMemorydbCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawsmemorydbcluster.DataAwsMemorydbCluster_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.DataAwsMemorydbCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawsmemorydbcluster.DataAwsMemorydbCluster_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.DataAwsMemorydbCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterClusterEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 &dataawsmemorydbcluster.DataAwsMemorydbClusterClusterEndpoint {
 
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 &dataawsmemorydbcluster.DataAwsMemorydbClusterConfig {
 	Connection: interface{},
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 &dataawsmemorydbcluster.DataAwsMemorydbClusterShards {
 
@@ -1040,7 +1040,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 &dataawsmemorydbcluster.DataAwsMemorydbClusterShardsNodes {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 &dataawsmemorydbcluster.DataAwsMemorydbClusterShardsNodesEndpoint {
 
@@ -1068,7 +1068,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterClusterEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterClusterEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbClusterClusterEndpointList
 ```
@@ -1200,7 +1200,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterClusterEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterClusterEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbClusterClusterEndpointOutputReference
 ```
@@ -1489,7 +1489,7 @@ func InternalValue() DataAwsMemorydbClusterClusterEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterShardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbClusterShardsList
 ```
@@ -1621,7 +1621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterShardsNodesEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbClusterShardsNodesEndpointList
 ```
@@ -1753,7 +1753,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterShardsNodesEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbClusterShardsNodesEndpointOutputReference
 ```
@@ -2042,7 +2042,7 @@ func InternalValue() DataAwsMemorydbClusterShardsNodesEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterShardsNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbClusterShardsNodesList
 ```
@@ -2174,7 +2174,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterShardsNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbClusterShardsNodesOutputReference
 ```
@@ -2485,7 +2485,7 @@ func InternalValue() DataAwsMemorydbClusterShardsNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsmemorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbcluster"
 
 dataawsmemorydbcluster.NewDataAwsMemorydbClusterShardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbClusterShardsOutputReference
 ```

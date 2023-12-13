@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayvpcattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayvpcattachmentaccepter"
 
 ec2transitgatewayvpcattachmentaccepter.NewEc2TransitGatewayVpcAttachmentAccepter(scope Construct, id *string, config Ec2TransitGatewayVpcAttachmentAccepterConfig) Ec2TransitGatewayVpcAttachmentAccepter
 ```
@@ -406,7 +406,7 @@ func ResetTransitGatewayDefaultRouteTablePropagation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayvpcattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayvpcattachmentaccepter"
 
 ec2transitgatewayvpcattachmentaccepter.Ec2TransitGatewayVpcAttachmentAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayvpcattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayvpcattachmentaccepter"
 
 ec2transitgatewayvpcattachmentaccepter.Ec2TransitGatewayVpcAttachmentAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ec2transitgatewayvpcattachmentaccepter.Ec2TransitGatewayVpcAttachmentAccepter_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayvpcattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayvpcattachmentaccepter"
 
 ec2transitgatewayvpcattachmentaccepter.Ec2TransitGatewayVpcAttachmentAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ ec2transitgatewayvpcattachmentaccepter.Ec2TransitGatewayVpcAttachmentAccepter_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayvpcattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayvpcattachmentaccepter"
 
 ec2transitgatewayvpcattachmentaccepter.Ec2TransitGatewayVpcAttachmentAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayvpcattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayvpcattachmentaccepter"
 
 &ec2transitgatewayvpcattachmentaccepter.Ec2TransitGatewayVpcAttachmentAccepterConfig {
 	Connection: interface{},

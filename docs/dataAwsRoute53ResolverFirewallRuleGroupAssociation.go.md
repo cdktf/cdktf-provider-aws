@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrulegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrulegroupassociation"
 
 dataawsroute53resolverfirewallrulegroupassociation.NewDataAwsRoute53ResolverFirewallRuleGroupAssociation(scope Construct, id *string, config DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig) DataAwsRoute53ResolverFirewallRuleGroupAssociation
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrulegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrulegroupassociation"
 
 dataawsroute53resolverfirewallrulegroupassociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrulegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrulegroupassociation"
 
 dataawsroute53resolverfirewallrulegroupassociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawsroute53resolverfirewallrulegroupassociation.DataAwsRoute53ResolverFirewal
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrulegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrulegroupassociation"
 
 dataawsroute53resolverfirewallrulegroupassociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawsroute53resolverfirewallrulegroupassociation.DataAwsRoute53ResolverFirewal
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrulegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrulegroupassociation"
 
 dataawsroute53resolverfirewallrulegroupassociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrulegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrulegroupassociation"
 
 &dataawsroute53resolverfirewallrulegroupassociation.DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig {
 	Connection: interface{},

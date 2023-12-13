@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.NewDmsS3Endpoint(scope Construct, id *string, config DmsS3EndpointConfig) DmsS3Endpoint
 ```
@@ -713,7 +713,7 @@ func ResetUseTaskStartTimeForFullLoadTimestamp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsConstruct(x interface{}) *bool
 ```
@@ -745,7 +745,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -759,7 +759,7 @@ dmss3endpoint.DmsS3Endpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -773,7 +773,7 @@ dmss3endpoint.DmsS3Endpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2168,7 +2168,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 &dmss3endpoint.DmsS3EndpointConfig {
 	Connection: interface{},
@@ -2225,7 +2225,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
 	SslMode: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsS3Endpoint.DmsS3EndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dmsS3Endpoint.DmsS3EndpointTimeouts,
 	TimestampColumnName: *string,
 	UseCsvNoSupValue: interface{},
 	UseTaskStartTimeForFullLoadTimestamp: interface{},
@@ -2989,7 +2989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 &dmss3endpoint.DmsS3EndpointTimeouts {
 	Create: *string,
@@ -3037,7 +3037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.NewDmsS3EndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsS3EndpointTimeoutsOutputReference
 ```

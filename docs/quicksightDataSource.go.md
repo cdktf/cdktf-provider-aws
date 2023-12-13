@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSource(scope Construct, id *string, config QuicksightDataSourceConfig) QuicksightDataSource
 ```
@@ -492,7 +492,7 @@ func ResetVpcConnectionProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_IsConstruct(x interface{}) *bool
 ```
@@ -524,7 +524,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -538,7 +538,7 @@ quicksightdatasource.QuicksightDataSource_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -552,7 +552,7 @@ quicksightdatasource.QuicksightDataSource_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1056,7 +1056,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceConfig {
 	Connection: interface{},
@@ -1068,16 +1068,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
 	Provisioners: *[]interface{},
 	DataSourceId: *string,
 	Name: *string,
-	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParameters,
+	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParameters,
 	Type: *string,
 	AwsAccountId: *string,
-	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceCredentials,
 	Id: *string,
 	Permission: interface{},
-	SslProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceSslProperties,
+	SslProperties: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceSslProperties,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConnectionProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties,
+	VpcConnectionProperties: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties,
 }
 ```
 
@@ -1339,11 +1339,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceCredentials {
 	CopySourceArn: *string,
-	CredentialPair: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair,
+	CredentialPair: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair,
 }
 ```
 
@@ -1387,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceCredentialsCredentialPair {
 	Password: *string,
@@ -1433,29 +1433,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParameters {
-	AmazonElasticsearch: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch,
-	Athena: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersAthena,
-	Aurora: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersAurora,
-	AuroraPostgresql: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql,
-	AwsIotAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics,
-	Jira: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersJira,
-	MariaDb: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersMariaDb,
-	Mysql: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersMysql,
-	Oracle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersOracle,
-	Postgresql: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersPostgresql,
-	Presto: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersPresto,
-	Rds: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersRds,
-	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersRedshift,
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersS3,
-	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersServiceNow,
-	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersSnowflake,
-	Spark: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersSpark,
-	SqlServer: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersSqlServer,
-	Teradata: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersTeradata,
-	Twitter: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersTwitter,
+	AmazonElasticsearch: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch,
+	Athena: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersAthena,
+	Aurora: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersAurora,
+	AuroraPostgresql: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql,
+	AwsIotAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics,
+	Jira: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersJira,
+	MariaDb: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb,
+	Mysql: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersMysql,
+	Oracle: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersOracle,
+	Postgresql: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql,
+	Presto: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersPresto,
+	Rds: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersRds,
+	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersRedshift,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersS3,
+	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersServiceNow,
+	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake,
+	Spark: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersSpark,
+	SqlServer: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer,
+	Teradata: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersTeradata,
+	Twitter: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersTwitter,
 }
 ```
 
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAmazonElasticsearch {
 	Domain: *string,
@@ -1803,7 +1803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthena.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAthena {
 	WorkGroup: *string,
@@ -1835,7 +1835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAurora {
 	Database: *string,
@@ -1895,7 +1895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAuroraPostgresql {
 	Database: *string,
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAwsIotAnalytics {
 	DataSetName: *string,
@@ -1987,7 +1987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJira.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersJira {
 	SiteBaseUrl: *string,
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersMariaDb {
 	Database: *string,
@@ -2079,7 +2079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersMysql {
 	Database: *string,
@@ -2139,7 +2139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersOracle {
 	Database: *string,
@@ -2199,7 +2199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersPostgresql {
 	Database: *string,
@@ -2259,7 +2259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersPresto {
 	Catalog: *string,
@@ -2319,7 +2319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersRds {
 	Database: *string,
@@ -2365,7 +2365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersRedshift {
 	Database: *string,
@@ -2439,10 +2439,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersS3 {
-	ManifestFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation,
+	ManifestFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation,
 }
 ```
 
@@ -2473,7 +2473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersS3ManifestFileLocation {
 	Bucket: *string,
@@ -2519,7 +2519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersServiceNow {
 	SiteBaseUrl: *string,
@@ -2551,7 +2551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersSnowflake {
 	Database: *string,
@@ -2611,7 +2611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSpark.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersSpark {
 	Host: *string,
@@ -2657,7 +2657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersSqlServer {
 	Database: *string,
@@ -2717,7 +2717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersTeradata {
 	Database: *string,
@@ -2777,7 +2777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersTwitter {
 	MaxRows: *f64,
@@ -2823,7 +2823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourcePermission {
 	Actions: *[]*string,
@@ -2869,7 +2869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceSslProperties {
 	DisableSsl: interface{},
@@ -2901,7 +2901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceVpcConnectionProperties {
 	VpcConnectionArn: *string,
@@ -2935,7 +2935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPairOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceCredentialsCredentialPairOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceCredentialsCredentialPairOutputReference
 ```
@@ -3228,7 +3228,7 @@ func InternalValue() QuicksightDataSourceCredentialsCredentialPair
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceCredentialsOutputReference
 ```
@@ -3548,7 +3548,7 @@ func InternalValue() QuicksightDataSourceCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAmazonElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAmazonElasticsearchOutputReference
 ```
@@ -3819,7 +3819,7 @@ func InternalValue() QuicksightDataSourceParametersAmazonElasticsearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAthenaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAthenaOutputReference
 ```
@@ -4097,7 +4097,7 @@ func InternalValue() QuicksightDataSourceParametersAthena
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAuroraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAuroraOutputReference
 ```
@@ -4412,7 +4412,7 @@ func InternalValue() QuicksightDataSourceParametersAurora
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAuroraPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAuroraPostgresqlOutputReference
 ```
@@ -4727,7 +4727,7 @@ func InternalValue() QuicksightDataSourceParametersAuroraPostgresql
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAwsIotAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAwsIotAnalyticsOutputReference
 ```
@@ -4998,7 +4998,7 @@ func InternalValue() QuicksightDataSourceParametersAwsIotAnalytics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJiraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersJiraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersJiraOutputReference
 ```
@@ -5269,7 +5269,7 @@ func InternalValue() QuicksightDataSourceParametersJira
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersMariaDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersMariaDbOutputReference
 ```
@@ -5584,7 +5584,7 @@ func InternalValue() QuicksightDataSourceParametersMariaDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersMysqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersMysqlOutputReference
 ```
@@ -5899,7 +5899,7 @@ func InternalValue() QuicksightDataSourceParametersMysql
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersOracleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersOracleOutputReference
 ```
@@ -6214,7 +6214,7 @@ func InternalValue() QuicksightDataSourceParametersOracle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersOutputReference
 ```
@@ -7303,7 +7303,7 @@ func InternalValue() QuicksightDataSourceParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersPostgresqlOutputReference
 ```
@@ -7618,7 +7618,7 @@ func InternalValue() QuicksightDataSourceParametersPostgresql
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPrestoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersPrestoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersPrestoOutputReference
 ```
@@ -7933,7 +7933,7 @@ func InternalValue() QuicksightDataSourceParametersPresto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersRdsOutputReference
 ```
@@ -8226,7 +8226,7 @@ func InternalValue() QuicksightDataSourceParametersRds
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersRedshiftOutputReference
 ```
@@ -8584,7 +8584,7 @@ func InternalValue() QuicksightDataSourceParametersRedshift
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersS3ManifestFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
 ```
@@ -8877,7 +8877,7 @@ func InternalValue() QuicksightDataSourceParametersS3ManifestFileLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersS3OutputReference
 ```
@@ -9161,7 +9161,7 @@ func InternalValue() QuicksightDataSourceParametersS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersServiceNowOutputReference
 ```
@@ -9432,7 +9432,7 @@ func InternalValue() QuicksightDataSourceParametersServiceNow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersSnowflakeOutputReference
 ```
@@ -9747,7 +9747,7 @@ func InternalValue() QuicksightDataSourceParametersSnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSparkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersSparkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersSparkOutputReference
 ```
@@ -10040,7 +10040,7 @@ func InternalValue() QuicksightDataSourceParametersSpark
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersSqlServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersSqlServerOutputReference
 ```
@@ -10355,7 +10355,7 @@ func InternalValue() QuicksightDataSourceParametersSqlServer
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersTeradataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersTeradataOutputReference
 ```
@@ -10670,7 +10670,7 @@ func InternalValue() QuicksightDataSourceParametersTeradata
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersTwitterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersTwitterOutputReference
 ```
@@ -10963,7 +10963,7 @@ func InternalValue() QuicksightDataSourceParametersTwitter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourcePermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSourcePermissionList
 ```
@@ -11106,7 +11106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourcePermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSourcePermissionOutputReference
 ```
@@ -11417,7 +11417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceSslPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceSslPropertiesOutputReference
 ```
@@ -11688,7 +11688,7 @@ func InternalValue() QuicksightDataSourceSslProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceVpcConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceVpcConnectionPropertiesOutputReference
 ```
