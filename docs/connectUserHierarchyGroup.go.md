@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroup(scope Construct, id *string, config ConnectUserHierarchyGroupConfig) ConnectUserHierarchyGroup
 ```
@@ -399,7 +399,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.ConnectUserHierarchyGroup_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.ConnectUserHierarchyGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ connectuserhierarchygroup.ConnectUserHierarchyGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.ConnectUserHierarchyGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ connectuserhierarchygroup.ConnectUserHierarchyGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.ConnectUserHierarchyGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 &connectuserhierarchygroup.ConnectUserHierarchyGroupConfig {
 	Connection: interface{},
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 &connectuserhierarchygroup.ConnectUserHierarchyGroupHierarchyPath {
 
@@ -1066,7 +1066,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 &connectuserhierarchygroup.ConnectUserHierarchyGroupHierarchyPathLevelFive {
 
@@ -1079,7 +1079,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFour.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 &connectuserhierarchygroup.ConnectUserHierarchyGroupHierarchyPathLevelFour {
 
@@ -1092,7 +1092,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelOne.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 &connectuserhierarchygroup.ConnectUserHierarchyGroupHierarchyPathLevelOne {
 
@@ -1105,7 +1105,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelThree.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 &connectuserhierarchygroup.ConnectUserHierarchyGroupHierarchyPathLevelThree {
 
@@ -1118,7 +1118,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelTwo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 &connectuserhierarchygroup.ConnectUserHierarchyGroupHierarchyPathLevelTwo {
 
@@ -1133,7 +1133,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFiveList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelFiveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelFiveList
 ```
@@ -1265,7 +1265,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelFiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelFiveOutputReference
 ```
@@ -1565,7 +1565,7 @@ func InternalValue() ConnectUserHierarchyGroupHierarchyPathLevelFive
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFourList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelFourList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelFourList
 ```
@@ -1697,7 +1697,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference
 ```
@@ -1997,7 +1997,7 @@ func InternalValue() ConnectUserHierarchyGroupHierarchyPathLevelFour
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelOneList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelOneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelOneList
 ```
@@ -2129,7 +2129,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference
 ```
@@ -2429,7 +2429,7 @@ func InternalValue() ConnectUserHierarchyGroupHierarchyPathLevelOne
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelThreeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelThreeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelThreeList
 ```
@@ -2561,7 +2561,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelThreeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelThreeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelThreeOutputReference
 ```
@@ -2861,7 +2861,7 @@ func InternalValue() ConnectUserHierarchyGroupHierarchyPathLevelThree
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelTwoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelTwoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelTwoList
 ```
@@ -2993,7 +2993,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference
 ```
@@ -3293,7 +3293,7 @@ func InternalValue() ConnectUserHierarchyGroupHierarchyPathLevelTwo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectUserHierarchyGroupHierarchyPathList
 ```
@@ -3425,7 +3425,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchygroup"
 
 connectuserhierarchygroup.NewConnectUserHierarchyGroupHierarchyPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectUserHierarchyGroupHierarchyPathOutputReference
 ```
