@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamaccountpasswordpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountpasswordpolicy"
 
 iamaccountpasswordpolicy.NewIamAccountPasswordPolicy(scope Construct, id *string, config IamAccountPasswordPolicyConfig) IamAccountPasswordPolicy
 ```
@@ -441,7 +441,7 @@ func ResetRequireUppercaseCharacters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamaccountpasswordpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountpasswordpolicy"
 
 iamaccountpasswordpolicy.IamAccountPasswordPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamaccountpasswordpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountpasswordpolicy"
 
 iamaccountpasswordpolicy.IamAccountPasswordPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ iamaccountpasswordpolicy.IamAccountPasswordPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamaccountpasswordpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountpasswordpolicy"
 
 iamaccountpasswordpolicy.IamAccountPasswordPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iamaccountpasswordpolicy.IamAccountPasswordPolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamaccountpasswordpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountpasswordpolicy"
 
 iamaccountpasswordpolicy.IamAccountPasswordPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamaccountpasswordpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountpasswordpolicy"
 
 &iamaccountpasswordpolicy.IamAccountPasswordPolicyConfig {
 	Connection: interface{},

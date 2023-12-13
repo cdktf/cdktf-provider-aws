@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 elasticacheparametergroup.NewElasticacheParameterGroup(scope Construct, id *string, config ElasticacheParameterGroupConfig) ElasticacheParameterGroup
 ```
@@ -419,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 elasticacheparametergroup.ElasticacheParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 elasticacheparametergroup.ElasticacheParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ elasticacheparametergroup.ElasticacheParameterGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 elasticacheparametergroup.ElasticacheParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ elasticacheparametergroup.ElasticacheParameterGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 elasticacheparametergroup.ElasticacheParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 &elasticacheparametergroup.ElasticacheParameterGroupConfig {
 	Connection: interface{},
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 &elasticacheparametergroup.ElasticacheParameterGroupParameter {
 	Name: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 elasticacheparametergroup.NewElasticacheParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheParameterGroupParameterList
 ```
@@ -1269,7 +1269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticacheparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheparametergroup"
 
 elasticacheparametergroup.NewElasticacheParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticacheParameterGroupParameterOutputReference
 ```
