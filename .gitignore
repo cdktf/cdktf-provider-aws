@@ -58,7 +58,6 @@ package-lock.json
 !/.github/workflows/auto-close-community-prs.yml
 !/.github/workflows/automerge.yml
 !/.github/workflows/lock.yml
-!/.github/workflows/next-cdktf-version-pr.yml
 !/.github/workflows/alert-open-prs.yml
 !/.github/workflows/force-release.yml
 !/.github/CODEOWNERS

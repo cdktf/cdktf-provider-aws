@@ -13,7 +13,6 @@
     ".github/workflows/build.yml",
     ".github/workflows/force-release.yml",
     ".github/workflows/lock.yml",
-    ".github/workflows/next-cdktf-version-pr.yml",
     ".github/workflows/provider-upgrade.yml",
     ".github/workflows/pull-request-lint.yml",
     ".github/workflows/release.yml",
