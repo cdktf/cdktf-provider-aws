@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.NewSesv2EmailIdentityMailFromAttributes(scope Construct, id *string, config Sesv2EmailIdentityMailFromAttributesConfig) Sesv2EmailIdentityMailFromAttributes
 ```
@@ -392,7 +392,7 @@ func ResetMailFromDomain()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
 
 &sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributesConfig {
 	Connection: interface{},

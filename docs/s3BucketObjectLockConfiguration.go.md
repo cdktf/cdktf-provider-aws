@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.NewS3BucketObjectLockConfigurationA(scope Construct, id *string, config S3BucketObjectLockConfigurationAConfig) S3BucketObjectLockConfigurationA
 ```
@@ -419,7 +419,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationA_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationA_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationA_IsTerraformElem
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationA_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationA_IsTerraformReso
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 &s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationAConfig {
 	Connection: interface{},
@@ -854,7 +854,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfigurati
 	ExpectedBucketOwner: *string,
 	Id: *string,
 	ObjectLockEnabled: *string,
-	Rule: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleA,
+	Rule: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleA,
 	Token: *string,
 }
 ```
@@ -1031,10 +1031,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 &s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationRuleA {
-	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionA,
+	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionA,
 }
 ```
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 &s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionA {
 	Days: *f64,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.NewS3BucketObjectLockConfigurationRuleAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketObjectLockConfigurationRuleAOutputReference
 ```
@@ -1411,7 +1411,7 @@ func InternalValue() S3BucketObjectLockConfigurationRuleA
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.NewS3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference
 ```
