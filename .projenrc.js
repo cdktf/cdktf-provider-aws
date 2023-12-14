@@ -12,7 +12,7 @@ const project = new CdktfProviderProject({
   minNodeVersion: "18.12.0",
   jsiiVersion: "~5.2.0",
   typescriptVersion: "~5.2.0", // NOTE: this should be the same major/minor version as JSII
-  devDeps: ["@cdktf/provider-project@^0.4.0"],
+  devDeps: ["@cdktf/provider-project@~0.4.0"],
 });
 
 project.synth();
