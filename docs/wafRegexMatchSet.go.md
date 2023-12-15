@@ -4,12 +4,12 @@
 
 ### WafRegexMatchSet <a name="WafRegexMatchSet" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set aws_waf_regex_match_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set aws_waf_regex_match_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.NewWafRegexMatchSet(scope Construct, id *string, config WafRegexMatchSetConfig) WafRegexMatchSet
 ```
@@ -398,7 +398,7 @@ func ResetRegexMatchTuple()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.WafRegexMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.WafRegexMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ wafregexmatchset.WafRegexMatchSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.WafRegexMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ wafregexmatchset.WafRegexMatchSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.WafRegexMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +487,7 @@ The construct id used in the generated config for the WafRegexMatchSet to import
 
 The id of the existing WafRegexMatchSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 &wafregexmatchset.WafRegexMatchSetConfig {
 	Connection: interface{},
@@ -791,8 +791,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
 | <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#name WafRegexMatchSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#id WafRegexMatchSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#name WafRegexMatchSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#id WafRegexMatchSet#id}. |
 | <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig.property.regexMatchTuple">RegexMatchTuple</a></code> | <code>interface{}</code> | regex_match_tuple block. |
 
 ---
@@ -875,7 +875,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#name WafRegexMatchSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#name WafRegexMatchSet#name}.
 
 ---
 
@@ -887,7 +887,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#id WafRegexMatchSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#id WafRegexMatchSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -904,7 +904,7 @@ RegexMatchTuple interface{}
 
 regex_match_tuple block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#regex_match_tuple WafRegexMatchSet#regex_match_tuple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#regex_match_tuple WafRegexMatchSet#regex_match_tuple}
 
 ---
 
@@ -913,10 +913,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 &wafregexmatchset.WafRegexMatchSetRegexMatchTuple {
-	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v18.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch,
+	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch,
 	RegexPatternSetId: *string,
 	TextTransformation: *string,
 }
@@ -927,8 +927,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple.property.fieldToMatch">FieldToMatch</a></code> | <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch">WafRegexMatchSetRegexMatchTupleFieldToMatch</a></code> | field_to_match block. |
-| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple.property.regexPatternSetId">RegexPatternSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#regex_pattern_set_id WafRegexMatchSet#regex_pattern_set_id}. |
-| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#text_transformation WafRegexMatchSet#text_transformation}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple.property.regexPatternSetId">RegexPatternSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#regex_pattern_set_id WafRegexMatchSet#regex_pattern_set_id}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#text_transformation WafRegexMatchSet#text_transformation}. |
 
 ---
 
@@ -942,7 +942,7 @@ FieldToMatch WafRegexMatchSetRegexMatchTupleFieldToMatch
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#field_to_match WafRegexMatchSet#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#field_to_match WafRegexMatchSet#field_to_match}
 
 ---
 
@@ -954,7 +954,7 @@ RegexPatternSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#regex_pattern_set_id WafRegexMatchSet#regex_pattern_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#regex_pattern_set_id WafRegexMatchSet#regex_pattern_set_id}.
 
 ---
 
@@ -966,7 +966,7 @@ TextTransformation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#text_transformation WafRegexMatchSet#text_transformation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#text_transformation WafRegexMatchSet#text_transformation}.
 
 ---
 
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 &wafregexmatchset.WafRegexMatchSetRegexMatchTupleFieldToMatch {
 	Type: *string,
@@ -987,8 +987,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#type WafRegexMatchSet#type}. |
-| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#data WafRegexMatchSet#data}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#type WafRegexMatchSet#type}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#data WafRegexMatchSet#data}. |
 
 ---
 
@@ -1000,7 +1000,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#type WafRegexMatchSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#type WafRegexMatchSet#type}.
 
 ---
 
@@ -1012,7 +1012,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/waf_regex_match_set#data WafRegexMatchSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_regex_match_set#data WafRegexMatchSet#data}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.NewWafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference
 ```
@@ -1323,7 +1323,7 @@ func InternalValue() WafRegexMatchSetRegexMatchTupleFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.NewWafRegexMatchSetRegexMatchTupleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafRegexMatchSetRegexMatchTupleList
 ```
@@ -1466,7 +1466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregexmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexmatchset"
 
 wafregexmatchset.NewWafRegexMatchSetRegexMatchTupleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafRegexMatchSetRegexMatchTupleOutputReference
 ```

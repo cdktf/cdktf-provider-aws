@@ -4,12 +4,12 @@
 
 ### AppmeshVirtualRouter <a name="AppmeshVirtualRouter" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouter(scope Construct, id *string, config AppmeshVirtualRouterConfig) AppmeshVirtualRouter
 ```
@@ -412,7 +412,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AppmeshVirtualRouter to im
 
 The id of the existing AppmeshVirtualRouter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshVirtualRouter.AppmeshVirtualRouterSpec,
+	Spec: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec,
 	Id: *string,
 	MeshOwner: *string,
 	Tags: *map[string]*string,
@@ -930,13 +930,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#mesh_name AppmeshVirtualRouter#mesh_name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#name AppmeshVirtualRouter#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#mesh_name AppmeshVirtualRouter#mesh_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#name AppmeshVirtualRouter#name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec">AppmeshVirtualRouterSpec</a></code> | spec block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#id AppmeshVirtualRouter#id}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#mesh_owner AppmeshVirtualRouter#mesh_owner}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#tags AppmeshVirtualRouter#tags}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#tags_all AppmeshVirtualRouter#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#id AppmeshVirtualRouter#id}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#mesh_owner AppmeshVirtualRouter#mesh_owner}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#tags AppmeshVirtualRouter#tags}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#tags_all AppmeshVirtualRouter#tags_all}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ MeshName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#mesh_name AppmeshVirtualRouter#mesh_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#mesh_name AppmeshVirtualRouter#mesh_name}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#name AppmeshVirtualRouter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#name AppmeshVirtualRouter#name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Spec AppmeshVirtualRouterSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#spec AppmeshVirtualRouter#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#spec AppmeshVirtualRouter#spec}
 
 ---
 
@@ -1056,7 +1056,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#id AppmeshVirtualRouter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#id AppmeshVirtualRouter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1071,7 +1071,7 @@ MeshOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#mesh_owner AppmeshVirtualRouter#mesh_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#mesh_owner AppmeshVirtualRouter#mesh_owner}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#tags AppmeshVirtualRouter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#tags AppmeshVirtualRouter#tags}.
 
 ---
 
@@ -1095,7 +1095,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#tags_all AppmeshVirtualRouter#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#tags_all AppmeshVirtualRouter#tags_all}.
 
 ---
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterSpec {
 	Listener: interface{},
@@ -1129,7 +1129,7 @@ Listener interface{}
 
 listener block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#listener AppmeshVirtualRouter#listener}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#listener AppmeshVirtualRouter#listener}
 
 ---
 
@@ -1138,10 +1138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterSpecListener {
-	PortMapping: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping,
+	PortMapping: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping,
 }
 ```
 
@@ -1163,7 +1163,7 @@ PortMapping AppmeshVirtualRouterSpecListenerPortMapping
 
 port_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#port_mapping AppmeshVirtualRouter#port_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#port_mapping AppmeshVirtualRouter#port_mapping}
 
 ---
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterSpecListenerPortMapping {
 	Port: *f64,
@@ -1184,8 +1184,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#port AppmeshVirtualRouter#port}. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#protocol AppmeshVirtualRouter#protocol}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#port AppmeshVirtualRouter#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#protocol AppmeshVirtualRouter#protocol}. |
 
 ---
 
@@ -1197,7 +1197,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#port AppmeshVirtualRouter#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#port AppmeshVirtualRouter#port}.
 
 ---
 
@@ -1209,7 +1209,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_router#protocol AppmeshVirtualRouter#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_router#protocol AppmeshVirtualRouter#protocol}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualRouterSpecListenerList
 ```
@@ -1363,7 +1363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualRouterSpecListenerOutputReference
 ```
@@ -1665,7 +1665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecListenerPortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualRouterSpecListenerPortMappingOutputReference
 ```
@@ -1958,7 +1958,7 @@ func InternalValue() AppmeshVirtualRouterSpecListenerPortMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualRouterSpecOutputReference
 ```

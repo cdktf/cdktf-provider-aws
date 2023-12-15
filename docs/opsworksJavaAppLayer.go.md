@@ -4,12 +4,12 @@
 
 ### OpsworksJavaAppLayer <a name="OpsworksJavaAppLayer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayer(scope Construct, id *string, config OpsworksJavaAppLayerConfig) OpsworksJavaAppLayer
 ```
@@ -613,7 +613,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_IsConstruct(x interface{}) *bool
 ```
@@ -645,7 +645,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -673,7 +673,7 @@ opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +702,7 @@ The construct id used in the generated config for the OpsworksJavaAppLayer to im
 
 The id of the existing OpsworksJavaAppLayer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1573,7 +1573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1585,7 +1585,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#enabled OpsworksJavaAppLayer#enabled}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#enabled OpsworksJavaAppLayer#enabled}. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration.property.logStreams">LogStreams</a></code> | <code>interface{}</code> | log_streams block. |
 
 ---
@@ -1598,7 +1598,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#enabled OpsworksJavaAppLayer#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#enabled OpsworksJavaAppLayer#enabled}.
 
 ---
 
@@ -1612,7 +1612,7 @@ LogStreams interface{}
 
 log_streams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#log_streams OpsworksJavaAppLayer#log_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#log_streams OpsworksJavaAppLayer#log_streams}
 
 ---
 
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1642,17 +1642,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.file">File</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#file OpsworksJavaAppLayer#file}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#log_group_name OpsworksJavaAppLayer#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.batchCount">BatchCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#batch_count OpsworksJavaAppLayer#batch_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#batch_size OpsworksJavaAppLayer#batch_size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.bufferDuration">BufferDuration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#buffer_duration OpsworksJavaAppLayer#buffer_duration}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">DatetimeFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#datetime_format OpsworksJavaAppLayer#datetime_format}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#encoding OpsworksJavaAppLayer#encoding}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">FileFingerprintLines</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#file_fingerprint_lines OpsworksJavaAppLayer#file_fingerprint_lines}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.initialPosition">InitialPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#initial_position OpsworksJavaAppLayer#initial_position}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">MultilineStartPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#multiline_start_pattern OpsworksJavaAppLayer#multiline_start_pattern}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#time_zone OpsworksJavaAppLayer#time_zone}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.file">File</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#file OpsworksJavaAppLayer#file}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#log_group_name OpsworksJavaAppLayer#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.batchCount">BatchCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#batch_count OpsworksJavaAppLayer#batch_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#batch_size OpsworksJavaAppLayer#batch_size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.bufferDuration">BufferDuration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#buffer_duration OpsworksJavaAppLayer#buffer_duration}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">DatetimeFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#datetime_format OpsworksJavaAppLayer#datetime_format}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#encoding OpsworksJavaAppLayer#encoding}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">FileFingerprintLines</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#file_fingerprint_lines OpsworksJavaAppLayer#file_fingerprint_lines}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.initialPosition">InitialPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#initial_position OpsworksJavaAppLayer#initial_position}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">MultilineStartPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#multiline_start_pattern OpsworksJavaAppLayer#multiline_start_pattern}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#time_zone OpsworksJavaAppLayer#time_zone}. |
 
 ---
 
@@ -1664,7 +1664,7 @@ File *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#file OpsworksJavaAppLayer#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#file OpsworksJavaAppLayer#file}.
 
 ---
 
@@ -1676,7 +1676,7 @@ LogGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#log_group_name OpsworksJavaAppLayer#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#log_group_name OpsworksJavaAppLayer#log_group_name}.
 
 ---
 
@@ -1688,7 +1688,7 @@ BatchCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#batch_count OpsworksJavaAppLayer#batch_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#batch_count OpsworksJavaAppLayer#batch_count}.
 
 ---
 
@@ -1700,7 +1700,7 @@ BatchSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#batch_size OpsworksJavaAppLayer#batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#batch_size OpsworksJavaAppLayer#batch_size}.
 
 ---
 
@@ -1712,7 +1712,7 @@ BufferDuration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#buffer_duration OpsworksJavaAppLayer#buffer_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#buffer_duration OpsworksJavaAppLayer#buffer_duration}.
 
 ---
 
@@ -1724,7 +1724,7 @@ DatetimeFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#datetime_format OpsworksJavaAppLayer#datetime_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#datetime_format OpsworksJavaAppLayer#datetime_format}.
 
 ---
 
@@ -1736,7 +1736,7 @@ Encoding *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#encoding OpsworksJavaAppLayer#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#encoding OpsworksJavaAppLayer#encoding}.
 
 ---
 
@@ -1748,7 +1748,7 @@ FileFingerprintLines *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#file_fingerprint_lines OpsworksJavaAppLayer#file_fingerprint_lines}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#file_fingerprint_lines OpsworksJavaAppLayer#file_fingerprint_lines}.
 
 ---
 
@@ -1760,7 +1760,7 @@ InitialPosition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#initial_position OpsworksJavaAppLayer#initial_position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#initial_position OpsworksJavaAppLayer#initial_position}.
 
 ---
 
@@ -1772,7 +1772,7 @@ MultilineStartPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#multiline_start_pattern OpsworksJavaAppLayer#multiline_start_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#multiline_start_pattern OpsworksJavaAppLayer#multiline_start_pattern}.
 
 ---
 
@@ -1784,7 +1784,7 @@ TimeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#time_zone OpsworksJavaAppLayer#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#time_zone OpsworksJavaAppLayer#time_zone}.
 
 ---
 
@@ -1793,7 +1793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerConfig {
 	Connection: interface{},
@@ -1809,7 +1809,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1827,7 +1827,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 	JvmOptions: *string,
 	JvmType: *string,
 	JvmVersion: *string,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling,
 	Name: *string,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
@@ -1847,36 +1847,36 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#stack_id OpsworksJavaAppLayer#stack_id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.appServer">AppServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#app_server OpsworksJavaAppLayer#app_server}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.appServerVersion">AppServerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#app_server_version OpsworksJavaAppLayer#app_server_version}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.autoAssignElasticIps">AutoAssignElasticIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#auto_assign_elastic_ips OpsworksJavaAppLayer#auto_assign_elastic_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.autoAssignPublicIps">AutoAssignPublicIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#auto_assign_public_ips OpsworksJavaAppLayer#auto_assign_public_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.autoHealing">AutoHealing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#auto_healing OpsworksJavaAppLayer#auto_healing}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#stack_id OpsworksJavaAppLayer#stack_id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.appServer">AppServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#app_server OpsworksJavaAppLayer#app_server}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.appServerVersion">AppServerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#app_server_version OpsworksJavaAppLayer#app_server_version}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.autoAssignElasticIps">AutoAssignElasticIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#auto_assign_elastic_ips OpsworksJavaAppLayer#auto_assign_elastic_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.autoAssignPublicIps">AutoAssignPublicIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#auto_assign_public_ips OpsworksJavaAppLayer#auto_assign_public_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.autoHealing">AutoHealing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#auto_healing OpsworksJavaAppLayer#auto_healing}. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.cloudwatchConfiguration">CloudwatchConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration">OpsworksJavaAppLayerCloudwatchConfiguration</a></code> | cloudwatch_configuration block. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customConfigureRecipes">CustomConfigureRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_configure_recipes OpsworksJavaAppLayer#custom_configure_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customDeployRecipes">CustomDeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_deploy_recipes OpsworksJavaAppLayer#custom_deploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customInstanceProfileArn">CustomInstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_instance_profile_arn OpsworksJavaAppLayer#custom_instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customJson">CustomJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_json OpsworksJavaAppLayer#custom_json}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customSecurityGroupIds">CustomSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_security_group_ids OpsworksJavaAppLayer#custom_security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customSetupRecipes">CustomSetupRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_setup_recipes OpsworksJavaAppLayer#custom_setup_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customShutdownRecipes">CustomShutdownRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_shutdown_recipes OpsworksJavaAppLayer#custom_shutdown_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customUndeployRecipes">CustomUndeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_undeploy_recipes OpsworksJavaAppLayer#custom_undeploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.drainElbOnShutdown">DrainElbOnShutdown</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#drain_elb_on_shutdown OpsworksJavaAppLayer#drain_elb_on_shutdown}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customConfigureRecipes">CustomConfigureRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_configure_recipes OpsworksJavaAppLayer#custom_configure_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customDeployRecipes">CustomDeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_deploy_recipes OpsworksJavaAppLayer#custom_deploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customInstanceProfileArn">CustomInstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_instance_profile_arn OpsworksJavaAppLayer#custom_instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customJson">CustomJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_json OpsworksJavaAppLayer#custom_json}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customSecurityGroupIds">CustomSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_security_group_ids OpsworksJavaAppLayer#custom_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customSetupRecipes">CustomSetupRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_setup_recipes OpsworksJavaAppLayer#custom_setup_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customShutdownRecipes">CustomShutdownRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_shutdown_recipes OpsworksJavaAppLayer#custom_shutdown_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.customUndeployRecipes">CustomUndeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_undeploy_recipes OpsworksJavaAppLayer#custom_undeploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.drainElbOnShutdown">DrainElbOnShutdown</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#drain_elb_on_shutdown OpsworksJavaAppLayer#drain_elb_on_shutdown}. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.ebsVolume">EbsVolume</a></code> | <code>interface{}</code> | ebs_volume block. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.elasticLoadBalancer">ElasticLoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#elastic_load_balancer OpsworksJavaAppLayer#elastic_load_balancer}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#id OpsworksJavaAppLayer#id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.installUpdatesOnBoot">InstallUpdatesOnBoot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#install_updates_on_boot OpsworksJavaAppLayer#install_updates_on_boot}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.instanceShutdownTimeout">InstanceShutdownTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#instance_shutdown_timeout OpsworksJavaAppLayer#instance_shutdown_timeout}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.jvmOptions">JvmOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#jvm_options OpsworksJavaAppLayer#jvm_options}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.jvmType">JvmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#jvm_type OpsworksJavaAppLayer#jvm_type}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.jvmVersion">JvmVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#jvm_version OpsworksJavaAppLayer#jvm_version}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.elasticLoadBalancer">ElasticLoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#elastic_load_balancer OpsworksJavaAppLayer#elastic_load_balancer}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#id OpsworksJavaAppLayer#id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.installUpdatesOnBoot">InstallUpdatesOnBoot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#install_updates_on_boot OpsworksJavaAppLayer#install_updates_on_boot}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.instanceShutdownTimeout">InstanceShutdownTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#instance_shutdown_timeout OpsworksJavaAppLayer#instance_shutdown_timeout}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.jvmOptions">JvmOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#jvm_options OpsworksJavaAppLayer#jvm_options}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.jvmType">JvmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#jvm_type OpsworksJavaAppLayer#jvm_type}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.jvmVersion">JvmVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#jvm_version OpsworksJavaAppLayer#jvm_version}. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.loadBasedAutoScaling">LoadBasedAutoScaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling">OpsworksJavaAppLayerLoadBasedAutoScaling</a></code> | load_based_auto_scaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#name OpsworksJavaAppLayer#name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.systemPackages">SystemPackages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#system_packages OpsworksJavaAppLayer#system_packages}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#tags OpsworksJavaAppLayer#tags}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#tags_all OpsworksJavaAppLayer#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.useEbsOptimizedInstances">UseEbsOptimizedInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#use_ebs_optimized_instances OpsworksJavaAppLayer#use_ebs_optimized_instances}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#name OpsworksJavaAppLayer#name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.systemPackages">SystemPackages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#system_packages OpsworksJavaAppLayer#system_packages}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#tags OpsworksJavaAppLayer#tags}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#tags_all OpsworksJavaAppLayer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.property.useEbsOptimizedInstances">UseEbsOptimizedInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#use_ebs_optimized_instances OpsworksJavaAppLayer#use_ebs_optimized_instances}. |
 
 ---
 
@@ -1958,7 +1958,7 @@ StackId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#stack_id OpsworksJavaAppLayer#stack_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#stack_id OpsworksJavaAppLayer#stack_id}.
 
 ---
 
@@ -1970,7 +1970,7 @@ AppServer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#app_server OpsworksJavaAppLayer#app_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#app_server OpsworksJavaAppLayer#app_server}.
 
 ---
 
@@ -1982,7 +1982,7 @@ AppServerVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#app_server_version OpsworksJavaAppLayer#app_server_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#app_server_version OpsworksJavaAppLayer#app_server_version}.
 
 ---
 
@@ -1994,7 +1994,7 @@ AutoAssignElasticIps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#auto_assign_elastic_ips OpsworksJavaAppLayer#auto_assign_elastic_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#auto_assign_elastic_ips OpsworksJavaAppLayer#auto_assign_elastic_ips}.
 
 ---
 
@@ -2006,7 +2006,7 @@ AutoAssignPublicIps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#auto_assign_public_ips OpsworksJavaAppLayer#auto_assign_public_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#auto_assign_public_ips OpsworksJavaAppLayer#auto_assign_public_ips}.
 
 ---
 
@@ -2018,7 +2018,7 @@ AutoHealing interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#auto_healing OpsworksJavaAppLayer#auto_healing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#auto_healing OpsworksJavaAppLayer#auto_healing}.
 
 ---
 
@@ -2032,7 +2032,7 @@ CloudwatchConfiguration OpsworksJavaAppLayerCloudwatchConfiguration
 
 cloudwatch_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#cloudwatch_configuration OpsworksJavaAppLayer#cloudwatch_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#cloudwatch_configuration OpsworksJavaAppLayer#cloudwatch_configuration}
 
 ---
 
@@ -2044,7 +2044,7 @@ CustomConfigureRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_configure_recipes OpsworksJavaAppLayer#custom_configure_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_configure_recipes OpsworksJavaAppLayer#custom_configure_recipes}.
 
 ---
 
@@ -2056,7 +2056,7 @@ CustomDeployRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_deploy_recipes OpsworksJavaAppLayer#custom_deploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_deploy_recipes OpsworksJavaAppLayer#custom_deploy_recipes}.
 
 ---
 
@@ -2068,7 +2068,7 @@ CustomInstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_instance_profile_arn OpsworksJavaAppLayer#custom_instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_instance_profile_arn OpsworksJavaAppLayer#custom_instance_profile_arn}.
 
 ---
 
@@ -2080,7 +2080,7 @@ CustomJson *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_json OpsworksJavaAppLayer#custom_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_json OpsworksJavaAppLayer#custom_json}.
 
 ---
 
@@ -2092,7 +2092,7 @@ CustomSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_security_group_ids OpsworksJavaAppLayer#custom_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_security_group_ids OpsworksJavaAppLayer#custom_security_group_ids}.
 
 ---
 
@@ -2104,7 +2104,7 @@ CustomSetupRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_setup_recipes OpsworksJavaAppLayer#custom_setup_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_setup_recipes OpsworksJavaAppLayer#custom_setup_recipes}.
 
 ---
 
@@ -2116,7 +2116,7 @@ CustomShutdownRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_shutdown_recipes OpsworksJavaAppLayer#custom_shutdown_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_shutdown_recipes OpsworksJavaAppLayer#custom_shutdown_recipes}.
 
 ---
 
@@ -2128,7 +2128,7 @@ CustomUndeployRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#custom_undeploy_recipes OpsworksJavaAppLayer#custom_undeploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#custom_undeploy_recipes OpsworksJavaAppLayer#custom_undeploy_recipes}.
 
 ---
 
@@ -2140,7 +2140,7 @@ DrainElbOnShutdown interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#drain_elb_on_shutdown OpsworksJavaAppLayer#drain_elb_on_shutdown}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#drain_elb_on_shutdown OpsworksJavaAppLayer#drain_elb_on_shutdown}.
 
 ---
 
@@ -2154,7 +2154,7 @@ EbsVolume interface{}
 
 ebs_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#ebs_volume OpsworksJavaAppLayer#ebs_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#ebs_volume OpsworksJavaAppLayer#ebs_volume}
 
 ---
 
@@ -2166,7 +2166,7 @@ ElasticLoadBalancer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#elastic_load_balancer OpsworksJavaAppLayer#elastic_load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#elastic_load_balancer OpsworksJavaAppLayer#elastic_load_balancer}.
 
 ---
 
@@ -2178,7 +2178,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#id OpsworksJavaAppLayer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#id OpsworksJavaAppLayer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2193,7 +2193,7 @@ InstallUpdatesOnBoot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#install_updates_on_boot OpsworksJavaAppLayer#install_updates_on_boot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#install_updates_on_boot OpsworksJavaAppLayer#install_updates_on_boot}.
 
 ---
 
@@ -2205,7 +2205,7 @@ InstanceShutdownTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#instance_shutdown_timeout OpsworksJavaAppLayer#instance_shutdown_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#instance_shutdown_timeout OpsworksJavaAppLayer#instance_shutdown_timeout}.
 
 ---
 
@@ -2217,7 +2217,7 @@ JvmOptions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#jvm_options OpsworksJavaAppLayer#jvm_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#jvm_options OpsworksJavaAppLayer#jvm_options}.
 
 ---
 
@@ -2229,7 +2229,7 @@ JvmType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#jvm_type OpsworksJavaAppLayer#jvm_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#jvm_type OpsworksJavaAppLayer#jvm_type}.
 
 ---
 
@@ -2241,7 +2241,7 @@ JvmVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#jvm_version OpsworksJavaAppLayer#jvm_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#jvm_version OpsworksJavaAppLayer#jvm_version}.
 
 ---
 
@@ -2255,7 +2255,7 @@ LoadBasedAutoScaling OpsworksJavaAppLayerLoadBasedAutoScaling
 
 load_based_auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#load_based_auto_scaling OpsworksJavaAppLayer#load_based_auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#load_based_auto_scaling OpsworksJavaAppLayer#load_based_auto_scaling}
 
 ---
 
@@ -2267,7 +2267,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#name OpsworksJavaAppLayer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#name OpsworksJavaAppLayer#name}.
 
 ---
 
@@ -2279,7 +2279,7 @@ SystemPackages *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#system_packages OpsworksJavaAppLayer#system_packages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#system_packages OpsworksJavaAppLayer#system_packages}.
 
 ---
 
@@ -2291,7 +2291,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#tags OpsworksJavaAppLayer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#tags OpsworksJavaAppLayer#tags}.
 
 ---
 
@@ -2303,7 +2303,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#tags_all OpsworksJavaAppLayer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#tags_all OpsworksJavaAppLayer#tags_all}.
 
 ---
 
@@ -2315,7 +2315,7 @@ UseEbsOptimizedInstances interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#use_ebs_optimized_instances OpsworksJavaAppLayer#use_ebs_optimized_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#use_ebs_optimized_instances OpsworksJavaAppLayer#use_ebs_optimized_instances}.
 
 ---
 
@@ -2324,7 +2324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerEbsVolume {
 	MountPoint: *string,
@@ -2341,13 +2341,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#mount_point OpsworksJavaAppLayer#mount_point}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.numberOfDisks">NumberOfDisks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#number_of_disks OpsworksJavaAppLayer#number_of_disks}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#size OpsworksJavaAppLayer#size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#encrypted OpsworksJavaAppLayer#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#iops OpsworksJavaAppLayer#iops}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.raidLevel">RaidLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#raid_level OpsworksJavaAppLayer#raid_level}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#type OpsworksJavaAppLayer#type}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#mount_point OpsworksJavaAppLayer#mount_point}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.numberOfDisks">NumberOfDisks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#number_of_disks OpsworksJavaAppLayer#number_of_disks}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#size OpsworksJavaAppLayer#size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#encrypted OpsworksJavaAppLayer#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#iops OpsworksJavaAppLayer#iops}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.raidLevel">RaidLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#raid_level OpsworksJavaAppLayer#raid_level}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#type OpsworksJavaAppLayer#type}. |
 
 ---
 
@@ -2359,7 +2359,7 @@ MountPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#mount_point OpsworksJavaAppLayer#mount_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#mount_point OpsworksJavaAppLayer#mount_point}.
 
 ---
 
@@ -2371,7 +2371,7 @@ NumberOfDisks *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#number_of_disks OpsworksJavaAppLayer#number_of_disks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#number_of_disks OpsworksJavaAppLayer#number_of_disks}.
 
 ---
 
@@ -2383,7 +2383,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#size OpsworksJavaAppLayer#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#size OpsworksJavaAppLayer#size}.
 
 ---
 
@@ -2395,7 +2395,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#encrypted OpsworksJavaAppLayer#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#encrypted OpsworksJavaAppLayer#encrypted}.
 
 ---
 
@@ -2407,7 +2407,7 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#iops OpsworksJavaAppLayer#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#iops OpsworksJavaAppLayer#iops}.
 
 ---
 
@@ -2419,7 +2419,7 @@ RaidLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#raid_level OpsworksJavaAppLayer#raid_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#raid_level OpsworksJavaAppLayer#raid_level}.
 
 ---
 
@@ -2431,7 +2431,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#type OpsworksJavaAppLayer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#type OpsworksJavaAppLayer#type}.
 
 ---
 
@@ -2440,12 +2440,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2454,7 +2454,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling.property.downscaling">Downscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling">OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling</a></code> | downscaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#enable OpsworksJavaAppLayer#enable}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#enable OpsworksJavaAppLayer#enable}. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling.property.upscaling">Upscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling">OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling</a></code> | upscaling block. |
 
 ---
@@ -2469,7 +2469,7 @@ Downscaling OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling
 
 downscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#downscaling OpsworksJavaAppLayer#downscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#downscaling OpsworksJavaAppLayer#downscaling}
 
 ---
 
@@ -2481,7 +2481,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#enable OpsworksJavaAppLayer#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#enable OpsworksJavaAppLayer#enable}.
 
 ---
 
@@ -2495,7 +2495,7 @@ Upscaling OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling
 
 upscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#upscaling OpsworksJavaAppLayer#upscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#upscaling OpsworksJavaAppLayer#upscaling}
 
 ---
 
@@ -2504,7 +2504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2521,13 +2521,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2539,7 +2539,7 @@ Alarms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}.
 
 ---
 
@@ -2551,7 +2551,7 @@ CpuThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}.
 
 ---
 
@@ -2563,7 +2563,7 @@ IgnoreMetricsTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}.
 
 ---
 
@@ -2575,7 +2575,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}.
 
 ---
 
@@ -2587,7 +2587,7 @@ LoadThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}.
 
 ---
 
@@ -2599,7 +2599,7 @@ MemoryThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}.
 
 ---
 
@@ -2611,7 +2611,7 @@ ThresholdsWaitTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}.
 
 ---
 
@@ -2620,7 +2620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2637,13 +2637,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2655,7 +2655,7 @@ Alarms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#alarms OpsworksJavaAppLayer#alarms}.
 
 ---
 
@@ -2667,7 +2667,7 @@ CpuThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#cpu_threshold OpsworksJavaAppLayer#cpu_threshold}.
 
 ---
 
@@ -2679,7 +2679,7 @@ IgnoreMetricsTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#ignore_metrics_time OpsworksJavaAppLayer#ignore_metrics_time}.
 
 ---
 
@@ -2691,7 +2691,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#instance_count OpsworksJavaAppLayer#instance_count}.
 
 ---
 
@@ -2703,7 +2703,7 @@ LoadThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#load_threshold OpsworksJavaAppLayer#load_threshold}.
 
 ---
 
@@ -2715,7 +2715,7 @@ MemoryThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#memory_threshold OpsworksJavaAppLayer#memory_threshold}.
 
 ---
 
@@ -2727,7 +2727,7 @@ ThresholdsWaitTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_java_app_layer#thresholds_wait_time OpsworksJavaAppLayer#thresholds_wait_time}.
 
 ---
 
@@ -2738,7 +2738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2881,7 +2881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3453,7 +3453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerCloudwatchConfigurationOutputReference
 ```
@@ -3773,7 +3773,7 @@ func InternalValue() OpsworksJavaAppLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksJavaAppLayerEbsVolumeList
 ```
@@ -3916,7 +3916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksJavaAppLayerEbsVolumeOutputReference
 ```
@@ -4365,7 +4365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4817,7 +4817,7 @@ func InternalValue() OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference
 ```
@@ -5179,7 +5179,7 @@ func InternalValue() OpsworksJavaAppLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

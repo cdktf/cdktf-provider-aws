@@ -1,3 +1,3 @@
 # `aws_wafv2_web_acl_association`
 
-Refer to the Terraform Registory for docs: [`aws_wafv2_web_acl_association`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/wafv2_web_acl_association).
+Refer to the Terraform Registory for docs: [`aws_wafv2_web_acl_association`](https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/wafv2_web_acl_association).

@@ -4,12 +4,12 @@
 
 ### RedshiftParameterGroup <a name="RedshiftParameterGroup" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.NewRedshiftParameterGroup(scope Construct, id *string, config RedshiftParameterGroupConfig) RedshiftParameterGroup
 ```
@@ -419,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.RedshiftParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.RedshiftParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ redshiftparametergroup.RedshiftParameterGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.RedshiftParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ redshiftparametergroup.RedshiftParameterGroup_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.RedshiftParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the RedshiftParameterGroup to 
 
 The id of the existing RedshiftParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 &redshiftparametergroup.RedshiftParameterGroupConfig {
 	Connection: interface{},
@@ -904,13 +904,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
 | <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#family RedshiftParameterGroup#family}. |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#description RedshiftParameterGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#id RedshiftParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#family RedshiftParameterGroup#family}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#description RedshiftParameterGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#id RedshiftParameterGroup#id}. |
 | <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#tags RedshiftParameterGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#tags_all RedshiftParameterGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#tags RedshiftParameterGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#tags_all RedshiftParameterGroup#tags_all}. |
 
 ---
 
@@ -992,7 +992,7 @@ Family *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#family RedshiftParameterGroup#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#family RedshiftParameterGroup#family}.
 
 ---
 
@@ -1004,7 +1004,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}.
 
 ---
 
@@ -1016,7 +1016,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#description RedshiftParameterGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#description RedshiftParameterGroup#description}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#id RedshiftParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#id RedshiftParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#parameter RedshiftParameterGroup#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#parameter RedshiftParameterGroup#parameter}
 
 ---
 
@@ -1057,7 +1057,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#tags RedshiftParameterGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#tags RedshiftParameterGroup#tags}.
 
 ---
 
@@ -1069,7 +1069,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#tags_all RedshiftParameterGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#tags_all RedshiftParameterGroup#tags_all}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 &redshiftparametergroup.RedshiftParameterGroupParameter {
 	Name: *string,
@@ -1090,8 +1090,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}. |
 
 ---
 
@@ -1103,7 +1103,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.NewRedshiftParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftParameterGroupParameterList
 ```
@@ -1269,7 +1269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.NewRedshiftParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftParameterGroupParameterOutputReference
 ```

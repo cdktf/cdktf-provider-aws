@@ -4,12 +4,12 @@
 
 ### DataAwsEc2LocalGateway <a name="DataAwsEc2LocalGateway" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway aws_ec2_local_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway aws_ec2_local_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGateway(scope Construct, id *string, config DataAwsEc2LocalGatewayConfig) DataAwsEc2LocalGateway
 ```
@@ -328,7 +328,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -417,7 +417,7 @@ The construct id used in the generated config for the DataAwsEc2LocalGateway to 
 
 The id of the existing DataAwsEc2LocalGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,7 +727,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 &dataawsec2localgateway.DataAwsEc2LocalGatewayConfig {
 	Connection: interface{},
@@ -741,7 +741,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
 	Id: *string,
 	State: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts,
 }
 ```
 
@@ -757,9 +757,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#id DataAwsEc2LocalGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#state DataAwsEc2LocalGateway#state}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#tags DataAwsEc2LocalGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#id DataAwsEc2LocalGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#state DataAwsEc2LocalGateway#state}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#tags DataAwsEc2LocalGateway#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts">DataAwsEc2LocalGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -844,7 +844,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#filter DataAwsEc2LocalGateway#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#filter DataAwsEc2LocalGateway#filter}
 
 ---
 
@@ -856,7 +856,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#id DataAwsEc2LocalGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#id DataAwsEc2LocalGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +871,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#state DataAwsEc2LocalGateway#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#state DataAwsEc2LocalGateway#state}.
 
 ---
 
@@ -883,7 +883,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#tags DataAwsEc2LocalGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#tags DataAwsEc2LocalGateway#tags}.
 
 ---
 
@@ -897,7 +897,7 @@ Timeouts DataAwsEc2LocalGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#timeouts DataAwsEc2LocalGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#timeouts DataAwsEc2LocalGateway#timeouts}
 
 ---
 
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 &dataawsec2localgateway.DataAwsEc2LocalGatewayFilter {
 	Name: *string,
@@ -918,8 +918,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#name DataAwsEc2LocalGateway#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#values DataAwsEc2LocalGateway#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#name DataAwsEc2LocalGateway#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#values DataAwsEc2LocalGateway#values}. |
 
 ---
 
@@ -931,7 +931,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#name DataAwsEc2LocalGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#name DataAwsEc2LocalGateway#name}.
 
 ---
 
@@ -943,7 +943,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#values DataAwsEc2LocalGateway#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#values DataAwsEc2LocalGateway#values}.
 
 ---
 
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 &dataawsec2localgateway.DataAwsEc2LocalGatewayTimeouts {
 	Read: *string,
@@ -963,7 +963,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#read DataAwsEc2LocalGateway#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#read DataAwsEc2LocalGateway#read}. |
 
 ---
 
@@ -975,7 +975,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/ec2_local_gateway#read DataAwsEc2LocalGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_local_gateway#read DataAwsEc2LocalGateway#read}.
 
 ---
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2LocalGatewayFilterList
 ```
@@ -1129,7 +1129,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2LocalGatewayFilterOutputReference
 ```
@@ -1440,7 +1440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2LocalGatewayTimeoutsOutputReference
 ```

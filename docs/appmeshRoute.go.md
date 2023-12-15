@@ -4,12 +4,12 @@
 
 ### AppmeshRoute <a name="AppmeshRoute" id="@cdktf/provider-aws.appmeshRoute.AppmeshRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route aws_appmesh_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route aws_appmesh_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRoute(scope Construct, id *string, config AppmeshRouteConfig) AppmeshRoute
 ```
@@ -412,7 +412,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appmeshRoute.AppmeshRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.AppmeshRoute_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appmeshRoute.AppmeshRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.AppmeshRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ appmeshroute.AppmeshRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appmeshRoute.AppmeshRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.AppmeshRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ appmeshroute.AppmeshRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appmeshRoute.AppmeshRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.AppmeshRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AppmeshRoute to import.
 
 The id of the existing AppmeshRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpec,
+	Spec: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpec,
 	VirtualRouterName: *string,
 	Id: *string,
 	MeshOwner: *string,
@@ -953,14 +953,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#mesh_name AppmeshRoute#mesh_name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#mesh_name AppmeshRoute#mesh_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec">AppmeshRouteSpec</a></code> | spec block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.virtualRouterName">VirtualRouterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_router_name AppmeshRoute#virtual_router_name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#id AppmeshRoute#id}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#mesh_owner AppmeshRoute#mesh_owner}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tags AppmeshRoute#tags}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tags_all AppmeshRoute#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.virtualRouterName">VirtualRouterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_router_name AppmeshRoute#virtual_router_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#id AppmeshRoute#id}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#mesh_owner AppmeshRoute#mesh_owner}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tags AppmeshRoute#tags}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tags_all AppmeshRoute#tags_all}. |
 
 ---
 
@@ -1042,7 +1042,7 @@ MeshName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#mesh_name AppmeshRoute#mesh_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#mesh_name AppmeshRoute#mesh_name}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Spec AppmeshRouteSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#spec AppmeshRoute#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#spec AppmeshRoute#spec}
 
 ---
 
@@ -1080,7 +1080,7 @@ VirtualRouterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_router_name AppmeshRoute#virtual_router_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_router_name AppmeshRoute#virtual_router_name}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#id AppmeshRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#id AppmeshRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1107,7 @@ MeshOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#mesh_owner AppmeshRoute#mesh_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#mesh_owner AppmeshRoute#mesh_owner}.
 
 ---
 
@@ -1119,7 +1119,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tags AppmeshRoute#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tags AppmeshRoute#tags}.
 
 ---
 
@@ -1131,7 +1131,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tags_all AppmeshRoute#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tags_all AppmeshRoute#tags_all}.
 
 ---
 
@@ -1140,14 +1140,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpec {
-	GrpcRoute: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRoute,
-	Http2Route: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2Route,
-	HttpRoute: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRoute,
+	GrpcRoute: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRoute,
+	Http2Route: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2Route,
+	HttpRoute: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRoute,
 	Priority: *f64,
-	TcpRoute: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecTcpRoute,
+	TcpRoute: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecTcpRoute,
 }
 ```
 
@@ -1158,7 +1158,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec.property.grpcRoute">GrpcRoute</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRoute">AppmeshRouteSpecGrpcRoute</a></code> | grpc_route block. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec.property.http2Route">Http2Route</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2Route">AppmeshRouteSpecHttp2Route</a></code> | http2_route block. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec.property.httpRoute">HttpRoute</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRoute">AppmeshRouteSpecHttpRoute</a></code> | http_route block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#priority AppmeshRoute#priority}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#priority AppmeshRoute#priority}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec.property.tcpRoute">TcpRoute</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRoute">AppmeshRouteSpecTcpRoute</a></code> | tcp_route block. |
 
 ---
@@ -1173,7 +1173,7 @@ GrpcRoute AppmeshRouteSpecGrpcRoute
 
 grpc_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#grpc_route AppmeshRoute#grpc_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#grpc_route AppmeshRoute#grpc_route}
 
 ---
 
@@ -1187,7 +1187,7 @@ Http2Route AppmeshRouteSpecHttp2Route
 
 http2_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http2_route AppmeshRoute#http2_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http2_route AppmeshRoute#http2_route}
 
 ---
 
@@ -1201,7 +1201,7 @@ HttpRoute AppmeshRouteSpecHttpRoute
 
 http_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http_route AppmeshRoute#http_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http_route AppmeshRoute#http_route}
 
 ---
 
@@ -1213,7 +1213,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#priority AppmeshRoute#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#priority AppmeshRoute#priority}.
 
 ---
 
@@ -1227,7 +1227,7 @@ TcpRoute AppmeshRouteSpecTcpRoute
 
 tcp_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tcp_route AppmeshRoute#tcp_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tcp_route AppmeshRoute#tcp_route}
 
 ---
 
@@ -1236,13 +1236,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRoute {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteAction,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch,
-	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy,
-	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeout,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteAction,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch,
+	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy,
+	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeout,
 }
 ```
 
@@ -1267,7 +1267,7 @@ Action AppmeshRouteSpecGrpcRouteAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#action AppmeshRoute#action}
 
 ---
 
@@ -1281,7 +1281,7 @@ Match AppmeshRouteSpecGrpcRouteMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -1295,7 +1295,7 @@ RetryPolicy AppmeshRouteSpecGrpcRouteRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
 
 ---
 
@@ -1309,7 +1309,7 @@ Timeout AppmeshRouteSpecGrpcRouteTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
 
 ---
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteAction {
 	WeightedTarget: interface{},
@@ -1343,7 +1343,7 @@ WeightedTarget interface{}
 
 weighted_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
 
 ---
 
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteActionWeightedTarget {
 	VirtualNode: *string,
@@ -1365,9 +1365,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
 
 ---
 
@@ -1379,7 +1379,7 @@ VirtualNode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
 
 ---
 
@@ -1391,7 +1391,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
 
 ---
 
@@ -1403,7 +1403,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteMatch {
 	Metadata: interface{},
@@ -1428,10 +1428,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.metadata">Metadata</a></code> | <code>interface{}</code> | metadata block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.methodName">MethodName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#method_name AppmeshRoute#method_name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#service_name AppmeshRoute#service_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.methodName">MethodName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#method_name AppmeshRoute#method_name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#service_name AppmeshRoute#service_name}. |
 
 ---
 
@@ -1445,7 +1445,7 @@ Metadata interface{}
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#metadata AppmeshRoute#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#metadata AppmeshRoute#metadata}
 
 ---
 
@@ -1457,7 +1457,7 @@ MethodName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#method_name AppmeshRoute#method_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#method_name AppmeshRoute#method_name}.
 
 ---
 
@@ -1469,7 +1469,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -1481,7 +1481,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
 
 ---
 
@@ -1493,7 +1493,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#service_name AppmeshRoute#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#service_name AppmeshRoute#service_name}.
 
 ---
 
@@ -1502,12 +1502,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteMatchMetadata {
 	Name: *string,
 	Invert: interface{},
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch,
 }
 ```
 
@@ -1515,8 +1515,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadata.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadata.property.invert">Invert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadata.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadata.property.invert">Invert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadata.property.match">Match</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch">AppmeshRouteSpecGrpcRouteMatchMetadataMatch</a></code> | match block. |
 
 ---
@@ -1529,7 +1529,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
 
 ---
 
@@ -1541,7 +1541,7 @@ Invert interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}.
 
 ---
 
@@ -1555,7 +1555,7 @@ Match AppmeshRouteSpecGrpcRouteMatchMetadataMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -1564,12 +1564,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch {
 	Exact: *string,
 	Prefix: *string,
-	Range: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange,
+	Range: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange,
 	Regex: *string,
 	Suffix: *string,
 }
@@ -1579,11 +1579,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.range">Range</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange">AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange</a></code> | range block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}. |
 
 ---
 
@@ -1595,7 +1595,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 
 ---
 
@@ -1607,7 +1607,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
 
 ---
 
@@ -1621,7 +1621,7 @@ Range AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange
 
 range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#range AppmeshRoute#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#range AppmeshRoute#range}
 
 ---
 
@@ -1633,7 +1633,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
 
 ---
 
@@ -1645,7 +1645,7 @@ Suffix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}.
 
 ---
 
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange {
 	End: *f64,
@@ -1666,8 +1666,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange.property.end">End</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#end AppmeshRoute#end}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange.property.start">Start</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#start AppmeshRoute#start}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange.property.end">End</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#end AppmeshRoute#end}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange.property.start">Start</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#start AppmeshRoute#start}. |
 
 ---
 
@@ -1679,7 +1679,7 @@ End *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#end AppmeshRoute#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#end AppmeshRoute#end}.
 
 ---
 
@@ -1691,7 +1691,7 @@ Start *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#start AppmeshRoute#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#start AppmeshRoute#start}.
 
 ---
 
@@ -1700,11 +1700,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteRetryPolicy {
 	MaxRetries: *f64,
-	PerRetryTimeout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout,
+	PerRetryTimeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout,
 	GrpcRetryEvents: *[]*string,
 	HttpRetryEvents: *[]*string,
 	TcpRetryEvents: *[]*string,
@@ -1715,11 +1715,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.perRetryTimeout">PerRetryTimeout</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout">AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout</a></code> | per_retry_timeout block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.grpcRetryEvents">GrpcRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#grpc_retry_events AppmeshRoute#grpc_retry_events}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.httpRetryEvents">HttpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.tcpRetryEvents">TcpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.grpcRetryEvents">GrpcRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#grpc_retry_events AppmeshRoute#grpc_retry_events}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.httpRetryEvents">HttpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy.property.tcpRetryEvents">TcpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}. |
 
 ---
 
@@ -1731,7 +1731,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}.
 
 ---
 
@@ -1745,7 +1745,7 @@ PerRetryTimeout AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout
 
 per_retry_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
 
 ---
 
@@ -1757,7 +1757,7 @@ GrpcRetryEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#grpc_retry_events AppmeshRoute#grpc_retry_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#grpc_retry_events AppmeshRoute#grpc_retry_events}.
 
 ---
 
@@ -1769,7 +1769,7 @@ HttpRetryEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}.
 
 ---
 
@@ -1781,7 +1781,7 @@ TcpRetryEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}.
 
 ---
 
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout {
 	Unit: *string,
@@ -1802,8 +1802,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -1815,7 +1815,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -1827,7 +1827,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -1836,11 +1836,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteTimeout {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle,
-	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle,
+	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest,
 }
 ```
 
@@ -1863,7 +1863,7 @@ Idle AppmeshRouteSpecGrpcRouteTimeoutIdle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
 
 ---
 
@@ -1877,7 +1877,7 @@ PerRequest AppmeshRouteSpecGrpcRouteTimeoutPerRequest
 
 per_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
 
 ---
 
@@ -1886,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteTimeoutIdle {
 	Unit: *string,
@@ -1898,8 +1898,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -1911,7 +1911,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -1923,7 +1923,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -1932,7 +1932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest {
 	Unit: *string,
@@ -1944,8 +1944,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -1957,7 +1957,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -1969,7 +1969,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -1978,13 +1978,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2Route.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2Route {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteAction,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch,
-	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy,
-	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeout,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteAction,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch,
+	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy,
+	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeout,
 }
 ```
 
@@ -2009,7 +2009,7 @@ Action AppmeshRouteSpecHttp2RouteAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#action AppmeshRoute#action}
 
 ---
 
@@ -2023,7 +2023,7 @@ Match AppmeshRouteSpecHttp2RouteMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -2037,7 +2037,7 @@ RetryPolicy AppmeshRouteSpecHttp2RouteRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
 
 ---
 
@@ -2051,7 +2051,7 @@ Timeout AppmeshRouteSpecHttp2RouteTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
 
 ---
 
@@ -2060,7 +2060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteAction {
 	WeightedTarget: interface{},
@@ -2085,7 +2085,7 @@ WeightedTarget interface{}
 
 weighted_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
 
 ---
 
@@ -2094,7 +2094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteActionWeightedTarget {
 	VirtualNode: *string,
@@ -2107,9 +2107,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
 
 ---
 
@@ -2121,7 +2121,7 @@ VirtualNode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
 
 ---
 
@@ -2133,7 +2133,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
 
 ---
 
@@ -2145,7 +2145,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -2154,12 +2154,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteMatch {
 	Header: interface{},
 	Method: *string,
-	Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath,
+	Path: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath,
 	Port: *f64,
 	Prefix: *string,
 	QueryParameter: interface{},
@@ -2172,12 +2172,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.header">Header</a></code> | <code>interface{}</code> | header block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#method AppmeshRoute#method}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#method AppmeshRoute#method}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.path">Path</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath">AppmeshRouteSpecHttp2RouteMatchPath</a></code> | path block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.queryParameter">QueryParameter</a></code> | <code>interface{}</code> | query_parameter block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.scheme">Scheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch.property.scheme">Scheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}. |
 
 ---
 
@@ -2191,7 +2191,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#header AppmeshRoute#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#header AppmeshRoute#header}
 
 ---
 
@@ -2203,7 +2203,7 @@ Method *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#method AppmeshRoute#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#method AppmeshRoute#method}.
 
 ---
 
@@ -2217,7 +2217,7 @@ Path AppmeshRouteSpecHttp2RouteMatchPath
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#path AppmeshRoute#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#path AppmeshRoute#path}
 
 ---
 
@@ -2229,7 +2229,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -2241,7 +2241,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
 
 ---
 
@@ -2255,7 +2255,7 @@ QueryParameter interface{}
 
 query_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
 
 ---
 
@@ -2267,7 +2267,7 @@ Scheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}.
 
 ---
 
@@ -2276,12 +2276,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteMatchHeader {
 	Name: *string,
 	Invert: interface{},
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch,
 }
 ```
 
@@ -2289,8 +2289,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeader.property.invert">Invert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeader.property.invert">Invert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeader.property.match">Match</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch">AppmeshRouteSpecHttp2RouteMatchHeaderMatch</a></code> | match block. |
 
 ---
@@ -2303,7 +2303,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
 
 ---
 
@@ -2315,7 +2315,7 @@ Invert interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}.
 
 ---
 
@@ -2329,7 +2329,7 @@ Match AppmeshRouteSpecHttp2RouteMatchHeaderMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -2338,12 +2338,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch {
 	Exact: *string,
 	Prefix: *string,
-	Range: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange,
+	Range: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange,
 	Regex: *string,
 	Suffix: *string,
 }
@@ -2353,11 +2353,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.range">Range</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange">AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange</a></code> | range block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}. |
 
 ---
 
@@ -2369,7 +2369,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 
 ---
 
@@ -2381,7 +2381,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
 
 ---
 
@@ -2395,7 +2395,7 @@ Range AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange
 
 range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#range AppmeshRoute#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#range AppmeshRoute#range}
 
 ---
 
@@ -2407,7 +2407,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
 
 ---
 
@@ -2419,7 +2419,7 @@ Suffix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}.
 
 ---
 
@@ -2428,7 +2428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange {
 	End: *f64,
@@ -2440,8 +2440,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange.property.end">End</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#end AppmeshRoute#end}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange.property.start">Start</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#start AppmeshRoute#start}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange.property.end">End</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#end AppmeshRoute#end}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange.property.start">Start</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#start AppmeshRoute#start}. |
 
 ---
 
@@ -2453,7 +2453,7 @@ End *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#end AppmeshRoute#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#end AppmeshRoute#end}.
 
 ---
 
@@ -2465,7 +2465,7 @@ Start *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#start AppmeshRoute#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#start AppmeshRoute#start}.
 
 ---
 
@@ -2474,7 +2474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteMatchPath {
 	Exact: *string,
@@ -2486,8 +2486,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPath.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
 
 ---
 
@@ -2499,7 +2499,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 
 ---
 
@@ -2511,7 +2511,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
 
 ---
 
@@ -2520,11 +2520,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteMatchQueryParameter {
 	Name: *string,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch,
 }
 ```
 
@@ -2532,7 +2532,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameter.property.match">Match</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch">AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch</a></code> | match block. |
 
 ---
@@ -2545,7 +2545,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
 
 ---
 
@@ -2559,7 +2559,7 @@ Match AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -2568,7 +2568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch {
 	Exact: *string,
@@ -2579,7 +2579,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
 
 ---
 
@@ -2591,7 +2591,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 
 ---
 
@@ -2600,11 +2600,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteRetryPolicy {
 	MaxRetries: *f64,
-	PerRetryTimeout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout,
+	PerRetryTimeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout,
 	HttpRetryEvents: *[]*string,
 	TcpRetryEvents: *[]*string,
 }
@@ -2614,10 +2614,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.property.perRetryTimeout">PerRetryTimeout</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout">AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout</a></code> | per_retry_timeout block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.property.httpRetryEvents">HttpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.property.tcpRetryEvents">TcpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.property.httpRetryEvents">HttpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy.property.tcpRetryEvents">TcpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}. |
 
 ---
 
@@ -2629,7 +2629,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}.
 
 ---
 
@@ -2643,7 +2643,7 @@ PerRetryTimeout AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout
 
 per_retry_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
 
 ---
 
@@ -2655,7 +2655,7 @@ HttpRetryEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}.
 
 ---
 
@@ -2667,7 +2667,7 @@ TcpRetryEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}.
 
 ---
 
@@ -2676,7 +2676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
 	Unit: *string,
@@ -2688,8 +2688,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -2701,7 +2701,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -2713,7 +2713,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -2722,11 +2722,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteTimeout {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle,
-	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle,
+	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest,
 }
 ```
 
@@ -2749,7 +2749,7 @@ Idle AppmeshRouteSpecHttp2RouteTimeoutIdle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
 
 ---
 
@@ -2763,7 +2763,7 @@ PerRequest AppmeshRouteSpecHttp2RouteTimeoutPerRequest
 
 per_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
 
 ---
 
@@ -2772,7 +2772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteTimeoutIdle {
 	Unit: *string,
@@ -2784,8 +2784,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -2797,7 +2797,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -2809,7 +2809,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -2818,7 +2818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest {
 	Unit: *string,
@@ -2830,8 +2830,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -2843,7 +2843,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -2855,7 +2855,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -2864,13 +2864,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRoute {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteAction,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteMatch,
-	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy,
-	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteTimeout,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteAction,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch,
+	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy,
+	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeout,
 }
 ```
 
@@ -2895,7 +2895,7 @@ Action AppmeshRouteSpecHttpRouteAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#action AppmeshRoute#action}
 
 ---
 
@@ -2909,7 +2909,7 @@ Match AppmeshRouteSpecHttpRouteMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -2923,7 +2923,7 @@ RetryPolicy AppmeshRouteSpecHttpRouteRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
 
 ---
 
@@ -2937,7 +2937,7 @@ Timeout AppmeshRouteSpecHttpRouteTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
 
 ---
 
@@ -2946,7 +2946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteAction {
 	WeightedTarget: interface{},
@@ -2971,7 +2971,7 @@ WeightedTarget interface{}
 
 weighted_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
 
 ---
 
@@ -2980,7 +2980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteActionWeightedTarget {
 	VirtualNode: *string,
@@ -2993,9 +2993,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
 
 ---
 
@@ -3007,7 +3007,7 @@ VirtualNode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
 
 ---
 
@@ -3019,7 +3019,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
 
 ---
 
@@ -3031,7 +3031,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -3040,12 +3040,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteMatch {
 	Header: interface{},
 	Method: *string,
-	Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath,
+	Path: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath,
 	Port: *f64,
 	Prefix: *string,
 	QueryParameter: interface{},
@@ -3058,12 +3058,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.header">Header</a></code> | <code>interface{}</code> | header block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#method AppmeshRoute#method}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#method AppmeshRoute#method}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.path">Path</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath">AppmeshRouteSpecHttpRouteMatchPath</a></code> | path block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.queryParameter">QueryParameter</a></code> | <code>interface{}</code> | query_parameter block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.scheme">Scheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch.property.scheme">Scheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}. |
 
 ---
 
@@ -3077,7 +3077,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#header AppmeshRoute#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#header AppmeshRoute#header}
 
 ---
 
@@ -3089,7 +3089,7 @@ Method *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#method AppmeshRoute#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#method AppmeshRoute#method}.
 
 ---
 
@@ -3103,7 +3103,7 @@ Path AppmeshRouteSpecHttpRouteMatchPath
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#path AppmeshRoute#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#path AppmeshRoute#path}
 
 ---
 
@@ -3115,7 +3115,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -3127,7 +3127,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
 
 ---
 
@@ -3141,7 +3141,7 @@ QueryParameter interface{}
 
 query_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
 
 ---
 
@@ -3153,7 +3153,7 @@ Scheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}.
 
 ---
 
@@ -3162,12 +3162,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteMatchHeader {
 	Name: *string,
 	Invert: interface{},
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch,
 }
 ```
 
@@ -3175,8 +3175,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeader.property.invert">Invert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeader.property.invert">Invert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeader.property.match">Match</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch">AppmeshRouteSpecHttpRouteMatchHeaderMatch</a></code> | match block. |
 
 ---
@@ -3189,7 +3189,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
 
 ---
 
@@ -3201,7 +3201,7 @@ Invert interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}.
 
 ---
 
@@ -3215,7 +3215,7 @@ Match AppmeshRouteSpecHttpRouteMatchHeaderMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -3224,12 +3224,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteMatchHeaderMatch {
 	Exact: *string,
 	Prefix: *string,
-	Range: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange,
+	Range: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange,
 	Regex: *string,
 	Suffix: *string,
 }
@@ -3239,11 +3239,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.range">Range</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange">AppmeshRouteSpecHttpRouteMatchHeaderMatchRange</a></code> | range block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}. |
 
 ---
 
@@ -3255,7 +3255,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 
 ---
 
@@ -3267,7 +3267,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}.
 
 ---
 
@@ -3281,7 +3281,7 @@ Range AppmeshRouteSpecHttpRouteMatchHeaderMatchRange
 
 range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#range AppmeshRoute#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#range AppmeshRoute#range}
 
 ---
 
@@ -3293,7 +3293,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
 
 ---
 
@@ -3305,7 +3305,7 @@ Suffix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}.
 
 ---
 
@@ -3314,7 +3314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
 	End: *f64,
@@ -3326,8 +3326,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange.property.end">End</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#end AppmeshRoute#end}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange.property.start">Start</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#start AppmeshRoute#start}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange.property.end">End</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#end AppmeshRoute#end}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange.property.start">Start</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#start AppmeshRoute#start}. |
 
 ---
 
@@ -3339,7 +3339,7 @@ End *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#end AppmeshRoute#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#end AppmeshRoute#end}.
 
 ---
 
@@ -3351,7 +3351,7 @@ Start *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#start AppmeshRoute#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#start AppmeshRoute#start}.
 
 ---
 
@@ -3360,7 +3360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteMatchPath {
 	Exact: *string,
@@ -3372,8 +3372,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPath.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}. |
 
 ---
 
@@ -3385,7 +3385,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 
 ---
 
@@ -3397,7 +3397,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}.
 
 ---
 
@@ -3406,11 +3406,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteMatchQueryParameter {
 	Name: *string,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatch,
 }
 ```
 
@@ -3418,7 +3418,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameter.property.match">Match</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatch">AppmeshRouteSpecHttpRouteMatchQueryParameterMatch</a></code> | match block. |
 
 ---
@@ -3431,7 +3431,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#name AppmeshRoute#name}.
 
 ---
 
@@ -3445,7 +3445,7 @@ Match AppmeshRouteSpecHttpRouteMatchQueryParameterMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -3454,7 +3454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatch {
 	Exact: *string,
@@ -3465,7 +3465,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}. |
 
 ---
 
@@ -3477,7 +3477,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 
 ---
 
@@ -3486,11 +3486,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteRetryPolicy {
 	MaxRetries: *f64,
-	PerRetryTimeout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout,
+	PerRetryTimeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout,
 	HttpRetryEvents: *[]*string,
 	TcpRetryEvents: *[]*string,
 }
@@ -3500,10 +3500,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}. |
 | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.property.perRetryTimeout">PerRetryTimeout</a></code> | <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout">AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout</a></code> | per_retry_timeout block. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.property.httpRetryEvents">HttpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.property.tcpRetryEvents">TcpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.property.httpRetryEvents">HttpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy.property.tcpRetryEvents">TcpRetryEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}. |
 
 ---
 
@@ -3515,7 +3515,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}.
 
 ---
 
@@ -3529,7 +3529,7 @@ PerRetryTimeout AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout
 
 per_retry_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
 
 ---
 
@@ -3541,7 +3541,7 @@ HttpRetryEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}.
 
 ---
 
@@ -3553,7 +3553,7 @@ TcpRetryEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}.
 
 ---
 
@@ -3562,7 +3562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
 	Unit: *string,
@@ -3574,8 +3574,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -3587,7 +3587,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -3599,7 +3599,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -3608,11 +3608,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteTimeout {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle,
-	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle,
+	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest,
 }
 ```
 
@@ -3635,7 +3635,7 @@ Idle AppmeshRouteSpecHttpRouteTimeoutIdle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
 
 ---
 
@@ -3649,7 +3649,7 @@ PerRequest AppmeshRouteSpecHttpRouteTimeoutPerRequest
 
 per_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
 
 ---
 
@@ -3658,7 +3658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteTimeoutIdle {
 	Unit: *string,
@@ -3670,8 +3670,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -3683,7 +3683,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -3695,7 +3695,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -3704,7 +3704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecHttpRouteTimeoutPerRequest {
 	Unit: *string,
@@ -3716,8 +3716,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -3729,7 +3729,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -3741,7 +3741,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -3750,12 +3750,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecTcpRoute {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecTcpRouteAction,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecTcpRouteMatch,
-	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecTcpRouteTimeout,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecTcpRouteAction,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecTcpRouteMatch,
+	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeout,
 }
 ```
 
@@ -3779,7 +3779,7 @@ Action AppmeshRouteSpecTcpRouteAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#action AppmeshRoute#action}
 
 ---
 
@@ -3793,7 +3793,7 @@ Match AppmeshRouteSpecTcpRouteMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 
 ---
 
@@ -3807,7 +3807,7 @@ Timeout AppmeshRouteSpecTcpRouteTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
 
 ---
 
@@ -3816,7 +3816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecTcpRouteAction {
 	WeightedTarget: interface{},
@@ -3841,7 +3841,7 @@ WeightedTarget interface{}
 
 weighted_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
 
 ---
 
@@ -3850,7 +3850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecTcpRouteActionWeightedTarget {
 	VirtualNode: *string,
@@ -3863,9 +3863,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget.property.virtualNode">VirtualNode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
 
 ---
 
@@ -3877,7 +3877,7 @@ VirtualNode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}.
 
 ---
 
@@ -3889,7 +3889,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}.
 
 ---
 
@@ -3901,7 +3901,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -3910,7 +3910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecTcpRouteMatch {
 	Port: *f64,
@@ -3921,7 +3921,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteMatch.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}. |
 
 ---
 
@@ -3933,7 +3933,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 
 ---
 
@@ -3942,10 +3942,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecTcpRouteTimeout {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle,
 }
 ```
 
@@ -3967,7 +3967,7 @@ Idle AppmeshRouteSpecTcpRouteTimeoutIdle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
 
 ---
 
@@ -3976,7 +3976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 &appmeshroute.AppmeshRouteSpecTcpRouteTimeoutIdle {
 	Unit: *string,
@@ -3988,8 +3988,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
-| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}. |
+| <code><a href="#@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}. |
 
 ---
 
@@ -4001,7 +4001,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}.
 
 ---
 
@@ -4013,7 +4013,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_route#value AppmeshRoute#value}.
 
 ---
 
@@ -4024,7 +4024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteActionOutputReference
 ```
@@ -4308,7 +4308,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteActionWeightedTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecGrpcRouteActionWeightedTargetList
 ```
@@ -4451,7 +4451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference
 ```
@@ -4791,7 +4791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteMatchMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecGrpcRouteMatchMetadataList
 ```
@@ -4934,7 +4934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference
 ```
@@ -5341,7 +5341,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteMatchMetadataMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference
 ```
@@ -5634,7 +5634,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteMatchMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference
 ```
@@ -5994,7 +5994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteMatchOutputReference
 ```
@@ -6401,7 +6401,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteOutputReference
 ```
@@ -6811,7 +6811,7 @@ func InternalValue() AppmeshRouteSpecGrpcRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference
 ```
@@ -7204,7 +7204,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference
 ```
@@ -7497,7 +7497,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference
 ```
@@ -7790,7 +7790,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteTimeoutIdle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteTimeoutOutputReference
 ```
@@ -8123,7 +8123,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference
 ```
@@ -8416,7 +8416,7 @@ func InternalValue() AppmeshRouteSpecGrpcRouteTimeoutPerRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteActionOutputReference
 ```
@@ -8700,7 +8700,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteActionWeightedTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecHttp2RouteActionWeightedTargetList
 ```
@@ -8843,7 +8843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference
 ```
@@ -9183,7 +9183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecHttp2RouteMatchHeaderList
 ```
@@ -9326,7 +9326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference
 ```
@@ -9733,7 +9733,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteMatchHeaderMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference
 ```
@@ -10026,7 +10026,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference
 ```
@@ -10386,7 +10386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteMatchOutputReference
 ```
@@ -10877,7 +10877,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteMatchPathOutputReference
 ```
@@ -11184,7 +11184,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecHttp2RouteMatchQueryParameterList
 ```
@@ -11327,7 +11327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference
 ```
@@ -11605,7 +11605,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference
 ```
@@ -11936,7 +11936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteOutputReference
 ```
@@ -12339,7 +12339,7 @@ func InternalValue() AppmeshRouteSpecHttp2Route
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference
 ```
@@ -12703,7 +12703,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference
 ```
@@ -12996,7 +12996,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference
 ```
@@ -13289,7 +13289,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteTimeoutIdle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteTimeoutOutputReference
 ```
@@ -13622,7 +13622,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference
 ```
@@ -13915,7 +13915,7 @@ func InternalValue() AppmeshRouteSpecHttp2RouteTimeoutPerRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteActionOutputReference
 ```
@@ -14199,7 +14199,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteActionWeightedTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecHttpRouteActionWeightedTargetList
 ```
@@ -14342,7 +14342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference
 ```
@@ -14682,7 +14682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecHttpRouteMatchHeaderList
 ```
@@ -14825,7 +14825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference
 ```
@@ -15232,7 +15232,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteMatchHeaderMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference
 ```
@@ -15525,7 +15525,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteMatchHeaderMatchRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecHttpRouteMatchHeaderOutputReference
 ```
@@ -15885,7 +15885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteMatchOutputReference
 ```
@@ -16376,7 +16376,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteMatchPathOutputReference
 ```
@@ -16683,7 +16683,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecHttpRouteMatchQueryParameterList
 ```
@@ -16826,7 +16826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference
 ```
@@ -17104,7 +17104,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteMatchQueryParameterMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference
 ```
@@ -17435,7 +17435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteOutputReference
 ```
@@ -17838,7 +17838,7 @@ func InternalValue() AppmeshRouteSpecHttpRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteRetryPolicyOutputReference
 ```
@@ -18202,7 +18202,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference
 ```
@@ -18495,7 +18495,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteTimeoutIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference
 ```
@@ -18788,7 +18788,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteTimeoutIdle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteTimeoutOutputReference
 ```
@@ -19121,7 +19121,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference
 ```
@@ -19414,7 +19414,7 @@ func InternalValue() AppmeshRouteSpecHttpRouteTimeoutPerRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecOutputReference
 ```
@@ -19860,7 +19860,7 @@ func InternalValue() AppmeshRouteSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecTcpRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecTcpRouteActionOutputReference
 ```
@@ -20144,7 +20144,7 @@ func InternalValue() AppmeshRouteSpecTcpRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecTcpRouteActionWeightedTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshRouteSpecTcpRouteActionWeightedTargetList
 ```
@@ -20287,7 +20287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference
 ```
@@ -20627,7 +20627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecTcpRouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecTcpRouteMatchOutputReference
 ```
@@ -20905,7 +20905,7 @@ func InternalValue() AppmeshRouteSpecTcpRouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecTcpRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecTcpRouteOutputReference
 ```
@@ -21273,7 +21273,7 @@ func InternalValue() AppmeshRouteSpecTcpRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference
 ```
@@ -21566,7 +21566,7 @@ func InternalValue() AppmeshRouteSpecTcpRouteTimeoutIdle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshroute"
 
 appmeshroute.NewAppmeshRouteSpecTcpRouteTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecTcpRouteTimeoutOutputReference
 ```

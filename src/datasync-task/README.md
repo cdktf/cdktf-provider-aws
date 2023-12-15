@@ -1,3 +1,3 @@
 # `aws_datasync_task`
 
-Refer to the Terraform Registory for docs: [`aws_datasync_task`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_task).
+Refer to the Terraform Registory for docs: [`aws_datasync_task`](https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_task).

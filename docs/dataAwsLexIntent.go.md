@@ -4,12 +4,12 @@
 
 ### DataAwsLexIntent <a name="DataAwsLexIntent" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent aws_lex_intent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent aws_lex_intent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexintent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexintent"
 
 dataawslexintent.NewDataAwsLexIntent(scope Construct, id *string, config DataAwsLexIntentConfig) DataAwsLexIntent
 ```
@@ -281,7 +281,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexintent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexintent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawslexintent.DataAwsLexIntent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexintent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawslexintent.DataAwsLexIntent_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexintent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataAwsLexIntent to import
 
 The id of the existing DataAwsLexIntent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexintent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexintent"
 
 &dataawslexintent.DataAwsLexIntentConfig {
 	Connection: interface{},
@@ -707,9 +707,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslexintent"
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}. |
 
 ---
 
@@ -791,7 +791,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}.
 
 ---
 
@@ -803,7 +803,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -818,7 +818,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### EfsBackupPolicy <a name="EfsBackupPolicy" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy aws_efs_backup_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy aws_efs_backup_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 efsbackuppolicy.NewEfsBackupPolicy(scope Construct, id *string, config EfsBackupPolicyConfig) EfsBackupPolicy
 ```
@@ -391,7 +391,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 efsbackuppolicy.EfsBackupPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 efsbackuppolicy.EfsBackupPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ efsbackuppolicy.EfsBackupPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 efsbackuppolicy.EfsBackupPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ efsbackuppolicy.EfsBackupPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 efsbackuppolicy.EfsBackupPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -480,7 +480,7 @@ The construct id used in the generated config for the EfsBackupPolicy to import.
 
 The id of the existing EfsBackupPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 &efsbackuppolicy.EfsBackupPolicyBackupPolicy {
 	Status: *string,
@@ -757,7 +757,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicy.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}. |
+| <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicy.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}. |
 
 ---
 
@@ -769,7 +769,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}.
 
 ---
 
@@ -778,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 &efsbackuppolicy.EfsBackupPolicyConfig {
 	Connection: interface{},
@@ -788,7 +788,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	BackupPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.efsBackupPolicy.EfsBackupPolicyBackupPolicy,
+	BackupPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.efsBackupPolicy.EfsBackupPolicyBackupPolicy,
 	FileSystemId: *string,
 	Id: *string,
 }
@@ -806,8 +806,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
 | <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.property.backupPolicy">BackupPolicy</a></code> | <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicy">EfsBackupPolicyBackupPolicy</a></code> | backup_policy block. |
-| <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}. |
-| <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}. |
+| <code><a href="#@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}. |
 
 ---
 
@@ -891,7 +891,7 @@ BackupPolicy EfsBackupPolicyBackupPolicy
 
 backup_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#backup_policy EfsBackupPolicy#backup_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#backup_policy EfsBackupPolicy#backup_policy}
 
 ---
 
@@ -903,7 +903,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}.
 
 ---
 
@@ -915,7 +915,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsbackuppolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsbackuppolicy"
 
 efsbackuppolicy.NewEfsBackupPolicyBackupPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsBackupPolicyBackupPolicyOutputReference
 ```

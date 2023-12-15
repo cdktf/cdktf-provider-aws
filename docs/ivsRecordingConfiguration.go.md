@@ -4,12 +4,12 @@
 
 ### IvsRecordingConfiguration <a name="IvsRecordingConfiguration" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfiguration(scope Construct, id *string, config IvsRecordingConfigurationConfig) IvsRecordingConfiguration
 ```
@@ -459,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.IvsRecordingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.IvsRecordingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ ivsrecordingconfiguration.IvsRecordingConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.IvsRecordingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ ivsrecordingconfiguration.IvsRecordingConfiguration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.IvsRecordingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -548,7 +548,7 @@ The construct id used in the generated config for the IvsRecordingConfiguration 
 
 The id of the existing IvsRecordingConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationConfig {
 	Connection: interface{},
@@ -956,14 +956,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DestinationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration,
+	DestinationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration,
 	Id: *string,
 	Name: *string,
 	RecordingReconnectWindowSeconds: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	ThumbnailConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts,
+	ThumbnailConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts,
 }
 ```
 
@@ -979,11 +979,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration
 | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.destinationConfiguration">DestinationConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration">IvsRecordingConfigurationDestinationConfiguration</a></code> | destination_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#id IvsRecordingConfiguration#id}. |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#name IvsRecordingConfiguration#name}. |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.recordingReconnectWindowSeconds">RecordingReconnectWindowSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#recording_reconnect_window_seconds IvsRecordingConfiguration#recording_reconnect_window_seconds}. |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#tags IvsRecordingConfiguration#tags}. |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#tags_all IvsRecordingConfiguration#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#id IvsRecordingConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#name IvsRecordingConfiguration#name}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.recordingReconnectWindowSeconds">RecordingReconnectWindowSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#recording_reconnect_window_seconds IvsRecordingConfiguration#recording_reconnect_window_seconds}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#tags IvsRecordingConfiguration#tags}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#tags_all IvsRecordingConfiguration#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.thumbnailConfiguration">ThumbnailConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration">IvsRecordingConfigurationThumbnailConfiguration</a></code> | thumbnail_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts">IvsRecordingConfigurationTimeouts</a></code> | timeouts block. |
 
@@ -1069,7 +1069,7 @@ DestinationConfiguration IvsRecordingConfigurationDestinationConfiguration
 
 destination_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#destination_configuration IvsRecordingConfiguration#destination_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#destination_configuration IvsRecordingConfiguration#destination_configuration}
 
 ---
 
@@ -1081,7 +1081,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#id IvsRecordingConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#id IvsRecordingConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#name IvsRecordingConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#name IvsRecordingConfiguration#name}.
 
 ---
 
@@ -1108,7 +1108,7 @@ RecordingReconnectWindowSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#recording_reconnect_window_seconds IvsRecordingConfiguration#recording_reconnect_window_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#recording_reconnect_window_seconds IvsRecordingConfiguration#recording_reconnect_window_seconds}.
 
 ---
 
@@ -1120,7 +1120,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#tags IvsRecordingConfiguration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#tags IvsRecordingConfiguration#tags}.
 
 ---
 
@@ -1132,7 +1132,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#tags_all IvsRecordingConfiguration#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#tags_all IvsRecordingConfiguration#tags_all}.
 
 ---
 
@@ -1146,7 +1146,7 @@ ThumbnailConfiguration IvsRecordingConfigurationThumbnailConfiguration
 
 thumbnail_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#thumbnail_configuration IvsRecordingConfiguration#thumbnail_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#thumbnail_configuration IvsRecordingConfiguration#thumbnail_configuration}
 
 ---
 
@@ -1160,7 +1160,7 @@ Timeouts IvsRecordingConfigurationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#timeouts IvsRecordingConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#timeouts IvsRecordingConfiguration#timeouts}
 
 ---
 
@@ -1169,10 +1169,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationDestinationConfiguration {
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3,
 }
 ```
 
@@ -1194,7 +1194,7 @@ S3 IvsRecordingConfigurationDestinationConfigurationS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#s3 IvsRecordingConfiguration#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#s3 IvsRecordingConfiguration#s3}
 
 ---
 
@@ -1203,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationDestinationConfigurationS3 {
 	BucketName: *string,
@@ -1214,7 +1214,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#bucket_name IvsRecordingConfiguration#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#bucket_name IvsRecordingConfiguration#bucket_name}. |
 
 ---
 
@@ -1226,7 +1226,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#bucket_name IvsRecordingConfiguration#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#bucket_name IvsRecordingConfiguration#bucket_name}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationThumbnailConfiguration {
 	RecordingMode: *string,
@@ -1247,8 +1247,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration.property.recordingMode">RecordingMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#recording_mode IvsRecordingConfiguration#recording_mode}. |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration.property.targetIntervalSeconds">TargetIntervalSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#target_interval_seconds IvsRecordingConfiguration#target_interval_seconds}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration.property.recordingMode">RecordingMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#recording_mode IvsRecordingConfiguration#recording_mode}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration.property.targetIntervalSeconds">TargetIntervalSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#target_interval_seconds IvsRecordingConfiguration#target_interval_seconds}. |
 
 ---
 
@@ -1260,7 +1260,7 @@ RecordingMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#recording_mode IvsRecordingConfiguration#recording_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#recording_mode IvsRecordingConfiguration#recording_mode}.
 
 ---
 
@@ -1272,7 +1272,7 @@ TargetIntervalSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#target_interval_seconds IvsRecordingConfiguration#target_interval_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#target_interval_seconds IvsRecordingConfiguration#target_interval_seconds}.
 
 ---
 
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationTimeouts {
 	Create: *string,
@@ -1293,8 +1293,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#create IvsRecordingConfiguration#create}. |
-| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#delete IvsRecordingConfiguration#delete}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#create IvsRecordingConfiguration#create}. |
+| <code><a href="#@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#delete IvsRecordingConfiguration#delete}. |
 
 ---
 
@@ -1306,7 +1306,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#create IvsRecordingConfiguration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#create IvsRecordingConfiguration#create}.
 
 ---
 
@@ -1318,7 +1318,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ivs_recording_configuration#delete IvsRecordingConfiguration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivs_recording_configuration#delete IvsRecordingConfiguration#delete}.
 
 ---
 
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationDestinationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationDestinationConfigurationOutputReference
 ```
@@ -1613,7 +1613,7 @@ func InternalValue() IvsRecordingConfigurationDestinationConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationDestinationConfigurationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationDestinationConfigurationS3OutputReference
 ```
@@ -1884,7 +1884,7 @@ func InternalValue() IvsRecordingConfigurationDestinationConfigurationS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationThumbnailConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationThumbnailConfigurationOutputReference
 ```
@@ -2191,7 +2191,7 @@ func InternalValue() IvsRecordingConfigurationThumbnailConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationTimeoutsOutputReference
 ```

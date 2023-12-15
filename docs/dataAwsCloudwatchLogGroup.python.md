@@ -4,7 +4,7 @@
 
 ### DataAwsCloudwatchLogGroup <a name="DataAwsCloudwatchLogGroup" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group aws_cloudwatch_log_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group aws_cloudwatch_log_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup(
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}.
 
 ---
 
@@ -491,7 +491,7 @@ The construct id used in the generated config for the DataAwsCloudwatchLogGroup 
 
 The id of the existing DataAwsCloudwatchLogGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -522,6 +522,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.creationTime">creation_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.logGroupClass">log_group_class</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.retentionInDays">retention_in_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -684,6 +685,16 @@ kms_key_id: str
 
 ---
 
+##### `log_group_class`<sup>Required</sup> <a name="log_group_class" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.logGroupClass"></a>
+
+```python
+log_group_class: str
+```
+
+- *Type:* str
+
+---
+
 ##### `retention_in_days`<sup>Required</sup> <a name="retention_in_days" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.retentionInDays"></a>
 
 ```python
@@ -806,9 +817,9 @@ dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}. |
 
 ---
 
@@ -890,7 +901,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}.
 
 ---
 
@@ -902,7 +913,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -917,7 +928,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}.
 
 ---
 

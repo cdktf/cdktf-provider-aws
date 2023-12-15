@@ -4,12 +4,12 @@
 
 ### BackupPlan <a name="BackupPlan" id="@cdktf/provider-aws.backupPlan.BackupPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan aws_backup_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan aws_backup_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlan(scope Construct, id *string, config BackupPlanConfig) BackupPlan
 ```
@@ -425,7 +425,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.backupPlan.BackupPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.BackupPlan_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.BackupPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ backupplan.BackupPlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.BackupPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ backupplan.BackupPlan_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.backupPlan.BackupPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.BackupPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the BackupPlan to import.
 
 The id of the existing BackupPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 &backupplan.BackupPlanAdvancedBackupSetting {
 	BackupOptions: *map[string]*string,
@@ -880,8 +880,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions">BackupOptions</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions">BackupOptions</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}. |
 
 ---
 
@@ -893,7 +893,7 @@ BackupOptions *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}.
 
 ---
 
@@ -905,7 +905,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}.
 
 ---
 
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 &backupplan.BackupPlanConfig {
 	Connection: interface{},
@@ -944,12 +944,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#name BackupPlan#name}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#name BackupPlan#name}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.advancedBackupSetting">AdvancedBackupSetting</a></code> | <code>interface{}</code> | advanced_backup_setting block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#id BackupPlan#id}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#tags BackupPlan#tags}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#id BackupPlan#id}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#tags BackupPlan#tags}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}. |
 
 ---
 
@@ -1031,7 +1031,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#name BackupPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#name BackupPlan#name}.
 
 ---
 
@@ -1045,7 +1045,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#rule BackupPlan#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#rule BackupPlan#rule}
 
 ---
 
@@ -1059,7 +1059,7 @@ AdvancedBackupSetting interface{}
 
 advanced_backup_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
 
 ---
 
@@ -1071,7 +1071,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#id BackupPlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#id BackupPlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#tags BackupPlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#tags BackupPlan#tags}.
 
 ---
 
@@ -1098,7 +1098,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 &backupplan.BackupPlanRule {
 	RuleName: *string,
@@ -1115,7 +1115,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
 	CompletionWindow: *f64,
 	CopyAction: interface{},
 	EnableContinuousBackup: interface{},
-	Lifecycle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.backupPlan.BackupPlanRuleLifecycle,
+	Lifecycle: github.com/cdktf/cdktf-provider-aws-go/aws.backupPlan.BackupPlanRuleLifecycle,
 	RecoveryPointTags: *map[string]*string,
 	Schedule: *string,
 	StartWindow: *f64,
@@ -1126,15 +1126,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.ruleName">RuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName">TargetVaultName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.completionWindow">CompletionWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.ruleName">RuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName">TargetVaultName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.completionWindow">CompletionWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.copyAction">CopyAction</a></code> | <code>interface{}</code> | copy_action block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup">EnableContinuousBackup</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup">EnableContinuousBackup</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.lifecycle">Lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | lifecycle block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags">RecoveryPointTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#schedule BackupPlan#schedule}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.startWindow">StartWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#start_window BackupPlan#start_window}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags">RecoveryPointTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#schedule BackupPlan#schedule}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.startWindow">StartWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#start_window BackupPlan#start_window}. |
 
 ---
 
@@ -1146,7 +1146,7 @@ RuleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}.
 
 ---
 
@@ -1158,7 +1158,7 @@ TargetVaultName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}.
 
 ---
 
@@ -1170,7 +1170,7 @@ CompletionWindow *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}.
 
 ---
 
@@ -1184,7 +1184,7 @@ CopyAction interface{}
 
 copy_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
 
 ---
 
@@ -1196,7 +1196,7 @@ EnableContinuousBackup interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}.
 
 ---
 
@@ -1210,7 +1210,7 @@ Lifecycle BackupPlanRuleLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
 
 ---
 
@@ -1222,7 +1222,7 @@ RecoveryPointTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}.
 
 ---
 
@@ -1234,7 +1234,7 @@ Schedule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#schedule BackupPlan#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#schedule BackupPlan#schedule}.
 
 ---
 
@@ -1246,7 +1246,7 @@ StartWindow *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#start_window BackupPlan#start_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#start_window BackupPlan#start_window}.
 
 ---
 
@@ -1255,11 +1255,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 &backupplan.BackupPlanRuleCopyAction {
 	DestinationVaultArn: *string,
-	Lifecycle: github.com/cdktf/cdktf-provider-aws-go/aws/v18.backupPlan.BackupPlanRuleCopyActionLifecycle,
+	Lifecycle: github.com/cdktf/cdktf-provider-aws-go/aws.backupPlan.BackupPlanRuleCopyActionLifecycle,
 }
 ```
 
@@ -1267,7 +1267,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn">DestinationVaultArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn">DestinationVaultArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.lifecycle">Lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | lifecycle block. |
 
 ---
@@ -1280,7 +1280,7 @@ DestinationVaultArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Lifecycle BackupPlanRuleCopyActionLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 &backupplan.BackupPlanRuleCopyActionLifecycle {
 	ColdStorageAfter: *f64,
@@ -1315,8 +1315,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter">ColdStorageAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter">DeleteAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter">ColdStorageAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter">DeleteAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
 
 ---
 
@@ -1328,7 +1328,7 @@ ColdStorageAfter *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
 
 ---
 
@@ -1340,7 +1340,7 @@ DeleteAfter *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
 
 ---
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 &backupplan.BackupPlanRuleLifecycle {
 	ColdStorageAfter: *f64,
@@ -1361,8 +1361,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter">ColdStorageAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter">DeleteAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter">ColdStorageAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter">DeleteAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
 
 ---
 
@@ -1374,7 +1374,7 @@ ColdStorageAfter *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
 
 ---
 
@@ -1386,7 +1386,7 @@ DeleteAfter *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
 
 ---
 
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanAdvancedBackupSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupPlanAdvancedBackupSettingList
 ```
@@ -1540,7 +1540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanAdvancedBackupSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupPlanAdvancedBackupSettingOutputReference
 ```
@@ -1851,7 +1851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanRuleCopyActionLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupPlanRuleCopyActionLifecycleOutputReference
 ```
@@ -2158,7 +2158,7 @@ func InternalValue() BackupPlanRuleCopyActionLifecycle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanRuleCopyActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupPlanRuleCopyActionList
 ```
@@ -2301,7 +2301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanRuleCopyActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupPlanRuleCopyActionOutputReference
 ```
@@ -2632,7 +2632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanRuleLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupPlanRuleLifecycleOutputReference
 ```
@@ -2939,7 +2939,7 @@ func InternalValue() BackupPlanRuleLifecycle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupPlanRuleList
 ```
@@ -3082,7 +3082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupplan"
 
 backupplan.NewBackupPlanRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupPlanRuleOutputReference
 ```

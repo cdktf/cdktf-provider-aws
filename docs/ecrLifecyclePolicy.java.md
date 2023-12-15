@@ -4,7 +4,7 @@
 
 ### EcrLifecyclePolicy <a name="EcrLifecyclePolicy" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer"></a>
 
@@ -40,9 +40,9 @@ EcrLifecyclePolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -556,7 +556,7 @@ The construct id used in the generated config for the EcrLifecyclePolicy to impo
 
 The id of the existing EcrLifecyclePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,9 +864,9 @@ EcrLifecyclePolicyConfig.builder()
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
 
 ---
 
@@ -948,7 +948,7 @@ public java.lang.String getPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
 
 ---
 
@@ -960,7 +960,7 @@ public java.lang.String getRepository();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
 
 ---
 
@@ -972,7 +972,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

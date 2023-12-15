@@ -1,3 +1,3 @@
 # `aws_networkfirewall_logging_configuration`
 
-Refer to the Terraform Registory for docs: [`aws_networkfirewall_logging_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkfirewall_logging_configuration).
+Refer to the Terraform Registory for docs: [`aws_networkfirewall_logging_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkfirewall_logging_configuration).

@@ -4,12 +4,12 @@
 
 ### DataAwsCloudwatchLogGroup <a name="DataAwsCloudwatchLogGroup" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group aws_cloudwatch_log_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group aws_cloudwatch_log_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchloggroup"
 
 dataawscloudwatchloggroup.NewDataAwsCloudwatchLogGroup(scope Construct, id *string, config DataAwsCloudwatchLogGroupConfig) DataAwsCloudwatchLogGroup
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchloggroup"
 
 dataawscloudwatchloggroup.DataAwsCloudwatchLogGroup_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchloggroup"
 
 dataawscloudwatchloggroup.DataAwsCloudwatchLogGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawscloudwatchloggroup.DataAwsCloudwatchLogGroup_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchloggroup"
 
 dataawscloudwatchloggroup.DataAwsCloudwatchLogGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawscloudwatchloggroup.DataAwsCloudwatchLogGroup_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchloggroup"
 
 dataawscloudwatchloggroup.DataAwsCloudwatchLogGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataAwsCloudwatchLogGroup 
 
 The id of the existing DataAwsCloudwatchLogGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -401,6 +401,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.creationTime">CreationTime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.logGroupClass">LogGroupClass</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -563,6 +564,16 @@ func KmsKeyId() *string
 
 ---
 
+##### `LogGroupClass`<sup>Required</sup> <a name="LogGroupClass" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.logGroupClass"></a>
+
+```go
+func LogGroupClass() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RetentionInDays`<sup>Required</sup> <a name="RetentionInDays" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroup.property.retentionInDays"></a>
 
 ```go
@@ -658,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchloggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatchloggroup"
 
 &dataawscloudwatchloggroup.DataAwsCloudwatchLogGroupConfig {
 	Connection: interface{},
@@ -685,9 +696,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudwatchloggroup
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchLogGroup.DataAwsCloudwatchLogGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}. |
 
 ---
 
@@ -769,7 +780,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#name DataAwsCloudwatchLogGroup#name}.
 
 ---
 
@@ -781,7 +792,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#id DataAwsCloudwatchLogGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -796,7 +807,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_group#tags DataAwsCloudwatchLogGroup#tags}.
 
 ---
 

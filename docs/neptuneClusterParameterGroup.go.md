@@ -4,12 +4,12 @@
 
 ### NeptuneClusterParameterGroup <a name="NeptuneClusterParameterGroup" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NewNeptuneClusterParameterGroup(scope Construct, id *string, config NeptuneClusterParameterGroupConfig) NeptuneClusterParameterGroup
 ```
@@ -433,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NeptuneClusterParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the NeptuneClusterParameterGro
 
 The id of the existing NeptuneClusterParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 &neptuneclusterparametergroup.NeptuneClusterParameterGroupConfig {
 	Connection: interface{},
@@ -941,14 +941,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergr
 | <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#family NeptuneClusterParameterGroup#family}. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#description NeptuneClusterParameterGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#id NeptuneClusterParameterGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#name_prefix NeptuneClusterParameterGroup#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#family NeptuneClusterParameterGroup#family}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#description NeptuneClusterParameterGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#id NeptuneClusterParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#name_prefix NeptuneClusterParameterGroup#name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#tags NeptuneClusterParameterGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#tags_all NeptuneClusterParameterGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#tags NeptuneClusterParameterGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#tags_all NeptuneClusterParameterGroup#tags_all}. |
 
 ---
 
@@ -1030,7 +1030,7 @@ Family *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#family NeptuneClusterParameterGroup#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#family NeptuneClusterParameterGroup#family}.
 
 ---
 
@@ -1042,7 +1042,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#description NeptuneClusterParameterGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#description NeptuneClusterParameterGroup#description}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#id NeptuneClusterParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#id NeptuneClusterParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}.
 
 ---
 
@@ -1081,7 +1081,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#name_prefix NeptuneClusterParameterGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#name_prefix NeptuneClusterParameterGroup#name_prefix}.
 
 ---
 
@@ -1095,7 +1095,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#parameter NeptuneClusterParameterGroup#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#parameter NeptuneClusterParameterGroup#parameter}
 
 ---
 
@@ -1107,7 +1107,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#tags NeptuneClusterParameterGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#tags NeptuneClusterParameterGroup#tags}.
 
 ---
 
@@ -1119,7 +1119,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#tags_all NeptuneClusterParameterGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#tags_all NeptuneClusterParameterGroup#tags_all}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 &neptuneclusterparametergroup.NeptuneClusterParameterGroupParameter {
 	Name: *string,
@@ -1141,9 +1141,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#value NeptuneClusterParameterGroup#value}. |
-| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.property.applyMethod">ApplyMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#apply_method NeptuneClusterParameterGroup#apply_method}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#value NeptuneClusterParameterGroup#value}. |
+| <code><a href="#@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.property.applyMethod">ApplyMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#apply_method NeptuneClusterParameterGroup#apply_method}. |
 
 ---
 
@@ -1155,7 +1155,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#name NeptuneClusterParameterGroup#name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#value NeptuneClusterParameterGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#value NeptuneClusterParameterGroup#value}.
 
 ---
 
@@ -1179,7 +1179,7 @@ ApplyMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_cluster_parameter_group#apply_method NeptuneClusterParameterGroup#apply_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_parameter_group#apply_method NeptuneClusterParameterGroup#apply_method}.
 
 ---
 
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NewNeptuneClusterParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NeptuneClusterParameterGroupParameterList
 ```
@@ -1333,7 +1333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NewNeptuneClusterParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NeptuneClusterParameterGroupParameterOutputReference
 ```

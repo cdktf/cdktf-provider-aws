@@ -4,12 +4,12 @@
 
 ### GluePartition <a name="GluePartition" id="@cdktf/provider-aws.gluePartition.GluePartition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition aws_glue_partition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition aws_glue_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartition(scope Construct, id *string, config GluePartitionConfig) GluePartition
 ```
@@ -412,7 +412,7 @@ func ResetStorageDescriptor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gluePartition.GluePartition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.GluePartition_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gluePartition.GluePartition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.GluePartition_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ gluepartition.GluePartition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gluePartition.GluePartition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.GluePartition_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ gluepartition.GluePartition_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.gluePartition.GluePartition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.GluePartition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GluePartition to import.
 
 The id of the existing GluePartition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 	CatalogId: *string,
 	Id: *string,
 	Parameters: *map[string]*string,
-	StorageDescriptor: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gluePartition.GluePartitionStorageDescriptor,
+	StorageDescriptor: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartition.GluePartitionStorageDescriptor,
 }
 ```
 
@@ -919,12 +919,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#database_name GluePartition#database_name}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.partitionValues">PartitionValues</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#partition_values GluePartition#partition_values}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#table_name GluePartition#table_name}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#catalog_id GluePartition#catalog_id}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#id GluePartition#id}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#parameters GluePartition#parameters}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#database_name GluePartition#database_name}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.partitionValues">PartitionValues</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#partition_values GluePartition#partition_values}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#table_name GluePartition#table_name}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#catalog_id GluePartition#catalog_id}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#id GluePartition#id}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#parameters GluePartition#parameters}. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionConfig.property.storageDescriptor">StorageDescriptor</a></code> | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor">GluePartitionStorageDescriptor</a></code> | storage_descriptor block. |
 
 ---
@@ -1007,7 +1007,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#database_name GluePartition#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#database_name GluePartition#database_name}.
 
 ---
 
@@ -1019,7 +1019,7 @@ PartitionValues *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#partition_values GluePartition#partition_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#partition_values GluePartition#partition_values}.
 
 ---
 
@@ -1031,7 +1031,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#table_name GluePartition#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#table_name GluePartition#table_name}.
 
 ---
 
@@ -1043,7 +1043,7 @@ CatalogId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#catalog_id GluePartition#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#catalog_id GluePartition#catalog_id}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#id GluePartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#id GluePartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
 
 ---
 
@@ -1084,7 +1084,7 @@ StorageDescriptor GluePartitionStorageDescriptor
 
 storage_descriptor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#storage_descriptor GluePartition#storage_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#storage_descriptor GluePartition#storage_descriptor}
 
 ---
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptor {
 	BucketColumns: *[]*string,
@@ -1104,8 +1104,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 	NumberOfBuckets: *f64,
 	OutputFormat: *string,
 	Parameters: *map[string]*string,
-	SerDeInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gluePartition.GluePartitionStorageDescriptorSerDeInfo,
-	SkewedInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gluePartition.GluePartitionStorageDescriptorSkewedInfo,
+	SerDeInfo: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo,
+	SkewedInfo: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo,
 	SortColumns: interface{},
 	StoredAsSubDirectories: interface{},
 }
@@ -1115,18 +1115,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.bucketColumns">BucketColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#bucket_columns GluePartition#bucket_columns}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.bucketColumns">BucketColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#bucket_columns GluePartition#bucket_columns}. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.columns">Columns</a></code> | <code>interface{}</code> | columns block. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.compressed">Compressed</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#compressed GluePartition#compressed}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.inputFormat">InputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#input_format GluePartition#input_format}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#location GluePartition#location}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.numberOfBuckets">NumberOfBuckets</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#number_of_buckets GluePartition#number_of_buckets}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.outputFormat">OutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#output_format GluePartition#output_format}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#parameters GluePartition#parameters}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.compressed">Compressed</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#compressed GluePartition#compressed}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.inputFormat">InputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#input_format GluePartition#input_format}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#location GluePartition#location}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.numberOfBuckets">NumberOfBuckets</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#number_of_buckets GluePartition#number_of_buckets}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.outputFormat">OutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#output_format GluePartition#output_format}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#parameters GluePartition#parameters}. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.serDeInfo">SerDeInfo</a></code> | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo">GluePartitionStorageDescriptorSerDeInfo</a></code> | ser_de_info block. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.skewedInfo">SkewedInfo</a></code> | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo">GluePartitionStorageDescriptorSkewedInfo</a></code> | skewed_info block. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.sortColumns">SortColumns</a></code> | <code>interface{}</code> | sort_columns block. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.storedAsSubDirectories">StoredAsSubDirectories</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#stored_as_sub_directories GluePartition#stored_as_sub_directories}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.property.storedAsSubDirectories">StoredAsSubDirectories</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#stored_as_sub_directories GluePartition#stored_as_sub_directories}. |
 
 ---
 
@@ -1138,7 +1138,7 @@ BucketColumns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#bucket_columns GluePartition#bucket_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#bucket_columns GluePartition#bucket_columns}.
 
 ---
 
@@ -1152,7 +1152,7 @@ Columns interface{}
 
 columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#columns GluePartition#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#columns GluePartition#columns}
 
 ---
 
@@ -1164,7 +1164,7 @@ Compressed interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#compressed GluePartition#compressed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#compressed GluePartition#compressed}.
 
 ---
 
@@ -1176,7 +1176,7 @@ InputFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#input_format GluePartition#input_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#input_format GluePartition#input_format}.
 
 ---
 
@@ -1188,7 +1188,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#location GluePartition#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#location GluePartition#location}.
 
 ---
 
@@ -1200,7 +1200,7 @@ NumberOfBuckets *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#number_of_buckets GluePartition#number_of_buckets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#number_of_buckets GluePartition#number_of_buckets}.
 
 ---
 
@@ -1212,7 +1212,7 @@ OutputFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#output_format GluePartition#output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#output_format GluePartition#output_format}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
 
 ---
 
@@ -1238,7 +1238,7 @@ SerDeInfo GluePartitionStorageDescriptorSerDeInfo
 
 ser_de_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#ser_de_info GluePartition#ser_de_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#ser_de_info GluePartition#ser_de_info}
 
 ---
 
@@ -1252,7 +1252,7 @@ SkewedInfo GluePartitionStorageDescriptorSkewedInfo
 
 skewed_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#skewed_info GluePartition#skewed_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#skewed_info GluePartition#skewed_info}
 
 ---
 
@@ -1266,7 +1266,7 @@ SortColumns interface{}
 
 sort_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#sort_columns GluePartition#sort_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#sort_columns GluePartition#sort_columns}
 
 ---
 
@@ -1278,7 +1278,7 @@ StoredAsSubDirectories interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#stored_as_sub_directories GluePartition#stored_as_sub_directories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#stored_as_sub_directories GluePartition#stored_as_sub_directories}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorColumns {
 	Name: *string,
@@ -1300,9 +1300,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#name GluePartition#name}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#comment GluePartition#comment}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#type GluePartition#type}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#name GluePartition#name}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#comment GluePartition#comment}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#type GluePartition#type}. |
 
 ---
 
@@ -1314,7 +1314,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#name GluePartition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#name GluePartition#name}.
 
 ---
 
@@ -1326,7 +1326,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#comment GluePartition#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#comment GluePartition#comment}.
 
 ---
 
@@ -1338,7 +1338,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#type GluePartition#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#type GluePartition#type}.
 
 ---
 
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSerDeInfo {
 	Name: *string,
@@ -1360,9 +1360,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#name GluePartition#name}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#parameters GluePartition#parameters}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.property.serializationLibrary">SerializationLibrary</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#serialization_library GluePartition#serialization_library}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#name GluePartition#name}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#parameters GluePartition#parameters}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.property.serializationLibrary">SerializationLibrary</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#serialization_library GluePartition#serialization_library}. |
 
 ---
 
@@ -1374,7 +1374,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#name GluePartition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#name GluePartition#name}.
 
 ---
 
@@ -1386,7 +1386,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
 
 ---
 
@@ -1398,7 +1398,7 @@ SerializationLibrary *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#serialization_library GluePartition#serialization_library}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#serialization_library GluePartition#serialization_library}.
 
 ---
 
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSkewedInfo {
 	SkewedColumnNames: *[]*string,
@@ -1420,9 +1420,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.property.skewedColumnNames">SkewedColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#skewed_column_names GluePartition#skewed_column_names}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.property.skewedColumnValueLocationMaps">SkewedColumnValueLocationMaps</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#skewed_column_value_location_maps GluePartition#skewed_column_value_location_maps}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.property.skewedColumnValues">SkewedColumnValues</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#skewed_column_values GluePartition#skewed_column_values}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.property.skewedColumnNames">SkewedColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#skewed_column_names GluePartition#skewed_column_names}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.property.skewedColumnValueLocationMaps">SkewedColumnValueLocationMaps</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#skewed_column_value_location_maps GluePartition#skewed_column_value_location_maps}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.property.skewedColumnValues">SkewedColumnValues</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#skewed_column_values GluePartition#skewed_column_values}. |
 
 ---
 
@@ -1434,7 +1434,7 @@ SkewedColumnNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#skewed_column_names GluePartition#skewed_column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#skewed_column_names GluePartition#skewed_column_names}.
 
 ---
 
@@ -1446,7 +1446,7 @@ SkewedColumnValueLocationMaps *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#skewed_column_value_location_maps GluePartition#skewed_column_value_location_maps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#skewed_column_value_location_maps GluePartition#skewed_column_value_location_maps}.
 
 ---
 
@@ -1458,7 +1458,7 @@ SkewedColumnValues *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#skewed_column_values GluePartition#skewed_column_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#skewed_column_values GluePartition#skewed_column_values}.
 
 ---
 
@@ -1467,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSortColumns {
 	Column: *string,
@@ -1479,8 +1479,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns.property.column">Column</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#column GluePartition#column}. |
-| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns.property.sortOrder">SortOrder</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#sort_order GluePartition#sort_order}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns.property.column">Column</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#column GluePartition#column}. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns.property.sortOrder">SortOrder</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#sort_order GluePartition#sort_order}. |
 
 ---
 
@@ -1492,7 +1492,7 @@ Column *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#column GluePartition#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#column GluePartition#column}.
 
 ---
 
@@ -1504,7 +1504,7 @@ SortOrder *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/glue_partition#sort_order GluePartition#sort_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_partition#sort_order GluePartition#sort_order}.
 
 ---
 
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GluePartitionStorageDescriptorColumnsList
 ```
@@ -1658,7 +1658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GluePartitionStorageDescriptorColumnsOutputReference
 ```
@@ -2005,7 +2005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorOutputReference
 ```
@@ -2654,7 +2654,7 @@ func InternalValue() GluePartitionStorageDescriptor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSerDeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorSerDeInfoOutputReference
 ```
@@ -2990,7 +2990,7 @@ func InternalValue() GluePartitionStorageDescriptorSerDeInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSkewedInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorSkewedInfoOutputReference
 ```
@@ -3326,7 +3326,7 @@ func InternalValue() GluePartitionStorageDescriptorSkewedInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSortColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GluePartitionStorageDescriptorSortColumnsList
 ```
@@ -3469,7 +3469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSortColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GluePartitionStorageDescriptorSortColumnsOutputReference
 ```

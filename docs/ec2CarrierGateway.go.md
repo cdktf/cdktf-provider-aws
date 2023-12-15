@@ -4,12 +4,12 @@
 
 ### Ec2CarrierGateway <a name="Ec2CarrierGateway" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway aws_ec2_carrier_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway aws_ec2_carrier_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.NewEc2CarrierGateway(scope Construct, id *string, config Ec2CarrierGatewayConfig) Ec2CarrierGateway
 ```
@@ -392,7 +392,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.Ec2CarrierGateway_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ec2carriergateway.Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.Ec2CarrierGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ec2carriergateway.Ec2CarrierGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.Ec2CarrierGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Ec2CarrierGateway to impor
 
 The id of the existing Ec2CarrierGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 &ec2carriergateway.Ec2CarrierGatewayConfig {
 	Connection: interface{},
@@ -819,10 +819,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2carriergateway"
 | <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#vpc_id Ec2CarrierGateway#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#id Ec2CarrierGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#tags Ec2CarrierGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#tags_all Ec2CarrierGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#vpc_id Ec2CarrierGateway#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#id Ec2CarrierGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#tags Ec2CarrierGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#tags_all Ec2CarrierGateway#tags_all}. |
 
 ---
 
@@ -904,7 +904,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#vpc_id Ec2CarrierGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#vpc_id Ec2CarrierGateway#vpc_id}.
 
 ---
 
@@ -916,7 +916,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#id Ec2CarrierGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#id Ec2CarrierGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#tags Ec2CarrierGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#tags Ec2CarrierGateway#tags}.
 
 ---
 
@@ -943,7 +943,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_carrier_gateway#tags_all Ec2CarrierGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_carrier_gateway#tags_all Ec2CarrierGateway#tags_all}.
 
 ---
 

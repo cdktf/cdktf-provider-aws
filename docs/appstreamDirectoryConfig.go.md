@@ -4,12 +4,12 @@
 
 ### AppstreamDirectoryConfig <a name="AppstreamDirectoryConfig" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config aws_appstream_directory_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config aws_appstream_directory_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.NewAppstreamDirectoryConfig(scope Construct, id *string, config AppstreamDirectoryConfigConfig) AppstreamDirectoryConfig
 ```
@@ -391,7 +391,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -480,7 +480,7 @@ The construct id used in the generated config for the AppstreamDirectoryConfig t
 
 The id of the existing AppstreamDirectoryConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 &appstreamdirectoryconfig.AppstreamDirectoryConfigConfig {
 	Connection: interface{},
@@ -791,7 +791,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
 	Provisioners: *[]interface{},
 	DirectoryName: *string,
 	OrganizationalUnitDistinguishedNames: *[]*string,
-	ServiceAccountCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials,
+	ServiceAccountCredentials: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials,
 	Id: *string,
 }
 ```
@@ -807,10 +807,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.directoryName">DirectoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.organizationalUnitDistinguishedNames">OrganizationalUnitDistinguishedNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}. |
+| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.directoryName">DirectoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.organizationalUnitDistinguishedNames">OrganizationalUnitDistinguishedNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}. |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.serviceAccountCredentials">ServiceAccountCredentials</a></code> | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials">AppstreamDirectoryConfigServiceAccountCredentials</a></code> | service_account_credentials block. |
-| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#id AppstreamDirectoryConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#id AppstreamDirectoryConfig#id}. |
 
 ---
 
@@ -892,7 +892,7 @@ DirectoryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}.
 
 ---
 
@@ -904,7 +904,7 @@ OrganizationalUnitDistinguishedNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}.
 
 ---
 
@@ -918,7 +918,7 @@ ServiceAccountCredentials AppstreamDirectoryConfigServiceAccountCredentials
 
 service_account_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
 
 ---
 
@@ -930,7 +930,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#id AppstreamDirectoryConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#id AppstreamDirectoryConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -942,7 +942,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 &appstreamdirectoryconfig.AppstreamDirectoryConfigServiceAccountCredentials {
 	AccountName: *string,
@@ -954,8 +954,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#account_name AppstreamDirectoryConfig#account_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials.property.accountPassword">AccountPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#account_password AppstreamDirectoryConfig#account_password}. |
+| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#account_name AppstreamDirectoryConfig#account_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials.property.accountPassword">AccountPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#account_password AppstreamDirectoryConfig#account_password}. |
 
 ---
 
@@ -967,7 +967,7 @@ AccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#account_name AppstreamDirectoryConfig#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#account_name AppstreamDirectoryConfig#account_name}.
 
 ---
 
@@ -979,7 +979,7 @@ AccountPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appstream_directory_config#account_password AppstreamDirectoryConfig#account_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config#account_password AppstreamDirectoryConfig#account_password}.
 
 ---
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.NewAppstreamDirectoryConfigServiceAccountCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamDirectoryConfigServiceAccountCredentialsOutputReference
 ```

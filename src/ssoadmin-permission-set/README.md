@@ -1,3 +1,3 @@
 # `aws_ssoadmin_permission_set`
 
-Refer to the Terraform Registory for docs: [`aws_ssoadmin_permission_set`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ssoadmin_permission_set).
+Refer to the Terraform Registory for docs: [`aws_ssoadmin_permission_set`](https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ssoadmin_permission_set).

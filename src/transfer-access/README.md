@@ -1,3 +1,3 @@
 # `aws_transfer_access`
 
-Refer to the Terraform Registory for docs: [`aws_transfer_access`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/transfer_access).
+Refer to the Terraform Registory for docs: [`aws_transfer_access`](https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/transfer_access).

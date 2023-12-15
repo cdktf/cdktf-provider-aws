@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmanagerConnectPeerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#connect_attachment_id NetworkmanagerConnectPeer#connect_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#connect_attachment_id NetworkmanagerConnectPeer#connect_attachment_id}
   */
   readonly connectAttachmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#core_network_address NetworkmanagerConnectPeer#core_network_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#core_network_address NetworkmanagerConnectPeer#core_network_address}
   */
   readonly coreNetworkAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#id NetworkmanagerConnectPeer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#id NetworkmanagerConnectPeer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#inside_cidr_blocks NetworkmanagerConnectPeer#inside_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#inside_cidr_blocks NetworkmanagerConnectPeer#inside_cidr_blocks}
   */
   readonly insideCidrBlocks?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#peer_address NetworkmanagerConnectPeer#peer_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#peer_address NetworkmanagerConnectPeer#peer_address}
   */
   readonly peerAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#subnet_arn NetworkmanagerConnectPeer#subnet_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#subnet_arn NetworkmanagerConnectPeer#subnet_arn}
   */
   readonly subnetArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#tags NetworkmanagerConnectPeer#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#tags NetworkmanagerConnectPeer#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#tags_all NetworkmanagerConnectPeer#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#tags_all NetworkmanagerConnectPeer#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * bgp_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#bgp_options NetworkmanagerConnectPeer#bgp_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#bgp_options NetworkmanagerConnectPeer#bgp_options}
   */
   readonly bgpOptions?: NetworkmanagerConnectPeerBgpOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#timeouts NetworkmanagerConnectPeer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#timeouts NetworkmanagerConnectPeer#timeouts}
   */
   readonly timeouts?: NetworkmanagerConnectPeerTimeouts;
 }
@@ -226,7 +221,7 @@ export class NetworkmanagerConnectPeerConfigurationList extends cdktf.ComplexLis
 }
 export interface NetworkmanagerConnectPeerBgpOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#peer_asn NetworkmanagerConnectPeer#peer_asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#peer_asn NetworkmanagerConnectPeer#peer_asn}
   */
   readonly peerAsn?: number;
 }
@@ -291,11 +286,11 @@ export class NetworkmanagerConnectPeerBgpOptionsOutputReference extends cdktf.Co
 }
 export interface NetworkmanagerConnectPeerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#create NetworkmanagerConnectPeer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#create NetworkmanagerConnectPeer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#delete NetworkmanagerConnectPeer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#delete NetworkmanagerConnectPeer#delete}
   */
   readonly delete?: string;
 }
@@ -393,7 +388,7 @@ export class NetworkmanagerConnectPeerTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer}
 */
 export class NetworkmanagerConnectPeer extends cdktf.TerraformResource {
 
@@ -409,7 +404,7 @@ export class NetworkmanagerConnectPeer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkmanagerConnectPeer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerConnectPeer to import
-  * @param importFromId The id of the existing NetworkmanagerConnectPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkmanagerConnectPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerConnectPeer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -421,7 +416,7 @@ export class NetworkmanagerConnectPeer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -432,7 +427,7 @@ export class NetworkmanagerConnectPeer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_connect_peer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

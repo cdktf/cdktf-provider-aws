@@ -4,12 +4,12 @@
 
 ### LexBotAlias <a name="LexBotAlias" id="@cdktf/provider-aws.lexBotAlias.LexBotAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias aws_lex_bot_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias aws_lex_bot_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBotAlias.LexBotAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.NewLexBotAlias(scope Construct, id *string, config LexBotAliasConfig) LexBotAlias
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lexBotAlias.LexBotAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.LexBotAlias_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lexBotAlias.LexBotAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.LexBotAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ lexbotalias.LexBotAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lexBotAlias.LexBotAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.LexBotAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ lexbotalias.LexBotAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lexBotAlias.LexBotAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.LexBotAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the LexBotAlias to import.
 
 The id of the existing LexBotAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 &lexbotalias.LexBotAliasConfig {
 	Connection: interface{},
@@ -925,10 +925,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
 	BotName: *string,
 	BotVersion: *string,
 	Name: *string,
-	ConversationLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lexBotAlias.LexBotAliasConversationLogs,
+	ConversationLogs: github.com/cdktf/cdktf-provider-aws-go/aws.lexBotAlias.LexBotAliasConversationLogs,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lexBotAlias.LexBotAliasTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lexBotAlias.LexBotAliasTimeouts,
 }
 ```
 
@@ -943,12 +943,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
 | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.botName">BotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#bot_name LexBotAlias#bot_name}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#bot_version LexBotAlias#bot_version}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#name LexBotAlias#name}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.botName">BotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#bot_name LexBotAlias#bot_name}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#bot_version LexBotAlias#bot_version}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#name LexBotAlias#name}. |
 | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.conversationLogs">ConversationLogs</a></code> | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogs">LexBotAliasConversationLogs</a></code> | conversation_logs block. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#description LexBotAlias#description}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#id LexBotAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#description LexBotAlias#description}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#id LexBotAlias#id}. |
 | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts">LexBotAliasTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1031,7 +1031,7 @@ BotName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#bot_name LexBotAlias#bot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#bot_name LexBotAlias#bot_name}.
 
 ---
 
@@ -1043,7 +1043,7 @@ BotVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#bot_version LexBotAlias#bot_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#bot_version LexBotAlias#bot_version}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#name LexBotAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#name LexBotAlias#name}.
 
 ---
 
@@ -1069,7 +1069,7 @@ ConversationLogs LexBotAliasConversationLogs
 
 conversation_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#conversation_logs LexBotAlias#conversation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#conversation_logs LexBotAlias#conversation_logs}
 
 ---
 
@@ -1081,7 +1081,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#description LexBotAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#description LexBotAlias#description}.
 
 ---
 
@@ -1093,7 +1093,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#id LexBotAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#id LexBotAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1110,7 +1110,7 @@ Timeouts LexBotAliasTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#timeouts LexBotAlias#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#timeouts LexBotAlias#timeouts}
 
 ---
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 &lexbotalias.LexBotAliasConversationLogs {
 	IamRoleArn: *string,
@@ -1131,7 +1131,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogs.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#iam_role_arn LexBotAlias#iam_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogs.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#iam_role_arn LexBotAlias#iam_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogs.property.logSettings">LogSettings</a></code> | <code>interface{}</code> | log_settings block. |
 
 ---
@@ -1144,7 +1144,7 @@ IamRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#iam_role_arn LexBotAlias#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#iam_role_arn LexBotAlias#iam_role_arn}.
 
 ---
 
@@ -1158,7 +1158,7 @@ LogSettings interface{}
 
 log_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#log_settings LexBotAlias#log_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#log_settings LexBotAlias#log_settings}
 
 ---
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 &lexbotalias.LexBotAliasConversationLogsLogSettings {
 	Destination: *string,
@@ -1181,10 +1181,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#destination LexBotAlias#destination}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.logType">LogType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#log_type LexBotAlias#log_type}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#resource_arn LexBotAlias#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#kms_key_arn LexBotAlias#kms_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#destination LexBotAlias#destination}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.logType">LogType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#log_type LexBotAlias#log_type}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#resource_arn LexBotAlias#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#kms_key_arn LexBotAlias#kms_key_arn}. |
 
 ---
 
@@ -1196,7 +1196,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#destination LexBotAlias#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#destination LexBotAlias#destination}.
 
 ---
 
@@ -1208,7 +1208,7 @@ LogType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#log_type LexBotAlias#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#log_type LexBotAlias#log_type}.
 
 ---
 
@@ -1220,7 +1220,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#resource_arn LexBotAlias#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#resource_arn LexBotAlias#resource_arn}.
 
 ---
 
@@ -1232,7 +1232,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#kms_key_arn LexBotAlias#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#kms_key_arn LexBotAlias#kms_key_arn}.
 
 ---
 
@@ -1241,7 +1241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 &lexbotalias.LexBotAliasTimeouts {
 	Create: *string,
@@ -1254,9 +1254,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#create LexBotAlias#create}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#delete LexBotAlias#delete}. |
-| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#update LexBotAlias#update}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#create LexBotAlias#create}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#delete LexBotAlias#delete}. |
+| <code><a href="#@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#update LexBotAlias#update}. |
 
 ---
 
@@ -1268,7 +1268,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#create LexBotAlias#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#create LexBotAlias#create}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#delete LexBotAlias#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#delete LexBotAlias#delete}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lex_bot_alias#update LexBotAlias#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lex_bot_alias#update LexBotAlias#update}.
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.NewLexBotAliasConversationLogsLogSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexBotAliasConversationLogsLogSettingsList
 ```
@@ -1446,7 +1446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.NewLexBotAliasConversationLogsLogSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexBotAliasConversationLogsLogSettingsOutputReference
 ```
@@ -1819,7 +1819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.NewLexBotAliasConversationLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexBotAliasConversationLogsOutputReference
 ```
@@ -2132,7 +2132,7 @@ func InternalValue() LexBotAliasConversationLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lexbotalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbotalias"
 
 lexbotalias.NewLexBotAliasTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexBotAliasTimeoutsOutputReference
 ```

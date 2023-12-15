@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface DatasyncAgentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#activation_key DatasyncAgent#activation_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#activation_key DatasyncAgent#activation_key}
   */
   readonly activationKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#id DatasyncAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#id DatasyncAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#ip_address DatasyncAgent#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#ip_address DatasyncAgent#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#name DatasyncAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#name DatasyncAgent#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#private_link_endpoint DatasyncAgent#private_link_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#private_link_endpoint DatasyncAgent#private_link_endpoint}
   */
   readonly privateLinkEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#security_group_arns DatasyncAgent#security_group_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#security_group_arns DatasyncAgent#security_group_arns}
   */
   readonly securityGroupArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#subnet_arns DatasyncAgent#subnet_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#subnet_arns DatasyncAgent#subnet_arns}
   */
   readonly subnetArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#tags DatasyncAgent#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#tags DatasyncAgent#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#tags_all DatasyncAgent#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#tags_all DatasyncAgent#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#vpc_endpoint_id DatasyncAgent#vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#vpc_endpoint_id DatasyncAgent#vpc_endpoint_id}
   */
   readonly vpcEndpointId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#timeouts DatasyncAgent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#timeouts DatasyncAgent#timeouts}
   */
   readonly timeouts?: DatasyncAgentTimeouts;
 }
 export interface DatasyncAgentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#create DatasyncAgent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#create DatasyncAgent#create}
   */
   readonly create?: string;
 }
@@ -139,7 +134,7 @@ export class DatasyncAgentTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent aws_datasync_agent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent aws_datasync_agent}
 */
 export class DatasyncAgent extends cdktf.TerraformResource {
 
@@ -155,7 +150,7 @@ export class DatasyncAgent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatasyncAgent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncAgent to import
-  * @param importFromId The id of the existing DatasyncAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatasyncAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -167,7 +162,7 @@ export class DatasyncAgent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_agent aws_datasync_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_agent aws_datasync_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -178,7 +173,7 @@ export class DatasyncAgent extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datasync_agent',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

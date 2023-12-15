@@ -4,12 +4,12 @@
 
 ### DataAwsSignerSigningProfile <a name="DataAwsSignerSigningProfile" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.NewDataAwsSignerSigningProfile(scope Construct, id *string, config DataAwsSignerSigningProfileConfig) DataAwsSignerSigningProfile
 ```
@@ -281,7 +281,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.DataAwsSignerSigningProfile_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.DataAwsSignerSigningProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataawssignersigningprofile.DataAwsSignerSigningProfile_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.DataAwsSignerSigningProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataawssignersigningprofile.DataAwsSignerSigningProfile_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.DataAwsSignerSigningProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataAwsSignerSigningProfil
 
 The id of the existing DataAwsSignerSigningProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 &dataawssignersigningprofile.DataAwsSignerSigningProfileConfig {
 	Connection: interface{},
@@ -729,9 +729,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofi
 | <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}. |
 
 ---
 
@@ -813,7 +813,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}.
 
 ---
 
@@ -825,7 +825,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -840,7 +840,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}.
 
 ---
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 &dataawssignersigningprofile.DataAwsSignerSigningProfileRevocationRecord {
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 &dataawssignersigningprofile.DataAwsSignerSigningProfileSignatureValidityPeriod {
 
@@ -877,7 +877,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.NewDataAwsSignerSigningProfileRevocationRecordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSignerSigningProfileRevocationRecordList
 ```
@@ -1009,7 +1009,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.NewDataAwsSignerSigningProfileRevocationRecordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSignerSigningProfileRevocationRecordOutputReference
 ```
@@ -1309,7 +1309,7 @@ func InternalValue() DataAwsSignerSigningProfileRevocationRecord
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.NewDataAwsSignerSigningProfileSignatureValidityPeriodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSignerSigningProfileSignatureValidityPeriodList
 ```
@@ -1441,7 +1441,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningprofile"
 
 dataawssignersigningprofile.NewDataAwsSignerSigningProfileSignatureValidityPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface LbTrustStoreRevocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#id LbTrustStoreRevocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#id LbTrustStoreRevocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#revocations_s3_bucket LbTrustStoreRevocation#revocations_s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#revocations_s3_bucket LbTrustStoreRevocation#revocations_s3_bucket}
   */
   readonly revocationsS3Bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#revocations_s3_key LbTrustStoreRevocation#revocations_s3_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#revocations_s3_key LbTrustStoreRevocation#revocations_s3_key}
   */
   readonly revocationsS3Key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#revocations_s3_object_version LbTrustStoreRevocation#revocations_s3_object_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#revocations_s3_object_version LbTrustStoreRevocation#revocations_s3_object_version}
   */
   readonly revocationsS3ObjectVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#trust_store_arn LbTrustStoreRevocation#trust_store_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#trust_store_arn LbTrustStoreRevocation#trust_store_arn}
   */
   readonly trustStoreArn: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#timeouts LbTrustStoreRevocation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#timeouts LbTrustStoreRevocation#timeouts}
   */
   readonly timeouts?: LbTrustStoreRevocationTimeouts;
 }
 export interface LbTrustStoreRevocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}
   */
   readonly create?: string;
 }
@@ -119,7 +114,7 @@ export class LbTrustStoreRevocationTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation aws_lb_trust_store_revocation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation aws_lb_trust_store_revocation}
 */
 export class LbTrustStoreRevocation extends cdktf.TerraformResource {
 
@@ -135,7 +130,7 @@ export class LbTrustStoreRevocation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LbTrustStoreRevocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbTrustStoreRevocation to import
-  * @param importFromId The id of the existing LbTrustStoreRevocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LbTrustStoreRevocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbTrustStoreRevocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -147,7 +142,7 @@ export class LbTrustStoreRevocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb_trust_store_revocation aws_lb_trust_store_revocation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_trust_store_revocation aws_lb_trust_store_revocation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -158,7 +153,7 @@ export class LbTrustStoreRevocation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb_trust_store_revocation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
