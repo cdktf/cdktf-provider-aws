@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerAutoScalingConfigurationVersion.ApprunnerAutoScalingConfigurationVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerautoscalingconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerautoscalingconfigurationversion"
 
 apprunnerautoscalingconfigurationversion.NewApprunnerAutoScalingConfigurationVersion(scope Construct, id *string, config ApprunnerAutoScalingConfigurationVersionConfig) ApprunnerAutoScalingConfigurationVersion
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apprunnerAutoScalingConfigurationVersion.ApprunnerAutoScalingConfigurationVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerautoscalingconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerautoscalingconfigurationversion"
 
 apprunnerautoscalingconfigurationversion.ApprunnerAutoScalingConfigurationVersion_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apprunnerAutoScalingConfigurationVersion.ApprunnerAutoScalingConfigurationVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerautoscalingconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerautoscalingconfigurationversion"
 
 apprunnerautoscalingconfigurationversion.ApprunnerAutoScalingConfigurationVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ apprunnerautoscalingconfigurationversion.ApprunnerAutoScalingConfigurationVersio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apprunnerAutoScalingConfigurationVersion.ApprunnerAutoScalingConfigurationVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerautoscalingconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerautoscalingconfigurationversion"
 
 apprunnerautoscalingconfigurationversion.ApprunnerAutoScalingConfigurationVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apprunnerautoscalingconfigurationversion.ApprunnerAutoScalingConfigurationVersio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apprunnerAutoScalingConfigurationVersion.ApprunnerAutoScalingConfigurationVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerautoscalingconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerautoscalingconfigurationversion"
 
 apprunnerautoscalingconfigurationversion.ApprunnerAutoScalingConfigurationVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerAutoScalingConfigurationVersion.ApprunnerAutoScalingConfigurationVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerautoscalingconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerautoscalingconfigurationversion"
 
 &apprunnerautoscalingconfigurationversion.ApprunnerAutoScalingConfigurationVersionConfig {
 	Connection: interface{},
