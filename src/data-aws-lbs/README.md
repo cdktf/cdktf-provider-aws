@@ -1,3 +1,3 @@
 # `data_aws_lbs`
 
-Refer to the Terraform Registory for docs: [`data_aws_lbs`](https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lbs).
+Refer to the Terraform Registory for docs: [`data_aws_lbs`](https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lbs).

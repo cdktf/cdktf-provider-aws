@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +13,76 @@ import * as cdktf from 'cdktf';
 
 export interface BatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#container_properties BatchJobDefinition#container_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#container_properties BatchJobDefinition#container_properties}
   */
   readonly containerProperties?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#id BatchJobDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#id BatchJobDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#node_properties BatchJobDefinition#node_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#node_properties BatchJobDefinition#node_properties}
   */
   readonly nodeProperties?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#parameters BatchJobDefinition#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#parameters BatchJobDefinition#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#platform_capabilities BatchJobDefinition#platform_capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#platform_capabilities BatchJobDefinition#platform_capabilities}
   */
   readonly platformCapabilities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#propagate_tags BatchJobDefinition#propagate_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#propagate_tags BatchJobDefinition#propagate_tags}
   */
   readonly propagateTags?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#tags BatchJobDefinition#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#tags BatchJobDefinition#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#tags_all BatchJobDefinition#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#tags_all BatchJobDefinition#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#type BatchJobDefinition#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#type BatchJobDefinition#type}
   */
   readonly type: string;
   /**
   * retry_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#retry_strategy BatchJobDefinition#retry_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#retry_strategy BatchJobDefinition#retry_strategy}
   */
   readonly retryStrategy?: BatchJobDefinitionRetryStrategy;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#timeout BatchJobDefinition#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#timeout BatchJobDefinition#timeout}
   */
   readonly timeout?: BatchJobDefinitionTimeout;
 }
 export interface BatchJobDefinitionRetryStrategyEvaluateOnExit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#action BatchJobDefinition#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#action BatchJobDefinition#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#on_exit_code BatchJobDefinition#on_exit_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#on_exit_code BatchJobDefinition#on_exit_code}
   */
   readonly onExitCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#on_reason BatchJobDefinition#on_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#on_reason BatchJobDefinition#on_reason}
   */
   readonly onReason?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#on_status_reason BatchJobDefinition#on_status_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#on_status_reason BatchJobDefinition#on_status_reason}
   */
   readonly onStatusReason?: string;
 }
@@ -245,13 +245,13 @@ export class BatchJobDefinitionRetryStrategyEvaluateOnExitList extends cdktf.Com
 }
 export interface BatchJobDefinitionRetryStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#attempts BatchJobDefinition#attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#attempts BatchJobDefinition#attempts}
   */
   readonly attempts?: number;
   /**
   * evaluate_on_exit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#evaluate_on_exit BatchJobDefinition#evaluate_on_exit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#evaluate_on_exit BatchJobDefinition#evaluate_on_exit}
   */
   readonly evaluateOnExit?: BatchJobDefinitionRetryStrategyEvaluateOnExit[] | cdktf.IResolvable;
 }
@@ -339,7 +339,7 @@ export class BatchJobDefinitionRetryStrategyOutputReference extends cdktf.Comple
 }
 export interface BatchJobDefinitionTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#attempt_duration_seconds BatchJobDefinition#attempt_duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#attempt_duration_seconds BatchJobDefinition#attempt_duration_seconds}
   */
   readonly attemptDurationSeconds?: number;
 }
@@ -404,7 +404,7 @@ export class BatchJobDefinitionTimeoutOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition aws_batch_job_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition aws_batch_job_definition}
 */
 export class BatchJobDefinition extends cdktf.TerraformResource {
 
@@ -420,7 +420,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BatchJobDefinition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchJobDefinition to import
-  * @param importFromId The id of the existing BatchJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BatchJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchJobDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -432,7 +432,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -443,7 +443,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
       terraformResourceType: 'aws_batch_job_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -516,8 +516,11 @@ Object.defineProperty(exports, 'evidentlyProject', { get: function () { return r
 Object.defineProperty(exports, 'evidentlySegment', { get: function () { return require('./evidently-segment'); } });
 Object.defineProperty(exports, 'finspaceKxCluster', { get: function () { return require('./finspace-kx-cluster'); } });
 Object.defineProperty(exports, 'finspaceKxDatabase', { get: function () { return require('./finspace-kx-database'); } });
+Object.defineProperty(exports, 'finspaceKxDataview', { get: function () { return require('./finspace-kx-dataview'); } });
 Object.defineProperty(exports, 'finspaceKxEnvironment', { get: function () { return require('./finspace-kx-environment'); } });
+Object.defineProperty(exports, 'finspaceKxScalingGroup', { get: function () { return require('./finspace-kx-scaling-group'); } });
 Object.defineProperty(exports, 'finspaceKxUser', { get: function () { return require('./finspace-kx-user'); } });
+Object.defineProperty(exports, 'finspaceKxVolume', { get: function () { return require('./finspace-kx-volume'); } });
 Object.defineProperty(exports, 'fisExperimentTemplate', { get: function () { return require('./fis-experiment-template'); } });
 Object.defineProperty(exports, 'flowLog', { get: function () { return require('./flow-log'); } });
 Object.defineProperty(exports, 'fmsAdminAccount', { get: function () { return require('./fms-admin-account'); } });
@@ -1181,6 +1184,7 @@ Object.defineProperty(exports, 'ssoadminManagedPolicyAttachment', { get: functio
 Object.defineProperty(exports, 'ssoadminPermissionSet', { get: function () { return require('./ssoadmin-permission-set'); } });
 Object.defineProperty(exports, 'ssoadminPermissionSetInlinePolicy', { get: function () { return require('./ssoadmin-permission-set-inline-policy'); } });
 Object.defineProperty(exports, 'ssoadminPermissionsBoundaryAttachment', { get: function () { return require('./ssoadmin-permissions-boundary-attachment'); } });
+Object.defineProperty(exports, 'ssoadminTrustedTokenIssuer', { get: function () { return require('./ssoadmin-trusted-token-issuer'); } });
 Object.defineProperty(exports, 'storagegatewayCache', { get: function () { return require('./storagegateway-cache'); } });
 Object.defineProperty(exports, 'storagegatewayCachedIscsiVolume', { get: function () { return require('./storagegateway-cached-iscsi-volume'); } });
 Object.defineProperty(exports, 'storagegatewayFileSystemAssociation', { get: function () { return require('./storagegateway-file-system-association'); } });
@@ -1692,6 +1696,7 @@ Object.defineProperty(exports, 'dataAwsOutpostsOutposts', { get: function () { r
 Object.defineProperty(exports, 'dataAwsOutpostsSite', { get: function () { return require('./data-aws-outposts-site'); } });
 Object.defineProperty(exports, 'dataAwsOutpostsSites', { get: function () { return require('./data-aws-outposts-sites'); } });
 Object.defineProperty(exports, 'dataAwsPartition', { get: function () { return require('./data-aws-partition'); } });
+Object.defineProperty(exports, 'dataAwsPollyVoices', { get: function () { return require('./data-aws-polly-voices'); } });
 Object.defineProperty(exports, 'dataAwsPrefixList', { get: function () { return require('./data-aws-prefix-list'); } });
 Object.defineProperty(exports, 'dataAwsPricingProduct', { get: function () { return require('./data-aws-pricing-product'); } });
 Object.defineProperty(exports, 'dataAwsPrometheusWorkspace', { get: function () { return require('./data-aws-prometheus-workspace'); } });
@@ -1793,9 +1798,11 @@ Object.defineProperty(exports, 'dataAwsSsmcontactsPlan', { get: function () { re
 Object.defineProperty(exports, 'dataAwsSsmincidentsReplicationSet', { get: function () { return require('./data-aws-ssmincidents-replication-set'); } });
 Object.defineProperty(exports, 'dataAwsSsmincidentsResponsePlan', { get: function () { return require('./data-aws-ssmincidents-response-plan'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminApplication', { get: function () { return require('./data-aws-ssoadmin-application'); } });
+Object.defineProperty(exports, 'dataAwsSsoadminApplicationAssignments', { get: function () { return require('./data-aws-ssoadmin-application-assignments'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminApplicationProviders', { get: function () { return require('./data-aws-ssoadmin-application-providers'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminInstances', { get: function () { return require('./data-aws-ssoadmin-instances'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminPermissionSet', { get: function () { return require('./data-aws-ssoadmin-permission-set'); } });
+Object.defineProperty(exports, 'dataAwsSsoadminPrincipalApplicationAssignments', { get: function () { return require('./data-aws-ssoadmin-principal-application-assignments'); } });
 Object.defineProperty(exports, 'dataAwsStoragegatewayLocalDisk', { get: function () { return require('./data-aws-storagegateway-local-disk'); } });
 Object.defineProperty(exports, 'dataAwsSubnet', { get: function () { return require('./data-aws-subnet'); } });
 Object.defineProperty(exports, 'dataAwsSubnets', { get: function () { return require('./data-aws-subnets'); } });

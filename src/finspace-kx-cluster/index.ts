@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,132 +13,144 @@ import * as cdktf from 'cdktf';
 
 export interface FinspaceKxClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#availability_zone_id FinspaceKxCluster#availability_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#availability_zone_id FinspaceKxCluster#availability_zone_id}
   */
   readonly availabilityZoneId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#az_mode FinspaceKxCluster#az_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#az_mode FinspaceKxCluster#az_mode}
   */
   readonly azMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#command_line_arguments FinspaceKxCluster#command_line_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#command_line_arguments FinspaceKxCluster#command_line_arguments}
   */
   readonly commandLineArguments?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#description FinspaceKxCluster#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#description FinspaceKxCluster#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#environment_id FinspaceKxCluster#environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#environment_id FinspaceKxCluster#environment_id}
   */
   readonly environmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#execution_role FinspaceKxCluster#execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#execution_role FinspaceKxCluster#execution_role}
   */
   readonly executionRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#id FinspaceKxCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#id FinspaceKxCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#initialization_script FinspaceKxCluster#initialization_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#initialization_script FinspaceKxCluster#initialization_script}
   */
   readonly initializationScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#name FinspaceKxCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#name FinspaceKxCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#release_label FinspaceKxCluster#release_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#release_label FinspaceKxCluster#release_label}
   */
   readonly releaseLabel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#tags FinspaceKxCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#tags FinspaceKxCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#tags_all FinspaceKxCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#tags_all FinspaceKxCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}
   */
   readonly type: string;
   /**
   * auto_scaling_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#auto_scaling_configuration FinspaceKxCluster#auto_scaling_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#auto_scaling_configuration FinspaceKxCluster#auto_scaling_configuration}
   */
   readonly autoScalingConfiguration?: FinspaceKxClusterAutoScalingConfiguration;
   /**
   * cache_storage_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#cache_storage_configurations FinspaceKxCluster#cache_storage_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#cache_storage_configurations FinspaceKxCluster#cache_storage_configurations}
   */
   readonly cacheStorageConfigurations?: FinspaceKxClusterCacheStorageConfigurations[] | cdktf.IResolvable;
   /**
   * capacity_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#capacity_configuration FinspaceKxCluster#capacity_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#capacity_configuration FinspaceKxCluster#capacity_configuration}
   */
-  readonly capacityConfiguration: FinspaceKxClusterCapacityConfiguration;
+  readonly capacityConfiguration?: FinspaceKxClusterCapacityConfiguration;
   /**
   * code block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#code FinspaceKxCluster#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#code FinspaceKxCluster#code}
   */
   readonly code?: FinspaceKxClusterCode;
   /**
   * database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#database FinspaceKxCluster#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#database FinspaceKxCluster#database}
   */
   readonly database?: FinspaceKxClusterDatabase[] | cdktf.IResolvable;
   /**
   * savedown_storage_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#savedown_storage_configuration FinspaceKxCluster#savedown_storage_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#savedown_storage_configuration FinspaceKxCluster#savedown_storage_configuration}
   */
   readonly savedownStorageConfiguration?: FinspaceKxClusterSavedownStorageConfiguration;
   /**
+  * scaling_group_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#scaling_group_configuration FinspaceKxCluster#scaling_group_configuration}
+  */
+  readonly scalingGroupConfiguration?: FinspaceKxClusterScalingGroupConfiguration;
+  /**
+  * tickerplant_log_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#tickerplant_log_configuration FinspaceKxCluster#tickerplant_log_configuration}
+  */
+  readonly tickerplantLogConfiguration?: FinspaceKxClusterTickerplantLogConfiguration[] | cdktf.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#timeouts FinspaceKxCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#timeouts FinspaceKxCluster#timeouts}
   */
   readonly timeouts?: FinspaceKxClusterTimeouts;
   /**
   * vpc_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#vpc_configuration FinspaceKxCluster#vpc_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#vpc_configuration FinspaceKxCluster#vpc_configuration}
   */
   readonly vpcConfiguration: FinspaceKxClusterVpcConfiguration;
 }
 export interface FinspaceKxClusterAutoScalingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#auto_scaling_metric FinspaceKxCluster#auto_scaling_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#auto_scaling_metric FinspaceKxCluster#auto_scaling_metric}
   */
   readonly autoScalingMetric: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#max_node_count FinspaceKxCluster#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#max_node_count FinspaceKxCluster#max_node_count}
   */
   readonly maxNodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#metric_target FinspaceKxCluster#metric_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#metric_target FinspaceKxCluster#metric_target}
   */
   readonly metricTarget: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#min_node_count FinspaceKxCluster#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#min_node_count FinspaceKxCluster#min_node_count}
   */
   readonly minNodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#scale_in_cooldown_seconds FinspaceKxCluster#scale_in_cooldown_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#scale_in_cooldown_seconds FinspaceKxCluster#scale_in_cooldown_seconds}
   */
   readonly scaleInCooldownSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#scale_out_cooldown_seconds FinspaceKxCluster#scale_out_cooldown_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#scale_out_cooldown_seconds FinspaceKxCluster#scale_out_cooldown_seconds}
   */
   readonly scaleOutCooldownSeconds: number;
 }
@@ -300,11 +312,11 @@ export class FinspaceKxClusterAutoScalingConfigurationOutputReference extends cd
 }
 export interface FinspaceKxClusterCacheStorageConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}
   */
   readonly type: string;
 }
@@ -418,11 +430,11 @@ export class FinspaceKxClusterCacheStorageConfigurationsList extends cdktf.Compl
 }
 export interface FinspaceKxClusterCapacityConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}
   */
   readonly nodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}
   */
   readonly nodeType: string;
 }
@@ -504,15 +516,15 @@ export class FinspaceKxClusterCapacityConfigurationOutputReference extends cdktf
 }
 export interface FinspaceKxClusterCode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#s3_bucket FinspaceKxCluster#s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#s3_bucket FinspaceKxCluster#s3_bucket}
   */
   readonly s3Bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#s3_key FinspaceKxCluster#s3_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#s3_key FinspaceKxCluster#s3_key}
   */
   readonly s3Key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#s3_object_version FinspaceKxCluster#s3_object_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#s3_object_version FinspaceKxCluster#s3_object_version}
   */
   readonly s3ObjectVersion?: string;
 }
@@ -617,11 +629,11 @@ export class FinspaceKxClusterCodeOutputReference extends cdktf.ComplexObject {
 }
 export interface FinspaceKxClusterDatabaseCacheConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#cache_type FinspaceKxCluster#cache_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#cache_type FinspaceKxCluster#cache_type}
   */
   readonly cacheType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#db_paths FinspaceKxCluster#db_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#db_paths FinspaceKxCluster#db_paths}
   */
   readonly dbPaths?: string[];
 }
@@ -738,17 +750,21 @@ export class FinspaceKxClusterDatabaseCacheConfigurationsList extends cdktf.Comp
 }
 export interface FinspaceKxClusterDatabase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}
   */
   readonly changesetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}
   */
   readonly databaseName: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#dataview_name FinspaceKxCluster#dataview_name}
+  */
+  readonly dataviewName?: string;
+  /**
   * cache_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#cache_configurations FinspaceKxCluster#cache_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#cache_configurations FinspaceKxCluster#cache_configurations}
   */
   readonly cacheConfigurations?: FinspaceKxClusterDatabaseCacheConfigurations[] | cdktf.IResolvable;
 }
@@ -761,6 +777,7 @@ export function finspaceKxClusterDatabaseToTerraform(struct?: FinspaceKxClusterD
   return {
     changeset_id: cdktf.stringToTerraform(struct!.changesetId),
     database_name: cdktf.stringToTerraform(struct!.databaseName),
+    dataview_name: cdktf.stringToTerraform(struct!.dataviewName),
     cache_configurations: cdktf.listMapper(finspaceKxClusterDatabaseCacheConfigurationsToTerraform, true)(struct!.cacheConfigurations),
   }
 }
@@ -793,6 +810,10 @@ export class FinspaceKxClusterDatabaseOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.databaseName = this._databaseName;
     }
+    if (this._dataviewName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataviewName = this._dataviewName;
+    }
     if (this._cacheConfigurations?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cacheConfigurations = this._cacheConfigurations?.internalValue;
@@ -806,6 +827,7 @@ export class FinspaceKxClusterDatabaseOutputReference extends cdktf.ComplexObjec
       this.resolvableValue = undefined;
       this._changesetId = undefined;
       this._databaseName = undefined;
+      this._dataviewName = undefined;
       this._cacheConfigurations.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -817,6 +839,7 @@ export class FinspaceKxClusterDatabaseOutputReference extends cdktf.ComplexObjec
       this.resolvableValue = undefined;
       this._changesetId = value.changesetId;
       this._databaseName = value.databaseName;
+      this._dataviewName = value.dataviewName;
       this._cacheConfigurations.internalValue = value.cacheConfigurations;
     }
   }
@@ -848,6 +871,22 @@ export class FinspaceKxClusterDatabaseOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // dataview_name - computed: false, optional: true, required: false
+  private _dataviewName?: string; 
+  public get dataviewName() {
+    return this.getStringAttribute('dataview_name');
+  }
+  public set dataviewName(value: string) {
+    this._dataviewName = value;
+  }
+  public resetDataviewName() {
+    this._dataviewName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataviewNameInput() {
+    return this._dataviewName;
   }
 
   // cache_configurations - computed: false, optional: true, required: false
@@ -888,13 +927,17 @@ export class FinspaceKxClusterDatabaseList extends cdktf.ComplexList {
 }
 export interface FinspaceKxClusterSavedownStorageConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}
   */
-  readonly size: number;
+  readonly size?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}
   */
-  readonly type: string;
+  readonly type?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#volume_name FinspaceKxCluster#volume_name}
+  */
+  readonly volumeName?: string;
 }
 
 export function finspaceKxClusterSavedownStorageConfigurationToTerraform(struct?: FinspaceKxClusterSavedownStorageConfigurationOutputReference | FinspaceKxClusterSavedownStorageConfiguration): any {
@@ -905,6 +948,7 @@ export function finspaceKxClusterSavedownStorageConfigurationToTerraform(struct?
   return {
     size: cdktf.numberToTerraform(struct!.size),
     type: cdktf.stringToTerraform(struct!.type),
+    volume_name: cdktf.stringToTerraform(struct!.volumeName),
   }
 }
 
@@ -930,6 +974,10 @@ export class FinspaceKxClusterSavedownStorageConfigurationOutputReference extend
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
+    if (this._volumeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeName = this._volumeName;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -938,15 +986,17 @@ export class FinspaceKxClusterSavedownStorageConfigurationOutputReference extend
       this.isEmptyObject = false;
       this._size = undefined;
       this._type = undefined;
+      this._volumeName = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._size = value.size;
       this._type = value.type;
+      this._volumeName = value.volumeName;
     }
   }
 
-  // size - computed: false, optional: false, required: true
+  // size - computed: false, optional: true, required: false
   private _size?: number; 
   public get size() {
     return this.getNumberAttribute('size');
@@ -954,12 +1004,15 @@ export class FinspaceKxClusterSavedownStorageConfigurationOutputReference extend
   public set size(value: number) {
     this._size = value;
   }
+  public resetSize() {
+    this._size = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
     return this._size;
   }
 
-  // type - computed: false, optional: false, required: true
+  // type - computed: false, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -967,22 +1020,299 @@ export class FinspaceKxClusterSavedownStorageConfigurationOutputReference extend
   public set type(value: string) {
     this._type = value;
   }
+  public resetType() {
+    this._type = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
     return this._type;
   }
+
+  // volume_name - computed: false, optional: true, required: false
+  private _volumeName?: string; 
+  public get volumeName() {
+    return this.getStringAttribute('volume_name');
+  }
+  public set volumeName(value: string) {
+    this._volumeName = value;
+  }
+  public resetVolumeName() {
+    this._volumeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeNameInput() {
+    return this._volumeName;
+  }
+}
+export interface FinspaceKxClusterScalingGroupConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#cpu FinspaceKxCluster#cpu}
+  */
+  readonly cpu?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#memory_limit FinspaceKxCluster#memory_limit}
+  */
+  readonly memoryLimit?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#memory_reservation FinspaceKxCluster#memory_reservation}
+  */
+  readonly memoryReservation: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}
+  */
+  readonly nodeCount: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#scaling_group_name FinspaceKxCluster#scaling_group_name}
+  */
+  readonly scalingGroupName: string;
+}
+
+export function finspaceKxClusterScalingGroupConfigurationToTerraform(struct?: FinspaceKxClusterScalingGroupConfigurationOutputReference | FinspaceKxClusterScalingGroupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cpu: cdktf.numberToTerraform(struct!.cpu),
+    memory_limit: cdktf.numberToTerraform(struct!.memoryLimit),
+    memory_reservation: cdktf.numberToTerraform(struct!.memoryReservation),
+    node_count: cdktf.numberToTerraform(struct!.nodeCount),
+    scaling_group_name: cdktf.stringToTerraform(struct!.scalingGroupName),
+  }
+}
+
+export class FinspaceKxClusterScalingGroupConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FinspaceKxClusterScalingGroupConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cpu !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpu = this._cpu;
+    }
+    if (this._memoryLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryLimit = this._memoryLimit;
+    }
+    if (this._memoryReservation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryReservation = this._memoryReservation;
+    }
+    if (this._nodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeCount = this._nodeCount;
+    }
+    if (this._scalingGroupName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scalingGroupName = this._scalingGroupName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FinspaceKxClusterScalingGroupConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cpu = undefined;
+      this._memoryLimit = undefined;
+      this._memoryReservation = undefined;
+      this._nodeCount = undefined;
+      this._scalingGroupName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cpu = value.cpu;
+      this._memoryLimit = value.memoryLimit;
+      this._memoryReservation = value.memoryReservation;
+      this._nodeCount = value.nodeCount;
+      this._scalingGroupName = value.scalingGroupName;
+    }
+  }
+
+  // cpu - computed: false, optional: true, required: false
+  private _cpu?: number; 
+  public get cpu() {
+    return this.getNumberAttribute('cpu');
+  }
+  public set cpu(value: number) {
+    this._cpu = value;
+  }
+  public resetCpu() {
+    this._cpu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuInput() {
+    return this._cpu;
+  }
+
+  // memory_limit - computed: false, optional: true, required: false
+  private _memoryLimit?: number; 
+  public get memoryLimit() {
+    return this.getNumberAttribute('memory_limit');
+  }
+  public set memoryLimit(value: number) {
+    this._memoryLimit = value;
+  }
+  public resetMemoryLimit() {
+    this._memoryLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryLimitInput() {
+    return this._memoryLimit;
+  }
+
+  // memory_reservation - computed: false, optional: false, required: true
+  private _memoryReservation?: number; 
+  public get memoryReservation() {
+    return this.getNumberAttribute('memory_reservation');
+  }
+  public set memoryReservation(value: number) {
+    this._memoryReservation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryReservationInput() {
+    return this._memoryReservation;
+  }
+
+  // node_count - computed: false, optional: false, required: true
+  private _nodeCount?: number; 
+  public get nodeCount() {
+    return this.getNumberAttribute('node_count');
+  }
+  public set nodeCount(value: number) {
+    this._nodeCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeCountInput() {
+    return this._nodeCount;
+  }
+
+  // scaling_group_name - computed: false, optional: false, required: true
+  private _scalingGroupName?: string; 
+  public get scalingGroupName() {
+    return this.getStringAttribute('scaling_group_name');
+  }
+  public set scalingGroupName(value: string) {
+    this._scalingGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingGroupNameInput() {
+    return this._scalingGroupName;
+  }
+}
+export interface FinspaceKxClusterTickerplantLogConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#tickerplant_log_volumes FinspaceKxCluster#tickerplant_log_volumes}
+  */
+  readonly tickerplantLogVolumes: string[];
+}
+
+export function finspaceKxClusterTickerplantLogConfigurationToTerraform(struct?: FinspaceKxClusterTickerplantLogConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    tickerplant_log_volumes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tickerplantLogVolumes),
+  }
+}
+
+export class FinspaceKxClusterTickerplantLogConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FinspaceKxClusterTickerplantLogConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tickerplantLogVolumes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tickerplantLogVolumes = this._tickerplantLogVolumes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FinspaceKxClusterTickerplantLogConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tickerplantLogVolumes = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tickerplantLogVolumes = value.tickerplantLogVolumes;
+    }
+  }
+
+  // tickerplant_log_volumes - computed: false, optional: false, required: true
+  private _tickerplantLogVolumes?: string[]; 
+  public get tickerplantLogVolumes() {
+    return cdktf.Fn.tolist(this.getListAttribute('tickerplant_log_volumes'));
+  }
+  public set tickerplantLogVolumes(value: string[]) {
+    this._tickerplantLogVolumes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tickerplantLogVolumesInput() {
+    return this._tickerplantLogVolumes;
+  }
+}
+
+export class FinspaceKxClusterTickerplantLogConfigurationList extends cdktf.ComplexList {
+  public internalValue? : FinspaceKxClusterTickerplantLogConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FinspaceKxClusterTickerplantLogConfigurationOutputReference {
+    return new FinspaceKxClusterTickerplantLogConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface FinspaceKxClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#create FinspaceKxCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#create FinspaceKxCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#delete FinspaceKxCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#delete FinspaceKxCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#update FinspaceKxCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#update FinspaceKxCluster#update}
   */
   readonly update?: string;
 }
@@ -1103,19 +1433,19 @@ export class FinspaceKxClusterTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 export interface FinspaceKxClusterVpcConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#ip_address_type FinspaceKxCluster#ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#ip_address_type FinspaceKxCluster#ip_address_type}
   */
   readonly ipAddressType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#security_group_ids FinspaceKxCluster#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#security_group_ids FinspaceKxCluster#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#subnet_ids FinspaceKxCluster#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#subnet_ids FinspaceKxCluster#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#vpc_id FinspaceKxCluster#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#vpc_id FinspaceKxCluster#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -1237,7 +1567,7 @@ export class FinspaceKxClusterVpcConfigurationOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster}
 */
 export class FinspaceKxCluster extends cdktf.TerraformResource {
 
@@ -1253,7 +1583,7 @@ export class FinspaceKxCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FinspaceKxCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FinspaceKxCluster to import
-  * @param importFromId The id of the existing FinspaceKxCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FinspaceKxCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FinspaceKxCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1265,7 +1595,7 @@ export class FinspaceKxCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1276,7 +1606,7 @@ export class FinspaceKxCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_finspace_kx_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1306,6 +1636,8 @@ export class FinspaceKxCluster extends cdktf.TerraformResource {
     this._code.internalValue = config.code;
     this._database.internalValue = config.database;
     this._savedownStorageConfiguration.internalValue = config.savedownStorageConfiguration;
+    this._scalingGroupConfiguration.internalValue = config.scalingGroupConfiguration;
+    this._tickerplantLogConfiguration.internalValue = config.tickerplantLogConfiguration;
     this._timeouts.internalValue = config.timeouts;
     this._vpcConfiguration.internalValue = config.vpcConfiguration;
   }
@@ -1564,13 +1896,16 @@ export class FinspaceKxCluster extends cdktf.TerraformResource {
     return this._cacheStorageConfigurations.internalValue;
   }
 
-  // capacity_configuration - computed: false, optional: false, required: true
+  // capacity_configuration - computed: false, optional: true, required: false
   private _capacityConfiguration = new FinspaceKxClusterCapacityConfigurationOutputReference(this, "capacity_configuration");
   public get capacityConfiguration() {
     return this._capacityConfiguration;
   }
   public putCapacityConfiguration(value: FinspaceKxClusterCapacityConfiguration) {
     this._capacityConfiguration.internalValue = value;
+  }
+  public resetCapacityConfiguration() {
+    this._capacityConfiguration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get capacityConfigurationInput() {
@@ -1623,6 +1958,38 @@ export class FinspaceKxCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get savedownStorageConfigurationInput() {
     return this._savedownStorageConfiguration.internalValue;
+  }
+
+  // scaling_group_configuration - computed: false, optional: true, required: false
+  private _scalingGroupConfiguration = new FinspaceKxClusterScalingGroupConfigurationOutputReference(this, "scaling_group_configuration");
+  public get scalingGroupConfiguration() {
+    return this._scalingGroupConfiguration;
+  }
+  public putScalingGroupConfiguration(value: FinspaceKxClusterScalingGroupConfiguration) {
+    this._scalingGroupConfiguration.internalValue = value;
+  }
+  public resetScalingGroupConfiguration() {
+    this._scalingGroupConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingGroupConfigurationInput() {
+    return this._scalingGroupConfiguration.internalValue;
+  }
+
+  // tickerplant_log_configuration - computed: false, optional: true, required: false
+  private _tickerplantLogConfiguration = new FinspaceKxClusterTickerplantLogConfigurationList(this, "tickerplant_log_configuration", false);
+  public get tickerplantLogConfiguration() {
+    return this._tickerplantLogConfiguration;
+  }
+  public putTickerplantLogConfiguration(value: FinspaceKxClusterTickerplantLogConfiguration[] | cdktf.IResolvable) {
+    this._tickerplantLogConfiguration.internalValue = value;
+  }
+  public resetTickerplantLogConfiguration() {
+    this._tickerplantLogConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tickerplantLogConfigurationInput() {
+    return this._tickerplantLogConfiguration.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1679,6 +2046,8 @@ export class FinspaceKxCluster extends cdktf.TerraformResource {
       code: finspaceKxClusterCodeToTerraform(this._code.internalValue),
       database: cdktf.listMapper(finspaceKxClusterDatabaseToTerraform, true)(this._database.internalValue),
       savedown_storage_configuration: finspaceKxClusterSavedownStorageConfigurationToTerraform(this._savedownStorageConfiguration.internalValue),
+      scaling_group_configuration: finspaceKxClusterScalingGroupConfigurationToTerraform(this._scalingGroupConfiguration.internalValue),
+      tickerplant_log_configuration: cdktf.listMapper(finspaceKxClusterTickerplantLogConfigurationToTerraform, true)(this._tickerplantLogConfiguration.internalValue),
       timeouts: finspaceKxClusterTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_configuration: finspaceKxClusterVpcConfigurationToTerraform(this._vpcConfiguration.internalValue),
     };

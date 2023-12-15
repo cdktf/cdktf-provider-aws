@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchserverlessCollectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#standby_replicas OpensearchserverlessCollection#standby_replicas}
+  */
+  readonly standbyReplicas?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
   */
   readonly type?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
   */
   readonly timeouts?: OpensearchserverlessCollectionTimeouts;
 }
@@ -39,13 +43,13 @@ export interface OpensearchserverlessCollectionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
   */
   readonly delete?: string;
 }
@@ -143,7 +147,7 @@ export class OpensearchserverlessCollectionTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}
 */
 export class OpensearchserverlessCollection extends cdktf.TerraformResource {
 
@@ -159,7 +163,7 @@ export class OpensearchserverlessCollection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpensearchserverlessCollection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchserverlessCollection to import
-  * @param importFromId The id of the existing OpensearchserverlessCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchserverlessCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchserverlessCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -171,7 +175,7 @@ export class OpensearchserverlessCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -182,7 +186,7 @@ export class OpensearchserverlessCollection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearchserverless_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -195,6 +199,7 @@ export class OpensearchserverlessCollection extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._name = config.name;
+    this._standbyReplicas = config.standbyReplicas;
     this._tags = config.tags;
     this._type = config.type;
     this._timeouts.internalValue = config.timeouts;
@@ -256,6 +261,22 @@ export class OpensearchserverlessCollection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // standby_replicas - computed: true, optional: true, required: false
+  private _standbyReplicas?: string; 
+  public get standbyReplicas() {
+    return this.getStringAttribute('standby_replicas');
+  }
+  public set standbyReplicas(value: string) {
+    this._standbyReplicas = value;
+  }
+  public resetStandbyReplicas() {
+    this._standbyReplicas = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get standbyReplicasInput() {
+    return this._standbyReplicas;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -320,6 +341,7 @@ export class OpensearchserverlessCollection extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
+      standby_replicas: cdktf.stringToTerraform(this._standbyReplicas),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       timeouts: opensearchserverlessCollectionTimeoutsToTerraform(this._timeouts.internalValue),

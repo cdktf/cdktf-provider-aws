@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLbConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb#arn DataAwsLb#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb#arn DataAwsLb#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb#id DataAwsLb#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb#id DataAwsLb#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb#name DataAwsLb#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb#name DataAwsLb#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb#tags DataAwsLb#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb#tags DataAwsLb#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb#timeouts DataAwsLb#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb#timeouts DataAwsLb#timeouts}
   */
   readonly timeouts?: DataAwsLbTimeouts;
 }
@@ -110,6 +110,80 @@ export class DataAwsLbAccessLogsList extends cdktf.ComplexList {
   */
   public get(index: number): DataAwsLbAccessLogsOutputReference {
     return new DataAwsLbAccessLogsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLbConnectionLogs {
+}
+
+export function dataAwsLbConnectionLogsToTerraform(struct?: DataAwsLbConnectionLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLbConnectionLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbConnectionLogs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbConnectionLogs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // bucket - computed: true, optional: false, required: false
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // prefix - computed: true, optional: false, required: false
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+}
+
+export class DataAwsLbConnectionLogsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbConnectionLogsOutputReference {
+    return new DataAwsLbConnectionLogsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsLbSubnetMapping {
@@ -198,7 +272,7 @@ export class DataAwsLbSubnetMappingList extends cdktf.ComplexList {
 }
 export interface DataAwsLbTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb#read DataAwsLb#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb#read DataAwsLb#read}
   */
   readonly read?: string;
 }
@@ -273,7 +347,7 @@ export class DataAwsLbTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb aws_lb}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb aws_lb}
 */
 export class DataAwsLb extends cdktf.TerraformDataSource {
 
@@ -289,7 +363,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLb resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLb to import
-  * @param importFromId The id of the existing DataAwsLb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLb to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -301,7 +375,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb aws_lb} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb aws_lb} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -312,7 +386,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -361,6 +435,12 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
     return this.getStringAttribute('arn_suffix');
   }
 
+  // connection_logs - computed: true, optional: false, required: false
+  private _connectionLogs = new DataAwsLbConnectionLogsList(this, "connection_logs", false);
+  public get connectionLogs() {
+    return this._connectionLogs;
+  }
+
   // customer_owned_ipv4_pool - computed: true, optional: false, required: false
   public get customerOwnedIpv4Pool() {
     return this.getStringAttribute('customer_owned_ipv4_pool');
@@ -374,6 +454,11 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
   // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
+  }
+
+  // dns_record_client_routing_policy - computed: true, optional: false, required: false
+  public get dnsRecordClientRoutingPolicy() {
+    return this.getStringAttribute('dns_record_client_routing_policy');
   }
 
   // drop_invalid_header_fields - computed: true, optional: false, required: false

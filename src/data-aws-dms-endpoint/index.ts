@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDmsEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}
   */
   readonly endpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -447,6 +447,145 @@ export class DataAwsDmsEndpointMongodbSettingsList extends cdktf.ComplexList {
   */
   public get(index: number): DataAwsDmsEndpointMongodbSettingsOutputReference {
     return new DataAwsDmsEndpointMongodbSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDmsEndpointPostgresSettings {
+}
+
+export function dataAwsDmsEndpointPostgresSettingsToTerraform(struct?: DataAwsDmsEndpointPostgresSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDmsEndpointPostgresSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDmsEndpointPostgresSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // after_connect_script - computed: true, optional: false, required: false
+  public get afterConnectScript() {
+    return this.getStringAttribute('after_connect_script');
+  }
+
+  // babelfish_database_name - computed: true, optional: false, required: false
+  public get babelfishDatabaseName() {
+    return this.getStringAttribute('babelfish_database_name');
+  }
+
+  // capture_ddls - computed: true, optional: false, required: false
+  public get captureDdls() {
+    return this.getBooleanAttribute('capture_ddls');
+  }
+
+  // database_mode - computed: true, optional: false, required: false
+  public get databaseMode() {
+    return this.getStringAttribute('database_mode');
+  }
+
+  // ddl_artifacts_schema - computed: true, optional: false, required: false
+  public get ddlArtifactsSchema() {
+    return this.getStringAttribute('ddl_artifacts_schema');
+  }
+
+  // execute_timeout - computed: true, optional: false, required: false
+  public get executeTimeout() {
+    return this.getNumberAttribute('execute_timeout');
+  }
+
+  // fail_tasks_on_lob_truncation - computed: true, optional: false, required: false
+  public get failTasksOnLobTruncation() {
+    return this.getBooleanAttribute('fail_tasks_on_lob_truncation');
+  }
+
+  // heartbeat_enable - computed: true, optional: false, required: false
+  public get heartbeatEnable() {
+    return this.getBooleanAttribute('heartbeat_enable');
+  }
+
+  // heartbeat_frequency - computed: true, optional: false, required: false
+  public get heartbeatFrequency() {
+    return this.getNumberAttribute('heartbeat_frequency');
+  }
+
+  // heartbeat_schema - computed: true, optional: false, required: false
+  public get heartbeatSchema() {
+    return this.getStringAttribute('heartbeat_schema');
+  }
+
+  // map_boolean_as_boolean - computed: true, optional: false, required: false
+  public get mapBooleanAsBoolean() {
+    return this.getBooleanAttribute('map_boolean_as_boolean');
+  }
+
+  // map_jsonb_as_clob - computed: true, optional: false, required: false
+  public get mapJsonbAsClob() {
+    return this.getBooleanAttribute('map_jsonb_as_clob');
+  }
+
+  // map_long_varchar_as - computed: true, optional: false, required: false
+  public get mapLongVarcharAs() {
+    return this.getStringAttribute('map_long_varchar_as');
+  }
+
+  // max_file_size - computed: true, optional: false, required: false
+  public get maxFileSize() {
+    return this.getNumberAttribute('max_file_size');
+  }
+
+  // plugin_name - computed: true, optional: false, required: false
+  public get pluginName() {
+    return this.getStringAttribute('plugin_name');
+  }
+
+  // slot_name - computed: true, optional: false, required: false
+  public get slotName() {
+    return this.getStringAttribute('slot_name');
+  }
+}
+
+export class DataAwsDmsEndpointPostgresSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDmsEndpointPostgresSettingsOutputReference {
+    return new DataAwsDmsEndpointPostgresSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsDmsEndpointRedisSettings {
@@ -883,7 +1022,7 @@ export class DataAwsDmsEndpointS3SettingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint aws_dms_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint aws_dms_endpoint}
 */
 export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
 
@@ -899,7 +1038,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsDmsEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDmsEndpoint to import
-  * @param importFromId The id of the existing DataAwsDmsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDmsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDmsEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -911,7 +1050,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -922,7 +1061,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1038,6 +1177,12 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
+  }
+
+  // postgres_settings - computed: true, optional: false, required: false
+  private _postgresSettings = new DataAwsDmsEndpointPostgresSettingsList(this, "postgres_settings", false);
+  public get postgresSettings() {
+    return this._postgresSettings;
   }
 
   // redis_settings - computed: true, optional: false, required: false
