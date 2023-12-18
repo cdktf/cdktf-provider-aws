@@ -50,6 +50,31 @@ jobs:
         with:
           name: build-artifact
           path: dist
+  deprecate:
+    name: Deprecate the package in package managers if needed
+    needs:
+      - release
+      - release_npm
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      - name: Install
+        run: yarn install
+      - name: Check deprecation status
+        id: check_status
+        run: |-
+          IS_DEPRECATED=$(npm pkg get cdktf.isDeprecated | tr -d '"')
+          echo "is_deprecated=$IS_DEPRECATED"
+          echo "is_deprecated=$IS_DEPRECATED" >> $GITHUB_OUTPUT
+      - name: Deprecate the package on NPM
+        if: steps.check_status.outputs.is_deprecated
+        env:
+          NPM_REGISTRY: registry.npmjs.org
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm deprecate @cdktf/provider-aws "See https://cdk.tf/imports for details on how to continue to use the aws provider in your CDK for Terraform (CDKTF) projects by generating the bindings locally."
   release_github:
     name: Publish to GitHub Releases
     needs: release

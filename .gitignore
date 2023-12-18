@@ -49,8 +49,6 @@ tsconfig.json
 package-lock.json
 !/cdktf.json
 !/README.md
-!/scripts/check-for-upgrades.js
-!/.github/workflows/provider-upgrade.yml
 !/LICENSE
 !/.github/ISSUE_TEMPLATE/config.yml
 !/.github/workflows/auto-approve.yml
@@ -58,6 +56,8 @@ package-lock.json
 !/.github/workflows/auto-close-community-prs.yml
 !/.github/workflows/automerge.yml
 !/.github/workflows/lock.yml
+!/scripts/check-for-upgrades.js
+!/.github/workflows/provider-upgrade.yml
 !/.github/workflows/alert-open-prs.yml
 !/.github/workflows/force-release.yml
 !/.github/CODEOWNERS

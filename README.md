@@ -35,7 +35,6 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 </dependency>
 ```
 
-
 ### Go
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-aws-go`](https://github.com/cdktf/cdktf-provider-aws-go) package.
