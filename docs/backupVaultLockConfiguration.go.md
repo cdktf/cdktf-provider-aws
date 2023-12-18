@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupvaultlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupvaultlockconfiguration"
 
 backupvaultlockconfiguration.NewBackupVaultLockConfiguration(scope Construct, id *string, config BackupVaultLockConfigurationConfig) BackupVaultLockConfiguration
 ```
@@ -399,7 +399,7 @@ func ResetMinRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupvaultlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupvaultlockconfiguration"
 
 backupvaultlockconfiguration.BackupVaultLockConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupvaultlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupvaultlockconfiguration"
 
 backupvaultlockconfiguration.BackupVaultLockConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ backupvaultlockconfiguration.BackupVaultLockConfiguration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupvaultlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupvaultlockconfiguration"
 
 backupvaultlockconfiguration.BackupVaultLockConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ backupvaultlockconfiguration.BackupVaultLockConfiguration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupvaultlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupvaultlockconfiguration"
 
 backupvaultlockconfiguration.BackupVaultLockConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupvaultlockconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupvaultlockconfiguration"
 
 &backupvaultlockconfiguration.BackupVaultLockConfigurationConfig {
 	Connection: interface{},
