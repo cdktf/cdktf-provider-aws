@@ -102,7 +102,6 @@ jobs:
           sed -i -e '/API.typescript.md/,/You can also visit a hosted version/!b' -e 'd' .repo/dist/go/*/README.md
           sed -i 's|Find auto-generated docs for this provider here:|Find auto-generated docs for this provider [here](https://github.com/cdktf/cdktf-provider-aws/blob/main/docs/API.go.md).|' .repo/dist/go/*/README.md
           sed -i -e '/### Provider Version/,/The provider version can be adjusted/!b' -e 'd' .repo/dist/go/*/README.md
-        continue-on-error: true
       - name: Copy the README file to the parent directory
         run: cp .repo/dist/go/*/README.md .repo/dist/go/README.md
       - name: Collect go Artifact
