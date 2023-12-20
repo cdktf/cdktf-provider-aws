@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.NewDataAwsSsoadminPrincipalApplicationAssignments(scope Construct, id *string, config DataAwsSsoadminPrincipalApplicationAssignmentsConfig) DataAwsSsoadminPrincipalApplicationAssignments
 ```
@@ -287,7 +287,7 @@ func ResetApplicationAssignments()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicati
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicati
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 &dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignments {
 
@@ -666,7 +666,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalappli
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 &dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.NewDataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList
 ```
@@ -971,7 +971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.NewDataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsOutputReference
 ```
