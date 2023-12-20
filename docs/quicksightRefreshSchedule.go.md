@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.NewQuicksightRefreshSchedule(scope Construct, id *string, config QuicksightRefreshScheduleConfig) QuicksightRefreshSchedule
 ```
@@ -398,7 +398,7 @@ func ResetSchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.QuicksightRefreshSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.QuicksightRefreshSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ quicksightrefreshschedule.QuicksightRefreshSchedule_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.QuicksightRefreshSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ quicksightrefreshschedule.QuicksightRefreshSchedule_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.QuicksightRefreshSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 &quicksightrefreshschedule.QuicksightRefreshScheduleConfig {
 	Connection: interface{},
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 &quicksightrefreshschedule.QuicksightRefreshScheduleSchedule {
 	RefreshType: *string,
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleScheduleFrequency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 &quicksightrefreshschedule.QuicksightRefreshScheduleScheduleScheduleFrequency {
 	Interval: *string,
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 &quicksightrefreshschedule.QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay {
 	DayOfMonth: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.NewQuicksightRefreshScheduleScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightRefreshScheduleScheduleList
 ```
@@ -1286,7 +1286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.NewQuicksightRefreshScheduleScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightRefreshScheduleScheduleOutputReference
 ```
@@ -1646,7 +1646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleScheduleFrequencyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.NewQuicksightRefreshScheduleScheduleScheduleFrequencyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightRefreshScheduleScheduleScheduleFrequencyList
 ```
@@ -1789,7 +1789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.NewQuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.NewQuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList
 ```
@@ -2321,7 +2321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightrefreshschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule"
 
 quicksightrefreshschedule.NewQuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketObject.S3BucketObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobject"
 
 s3bucketobject.NewS3BucketObject(scope Construct, id *string, config S3BucketObjectConfig) S3BucketObject
 ```
@@ -539,7 +539,7 @@ func ResetWebsiteRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketObject.S3BucketObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobject"
 
 s3bucketobject.S3BucketObject_IsConstruct(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketObject.S3BucketObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobject"
 
 s3bucketobject.S3BucketObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ s3bucketobject.S3BucketObject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketObject.S3BucketObject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobject"
 
 s3bucketobject.S3BucketObject_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ s3bucketobject.S3BucketObject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketObject.S3BucketObject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobject"
 
 s3bucketobject.S3BucketObject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1411,7 +1411,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketObject.S3BucketObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketobject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketobject"
 
 &s3bucketobject.S3BucketObjectConfig {
 	Connection: interface{},
