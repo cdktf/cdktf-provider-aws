@@ -36,7 +36,6 @@ jspm_packages/
 /dist/version.txt
 !/.github/workflows/release.yml
 !/.github/workflows/upgrade-main.yml
-!/.github/pull_request_template.md
 !/test/
 !/tsconfig.dev.json
 !/src/
@@ -60,6 +59,7 @@ package-lock.json
 !/.github/workflows/provider-upgrade.yml
 !/.github/workflows/alert-open-prs.yml
 !/.github/workflows/force-release.yml
+!/.github/dependabot.yml
 !/.github/CODEOWNERS
 !/scripts/should-release.js
 API.md

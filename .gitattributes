@@ -3,8 +3,8 @@
 /.copywrite.hcl linguist-generated
 /.gitattributes linguist-generated
 /.github/CODEOWNERS linguist-generated
+/.github/dependabot.yml linguist-generated
 /.github/ISSUE_TEMPLATE/config.yml linguist-generated
-/.github/pull_request_template.md linguist-generated
 /.github/workflows/alert-open-prs.yml linguist-generated
 /.github/workflows/auto-approve.yml linguist-generated
 /.github/workflows/auto-close-community-issues.yml linguist-generated

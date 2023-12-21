@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 defaultsubnet.NewDefaultSubnet(scope Construct, id *string, config DefaultSubnetConfig) DefaultSubnet
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 defaultsubnet.DefaultSubnet_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 defaultsubnet.DefaultSubnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ defaultsubnet.DefaultSubnet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 defaultsubnet.DefaultSubnet_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ defaultsubnet.DefaultSubnet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 defaultsubnet.DefaultSubnet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1229,7 +1229,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 &defaultsubnet.DefaultSubnetConfig {
 	Connection: interface{},
@@ -1254,7 +1254,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
 	PrivateDnsHostnameTypeOnLaunch: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.defaultSubnet.DefaultSubnetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.defaultSubnet.DefaultSubnetTimeouts,
 }
 ```
 
@@ -1560,7 +1560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 &defaultsubnet.DefaultSubnetTimeouts {
 	Create: *string,
@@ -1608,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/defaultsubnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsubnet"
 
 defaultsubnet.NewDefaultSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DefaultSubnetTimeoutsOutputReference
 ```
