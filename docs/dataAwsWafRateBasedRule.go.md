@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafratebasedrule"
 
 dataawswafratebasedrule.NewDataAwsWafRateBasedRule(scope Construct, id *string, config DataAwsWafRateBasedRuleConfig) DataAwsWafRateBasedRule
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafratebasedrule"
 
 &dataawswafratebasedrule.DataAwsWafRateBasedRuleConfig {
 	Connection: interface{},
