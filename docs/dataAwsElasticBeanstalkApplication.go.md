@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 dataawselasticbeanstalkapplication.NewDataAwsElasticBeanstalkApplication(scope Construct, id *string, config DataAwsElasticBeanstalkApplicationConfig) DataAwsElasticBeanstalkApplication
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplication_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplication_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplication_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 &dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplicationAppversionLifecycle {
 
@@ -631,7 +631,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkap
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 &dataawselasticbeanstalkapplication.DataAwsElasticBeanstalkApplicationConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 dataawselasticbeanstalkapplication.NewDataAwsElasticBeanstalkApplicationAppversionLifecycleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticBeanstalkApplicationAppversionLifecycleList
 ```
@@ -898,7 +898,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkapplication"
 
 dataawselasticbeanstalkapplication.NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference
 ```
