@@ -30,7 +30,6 @@ jspm_packages/
 *.tgz
 .yarn-integrity
 .cache
-!/.projenrc.js
 !/.github/workflows/build.yml
 /dist/changelog.md
 /dist/version.txt
@@ -65,3 +64,4 @@ package-lock.json
 API.md
 !/docs/*.md
 !/.copywrite.hcl
+!/.projenrc.js
