@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsamlprovider"
 
 iamsamlprovider.NewIamSamlProvider(scope Construct, id *string, config IamSamlProviderConfig) IamSamlProvider
 ```
@@ -392,7 +392,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsamlprovider"
 
 iamsamlprovider.IamSamlProvider_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsamlprovider"
 
 iamsamlprovider.IamSamlProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ iamsamlprovider.IamSamlProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsamlprovider"
 
 iamsamlprovider.IamSamlProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ iamsamlprovider.IamSamlProvider_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsamlprovider"
 
 iamsamlprovider.IamSamlProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iamsamlprovider"
 
 &iamsamlprovider.IamSamlProviderConfig {
 	Connection: interface{},
