@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontdistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontdistribution"
 
 dataawscloudfrontdistribution.NewDataAwsCloudfrontDistribution(scope Construct, id *string, config DataAwsCloudfrontDistributionConfig) DataAwsCloudfrontDistribution
 ```
@@ -274,7 +274,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontdistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontdistribution"
 
 dataawscloudfrontdistribution.DataAwsCloudfrontDistribution_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontdistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontdistribution"
 
 dataawscloudfrontdistribution.DataAwsCloudfrontDistribution_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataawscloudfrontdistribution.DataAwsCloudfrontDistribution_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontdistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontdistribution"
 
 dataawscloudfrontdistribution.DataAwsCloudfrontDistribution_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataawscloudfrontdistribution.DataAwsCloudfrontDistribution_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontdistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontdistribution"
 
 dataawscloudfrontdistribution.DataAwsCloudfrontDistribution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontdistribution"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontdistribution"
 
 &dataawscloudfrontdistribution.DataAwsCloudfrontDistributionConfig {
 	Connection: interface{},
