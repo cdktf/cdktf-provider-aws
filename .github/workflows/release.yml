@@ -66,11 +66,11 @@ jobs:
       - name: Check deprecation status
         id: check_status
         run: |-
-          IS_DEPRECATED=$(npm pkg get cdktf.isDeprecated | tr -d '"')
+          IS_DEPRECATED=$(cat package.json | jq .cdktf.isDeprecated -r)
           echo "is_deprecated=$IS_DEPRECATED"
           echo "is_deprecated=$IS_DEPRECATED" >> $GITHUB_OUTPUT
       - name: Deprecate the package on NPM
-        if: steps.check_status.outputs.is_deprecated
+        if: steps.check_status.outputs.is_deprecated == 'true' || steps.check_status.outputs.is_deprecated == true
         env:
           NPM_REGISTRY: registry.npmjs.org
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
