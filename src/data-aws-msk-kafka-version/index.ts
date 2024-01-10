@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/msk_kafka_version
 // generated from terraform resource schema
 
@@ -152,5 +147,31 @@ export class DataAwsMskKafkaVersion extends cdktf.TerraformDataSource {
       preferred_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredVersions),
       version: cdktf.stringToTerraform(this._version),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_versions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredVersions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

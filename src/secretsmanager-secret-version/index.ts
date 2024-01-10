@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/secretsmanager_secret_version
 // generated from terraform resource schema
 
@@ -198,5 +193,43 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
       secret_string: cdktf.stringToTerraform(this._secretString),
       version_stages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._versionStages),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_binary: {
+        value: cdktf.stringToHclTerraform(this._secretBinary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_id: {
+        value: cdktf.stringToHclTerraform(this._secretId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_string: {
+        value: cdktf.stringToHclTerraform(this._secretString),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_stages: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._versionStages),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

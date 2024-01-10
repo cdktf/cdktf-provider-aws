@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_local_gateway_route
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class Ec2LocalGatewayRoute extends cdktf.TerraformResource {
       local_gateway_route_table_id: cdktf.stringToTerraform(this._localGatewayRouteTableId),
       local_gateway_virtual_interface_group_id: cdktf.stringToTerraform(this._localGatewayVirtualInterfaceGroupId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      destination_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_gateway_route_table_id: {
+        value: cdktf.stringToHclTerraform(this._localGatewayRouteTableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_gateway_virtual_interface_group_id: {
+        value: cdktf.stringToHclTerraform(this._localGatewayVirtualInterfaceGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

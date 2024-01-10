@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dx_router_configuration
 // generated from terraform resource schema
 
@@ -38,6 +33,17 @@ export function dataAwsDxRouterConfigurationRouterToTerraform(struct?: DataAwsDx
   }
   return {
   }
+}
+
+
+export function dataAwsDxRouterConfigurationRouterToHclTerraform(struct?: DataAwsDxRouterConfigurationRouter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDxRouterConfigurationRouterOutputReference extends cdktf.ComplexObject {
@@ -246,5 +252,31 @@ export class DataAwsDxRouterConfiguration extends cdktf.TerraformDataSource {
       router_type_identifier: cdktf.stringToTerraform(this._routerTypeIdentifier),
       virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      router_type_identifier: {
+        value: cdktf.stringToHclTerraform(this._routerTypeIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_interface_id: {
+        value: cdktf.stringToHclTerraform(this._virtualInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

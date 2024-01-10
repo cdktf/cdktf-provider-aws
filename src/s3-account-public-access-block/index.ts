@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3_account_public_access_block
 // generated from terraform resource schema
 
@@ -213,5 +208,49 @@ export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
       ignore_public_acls: cdktf.booleanToTerraform(this._ignorePublicAcls),
       restrict_public_buckets: cdktf.booleanToTerraform(this._restrictPublicBuckets),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_public_acls: {
+        value: cdktf.booleanToHclTerraform(this._blockPublicAcls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      block_public_policy: {
+        value: cdktf.booleanToHclTerraform(this._blockPublicPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_public_acls: {
+        value: cdktf.booleanToHclTerraform(this._ignorePublicAcls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      restrict_public_buckets: {
+        value: cdktf.booleanToHclTerraform(this._restrictPublicBuckets),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

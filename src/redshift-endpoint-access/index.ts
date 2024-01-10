@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_endpoint_access
 // generated from terraform resource schema
 
@@ -50,6 +45,17 @@ export function redshiftEndpointAccessVpcEndpointNetworkInterfaceToTerraform(str
   }
   return {
   }
+}
+
+
+export function redshiftEndpointAccessVpcEndpointNetworkInterfaceToHclTerraform(struct?: RedshiftEndpointAccessVpcEndpointNetworkInterface): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference extends cdktf.ComplexObject {
@@ -129,6 +135,17 @@ export function redshiftEndpointAccessVpcEndpointToTerraform(struct?: RedshiftEn
   }
   return {
   }
+}
+
+
+export function redshiftEndpointAccessVpcEndpointToHclTerraform(struct?: RedshiftEndpointAccessVpcEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class RedshiftEndpointAccessVpcEndpointOutputReference extends cdktf.ComplexObject {
@@ -374,5 +391,49 @@ export class RedshiftEndpointAccess extends cdktf.TerraformResource {
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_identifier: {
+        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_name: {
+        value: cdktf.stringToHclTerraform(this._endpointName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_owner: {
+        value: cdktf.stringToHclTerraform(this._resourceOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_group_name: {
+        value: cdktf.stringToHclTerraform(this._subnetGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

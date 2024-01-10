@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lexv2models_bot_version
 // generated from terraform resource schema
 
@@ -50,6 +45,25 @@ export function lexv2ModelsBotVersionLocaleSpecificationToTerraform(struct?: Lex
   return {
     source_bot_version: cdktf.stringToTerraform(struct!.sourceBotVersion),
   }
+}
+
+
+export function lexv2ModelsBotVersionLocaleSpecificationToHclTerraform(struct?: Lexv2ModelsBotVersionLocaleSpecification | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_bot_version: {
+      value: cdktf.stringToHclTerraform(struct!.sourceBotVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Lexv2ModelsBotVersionLocaleSpecificationOutputReference extends cdktf.ComplexObject {
@@ -151,6 +165,31 @@ export function lexv2ModelsBotVersionTimeoutsToTerraform(struct?: Lexv2ModelsBot
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function lexv2ModelsBotVersionTimeoutsToHclTerraform(struct?: Lexv2ModelsBotVersionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Lexv2ModelsBotVersionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -387,5 +426,43 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
       locale_specification: cdktf.hashMapper(lexv2ModelsBotVersionLocaleSpecificationToTerraform)(this._localeSpecification.internalValue),
       timeouts: lexv2ModelsBotVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bot_id: {
+        value: cdktf.stringToHclTerraform(this._botId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bot_version: {
+        value: cdktf.stringToHclTerraform(this._botVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locale_specification: {
+        value: cdktf.hashMapperHcl(lexv2ModelsBotVersionLocaleSpecificationToHclTerraform)(this._localeSpecification.internalValue),
+        isBlock: true,
+        type: "map",
+        storageClassType: "Lexv2ModelsBotVersionLocaleSpecificationMap",
+      },
+      timeouts: {
+        value: lexv2ModelsBotVersionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Lexv2ModelsBotVersionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

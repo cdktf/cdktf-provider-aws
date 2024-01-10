@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appconfig_extension_association
 // generated from terraform resource schema
 
@@ -173,5 +168,37 @@ export class AppconfigExtensionAssociation extends cdktf.TerraformResource {
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      extension_arn: {
+        value: cdktf.stringToHclTerraform(this._extensionArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      resource_arn: {
+        value: cdktf.stringToHclTerraform(this._resourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/connect_user_hierarchy_group
 // generated from terraform resource schema
 
@@ -50,6 +45,17 @@ export function connectUserHierarchyGroupHierarchyPathLevelFiveToTerraform(struc
   }
   return {
   }
+}
+
+
+export function connectUserHierarchyGroupHierarchyPathLevelFiveToHclTerraform(struct?: ConnectUserHierarchyGroupHierarchyPathLevelFive): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ConnectUserHierarchyGroupHierarchyPathLevelFiveOutputReference extends cdktf.ComplexObject {
@@ -126,6 +132,17 @@ export function connectUserHierarchyGroupHierarchyPathLevelFourToTerraform(struc
   }
 }
 
+
+export function connectUserHierarchyGroupHierarchyPathLevelFourToHclTerraform(struct?: ConnectUserHierarchyGroupHierarchyPathLevelFour): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -198,6 +215,17 @@ export function connectUserHierarchyGroupHierarchyPathLevelOneToTerraform(struct
   }
   return {
   }
+}
+
+
+export function connectUserHierarchyGroupHierarchyPathLevelOneToHclTerraform(struct?: ConnectUserHierarchyGroupHierarchyPathLevelOne): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference extends cdktf.ComplexObject {
@@ -274,6 +302,17 @@ export function connectUserHierarchyGroupHierarchyPathLevelThreeToTerraform(stru
   }
 }
 
+
+export function connectUserHierarchyGroupHierarchyPathLevelThreeToHclTerraform(struct?: ConnectUserHierarchyGroupHierarchyPathLevelThree): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ConnectUserHierarchyGroupHierarchyPathLevelThreeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -348,6 +387,17 @@ export function connectUserHierarchyGroupHierarchyPathLevelTwoToTerraform(struct
   }
 }
 
+
+export function connectUserHierarchyGroupHierarchyPathLevelTwoToHclTerraform(struct?: ConnectUserHierarchyGroupHierarchyPathLevelTwo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -420,6 +470,17 @@ export function connectUserHierarchyGroupHierarchyPathToTerraform(struct?: Conne
   }
   return {
   }
+}
+
+
+export function connectUserHierarchyGroupHierarchyPathToHclTerraform(struct?: ConnectUserHierarchyGroupHierarchyPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ConnectUserHierarchyGroupHierarchyPathOutputReference extends cdktf.ComplexObject {
@@ -687,5 +748,49 @@ export class ConnectUserHierarchyGroup extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_group_id: {
+        value: cdktf.stringToHclTerraform(this._parentGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

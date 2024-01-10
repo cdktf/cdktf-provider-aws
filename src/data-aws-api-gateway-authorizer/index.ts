@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/api_gateway_authorizer
 // generated from terraform resource schema
 
@@ -186,5 +181,31 @@ export class DataAwsApiGatewayAuthorizer extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorizer_id: {
+        value: cdktf.stringToHclTerraform(this._authorizerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

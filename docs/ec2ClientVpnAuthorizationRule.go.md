@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 ec2clientvpnauthorizationrule.NewEc2ClientVpnAuthorizationRule(scope Construct, id *string, config Ec2ClientVpnAuthorizationRuleConfig) Ec2ClientVpnAuthorizationRule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRule_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRule_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRule_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 &ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRuleConfig {
 	Connection: interface{},
@@ -878,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorization
 	AuthorizeAllGroups: interface{},
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeouts,
 }
 ```
 
@@ -1067,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 &ec2clientvpnauthorizationrule.Ec2ClientVpnAuthorizationRuleTimeouts {
 	Create: *string,
@@ -1115,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnauthorizationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnauthorizationrule"
 
 ec2clientvpnauthorizationrule.NewEc2ClientVpnAuthorizationRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference
 ```

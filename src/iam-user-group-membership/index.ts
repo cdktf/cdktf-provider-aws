@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iam_user_group_membership
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class IamUserGroupMembership extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       user: cdktf.stringToTerraform(this._user),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktf.stringToHclTerraform(this._user),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

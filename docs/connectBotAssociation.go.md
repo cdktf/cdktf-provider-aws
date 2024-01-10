@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 connectbotassociation.NewConnectBotAssociation(scope Construct, id *string, config ConnectBotAssociationConfig) ConnectBotAssociation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ connectbotassociation.ConnectBotAssociation_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ connectbotassociation.ConnectBotAssociation_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 &connectbotassociation.ConnectBotAssociationConfig {
 	Connection: interface{},
@@ -757,7 +764,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	InstanceId: *string,
-	LexBot: github.com/cdktf/cdktf-provider-aws-go/aws/v18.connectBotAssociation.ConnectBotAssociationLexBot,
+	LexBot: github.com/cdktf/cdktf-provider-aws-go/aws.connectBotAssociation.ConnectBotAssociationLexBot,
 	Id: *string,
 }
 ```
@@ -895,7 +902,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 &connectbotassociation.ConnectBotAssociationLexBot {
 	Name: *string,
@@ -943,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectbotassociation"
 
 connectbotassociation.NewConnectBotAssociationLexBotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectBotAssociationLexBotOutputReference
 ```

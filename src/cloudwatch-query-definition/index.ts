@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloudwatch_query_definition
 // generated from terraform resource schema
 
@@ -168,5 +163,37 @@ export class CloudwatchQueryDefinition extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       query_string: cdktf.stringToTerraform(this._queryString),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_group_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logGroupNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query_string: {
+        value: cdktf.stringToHclTerraform(this._queryString),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

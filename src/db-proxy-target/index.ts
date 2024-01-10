@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/db_proxy_target
 // generated from terraform resource schema
 
@@ -215,5 +210,43 @@ export class DbProxyTarget extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       target_group_name: cdktf.stringToTerraform(this._targetGroupName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_cluster_identifier: {
+        value: cdktf.stringToHclTerraform(this._dbClusterIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_instance_identifier: {
+        value: cdktf.stringToHclTerraform(this._dbInstanceIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_proxy_name: {
+        value: cdktf.stringToHclTerraform(this._dbProxyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_group_name: {
+        value: cdktf.stringToHclTerraform(this._targetGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

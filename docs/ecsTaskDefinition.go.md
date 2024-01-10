@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinition(scope Construct, id *string, config EcsTaskDefinitionConfig) EcsTaskDefinition
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -148,6 +149,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.toMetadata"></a>
 
@@ -575,7 +582,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -607,7 +614,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -621,7 +628,7 @@ ecstaskdefinition.EcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +642,7 @@ ecstaskdefinition.EcsTaskDefinition_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1337,7 +1344,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionConfig {
 	Connection: interface{},
@@ -1350,7 +1357,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
 	ContainerDefinitions: *string,
 	Family: *string,
 	Cpu: *string,
-	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage,
+	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage,
 	ExecutionRoleArn: *string,
 	Id: *string,
 	InferenceAccelerator: interface{},
@@ -1359,9 +1366,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
 	NetworkMode: *string,
 	PidMode: *string,
 	PlacementConstraints: interface{},
-	ProxyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration,
+	ProxyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration,
 	RequiresCompatibilities: *[]*string,
-	RuntimePlatform: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform,
+	RuntimePlatform: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform,
 	SkipDestroy: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1734,7 +1741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionEphemeralStorage {
 	SizeInGib: *f64,
@@ -1766,7 +1773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionInferenceAccelerator {
 	DeviceName: *string,
@@ -1812,7 +1819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionPlacementConstraints {
 	Type: *string,
@@ -1858,7 +1865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionProxyConfiguration {
 	ContainerName: *string,
@@ -1918,7 +1925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionRuntimePlatform {
 	CpuArchitecture: *string,
@@ -1964,13 +1971,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolume {
 	Name: *string,
-	DockerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration,
-	EfsVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration,
-	FsxWindowsFileServerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration,
+	DockerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration,
+	EfsVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration,
+	FsxWindowsFileServerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration,
 	HostPath: *string,
 }
 ```
@@ -2058,7 +2065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration {
 	Autoprovision: interface{},
@@ -2146,11 +2153,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration {
 	FileSystemId: *string,
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig,
 	RootDirectory: *string,
 	TransitEncryption: *string,
 	TransitEncryptionPort: *f64,
@@ -2236,7 +2243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig {
 	AccessPointId: *string,
@@ -2282,10 +2289,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration {
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig,
 	FileSystemId: *string,
 	RootDirectory: *string,
 }
@@ -2344,7 +2351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig {
 	CredentialsParameter: *string,
@@ -2392,7 +2399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionEphemeralStorageOutputReference
 ```
@@ -2663,7 +2670,7 @@ func InternalValue() EcsTaskDefinitionEphemeralStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionInferenceAcceleratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionInferenceAcceleratorList
 ```
@@ -2704,10 +2711,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2806,7 +2830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionInferenceAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionInferenceAcceleratorOutputReference
 ```
@@ -3117,7 +3141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionPlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionPlacementConstraintsList
 ```
@@ -3158,10 +3182,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3260,7 +3301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionPlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionPlacementConstraintsOutputReference
 ```
@@ -3578,7 +3619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionProxyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionProxyConfigurationOutputReference
 ```
@@ -3907,7 +3948,7 @@ func InternalValue() EcsTaskDefinitionProxyConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionRuntimePlatformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionRuntimePlatformOutputReference
 ```
@@ -4214,7 +4255,7 @@ func InternalValue() EcsTaskDefinitionRuntimePlatform
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference
 ```
@@ -4608,7 +4649,7 @@ func InternalValue() EcsTaskDefinitionVolumeDockerVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -4915,7 +4956,7 @@ func InternalValue() EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference
 ```
@@ -5315,7 +5356,7 @@ func InternalValue() EcsTaskDefinitionVolumeEfsVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -5608,7 +5649,7 @@ func InternalValue() EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference
 ```
@@ -5936,7 +5977,7 @@ func InternalValue() EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionVolumeList
 ```
@@ -5977,10 +6018,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6079,7 +6137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionVolumeOutputReference
 ```

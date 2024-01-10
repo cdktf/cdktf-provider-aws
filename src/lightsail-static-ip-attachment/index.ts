@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lightsail_static_ip_attachment
 // generated from terraform resource schema
 
@@ -146,5 +141,31 @@ export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
       instance_name: cdktf.stringToTerraform(this._instanceName),
       static_ip_name: cdktf.stringToTerraform(this._staticIpName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_name: {
+        value: cdktf.stringToHclTerraform(this._instanceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      static_ip_name: {
+        value: cdktf.stringToHclTerraform(this._staticIpName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

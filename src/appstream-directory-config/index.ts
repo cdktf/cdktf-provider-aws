@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_directory_config
 // generated from terraform resource schema
 
@@ -54,6 +49,31 @@ export function appstreamDirectoryConfigServiceAccountCredentialsToTerraform(str
     account_name: cdktf.stringToTerraform(struct!.accountName),
     account_password: cdktf.stringToTerraform(struct!.accountPassword),
   }
+}
+
+
+export function appstreamDirectoryConfigServiceAccountCredentialsToHclTerraform(struct?: AppstreamDirectoryConfigServiceAccountCredentialsOutputReference | AppstreamDirectoryConfigServiceAccountCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_name: {
+      value: cdktf.stringToHclTerraform(struct!.accountName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    account_password: {
+      value: cdktf.stringToHclTerraform(struct!.accountPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference extends cdktf.ComplexObject {
@@ -253,5 +273,37 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
       organizational_unit_distinguished_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._organizationalUnitDistinguishedNames),
       service_account_credentials: appstreamDirectoryConfigServiceAccountCredentialsToTerraform(this._serviceAccountCredentials.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_name: {
+        value: cdktf.stringToHclTerraform(this._directoryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organizational_unit_distinguished_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._organizationalUnitDistinguishedNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      service_account_credentials: {
+        value: appstreamDirectoryConfigServiceAccountCredentialsToHclTerraform(this._serviceAccountCredentials.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppstreamDirectoryConfigServiceAccountCredentialsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

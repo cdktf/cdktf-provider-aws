@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/default_subnet
 // generated from terraform resource schema
 
@@ -102,6 +97,31 @@ export function defaultSubnetTimeoutsToTerraform(struct?: DefaultSubnetTimeouts 
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function defaultSubnetTimeoutsToHclTerraform(struct?: DefaultSubnetTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DefaultSubnetTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -579,5 +599,109 @@ export class DefaultSubnet extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: defaultSubnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assign_ipv6_address_on_creation: {
+        value: cdktf.booleanToHclTerraform(this._assignIpv6AddressOnCreation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_owned_ipv4_pool: {
+        value: cdktf.stringToHclTerraform(this._customerOwnedIpv4Pool),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_dns64: {
+        value: cdktf.booleanToHclTerraform(this._enableDns64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_resource_name_dns_a_record_on_launch: {
+        value: cdktf.booleanToHclTerraform(this._enableResourceNameDnsARecordOnLaunch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_resource_name_dns_aaaa_record_on_launch: {
+        value: cdktf.booleanToHclTerraform(this._enableResourceNameDnsAaaaRecordOnLaunch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_native: {
+        value: cdktf.booleanToHclTerraform(this._ipv6Native),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      map_customer_owned_ip_on_launch: {
+        value: cdktf.booleanToHclTerraform(this._mapCustomerOwnedIpOnLaunch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      map_public_ip_on_launch: {
+        value: cdktf.booleanToHclTerraform(this._mapPublicIpOnLaunch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      private_dns_hostname_type_on_launch: {
+        value: cdktf.stringToHclTerraform(this._privateDnsHostnameTypeOnLaunch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: defaultSubnetTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DefaultSubnetTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStack(scope Construct, id *string, config AppstreamStackConfig) AppstreamStack
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStack.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStack.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStack.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStack.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStack.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStack.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStack.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -142,6 +143,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.toMetadata"></a>
 
@@ -527,7 +534,7 @@ func ResetUserSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.AppstreamStack_IsConstruct(x interface{}) *bool
 ```
@@ -559,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.AppstreamStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -573,7 +580,7 @@ appstreamstack.AppstreamStack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.AppstreamStack_IsTerraformResource(x interface{}) *bool
 ```
@@ -587,7 +594,7 @@ appstreamstack.AppstreamStack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.AppstreamStack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1146,7 +1153,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 &appstreamstack.AppstreamStackAccessEndpoints {
 	EndpointType: *string,
@@ -1192,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 &appstreamstack.AppstreamStackApplicationSettings {
 	Enabled: interface{},
@@ -1238,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 &appstreamstack.AppstreamStackConfig {
 	Connection: interface{},
@@ -1250,7 +1257,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
 	Provisioners: *[]interface{},
 	Name: *string,
 	AccessEndpoints: interface{},
-	ApplicationSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamStack.AppstreamStackApplicationSettings,
+	ApplicationSettings: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamStack.AppstreamStackApplicationSettings,
 	Description: *string,
 	DisplayName: *string,
 	EmbedHostDomains: *[]*string,
@@ -1258,7 +1265,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
 	Id: *string,
 	RedirectUrl: *string,
 	StorageConnectors: interface{},
-	StreamingExperienceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamStack.AppstreamStackStreamingExperienceSettings,
+	StreamingExperienceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.appstreamStack.AppstreamStackStreamingExperienceSettings,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	UserSettings: interface{},
@@ -1549,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 &appstreamstack.AppstreamStackStorageConnectors {
 	ConnectorType: *string,
@@ -1609,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStreamingExperienceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 &appstreamstack.AppstreamStackStreamingExperienceSettings {
 	PreferredProtocol: *string,
@@ -1641,7 +1648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 &appstreamstack.AppstreamStackUserSettings {
 	Action: *string,
@@ -1689,7 +1696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackAccessEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppstreamStackAccessEndpointsList
 ```
@@ -1730,10 +1737,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1832,7 +1856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackAccessEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppstreamStackAccessEndpointsOutputReference
 ```
@@ -2150,7 +2174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackApplicationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamStackApplicationSettingsOutputReference
 ```
@@ -2450,7 +2474,7 @@ func InternalValue() AppstreamStackApplicationSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackStorageConnectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppstreamStackStorageConnectorsList
 ```
@@ -2491,10 +2515,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2593,7 +2634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackStorageConnectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppstreamStackStorageConnectorsOutputReference
 ```
@@ -2940,7 +2981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStreamingExperienceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackStreamingExperienceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamStackStreamingExperienceSettingsOutputReference
 ```
@@ -3218,7 +3259,7 @@ func InternalValue() AppstreamStackStreamingExperienceSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackUserSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppstreamStackUserSettingsList
 ```
@@ -3259,10 +3300,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3361,7 +3419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appstreamstack"
 
 appstreamstack.NewAppstreamStackUserSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppstreamStackUserSettingsOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/apprunner_observability_configuration
 // generated from terraform resource schema
 
@@ -53,6 +48,25 @@ export function apprunnerObservabilityConfigurationTraceConfigurationToTerraform
   return {
     vendor: cdktf.stringToTerraform(struct!.vendor),
   }
+}
+
+
+export function apprunnerObservabilityConfigurationTraceConfigurationToHclTerraform(struct?: ApprunnerObservabilityConfigurationTraceConfigurationOutputReference | ApprunnerObservabilityConfigurationTraceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vendor: {
+      value: cdktf.stringToHclTerraform(struct!.vendor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApprunnerObservabilityConfigurationTraceConfigurationOutputReference extends cdktf.ComplexObject {
@@ -275,5 +289,43 @@ export class ApprunnerObservabilityConfiguration extends cdktf.TerraformResource
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       trace_configuration: apprunnerObservabilityConfigurationTraceConfigurationToTerraform(this._traceConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      observability_configuration_name: {
+        value: cdktf.stringToHclTerraform(this._observabilityConfigurationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      trace_configuration: {
+        value: apprunnerObservabilityConfigurationTraceConfigurationToHclTerraform(this._traceConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApprunnerObservabilityConfigurationTraceConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

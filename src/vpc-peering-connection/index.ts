@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc_peering_connection
 // generated from terraform resource schema
 
@@ -83,6 +78,25 @@ export function vpcPeeringConnectionAccepterToTerraform(struct?: VpcPeeringConne
   }
 }
 
+
+export function vpcPeeringConnectionAccepterToHclTerraform(struct?: VpcPeeringConnectionAccepterOutputReference | VpcPeeringConnectionAccepter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_remote_vpc_dns_resolution: {
+      value: cdktf.booleanToHclTerraform(struct!.allowRemoteVpcDnsResolution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -146,6 +160,25 @@ export function vpcPeeringConnectionRequesterToTerraform(struct?: VpcPeeringConn
   return {
     allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
   }
+}
+
+
+export function vpcPeeringConnectionRequesterToHclTerraform(struct?: VpcPeeringConnectionRequesterOutputReference | VpcPeeringConnectionRequester): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_remote_vpc_dns_resolution: {
+      value: cdktf.booleanToHclTerraform(struct!.allowRemoteVpcDnsResolution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexObject {
@@ -221,6 +254,37 @@ export function vpcPeeringConnectionTimeoutsToTerraform(struct?: VpcPeeringConne
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function vpcPeeringConnectionTimeoutsToHclTerraform(struct?: VpcPeeringConnectionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -587,5 +651,79 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
       requester: vpcPeeringConnectionRequesterToTerraform(this._requester.internalValue),
       timeouts: vpcPeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_accept: {
+        value: cdktf.booleanToHclTerraform(this._autoAccept),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_owner_id: {
+        value: cdktf.stringToHclTerraform(this._peerOwnerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_region: {
+        value: cdktf.stringToHclTerraform(this._peerRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_vpc_id: {
+        value: cdktf.stringToHclTerraform(this._peerVpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      accepter: {
+        value: vpcPeeringConnectionAccepterToHclTerraform(this._accepter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpcPeeringConnectionAccepterList",
+      },
+      requester: {
+        value: vpcPeeringConnectionRequesterToHclTerraform(this._requester.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpcPeeringConnectionRequesterList",
+      },
+      timeouts: {
+        value: vpcPeeringConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpcPeeringConnectionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

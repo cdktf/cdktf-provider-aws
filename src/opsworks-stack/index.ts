@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opsworks_stack
 // generated from terraform resource schema
 
@@ -160,6 +155,55 @@ export function opsworksStackCustomCookbooksSourceToTerraform(struct?: OpsworksS
     url: cdktf.stringToTerraform(struct!.url),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function opsworksStackCustomCookbooksSourceToHclTerraform(struct?: OpsworksStackCustomCookbooksSourceOutputReference | OpsworksStackCustomCookbooksSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    revision: {
+      value: cdktf.stringToHclTerraform(struct!.revision),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssh_key: {
+      value: cdktf.stringToHclTerraform(struct!.sshKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpsworksStackCustomCookbooksSourceOutputReference extends cdktf.ComplexObject {
@@ -329,6 +373,25 @@ export function opsworksStackTimeoutsToTerraform(struct?: OpsworksStackTimeouts 
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function opsworksStackTimeoutsToHclTerraform(struct?: OpsworksStackTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpsworksStackTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -902,5 +965,163 @@ export class OpsworksStack extends cdktf.TerraformResource {
       custom_cookbooks_source: opsworksStackCustomCookbooksSourceToTerraform(this._customCookbooksSource.internalValue),
       timeouts: opsworksStackTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agent_version: {
+        value: cdktf.stringToHclTerraform(this._agentVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      berkshelf_version: {
+        value: cdktf.stringToHclTerraform(this._berkshelfVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      color: {
+        value: cdktf.stringToHclTerraform(this._color),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration_manager_name: {
+        value: cdktf.stringToHclTerraform(this._configurationManagerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration_manager_version: {
+        value: cdktf.stringToHclTerraform(this._configurationManagerVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_json: {
+        value: cdktf.stringToHclTerraform(this._customJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_availability_zone: {
+        value: cdktf.stringToHclTerraform(this._defaultAvailabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_instance_profile_arn: {
+        value: cdktf.stringToHclTerraform(this._defaultInstanceProfileArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_os: {
+        value: cdktf.stringToHclTerraform(this._defaultOs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_root_device_type: {
+        value: cdktf.stringToHclTerraform(this._defaultRootDeviceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_ssh_key_name: {
+        value: cdktf.stringToHclTerraform(this._defaultSshKeyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_subnet_id: {
+        value: cdktf.stringToHclTerraform(this._defaultSubnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hostname_theme: {
+        value: cdktf.stringToHclTerraform(this._hostnameTheme),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      manage_berkshelf: {
+        value: cdktf.booleanToHclTerraform(this._manageBerkshelf),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_role_arn: {
+        value: cdktf.stringToHclTerraform(this._serviceRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      use_custom_cookbooks: {
+        value: cdktf.booleanToHclTerraform(this._useCustomCookbooks),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      use_opsworks_security_groups: {
+        value: cdktf.booleanToHclTerraform(this._useOpsworksSecurityGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_cookbooks_source: {
+        value: opsworksStackCustomCookbooksSourceToHclTerraform(this._customCookbooksSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpsworksStackCustomCookbooksSourceList",
+      },
+      timeouts: {
+        value: opsworksStackTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "OpsworksStackTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

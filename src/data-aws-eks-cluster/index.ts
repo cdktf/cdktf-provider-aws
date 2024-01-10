@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/eks_cluster
 // generated from terraform resource schema
 
@@ -38,6 +33,17 @@ export function dataAwsEksClusterCertificateAuthorityToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsEksClusterCertificateAuthorityToHclTerraform(struct?: DataAwsEksClusterCertificateAuthority): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksClusterCertificateAuthorityOutputReference extends cdktf.ComplexObject {
@@ -104,6 +110,17 @@ export function dataAwsEksClusterIdentityOidcToTerraform(struct?: DataAwsEksClus
   }
 }
 
+
+export function dataAwsEksClusterIdentityOidcToHclTerraform(struct?: DataAwsEksClusterIdentityOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsEksClusterIdentityOidcOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -166,6 +183,17 @@ export function dataAwsEksClusterIdentityToTerraform(struct?: DataAwsEksClusterI
   }
   return {
   }
+}
+
+
+export function dataAwsEksClusterIdentityToHclTerraform(struct?: DataAwsEksClusterIdentity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksClusterIdentityOutputReference extends cdktf.ComplexObject {
@@ -231,6 +259,17 @@ export function dataAwsEksClusterKubernetesNetworkConfigToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsEksClusterKubernetesNetworkConfigToHclTerraform(struct?: DataAwsEksClusterKubernetesNetworkConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksClusterKubernetesNetworkConfigOutputReference extends cdktf.ComplexObject {
@@ -307,6 +346,17 @@ export function dataAwsEksClusterOutpostConfigControlPlanePlacementToTerraform(s
   }
 }
 
+
+export function dataAwsEksClusterOutpostConfigControlPlanePlacementToHclTerraform(struct?: DataAwsEksClusterOutpostConfigControlPlanePlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -369,6 +419,17 @@ export function dataAwsEksClusterOutpostConfigToTerraform(struct?: DataAwsEksClu
   }
   return {
   }
+}
+
+
+export function dataAwsEksClusterOutpostConfigToHclTerraform(struct?: DataAwsEksClusterOutpostConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksClusterOutpostConfigOutputReference extends cdktf.ComplexObject {
@@ -444,6 +505,17 @@ export function dataAwsEksClusterVpcConfigToTerraform(struct?: DataAwsEksCluster
   }
   return {
   }
+}
+
+
+export function dataAwsEksClusterVpcConfigToHclTerraform(struct?: DataAwsEksClusterVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -719,5 +791,31 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

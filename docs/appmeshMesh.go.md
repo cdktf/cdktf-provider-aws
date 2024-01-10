@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshMesh.AppmeshMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 appmeshmesh.NewAppmeshMesh(scope Construct, id *string, config AppmeshMeshConfig) AppmeshMesh
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appmeshMesh.AppmeshMesh.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshMesh.AppmeshMesh.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.appmeshMesh.AppmeshMesh.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.appmeshMesh.AppmeshMesh.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshMesh.AppmeshMesh.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshMesh.AppmeshMesh.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.appmeshMesh.AppmeshMesh.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.appmeshMesh.AppmeshMesh.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.appmeshMesh.AppmeshMesh.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appmeshMesh.AppmeshMesh.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appmeshMesh.AppmeshMesh.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ appmeshmesh.AppmeshMesh_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appmeshMesh.AppmeshMesh.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ appmeshmesh.AppmeshMesh_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appmeshMesh.AppmeshMesh.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshMesh.AppmeshMeshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 &appmeshmesh.AppmeshMeshConfig {
 	Connection: interface{},
@@ -878,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshMesh.AppmeshMeshSpec,
+	Spec: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshMesh.AppmeshMeshSpec,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1043,10 +1050,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 &appmeshmesh.AppmeshMeshSpec {
-	EgressFilter: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshMesh.AppmeshMeshSpecEgressFilter,
+	EgressFilter: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshMesh.AppmeshMeshSpecEgressFilter,
 }
 ```
 
@@ -1077,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 &appmeshmesh.AppmeshMeshSpecEgressFilter {
 	Type: *string,
@@ -1111,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 appmeshmesh.NewAppmeshMeshSpecEgressFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshMeshSpecEgressFilterOutputReference
 ```
@@ -1389,7 +1396,7 @@ func InternalValue() AppmeshMeshSpecEgressFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshmesh"
 
 appmeshmesh.NewAppmeshMeshSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshMeshSpecOutputReference
 ```

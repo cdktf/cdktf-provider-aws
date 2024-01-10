@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListener(scope Construct, id *string, config AlbListenerConfig) AlbListener
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -137,6 +138,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.albListener.AlbListener.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.albListener.AlbListener.toMetadata"></a>
 
@@ -480,7 +487,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.albListener.AlbListener.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.AlbListener_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.albListener.AlbListener.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.AlbListener_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ alblistener.AlbListener_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.albListener.AlbListener.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.AlbListener_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ alblistener.AlbListener_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.albListener.AlbListener.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.AlbListener_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1044,7 +1051,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerConfig {
 	Connection: interface{},
@@ -1059,13 +1066,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
 	AlpnPolicy: *string,
 	CertificateArn: *string,
 	Id: *string,
-	MutualAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerMutualAuthentication,
+	MutualAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerMutualAuthentication,
 	Port: *f64,
 	Protocol: *string,
 	SslPolicy: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerTimeouts,
 }
 ```
 
@@ -1323,16 +1330,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultAction {
 	Type: *string,
-	AuthenticateCognito: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerDefaultActionAuthenticateCognito,
-	AuthenticateOidc: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerDefaultActionAuthenticateOidc,
-	FixedResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerDefaultActionFixedResponse,
-	Forward: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerDefaultActionForward,
+	AuthenticateCognito: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerDefaultActionAuthenticateCognito,
+	AuthenticateOidc: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerDefaultActionAuthenticateOidc,
+	FixedResponse: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerDefaultActionFixedResponse,
+	Forward: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerDefaultActionForward,
 	Order: *f64,
-	Redirect: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerDefaultActionRedirect,
+	Redirect: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerDefaultActionRedirect,
 	TargetGroupArn: *string,
 }
 ```
@@ -1463,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultActionAuthenticateCognito {
 	UserPoolArn: *string,
@@ -1593,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultActionAuthenticateOidc {
 	AuthorizationEndpoint: *string,
@@ -1765,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultActionFixedResponse {
 	ContentType: *string,
@@ -1825,11 +1832,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultActionForward {
 	TargetGroup: interface{},
-	Stickiness: github.com/cdktf/cdktf-provider-aws-go/aws/v18.albListener.AlbListenerDefaultActionForwardStickiness,
+	Stickiness: github.com/cdktf/cdktf-provider-aws-go/aws.albListener.AlbListenerDefaultActionForwardStickiness,
 }
 ```
 
@@ -1875,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultActionForwardStickiness {
 	Duration: *f64,
@@ -1921,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultActionForwardTargetGroup {
 	Arn: *string,
@@ -1967,7 +1974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerDefaultActionRedirect {
 	StatusCode: *string,
@@ -2069,7 +2076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerMutualAuthentication {
 	Mode: *string,
@@ -2129,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListener.AlbListenerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 &alblistener.AlbListenerTimeouts {
 	Create: *string,
@@ -2177,7 +2184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionAuthenticateCognitoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionAuthenticateCognitoOutputReference
 ```
@@ -2637,7 +2644,7 @@ func InternalValue() AlbListenerDefaultActionAuthenticateCognito
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionAuthenticateOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionAuthenticateOidcOutputReference
 ```
@@ -3163,7 +3170,7 @@ func InternalValue() AlbListenerDefaultActionAuthenticateOidc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionFixedResponseOutputReference
 ```
@@ -3492,7 +3499,7 @@ func InternalValue() AlbListenerDefaultActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionForwardOutputReference
 ```
@@ -3818,7 +3825,7 @@ func InternalValue() AlbListenerDefaultActionForward
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionForwardStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionForwardStickinessOutputReference
 ```
@@ -4118,7 +4125,7 @@ func InternalValue() AlbListenerDefaultActionForwardStickiness
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionForwardTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerDefaultActionForwardTargetGroupList
 ```
@@ -4159,10 +4166,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4261,7 +4285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionForwardTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerDefaultActionForwardTargetGroupOutputReference
 ```
@@ -4579,7 +4603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerDefaultActionList
 ```
@@ -4620,10 +4644,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4722,7 +4763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerDefaultActionOutputReference
 ```
@@ -5279,7 +5320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerDefaultActionRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionRedirectOutputReference
 ```
@@ -5695,7 +5736,7 @@ func InternalValue() AlbListenerDefaultActionRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerMutualAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerMutualAuthenticationOutputReference
 ```
@@ -6024,7 +6065,7 @@ func InternalValue() AlbListenerMutualAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/alblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistener"
 
 alblistener.NewAlbListenerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerTimeoutsOutputReference
 ```

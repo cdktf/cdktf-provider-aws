@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/iam_user_ssh_key
 // generated from terraform resource schema
 
@@ -175,5 +170,37 @@ export class DataAwsIamUserSshKey extends cdktf.TerraformDataSource {
       ssh_public_key_id: cdktf.stringToTerraform(this._sshPublicKeyId),
       username: cdktf.stringToTerraform(this._username),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      encoding: {
+        value: cdktf.stringToHclTerraform(this._encoding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssh_public_key_id: {
+        value: cdktf.stringToHclTerraform(this._sshPublicKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

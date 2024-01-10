@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iam_role
 // generated from terraform resource schema
 
@@ -90,6 +85,31 @@ export function iamRoleInlinePolicyToTerraform(struct?: IamRoleInlinePolicy | cd
     name: cdktf.stringToTerraform(struct!.name),
     policy: cdktf.stringToTerraform(struct!.policy),
   }
+}
+
+
+export function iamRoleInlinePolicyToHclTerraform(struct?: IamRoleInlinePolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy: {
+      value: cdktf.stringToHclTerraform(struct!.policy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IamRoleInlinePolicyOutputReference extends cdktf.ComplexObject {
@@ -505,5 +525,91 @@ export class IamRole extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       inline_policy: cdktf.listMapper(iamRoleInlinePolicyToTerraform, true)(this._inlinePolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assume_role_policy: {
+        value: cdktf.stringToHclTerraform(this._assumeRolePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_detach_policies: {
+        value: cdktf.booleanToHclTerraform(this._forceDetachPolicies),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_policy_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._managedPolicyArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      max_session_duration: {
+        value: cdktf.numberToHclTerraform(this._maxSessionDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions_boundary: {
+        value: cdktf.stringToHclTerraform(this._permissionsBoundary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      inline_policy: {
+        value: cdktf.listMapperHcl(iamRoleInlinePolicyToHclTerraform, true)(this._inlinePolicy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "IamRoleInlinePolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

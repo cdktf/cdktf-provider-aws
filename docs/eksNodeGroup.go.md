@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroup(scope Construct, id *string, config EksNodeGroupConfig) EksNodeGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -148,6 +149,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.toMetadata"></a>
 
@@ -575,7 +582,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.EksNodeGroup_IsConstruct(x interface{}) *bool
 ```
@@ -607,7 +614,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.EksNodeGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -621,7 +628,7 @@ eksnodegroup.EksNodeGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.EksNodeGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +642,7 @@ eksnodegroup.EksNodeGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.EksNodeGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1381,7 +1388,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupConfig {
 	Connection: interface{},
@@ -1393,7 +1400,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
 	Provisioners: *[]interface{},
 	ClusterName: *string,
 	NodeRoleArn: *string,
-	ScalingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksNodeGroup.EksNodeGroupScalingConfig,
+	ScalingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksNodeGroup.EksNodeGroupScalingConfig,
 	SubnetIds: *[]*string,
 	AmiType: *string,
 	CapacityType: *string,
@@ -1402,16 +1409,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
 	Id: *string,
 	InstanceTypes: *[]*string,
 	Labels: *map[string]*string,
-	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksNodeGroup.EksNodeGroupLaunchTemplate,
+	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.eksNodeGroup.EksNodeGroupLaunchTemplate,
 	NodeGroupName: *string,
 	NodeGroupNamePrefix: *string,
 	ReleaseVersion: *string,
-	RemoteAccess: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksNodeGroup.EksNodeGroupRemoteAccess,
+	RemoteAccess: github.com/cdktf/cdktf-provider-aws-go/aws.eksNodeGroup.EksNodeGroupRemoteAccess,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Taint: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksNodeGroup.EksNodeGroupTimeouts,
-	UpdateConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksNodeGroup.EksNodeGroupUpdateConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.eksNodeGroup.EksNodeGroupTimeouts,
+	UpdateConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksNodeGroup.EksNodeGroupUpdateConfig,
 	Version: *string,
 }
 ```
@@ -1806,7 +1813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupLaunchTemplate {
 	Version: *string,
@@ -1869,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupRemoteAccess {
 	Ec2SshKey: *string,
@@ -1915,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupResources {
 
@@ -1928,7 +1935,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupResourcesAutoscalingGroups {
 
@@ -1941,7 +1948,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupScalingConfig {
 	DesiredSize: *f64,
@@ -2001,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupTaint {
 	Effect: *string,
@@ -2061,7 +2068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupTimeouts {
 	Create: *string,
@@ -2121,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 &eksnodegroup.EksNodeGroupUpdateConfig {
 	MaxUnavailable: *f64,
@@ -2169,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksNodeGroupLaunchTemplateOutputReference
 ```
@@ -2498,7 +2505,7 @@ func InternalValue() EksNodeGroupLaunchTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupRemoteAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksNodeGroupRemoteAccessOutputReference
 ```
@@ -2805,7 +2812,7 @@ func InternalValue() EksNodeGroupRemoteAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupResourcesAutoscalingGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksNodeGroupResourcesAutoscalingGroupsList
 ```
@@ -2846,10 +2853,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2937,7 +2961,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupResourcesAutoscalingGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksNodeGroupResourcesAutoscalingGroupsOutputReference
 ```
@@ -3215,7 +3239,7 @@ func InternalValue() EksNodeGroupResourcesAutoscalingGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksNodeGroupResourcesList
 ```
@@ -3256,10 +3280,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3347,7 +3388,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksNodeGroupResourcesOutputReference
 ```
@@ -3636,7 +3677,7 @@ func InternalValue() EksNodeGroupResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupScalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksNodeGroupScalingConfigOutputReference
 ```
@@ -3951,7 +3992,7 @@ func InternalValue() EksNodeGroupScalingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksNodeGroupTaintList
 ```
@@ -3992,10 +4033,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4094,7 +4152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksNodeGroupTaintOutputReference
 ```
@@ -4434,7 +4492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksNodeGroupTimeoutsOutputReference
 ```
@@ -4770,7 +4828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksnodegroup"
 
 eksnodegroup.NewEksNodeGroupUpdateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksNodeGroupUpdateConfigOutputReference
 ```

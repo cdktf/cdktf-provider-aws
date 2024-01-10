@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_conditional_forwarder
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
       id: cdktf.stringToTerraform(this._id),
       remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsIps),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_domain_name: {
+        value: cdktf.stringToHclTerraform(this._remoteDomainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

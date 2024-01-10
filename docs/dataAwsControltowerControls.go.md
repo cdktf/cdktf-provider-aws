@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscontroltowercontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.NewDataAwsControltowerControls(scope Construct, id *string, config DataAwsControltowerControlsConfig) DataAwsControltowerControls
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscontroltowercontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscontroltowercontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscontroltowercontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscontroltowercontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscontroltowercontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscontroltowercontrols"
 
 &dataawscontroltowercontrols.DataAwsControltowerControlsConfig {
 	Connection: interface{},

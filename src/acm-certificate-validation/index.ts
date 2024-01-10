@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/acm_certificate_validation
 // generated from terraform resource schema
 
@@ -49,6 +44,25 @@ export function acmCertificateValidationTimeoutsToTerraform(struct?: AcmCertific
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function acmCertificateValidationTimeoutsToHclTerraform(struct?: AcmCertificateValidationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AcmCertificateValidationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -243,5 +257,37 @@ export class AcmCertificateValidation extends cdktf.TerraformResource {
       validation_record_fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._validationRecordFqdns),
       timeouts: acmCertificateValidationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_arn: {
+        value: cdktf.stringToHclTerraform(this._certificateArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validation_record_fqdns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._validationRecordFqdns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      timeouts: {
+        value: acmCertificateValidationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "AcmCertificateValidationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

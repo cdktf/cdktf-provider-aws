@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/kms_secrets
 // generated from terraform resource schema
 
@@ -66,6 +61,55 @@ export function dataAwsKmsSecretsSecretToTerraform(struct?: DataAwsKmsSecretsSec
     name: cdktf.stringToTerraform(struct!.name),
     payload: cdktf.stringToTerraform(struct!.payload),
   }
+}
+
+
+export function dataAwsKmsSecretsSecretToHclTerraform(struct?: DataAwsKmsSecretsSecret | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    context: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.context),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    encryption_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grant_tokens: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.grantTokens),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    payload: {
+      value: cdktf.stringToHclTerraform(struct!.payload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsKmsSecretsSecretOutputReference extends cdktf.ComplexObject {
@@ -356,5 +400,25 @@ export class DataAwsKmsSecrets extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       secret: cdktf.listMapper(dataAwsKmsSecretsSecretToTerraform, true)(this._secret.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret: {
+        value: cdktf.listMapperHcl(dataAwsKmsSecretsSecretToHclTerraform, true)(this._secret.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsKmsSecretsSecretList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

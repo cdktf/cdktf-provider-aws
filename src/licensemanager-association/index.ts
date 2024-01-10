@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/licensemanager_association
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class LicensemanagerAssociation extends cdktf.TerraformResource {
       license_configuration_arn: cdktf.stringToTerraform(this._licenseConfigurationArn),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      license_configuration_arn: {
+        value: cdktf.stringToHclTerraform(this._licenseConfigurationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_arn: {
+        value: cdktf.stringToHclTerraform(this._resourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

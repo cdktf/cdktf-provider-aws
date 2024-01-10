@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3_bucket_metric
 // generated from terraform resource schema
 
@@ -54,6 +49,31 @@ export function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilterOut
     prefix: cdktf.stringToTerraform(struct!.prefix),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
   }
+}
+
+
+export function s3BucketMetricFilterToHclTerraform(struct?: S3BucketMetricFilterOutputReference | S3BucketMetricFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
@@ -257,5 +277,37 @@ export class S3BucketMetric extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       filter: s3BucketMetricFilterToTerraform(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: s3BucketMetricFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketMetricFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

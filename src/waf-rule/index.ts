@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_rule
 // generated from terraform resource schema
 
@@ -67,6 +62,37 @@ export function wafRulePredicatesToTerraform(struct?: WafRulePredicates | cdktf.
     negated: cdktf.booleanToTerraform(struct!.negated),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function wafRulePredicatesToHclTerraform(struct?: WafRulePredicates | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_id: {
+      value: cdktf.stringToHclTerraform(struct!.dataId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    negated: {
+      value: cdktf.booleanToHclTerraform(struct!.negated),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafRulePredicatesOutputReference extends cdktf.ComplexObject {
@@ -356,5 +382,49 @@ export class WafRule extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       predicates: cdktf.listMapper(wafRulePredicatesToTerraform, true)(this._predicates.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric_name: {
+        value: cdktf.stringToHclTerraform(this._metricName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      predicates: {
+        value: cdktf.listMapperHcl(wafRulePredicatesToHclTerraform, true)(this._predicates.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafRulePredicatesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

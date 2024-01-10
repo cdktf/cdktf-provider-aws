@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 vpcipamresourcediscoveryassociation.NewVpcIpamResourceDiscoveryAssociation(scope Construct, id *string, config VpcIpamResourceDiscoveryAssociationConfig) VpcIpamResourceDiscoveryAssociation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociation_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociation_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 &vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociationConfig {
 	Connection: interface{},
@@ -914,7 +921,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoverya
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociationTimeouts,
 }
 ```
 
@@ -1090,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 &vpcipamresourcediscoveryassociation.VpcIpamResourceDiscoveryAssociationTimeouts {
 	Create: *string,
@@ -1152,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamResourceDiscoveryAssociation.VpcIpamResourceDiscoveryAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipamresourcediscoveryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscoveryassociation"
 
 vpcipamresourcediscoveryassociation.NewVpcIpamResourceDiscoveryAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpamResourceDiscoveryAssociationTimeoutsOutputReference
 ```

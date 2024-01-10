@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appflow_connector_profile
 // generated from terraform resource schema
 
@@ -66,6 +61,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     api_key: cdktf.stringToTerraform(struct!.apiKey),
     secret_key: cdktf.stringToTerraform(struct!.secretKey),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_key: {
+      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference extends cdktf.ComplexObject {
@@ -152,6 +172,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     api_key: cdktf.stringToTerraform(struct!.apiKey),
     api_secret_key: cdktf.stringToTerraform(struct!.apiSecretKey),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_key: {
+      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    api_secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.apiSecretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference extends cdktf.ComplexObject {
@@ -243,6 +288,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -327,6 +397,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     credentials_map: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.credentialsMap),
     custom_authentication_type: cdktf.stringToTerraform(struct!.customAuthenticationType),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    credentials_map: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.credentialsMap),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    custom_authentication_type: {
+      value: cdktf.stringToHclTerraform(struct!.customAuthenticationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference extends cdktf.ComplexObject {
@@ -416,6 +511,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     auth_code: cdktf.stringToTerraform(struct!.authCode),
     redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference extends cdktf.ComplexObject {
@@ -525,6 +645,49 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2ToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_token: {
+      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference extends cdktf.ComplexObject {
@@ -708,6 +871,49 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authentication_type: {
+      value: cdktf.stringToHclTerraform(struct!.authenticationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    api_key: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyToHclTerraform(struct!.apiKey),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyList",
+    },
+    basic: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicToHclTerraform(struct!.basic),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicList",
+    },
+    custom: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomToHclTerraform(struct!.custom),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomList",
+    },
+    oauth2: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2ToHclTerraform(struct!.oauth2),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -863,6 +1069,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_key: {
+      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    application_key: {
+      value: cdktf.stringToHclTerraform(struct!.applicationKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -944,6 +1175,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_token: {
+      value: cdktf.stringToHclTerraform(struct!.apiToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1009,6 +1259,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     auth_code: cdktf.stringToTerraform(struct!.authCode),
     redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference extends cdktf.ComplexObject {
@@ -1118,6 +1393,49 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_token: {
+      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference extends cdktf.ComplexObject {
@@ -1272,6 +1590,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1369,6 +1712,37 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_token: {
+      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference extends cdktf.ComplexObject {
@@ -1495,6 +1869,43 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datakey: {
+      value: cdktf.stringToHclTerraform(struct!.datakey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_id: {
+      value: cdktf.stringToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1619,6 +2030,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1721,6 +2157,43 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     client_secret: cdktf.stringToTerraform(struct!.clientSecret),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference extends cdktf.ComplexObject {
@@ -1853,6 +2326,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1937,6 +2435,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     auth_code: cdktf.stringToTerraform(struct!.authCode),
     redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference extends cdktf.ComplexObject {
@@ -2051,6 +2574,55 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_credentials_arn: {
+      value: cdktf.stringToHclTerraform(struct!.clientCredentialsArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    jwt_token: {
+      value: cdktf.stringToHclTerraform(struct!.jwtToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth2_grant_type: {
+      value: cdktf.stringToHclTerraform(struct!.oauth2GrantType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_token: {
+      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference extends cdktf.ComplexObject {
@@ -2233,6 +2805,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2317,6 +2914,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     auth_code: cdktf.stringToTerraform(struct!.authCode),
     redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference extends cdktf.ComplexObject {
@@ -2426,6 +3048,49 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_token: {
+      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference extends cdktf.ComplexObject {
@@ -2584,6 +3249,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    basic_auth_credentials: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsToHclTerraform(struct!.basicAuthCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsList",
+    },
+    oauth_credentials: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsToHclTerraform(struct!.oauthCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2676,6 +3366,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2757,6 +3472,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_key: {
+      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2822,6 +3556,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     auth_code: cdktf.stringToTerraform(struct!.authCode),
     redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference extends cdktf.ComplexObject {
@@ -2926,6 +3685,43 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     client_secret: cdktf.stringToTerraform(struct!.clientSecret),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference extends cdktf.ComplexObject {
@@ -3058,6 +3854,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3139,6 +3960,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.apiSecretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3204,6 +4044,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference extends cdktf.ComplexObject {
@@ -3290,6 +4155,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     auth_code: cdktf.stringToTerraform(struct!.authCode),
     redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktf.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference extends cdktf.ComplexObject {
@@ -3394,6 +4284,43 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     client_secret: cdktf.stringToTerraform(struct!.clientSecret),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestToTerraform(struct!.oauthRequest),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_request: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestToHclTerraform(struct!.oauthRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference extends cdktf.ComplexObject {
@@ -3640,6 +4567,127 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
     veeva: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaToTerraform(struct!.veeva),
     zendesk: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskToTerraform(struct!.zendesk),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    amplitude: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeToHclTerraform(struct!.amplitude),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeList",
+    },
+    custom_connector: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorToHclTerraform(struct!.customConnector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorList",
+    },
+    datadog: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogToHclTerraform(struct!.datadog),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogList",
+    },
+    dynatrace: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceToHclTerraform(struct!.dynatrace),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceList",
+    },
+    google_analytics: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsToHclTerraform(struct!.googleAnalytics),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsList",
+    },
+    honeycode: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeToHclTerraform(struct!.honeycode),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeList",
+    },
+    infor_nexus: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusToHclTerraform(struct!.inforNexus),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusList",
+    },
+    marketo: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoToHclTerraform(struct!.marketo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoList",
+    },
+    redshift: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftToHclTerraform(struct!.redshift),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftList",
+    },
+    salesforce: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceToHclTerraform(struct!.salesforce),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceList",
+    },
+    sapo_data: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataToHclTerraform(struct!.sapoData),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataList",
+    },
+    service_now: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowToHclTerraform(struct!.serviceNow),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowList",
+    },
+    singular: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularToHclTerraform(struct!.singular),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularList",
+    },
+    slack: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackToHclTerraform(struct!.slack),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackList",
+    },
+    snowflake: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeToHclTerraform(struct!.snowflake),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeList",
+    },
+    trendmicro: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroToHclTerraform(struct!.trendmicro),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroList",
+    },
+    veeva: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaToHclTerraform(struct!.veeva),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaList",
+    },
+    zendesk: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskToHclTerraform(struct!.zendesk),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference extends cdktf.ComplexObject {
@@ -4076,6 +5124,17 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4127,6 +5186,37 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
     token_url: cdktf.stringToTerraform(struct!.tokenUrl),
     token_url_custom_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tokenUrlCustomProperties),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oauth2_grant_type: {
+      value: cdktf.stringToHclTerraform(struct!.oauth2GrantType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_url: {
+      value: cdktf.stringToHclTerraform(struct!.tokenUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_url_custom_properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tokenUrlCustomProperties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference extends cdktf.ComplexObject {
@@ -4239,6 +5329,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    profile_properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.profileProperties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    oauth2_properties: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesToHclTerraform(struct!.oauth2Properties),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4326,6 +5441,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4388,6 +5522,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4445,6 +5598,17 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4481,6 +5645,17 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
   return {
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference extends cdktf.ComplexObject {
@@ -4524,6 +5699,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return {
     instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference extends cdktf.ComplexObject {
@@ -4586,6 +5780,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return {
     instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference extends cdktf.ComplexObject {
@@ -4678,6 +5891,61 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
     database_url: cdktf.stringToTerraform(struct!.databaseUrl),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cluster_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_api_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.dataApiRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_url: {
+      value: cdktf.stringToHclTerraform(struct!.databaseUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference extends cdktf.ComplexObject {
@@ -4876,6 +6144,31 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_sandbox_environment: {
+      value: cdktf.booleanToHclTerraform(struct!.isSandboxEnvironment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4971,6 +6264,37 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
     oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
     token_url: cdktf.stringToTerraform(struct!.tokenUrl),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_code_url: {
+      value: cdktf.stringToHclTerraform(struct!.authCodeUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.oauthScopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    token_url: {
+      value: cdktf.stringToHclTerraform(struct!.tokenUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference extends cdktf.ComplexObject {
@@ -5103,6 +6427,61 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
     private_link_service_name: cdktf.stringToTerraform(struct!.privateLinkServiceName),
     oauth_properties: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesToTerraform(struct!.oauthProperties),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_host_url: {
+      value: cdktf.stringToHclTerraform(struct!.applicationHostUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    application_service_path: {
+      value: cdktf.stringToHclTerraform(struct!.applicationServicePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_number: {
+      value: cdktf.stringToHclTerraform(struct!.clientNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    logon_language: {
+      value: cdktf.stringToHclTerraform(struct!.logonLanguage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_number: {
+      value: cdktf.numberToHclTerraform(struct!.portNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    private_link_service_name: {
+      value: cdktf.stringToHclTerraform(struct!.privateLinkServiceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_properties: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesToHclTerraform(struct!.oauthProperties),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference extends cdktf.ComplexObject {
@@ -5290,6 +6669,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5347,6 +6745,17 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5388,6 +6797,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return {
     instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference extends cdktf.ComplexObject {
@@ -5480,6 +6908,61 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
     stage: cdktf.stringToTerraform(struct!.stage),
     warehouse: cdktf.stringToTerraform(struct!.warehouse),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_name: {
+      value: cdktf.stringToHclTerraform(struct!.accountName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_link_service_name: {
+      value: cdktf.stringToHclTerraform(struct!.privateLinkServiceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stage: {
+      value: cdktf.stringToHclTerraform(struct!.stage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    warehouse: {
+      value: cdktf.stringToHclTerraform(struct!.warehouse),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference extends cdktf.ComplexObject {
@@ -5665,6 +7148,17 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5706,6 +7200,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return {
     instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference extends cdktf.ComplexObject {
@@ -5768,6 +7281,25 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return {
     instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_url: {
+      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference extends cdktf.ComplexObject {
@@ -5951,6 +7483,127 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
     veeva: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaToTerraform(struct!.veeva),
     zendesk: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskToTerraform(struct!.zendesk),
   }
+}
+
+
+export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    amplitude: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeToHclTerraform(struct!.amplitude),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeList",
+    },
+    custom_connector: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorToHclTerraform(struct!.customConnector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorList",
+    },
+    datadog: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogToHclTerraform(struct!.datadog),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogList",
+    },
+    dynatrace: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceToHclTerraform(struct!.dynatrace),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceList",
+    },
+    google_analytics: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsToHclTerraform(struct!.googleAnalytics),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsList",
+    },
+    honeycode: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeToHclTerraform(struct!.honeycode),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeList",
+    },
+    infor_nexus: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusToHclTerraform(struct!.inforNexus),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusList",
+    },
+    marketo: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoToHclTerraform(struct!.marketo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoList",
+    },
+    redshift: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftToHclTerraform(struct!.redshift),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftList",
+    },
+    salesforce: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceToHclTerraform(struct!.salesforce),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceList",
+    },
+    sapo_data: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataToHclTerraform(struct!.sapoData),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataList",
+    },
+    service_now: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowToHclTerraform(struct!.serviceNow),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowList",
+    },
+    singular: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularToHclTerraform(struct!.singular),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularList",
+    },
+    slack: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackToHclTerraform(struct!.slack),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackList",
+    },
+    snowflake: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeToHclTerraform(struct!.snowflake),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeList",
+    },
+    trendmicro: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroToHclTerraform(struct!.trendmicro),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroList",
+    },
+    veeva: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaToHclTerraform(struct!.veeva),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaList",
+    },
+    zendesk: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskToHclTerraform(struct!.zendesk),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference extends cdktf.ComplexObject {
@@ -6401,6 +8054,31 @@ export function appflowConnectorProfileConnectorProfileConfigToTerraform(struct?
   }
 }
 
+
+export function appflowConnectorProfileConnectorProfileConfigToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigOutputReference | AppflowConnectorProfileConnectorProfileConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connector_profile_credentials: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsToHclTerraform(struct!.connectorProfileCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsList",
+    },
+    connector_profile_properties: {
+      value: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesToHclTerraform(struct!.connectorProfileProperties),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppflowConnectorProfileConnectorProfileConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6654,5 +8332,55 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       connector_profile_config: appflowConnectorProfileConnectorProfileConfigToTerraform(this._connectorProfileConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connection_mode: {
+        value: cdktf.stringToHclTerraform(this._connectionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connector_label: {
+        value: cdktf.stringToHclTerraform(this._connectorLabel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connector_type: {
+        value: cdktf.stringToHclTerraform(this._connectorType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_arn: {
+        value: cdktf.stringToHclTerraform(this._kmsArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connector_profile_config: {
+        value: appflowConnectorProfileConnectorProfileConfigToHclTerraform(this._connectorProfileConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppflowConnectorProfileConnectorProfileConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

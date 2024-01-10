@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc_endpoint_service_allowed_principal
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class VpcEndpointServiceAllowedPrincipal extends cdktf.TerraformResource 
       principal_arn: cdktf.stringToTerraform(this._principalArn),
       vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_arn: {
+        value: cdktf.stringToHclTerraform(this._principalArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_service_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointServiceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc_network_performance_metric_subscription
 // generated from terraform resource schema
 
@@ -190,5 +185,43 @@ export class VpcNetworkPerformanceMetricSubscription extends cdktf.TerraformReso
       source: cdktf.stringToTerraform(this._source),
       statistic: cdktf.stringToTerraform(this._statistic),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      destination: {
+        value: cdktf.stringToHclTerraform(this._destination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric: {
+        value: cdktf.stringToHclTerraform(this._metric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source: {
+        value: cdktf.stringToHclTerraform(this._source),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statistic: {
+        value: cdktf.stringToHclTerraform(this._statistic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

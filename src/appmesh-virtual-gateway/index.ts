@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_virtual_gateway
 // generated from terraform resource schema
 
@@ -66,6 +61,31 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertifica
     certificate_chain: cdktf.stringToTerraform(struct!.certificateChain),
     private_key: cdktf.stringToTerraform(struct!.privateKey),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_chain: {
+      value: cdktf.stringToHclTerraform(struct!.certificateChain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key: {
+      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference extends cdktf.ComplexObject {
@@ -149,6 +169,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertifica
   }
 }
 
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    secret_name: {
+      value: cdktf.stringToHclTerraform(struct!.secretName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -218,6 +257,31 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertifica
     file: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileToTerraform(struct!.file),
     sds: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsToTerraform(struct!.sds),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileToHclTerraform(struct!.file),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileList",
+    },
+    sds: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsToHclTerraform(struct!.sds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference extends cdktf.ComplexObject {
@@ -307,6 +371,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
   }
 }
 
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exact),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -371,6 +454,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
   }
 }
 
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -431,6 +533,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
   return {
     certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateAuthorityArns),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_authority_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.certificateAuthorityArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference extends cdktf.ComplexObject {
@@ -495,6 +616,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
   }
 }
 
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_chain: {
+      value: cdktf.stringToHclTerraform(struct!.certificateChain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -555,6 +695,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
   return {
     secret_name: cdktf.stringToTerraform(struct!.secretName),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    secret_name: {
+      value: cdktf.stringToHclTerraform(struct!.secretName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
@@ -633,6 +792,37 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
     file: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileToTerraform(struct!.file),
     sds: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsToTerraform(struct!.sds),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    acm: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmToHclTerraform(struct!.acm),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmList",
+    },
+    file: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileToHclTerraform(struct!.file),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileList",
+    },
+    sds: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsToHclTerraform(struct!.sds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference extends cdktf.ComplexObject {
@@ -753,6 +943,31 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
   }
 }
 
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    subject_alternative_names: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToHclTerraform(struct!.subjectAlternativeNames),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesList",
+    },
+    trust: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustToHclTerraform(struct!.trust),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -854,6 +1069,43 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsToTerrafo
     certificate: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateToTerraform(struct!.certificate),
     validation: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationToTerraform(struct!.validation),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enforce: {
+      value: cdktf.booleanToHclTerraform(struct!.enforce),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ports: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.ports),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+    certificate: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateToHclTerraform(struct!.certificate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateList",
+    },
+    validation: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationToHclTerraform(struct!.validation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference extends cdktf.ComplexObject {
@@ -986,6 +1238,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyToTerraform(
   }
 }
 
+
+export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference | AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tls: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsToHclTerraform(struct!.tls),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1053,6 +1324,25 @@ export function appmeshVirtualGatewaySpecBackendDefaultsToTerraform(struct?: App
   }
 }
 
+
+export function appmeshVirtualGatewaySpecBackendDefaultsToHclTerraform(struct?: AppmeshVirtualGatewaySpecBackendDefaultsOutputReference | AppmeshVirtualGatewaySpecBackendDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_policy: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsClientPolicyToHclTerraform(struct!.clientPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecBackendDefaultsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1116,6 +1406,25 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolGrpcToTerraform(s
   return {
     max_requests: cdktf.numberToTerraform(struct!.maxRequests),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerConnectionPoolGrpcToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference | AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_requests: {
+      value: cdktf.numberToHclTerraform(struct!.maxRequests),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference extends cdktf.ComplexObject {
@@ -1183,6 +1492,31 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolHttpToTerraform(s
     max_connections: cdktf.numberToTerraform(struct!.maxConnections),
     max_pending_requests: cdktf.numberToTerraform(struct!.maxPendingRequests),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerConnectionPoolHttpToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference | AppmeshVirtualGatewaySpecListenerConnectionPoolHttp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_connections: {
+      value: cdktf.numberToHclTerraform(struct!.maxConnections),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_pending_requests: {
+      value: cdktf.numberToHclTerraform(struct!.maxPendingRequests),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference extends cdktf.ComplexObject {
@@ -1269,6 +1603,25 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolHttp2ToTerraform(
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerConnectionPoolHttp2ToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference | AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_requests: {
+      value: cdktf.numberToHclTerraform(struct!.maxRequests),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1345,6 +1698,37 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolToTerraform(struc
     http: appmeshVirtualGatewaySpecListenerConnectionPoolHttpToTerraform(struct!.http),
     http2: appmeshVirtualGatewaySpecListenerConnectionPoolHttp2ToTerraform(struct!.http2),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerConnectionPoolToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference | AppmeshVirtualGatewaySpecListenerConnectionPool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    grpc: {
+      value: appmeshVirtualGatewaySpecListenerConnectionPoolGrpcToHclTerraform(struct!.grpc),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcList",
+    },
+    http: {
+      value: appmeshVirtualGatewaySpecListenerConnectionPoolHttpToHclTerraform(struct!.http),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerConnectionPoolHttpList",
+    },
+    http2: {
+      value: appmeshVirtualGatewaySpecListenerConnectionPoolHttp2ToHclTerraform(struct!.http2),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference extends cdktf.ComplexObject {
@@ -1484,6 +1868,61 @@ export function appmeshVirtualGatewaySpecListenerHealthCheckToTerraform(struct?:
     timeout_millis: cdktf.numberToTerraform(struct!.timeoutMillis),
     unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerHealthCheckToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference | AppmeshVirtualGatewaySpecListenerHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    healthy_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.healthyThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_millis: {
+      value: cdktf.numberToHclTerraform(struct!.intervalMillis),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_millis: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutMillis),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    unhealthy_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.unhealthyThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference extends cdktf.ComplexObject {
@@ -1673,6 +2112,31 @@ export function appmeshVirtualGatewaySpecListenerPortMappingToTerraform(struct?:
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerPortMappingToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerPortMappingOutputReference | AppmeshVirtualGatewaySpecListenerPortMapping): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerPortMappingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1754,6 +2218,25 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateAcmToTerraform(st
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerTlsCertificateAcmToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference | AppmeshVirtualGatewaySpecListenerTlsCertificateAcm): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_arn: {
+      value: cdktf.stringToHclTerraform(struct!.certificateArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1819,6 +2302,31 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateFileToTerraform(s
     certificate_chain: cdktf.stringToTerraform(struct!.certificateChain),
     private_key: cdktf.stringToTerraform(struct!.privateKey),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerTlsCertificateFileToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference | AppmeshVirtualGatewaySpecListenerTlsCertificateFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_chain: {
+      value: cdktf.stringToHclTerraform(struct!.certificateChain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key: {
+      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference extends cdktf.ComplexObject {
@@ -1902,6 +2410,25 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateSdsToTerraform(st
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerTlsCertificateSdsToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference | AppmeshVirtualGatewaySpecListenerTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    secret_name: {
+      value: cdktf.stringToHclTerraform(struct!.secretName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1978,6 +2505,37 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateToTerraform(struc
     file: appmeshVirtualGatewaySpecListenerTlsCertificateFileToTerraform(struct!.file),
     sds: appmeshVirtualGatewaySpecListenerTlsCertificateSdsToTerraform(struct!.sds),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerTlsCertificateToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference | AppmeshVirtualGatewaySpecListenerTlsCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    acm: {
+      value: appmeshVirtualGatewaySpecListenerTlsCertificateAcmToHclTerraform(struct!.acm),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsCertificateAcmList",
+    },
+    file: {
+      value: appmeshVirtualGatewaySpecListenerTlsCertificateFileToHclTerraform(struct!.file),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsCertificateFileList",
+    },
+    sds: {
+      value: appmeshVirtualGatewaySpecListenerTlsCertificateSdsToHclTerraform(struct!.sds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsCertificateSdsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference extends cdktf.ComplexObject {
@@ -2089,6 +2647,25 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternative
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference | AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exact),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2153,6 +2730,25 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternative
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference | AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match: {
+      value: appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2215,6 +2811,25 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationTrustFileToTerrafo
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerTlsValidationTrustFileToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference | AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_chain: {
+      value: cdktf.stringToHclTerraform(struct!.certificateChain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2275,6 +2890,25 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationTrustSdsToTerrafor
   return {
     secret_name: cdktf.stringToTerraform(struct!.secretName),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerTlsValidationTrustSdsToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference | AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    secret_name: {
+      value: cdktf.stringToHclTerraform(struct!.secretName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
@@ -2346,6 +2980,31 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationTrustToTerraform(s
     file: appmeshVirtualGatewaySpecListenerTlsValidationTrustFileToTerraform(struct!.file),
     sds: appmeshVirtualGatewaySpecListenerTlsValidationTrustSdsToTerraform(struct!.sds),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerTlsValidationTrustToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference | AppmeshVirtualGatewaySpecListenerTlsValidationTrust): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file: {
+      value: appmeshVirtualGatewaySpecListenerTlsValidationTrustFileToHclTerraform(struct!.file),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileList",
+    },
+    sds: {
+      value: appmeshVirtualGatewaySpecListenerTlsValidationTrustSdsToHclTerraform(struct!.sds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference extends cdktf.ComplexObject {
@@ -2444,6 +3103,31 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationToTerraform(struct
   }
 }
 
+
+export function appmeshVirtualGatewaySpecListenerTlsValidationToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference | AppmeshVirtualGatewaySpecListenerTlsValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    subject_alternative_names: {
+      value: appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesToHclTerraform(struct!.subjectAlternativeNames),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesList",
+    },
+    trust: {
+      value: appmeshVirtualGatewaySpecListenerTlsValidationTrustToHclTerraform(struct!.trust),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsValidationTrustList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2540,6 +3224,37 @@ export function appmeshVirtualGatewaySpecListenerTlsToTerraform(struct?: Appmesh
     certificate: appmeshVirtualGatewaySpecListenerTlsCertificateToTerraform(struct!.certificate),
     validation: appmeshVirtualGatewaySpecListenerTlsValidationToTerraform(struct!.validation),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerTlsToHclTerraform(struct?: AppmeshVirtualGatewaySpecListenerTlsOutputReference | AppmeshVirtualGatewaySpecListenerTls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    certificate: {
+      value: appmeshVirtualGatewaySpecListenerTlsCertificateToHclTerraform(struct!.certificate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsCertificateList",
+    },
+    validation: {
+      value: appmeshVirtualGatewaySpecListenerTlsValidationToHclTerraform(struct!.validation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsValidationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsOutputReference extends cdktf.ComplexObject {
@@ -2666,6 +3381,43 @@ export function appmeshVirtualGatewaySpecListenerToTerraform(struct?: AppmeshVir
     port_mapping: appmeshVirtualGatewaySpecListenerPortMappingToTerraform(struct!.portMapping),
     tls: appmeshVirtualGatewaySpecListenerTlsToTerraform(struct!.tls),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecListenerToHclTerraform(struct?: AppmeshVirtualGatewaySpecListener | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_pool: {
+      value: appmeshVirtualGatewaySpecListenerConnectionPoolToHclTerraform(struct!.connectionPool),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerConnectionPoolList",
+    },
+    health_check: {
+      value: appmeshVirtualGatewaySpecListenerHealthCheckToHclTerraform(struct!.healthCheck),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerHealthCheckList",
+    },
+    port_mapping: {
+      value: appmeshVirtualGatewaySpecListenerPortMappingToHclTerraform(struct!.portMapping),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerPortMappingList",
+    },
+    tls: {
+      value: appmeshVirtualGatewaySpecListenerTlsToHclTerraform(struct!.tls),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerTlsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.ComplexObject {
@@ -2833,6 +3585,31 @@ export function appmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonToTerrafo
   }
 }
 
+
+export function appmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonToHclTerraform(struct?: AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJson | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2953,6 +3730,31 @@ export function appmeshVirtualGatewaySpecLoggingAccessLogFileFormatToTerraform(s
   }
 }
 
+
+export function appmeshVirtualGatewaySpecLoggingAccessLogFileFormatToHclTerraform(struct?: AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference | AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    text: {
+      value: cdktf.stringToHclTerraform(struct!.text),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    json: {
+      value: cdktf.listMapperHcl(appmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonToHclTerraform, true)(struct!.json),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3047,6 +3849,31 @@ export function appmeshVirtualGatewaySpecLoggingAccessLogFileToTerraform(struct?
   }
 }
 
+
+export function appmeshVirtualGatewaySpecLoggingAccessLogFileToHclTerraform(struct?: AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference | AppmeshVirtualGatewaySpecLoggingAccessLogFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: appmeshVirtualGatewaySpecLoggingAccessLogFileFormatToHclTerraform(struct!.format),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3133,6 +3960,25 @@ export function appmeshVirtualGatewaySpecLoggingAccessLogToTerraform(struct?: Ap
   }
 }
 
+
+export function appmeshVirtualGatewaySpecLoggingAccessLogToHclTerraform(struct?: AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference | AppmeshVirtualGatewaySpecLoggingAccessLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file: {
+      value: appmeshVirtualGatewaySpecLoggingAccessLogFileToHclTerraform(struct!.file),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecLoggingAccessLogFileList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3198,6 +4044,25 @@ export function appmeshVirtualGatewaySpecLoggingToTerraform(struct?: AppmeshVirt
   return {
     access_log: appmeshVirtualGatewaySpecLoggingAccessLogToTerraform(struct!.accessLog),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecLoggingToHclTerraform(struct?: AppmeshVirtualGatewaySpecLoggingOutputReference | AppmeshVirtualGatewaySpecLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_log: {
+      value: appmeshVirtualGatewaySpecLoggingAccessLogToHclTerraform(struct!.accessLog),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecLoggingAccessLogList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecLoggingOutputReference extends cdktf.ComplexObject {
@@ -3279,6 +4144,37 @@ export function appmeshVirtualGatewaySpecToTerraform(struct?: AppmeshVirtualGate
     listener: cdktf.listMapper(appmeshVirtualGatewaySpecListenerToTerraform, true)(struct!.listener),
     logging: appmeshVirtualGatewaySpecLoggingToTerraform(struct!.logging),
   }
+}
+
+
+export function appmeshVirtualGatewaySpecToHclTerraform(struct?: AppmeshVirtualGatewaySpecOutputReference | AppmeshVirtualGatewaySpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backend_defaults: {
+      value: appmeshVirtualGatewaySpecBackendDefaultsToHclTerraform(struct!.backendDefaults),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecBackendDefaultsList",
+    },
+    listener: {
+      value: cdktf.listMapperHcl(appmeshVirtualGatewaySpecListenerToHclTerraform, true)(struct!.listener),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecListenerList",
+    },
+    logging: {
+      value: appmeshVirtualGatewaySpecLoggingToHclTerraform(struct!.logging),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshVirtualGatewaySpecLoggingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObject {
@@ -3572,5 +4468,55 @@ export class AppmeshVirtualGateway extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       spec: appmeshVirtualGatewaySpecToTerraform(this._spec.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_name: {
+        value: cdktf.stringToHclTerraform(this._meshName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_owner: {
+        value: cdktf.stringToHclTerraform(this._meshOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      spec: {
+        value: appmeshVirtualGatewaySpecToHclTerraform(this._spec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppmeshVirtualGatewaySpecList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

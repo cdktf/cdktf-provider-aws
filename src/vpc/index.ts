@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc
 // generated from terraform resource schema
 
@@ -451,5 +446,103 @@ export class Vpc extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assign_generated_ipv6_cidr_block: {
+        value: cdktf.booleanToHclTerraform(this._assignGeneratedIpv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cidr_block: {
+        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_dns_hostnames: {
+        value: cdktf.booleanToHclTerraform(this._enableDnsHostnames),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_dns_support: {
+        value: cdktf.booleanToHclTerraform(this._enableDnsSupport),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_network_address_usage_metrics: {
+        value: cdktf.booleanToHclTerraform(this._enableNetworkAddressUsageMetrics),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_tenancy: {
+        value: cdktf.stringToHclTerraform(this._instanceTenancy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv4_ipam_pool_id: {
+        value: cdktf.stringToHclTerraform(this._ipv4IpamPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv4_netmask_length: {
+        value: cdktf.numberToHclTerraform(this._ipv4NetmaskLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ipv6_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_cidr_block_network_border_group: {
+        value: cdktf.stringToHclTerraform(this._ipv6CidrBlockNetworkBorderGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_ipam_pool_id: {
+        value: cdktf.stringToHclTerraform(this._ipv6IpamPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_netmask_length: {
+        value: cdktf.numberToHclTerraform(this._ipv6NetmaskLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

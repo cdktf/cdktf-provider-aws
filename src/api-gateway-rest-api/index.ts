@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/api_gateway_rest_api
 // generated from terraform resource schema
 
@@ -98,6 +93,31 @@ export function apiGatewayRestApiEndpointConfigurationToTerraform(struct?: ApiGa
     types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.types),
     vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcEndpointIds),
   }
+}
+
+
+export function apiGatewayRestApiEndpointConfigurationToHclTerraform(struct?: ApiGatewayRestApiEndpointConfigurationOutputReference | ApiGatewayRestApiEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.types),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    vpc_endpoint_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpcEndpointIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf.ComplexObject {
@@ -519,5 +539,103 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       endpoint_configuration: apiGatewayRestApiEndpointConfigurationToTerraform(this._endpointConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_key_source: {
+        value: cdktf.stringToHclTerraform(this._apiKeySource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      binary_media_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._binaryMediaTypes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      body: {
+        value: cdktf.stringToHclTerraform(this._body),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_execute_api_endpoint: {
+        value: cdktf.booleanToHclTerraform(this._disableExecuteApiEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      fail_on_warnings: {
+        value: cdktf.booleanToHclTerraform(this._failOnWarnings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      minimum_compression_size: {
+        value: cdktf.stringToHclTerraform(this._minimumCompressionSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      put_rest_api_mode: {
+        value: cdktf.stringToHclTerraform(this._putRestApiMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      endpoint_configuration: {
+        value: apiGatewayRestApiEndpointConfigurationToHclTerraform(this._endpointConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApiGatewayRestApiEndpointConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

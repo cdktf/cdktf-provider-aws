@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codeartifact_repository_permissions_policy
 // generated from terraform resource schema
 
@@ -209,5 +204,49 @@ export class CodeartifactRepositoryPermissionsPolicy extends cdktf.TerraformReso
       policy_revision: cdktf.stringToTerraform(this._policyRevision),
       repository: cdktf.stringToTerraform(this._repository),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_owner: {
+        value: cdktf.stringToHclTerraform(this._domainOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_document: {
+        value: cdktf.stringToHclTerraform(this._policyDocument),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_revision: {
+        value: cdktf.stringToHclTerraform(this._policyRevision),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

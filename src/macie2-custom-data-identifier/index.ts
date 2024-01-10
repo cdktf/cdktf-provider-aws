@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/macie2_custom_data_identifier
 // generated from terraform resource schema
 
@@ -311,5 +306,73 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_words: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ignoreWords),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      keywords: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keywords),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      maximum_match_distance: {
+        value: cdktf.numberToHclTerraform(this._maximumMatchDistance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      regex: {
+        value: cdktf.stringToHclTerraform(this._regex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

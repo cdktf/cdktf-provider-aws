@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/quicksight_group
 // generated from terraform resource schema
 
@@ -181,5 +176,37 @@ export class DataAwsQuicksightGroup extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_name: {
+        value: cdktf.stringToHclTerraform(this._groupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

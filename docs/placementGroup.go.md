@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.placementGroup.PlacementGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/placementgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/placementgroup"
 
 placementgroup.NewPlacementGroup(scope Construct, id *string, config PlacementGroupConfig) PlacementGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.placementGroup.PlacementGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.placementGroup.PlacementGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.placementGroup.PlacementGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.placementGroup.PlacementGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.placementGroup.PlacementGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.placementGroup.PlacementGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.placementGroup.PlacementGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.placementGroup.PlacementGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.placementGroup.PlacementGroup.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.placementGroup.PlacementGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/placementgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/placementgroup"
 
 placementgroup.PlacementGroup_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.placementGroup.PlacementGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/placementgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/placementgroup"
 
 placementgroup.PlacementGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ placementgroup.PlacementGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.placementGroup.PlacementGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/placementgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/placementgroup"
 
 placementgroup.PlacementGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ placementgroup.PlacementGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.placementGroup.PlacementGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/placementgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/placementgroup"
 
 placementgroup.PlacementGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.placementGroup.PlacementGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/placementgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/placementgroup"
 
 &placementgroup.PlacementGroupConfig {
 	Connection: interface{},

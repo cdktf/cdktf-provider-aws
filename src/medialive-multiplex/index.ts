@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/medialive_multiplex
 // generated from terraform resource schema
 
@@ -82,6 +77,43 @@ export function medialiveMultiplexMultiplexSettingsToTerraform(struct?: Medialiv
     transport_stream_id: cdktf.numberToTerraform(struct!.transportStreamId),
     transport_stream_reserved_bitrate: cdktf.numberToTerraform(struct!.transportStreamReservedBitrate),
   }
+}
+
+
+export function medialiveMultiplexMultiplexSettingsToHclTerraform(struct?: MedialiveMultiplexMultiplexSettingsOutputReference | MedialiveMultiplexMultiplexSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_video_buffer_delay_milliseconds: {
+      value: cdktf.numberToHclTerraform(struct!.maximumVideoBufferDelayMilliseconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    transport_stream_bitrate: {
+      value: cdktf.numberToHclTerraform(struct!.transportStreamBitrate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    transport_stream_id: {
+      value: cdktf.numberToHclTerraform(struct!.transportStreamId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    transport_stream_reserved_bitrate: {
+      value: cdktf.numberToHclTerraform(struct!.transportStreamReservedBitrate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveMultiplexMultiplexSettingsOutputReference extends cdktf.ComplexObject {
@@ -217,6 +249,37 @@ export function medialiveMultiplexTimeoutsToTerraform(struct?: MedialiveMultiple
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function medialiveMultiplexTimeoutsToHclTerraform(struct?: MedialiveMultiplexTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveMultiplexTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -529,5 +592,61 @@ export class MedialiveMultiplex extends cdktf.TerraformResource {
       multiplex_settings: medialiveMultiplexMultiplexSettingsToTerraform(this._multiplexSettings.internalValue),
       timeouts: medialiveMultiplexTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zones: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._availabilityZones),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_multiplex: {
+        value: cdktf.booleanToHclTerraform(this._startMultiplex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      multiplex_settings: {
+        value: medialiveMultiplexMultiplexSettingsToHclTerraform(this._multiplexSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MedialiveMultiplexMultiplexSettingsList",
+      },
+      timeouts: {
+        value: medialiveMultiplexTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MedialiveMultiplexTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

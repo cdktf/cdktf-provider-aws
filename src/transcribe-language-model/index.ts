@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/transcribe_language_model
 // generated from terraform resource schema
 
@@ -77,6 +72,37 @@ export function transcribeLanguageModelInputDataConfigToTerraform(struct?: Trans
     s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
     tuning_data_s3_uri: cdktf.stringToTerraform(struct!.tuningDataS3Uri),
   }
+}
+
+
+export function transcribeLanguageModelInputDataConfigToHclTerraform(struct?: TranscribeLanguageModelInputDataConfigOutputReference | TranscribeLanguageModelInputDataConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_access_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.dataAccessRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_uri: {
+      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tuning_data_s3_uri: {
+      value: cdktf.stringToHclTerraform(struct!.tuningDataS3Uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TranscribeLanguageModelInputDataConfigOutputReference extends cdktf.ComplexObject {
@@ -180,6 +206,25 @@ export function transcribeLanguageModelTimeoutsToTerraform(struct?: TranscribeLa
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function transcribeLanguageModelTimeoutsToHclTerraform(struct?: TranscribeLanguageModelTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TranscribeLanguageModelTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -442,5 +487,61 @@ export class TranscribeLanguageModel extends cdktf.TerraformResource {
       input_data_config: transcribeLanguageModelInputDataConfigToTerraform(this._inputDataConfig.internalValue),
       timeouts: transcribeLanguageModelTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_model_name: {
+        value: cdktf.stringToHclTerraform(this._baseModelName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      language_code: {
+        value: cdktf.stringToHclTerraform(this._languageCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_name: {
+        value: cdktf.stringToHclTerraform(this._modelName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      input_data_config: {
+        value: transcribeLanguageModelInputDataConfigToHclTerraform(this._inputDataConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TranscribeLanguageModelInputDataConfigList",
+      },
+      timeouts: {
+        value: transcribeLanguageModelTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "TranscribeLanguageModelTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

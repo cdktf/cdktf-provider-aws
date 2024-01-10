@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iot_thing_group_membership
 // generated from terraform resource schema
 
@@ -163,5 +158,37 @@ export class IotThingGroupMembership extends cdktf.TerraformResource {
       thing_group_name: cdktf.stringToTerraform(this._thingGroupName),
       thing_name: cdktf.stringToTerraform(this._thingName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      override_dynamic_group: {
+        value: cdktf.booleanToHclTerraform(this._overrideDynamicGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      thing_group_name: {
+        value: cdktf.stringToHclTerraform(this._thingGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      thing_name: {
+        value: cdktf.stringToHclTerraform(this._thingName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

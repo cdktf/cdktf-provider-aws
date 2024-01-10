@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 guarddutymember.NewGuarddutyMember(scope Construct, id *string, config GuarddutyMemberConfig) GuarddutyMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.guarddutyMember.GuarddutyMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.guarddutyMember.GuarddutyMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.guarddutyMember.GuarddutyMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.guarddutyMember.GuarddutyMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.guarddutyMember.GuarddutyMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.guarddutyMember.GuarddutyMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.guarddutyMember.GuarddutyMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMember.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ guarddutymember.GuarddutyMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ guarddutymember.GuarddutyMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 guarddutymember.GuarddutyMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 &guarddutymember.GuarddutyMemberConfig {
 	Connection: interface{},
@@ -912,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
 	Id: *string,
 	InvitationMessage: *string,
 	Invite: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.guarddutyMember.GuarddutyMemberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.guarddutyMember.GuarddutyMemberTimeouts,
 }
 ```
 
@@ -1114,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 &guarddutymember.GuarddutyMemberTimeouts {
 	Create: *string,
@@ -1162,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/guarddutymember"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutymember"
 
 guarddutymember.NewGuarddutyMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyMemberTimeoutsOutputReference
 ```

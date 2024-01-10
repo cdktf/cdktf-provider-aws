@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system_policy
 // generated from terraform resource schema
 
@@ -163,5 +158,37 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       policy: cdktf.stringToTerraform(this._policy),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bypass_policy_lockout_safety_check: {
+        value: cdktf.booleanToHclTerraform(this._bypassPolicyLockoutSafetyCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      file_system_id: {
+        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_managed_prefix_list_entry
 // generated from terraform resource schema
 
@@ -163,5 +158,37 @@ export class Ec2ManagedPrefixListEntryA extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       prefix_list_id: cdktf.stringToTerraform(this._prefixListId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cidr: {
+        value: cdktf.stringToHclTerraform(this._cidr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prefix_list_id: {
+        value: cdktf.stringToHclTerraform(this._prefixListId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

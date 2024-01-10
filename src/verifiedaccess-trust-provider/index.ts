@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/verifiedaccess_trust_provider
 // generated from terraform resource schema
 
@@ -81,6 +76,25 @@ export function verifiedaccessTrustProviderDeviceOptionsToTerraform(struct?: Ver
   return {
     tenant_id: cdktf.stringToTerraform(struct!.tenantId),
   }
+}
+
+
+export function verifiedaccessTrustProviderDeviceOptionsToHclTerraform(struct?: VerifiedaccessTrustProviderDeviceOptionsOutputReference | VerifiedaccessTrustProviderDeviceOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessTrustProviderDeviceOptionsOutputReference extends cdktf.ComplexObject {
@@ -176,6 +190,61 @@ export function verifiedaccessTrustProviderOidcOptionsToTerraform(struct?: Verif
     token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
     user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
   }
+}
+
+
+export function verifiedaccessTrustProviderOidcOptionsToHclTerraform(struct?: VerifiedaccessTrustProviderOidcOptionsOutputReference | VerifiedaccessTrustProviderOidcOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorization_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_info_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.userInfoEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessTrustProviderOidcOptionsOutputReference extends cdktf.ComplexObject {
@@ -380,6 +449,37 @@ export function verifiedaccessTrustProviderTimeoutsToTerraform(struct?: Verified
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function verifiedaccessTrustProviderTimeoutsToHclTerraform(struct?: VerifiedaccessTrustProviderTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -741,5 +841,79 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
       oidc_options: verifiedaccessTrustProviderOidcOptionsToTerraform(this._oidcOptions.internalValue),
       timeouts: verifiedaccessTrustProviderTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      device_trust_provider_type: {
+        value: cdktf.stringToHclTerraform(this._deviceTrustProviderType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_reference_name: {
+        value: cdktf.stringToHclTerraform(this._policyReferenceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      trust_provider_type: {
+        value: cdktf.stringToHclTerraform(this._trustProviderType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_trust_provider_type: {
+        value: cdktf.stringToHclTerraform(this._userTrustProviderType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      device_options: {
+        value: verifiedaccessTrustProviderDeviceOptionsToHclTerraform(this._deviceOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessTrustProviderDeviceOptionsList",
+      },
+      oidc_options: {
+        value: verifiedaccessTrustProviderOidcOptionsToHclTerraform(this._oidcOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessTrustProviderOidcOptionsList",
+      },
+      timeouts: {
+        value: verifiedaccessTrustProviderTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VerifiedaccessTrustProviderTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

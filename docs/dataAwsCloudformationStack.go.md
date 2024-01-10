@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.NewDataAwsCloudformationStack(scope Construct, id *string, config DataAwsCloudformationStackConfig) DataAwsCloudformationStack
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 &dataawscloudformationstack.DataAwsCloudformationStackConfig {
 	Connection: interface{},

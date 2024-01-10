@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/route53_record
 // generated from terraform resource schema
 
@@ -119,6 +114,37 @@ export function route53RecordAliasToTerraform(struct?: Route53RecordAliasOutputR
   }
 }
 
+
+export function route53RecordAliasToHclTerraform(struct?: Route53RecordAliasOutputReference | Route53RecordAlias): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    evaluate_target_health: {
+      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zone_id: {
+      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53RecordAliasOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -224,6 +250,31 @@ export function route53RecordCidrRoutingPolicyToTerraform(struct?: Route53Record
   }
 }
 
+
+export function route53RecordCidrRoutingPolicyToHclTerraform(struct?: Route53RecordCidrRoutingPolicyOutputReference | Route53RecordCidrRoutingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    collection_id: {
+      value: cdktf.stringToHclTerraform(struct!.collectionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location_name: {
+      value: cdktf.stringToHclTerraform(struct!.locationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53RecordCidrRoutingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -305,6 +356,25 @@ export function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53Re
   }
 }
 
+
+export function route53RecordFailoverRoutingPolicyToHclTerraform(struct?: Route53RecordFailoverRoutingPolicyOutputReference | Route53RecordFailoverRoutingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53RecordFailoverRoutingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -375,6 +445,37 @@ export function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route5
     country: cdktf.stringToTerraform(struct!.country),
     subdivision: cdktf.stringToTerraform(struct!.subdivision),
   }
+}
+
+
+export function route53RecordGeolocationRoutingPolicyToHclTerraform(struct?: Route53RecordGeolocationRoutingPolicyOutputReference | Route53RecordGeolocationRoutingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    continent: {
+      value: cdktf.stringToHclTerraform(struct!.continent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    country: {
+      value: cdktf.stringToHclTerraform(struct!.country),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subdivision: {
+      value: cdktf.stringToHclTerraform(struct!.subdivision),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53RecordGeolocationRoutingPolicyOutputReference extends cdktf.ComplexObject {
@@ -486,6 +587,25 @@ export function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53Rec
   }
 }
 
+
+export function route53RecordLatencyRoutingPolicyToHclTerraform(struct?: Route53RecordLatencyRoutingPolicyOutputReference | Route53RecordLatencyRoutingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53RecordLatencyRoutingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -546,6 +666,25 @@ export function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53Re
   return {
     weight: cdktf.numberToTerraform(struct!.weight),
   }
+}
+
+
+export function route53RecordWeightedRoutingPolicyToHclTerraform(struct?: Route53RecordWeightedRoutingPolicyOutputReference | Route53RecordWeightedRoutingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53RecordWeightedRoutingPolicyOutputReference extends cdktf.ComplexObject {
@@ -942,5 +1081,109 @@ export class Route53Record extends cdktf.TerraformResource {
       latency_routing_policy: route53RecordLatencyRoutingPolicyToTerraform(this._latencyRoutingPolicy.internalValue),
       weighted_routing_policy: route53RecordWeightedRoutingPolicyToTerraform(this._weightedRoutingPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_overwrite: {
+        value: cdktf.booleanToHclTerraform(this._allowOverwrite),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      health_check_id: {
+        value: cdktf.stringToHclTerraform(this._healthCheckId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multivalue_answer_routing_policy: {
+        value: cdktf.booleanToHclTerraform(this._multivalueAnswerRoutingPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      records: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._records),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      set_identifier: {
+        value: cdktf.stringToHclTerraform(this._setIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: route53RecordAliasToHclTerraform(this._alias.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecordAliasList",
+      },
+      cidr_routing_policy: {
+        value: route53RecordCidrRoutingPolicyToHclTerraform(this._cidrRoutingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecordCidrRoutingPolicyList",
+      },
+      failover_routing_policy: {
+        value: route53RecordFailoverRoutingPolicyToHclTerraform(this._failoverRoutingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecordFailoverRoutingPolicyList",
+      },
+      geolocation_routing_policy: {
+        value: route53RecordGeolocationRoutingPolicyToHclTerraform(this._geolocationRoutingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecordGeolocationRoutingPolicyList",
+      },
+      latency_routing_policy: {
+        value: route53RecordLatencyRoutingPolicyToHclTerraform(this._latencyRoutingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecordLatencyRoutingPolicyList",
+      },
+      weighted_routing_policy: {
+        value: route53RecordWeightedRoutingPolicyToHclTerraform(this._weightedRoutingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecordWeightedRoutingPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

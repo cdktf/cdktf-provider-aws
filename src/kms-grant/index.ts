@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kms_grant
 // generated from terraform resource schema
 
@@ -74,6 +69,31 @@ export function kmsGrantConstraintsToTerraform(struct?: KmsGrantConstraints | cd
     encryption_context_equals: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.encryptionContextEquals),
     encryption_context_subset: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.encryptionContextSubset),
   }
+}
+
+
+export function kmsGrantConstraintsToHclTerraform(struct?: KmsGrantConstraints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption_context_equals: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.encryptionContextEquals),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    encryption_context_subset: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.encryptionContextSubset),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KmsGrantConstraintsOutputReference extends cdktf.ComplexObject {
@@ -406,5 +426,67 @@ export class KmsGrant extends cdktf.TerraformResource {
       retiring_principal: cdktf.stringToTerraform(this._retiringPrincipal),
       constraints: cdktf.listMapper(kmsGrantConstraintsToTerraform, true)(this._constraints.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      grant_creation_tokens: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._grantCreationTokens),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      grantee_principal: {
+        value: cdktf.stringToHclTerraform(this._granteePrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_id: {
+        value: cdktf.stringToHclTerraform(this._keyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._operations),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      retire_on_delete: {
+        value: cdktf.booleanToHclTerraform(this._retireOnDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      retiring_principal: {
+        value: cdktf.stringToHclTerraform(this._retiringPrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      constraints: {
+        value: cdktf.listMapperHcl(kmsGrantConstraintsToHclTerraform, true)(this._constraints.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "KmsGrantConstraintsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

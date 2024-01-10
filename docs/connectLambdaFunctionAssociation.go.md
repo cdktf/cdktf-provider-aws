@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.NewConnectLambdaFunctionAssociation(scope Construct, id *string, config ConnectLambdaFunctionAssociationConfig) ConnectLambdaFunctionAssociation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -125,6 +126,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.toMetadata"></a>
 
@@ -378,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
 
 &connectlambdafunctionassociation.ConnectLambdaFunctionAssociationConfig {
 	Connection: interface{},

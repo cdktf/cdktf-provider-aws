@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_client_vpn_endpoint
 // generated from terraform resource schema
 
@@ -50,6 +45,17 @@ export function dataAwsEc2ClientVpnEndpointAuthenticationOptionsToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsEc2ClientVpnEndpointAuthenticationOptionsToHclTerraform(struct?: DataAwsEc2ClientVpnEndpointAuthenticationOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEc2ClientVpnEndpointAuthenticationOptionsOutputReference extends cdktf.ComplexObject {
@@ -136,6 +142,17 @@ export function dataAwsEc2ClientVpnEndpointClientConnectOptionsToTerraform(struc
   }
 }
 
+
+export function dataAwsEc2ClientVpnEndpointClientConnectOptionsToHclTerraform(struct?: DataAwsEc2ClientVpnEndpointClientConnectOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsEc2ClientVpnEndpointClientConnectOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -205,6 +222,17 @@ export function dataAwsEc2ClientVpnEndpointClientLoginBannerOptionsToTerraform(s
   }
 }
 
+
+export function dataAwsEc2ClientVpnEndpointClientLoginBannerOptionsToHclTerraform(struct?: DataAwsEc2ClientVpnEndpointClientLoginBannerOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -272,6 +300,17 @@ export function dataAwsEc2ClientVpnEndpointConnectionLogOptionsToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataAwsEc2ClientVpnEndpointConnectionLogOptionsToHclTerraform(struct?: DataAwsEc2ClientVpnEndpointConnectionLogOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdktf.ComplexObject {
@@ -356,6 +395,31 @@ export function dataAwsEc2ClientVpnEndpointFilterToTerraform(struct?: DataAwsEc2
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsEc2ClientVpnEndpointFilterToHclTerraform(struct?: DataAwsEc2ClientVpnEndpointFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEc2ClientVpnEndpointFilterOutputReference extends cdktf.ComplexObject {
@@ -469,6 +533,25 @@ export function dataAwsEc2ClientVpnEndpointTimeoutsToTerraform(struct?: DataAwsE
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsEc2ClientVpnEndpointTimeoutsToHclTerraform(struct?: DataAwsEc2ClientVpnEndpointTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEc2ClientVpnEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -778,5 +861,43 @@ export class DataAwsEc2ClientVpnEndpoint extends cdktf.TerraformDataSource {
       filter: cdktf.listMapper(dataAwsEc2ClientVpnEndpointFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsEc2ClientVpnEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_vpn_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._clientVpnEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsEc2ClientVpnEndpointFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsEc2ClientVpnEndpointFilterList",
+      },
+      timeouts: {
+        value: dataAwsEc2ClientVpnEndpointTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsEc2ClientVpnEndpointTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

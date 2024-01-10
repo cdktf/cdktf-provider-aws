@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3control_object_lambda_access_point
 // generated from terraform resource schema
 
@@ -54,6 +49,31 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
     function_arn: cdktf.stringToTerraform(struct!.functionArn),
     function_payload: cdktf.stringToTerraform(struct!.functionPayload),
   }
+}
+
+
+export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaToHclTerraform(struct?: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference | S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    function_arn: {
+      value: cdktf.stringToHclTerraform(struct!.functionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    function_payload: {
+      value: cdktf.stringToHclTerraform(struct!.functionPayload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference extends cdktf.ComplexObject {
@@ -142,6 +162,25 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
   }
 }
 
+
+export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationToHclTerraform(struct?: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference | S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_lambda: {
+      value: s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaToHclTerraform(struct!.awsLambda),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -209,6 +248,31 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
     actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
     content_transformation: s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationToTerraform(struct!.contentTransformation),
   }
+}
+
+
+export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationToHclTerraform(struct?: S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    content_transformation: {
+      value: s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationToHclTerraform(struct!.contentTransformation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference extends cdktf.ComplexObject {
@@ -339,6 +403,43 @@ export function s3ControlObjectLambdaAccessPointConfigurationToTerraform(struct?
     supporting_access_point: cdktf.stringToTerraform(struct!.supportingAccessPoint),
     transformation_configuration: cdktf.listMapper(s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationToTerraform, true)(struct!.transformationConfiguration),
   }
+}
+
+
+export function s3ControlObjectLambdaAccessPointConfigurationToHclTerraform(struct?: S3ControlObjectLambdaAccessPointConfigurationOutputReference | S3ControlObjectLambdaAccessPointConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_features: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedFeatures),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    cloud_watch_metrics_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.cloudWatchMetricsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    supporting_access_point: {
+      value: cdktf.stringToHclTerraform(struct!.supportingAccessPoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transformation_configuration: {
+      value: cdktf.listMapperHcl(s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationToHclTerraform, true)(struct!.transformationConfiguration),
+      isBlock: true,
+      type: "set",
+      storageClassType: "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extends cdktf.ComplexObject {
@@ -590,5 +691,37 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       configuration: s3ControlObjectLambdaAccessPointConfigurationToTerraform(this._configuration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration: {
+        value: s3ControlObjectLambdaAccessPointConfigurationToHclTerraform(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3ControlObjectLambdaAccessPointConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

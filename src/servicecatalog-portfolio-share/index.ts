@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/servicecatalog_portfolio_share
 // generated from terraform resource schema
 
@@ -84,6 +79,43 @@ export function servicecatalogPortfolioShareTimeoutsToTerraform(struct?: Service
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function servicecatalogPortfolioShareTimeoutsToHclTerraform(struct?: ServicecatalogPortfolioShareTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServicecatalogPortfolioShareTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -433,5 +465,67 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
       wait_for_acceptance: cdktf.booleanToTerraform(this._waitForAcceptance),
       timeouts: servicecatalogPortfolioShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      accept_language: {
+        value: cdktf.stringToHclTerraform(this._acceptLanguage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      portfolio_id: {
+        value: cdktf.stringToHclTerraform(this._portfolioId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_id: {
+        value: cdktf.stringToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      share_principals: {
+        value: cdktf.booleanToHclTerraform(this._sharePrincipals),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      share_tag_options: {
+        value: cdktf.booleanToHclTerraform(this._shareTagOptions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_acceptance: {
+        value: cdktf.booleanToHclTerraform(this._waitForAcceptance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: servicecatalogPortfolioShareTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ServicecatalogPortfolioShareTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dynamodb_table_item
 // generated from terraform resource schema
 
@@ -182,5 +177,43 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
       range_key: cdktf.stringToTerraform(this._rangeKey),
       table_name: cdktf.stringToTerraform(this._tableName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hash_key: {
+        value: cdktf.stringToHclTerraform(this._hashKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      item: {
+        value: cdktf.stringToHclTerraform(this._item),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      range_key: {
+        value: cdktf.stringToHclTerraform(this._rangeKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      table_name: {
+        value: cdktf.stringToHclTerraform(this._tableName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/auditmanager_framework
 // generated from terraform resource schema
 
@@ -37,6 +32,17 @@ export function dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSetsControls | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference extends cdktf.ComplexObject {
@@ -119,6 +125,25 @@ export function dataAwsAuditmanagerFrameworkControlSetsToTerraform(struct?: Data
   return {
     controls: cdktf.listMapper(dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform, true)(struct!.controls),
   }
+}
+
+
+export function dataAwsAuditmanagerFrameworkControlSetsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    controls: {
+      value: cdktf.listMapperHcl(dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform, true)(struct!.controls),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsAuditmanagerFrameworkControlSetsControlsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdktf.ComplexObject {
@@ -350,5 +375,31 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       control_sets: cdktf.listMapper(dataAwsAuditmanagerFrameworkControlSetsToTerraform, true)(this._controlSets.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      framework_type: {
+        value: cdktf.stringToHclTerraform(this._frameworkType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      control_sets: {
+        value: cdktf.listMapperHcl(dataAwsAuditmanagerFrameworkControlSetsToHclTerraform, true)(this._controlSets.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsAuditmanagerFrameworkControlSetsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

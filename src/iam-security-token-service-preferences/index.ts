@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iam_security_token_service_preferences
 // generated from terraform resource schema
 
@@ -122,5 +117,25 @@ export class IamSecurityTokenServicePreferences extends cdktf.TerraformResource 
       global_endpoint_token_version: cdktf.stringToTerraform(this._globalEndpointTokenVersion),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      global_endpoint_token_version: {
+        value: cdktf.stringToHclTerraform(this._globalEndpointTokenVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

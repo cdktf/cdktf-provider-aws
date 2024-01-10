@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/servicequotas_template_association
 // generated from terraform resource schema
 
@@ -110,5 +105,19 @@ export class ServicequotasTemplateAssociation extends cdktf.TerraformResource {
     return {
       skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      skip_destroy: {
+        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

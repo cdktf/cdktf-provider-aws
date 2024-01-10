@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ce_anomaly_subscription
 // generated from terraform resource schema
 
@@ -76,6 +71,31 @@ export function ceAnomalySubscriptionSubscriberToTerraform(struct?: CeAnomalySub
     address: cdktf.stringToTerraform(struct!.address),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function ceAnomalySubscriptionSubscriberToHclTerraform(struct?: CeAnomalySubscriptionSubscriber | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionSubscriberOutputReference extends cdktf.ComplexObject {
@@ -201,6 +221,37 @@ export function ceAnomalySubscriptionThresholdExpressionAndCostCategoryToTerrafo
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionAndCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionAndCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -320,6 +371,37 @@ export function ceAnomalySubscriptionThresholdExpressionAndDimensionToTerraform(
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionAndDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionAndDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -437,6 +519,37 @@ export function ceAnomalySubscriptionThresholdExpressionAndTagsToTerraform(struc
     match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionAndTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference | CeAnomalySubscriptionThresholdExpressionAndTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference extends cdktf.ComplexObject {
@@ -562,6 +675,37 @@ export function ceAnomalySubscriptionThresholdExpressionAndToTerraform(struct?: 
     dimension: ceAnomalySubscriptionThresholdExpressionAndDimensionToTerraform(struct!.dimension),
     tags: ceAnomalySubscriptionThresholdExpressionAndTagsToTerraform(struct!.tags),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionAndToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAnd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_category: {
+      value: ceAnomalySubscriptionThresholdExpressionAndCostCategoryToHclTerraform(struct!.costCategory),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionAndCostCategoryList",
+    },
+    dimension: {
+      value: ceAnomalySubscriptionThresholdExpressionAndDimensionToHclTerraform(struct!.dimension),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionAndDimensionList",
+    },
+    tags: {
+      value: ceAnomalySubscriptionThresholdExpressionAndTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionAndTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionAndOutputReference extends cdktf.ComplexObject {
@@ -715,6 +859,37 @@ export function ceAnomalySubscriptionThresholdExpressionCostCategoryToTerraform(
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -832,6 +1007,37 @@ export function ceAnomalySubscriptionThresholdExpressionDimensionToTerraform(str
     match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionDimensionOutputReference extends cdktf.ComplexObject {
@@ -953,6 +1159,37 @@ export function ceAnomalySubscriptionThresholdExpressionNotCostCategoryToTerrafo
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionNotCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionNotCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1072,6 +1309,37 @@ export function ceAnomalySubscriptionThresholdExpressionNotDimensionToTerraform(
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionNotDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionNotDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1189,6 +1457,37 @@ export function ceAnomalySubscriptionThresholdExpressionNotTagsToTerraform(struc
     match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionNotTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference | CeAnomalySubscriptionThresholdExpressionNotTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference extends cdktf.ComplexObject {
@@ -1316,6 +1615,37 @@ export function ceAnomalySubscriptionThresholdExpressionNotToTerraform(struct?: 
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionNotToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotOutputReference | CeAnomalySubscriptionThresholdExpressionNot): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_category: {
+      value: ceAnomalySubscriptionThresholdExpressionNotCostCategoryToHclTerraform(struct!.costCategory),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionNotCostCategoryList",
+    },
+    dimension: {
+      value: ceAnomalySubscriptionThresholdExpressionNotDimensionToHclTerraform(struct!.dimension),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionNotDimensionList",
+    },
+    tags: {
+      value: ceAnomalySubscriptionThresholdExpressionNotTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionNotTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionNotOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1433,6 +1763,37 @@ export function ceAnomalySubscriptionThresholdExpressionOrCostCategoryToTerrafor
     match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionOrCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionOrCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference extends cdktf.ComplexObject {
@@ -1554,6 +1915,37 @@ export function ceAnomalySubscriptionThresholdExpressionOrDimensionToTerraform(s
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionOrDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionOrDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1671,6 +2063,37 @@ export function ceAnomalySubscriptionThresholdExpressionOrTagsToTerraform(struct
     match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionOrTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference | CeAnomalySubscriptionThresholdExpressionOrTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference extends cdktf.ComplexObject {
@@ -1796,6 +2219,37 @@ export function ceAnomalySubscriptionThresholdExpressionOrToTerraform(struct?: C
     dimension: ceAnomalySubscriptionThresholdExpressionOrDimensionToTerraform(struct!.dimension),
     tags: ceAnomalySubscriptionThresholdExpressionOrTagsToTerraform(struct!.tags),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionOrToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOr | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_category: {
+      value: ceAnomalySubscriptionThresholdExpressionOrCostCategoryToHclTerraform(struct!.costCategory),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionOrCostCategoryList",
+    },
+    dimension: {
+      value: ceAnomalySubscriptionThresholdExpressionOrDimensionToHclTerraform(struct!.dimension),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionOrDimensionList",
+    },
+    tags: {
+      value: ceAnomalySubscriptionThresholdExpressionOrTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionOrTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionOrOutputReference extends cdktf.ComplexObject {
@@ -1949,6 +2403,37 @@ export function ceAnomalySubscriptionThresholdExpressionTagsToTerraform(struct?:
   }
 }
 
+
+export function ceAnomalySubscriptionThresholdExpressionTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionTagsOutputReference | CeAnomalySubscriptionThresholdExpressionTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CeAnomalySubscriptionThresholdExpressionTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2093,6 +2578,55 @@ export function ceAnomalySubscriptionThresholdExpressionToTerraform(struct?: CeA
     or: cdktf.listMapper(ceAnomalySubscriptionThresholdExpressionOrToTerraform, true)(struct!.or),
     tags: ceAnomalySubscriptionThresholdExpressionTagsToTerraform(struct!.tags),
   }
+}
+
+
+export function ceAnomalySubscriptionThresholdExpressionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOutputReference | CeAnomalySubscriptionThresholdExpression): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    and: {
+      value: cdktf.listMapperHcl(ceAnomalySubscriptionThresholdExpressionAndToHclTerraform, true)(struct!.and),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionAndList",
+    },
+    cost_category: {
+      value: ceAnomalySubscriptionThresholdExpressionCostCategoryToHclTerraform(struct!.costCategory),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionCostCategoryList",
+    },
+    dimension: {
+      value: ceAnomalySubscriptionThresholdExpressionDimensionToHclTerraform(struct!.dimension),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionDimensionList",
+    },
+    not: {
+      value: ceAnomalySubscriptionThresholdExpressionNotToHclTerraform(struct!.not),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionNotList",
+    },
+    or: {
+      value: cdktf.listMapperHcl(ceAnomalySubscriptionThresholdExpressionOrToHclTerraform, true)(struct!.or),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionOrList",
+    },
+    tags: {
+      value: ceAnomalySubscriptionThresholdExpressionTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CeAnomalySubscriptionThresholdExpressionTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CeAnomalySubscriptionThresholdExpressionOutputReference extends cdktf.ComplexObject {
@@ -2473,5 +3007,67 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
       subscriber: cdktf.listMapper(ceAnomalySubscriptionSubscriberToTerraform, true)(this._subscriber.internalValue),
       threshold_expression: ceAnomalySubscriptionThresholdExpressionToTerraform(this._thresholdExpression.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      frequency: {
+        value: cdktf.stringToHclTerraform(this._frequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      monitor_arn_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._monitorArnList),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      subscriber: {
+        value: cdktf.listMapperHcl(ceAnomalySubscriptionSubscriberToHclTerraform, true)(this._subscriber.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CeAnomalySubscriptionSubscriberList",
+      },
+      threshold_expression: {
+        value: ceAnomalySubscriptionThresholdExpressionToHclTerraform(this._thresholdExpression.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CeAnomalySubscriptionThresholdExpressionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

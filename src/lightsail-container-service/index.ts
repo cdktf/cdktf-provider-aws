@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lightsail_container_service
 // generated from terraform resource schema
 
@@ -79,6 +74,25 @@ export function lightsailContainerServicePrivateRegistryAccessEcrImagePullerRole
   }
 }
 
+
+export function lightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleToHclTerraform(struct?: LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference | LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_active: {
+      value: cdktf.booleanToHclTerraform(struct!.isActive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +165,25 @@ export function lightsailContainerServicePrivateRegistryAccessToTerraform(struct
   }
 }
 
+
+export function lightsailContainerServicePrivateRegistryAccessToHclTerraform(struct?: LightsailContainerServicePrivateRegistryAccessOutputReference | LightsailContainerServicePrivateRegistryAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ecr_image_puller_role: {
+      value: lightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleToHclTerraform(struct!.ecrImagePullerRole),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailContainerServicePrivateRegistryAccessOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -219,6 +252,31 @@ export function lightsailContainerServicePublicDomainNamesCertificateToTerraform
     certificate_name: cdktf.stringToTerraform(struct!.certificateName),
     domain_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domainNames),
   }
+}
+
+
+export function lightsailContainerServicePublicDomainNamesCertificateToHclTerraform(struct?: LightsailContainerServicePublicDomainNamesCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_name: {
+      value: cdktf.stringToHclTerraform(struct!.certificateName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domainNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailContainerServicePublicDomainNamesCertificateOutputReference extends cdktf.ComplexObject {
@@ -336,6 +394,25 @@ export function lightsailContainerServicePublicDomainNamesToTerraform(struct?: L
   }
 }
 
+
+export function lightsailContainerServicePublicDomainNamesToHclTerraform(struct?: LightsailContainerServicePublicDomainNamesOutputReference | LightsailContainerServicePublicDomainNames): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate: {
+      value: cdktf.listMapperHcl(lightsailContainerServicePublicDomainNamesCertificateToHclTerraform, true)(struct!.certificate),
+      isBlock: true,
+      type: "set",
+      storageClassType: "LightsailContainerServicePublicDomainNamesCertificateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailContainerServicePublicDomainNamesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -406,6 +483,37 @@ export function lightsailContainerServiceTimeoutsToTerraform(struct?: LightsailC
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function lightsailContainerServiceTimeoutsToHclTerraform(struct?: LightsailContainerServiceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailContainerServiceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -791,5 +899,73 @@ export class LightsailContainerService extends cdktf.TerraformResource {
       public_domain_names: lightsailContainerServicePublicDomainNamesToTerraform(this._publicDomainNames.internalValue),
       timeouts: lightsailContainerServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_disabled: {
+        value: cdktf.booleanToHclTerraform(this._isDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      power: {
+        value: cdktf.stringToHclTerraform(this._power),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scale: {
+        value: cdktf.numberToHclTerraform(this._scale),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      private_registry_access: {
+        value: lightsailContainerServicePrivateRegistryAccessToHclTerraform(this._privateRegistryAccess.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LightsailContainerServicePrivateRegistryAccessList",
+      },
+      public_domain_names: {
+        value: lightsailContainerServicePublicDomainNamesToHclTerraform(this._publicDomainNames.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LightsailContainerServicePublicDomainNamesList",
+      },
+      timeouts: {
+        value: lightsailContainerServiceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LightsailContainerServiceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

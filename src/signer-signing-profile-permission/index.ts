@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/signer_signing_profile_permission
 // generated from terraform resource schema
 
@@ -226,5 +221,55 @@ export class SignerSigningProfilePermission extends cdktf.TerraformResource {
       statement_id: cdktf.stringToTerraform(this._statementId),
       statement_id_prefix: cdktf.stringToTerraform(this._statementIdPrefix),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal: {
+        value: cdktf.stringToHclTerraform(this._principal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile_name: {
+        value: cdktf.stringToHclTerraform(this._profileName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile_version: {
+        value: cdktf.stringToHclTerraform(this._profileVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statement_id: {
+        value: cdktf.stringToHclTerraform(this._statementId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statement_id_prefix: {
+        value: cdktf.stringToHclTerraform(this._statementIdPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

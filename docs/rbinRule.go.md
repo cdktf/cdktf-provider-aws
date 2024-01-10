@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.NewRbinRule(scope Construct, id *string, config RbinRuleConfig) RbinRule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -134,6 +135,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.rbinRule.RbinRule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.rbinRule.RbinRule.toMetadata"></a>
 
@@ -465,7 +472,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rbinRule.RbinRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.RbinRule_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rbinRule.RbinRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.RbinRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +518,7 @@ rbinrule.RbinRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rbinRule.RbinRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.RbinRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +532,7 @@ rbinrule.RbinRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rbinRule.RbinRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.RbinRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +992,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rbinRule.RbinRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 &rbinrule.RbinRuleConfig {
 	Connection: interface{},
@@ -996,13 +1003,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ResourceType: *string,
-	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v18.rbinRule.RbinRuleRetentionPeriod,
+	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.rbinRule.RbinRuleRetentionPeriod,
 	Description: *string,
-	LockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.rbinRule.RbinRuleLockConfiguration,
+	LockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.rbinRule.RbinRuleLockConfiguration,
 	ResourceTags: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.rbinRule.RbinRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.rbinRule.RbinRuleTimeouts,
 }
 ```
 
@@ -1207,10 +1214,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rbinRule.RbinRuleLockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 &rbinrule.RbinRuleLockConfiguration {
-	UnlockDelay: github.com/cdktf/cdktf-provider-aws-go/aws/v18.rbinRule.RbinRuleLockConfigurationUnlockDelay,
+	UnlockDelay: github.com/cdktf/cdktf-provider-aws-go/aws.rbinRule.RbinRuleLockConfigurationUnlockDelay,
 }
 ```
 
@@ -1241,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 &rbinrule.RbinRuleLockConfigurationUnlockDelay {
 	UnlockDelayUnit: *string,
@@ -1287,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rbinRule.RbinRuleResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 &rbinrule.RbinRuleResourceTags {
 	ResourceTagKey: *string,
@@ -1333,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 &rbinrule.RbinRuleRetentionPeriod {
 	RetentionPeriodUnit: *string,
@@ -1379,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rbinRule.RbinRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 &rbinrule.RbinRuleTimeouts {
 	Create: *string,
@@ -1441,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.NewRbinRuleLockConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleLockConfigurationOutputReference
 ```
@@ -1725,7 +1732,7 @@ func InternalValue() RbinRuleLockConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.NewRbinRuleLockConfigurationUnlockDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleLockConfigurationUnlockDelayOutputReference
 ```
@@ -2018,7 +2025,7 @@ func InternalValue() RbinRuleLockConfigurationUnlockDelay
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.NewRbinRuleResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RbinRuleResourceTagsList
 ```
@@ -2059,10 +2066,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2161,7 +2185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.NewRbinRuleResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RbinRuleResourceTagsOutputReference
 ```
@@ -2479,7 +2503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.NewRbinRuleRetentionPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleRetentionPeriodOutputReference
 ```
@@ -2772,7 +2796,7 @@ func InternalValue() RbinRuleRetentionPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rbinrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rbinrule"
 
 rbinrule.NewRbinRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleTimeoutsOutputReference
 ```

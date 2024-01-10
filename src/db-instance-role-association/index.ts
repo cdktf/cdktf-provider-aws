@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/db_instance_role_association
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class DbInstanceRoleAssociation extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       role_arn: cdktf.stringToTerraform(this._roleArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_instance_identifier: {
+        value: cdktf.stringToHclTerraform(this._dbInstanceIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      feature_name: {
+        value: cdktf.stringToHclTerraform(this._featureName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

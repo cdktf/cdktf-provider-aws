@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 shielddrtaccesslogbucketassociation.NewShieldDrtAccessLogBucketAssociation(scope Construct, id *string, config ShieldDrtAccessLogBucketAssociationConfig) ShieldDrtAccessLogBucketAssociation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociation_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociation_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 &shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociationConfig {
 	Connection: interface{},
@@ -769,7 +776,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketa
 	Provisioners: *[]interface{},
 	LogBucket: *string,
 	RoleArnAssociationId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociationTimeouts,
 }
 ```
 
@@ -903,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 &shielddrtaccesslogbucketassociation.ShieldDrtAccessLogBucketAssociationTimeouts {
 	Create: *string,
@@ -971,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldDrtAccessLogBucketAssociation.ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shielddrtaccesslogbucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shielddrtaccesslogbucketassociation"
 
 shielddrtaccesslogbucketassociation.NewShieldDrtAccessLogBucketAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference
 ```

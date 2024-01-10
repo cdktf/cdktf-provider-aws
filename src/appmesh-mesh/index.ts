@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appmesh_mesh
 // generated from terraform resource schema
 
@@ -53,6 +48,25 @@ export function appmeshMeshSpecEgressFilterToTerraform(struct?: AppmeshMeshSpecE
   return {
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function appmeshMeshSpecEgressFilterToHclTerraform(struct?: AppmeshMeshSpecEgressFilterOutputReference | AppmeshMeshSpecEgressFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshMeshSpecEgressFilterOutputReference extends cdktf.ComplexObject {
@@ -120,6 +134,25 @@ export function appmeshMeshSpecToTerraform(struct?: AppmeshMeshSpecOutputReferen
   return {
     egress_filter: appmeshMeshSpecEgressFilterToTerraform(struct!.egressFilter),
   }
+}
+
+
+export function appmeshMeshSpecToHclTerraform(struct?: AppmeshMeshSpecOutputReference | AppmeshMeshSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    egress_filter: {
+      value: appmeshMeshSpecEgressFilterToHclTerraform(struct!.egressFilter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshMeshSpecEgressFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
@@ -347,5 +380,43 @@ export class AppmeshMesh extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       spec: appmeshMeshSpecToTerraform(this._spec.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      spec: {
+        value: appmeshMeshSpecToHclTerraform(this._spec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppmeshMeshSpecList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

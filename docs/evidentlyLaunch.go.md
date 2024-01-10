@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunch(scope Construct, id *string, config EvidentlyLaunchConfig) EvidentlyLaunch
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -136,6 +137,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.toMetadata"></a>
 
@@ -479,7 +486,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.EvidentlyLaunch_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +518,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.EvidentlyLaunch_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +532,7 @@ evidentlylaunch.EvidentlyLaunch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.EvidentlyLaunch_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +546,7 @@ evidentlylaunch.EvidentlyLaunch_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.EvidentlyLaunch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1087,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchConfig {
 	Connection: interface{},
@@ -1104,10 +1111,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
 	Id: *string,
 	MetricMonitors: interface{},
 	RandomizationSalt: *string,
-	ScheduledSplitsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfig,
+	ScheduledSplitsConfig: github.com/cdktf/cdktf-provider-aws-go/aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.evidentlyLaunch.EvidentlyLaunchTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.evidentlyLaunch.EvidentlyLaunchTimeouts,
 }
 ```
 
@@ -1354,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchExecution {
 
@@ -1367,7 +1374,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchGroups {
 	Feature: *string,
@@ -1441,10 +1448,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchMetricMonitors {
-	MetricDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v18.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition,
+	MetricDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition,
 }
 ```
 
@@ -1475,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchMetricMonitorsMetricDefinition {
 	EntityIdKey: *string,
@@ -1563,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchScheduledSplitsConfig {
 	Steps: interface{},
@@ -1597,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchScheduledSplitsConfigSteps {
 	GroupWeights: *map[string]*f64,
@@ -1659,7 +1666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides {
 	EvaluationOrder: *f64,
@@ -1719,7 +1726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 &evidentlylaunch.EvidentlyLaunchTimeouts {
 	Create: *string,
@@ -1781,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvidentlyLaunchExecutionList
 ```
@@ -1822,10 +1829,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1913,7 +1937,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvidentlyLaunchExecutionOutputReference
 ```
@@ -2202,7 +2226,7 @@ func InternalValue() EvidentlyLaunchExecution
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvidentlyLaunchGroupsList
 ```
@@ -2243,10 +2267,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2345,7 +2386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvidentlyLaunchGroupsOutputReference
 ```
@@ -2707,7 +2748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchMetricMonitorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvidentlyLaunchMetricMonitorsList
 ```
@@ -2748,10 +2789,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2850,7 +2908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference
 ```
@@ -3223,7 +3281,7 @@ func InternalValue() EvidentlyLaunchMetricMonitorsMetricDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchMetricMonitorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvidentlyLaunchMetricMonitorsOutputReference
 ```
@@ -3525,7 +3583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchScheduledSplitsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EvidentlyLaunchScheduledSplitsConfigOutputReference
 ```
@@ -3809,7 +3867,7 @@ func InternalValue() EvidentlyLaunchScheduledSplitsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchScheduledSplitsConfigStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvidentlyLaunchScheduledSplitsConfigStepsList
 ```
@@ -3850,10 +3908,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3952,7 +4027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchScheduledSplitsConfigStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvidentlyLaunchScheduledSplitsConfigStepsOutputReference
 ```
@@ -4305,7 +4380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList
 ```
@@ -4346,10 +4421,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4448,7 +4540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference
 ```
@@ -4781,7 +4873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlylaunch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlylaunch"
 
 evidentlylaunch.NewEvidentlyLaunchTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EvidentlyLaunchTimeoutsOutputReference
 ```

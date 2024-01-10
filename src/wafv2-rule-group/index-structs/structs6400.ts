@@ -1,59 +1,71 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 import { Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBody,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookies,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaders,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethod,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementOutputReference } from './structs6000'
 import { Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementOutputReference,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementOutputReference } from './structs2800'
 import { Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatement,
 wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementOutputReference } from './structs4400'
 import { Wafv2RuleGroupRuleStatementRateBasedStatementCustomKey,
 wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyList,
 Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfig,
 wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfigToTerraform,
+wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfigToHclTerraform,
 Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfigOutputReference } from './structs1200'
 export interface Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryString {
 }
@@ -65,6 +77,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementR
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
@@ -108,6 +131,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementR
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -172,6 +214,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementR
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -227,6 +288,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementR
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
@@ -342,6 +414,85 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementR
     single_query_argument: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
     uri_path: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_query_arguments: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct!.allQueryArguments),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsList",
+    },
+    body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyToHclTerraform(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyList",
+    },
+    cookies: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToHclTerraform(struct!.cookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesList",
+    },
+    headers: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList",
+    },
+    ja3_fingerprint: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintToHclTerraform(struct!.ja3Fingerprint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintList",
+    },
+    json_body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToHclTerraform(struct!.jsonBody),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyList",
+    },
+    method: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodList",
+    },
+    query_string: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringList",
+    },
+    single_header: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderList",
+    },
+    single_query_argument: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct!.singleQueryArgument),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentList",
+    },
+    uri_path: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -634,6 +785,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementR
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -761,6 +937,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementR
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arn: {
+      value: cdktf.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchList",
+    },
+    text_transformation: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationToHclTerraform, true)(struct!.textTransformation),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -859,6 +1066,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArguments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -900,6 +1118,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   return {
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
@@ -962,6 +1199,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1015,6 +1263,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -1170,6 +1449,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToHclTerraform, true)(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1265,6 +1575,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1318,6 +1639,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -1439,6 +1791,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
@@ -1573,6 +1956,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3Fingerprint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.fallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1630,6 +2032,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1678,6 +2091,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    included_paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPaths),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -1782,6 +2220,43 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.invalidFallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
@@ -1904,6 +2379,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1940,6 +2426,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
@@ -1983,6 +2480,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -2047,6 +2563,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2102,6 +2637,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
@@ -2217,6 +2763,85 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     single_query_argument: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
     uri_path: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_query_arguments: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct!.allQueryArguments),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsList",
+    },
+    body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyToHclTerraform(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyList",
+    },
+    cookies: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesToHclTerraform(struct!.cookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesList",
+    },
+    headers: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersList",
+    },
+    ja3_fingerprint: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintToHclTerraform(struct!.ja3Fingerprint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintList",
+    },
+    json_body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyToHclTerraform(struct!.jsonBody),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyList",
+    },
+    method: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodList",
+    },
+    query_string: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringList",
+    },
+    single_header: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderList",
+    },
+    single_query_argument: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct!.singleQueryArgument),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentList",
+    },
+    uri_path: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -2509,6 +3134,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformationToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2641,6 +3291,43 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison_operator: {
+      value: cdktf.stringToHclTerraform(struct!.comparisonOperator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    field_to_match: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchList",
+    },
+    text_transformation: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformationToHclTerraform, true)(struct!.textTransformation),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2758,6 +3445,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArguments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2799,6 +3497,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   return {
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
@@ -2861,6 +3578,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2914,6 +3642,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -3069,6 +3828,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternToHclTerraform, true)(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3164,6 +3954,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3217,6 +4018,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -3338,6 +4170,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
@@ -3472,6 +4335,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3Fingerprint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.fallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3529,6 +4411,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3577,6 +4470,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    included_paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPaths),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -3681,6 +4599,43 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.invalidFallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
@@ -3803,6 +4758,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3839,6 +4805,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
@@ -3882,6 +4859,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -3946,6 +4942,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4001,6 +5016,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
@@ -4116,6 +5142,85 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
     single_query_argument: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
     uri_path: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_query_arguments: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct!.allQueryArguments),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsList",
+    },
+    body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyToHclTerraform(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyList",
+    },
+    cookies: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesToHclTerraform(struct!.cookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesList",
+    },
+    headers: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersList",
+    },
+    ja3_fingerprint: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintToHclTerraform(struct!.ja3Fingerprint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintList",
+    },
+    json_body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyToHclTerraform(struct!.jsonBody),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyList",
+    },
+    method: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodList",
+    },
+    query_string: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringList",
+    },
+    single_header: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderList",
+    },
+    single_query_argument: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct!.singleQueryArgument),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentList",
+    },
+    uri_path: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -4408,6 +5513,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformationToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4530,6 +5660,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementS
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_to_match: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchList",
+    },
+    text_transformation: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformationToHclTerraform, true)(struct!.textTransformation),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4609,6 +5764,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArguments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4650,6 +5816,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   return {
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
@@ -4712,6 +5897,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4765,6 +5961,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -4920,6 +6147,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternToHclTerraform, true)(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5015,6 +6273,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5068,6 +6337,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -5189,6 +6489,37 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
@@ -5323,6 +6654,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3Fingerprint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.fallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5380,6 +6730,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5428,6 +6789,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
     all: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    included_paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPaths),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -5532,6 +6918,43 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.invalidFallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
@@ -5654,6 +7077,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethodToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5690,6 +7124,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
@@ -5733,6 +7178,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -5797,6 +7261,25 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5852,6 +7335,17 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
@@ -5967,6 +7461,85 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
     single_query_argument: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
     uri_path: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_query_arguments: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct!.allQueryArguments),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsList",
+    },
+    body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyToHclTerraform(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyList",
+    },
+    cookies: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesToHclTerraform(struct!.cookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesList",
+    },
+    headers: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersList",
+    },
+    ja3_fingerprint: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintToHclTerraform(struct!.ja3Fingerprint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintList",
+    },
+    json_body: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyToHclTerraform(struct!.jsonBody),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyList",
+    },
+    method: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethodList",
+    },
+    query_string: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringList",
+    },
+    single_header: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderList",
+    },
+    single_query_argument: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct!.singleQueryArgument),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentList",
+    },
+    uri_path: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -6259,6 +7832,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformationToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -6379,6 +7977,31 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementX
     field_to_match: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
     text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_to_match: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchList",
+    },
+    text_transformation: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformationToHclTerraform, true)(struct!.textTransformation),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementOutputReference extends cdktf.ComplexObject {
@@ -6542,6 +8165,91 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementT
     sqli_match_statement: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementToTerraform(struct!.sqliMatchStatement),
     xss_match_statement: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementToTerraform(struct!.xssMatchStatement),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    and_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementToHclTerraform(struct!.andStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementList",
+    },
+    byte_match_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementToHclTerraform(struct!.byteMatchStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementList",
+    },
+    geo_match_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementToHclTerraform(struct!.geoMatchStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementList",
+    },
+    ip_set_reference_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementToHclTerraform(struct!.ipSetReferenceStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementList",
+    },
+    label_match_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementToHclTerraform(struct!.labelMatchStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementList",
+    },
+    not_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementToHclTerraform(struct!.notStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementList",
+    },
+    or_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementToHclTerraform(struct!.orStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementList",
+    },
+    regex_match_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementToHclTerraform(struct!.regexMatchStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementList",
+    },
+    regex_pattern_set_reference_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementToHclTerraform(struct!.regexPatternSetReferenceStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementList",
+    },
+    size_constraint_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementToHclTerraform(struct!.sizeConstraintStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementList",
+    },
+    sqli_match_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementToHclTerraform(struct!.sqliMatchStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementList",
+    },
+    xss_match_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementToHclTerraform(struct!.xssMatchStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOutputReference extends cdktf.ComplexObject {
@@ -6877,6 +8585,49 @@ export function wafv2RuleGroupRuleStatementRateBasedStatementToTerraform(struct?
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRateBasedStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference | Wafv2RuleGroupRuleStatementRateBasedStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregate_key_type: {
+      value: cdktf.stringToHclTerraform(struct!.aggregateKeyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    custom_key: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyToHclTerraform, true)(struct!.customKey),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyList",
+    },
+    forwarded_ip_config: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfigToHclTerraform(struct!.forwardedIpConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfigList",
+    },
+    scope_down_statement: {
+      value: wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementToHclTerraform(struct!.scopeDownStatement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7022,6 +8773,17 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQue
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArguments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7063,6 +8825,25 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyTo
   return {
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
@@ -7125,6 +8906,17 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookie
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7178,6 +8970,37 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookie
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
     all: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -7333,6 +9156,37 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookie
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternToHclTerraform, true)(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7428,6 +9282,17 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeader
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7481,6 +9346,37 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeader
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
     all: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -7602,6 +9498,37 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeader
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
@@ -7736,6 +9663,25 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3Fin
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3Fingerprint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.fallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7793,6 +9739,17 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBo
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7841,6 +9798,31 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBo
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
     all: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    included_paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPaths),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -7945,6 +9927,43 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBo
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.invalidFallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
@@ -8067,6 +10086,17 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethod
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethodToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8103,6 +10133,17 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryS
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryStringToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
@@ -8146,6 +10187,25 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingle
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -8210,6 +10270,25 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingle
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8265,6 +10344,17 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPat
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
@@ -8380,6 +10470,85 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchToTerr
     single_query_argument: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
     uri_path: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_query_arguments: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct!.allQueryArguments),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsList",
+    },
+    body: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyToHclTerraform(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyList",
+    },
+    cookies: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesToHclTerraform(struct!.cookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesList",
+    },
+    headers: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeadersList",
+    },
+    ja3_fingerprint: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintToHclTerraform(struct!.ja3Fingerprint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintList",
+    },
+    json_body: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyToHclTerraform(struct!.jsonBody),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyList",
+    },
+    method: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethodList",
+    },
+    query_string: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryStringList",
+    },
+    single_header: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderList",
+    },
+    single_query_argument: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct!.singleQueryArgument),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentList",
+    },
+    uri_path: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -8672,6 +10841,31 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementTextTransformation
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementTextTransformationToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementTextTransformation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -8799,6 +10993,37 @@ export function wafv2RuleGroupRuleStatementRegexMatchStatementToTerraform(struct
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexMatchStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexMatchStatementOutputReference | Wafv2RuleGroupRuleStatementRegexMatchStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    regex_string: {
+      value: cdktf.stringToHclTerraform(struct!.regexString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchList",
+    },
+    text_transformation: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRegexMatchStatementTextTransformationToHclTerraform, true)(struct!.textTransformation),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexMatchStatementTextTransformationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexMatchStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8897,6 +11122,17 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8938,6 +11174,25 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   return {
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
@@ -9000,6 +11255,17 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9053,6 +11319,37 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
     all: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -9208,6 +11505,37 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternToHclTerraform, true)(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9303,6 +11631,17 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9356,6 +11695,37 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
     all: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -9477,6 +11847,37 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
@@ -9611,6 +12012,25 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.fallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9668,6 +12088,17 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9716,6 +12147,31 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
     all: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    included_paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPaths),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -9820,6 +12276,43 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.invalidFallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
@@ -9942,6 +12435,17 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethodToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9978,6 +12482,17 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
@@ -10021,6 +12536,25 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -10085,6 +12619,25 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10140,6 +12693,17 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
@@ -10255,6 +12819,85 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFiel
     single_query_argument: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
     uri_path: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_query_arguments: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct!.allQueryArguments),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsList",
+    },
+    body: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyToHclTerraform(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyList",
+    },
+    cookies: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToHclTerraform(struct!.cookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesList",
+    },
+    headers: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList",
+    },
+    ja3_fingerprint: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintToHclTerraform(struct!.ja3Fingerprint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintList",
+    },
+    json_body: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToHclTerraform(struct!.jsonBody),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyList",
+    },
+    method: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethodList",
+    },
+    query_string: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringList",
+    },
+    single_header: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderList",
+    },
+    single_query_argument: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct!.singleQueryArgument),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentList",
+    },
+    uri_path: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -10547,6 +13190,31 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementText
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformationToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10674,6 +13342,37 @@ export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementToTe
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementToHclTerraform(struct?: Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementOutputReference | Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arn: {
+      value: cdktf.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchList",
+    },
+    text_transformation: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformationToHclTerraform, true)(struct!.textTransformation),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10772,6 +13471,17 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAl
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArguments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10813,6 +13523,25 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBo
   return {
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
@@ -10875,6 +13604,17 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCo
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10928,6 +13668,37 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCo
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
     all: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_cookies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedCookies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -11083,6 +13854,37 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCo
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToHclTerraform, true)(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11178,6 +13980,17 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHe
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11231,6 +14044,37 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHe
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
     all: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    excluded_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -11352,6 +14196,37 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHe
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
@@ -11486,6 +14361,25 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3Fingerprint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.fallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11543,6 +14437,17 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJs
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11591,6 +14496,31 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJs
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
     all: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    included_paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPaths),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
@@ -11695,6 +14625,43 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJs
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
     match_pattern: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_fallback_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.invalidFallbackBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_scope: {
+      value: cdktf.stringToHclTerraform(struct!.matchScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oversize_handling: {
+      value: cdktf.stringToHclTerraform(struct!.oversizeHandling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_pattern: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToHclTerraform(struct!.matchPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
@@ -11817,6 +14784,17 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMe
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMethodToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11853,6 +14831,17 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQu
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQueryStringToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
@@ -11896,6 +14885,25 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSi
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -11960,6 +14968,25 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSi
   }
 }
 
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -12015,6 +15042,17 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUr
   }
   return {
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
@@ -12130,6 +15168,85 @@ export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchTo
     single_query_argument: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
     uri_path: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchToHclTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_query_arguments: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToHclTerraform(struct!.allQueryArguments),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsList",
+    },
+    body: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyToHclTerraform(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyList",
+    },
+    cookies: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesToHclTerraform(struct!.cookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesList",
+    },
+    headers: {
+      value: cdktf.listMapperHcl(wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeadersList",
+    },
+    ja3_fingerprint: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintToHclTerraform(struct!.ja3Fingerprint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintList",
+    },
+    json_body: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyToHclTerraform(struct!.jsonBody),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyList",
+    },
+    method: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMethodList",
+    },
+    query_string: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQueryStringList",
+    },
+    single_header: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderList",
+    },
+    single_query_argument: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToHclTerraform(struct!.singleQueryArgument),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentList",
+    },
+    uri_path: {
+      value: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/elasticache_replication_group
 // generated from terraform resource schema
 
@@ -34,6 +29,17 @@ export function dataAwsElasticacheReplicationGroupLogDeliveryConfigurationToTerr
   }
   return {
   }
+}
+
+
+export function dataAwsElasticacheReplicationGroupLogDeliveryConfigurationToHclTerraform(struct?: DataAwsElasticacheReplicationGroupLogDeliveryConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference extends cdktf.ComplexObject {
@@ -287,5 +293,25 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
       id: cdktf.stringToTerraform(this._id),
       replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replication_group_id: {
+        value: cdktf.stringToHclTerraform(this._replicationGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

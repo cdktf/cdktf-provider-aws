@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appstream_stack
 // generated from terraform resource schema
 
@@ -102,6 +97,31 @@ export function appstreamStackAccessEndpointsToTerraform(struct?: AppstreamStack
     endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
     vpce_id: cdktf.stringToTerraform(struct!.vpceId),
   }
+}
+
+
+export function appstreamStackAccessEndpointsToHclTerraform(struct?: AppstreamStackAccessEndpoints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_type: {
+      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpce_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppstreamStackAccessEndpointsOutputReference extends cdktf.ComplexObject {
@@ -225,6 +245,31 @@ export function appstreamStackApplicationSettingsToTerraform(struct?: AppstreamS
   }
 }
 
+
+export function appstreamStackApplicationSettingsToHclTerraform(struct?: AppstreamStackApplicationSettingsOutputReference | AppstreamStackApplicationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    settings_group: {
+      value: cdktf.stringToHclTerraform(struct!.settingsGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppstreamStackApplicationSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -317,6 +362,37 @@ export function appstreamStackStorageConnectorsToTerraform(struct?: AppstreamSta
     domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
     resource_identifier: cdktf.stringToTerraform(struct!.resourceIdentifier),
   }
+}
+
+
+export function appstreamStackStorageConnectorsToHclTerraform(struct?: AppstreamStackStorageConnectors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connector_type: {
+      value: cdktf.stringToHclTerraform(struct!.connectorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    resource_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.resourceIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppstreamStackStorageConnectorsOutputReference extends cdktf.ComplexObject {
@@ -457,6 +533,25 @@ export function appstreamStackStreamingExperienceSettingsToTerraform(struct?: Ap
   }
 }
 
+
+export function appstreamStackStreamingExperienceSettingsToHclTerraform(struct?: AppstreamStackStreamingExperienceSettingsOutputReference | AppstreamStackStreamingExperienceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    preferred_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.preferredProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppstreamStackStreamingExperienceSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -525,6 +620,31 @@ export function appstreamStackUserSettingsToTerraform(struct?: AppstreamStackUse
     action: cdktf.stringToTerraform(struct!.action),
     permission: cdktf.stringToTerraform(struct!.permission),
   }
+}
+
+
+export function appstreamStackUserSettingsToHclTerraform(struct?: AppstreamStackUserSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppstreamStackUserSettingsOutputReference extends cdktf.ComplexObject {
@@ -947,5 +1067,97 @@ export class AppstreamStack extends cdktf.TerraformResource {
       streaming_experience_settings: appstreamStackStreamingExperienceSettingsToTerraform(this._streamingExperienceSettings.internalValue),
       user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform, true)(this._userSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      embed_host_domains: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._embedHostDomains),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      feedback_url: {
+        value: cdktf.stringToHclTerraform(this._feedbackUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redirect_url: {
+        value: cdktf.stringToHclTerraform(this._redirectUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      access_endpoints: {
+        value: cdktf.listMapperHcl(appstreamStackAccessEndpointsToHclTerraform, true)(this._accessEndpoints.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AppstreamStackAccessEndpointsList",
+      },
+      application_settings: {
+        value: appstreamStackApplicationSettingsToHclTerraform(this._applicationSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppstreamStackApplicationSettingsList",
+      },
+      storage_connectors: {
+        value: cdktf.listMapperHcl(appstreamStackStorageConnectorsToHclTerraform, true)(this._storageConnectors.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AppstreamStackStorageConnectorsList",
+      },
+      streaming_experience_settings: {
+        value: appstreamStackStreamingExperienceSettingsToHclTerraform(this._streamingExperienceSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppstreamStackStreamingExperienceSettingsList",
+      },
+      user_settings: {
+        value: cdktf.listMapperHcl(appstreamStackUserSettingsToHclTerraform, true)(this._userSettings.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AppstreamStackUserSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

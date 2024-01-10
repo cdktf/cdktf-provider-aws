@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/elb
 // generated from terraform resource schema
 
@@ -134,6 +129,43 @@ export function elbAccessLogsToTerraform(struct?: ElbAccessLogsOutputReference |
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function elbAccessLogsToHclTerraform(struct?: ElbAccessLogsOutputReference | ElbAccessLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
@@ -282,6 +314,49 @@ export function elbHealthCheckToTerraform(struct?: ElbHealthCheckOutputReference
     timeout: cdktf.numberToTerraform(struct!.timeout),
     unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
   }
+}
+
+
+export function elbHealthCheckToHclTerraform(struct?: ElbHealthCheckOutputReference | ElbHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    healthy_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.healthyThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    unhealthy_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.unhealthyThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
@@ -440,6 +515,49 @@ export function elbListenerToTerraform(struct?: ElbListener | cdktf.IResolvable)
     lb_protocol: cdktf.stringToTerraform(struct!.lbProtocol),
     ssl_certificate_id: cdktf.stringToTerraform(struct!.sslCertificateId),
   }
+}
+
+
+export function elbListenerToHclTerraform(struct?: ElbListener | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_port: {
+      value: cdktf.numberToHclTerraform(struct!.instancePort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.instanceProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lb_port: {
+      value: cdktf.numberToHclTerraform(struct!.lbPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    lb_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.lbProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssl_certificate_id: {
+      value: cdktf.stringToHclTerraform(struct!.sslCertificateId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElbListenerOutputReference extends cdktf.ComplexObject {
@@ -618,6 +736,31 @@ export function elbTimeoutsToTerraform(struct?: ElbTimeouts | cdktf.IResolvable)
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function elbTimeoutsToHclTerraform(struct?: ElbTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElbTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1142,5 +1285,133 @@ export class Elb extends cdktf.TerraformResource {
       listener: cdktf.listMapper(elbListenerToTerraform, true)(this._listener.internalValue),
       timeouts: elbTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zones: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._availabilityZones),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      connection_draining: {
+        value: cdktf.booleanToHclTerraform(this._connectionDraining),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      connection_draining_timeout: {
+        value: cdktf.numberToHclTerraform(this._connectionDrainingTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cross_zone_load_balancing: {
+        value: cdktf.booleanToHclTerraform(this._crossZoneLoadBalancing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      desync_mitigation_mode: {
+        value: cdktf.stringToHclTerraform(this._desyncMitigationMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idle_timeout: {
+        value: cdktf.numberToHclTerraform(this._idleTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      instances: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instances),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      internal: {
+        value: cdktf.booleanToHclTerraform(this._internal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      source_security_group: {
+        value: cdktf.stringToHclTerraform(this._sourceSecurityGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnets: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnets),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      access_logs: {
+        value: elbAccessLogsToHclTerraform(this._accessLogs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElbAccessLogsList",
+      },
+      health_check: {
+        value: elbHealthCheckToHclTerraform(this._healthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElbHealthCheckList",
+      },
+      listener: {
+        value: cdktf.listMapperHcl(elbListenerToHclTerraform, true)(this._listener.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ElbListenerList",
+      },
+      timeouts: {
+        value: elbTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ElbTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_task
 // generated from terraform resource schema
 
@@ -102,6 +97,31 @@ export function datasyncTaskExcludesToTerraform(struct?: DatasyncTaskExcludesOut
   }
 }
 
+
+export function datasyncTaskExcludesToHclTerraform(struct?: DatasyncTaskExcludesOutputReference | DatasyncTaskExcludes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter_type: {
+      value: cdktf.stringToHclTerraform(struct!.filterType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatasyncTaskExcludesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -192,6 +212,31 @@ export function datasyncTaskIncludesToTerraform(struct?: DatasyncTaskIncludesOut
     filter_type: cdktf.stringToTerraform(struct!.filterType),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function datasyncTaskIncludesToHclTerraform(struct?: DatasyncTaskIncludesOutputReference | DatasyncTaskIncludes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter_type: {
+      value: cdktf.stringToHclTerraform(struct!.filterType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncTaskIncludesOutputReference extends cdktf.ComplexObject {
@@ -349,6 +394,109 @@ export function datasyncTaskOptionsToTerraform(struct?: DatasyncTaskOptionsOutpu
     uid: cdktf.stringToTerraform(struct!.uid),
     verify_mode: cdktf.stringToTerraform(struct!.verifyMode),
   }
+}
+
+
+export function datasyncTaskOptionsToHclTerraform(struct?: DatasyncTaskOptionsOutputReference | DatasyncTaskOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    atime: {
+      value: cdktf.stringToHclTerraform(struct!.atime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bytes_per_second: {
+      value: cdktf.numberToHclTerraform(struct!.bytesPerSecond),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    gid: {
+      value: cdktf.stringToHclTerraform(struct!.gid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_level: {
+      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mtime: {
+      value: cdktf.stringToHclTerraform(struct!.mtime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_tags: {
+      value: cdktf.stringToHclTerraform(struct!.objectTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    overwrite_mode: {
+      value: cdktf.stringToHclTerraform(struct!.overwriteMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    posix_permissions: {
+      value: cdktf.stringToHclTerraform(struct!.posixPermissions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    preserve_deleted_files: {
+      value: cdktf.stringToHclTerraform(struct!.preserveDeletedFiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    preserve_devices: {
+      value: cdktf.stringToHclTerraform(struct!.preserveDevices),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_descriptor_copy_flags: {
+      value: cdktf.stringToHclTerraform(struct!.securityDescriptorCopyFlags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    task_queueing: {
+      value: cdktf.stringToHclTerraform(struct!.taskQueueing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transfer_mode: {
+      value: cdktf.stringToHclTerraform(struct!.transferMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uid: {
+      value: cdktf.stringToHclTerraform(struct!.uid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    verify_mode: {
+      value: cdktf.stringToHclTerraform(struct!.verifyMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
@@ -724,6 +872,25 @@ export function datasyncTaskScheduleToTerraform(struct?: DatasyncTaskScheduleOut
   }
 }
 
+
+export function datasyncTaskScheduleToHclTerraform(struct?: DatasyncTaskScheduleOutputReference | DatasyncTaskSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schedule_expression: {
+      value: cdktf.stringToHclTerraform(struct!.scheduleExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatasyncTaskScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -799,6 +966,43 @@ export function datasyncTaskTaskReportConfigReportOverridesToTerraform(struct?: 
     transferred_override: cdktf.stringToTerraform(struct!.transferredOverride),
     verified_override: cdktf.stringToTerraform(struct!.verifiedOverride),
   }
+}
+
+
+export function datasyncTaskTaskReportConfigReportOverridesToHclTerraform(struct?: DatasyncTaskTaskReportConfigReportOverridesOutputReference | DatasyncTaskTaskReportConfigReportOverrides): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    deleted_override: {
+      value: cdktf.stringToHclTerraform(struct!.deletedOverride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    skipped_override: {
+      value: cdktf.stringToHclTerraform(struct!.skippedOverride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transferred_override: {
+      value: cdktf.stringToHclTerraform(struct!.transferredOverride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    verified_override: {
+      value: cdktf.stringToHclTerraform(struct!.verifiedOverride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncTaskTaskReportConfigReportOverridesOutputReference extends cdktf.ComplexObject {
@@ -942,6 +1146,37 @@ export function datasyncTaskTaskReportConfigS3DestinationToTerraform(struct?: Da
   }
 }
 
+
+export function datasyncTaskTaskReportConfigS3DestinationToHclTerraform(struct?: DatasyncTaskTaskReportConfigS3DestinationOutputReference | DatasyncTaskTaskReportConfigS3Destination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_access_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketAccessRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.s3BucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subdirectory: {
+      value: cdktf.stringToHclTerraform(struct!.subdirectory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatasyncTaskTaskReportConfigS3DestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1067,6 +1302,49 @@ export function datasyncTaskTaskReportConfigToTerraform(struct?: DatasyncTaskTas
     report_overrides: datasyncTaskTaskReportConfigReportOverridesToTerraform(struct!.reportOverrides),
     s3_destination: datasyncTaskTaskReportConfigS3DestinationToTerraform(struct!.s3Destination),
   }
+}
+
+
+export function datasyncTaskTaskReportConfigToHclTerraform(struct?: DatasyncTaskTaskReportConfigOutputReference | DatasyncTaskTaskReportConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    output_type: {
+      value: cdktf.stringToHclTerraform(struct!.outputType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    report_level: {
+      value: cdktf.stringToHclTerraform(struct!.reportLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_object_versioning: {
+      value: cdktf.stringToHclTerraform(struct!.s3ObjectVersioning),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    report_overrides: {
+      value: datasyncTaskTaskReportConfigReportOverridesToHclTerraform(struct!.reportOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatasyncTaskTaskReportConfigReportOverridesList",
+    },
+    s3_destination: {
+      value: datasyncTaskTaskReportConfigS3DestinationToHclTerraform(struct!.s3Destination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatasyncTaskTaskReportConfigS3DestinationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncTaskTaskReportConfigOutputReference extends cdktf.ComplexObject {
@@ -1217,6 +1495,25 @@ export function datasyncTaskTimeoutsToTerraform(struct?: DatasyncTaskTimeouts | 
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function datasyncTaskTimeoutsToHclTerraform(struct?: DatasyncTaskTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1575,5 +1872,91 @@ export class DatasyncTask extends cdktf.TerraformResource {
       task_report_config: datasyncTaskTaskReportConfigToTerraform(this._taskReportConfig.internalValue),
       timeouts: datasyncTaskTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cloudwatch_log_group_arn: {
+        value: cdktf.stringToHclTerraform(this._cloudwatchLogGroupArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_location_arn: {
+        value: cdktf.stringToHclTerraform(this._destinationLocationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_location_arn: {
+        value: cdktf.stringToHclTerraform(this._sourceLocationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      excludes: {
+        value: datasyncTaskExcludesToHclTerraform(this._excludes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncTaskExcludesList",
+      },
+      includes: {
+        value: datasyncTaskIncludesToHclTerraform(this._includes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncTaskIncludesList",
+      },
+      options: {
+        value: datasyncTaskOptionsToHclTerraform(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncTaskOptionsList",
+      },
+      schedule: {
+        value: datasyncTaskScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncTaskScheduleList",
+      },
+      task_report_config: {
+        value: datasyncTaskTaskReportConfigToHclTerraform(this._taskReportConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncTaskTaskReportConfigList",
+      },
+      timeouts: {
+        value: datasyncTaskTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DatasyncTaskTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/api_gateway_sdk
 // generated from terraform resource schema
 
@@ -197,5 +192,43 @@ export class DataAwsApiGatewaySdk extends cdktf.TerraformDataSource {
       sdk_type: cdktf.stringToTerraform(this._sdkType),
       stage_name: cdktf.stringToTerraform(this._stageName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdk_type: {
+        value: cdktf.stringToHclTerraform(this._sdkType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage_name: {
+        value: cdktf.stringToHclTerraform(this._stageName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

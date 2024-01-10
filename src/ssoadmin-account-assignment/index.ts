@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ssoadmin_account_assignment
 // generated from terraform resource schema
 
@@ -70,6 +65,31 @@ export function ssoadminAccountAssignmentTimeoutsToTerraform(struct?: SsoadminAc
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function ssoadminAccountAssignmentTimeoutsToHclTerraform(struct?: SsoadminAccountAssignmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminAccountAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -346,5 +366,61 @@ export class SsoadminAccountAssignment extends cdktf.TerraformResource {
       target_type: cdktf.stringToTerraform(this._targetType),
       timeouts: ssoadminAccountAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission_set_arn: {
+        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_id: {
+        value: cdktf.stringToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_type: {
+        value: cdktf.stringToHclTerraform(this._principalType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_id: {
+        value: cdktf.stringToHclTerraform(this._targetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_type: {
+        value: cdktf.stringToHclTerraform(this._targetType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: ssoadminAccountAssignmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SsoadminAccountAssignmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

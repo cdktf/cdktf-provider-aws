@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appsync_graphql_api
 // generated from terraform resource schema
 
@@ -103,6 +98,37 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorize
     authorizer_uri: cdktf.stringToTerraform(struct!.authorizerUri),
     identity_validation_expression: cdktf.stringToTerraform(struct!.identityValidationExpression),
   }
+}
+
+
+export function appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorizer_result_ttl_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    authorizer_uri: {
+      value: cdktf.stringToHclTerraform(struct!.authorizerUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identity_validation_expression: {
+      value: cdktf.stringToHclTerraform(struct!.identityValidationExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference extends cdktf.ComplexObject {
@@ -224,6 +250,43 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectCo
     iat_ttl: cdktf.numberToTerraform(struct!.iatTtl),
     issuer: cdktf.stringToTerraform(struct!.issuer),
   }
+}
+
+
+export function appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.authTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iat_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.iatTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference extends cdktf.ComplexObject {
@@ -364,6 +427,37 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigT
   }
 }
 
+
+export function appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_id_client_regex: {
+      value: cdktf.stringToHclTerraform(struct!.appIdClientRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_region: {
+      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.userPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -489,6 +583,43 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform(str
     openid_connect_config: appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToTerraform(struct!.openidConnectConfig),
     user_pool_config: appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToTerraform(struct!.userPoolConfig),
   }
+}
+
+
+export function appsyncGraphqlApiAdditionalAuthenticationProviderToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authentication_type: {
+      value: cdktf.stringToHclTerraform(struct!.authenticationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lambda_authorizer_config: {
+      value: appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigToHclTerraform(struct!.lambdaAuthorizerConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigList",
+    },
+    openid_connect_config: {
+      value: appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToHclTerraform(struct!.openidConnectConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigList",
+    },
+    user_pool_config: {
+      value: appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToHclTerraform(struct!.userPoolConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference extends cdktf.ComplexObject {
@@ -661,6 +792,37 @@ export function appsyncGraphqlApiLambdaAuthorizerConfigToTerraform(struct?: Apps
   }
 }
 
+
+export function appsyncGraphqlApiLambdaAuthorizerConfigToHclTerraform(struct?: AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiLambdaAuthorizerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorizer_result_ttl_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    authorizer_uri: {
+      value: cdktf.stringToHclTerraform(struct!.authorizerUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identity_validation_expression: {
+      value: cdktf.stringToHclTerraform(struct!.identityValidationExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -775,6 +937,37 @@ export function appsyncGraphqlApiLogConfigToTerraform(struct?: AppsyncGraphqlApi
     exclude_verbose_content: cdktf.booleanToTerraform(struct!.excludeVerboseContent),
     field_log_level: cdktf.stringToTerraform(struct!.fieldLogLevel),
   }
+}
+
+
+export function appsyncGraphqlApiLogConfigToHclTerraform(struct?: AppsyncGraphqlApiLogConfigOutputReference | AppsyncGraphqlApiLogConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_logs_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogsRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exclude_verbose_content: {
+      value: cdktf.booleanToHclTerraform(struct!.excludeVerboseContent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    field_log_level: {
+      value: cdktf.stringToHclTerraform(struct!.fieldLogLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObject {
@@ -893,6 +1086,43 @@ export function appsyncGraphqlApiOpenidConnectConfigToTerraform(struct?: Appsync
     iat_ttl: cdktf.numberToTerraform(struct!.iatTtl),
     issuer: cdktf.stringToTerraform(struct!.issuer),
   }
+}
+
+
+export function appsyncGraphqlApiOpenidConnectConfigToHclTerraform(struct?: AppsyncGraphqlApiOpenidConnectConfigOutputReference | AppsyncGraphqlApiOpenidConnectConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.authTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iat_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.iatTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktf.ComplexObject {
@@ -1036,6 +1266,43 @@ export function appsyncGraphqlApiUserPoolConfigToTerraform(struct?: AppsyncGraph
     default_action: cdktf.stringToTerraform(struct!.defaultAction),
     user_pool_id: cdktf.stringToTerraform(struct!.userPoolId),
   }
+}
+
+
+export function appsyncGraphqlApiUserPoolConfigToHclTerraform(struct?: AppsyncGraphqlApiUserPoolConfigOutputReference | AppsyncGraphqlApiUserPoolConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_id_client_regex: {
+      value: cdktf.stringToHclTerraform(struct!.appIdClientRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_region: {
+      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_action: {
+      value: cdktf.stringToHclTerraform(struct!.defaultAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.userPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.ComplexObject {
@@ -1450,5 +1717,91 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
       openid_connect_config: appsyncGraphqlApiOpenidConnectConfigToTerraform(this._openidConnectConfig.internalValue),
       user_pool_config: appsyncGraphqlApiUserPoolConfigToTerraform(this._userPoolConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authentication_type: {
+        value: cdktf.stringToHclTerraform(this._authenticationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      xray_enabled: {
+        value: cdktf.booleanToHclTerraform(this._xrayEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      additional_authentication_provider: {
+        value: cdktf.listMapperHcl(appsyncGraphqlApiAdditionalAuthenticationProviderToHclTerraform, true)(this._additionalAuthenticationProvider.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncGraphqlApiAdditionalAuthenticationProviderList",
+      },
+      lambda_authorizer_config: {
+        value: appsyncGraphqlApiLambdaAuthorizerConfigToHclTerraform(this._lambdaAuthorizerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncGraphqlApiLambdaAuthorizerConfigList",
+      },
+      log_config: {
+        value: appsyncGraphqlApiLogConfigToHclTerraform(this._logConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncGraphqlApiLogConfigList",
+      },
+      openid_connect_config: {
+        value: appsyncGraphqlApiOpenidConnectConfigToHclTerraform(this._openidConnectConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncGraphqlApiOpenidConnectConfigList",
+      },
+      user_pool_config: {
+        value: appsyncGraphqlApiUserPoolConfigToHclTerraform(this._userPoolConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncGraphqlApiUserPoolConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dynamodb_kinesis_streaming_destination
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class DynamodbKinesisStreamingDestination extends cdktf.TerraformResource
       stream_arn: cdktf.stringToTerraform(this._streamArn),
       table_name: cdktf.stringToTerraform(this._tableName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stream_arn: {
+        value: cdktf.stringToHclTerraform(this._streamArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      table_name: {
+        value: cdktf.stringToHclTerraform(this._tableName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

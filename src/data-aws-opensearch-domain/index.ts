@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/opensearch_domain
 // generated from terraform resource schema
 
@@ -44,6 +39,17 @@ export function dataAwsOpensearchDomainAdvancedSecurityOptionsToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainAdvancedSecurityOptionsToHclTerraform(struct?: DataAwsOpensearchDomainAdvancedSecurityOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference extends cdktf.ComplexObject {
@@ -120,6 +126,17 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuratio
   }
 }
 
+
+export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -187,6 +204,17 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToTerra
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference extends cdktf.ComplexObject {
@@ -264,6 +292,17 @@ export function dataAwsOpensearchDomainAutoTuneOptionsToTerraform(struct?: DataA
   }
 }
 
+
+export function dataAwsOpensearchDomainAutoTuneOptionsToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainAutoTuneOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -339,6 +378,17 @@ export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToTerrafor
   }
 }
 
+
+export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigColdStorageOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -403,6 +453,17 @@ export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToTerrafo
   }
 }
 
+
+export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -465,6 +526,17 @@ export function dataAwsOpensearchDomainClusterConfigToTerraform(struct?: DataAws
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainClusterConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainClusterConfigOutputReference extends cdktf.ComplexObject {
@@ -588,6 +660,17 @@ export function dataAwsOpensearchDomainCognitoOptionsToTerraform(struct?: DataAw
   }
 }
 
+
+export function dataAwsOpensearchDomainCognitoOptionsToHclTerraform(struct?: DataAwsOpensearchDomainCognitoOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainCognitoOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -665,6 +748,17 @@ export function dataAwsOpensearchDomainEbsOptionsToTerraform(struct?: DataAwsOpe
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainEbsOptionsToHclTerraform(struct?: DataAwsOpensearchDomainEbsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainEbsOptionsOutputReference extends cdktf.ComplexObject {
@@ -751,6 +845,17 @@ export function dataAwsOpensearchDomainEncryptionAtRestToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsOpensearchDomainEncryptionAtRestToHclTerraform(struct?: DataAwsOpensearchDomainEncryptionAtRest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainEncryptionAtRestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -818,6 +923,17 @@ export function dataAwsOpensearchDomainLogPublishingOptionsToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainLogPublishingOptionsToHclTerraform(struct?: DataAwsOpensearchDomainLogPublishingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainLogPublishingOptionsOutputReference extends cdktf.ComplexObject {
@@ -894,6 +1010,17 @@ export function dataAwsOpensearchDomainNodeToNodeEncryptionToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsOpensearchDomainNodeToNodeEncryptionToHclTerraform(struct?: DataAwsOpensearchDomainNodeToNodeEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -956,6 +1083,17 @@ export function dataAwsOpensearchDomainSnapshotOptionsToTerraform(struct?: DataA
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainSnapshotOptionsToHclTerraform(struct?: DataAwsOpensearchDomainSnapshotOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainSnapshotOptionsOutputReference extends cdktf.ComplexObject {
@@ -1022,6 +1160,17 @@ export function dataAwsOpensearchDomainSoftwareUpdateOptionsToTerraform(struct?:
   }
 }
 
+
+export function dataAwsOpensearchDomainSoftwareUpdateOptionsToHclTerraform(struct?: DataAwsOpensearchDomainSoftwareUpdateOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1084,6 +1233,17 @@ export function dataAwsOpensearchDomainVpcOptionsToTerraform(struct?: DataAwsOpe
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainVpcOptionsToHclTerraform(struct?: DataAwsOpensearchDomainVpcOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainVpcOptionsOutputReference extends cdktf.ComplexObject {
@@ -1165,6 +1325,17 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowSt
   }
 }
 
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1234,6 +1405,17 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraf
   }
 }
 
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1297,6 +1479,17 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference | DataAwsOpensearchDomainOffPeakWindowOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends cdktf.ComplexObject {
@@ -1592,5 +1785,37 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       off_peak_window_options: dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(this._offPeakWindowOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      off_peak_window_options: {
+        value: dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(this._offPeakWindowOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsOpensearchDomainOffPeakWindowOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/grafana_workspace_saml_configuration
 // generated from terraform resource schema
 
@@ -98,6 +93,31 @@ export function grafanaWorkspaceSamlConfigurationTimeoutsToTerraform(struct?: Gr
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function grafanaWorkspaceSamlConfigurationTimeoutsToHclTerraform(struct?: GrafanaWorkspaceSamlConfigurationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -514,5 +534,103 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
       timeouts: grafanaWorkspaceSamlConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_role_values: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminRoleValues),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      allowed_organizations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOrganizations),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      editor_role_values: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._editorRoleValues),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      email_assertion: {
+        value: cdktf.stringToHclTerraform(this._emailAssertion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      groups_assertion: {
+        value: cdktf.stringToHclTerraform(this._groupsAssertion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_metadata_url: {
+        value: cdktf.stringToHclTerraform(this._idpMetadataUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_metadata_xml: {
+        value: cdktf.stringToHclTerraform(this._idpMetadataXml),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      login_assertion: {
+        value: cdktf.stringToHclTerraform(this._loginAssertion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      login_validity_duration: {
+        value: cdktf.numberToHclTerraform(this._loginValidityDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name_assertion: {
+        value: cdktf.stringToHclTerraform(this._nameAssertion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_assertion: {
+        value: cdktf.stringToHclTerraform(this._orgAssertion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_assertion: {
+        value: cdktf.stringToHclTerraform(this._roleAssertion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: grafanaWorkspaceSamlConfigurationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GrafanaWorkspaceSamlConfigurationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

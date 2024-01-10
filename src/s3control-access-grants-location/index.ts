@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3control_access_grants_location
 // generated from terraform resource schema
 
@@ -181,5 +176,37 @@ export class S3ControlAccessGrantsLocation extends cdktf.TerraformResource {
       location_scope: cdktf.stringToTerraform(this._locationScope),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location_scope: {
+        value: cdktf.stringToHclTerraform(this._locationScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_namespace
 // generated from terraform resource schema
 
@@ -330,5 +325,79 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_user_password: {
+        value: cdktf.stringToHclTerraform(this._adminUserPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      admin_username: {
+        value: cdktf.stringToHclTerraform(this._adminUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_name: {
+        value: cdktf.stringToHclTerraform(this._dbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._defaultIamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_exports: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logExports),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      namespace_name: {
+        value: cdktf.stringToHclTerraform(this._namespaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/emr_block_public_access_configuration
 // generated from terraform resource schema
 
@@ -50,6 +45,31 @@ export function emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRul
     max_range: cdktf.numberToTerraform(struct!.maxRange),
     min_range: cdktf.numberToTerraform(struct!.minRange),
   }
+}
+
+
+export function emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToHclTerraform(struct?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_range: {
+      value: cdktf.numberToHclTerraform(struct!.maxRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_range: {
+      value: cdktf.numberToHclTerraform(struct!.minRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference extends cdktf.ComplexObject {
@@ -264,5 +284,31 @@ export class EmrBlockPublicAccessConfiguration extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       permitted_public_security_group_rule_range: cdktf.listMapper(emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToTerraform, true)(this._permittedPublicSecurityGroupRuleRange.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      block_public_security_group_rules: {
+        value: cdktf.booleanToHclTerraform(this._blockPublicSecurityGroupRules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permitted_public_security_group_rule_range: {
+        value: cdktf.listMapperHcl(emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToHclTerraform, true)(this._permittedPublicSecurityGroupRuleRange.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

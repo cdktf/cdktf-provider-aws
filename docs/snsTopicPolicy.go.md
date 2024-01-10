@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snstopicpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicpolicy"
 
 snstopicpolicy.NewSnsTopicPolicy(scope Construct, id *string, config SnsTopicPolicyConfig) SnsTopicPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -125,6 +126,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.toMetadata"></a>
 
@@ -378,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snstopicpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snstopicpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ snstopicpolicy.SnsTopicPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snstopicpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ snstopicpolicy.SnsTopicPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snstopicpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/snstopicpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicpolicy"
 
 &snstopicpolicy.SnsTopicPolicyConfig {
 	Connection: interface{},

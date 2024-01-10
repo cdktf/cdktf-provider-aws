@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/chimesdkvoice_sip_media_application
 // generated from terraform resource schema
 
@@ -57,6 +52,25 @@ export function chimesdkvoiceSipMediaApplicationEndpointsToTerraform(struct?: Ch
   return {
     lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
   }
+}
+
+
+export function chimesdkvoiceSipMediaApplicationEndpointsToHclTerraform(struct?: ChimesdkvoiceSipMediaApplicationEndpointsOutputReference | ChimesdkvoiceSipMediaApplicationEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lambda_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lambdaArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ChimesdkvoiceSipMediaApplicationEndpointsOutputReference extends cdktf.ComplexObject {
@@ -273,5 +287,49 @@ export class ChimesdkvoiceSipMediaApplication extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       endpoints: chimesdkvoiceSipMediaApplicationEndpointsToTerraform(this._endpoints.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_region: {
+        value: cdktf.stringToHclTerraform(this._awsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      endpoints: {
+        value: chimesdkvoiceSipMediaApplicationEndpointsToHclTerraform(this._endpoints.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ChimesdkvoiceSipMediaApplicationEndpointsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_location_fsx_ontap_file_system
 // generated from terraform resource schema
 
@@ -61,6 +56,25 @@ export function datasyncLocationFsxOntapFileSystemProtocolNfsMountOptionsToTerra
   return {
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function datasyncLocationFsxOntapFileSystemProtocolNfsMountOptionsToHclTerraform(struct?: DatasyncLocationFsxOntapFileSystemProtocolNfsMountOptionsOutputReference | DatasyncLocationFsxOntapFileSystemProtocolNfsMountOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncLocationFsxOntapFileSystemProtocolNfsMountOptionsOutputReference extends cdktf.ComplexObject {
@@ -130,6 +144,25 @@ export function datasyncLocationFsxOntapFileSystemProtocolNfsToTerraform(struct?
   }
 }
 
+
+export function datasyncLocationFsxOntapFileSystemProtocolNfsToHclTerraform(struct?: DatasyncLocationFsxOntapFileSystemProtocolNfsOutputReference | DatasyncLocationFsxOntapFileSystemProtocolNfs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mount_options: {
+      value: datasyncLocationFsxOntapFileSystemProtocolNfsMountOptionsToHclTerraform(struct!.mountOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatasyncLocationFsxOntapFileSystemProtocolNfsMountOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatasyncLocationFsxOntapFileSystemProtocolNfsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -190,6 +223,25 @@ export function datasyncLocationFsxOntapFileSystemProtocolSmbMountOptionsToTerra
   return {
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function datasyncLocationFsxOntapFileSystemProtocolSmbMountOptionsToHclTerraform(struct?: DatasyncLocationFsxOntapFileSystemProtocolSmbMountOptionsOutputReference | DatasyncLocationFsxOntapFileSystemProtocolSmbMountOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncLocationFsxOntapFileSystemProtocolSmbMountOptionsOutputReference extends cdktf.ComplexObject {
@@ -272,6 +324,43 @@ export function datasyncLocationFsxOntapFileSystemProtocolSmbToTerraform(struct?
     user: cdktf.stringToTerraform(struct!.user),
     mount_options: datasyncLocationFsxOntapFileSystemProtocolSmbMountOptionsToTerraform(struct!.mountOptions),
   }
+}
+
+
+export function datasyncLocationFsxOntapFileSystemProtocolSmbToHclTerraform(struct?: DatasyncLocationFsxOntapFileSystemProtocolSmbOutputReference | DatasyncLocationFsxOntapFileSystemProtocolSmb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user: {
+      value: cdktf.stringToHclTerraform(struct!.user),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount_options: {
+      value: datasyncLocationFsxOntapFileSystemProtocolSmbMountOptionsToHclTerraform(struct!.mountOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatasyncLocationFsxOntapFileSystemProtocolSmbMountOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncLocationFsxOntapFileSystemProtocolSmbOutputReference extends cdktf.ComplexObject {
@@ -403,6 +492,31 @@ export function datasyncLocationFsxOntapFileSystemProtocolToTerraform(struct?: D
     nfs: datasyncLocationFsxOntapFileSystemProtocolNfsToTerraform(struct!.nfs),
     smb: datasyncLocationFsxOntapFileSystemProtocolSmbToTerraform(struct!.smb),
   }
+}
+
+
+export function datasyncLocationFsxOntapFileSystemProtocolToHclTerraform(struct?: DatasyncLocationFsxOntapFileSystemProtocolOutputReference | DatasyncLocationFsxOntapFileSystemProtocol): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    nfs: {
+      value: datasyncLocationFsxOntapFileSystemProtocolNfsToHclTerraform(struct!.nfs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatasyncLocationFsxOntapFileSystemProtocolNfsList",
+    },
+    smb: {
+      value: datasyncLocationFsxOntapFileSystemProtocolSmbToHclTerraform(struct!.smb),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatasyncLocationFsxOntapFileSystemProtocolSmbList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncLocationFsxOntapFileSystemProtocolOutputReference extends cdktf.ComplexObject {
@@ -677,5 +791,55 @@ export class DatasyncLocationFsxOntapFileSystem extends cdktf.TerraformResource 
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       protocol: datasyncLocationFsxOntapFileSystemProtocolToTerraform(this._protocol.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      storage_virtual_machine_arn: {
+        value: cdktf.stringToHclTerraform(this._storageVirtualMachineArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subdirectory: {
+        value: cdktf.stringToHclTerraform(this._subdirectory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      protocol: {
+        value: datasyncLocationFsxOntapFileSystemProtocolToHclTerraform(this._protocol.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncLocationFsxOntapFileSystemProtocolList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

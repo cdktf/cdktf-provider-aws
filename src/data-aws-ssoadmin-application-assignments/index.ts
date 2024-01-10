@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ssoadmin_application_assignments
 // generated from terraform resource schema
 
@@ -33,6 +28,17 @@ export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToTer
   }
   return {
   }
+}
+
+
+export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToHclTerraform(struct?: DataAwsSsoadminApplicationAssignmentsApplicationAssignments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference extends cdktf.ComplexObject {
@@ -211,5 +217,25 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
       application_arn: cdktf.stringToTerraform(this._applicationArn),
       application_assignments: cdktf.listMapper(dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToTerraform, true)(this._applicationAssignments.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_arn: {
+        value: cdktf.stringToHclTerraform(this._applicationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      application_assignments: {
+        value: cdktf.listMapperHcl(dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToHclTerraform, true)(this._applicationAssignments.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

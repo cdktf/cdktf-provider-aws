@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.NewDataAwsWafIpset(scope Construct, id *string, config DataAwsWafIpsetConfig) DataAwsWafIpset
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawswafipset.DataAwsWafIpset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawswafipset.DataAwsWafIpset_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 &dataawswafipset.DataAwsWafIpsetConfig {
 	Connection: interface{},

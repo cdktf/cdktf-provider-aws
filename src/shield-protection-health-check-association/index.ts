@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/shield_protection_health_check_association
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class ShieldProtectionHealthCheckAssociation extends cdktf.TerraformResou
       id: cdktf.stringToTerraform(this._id),
       shield_protection_id: cdktf.stringToTerraform(this._shieldProtectionId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      health_check_arn: {
+        value: cdktf.stringToHclTerraform(this._healthCheckArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      shield_protection_id: {
+        value: cdktf.stringToHclTerraform(this._shieldProtectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

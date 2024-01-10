@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc_endpoint_route_table_association
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
       route_table_id: cdktf.stringToTerraform(this._routeTableId),
       vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_table_id: {
+        value: cdktf.stringToHclTerraform(this._routeTableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

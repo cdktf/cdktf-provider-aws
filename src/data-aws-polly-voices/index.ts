@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/polly_voices
 // generated from terraform resource schema
 
@@ -41,6 +36,17 @@ export function dataAwsPollyVoicesVoicesToTerraform(struct?: DataAwsPollyVoicesV
   }
   return {
   }
+}
+
+
+export function dataAwsPollyVoicesVoicesToHclTerraform(struct?: DataAwsPollyVoicesVoices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsPollyVoicesVoicesOutputReference extends cdktf.ComplexObject {
@@ -278,5 +284,37 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
       language_code: cdktf.stringToTerraform(this._languageCode),
       voices: cdktf.listMapper(dataAwsPollyVoicesVoicesToTerraform, true)(this._voices.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      engine: {
+        value: cdktf.stringToHclTerraform(this._engine),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_additional_language_codes: {
+        value: cdktf.booleanToHclTerraform(this._includeAdditionalLanguageCodes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      language_code: {
+        value: cdktf.stringToHclTerraform(this._languageCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      voices: {
+        value: cdktf.listMapperHcl(dataAwsPollyVoicesVoicesToHclTerraform, true)(this._voices.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsPollyVoicesVoicesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

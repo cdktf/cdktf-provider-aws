@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/mskconnect_custom_plugin
 // generated from terraform resource schema
 
@@ -69,6 +64,37 @@ export function mskconnectCustomPluginLocationS3ToTerraform(struct?: MskconnectC
     file_key: cdktf.stringToTerraform(struct!.fileKey),
     object_version: cdktf.stringToTerraform(struct!.objectVersion),
   }
+}
+
+
+export function mskconnectCustomPluginLocationS3ToHclTerraform(struct?: MskconnectCustomPluginLocationS3OutputReference | MskconnectCustomPluginLocationS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_key: {
+      value: cdktf.stringToHclTerraform(struct!.fileKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_version: {
+      value: cdktf.stringToHclTerraform(struct!.objectVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskconnectCustomPluginLocationS3OutputReference extends cdktf.ComplexObject {
@@ -176,6 +202,25 @@ export function mskconnectCustomPluginLocationToTerraform(struct?: MskconnectCus
   }
 }
 
+
+export function mskconnectCustomPluginLocationToHclTerraform(struct?: MskconnectCustomPluginLocationOutputReference | MskconnectCustomPluginLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3: {
+      value: mskconnectCustomPluginLocationS3ToHclTerraform(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskconnectCustomPluginLocationS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MskconnectCustomPluginLocationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -241,6 +286,31 @@ export function mskconnectCustomPluginTimeoutsToTerraform(struct?: MskconnectCus
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function mskconnectCustomPluginTimeoutsToHclTerraform(struct?: MskconnectCustomPluginTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskconnectCustomPluginTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -502,5 +572,49 @@ export class MskconnectCustomPlugin extends cdktf.TerraformResource {
       location: mskconnectCustomPluginLocationToTerraform(this._location.internalValue),
       timeouts: mskconnectCustomPluginTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      content_type: {
+        value: cdktf.stringToHclTerraform(this._contentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: mskconnectCustomPluginLocationToHclTerraform(this._location.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MskconnectCustomPluginLocationList",
+      },
+      timeouts: {
+        value: mskconnectCustomPluginTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MskconnectCustomPluginTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

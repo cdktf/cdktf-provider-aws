@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ssoadmin_application_assignment
 // generated from terraform resource schema
 
@@ -140,5 +135,31 @@ export class SsoadminApplicationAssignment extends cdktf.TerraformResource {
       principal_id: cdktf.stringToTerraform(this._principalId),
       principal_type: cdktf.stringToTerraform(this._principalType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_arn: {
+        value: cdktf.stringToHclTerraform(this._applicationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_id: {
+        value: cdktf.stringToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_type: {
+        value: cdktf.stringToHclTerraform(this._principalType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

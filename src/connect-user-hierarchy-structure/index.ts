@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/connect_user_hierarchy_structure
 // generated from terraform resource schema
 
@@ -45,6 +40,25 @@ export function connectUserHierarchyStructureHierarchyStructureLevelFiveToTerraf
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function connectUserHierarchyStructureHierarchyStructureLevelFiveToHclTerraform(struct?: ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference | ConnectUserHierarchyStructureHierarchyStructureLevelFive): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference extends cdktf.ComplexObject {
@@ -119,6 +133,25 @@ export function connectUserHierarchyStructureHierarchyStructureLevelFourToTerraf
   }
 }
 
+
+export function connectUserHierarchyStructureHierarchyStructureLevelFourToHclTerraform(struct?: ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference | ConnectUserHierarchyStructureHierarchyStructureLevelFour): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,6 +222,25 @@ export function connectUserHierarchyStructureHierarchyStructureLevelOneToTerrafo
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function connectUserHierarchyStructureHierarchyStructureLevelOneToHclTerraform(struct?: ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference | ConnectUserHierarchyStructureHierarchyStructureLevelOne): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference extends cdktf.ComplexObject {
@@ -263,6 +315,25 @@ export function connectUserHierarchyStructureHierarchyStructureLevelThreeToTerra
   }
 }
 
+
+export function connectUserHierarchyStructureHierarchyStructureLevelThreeToHclTerraform(struct?: ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference | ConnectUserHierarchyStructureHierarchyStructureLevelThree): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -333,6 +404,25 @@ export function connectUserHierarchyStructureHierarchyStructureLevelTwoToTerrafo
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function connectUserHierarchyStructureHierarchyStructureLevelTwoToHclTerraform(struct?: ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference | ConnectUserHierarchyStructureHierarchyStructureLevelTwo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference extends cdktf.ComplexObject {
@@ -435,6 +525,49 @@ export function connectUserHierarchyStructureHierarchyStructureToTerraform(struc
     level_three: connectUserHierarchyStructureHierarchyStructureLevelThreeToTerraform(struct!.levelThree),
     level_two: connectUserHierarchyStructureHierarchyStructureLevelTwoToTerraform(struct!.levelTwo),
   }
+}
+
+
+export function connectUserHierarchyStructureHierarchyStructureToHclTerraform(struct?: ConnectUserHierarchyStructureHierarchyStructureOutputReference | ConnectUserHierarchyStructureHierarchyStructure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    level_five: {
+      value: connectUserHierarchyStructureHierarchyStructureLevelFiveToHclTerraform(struct!.levelFive),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectUserHierarchyStructureHierarchyStructureLevelFiveList",
+    },
+    level_four: {
+      value: connectUserHierarchyStructureHierarchyStructureLevelFourToHclTerraform(struct!.levelFour),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectUserHierarchyStructureHierarchyStructureLevelFourList",
+    },
+    level_one: {
+      value: connectUserHierarchyStructureHierarchyStructureLevelOneToHclTerraform(struct!.levelOne),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectUserHierarchyStructureHierarchyStructureLevelOneList",
+    },
+    level_three: {
+      value: connectUserHierarchyStructureHierarchyStructureLevelThreeToHclTerraform(struct!.levelThree),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectUserHierarchyStructureHierarchyStructureLevelThreeList",
+    },
+    level_two: {
+      value: connectUserHierarchyStructureHierarchyStructureLevelTwoToHclTerraform(struct!.levelTwo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectUserHierarchyStructureHierarchyStructureLevelTwoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectUserHierarchyStructureHierarchyStructureOutputReference extends cdktf.ComplexObject {
@@ -686,5 +819,31 @@ export class ConnectUserHierarchyStructure extends cdktf.TerraformResource {
       instance_id: cdktf.stringToTerraform(this._instanceId),
       hierarchy_structure: connectUserHierarchyStructureHierarchyStructureToTerraform(this._hierarchyStructure.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hierarchy_structure: {
+        value: connectUserHierarchyStructureHierarchyStructureToHclTerraform(this._hierarchyStructure.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConnectUserHierarchyStructureHierarchyStructureList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

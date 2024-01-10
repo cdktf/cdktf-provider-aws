@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 gluedataqualityruleset.NewGlueDataQualityRuleset(scope Construct, id *string, config GlueDataQualityRulesetConfig) GlueDataQualityRuleset
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTargetTable()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 gluedataqualityruleset.GlueDataQualityRuleset_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 gluedataqualityruleset.GlueDataQualityRuleset_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ gluedataqualityruleset.GlueDataQualityRuleset_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 gluedataqualityruleset.GlueDataQualityRuleset_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ gluedataqualityruleset.GlueDataQualityRuleset_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 gluedataqualityruleset.GlueDataQualityRuleset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 &gluedataqualityruleset.GlueDataQualityRulesetConfig {
 	Connection: interface{},
@@ -922,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TargetTable: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable,
+	TargetTable: github.com/cdktf/cdktf-provider-aws-go/aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable,
 }
 ```
 
@@ -1111,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 &gluedataqualityruleset.GlueDataQualityRulesetTargetTable {
 	DatabaseName: *string,
@@ -1173,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedataqualityruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluedataqualityruleset"
 
 gluedataqualityruleset.NewGlueDataQualityRulesetTargetTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueDataQualityRulesetTargetTableOutputReference
 ```

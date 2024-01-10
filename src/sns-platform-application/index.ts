@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sns_platform_application
 // generated from terraform resource schema
 
@@ -385,5 +380,97 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
       success_feedback_role_arn: cdktf.stringToTerraform(this._successFeedbackRoleArn),
       success_feedback_sample_rate: cdktf.stringToTerraform(this._successFeedbackSampleRate),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      apple_platform_bundle_id: {
+        value: cdktf.stringToHclTerraform(this._applePlatformBundleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      apple_platform_team_id: {
+        value: cdktf.stringToHclTerraform(this._applePlatformTeamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_delivery_failure_topic_arn: {
+        value: cdktf.stringToHclTerraform(this._eventDeliveryFailureTopicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_endpoint_created_topic_arn: {
+        value: cdktf.stringToHclTerraform(this._eventEndpointCreatedTopicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_endpoint_deleted_topic_arn: {
+        value: cdktf.stringToHclTerraform(this._eventEndpointDeletedTopicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_endpoint_updated_topic_arn: {
+        value: cdktf.stringToHclTerraform(this._eventEndpointUpdatedTopicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      failure_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._failureFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform: {
+        value: cdktf.stringToHclTerraform(this._platform),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform_credential: {
+        value: cdktf.stringToHclTerraform(this._platformCredential),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform_principal: {
+        value: cdktf.stringToHclTerraform(this._platformPrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      success_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._successFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      success_feedback_sample_rate: {
+        value: cdktf.stringToHclTerraform(this._successFeedbackSampleRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

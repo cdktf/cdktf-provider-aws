@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfunction"
 
 cloudfrontfunction.NewCloudfrontFunction(scope Construct, id *string, config CloudfrontFunctionConfig) CloudfrontFunction
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetPublish()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfunction"
 
 cloudfrontfunction.CloudfrontFunction_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfunction"
 
 cloudfrontfunction.CloudfrontFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ cloudfrontfunction.CloudfrontFunction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfunction"
 
 cloudfrontfunction.CloudfrontFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ cloudfrontfunction.CloudfrontFunction_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfunction"
 
 cloudfrontfunction.CloudfrontFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfunction"
 
 &cloudfrontfunction.CloudfrontFunctionConfig {
 	Connection: interface{},

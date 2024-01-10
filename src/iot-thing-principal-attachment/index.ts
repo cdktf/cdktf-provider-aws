@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iot_thing_principal_attachment
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class IotThingPrincipalAttachment extends cdktf.TerraformResource {
       principal: cdktf.stringToTerraform(this._principal),
       thing: cdktf.stringToTerraform(this._thing),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal: {
+        value: cdktf.stringToHclTerraform(this._principal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      thing: {
+        value: cdktf.stringToHclTerraform(this._thing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

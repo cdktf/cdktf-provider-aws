@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloudsearch_domain
 // generated from terraform resource schema
 
@@ -72,6 +67,31 @@ export function cloudsearchDomainEndpointOptionsToTerraform(struct?: Cloudsearch
     enforce_https: cdktf.booleanToTerraform(struct!.enforceHttps),
     tls_security_policy: cdktf.stringToTerraform(struct!.tlsSecurityPolicy),
   }
+}
+
+
+export function cloudsearchDomainEndpointOptionsToHclTerraform(struct?: CloudsearchDomainEndpointOptionsOutputReference | CloudsearchDomainEndpointOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enforce_https: {
+      value: cdktf.booleanToHclTerraform(struct!.enforceHttps),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tls_security_policy: {
+      value: cdktf.stringToHclTerraform(struct!.tlsSecurityPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudsearchDomainEndpointOptionsOutputReference extends cdktf.ComplexObject {
@@ -204,6 +224,79 @@ export function cloudsearchDomainIndexFieldToTerraform(struct?: CloudsearchDomai
     source_fields: cdktf.stringToTerraform(struct!.sourceFields),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function cloudsearchDomainIndexFieldToHclTerraform(struct?: CloudsearchDomainIndexField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    analysis_scheme: {
+      value: cdktf.stringToHclTerraform(struct!.analysisScheme),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_value: {
+      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.booleanToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    highlight: {
+      value: cdktf.booleanToHclTerraform(struct!.highlight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    return: {
+      value: cdktf.booleanToHclTerraform(struct!.return),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    search: {
+      value: cdktf.booleanToHclTerraform(struct!.search),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sort: {
+      value: cdktf.booleanToHclTerraform(struct!.sort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    source_fields: {
+      value: cdktf.stringToHclTerraform(struct!.sourceFields),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObject {
@@ -505,6 +598,37 @@ export function cloudsearchDomainScalingParametersToTerraform(struct?: Cloudsear
   }
 }
 
+
+export function cloudsearchDomainScalingParametersToHclTerraform(struct?: CloudsearchDomainScalingParametersOutputReference | CloudsearchDomainScalingParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    desired_instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.desiredInstanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    desired_partition_count: {
+      value: cdktf.numberToHclTerraform(struct!.desiredPartitionCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    desired_replication_count: {
+      value: cdktf.numberToHclTerraform(struct!.desiredReplicationCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudsearchDomainScalingParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -622,6 +746,37 @@ export function cloudsearchDomainTimeoutsToTerraform(struct?: CloudsearchDomainT
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function cloudsearchDomainTimeoutsToHclTerraform(struct?: CloudsearchDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -934,5 +1089,55 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
       scaling_parameters: cloudsearchDomainScalingParametersToTerraform(this._scalingParameters.internalValue),
       timeouts: cloudsearchDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multi_az: {
+        value: cdktf.booleanToHclTerraform(this._multiAz),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_options: {
+        value: cloudsearchDomainEndpointOptionsToHclTerraform(this._endpointOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudsearchDomainEndpointOptionsList",
+      },
+      index_field: {
+        value: cdktf.listMapperHcl(cloudsearchDomainIndexFieldToHclTerraform, true)(this._indexField.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CloudsearchDomainIndexFieldList",
+      },
+      scaling_parameters: {
+        value: cloudsearchDomainScalingParametersToHclTerraform(this._scalingParameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudsearchDomainScalingParametersList",
+      },
+      timeouts: {
+        value: cloudsearchDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CloudsearchDomainTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

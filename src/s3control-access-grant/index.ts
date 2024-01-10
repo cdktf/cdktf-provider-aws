@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3control_access_grant
 // generated from terraform resource schema
 
@@ -60,6 +55,25 @@ export function s3ControlAccessGrantAccessGrantsLocationConfigurationToTerraform
   return {
     s3_sub_prefix: cdktf.stringToTerraform(struct!.s3SubPrefix),
   }
+}
+
+
+export function s3ControlAccessGrantAccessGrantsLocationConfigurationToHclTerraform(struct?: S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_sub_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.s3SubPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReference extends cdktf.ComplexObject {
@@ -162,6 +176,31 @@ export function s3ControlAccessGrantGranteeToTerraform(struct?: S3ControlAccessG
     grantee_identifier: cdktf.stringToTerraform(struct!.granteeIdentifier),
     grantee_type: cdktf.stringToTerraform(struct!.granteeType),
   }
+}
+
+
+export function s3ControlAccessGrantGranteeToHclTerraform(struct?: S3ControlAccessGrantGrantee | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    grantee_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.granteeIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grantee_type: {
+      value: cdktf.stringToHclTerraform(struct!.granteeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3ControlAccessGrantGranteeOutputReference extends cdktf.ComplexObject {
@@ -471,5 +510,55 @@ export class S3ControlAccessGrant extends cdktf.TerraformResource {
       access_grants_location_configuration: cdktf.listMapper(s3ControlAccessGrantAccessGrantsLocationConfigurationToTerraform, true)(this._accessGrantsLocationConfiguration.internalValue),
       grantee: cdktf.listMapper(s3ControlAccessGrantGranteeToTerraform, true)(this._grantee.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_grants_location_id: {
+        value: cdktf.stringToHclTerraform(this._accessGrantsLocationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission: {
+        value: cdktf.stringToHclTerraform(this._permission),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_prefix_type: {
+        value: cdktf.stringToHclTerraform(this._s3PrefixType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      access_grants_location_configuration: {
+        value: cdktf.listMapperHcl(s3ControlAccessGrantAccessGrantsLocationConfigurationToHclTerraform, true)(this._accessGrantsLocationConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3ControlAccessGrantAccessGrantsLocationConfigurationList",
+      },
+      grantee: {
+        value: cdktf.listMapperHcl(s3ControlAccessGrantGranteeToHclTerraform, true)(this._grantee.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3ControlAccessGrantGranteeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

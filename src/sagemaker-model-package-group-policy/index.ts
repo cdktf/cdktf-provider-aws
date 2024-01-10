@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sagemaker_model_package_group_policy
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class SagemakerModelPackageGroupPolicy extends cdktf.TerraformResource {
       model_package_group_name: cdktf.stringToTerraform(this._modelPackageGroupName),
       resource_policy: cdktf.stringToTerraform(this._resourcePolicy),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_package_group_name: {
+        value: cdktf.stringToHclTerraform(this._modelPackageGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_policy: {
+        value: cdktf.stringToHclTerraform(this._resourcePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

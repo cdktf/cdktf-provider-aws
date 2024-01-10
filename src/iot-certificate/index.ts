@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iot_certificate
 // generated from terraform resource schema
 
@@ -208,5 +203,43 @@ export class IotCertificate extends cdktf.TerraformResource {
       csr: cdktf.stringToTerraform(this._csr),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ca_pem: {
+        value: cdktf.stringToHclTerraform(this._caPem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_pem: {
+        value: cdktf.stringToHclTerraform(this._certificatePem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csr: {
+        value: cdktf.stringToHclTerraform(this._csr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

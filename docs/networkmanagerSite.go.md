@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 networkmanagersite.NewNetworkmanagerSite(scope Construct, id *string, config NetworkmanagerSiteConfig) NetworkmanagerSite
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.toMetadata"></a>
 
@@ -439,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 networkmanagersite.NetworkmanagerSite_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 networkmanagersite.NetworkmanagerSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ networkmanagersite.NetworkmanagerSite_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 networkmanagersite.NetworkmanagerSite_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ networkmanagersite.NetworkmanagerSite_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 networkmanagersite.NetworkmanagerSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 &networkmanagersite.NetworkmanagerSiteConfig {
 	Connection: interface{},
@@ -906,10 +913,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
 	GlobalNetworkId: *string,
 	Description: *string,
 	Id: *string,
-	Location: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerSite.NetworkmanagerSiteLocation,
+	Location: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerSite.NetworkmanagerSiteLocation,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.networkmanagerSite.NetworkmanagerSiteTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerSite.NetworkmanagerSiteTimeouts,
 }
 ```
 
@@ -1100,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 &networkmanagersite.NetworkmanagerSiteLocation {
 	Address: *string,
@@ -1160,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 &networkmanagersite.NetworkmanagerSiteTimeouts {
 	Create: *string,
@@ -1222,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 networkmanagersite.NewNetworkmanagerSiteLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerSiteLocationOutputReference
 ```
@@ -1558,7 +1565,7 @@ func InternalValue() NetworkmanagerSiteLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagersite"
 
 networkmanagersite.NewNetworkmanagerSiteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerSiteTimeoutsOutputReference
 ```

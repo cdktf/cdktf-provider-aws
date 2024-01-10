@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/location_tracker_association
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class DataAwsLocationTrackerAssociation extends cdktf.TerraformDataSource
       id: cdktf.stringToTerraform(this._id),
       tracker_name: cdktf.stringToTerraform(this._trackerName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      consumer_arn: {
+        value: cdktf.stringToHclTerraform(this._consumerArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tracker_name: {
+        value: cdktf.stringToHclTerraform(this._trackerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

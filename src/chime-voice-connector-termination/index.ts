@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/chime_voice_connector_termination
 // generated from terraform resource schema
 
@@ -226,5 +221,55 @@ export class ChimeVoiceConnectorTermination extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      calling_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._callingRegions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      cidr_allow_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cidrAllowList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      cps_limit: {
+        value: cdktf.numberToHclTerraform(this._cpsLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      default_phone_number: {
+        value: cdktf.stringToHclTerraform(this._defaultPhoneNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      voice_connector_id: {
+        value: cdktf.stringToHclTerraform(this._voiceConnectorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_transit_gateway_peering_attachment
 // generated from terraform resource schema
 
@@ -56,6 +51,31 @@ export function dataAwsEc2TransitGatewayPeeringAttachmentFilterToTerraform(struc
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsEc2TransitGatewayPeeringAttachmentFilterToHclTerraform(struct?: DataAwsEc2TransitGatewayPeeringAttachmentFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference extends cdktf.ComplexObject {
@@ -169,6 +189,25 @@ export function dataAwsEc2TransitGatewayPeeringAttachmentTimeoutsToTerraform(str
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsEc2TransitGatewayPeeringAttachmentTimeoutsToHclTerraform(struct?: DataAwsEc2TransitGatewayPeeringAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -386,5 +425,37 @@ export class DataAwsEc2TransitGatewayPeeringAttachment extends cdktf.TerraformDa
       filter: cdktf.listMapper(dataAwsEc2TransitGatewayPeeringAttachmentFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsEc2TransitGatewayPeeringAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsEc2TransitGatewayPeeringAttachmentFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsEc2TransitGatewayPeeringAttachmentFilterList",
+      },
+      timeouts: {
+        value: dataAwsEc2TransitGatewayPeeringAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsEc2TransitGatewayPeeringAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

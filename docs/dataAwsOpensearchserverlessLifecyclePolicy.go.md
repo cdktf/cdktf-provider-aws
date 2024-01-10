@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.NewDataAwsOpensearchserverlessLifecyclePolicy(scope Construct, id *string, config DataAwsOpensearchserverlessLifecyclePolicyConfig) DataAwsOpensearchserverlessLifecyclePolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecycleP
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecycleP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -644,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 &dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicyConfig {
 	Connection: interface{},

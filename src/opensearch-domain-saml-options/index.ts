@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/opensearch_domain_saml_options
 // generated from terraform resource schema
 
@@ -56,6 +51,31 @@ export function opensearchDomainSamlOptionsSamlOptionsIdpToTerraform(struct?: Op
     entity_id: cdktf.stringToTerraform(struct!.entityId),
     metadata_content: cdktf.stringToTerraform(struct!.metadataContent),
   }
+}
+
+
+export function opensearchDomainSamlOptionsSamlOptionsIdpToHclTerraform(struct?: OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference | OpensearchDomainSamlOptionsSamlOptionsIdp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_id: {
+      value: cdktf.stringToHclTerraform(struct!.entityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metadata_content: {
+      value: cdktf.stringToHclTerraform(struct!.metadataContent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference extends cdktf.ComplexObject {
@@ -169,6 +189,61 @@ export function opensearchDomainSamlOptionsSamlOptionsToTerraform(struct?: Opens
     subject_key: cdktf.stringToTerraform(struct!.subjectKey),
     idp: opensearchDomainSamlOptionsSamlOptionsIdpToTerraform(struct!.idp),
   }
+}
+
+
+export function opensearchDomainSamlOptionsSamlOptionsToHclTerraform(struct?: OpensearchDomainSamlOptionsSamlOptionsOutputReference | OpensearchDomainSamlOptionsSamlOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    master_backend_role: {
+      value: cdktf.stringToHclTerraform(struct!.masterBackendRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    master_user_name: {
+      value: cdktf.stringToHclTerraform(struct!.masterUserName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    roles_key: {
+      value: cdktf.stringToHclTerraform(struct!.rolesKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    session_timeout_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.sessionTimeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    subject_key: {
+      value: cdktf.stringToHclTerraform(struct!.subjectKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    idp: {
+      value: opensearchDomainSamlOptionsSamlOptionsIdpToHclTerraform(struct!.idp),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpensearchDomainSamlOptionsSamlOptionsIdpList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainSamlOptionsSamlOptionsOutputReference extends cdktf.ComplexObject {
@@ -371,6 +446,31 @@ export function opensearchDomainSamlOptionsTimeoutsToTerraform(struct?: Opensear
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function opensearchDomainSamlOptionsTimeoutsToHclTerraform(struct?: OpensearchDomainSamlOptionsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainSamlOptionsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -587,5 +687,37 @@ export class OpensearchDomainSamlOptions extends cdktf.TerraformResource {
       saml_options: opensearchDomainSamlOptionsSamlOptionsToTerraform(this._samlOptions.internalValue),
       timeouts: opensearchDomainSamlOptionsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml_options: {
+        value: opensearchDomainSamlOptionsSamlOptionsToHclTerraform(this._samlOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainSamlOptionsSamlOptionsList",
+      },
+      timeouts: {
+        value: opensearchDomainSamlOptionsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "OpensearchDomainSamlOptionsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

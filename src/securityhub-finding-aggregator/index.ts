@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/securityhub_finding_aggregator
 // generated from terraform resource schema
 
@@ -144,5 +139,31 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
       linking_mode: cdktf.stringToTerraform(this._linkingMode),
       specified_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._specifiedRegions),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      linking_mode: {
+        value: cdktf.stringToHclTerraform(this._linkingMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      specified_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._specifiedRegions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

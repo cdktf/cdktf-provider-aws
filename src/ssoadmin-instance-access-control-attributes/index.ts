@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ssoadmin_instance_access_control_attributes
 // generated from terraform resource schema
 
@@ -45,6 +40,25 @@ export function ssoadminInstanceAccessControlAttributesAttributeValueToTerraform
   return {
     source: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.source),
   }
+}
+
+
+export function ssoadminInstanceAccessControlAttributesAttributeValueToHclTerraform(struct?: SsoadminInstanceAccessControlAttributesAttributeValue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.source),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminInstanceAccessControlAttributesAttributeValueOutputReference extends cdktf.ComplexObject {
@@ -146,6 +160,31 @@ export function ssoadminInstanceAccessControlAttributesAttributeToTerraform(stru
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.listMapper(ssoadminInstanceAccessControlAttributesAttributeValueToTerraform, true)(struct!.value),
   }
+}
+
+
+export function ssoadminInstanceAccessControlAttributesAttributeToHclTerraform(struct?: SsoadminInstanceAccessControlAttributesAttribute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.listMapperHcl(ssoadminInstanceAccessControlAttributesAttributeValueToHclTerraform, true)(struct!.value),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SsoadminInstanceAccessControlAttributesAttributeValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminInstanceAccessControlAttributesAttributeOutputReference extends cdktf.ComplexObject {
@@ -367,5 +406,31 @@ export class SsoadminInstanceAccessControlAttributes extends cdktf.TerraformReso
       instance_arn: cdktf.stringToTerraform(this._instanceArn),
       attribute: cdktf.listMapper(ssoadminInstanceAccessControlAttributesAttributeToTerraform, true)(this._attribute.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attribute: {
+        value: cdktf.listMapperHcl(ssoadminInstanceAccessControlAttributesAttributeToHclTerraform, true)(this._attribute.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SsoadminInstanceAccessControlAttributesAttributeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

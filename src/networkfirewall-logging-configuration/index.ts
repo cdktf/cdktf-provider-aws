@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkfirewall_logging_configuration
 // generated from terraform resource schema
 
@@ -55,6 +50,37 @@ export function networkfirewallLoggingConfigurationLoggingConfigurationLogDestin
     log_destination_type: cdktf.stringToTerraform(struct!.logDestinationType),
     log_type: cdktf.stringToTerraform(struct!.logType),
   }
+}
+
+
+export function networkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigToHclTerraform(struct?: NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_destination: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.logDestination),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    log_destination_type: {
+      value: cdktf.stringToHclTerraform(struct!.logDestinationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_type: {
+      value: cdktf.stringToHclTerraform(struct!.logType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigOutputReference extends cdktf.ComplexObject {
@@ -189,6 +215,25 @@ export function networkfirewallLoggingConfigurationLoggingConfigurationToTerrafo
   return {
     log_destination_config: cdktf.listMapper(networkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigToTerraform, true)(struct!.logDestinationConfig),
   }
+}
+
+
+export function networkfirewallLoggingConfigurationLoggingConfigurationToHclTerraform(struct?: NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference | NetworkfirewallLoggingConfigurationLoggingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_destination_config: {
+      value: cdktf.listMapperHcl(networkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigToHclTerraform, true)(struct!.logDestinationConfig),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -349,5 +394,31 @@ export class NetworkfirewallLoggingConfiguration extends cdktf.TerraformResource
       id: cdktf.stringToTerraform(this._id),
       logging_configuration: networkfirewallLoggingConfigurationLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      firewall_arn: {
+        value: cdktf.stringToHclTerraform(this._firewallArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      logging_configuration: {
+        value: networkfirewallLoggingConfigurationLoggingConfigurationToHclTerraform(this._loggingConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkfirewallLoggingConfigurationLoggingConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

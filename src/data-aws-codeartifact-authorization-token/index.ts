@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/codeartifact_authorization_token
 // generated from terraform resource schema
 
@@ -176,5 +171,37 @@ export class DataAwsCodeartifactAuthorizationToken extends cdktf.TerraformDataSo
       duration_seconds: cdktf.numberToTerraform(this._durationSeconds),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_owner: {
+        value: cdktf.stringToHclTerraform(this._domainOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      duration_seconds: {
+        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

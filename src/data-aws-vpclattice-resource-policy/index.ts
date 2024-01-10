@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/vpclattice_resource_policy
 // generated from terraform resource schema
 
@@ -127,5 +122,25 @@ export class DataAwsVpclatticeResourcePolicy extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_arn: {
+        value: cdktf.stringToHclTerraform(this._resourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

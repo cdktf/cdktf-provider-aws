@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/vpc_ipam_pool_cidrs
 // generated from terraform resource schema
 
@@ -46,6 +41,17 @@ export function dataAwsVpcIpamPoolCidrsIpamPoolCidrsToTerraform(struct?: DataAws
   }
   return {
   }
+}
+
+
+export function dataAwsVpcIpamPoolCidrsIpamPoolCidrsToHclTerraform(struct?: DataAwsVpcIpamPoolCidrsIpamPoolCidrs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference extends cdktf.ComplexObject {
@@ -125,6 +131,31 @@ export function dataAwsVpcIpamPoolCidrsFilterToTerraform(struct?: DataAwsVpcIpam
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsVpcIpamPoolCidrsFilterToHclTerraform(struct?: DataAwsVpcIpamPoolCidrsFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsVpcIpamPoolCidrsFilterOutputReference extends cdktf.ComplexObject {
@@ -238,6 +269,25 @@ export function dataAwsVpcIpamPoolCidrsTimeoutsToTerraform(struct?: DataAwsVpcIp
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsVpcIpamPoolCidrsTimeoutsToHclTerraform(struct?: DataAwsVpcIpamPoolCidrsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsVpcIpamPoolCidrsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -438,5 +488,37 @@ export class DataAwsVpcIpamPoolCidrs extends cdktf.TerraformDataSource {
       filter: cdktf.listMapper(dataAwsVpcIpamPoolCidrsFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsVpcIpamPoolCidrsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipam_pool_id: {
+        value: cdktf.stringToHclTerraform(this._ipamPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsVpcIpamPoolCidrsFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsVpcIpamPoolCidrsFilterList",
+      },
+      timeouts: {
+        value: dataAwsVpcIpamPoolCidrsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsVpcIpamPoolCidrsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_endpoint
 // generated from terraform resource schema
 
@@ -258,5 +253,61 @@ export class NeptuneClusterEndpoint extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_endpoint_identifier: {
+        value: cdktf.stringToHclTerraform(this._clusterEndpointIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_identifier: {
+        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_type: {
+        value: cdktf.stringToHclTerraform(this._endpointType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      excluded_members: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedMembers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      static_members: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._staticMembers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

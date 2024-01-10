@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 datasynclocationefs.NewDatasyncLocationEfs(scope Construct, id *string, config DatasyncLocationEfsConfig) DatasyncLocationEfs
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.toMetadata"></a>
 
@@ -433,7 +440,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ datasynclocationefs.DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ datasynclocationefs.DatasyncLocationEfs_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -942,7 +949,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 &datasynclocationefs.DatasyncLocationEfsConfig {
 	Connection: interface{},
@@ -952,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Ec2Config: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncLocationEfs.DatasyncLocationEfsEc2Config,
+	Ec2Config: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config,
 	EfsFileSystemArn: *string,
 	AccessPointArn: *string,
 	FileSystemAccessRoleArn: *string,
@@ -1175,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 &datasynclocationefs.DatasyncLocationEfsEc2Config {
 	SecurityGroupArns: *[]*string,
@@ -1223,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationefs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationefs"
 
 datasynclocationefs.NewDatasyncLocationEfsEc2ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationEfsEc2ConfigOutputReference
 ```

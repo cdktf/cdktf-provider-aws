@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/servicecatalog_provisioned_product
 // generated from terraform resource schema
 
@@ -102,6 +97,17 @@ export function servicecatalogProvisionedProductOutputsToTerraform(struct?: Serv
   }
 }
 
+
+export function servicecatalogProvisionedProductOutputsToHclTerraform(struct?: ServicecatalogProvisionedProductOutputs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ServicecatalogProvisionedProductOutputsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,6 +195,37 @@ export function servicecatalogProvisionedProductProvisioningParametersToTerrafor
     use_previous_value: cdktf.booleanToTerraform(struct!.usePreviousValue),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function servicecatalogProvisionedProductProvisioningParametersToHclTerraform(struct?: ServicecatalogProvisionedProductProvisioningParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_previous_value: {
+      value: cdktf.booleanToHclTerraform(struct!.usePreviousValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServicecatalogProvisionedProductProvisioningParametersOutputReference extends cdktf.ComplexObject {
@@ -352,6 +389,55 @@ export function servicecatalogProvisionedProductStackSetProvisioningPreferencesT
     max_concurrency_percentage: cdktf.numberToTerraform(struct!.maxConcurrencyPercentage),
     regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
   }
+}
+
+
+export function servicecatalogProvisionedProductStackSetProvisioningPreferencesToHclTerraform(struct?: ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference | ServicecatalogProvisionedProductStackSetProvisioningPreferences): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accounts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accounts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    failure_tolerance_count: {
+      value: cdktf.numberToHclTerraform(struct!.failureToleranceCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    failure_tolerance_percentage: {
+      value: cdktf.numberToHclTerraform(struct!.failureTolerancePercentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_concurrency_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrencyCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_concurrency_percentage: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrencyPercentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference extends cdktf.ComplexObject {
@@ -542,6 +628,43 @@ export function servicecatalogProvisionedProductTimeoutsToTerraform(struct?: Ser
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function servicecatalogProvisionedProductTimeoutsToHclTerraform(struct?: ServicecatalogProvisionedProductTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1092,5 +1215,115 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
       stack_set_provisioning_preferences: servicecatalogProvisionedProductStackSetProvisioningPreferencesToTerraform(this._stackSetProvisioningPreferences.internalValue),
       timeouts: servicecatalogProvisionedProductTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      accept_language: {
+        value: cdktf.stringToHclTerraform(this._acceptLanguage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_errors: {
+        value: cdktf.booleanToHclTerraform(this._ignoreErrors),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notificationArns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      path_id: {
+        value: cdktf.stringToHclTerraform(this._pathId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path_name: {
+        value: cdktf.stringToHclTerraform(this._pathName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      product_id: {
+        value: cdktf.stringToHclTerraform(this._productId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      product_name: {
+        value: cdktf.stringToHclTerraform(this._productName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provisioning_artifact_id: {
+        value: cdktf.stringToHclTerraform(this._provisioningArtifactId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provisioning_artifact_name: {
+        value: cdktf.stringToHclTerraform(this._provisioningArtifactName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retain_physical_resources: {
+        value: cdktf.booleanToHclTerraform(this._retainPhysicalResources),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      provisioning_parameters: {
+        value: cdktf.listMapperHcl(servicecatalogProvisionedProductProvisioningParametersToHclTerraform, true)(this._provisioningParameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServicecatalogProvisionedProductProvisioningParametersList",
+      },
+      stack_set_provisioning_preferences: {
+        value: servicecatalogProvisionedProductStackSetProvisioningPreferencesToHclTerraform(this._stackSetProvisioningPreferences.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServicecatalogProvisionedProductStackSetProvisioningPreferencesList",
+      },
+      timeouts: {
+        value: servicecatalogProvisionedProductTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ServicecatalogProvisionedProductTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3_bucket_request_payment_configuration
 // generated from terraform resource schema
 
@@ -163,5 +158,37 @@ export class S3BucketRequestPaymentConfiguration extends cdktf.TerraformResource
       id: cdktf.stringToTerraform(this._id),
       payer: cdktf.stringToTerraform(this._payer),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_bucket_owner: {
+        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      payer: {
+        value: cdktf.stringToHclTerraform(this._payer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

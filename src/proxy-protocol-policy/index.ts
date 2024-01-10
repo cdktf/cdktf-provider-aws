@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/proxy_protocol_policy
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
       instance_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instancePorts),
       load_balancer: cdktf.stringToTerraform(this._loadBalancer),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_ports: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instancePorts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      load_balancer: {
+        value: cdktf.stringToHclTerraform(this._loadBalancer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

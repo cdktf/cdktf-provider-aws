@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_usage_limit
 // generated from terraform resource schema
 
@@ -272,5 +267,67 @@ export class RedshiftUsageLimit extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      amount: {
+        value: cdktf.numberToHclTerraform(this._amount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      breach_action: {
+        value: cdktf.stringToHclTerraform(this._breachAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_identifier: {
+        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      feature_type: {
+        value: cdktf.stringToHclTerraform(this._featureType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit_type: {
+        value: cdktf.stringToHclTerraform(this._limitType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      period: {
+        value: cdktf.stringToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

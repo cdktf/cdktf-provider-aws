@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/quicksight_folder_membership
 // generated from terraform resource schema
 
@@ -162,5 +157,37 @@ export class QuicksightFolderMembership extends cdktf.TerraformResource {
       member_id: cdktf.stringToTerraform(this._memberId),
       member_type: cdktf.stringToTerraform(this._memberType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      folder_id: {
+        value: cdktf.stringToHclTerraform(this._folderId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_id: {
+        value: cdktf.stringToHclTerraform(this._memberId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_type: {
+        value: cdktf.stringToHclTerraform(this._memberType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

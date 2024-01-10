@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsqldbledger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsqldbledger"
 
 dataawsqldbledger.NewDataAwsQldbLedger(scope Construct, id *string, config DataAwsQldbLedgerConfig) DataAwsQldbLedger
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsqldbledger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsqldbledger"
 
 dataawsqldbledger.DataAwsQldbLedger_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsqldbledger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsqldbledger"
 
 dataawsqldbledger.DataAwsQldbLedger_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataawsqldbledger.DataAwsQldbLedger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsqldbledger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsqldbledger"
 
 dataawsqldbledger.DataAwsQldbLedger_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataawsqldbledger.DataAwsQldbLedger_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsqldbledger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsqldbledger"
 
 dataawsqldbledger.DataAwsQldbLedger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsqldbledger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsqldbledger"
 
 &dataawsqldbledger.DataAwsQldbLedgerConfig {
 	Connection: interface{},

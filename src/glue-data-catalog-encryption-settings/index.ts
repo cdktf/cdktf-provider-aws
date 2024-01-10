@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_data_catalog_encryption_settings
 // generated from terraform resource schema
 
@@ -50,6 +45,31 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsCo
     aws_kms_key_id: cdktf.stringToTerraform(struct!.awsKmsKeyId),
     return_connection_password_encrypted: cdktf.booleanToTerraform(struct!.returnConnectionPasswordEncrypted),
   }
+}
+
+
+export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionToHclTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.awsKmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    return_connection_password_encrypted: {
+      value: cdktf.booleanToHclTerraform(struct!.returnConnectionPasswordEncrypted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference extends cdktf.ComplexObject {
@@ -139,6 +159,31 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEn
     catalog_encryption_mode: cdktf.stringToTerraform(struct!.catalogEncryptionMode),
     sse_aws_kms_key_id: cdktf.stringToTerraform(struct!.sseAwsKmsKeyId),
   }
+}
+
+
+export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestToHclTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_encryption_mode: {
+      value: cdktf.stringToHclTerraform(struct!.catalogEncryptionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sse_aws_kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.sseAwsKmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference extends cdktf.ComplexObject {
@@ -232,6 +277,31 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsTo
     connection_password_encryption: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionToTerraform(struct!.connectionPasswordEncryption),
     encryption_at_rest: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestToTerraform(struct!.encryptionAtRest),
   }
+}
+
+
+export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToHclTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_password_encryption: {
+      value: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionToHclTerraform(struct!.connectionPasswordEncryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionList",
+    },
+    encryption_at_rest: {
+      value: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestToHclTerraform(struct!.encryptionAtRest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference extends cdktf.ComplexObject {
@@ -414,5 +484,31 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       data_catalog_encryption_settings: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToTerraform(this._dataCatalogEncryptionSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      catalog_id: {
+        value: cdktf.stringToHclTerraform(this._catalogId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_catalog_encryption_settings: {
+        value: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToHclTerraform(this._dataCatalogEncryptionSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

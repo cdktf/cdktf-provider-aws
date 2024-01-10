@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/appmesh_virtual_service
 // generated from terraform resource schema
 
@@ -46,6 +41,17 @@ export function dataAwsAppmeshVirtualServiceSpecProviderVirtualNodeToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualServiceSpecProviderVirtualNodeToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualNode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends cdktf.ComplexObject {
@@ -112,6 +118,17 @@ export function dataAwsAppmeshVirtualServiceSpecProviderVirtualRouterToTerraform
   }
 }
 
+
+export function dataAwsAppmeshVirtualServiceSpecProviderVirtualRouterToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -174,6 +191,17 @@ export function dataAwsAppmeshVirtualServiceSpecProviderToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualServiceSpecProviderToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProvider): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualServiceSpecProviderOutputReference extends cdktf.ComplexObject {
@@ -245,6 +273,17 @@ export function dataAwsAppmeshVirtualServiceSpecToTerraform(struct?: DataAwsAppm
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualServiceSpecToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObject {
@@ -475,5 +514,43 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_name: {
+        value: cdktf.stringToHclTerraform(this._meshName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_owner: {
+        value: cdktf.stringToHclTerraform(this._meshOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

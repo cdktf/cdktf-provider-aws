@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/api_gateway_base_path_mapping
 // generated from terraform resource schema
 
@@ -185,5 +180,43 @@ export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       stage_name: cdktf.stringToTerraform(this._stageName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      base_path: {
+        value: cdktf.stringToHclTerraform(this._basePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage_name: {
+        value: cdktf.stringToHclTerraform(this._stageName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

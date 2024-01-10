@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2webacl"
 
 dataawswafv2webacl.NewDataAwsWafv2WebAcl(scope Construct, id *string, config DataAwsWafv2WebAclConfig) DataAwsWafv2WebAcl
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2webacl"
 
 &dataawswafv2webacl.DataAwsWafv2WebAclConfig {
 	Connection: interface{},

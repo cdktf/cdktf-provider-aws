@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.NewS3ControlObjectLambdaAccessPointPolicy(scope Construct, id *string, config S3ControlObjectLambdaAccessPointPolicyConfig) S3ControlObjectLambdaAccessPointPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.toMetadata"></a>
 
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlobjectlambdaaccesspointpolicy"
 
 &s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicyConfig {
 	Connection: interface{},

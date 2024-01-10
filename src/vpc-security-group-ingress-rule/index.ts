@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc_security_group_ingress_rule
 // generated from terraform resource schema
 
@@ -313,5 +308,73 @@ export class VpcSecurityGroupIngressRule extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       to_port: cdktf.numberToTerraform(this._toPort),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cidr_ipv4: {
+        value: cdktf.stringToHclTerraform(this._cidrIpv4),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cidr_ipv6: {
+        value: cdktf.stringToHclTerraform(this._cidrIpv6),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      from_port: {
+        value: cdktf.numberToHclTerraform(this._fromPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ip_protocol: {
+        value: cdktf.stringToHclTerraform(this._ipProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prefix_list_id: {
+        value: cdktf.stringToHclTerraform(this._prefixListId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      referenced_security_group_id: {
+        value: cdktf.stringToHclTerraform(this._referencedSecurityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_id: {
+        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      to_port: {
+        value: cdktf.numberToHclTerraform(this._toPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.NewDataAwsAppmeshVirtualRouter(scope Construct, id *string, config DataAwsAppmeshVirtualRouterConfig) DataAwsAppmeshVirtualRouter
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouter_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouter_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouter_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouter_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouter_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -720,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 &dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouterConfig {
 	Connection: interface{},
@@ -895,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 &dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouterSpec {
 
@@ -908,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 &dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouterSpecListener {
 
@@ -921,7 +930,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 &dataawsappmeshvirtualrouter.DataAwsAppmeshVirtualRouterSpecListenerPortMapping {
 
@@ -936,7 +945,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.NewDataAwsAppmeshVirtualRouterSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualRouterSpecList
 ```
@@ -977,10 +986,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1068,7 +1094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.NewDataAwsAppmeshVirtualRouterSpecListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualRouterSpecListenerList
 ```
@@ -1109,10 +1135,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1200,7 +1243,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.NewDataAwsAppmeshVirtualRouterSpecListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualRouterSpecListenerOutputReference
 ```
@@ -1478,7 +1521,7 @@ func InternalValue() DataAwsAppmeshVirtualRouterSpecListener
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.NewDataAwsAppmeshVirtualRouterSpecListenerPortMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualRouterSpecListenerPortMappingList
 ```
@@ -1519,10 +1562,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1610,7 +1670,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecListenerPortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.NewDataAwsAppmeshVirtualRouterSpecListenerPortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualRouterSpecListenerPortMappingOutputReference
 ```
@@ -1899,7 +1959,7 @@ func InternalValue() DataAwsAppmeshVirtualRouterSpecListenerPortMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshVirtualRouter.DataAwsAppmeshVirtualRouterSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshvirtualrouter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshvirtualrouter"
 
 dataawsappmeshvirtualrouter.NewDataAwsAppmeshVirtualRouterSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualRouterSpecOutputReference
 ```

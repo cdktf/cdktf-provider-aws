@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/docdb_orderable_db_instance
 // generated from terraform resource schema
 
@@ -240,5 +235,55 @@ export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
       preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceClasses),
       vpc: cdktf.booleanToTerraform(this._vpc),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      engine: {
+        value: cdktf.stringToHclTerraform(this._engine),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine_version: {
+        value: cdktf.stringToHclTerraform(this._engineVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_class: {
+        value: cdktf.stringToHclTerraform(this._instanceClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      license_model: {
+        value: cdktf.stringToHclTerraform(this._licenseModel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_instance_classes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredInstanceClasses),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      vpc: {
+        value: cdktf.booleanToHclTerraform(this._vpc),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

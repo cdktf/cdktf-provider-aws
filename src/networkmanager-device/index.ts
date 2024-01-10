@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkmanager_device
 // generated from terraform resource schema
 
@@ -94,6 +89,31 @@ export function networkmanagerDeviceAwsLocationToTerraform(struct?: Networkmanag
     subnet_arn: cdktf.stringToTerraform(struct!.subnetArn),
     zone: cdktf.stringToTerraform(struct!.zone),
   }
+}
+
+
+export function networkmanagerDeviceAwsLocationToHclTerraform(struct?: NetworkmanagerDeviceAwsLocationOutputReference | NetworkmanagerDeviceAwsLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    subnet_arn: {
+      value: cdktf.stringToHclTerraform(struct!.subnetArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zone: {
+      value: cdktf.stringToHclTerraform(struct!.zone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkmanagerDeviceAwsLocationOutputReference extends cdktf.ComplexObject {
@@ -191,6 +211,37 @@ export function networkmanagerDeviceLocationToTerraform(struct?: NetworkmanagerD
     latitude: cdktf.stringToTerraform(struct!.latitude),
     longitude: cdktf.stringToTerraform(struct!.longitude),
   }
+}
+
+
+export function networkmanagerDeviceLocationToHclTerraform(struct?: NetworkmanagerDeviceLocationOutputReference | NetworkmanagerDeviceLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    latitude: {
+      value: cdktf.stringToHclTerraform(struct!.latitude),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    longitude: {
+      value: cdktf.stringToHclTerraform(struct!.longitude),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkmanagerDeviceLocationOutputReference extends cdktf.ComplexObject {
@@ -310,6 +361,37 @@ export function networkmanagerDeviceTimeoutsToTerraform(struct?: NetworkmanagerD
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function networkmanagerDeviceTimeoutsToHclTerraform(struct?: NetworkmanagerDeviceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkmanagerDeviceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -715,5 +797,91 @@ export class NetworkmanagerDevice extends cdktf.TerraformResource {
       location: networkmanagerDeviceLocationToTerraform(this._location.internalValue),
       timeouts: networkmanagerDeviceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      global_network_id: {
+        value: cdktf.stringToHclTerraform(this._globalNetworkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model: {
+        value: cdktf.stringToHclTerraform(this._model),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      serial_number: {
+        value: cdktf.stringToHclTerraform(this._serialNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      site_id: {
+        value: cdktf.stringToHclTerraform(this._siteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vendor: {
+        value: cdktf.stringToHclTerraform(this._vendor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_location: {
+        value: networkmanagerDeviceAwsLocationToHclTerraform(this._awsLocation.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkmanagerDeviceAwsLocationList",
+      },
+      location: {
+        value: networkmanagerDeviceLocationToHclTerraform(this._location.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkmanagerDeviceLocationList",
+      },
+      timeouts: {
+        value: networkmanagerDeviceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NetworkmanagerDeviceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

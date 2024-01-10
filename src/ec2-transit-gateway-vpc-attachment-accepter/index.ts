@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter
 // generated from terraform resource schema
 
@@ -245,5 +240,49 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResou
       transit_gateway_default_route_table_association: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),
       transit_gateway_default_route_table_propagation: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTablePropagation),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      transit_gateway_attachment_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_default_route_table_association: {
+        value: cdktf.booleanToHclTerraform(this._transitGatewayDefaultRouteTableAssociation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      transit_gateway_default_route_table_propagation: {
+        value: cdktf.booleanToHclTerraform(this._transitGatewayDefaultRouteTablePropagation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

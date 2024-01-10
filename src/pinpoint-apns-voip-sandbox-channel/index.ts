@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/pinpoint_apns_voip_sandbox_channel
 // generated from terraform resource schema
 
@@ -298,5 +293,73 @@ export class PinpointApnsVoipSandboxChannel extends cdktf.TerraformResource {
       token_key: cdktf.stringToTerraform(this._tokenKey),
       token_key_id: cdktf.stringToTerraform(this._tokenKeyId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_id: {
+        value: cdktf.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bundle_id: {
+        value: cdktf.stringToHclTerraform(this._bundleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate: {
+        value: cdktf.stringToHclTerraform(this._certificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_authentication_method: {
+        value: cdktf.stringToHclTerraform(this._defaultAuthenticationMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_key: {
+        value: cdktf.stringToHclTerraform(this._tokenKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_key_id: {
+        value: cdktf.stringToHclTerraform(this._tokenKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

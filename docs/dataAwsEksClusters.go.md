@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.NewDataAwsEksClusters(scope Construct, id *string, config DataAwsEksClustersConfig) DataAwsEksClusters
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawseksclusters.DataAwsEksClusters_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawseksclusters.DataAwsEksClusters_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 &dataawseksclusters.DataAwsEksClustersConfig {
 	Connection: interface{},

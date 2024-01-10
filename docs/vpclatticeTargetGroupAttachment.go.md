@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 vpclatticetargetgroupattachment.NewVpclatticeTargetGroupAttachment(scope Construct, id *string, config VpclatticeTargetGroupAttachmentConfig) VpclatticeTargetGroupAttachment
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.toMetadata"></a>
 
@@ -411,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +464,7 @@ vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 &vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachmentConfig {
 	Connection: interface{},
@@ -798,10 +805,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupatta
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Target: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTarget,
+	Target: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTarget,
 	TargetGroupIdentifier: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTimeouts,
 }
 ```
 
@@ -953,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 &vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachmentTarget {
 	Id: *string,
@@ -1002,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 &vpclatticetargetgroupattachment.VpclatticeTargetGroupAttachmentTimeouts {
 	Create: *string,
@@ -1050,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 vpclatticetargetgroupattachment.NewVpclatticeTargetGroupAttachmentTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeTargetGroupAttachmentTargetOutputReference
 ```
@@ -1350,7 +1357,7 @@ func InternalValue() VpclatticeTargetGroupAttachmentTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroupAttachment.VpclatticeTargetGroupAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroupattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroupattachment"
 
 vpclatticetargetgroupattachment.NewVpclatticeTargetGroupAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeTargetGroupAttachmentTimeoutsOutputReference
 ```

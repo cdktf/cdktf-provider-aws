@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cleanrooms_configured_table
 // generated from terraform resource schema
 
@@ -76,6 +71,31 @@ export function cleanroomsConfiguredTableTableReferenceToTerraform(struct?: Clea
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     table_name: cdktf.stringToTerraform(struct!.tableName),
   }
+}
+
+
+export function cleanroomsConfiguredTableTableReferenceToHclTerraform(struct?: CleanroomsConfiguredTableTableReferenceOutputReference | CleanroomsConfiguredTableTableReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_name: {
+      value: cdktf.stringToHclTerraform(struct!.tableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CleanroomsConfiguredTableTableReferenceOutputReference extends cdktf.ComplexObject {
@@ -167,6 +187,37 @@ export function cleanroomsConfiguredTableTimeoutsToTerraform(struct?: Cleanrooms
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function cleanroomsConfiguredTableTimeoutsToHclTerraform(struct?: CleanroomsConfiguredTableTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CleanroomsConfiguredTableTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -501,5 +552,67 @@ export class CleanroomsConfiguredTable extends cdktf.TerraformResource {
       table_reference: cleanroomsConfiguredTableTableReferenceToTerraform(this._tableReference.internalValue),
       timeouts: cleanroomsConfiguredTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_columns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedColumns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      analysis_method: {
+        value: cdktf.stringToHclTerraform(this._analysisMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      table_reference: {
+        value: cleanroomsConfiguredTableTableReferenceToHclTerraform(this._tableReference.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CleanroomsConfiguredTableTableReferenceList",
+      },
+      timeouts: {
+        value: cleanroomsConfiguredTableTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CleanroomsConfiguredTableTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

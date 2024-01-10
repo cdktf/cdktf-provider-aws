@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloudwatch_log_data_protection_policy
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class CloudwatchLogDataProtectionPolicy extends cdktf.TerraformResource {
       log_group_name: cdktf.stringToTerraform(this._logGroupName),
       policy_document: cdktf.stringToTerraform(this._policyDocument),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_group_name: {
+        value: cdktf.stringToHclTerraform(this._logGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_document: {
+        value: cdktf.stringToHclTerraform(this._policyDocument),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

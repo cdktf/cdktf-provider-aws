@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ip_ranges
 // generated from terraform resource schema
 
@@ -186,5 +181,37 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
       services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._services),
       url: cdktf.stringToTerraform(this._url),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      services: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._services),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

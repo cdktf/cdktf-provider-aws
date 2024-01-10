@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 serverlessapplicationrepositorycloudformationstack.NewServerlessapplicationrepositoryCloudformationStack(scope Construct, id *string, config ServerlessapplicationrepositoryCloudformationStackConfig) ServerlessapplicationrepositoryCloudformationStack
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.toMetadata"></a>
 
@@ -426,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 serverlessapplicationrepositorycloudformationstack.ServerlessapplicationrepositoryCloudformationStack_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 serverlessapplicationrepositorycloudformationstack.ServerlessapplicationrepositoryCloudformationStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ serverlessapplicationrepositorycloudformationstack.Serverlessapplicationreposito
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 serverlessapplicationrepositorycloudformationstack.ServerlessapplicationrepositoryCloudformationStack_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ serverlessapplicationrepositorycloudformationstack.Serverlessapplicationreposito
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 serverlessapplicationrepositorycloudformationstack.ServerlessapplicationrepositoryCloudformationStack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 &serverlessapplicationrepositorycloudformationstack.ServerlessapplicationrepositoryCloudformationStackConfig {
 	Connection: interface{},
@@ -942,7 +949,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepo
 	SemanticVersion: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeouts,
 }
 ```
 
@@ -1157,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 &serverlessapplicationrepositorycloudformationstack.ServerlessapplicationrepositoryCloudformationStackTimeouts {
 	Create: *string,
@@ -1219,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/serverlessapplicationrepositorycloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/serverlessapplicationrepositorycloudformationstack"
 
 serverlessapplicationrepositorycloudformationstack.NewServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference
 ```

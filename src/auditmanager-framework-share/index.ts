@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/auditmanager_framework_share
 // generated from terraform resource schema
 
@@ -167,5 +162,37 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
       destination_region: cdktf.stringToTerraform(this._destinationRegion),
       framework_id: cdktf.stringToTerraform(this._frameworkId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_account: {
+        value: cdktf.stringToHclTerraform(this._destinationAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_region: {
+        value: cdktf.stringToHclTerraform(this._destinationRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      framework_id: {
+        value: cdktf.stringToHclTerraform(this._frameworkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

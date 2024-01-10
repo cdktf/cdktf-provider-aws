@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/connect_routing_profile
 // generated from terraform resource schema
 
@@ -76,6 +71,31 @@ export function connectRoutingProfileMediaConcurrenciesToTerraform(struct?: Conn
     channel: cdktf.stringToTerraform(struct!.channel),
     concurrency: cdktf.numberToTerraform(struct!.concurrency),
   }
+}
+
+
+export function connectRoutingProfileMediaConcurrenciesToHclTerraform(struct?: ConnectRoutingProfileMediaConcurrencies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel: {
+      value: cdktf.stringToHclTerraform(struct!.channel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    concurrency: {
+      value: cdktf.numberToHclTerraform(struct!.concurrency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdktf.ComplexObject {
@@ -204,6 +224,43 @@ export function connectRoutingProfileQueueConfigsToTerraform(struct?: ConnectRou
     priority: cdktf.numberToTerraform(struct!.priority),
     queue_id: cdktf.stringToTerraform(struct!.queueId),
   }
+}
+
+
+export function connectRoutingProfileQueueConfigsToHclTerraform(struct?: ConnectRoutingProfileQueueConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel: {
+      value: cdktf.stringToHclTerraform(struct!.channel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delay: {
+      value: cdktf.numberToHclTerraform(struct!.delay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    queue_id: {
+      value: cdktf.stringToHclTerraform(struct!.queueId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectRoutingProfileQueueConfigsOutputReference extends cdktf.ComplexObject {
@@ -572,5 +629,67 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
       media_concurrencies: cdktf.listMapper(connectRoutingProfileMediaConcurrenciesToTerraform, true)(this._mediaConcurrencies.internalValue),
       queue_configs: cdktf.listMapper(connectRoutingProfileQueueConfigsToTerraform, true)(this._queueConfigs.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_outbound_queue_id: {
+        value: cdktf.stringToHclTerraform(this._defaultOutboundQueueId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      media_concurrencies: {
+        value: cdktf.listMapperHcl(connectRoutingProfileMediaConcurrenciesToHclTerraform, true)(this._mediaConcurrencies.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ConnectRoutingProfileMediaConcurrenciesList",
+      },
+      queue_configs: {
+        value: cdktf.listMapperHcl(connectRoutingProfileQueueConfigsToHclTerraform, true)(this._queueConfigs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ConnectRoutingProfileQueueConfigsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

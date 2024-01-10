@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/globalaccelerator_custom_routing_endpoint_group
 // generated from terraform resource schema
 
@@ -71,6 +66,37 @@ export function globalacceleratorCustomRoutingEndpointGroupDestinationConfigurat
     protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocols),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
+}
+
+
+export function globalacceleratorCustomRoutingEndpointGroupDestinationConfigurationToHclTerraform(struct?: GlobalacceleratorCustomRoutingEndpointGroupDestinationConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocols: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocols),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference extends cdktf.ComplexObject {
@@ -205,6 +231,25 @@ export function globalacceleratorCustomRoutingEndpointGroupEndpointConfiguration
   }
 }
 
+
+export function globalacceleratorCustomRoutingEndpointGroupEndpointConfigurationToHclTerraform(struct?: GlobalacceleratorCustomRoutingEndpointGroupEndpointConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_id: {
+      value: cdktf.stringToHclTerraform(struct!.endpointId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlobalacceleratorCustomRoutingEndpointGroupEndpointConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -305,6 +350,31 @@ export function globalacceleratorCustomRoutingEndpointGroupTimeoutsToTerraform(s
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function globalacceleratorCustomRoutingEndpointGroupTimeoutsToHclTerraform(struct?: GlobalacceleratorCustomRoutingEndpointGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlobalacceleratorCustomRoutingEndpointGroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -559,5 +629,49 @@ export class GlobalacceleratorCustomRoutingEndpointGroup extends cdktf.Terraform
       endpoint_configuration: cdktf.listMapper(globalacceleratorCustomRoutingEndpointGroupEndpointConfigurationToTerraform, true)(this._endpointConfiguration.internalValue),
       timeouts: globalacceleratorCustomRoutingEndpointGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      endpoint_group_region: {
+        value: cdktf.stringToHclTerraform(this._endpointGroupRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listener_arn: {
+        value: cdktf.stringToHclTerraform(this._listenerArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_configuration: {
+        value: cdktf.listMapperHcl(globalacceleratorCustomRoutingEndpointGroupDestinationConfigurationToHclTerraform, true)(this._destinationConfiguration.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationList",
+      },
+      endpoint_configuration: {
+        value: cdktf.listMapperHcl(globalacceleratorCustomRoutingEndpointGroupEndpointConfigurationToHclTerraform, true)(this._endpointConfiguration.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GlobalacceleratorCustomRoutingEndpointGroupEndpointConfigurationList",
+      },
+      timeouts: {
+        value: globalacceleratorCustomRoutingEndpointGroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GlobalacceleratorCustomRoutingEndpointGroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

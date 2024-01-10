@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ivschat_logging_configuration
 // generated from terraform resource schema
 
@@ -59,6 +54,25 @@ export function ivschatLoggingConfigurationDestinationConfigurationCloudwatchLog
   return {
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
   }
+}
+
+
+export function ivschatLoggingConfigurationDestinationConfigurationCloudwatchLogsToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference | IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference extends cdktf.ComplexObject {
@@ -123,6 +137,25 @@ export function ivschatLoggingConfigurationDestinationConfigurationFirehoseToTer
   }
 }
 
+
+export function ivschatLoggingConfigurationDestinationConfigurationFirehoseToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference | IvschatLoggingConfigurationDestinationConfigurationFirehose): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delivery_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.deliveryStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -183,6 +216,25 @@ export function ivschatLoggingConfigurationDestinationConfigurationS3ToTerraform
   return {
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
   }
+}
+
+
+export function ivschatLoggingConfigurationDestinationConfigurationS3ToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationS3OutputReference | IvschatLoggingConfigurationDestinationConfigurationS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IvschatLoggingConfigurationDestinationConfigurationS3OutputReference extends cdktf.ComplexObject {
@@ -261,6 +313,37 @@ export function ivschatLoggingConfigurationDestinationConfigurationToTerraform(s
     firehose: ivschatLoggingConfigurationDestinationConfigurationFirehoseToTerraform(struct!.firehose),
     s3: ivschatLoggingConfigurationDestinationConfigurationS3ToTerraform(struct!.s3),
   }
+}
+
+
+export function ivschatLoggingConfigurationDestinationConfigurationToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationOutputReference | IvschatLoggingConfigurationDestinationConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_logs: {
+      value: ivschatLoggingConfigurationDestinationConfigurationCloudwatchLogsToHclTerraform(struct!.cloudwatchLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsList",
+    },
+    firehose: {
+      value: ivschatLoggingConfigurationDestinationConfigurationFirehoseToHclTerraform(struct!.firehose),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IvschatLoggingConfigurationDestinationConfigurationFirehoseList",
+    },
+    s3: {
+      value: ivschatLoggingConfigurationDestinationConfigurationS3ToHclTerraform(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IvschatLoggingConfigurationDestinationConfigurationS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IvschatLoggingConfigurationDestinationConfigurationOutputReference extends cdktf.ComplexObject {
@@ -380,6 +463,37 @@ export function ivschatLoggingConfigurationTimeoutsToTerraform(struct?: IvschatL
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function ivschatLoggingConfigurationTimeoutsToHclTerraform(struct?: IvschatLoggingConfigurationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IvschatLoggingConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -667,5 +781,49 @@ export class IvschatLoggingConfiguration extends cdktf.TerraformResource {
       destination_configuration: ivschatLoggingConfigurationDestinationConfigurationToTerraform(this._destinationConfiguration.internalValue),
       timeouts: ivschatLoggingConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      destination_configuration: {
+        value: ivschatLoggingConfigurationDestinationConfigurationToHclTerraform(this._destinationConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IvschatLoggingConfigurationDestinationConfigurationList",
+      },
+      timeouts: {
+        value: ivschatLoggingConfigurationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "IvschatLoggingConfigurationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

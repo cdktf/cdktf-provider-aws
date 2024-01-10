@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 sesdomainidentityverification.NewSesDomainIdentityVerification(scope Construct, id *string, config SesDomainIdentityVerificationConfig) SesDomainIdentityVerification
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 sesdomainidentityverification.SesDomainIdentityVerification_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 sesdomainidentityverification.SesDomainIdentityVerification_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ sesdomainidentityverification.SesDomainIdentityVerification_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 sesdomainidentityverification.SesDomainIdentityVerification_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ sesdomainidentityverification.SesDomainIdentityVerification_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 sesdomainidentityverification.SesDomainIdentityVerification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -764,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 &sesdomainidentityverification.SesDomainIdentityVerificationConfig {
 	Connection: interface{},
@@ -776,7 +783,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverifica
 	Provisioners: *[]interface{},
 	Domain: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts,
 }
 ```
 
@@ -913,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 &sesdomainidentityverification.SesDomainIdentityVerificationTimeouts {
 	Create: *string,
@@ -947,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomainidentityverification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomainidentityverification"
 
 sesdomainidentityverification.NewSesDomainIdentityVerificationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SesDomainIdentityVerificationTimeoutsOutputReference
 ```

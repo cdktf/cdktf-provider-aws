@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_trust
 // generated from terraform resource schema
 
@@ -272,5 +267,61 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
       trust_password: cdktf.stringToTerraform(this._trustPassword),
       trust_type: cdktf.stringToTerraform(this._trustType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      conditional_forwarder_ip_addrs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._conditionalForwarderIpAddrs),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      delete_associated_conditional_forwarder: {
+        value: cdktf.booleanToHclTerraform(this._deleteAssociatedConditionalForwarder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_domain_name: {
+        value: cdktf.stringToHclTerraform(this._remoteDomainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selective_auth: {
+        value: cdktf.stringToHclTerraform(this._selectiveAuth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trust_direction: {
+        value: cdktf.stringToHclTerraform(this._trustDirection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trust_password: {
+        value: cdktf.stringToHclTerraform(this._trustPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trust_type: {
+        value: cdktf.stringToHclTerraform(this._trustType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

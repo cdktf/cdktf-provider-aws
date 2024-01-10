@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/xray_group
 // generated from terraform resource schema
 
@@ -62,6 +57,31 @@ export function xrayGroupInsightsConfigurationToTerraform(struct?: XrayGroupInsi
     insights_enabled: cdktf.booleanToTerraform(struct!.insightsEnabled),
     notifications_enabled: cdktf.booleanToTerraform(struct!.notificationsEnabled),
   }
+}
+
+
+export function xrayGroupInsightsConfigurationToHclTerraform(struct?: XrayGroupInsightsConfigurationOutputReference | XrayGroupInsightsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    insights_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.insightsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    notifications_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.notificationsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class XrayGroupInsightsConfigurationOutputReference extends cdktf.ComplexObject {
@@ -303,5 +323,49 @@ export class XrayGroup extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       insights_configuration: xrayGroupInsightsConfigurationToTerraform(this._insightsConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filter_expression: {
+        value: cdktf.stringToHclTerraform(this._filterExpression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_name: {
+        value: cdktf.stringToHclTerraform(this._groupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      insights_configuration: {
+        value: xrayGroupInsightsConfigurationToHclTerraform(this._insightsConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "XrayGroupInsightsConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

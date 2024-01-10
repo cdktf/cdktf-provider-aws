@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sagemaker_workforce
 // generated from terraform resource schema
 
@@ -68,6 +63,31 @@ export function sagemakerWorkforceCognitoConfigToTerraform(struct?: SagemakerWor
     client_id: cdktf.stringToTerraform(struct!.clientId),
     user_pool: cdktf.stringToTerraform(struct!.userPool),
   }
+}
+
+
+export function sagemakerWorkforceCognitoConfigToHclTerraform(struct?: SagemakerWorkforceCognitoConfigOutputReference | SagemakerWorkforceCognitoConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_pool: {
+      value: cdktf.stringToHclTerraform(struct!.userPool),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.ComplexObject {
@@ -184,6 +204,67 @@ export function sagemakerWorkforceOidcConfigToTerraform(struct?: SagemakerWorkfo
     token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
     user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
   }
+}
+
+
+export function sagemakerWorkforceOidcConfigToHclTerraform(struct?: SagemakerWorkforceOidcConfigOutputReference | SagemakerWorkforceOidcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorization_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    jwks_uri: {
+      value: cdktf.stringToHclTerraform(struct!.jwksUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    logout_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.logoutEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_info_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.userInfoEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexObject {
@@ -381,6 +462,25 @@ export function sagemakerWorkforceSourceIpConfigToTerraform(struct?: SagemakerWo
   }
 }
 
+
+export function sagemakerWorkforceSourceIpConfigToHclTerraform(struct?: SagemakerWorkforceSourceIpConfigOutputReference | SagemakerWorkforceSourceIpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidrs: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrs),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -451,6 +551,37 @@ export function sagemakerWorkforceWorkforceVpcConfigToTerraform(struct?: Sagemak
     subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
+}
+
+
+export function sagemakerWorkforceWorkforceVpcConfigToHclTerraform(struct?: SagemakerWorkforceWorkforceVpcConfigOutputReference | SagemakerWorkforceWorkforceVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnets: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerWorkforceWorkforceVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -730,5 +861,49 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
       source_ip_config: sagemakerWorkforceSourceIpConfigToTerraform(this._sourceIpConfig.internalValue),
       workforce_vpc_config: sagemakerWorkforceWorkforceVpcConfigToTerraform(this._workforceVpcConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workforce_name: {
+        value: cdktf.stringToHclTerraform(this._workforceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cognito_config: {
+        value: sagemakerWorkforceCognitoConfigToHclTerraform(this._cognitoConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerWorkforceCognitoConfigList",
+      },
+      oidc_config: {
+        value: sagemakerWorkforceOidcConfigToHclTerraform(this._oidcConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerWorkforceOidcConfigList",
+      },
+      source_ip_config: {
+        value: sagemakerWorkforceSourceIpConfigToHclTerraform(this._sourceIpConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerWorkforceSourceIpConfigList",
+      },
+      workforce_vpc_config: {
+        value: sagemakerWorkforceWorkforceVpcConfigToHclTerraform(this._workforceVpcConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerWorkforceWorkforceVpcConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

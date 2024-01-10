@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloudwatch_event_api_destination
 // generated from terraform resource schema
 
@@ -228,5 +223,55 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
       invocation_rate_limit_per_second: cdktf.numberToTerraform(this._invocationRateLimitPerSecond),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connection_arn: {
+        value: cdktf.stringToHclTerraform(this._connectionArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_method: {
+        value: cdktf.stringToHclTerraform(this._httpMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      invocation_endpoint: {
+        value: cdktf.stringToHclTerraform(this._invocationEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      invocation_rate_limit_per_second: {
+        value: cdktf.numberToHclTerraform(this._invocationRateLimitPerSecond),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

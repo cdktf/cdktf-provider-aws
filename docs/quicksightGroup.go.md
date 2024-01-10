@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.NewQuicksightGroup(scope Construct, id *string, config QuicksightGroupConfig) QuicksightGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.toMetadata"></a>
 
@@ -399,7 +406,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ quicksightgroup.QuicksightGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ quicksightgroup.QuicksightGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 &quicksightgroup.QuicksightGroupConfig {
 	Connection: interface{},

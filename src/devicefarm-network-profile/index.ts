@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/devicefarm_network_profile
 // generated from terraform resource schema
 
@@ -410,5 +405,103 @@ export class DevicefarmNetworkProfile extends cdktf.TerraformResource {
       uplink_jitter_ms: cdktf.numberToTerraform(this._uplinkJitterMs),
       uplink_loss_percent: cdktf.numberToTerraform(this._uplinkLossPercent),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      downlink_bandwidth_bits: {
+        value: cdktf.numberToHclTerraform(this._downlinkBandwidthBits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      downlink_delay_ms: {
+        value: cdktf.numberToHclTerraform(this._downlinkDelayMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      downlink_jitter_ms: {
+        value: cdktf.numberToHclTerraform(this._downlinkJitterMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      downlink_loss_percent: {
+        value: cdktf.numberToHclTerraform(this._downlinkLossPercent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_arn: {
+        value: cdktf.stringToHclTerraform(this._projectArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      uplink_bandwidth_bits: {
+        value: cdktf.numberToHclTerraform(this._uplinkBandwidthBits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      uplink_delay_ms: {
+        value: cdktf.numberToHclTerraform(this._uplinkDelayMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      uplink_jitter_ms: {
+        value: cdktf.numberToHclTerraform(this._uplinkJitterMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      uplink_loss_percent: {
+        value: cdktf.numberToHclTerraform(this._uplinkLossPercent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

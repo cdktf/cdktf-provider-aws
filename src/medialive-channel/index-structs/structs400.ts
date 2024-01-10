@@ -1,11 +1,7 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 import { MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings,
 medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsToTerraform,
+medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsToHclTerraform,
 MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference } from './structs0'
 export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings {
   /**
@@ -22,6 +18,25 @@ export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFa
   return {
     input_loss_threshold_msec: cdktf.numberToTerraform(struct!.inputLossThresholdMsec),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input_loss_threshold_msec: {
+      value: cdktf.numberToHclTerraform(struct!.inputLossThresholdMsec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference extends cdktf.ComplexObject {
@@ -92,6 +107,31 @@ export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFa
     black_detect_threshold: cdktf.numberToTerraform(struct!.blackDetectThreshold),
     video_black_threshold_msec: cdktf.numberToTerraform(struct!.videoBlackThresholdMsec),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    black_detect_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.blackDetectThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    video_black_threshold_msec: {
+      value: cdktf.numberToHclTerraform(struct!.videoBlackThresholdMsec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference extends cdktf.ComplexObject {
@@ -195,6 +235,37 @@ export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFa
     input_loss_settings: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsToTerraform(struct!.inputLossSettings),
     video_black_settings: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsToTerraform(struct!.videoBlackSettings),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audio_silence_settings: {
+      value: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsToHclTerraform(struct!.audioSilenceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsList",
+    },
+    input_loss_settings: {
+      value: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsToHclTerraform(struct!.inputLossSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsList",
+    },
+    video_black_settings: {
+      value: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsToHclTerraform(struct!.videoBlackSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference extends cdktf.ComplexObject {
@@ -306,6 +377,25 @@ export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFa
   return {
     failover_condition_settings: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsToTerraform(struct!.failoverConditionSettings),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionToHclTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    failover_condition_settings: {
+      value: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsToHclTerraform(struct!.failoverConditionSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference extends cdktf.ComplexObject {
@@ -420,6 +510,43 @@ export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsTo
     secondary_input_id: cdktf.stringToTerraform(struct!.secondaryInputId),
     failover_condition: cdktf.listMapper(medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionToTerraform, true)(struct!.failoverCondition),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    error_clear_time_msec: {
+      value: cdktf.numberToHclTerraform(struct!.errorClearTimeMsec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    input_preference: {
+      value: cdktf.stringToHclTerraform(struct!.inputPreference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secondary_input_id: {
+      value: cdktf.stringToHclTerraform(struct!.secondaryInputId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    failover_condition: {
+      value: cdktf.listMapperHcl(medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionToHclTerraform, true)(struct!.failoverCondition),
+      isBlock: true,
+      type: "set",
+      storageClassType: "MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference extends cdktf.ComplexObject {
@@ -555,6 +682,31 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelect
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.stringToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -641,6 +793,31 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelect
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    language_code: {
+      value: cdktf.stringToHclTerraform(struct!.languageCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    language_selection_policy: {
+      value: cdktf.stringToHclTerraform(struct!.languageSelectionPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -725,6 +902,25 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelect
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pid: {
+      value: cdktf.numberToHclTerraform(struct!.pid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -787,6 +983,25 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelect
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecodeToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecodeOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    program_selection: {
+      value: cdktf.stringToHclTerraform(struct!.programSelection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecodeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -847,6 +1062,25 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelect
   return {
     track: cdktf.numberToTerraform(struct!.track),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracksToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    track: {
+      value: cdktf.numberToHclTerraform(struct!.track),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracksOutputReference extends cdktf.ComplexObject {
@@ -950,6 +1184,31 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelect
     dolby_e_decode: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecodeToTerraform(struct!.dolbyEDecode),
     tracks: cdktf.listMapper(medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracksToTerraform, true)(struct!.tracks),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dolby_e_decode: {
+      value: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecodeToHclTerraform(struct!.dolbyEDecode),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecodeList",
+    },
+    tracks: {
+      value: cdktf.listMapperHcl(medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracksToHclTerraform, true)(struct!.tracks),
+      isBlock: true,
+      type: "set",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracksList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference extends cdktf.ComplexObject {
@@ -1057,6 +1316,43 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelect
     audio_pid_selection: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionToTerraform(struct!.audioPidSelection),
     audio_track_selection: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionToTerraform(struct!.audioTrackSelection),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audio_hls_rendition_selection: {
+      value: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionToHclTerraform(struct!.audioHlsRenditionSelection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionList",
+    },
+    audio_language_selection: {
+      value: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionToHclTerraform(struct!.audioLanguageSelection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionList",
+    },
+    audio_pid_selection: {
+      value: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionToHclTerraform(struct!.audioPidSelection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionList",
+    },
+    audio_track_selection: {
+      value: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionToHclTerraform(struct!.audioTrackSelection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference extends cdktf.ComplexObject {
@@ -1197,6 +1493,31 @@ export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorToTerr
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelector | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    selector_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsToHclTerraform(struct!.selectorSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1313,6 +1634,25 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_ancillary_channel_number: {
+      value: cdktf.numberToHclTerraform(struct!.sourceAncillaryChannelNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1373,6 +1713,17 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1419,6 +1770,31 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
     ocr_language: cdktf.stringToTerraform(struct!.ocrLanguage),
     pid: cdktf.numberToTerraform(struct!.pid),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ocr_language: {
+      value: cdktf.stringToHclTerraform(struct!.ocrLanguage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pid: {
+      value: cdktf.numberToHclTerraform(struct!.pid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsOutputReference extends cdktf.ComplexObject {
@@ -1516,6 +1892,37 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
     scte20_detection: cdktf.stringToTerraform(struct!.scte20Detection),
     source_608_channel_number: cdktf.numberToTerraform(struct!.source608ChannelNumber),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    convert_608_to_708: {
+      value: cdktf.stringToHclTerraform(struct!.convert608To708),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scte20_detection: {
+      value: cdktf.stringToHclTerraform(struct!.scte20Detection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_608_channel_number: {
+      value: cdktf.numberToHclTerraform(struct!.source608ChannelNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference extends cdktf.ComplexObject {
@@ -1632,6 +2039,31 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    convert_608_to_708: {
+      value: cdktf.stringToHclTerraform(struct!.convert608To708),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_608_channel_number: {
+      value: cdktf.numberToHclTerraform(struct!.source608ChannelNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1722,6 +2154,31 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
     ocr_language: cdktf.stringToTerraform(struct!.ocrLanguage),
     pid: cdktf.numberToTerraform(struct!.pid),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ocr_language: {
+      value: cdktf.stringToHclTerraform(struct!.ocrLanguage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pid: {
+      value: cdktf.numberToHclTerraform(struct!.pid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference extends cdktf.ComplexObject {
@@ -1824,6 +2281,43 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
     top_offset: cdktf.numberToTerraform(struct!.topOffset),
     width: cdktf.numberToTerraform(struct!.width),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    left_offset: {
+      value: cdktf.numberToHclTerraform(struct!.leftOffset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    top_offset: {
+      value: cdktf.numberToHclTerraform(struct!.topOffset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference extends cdktf.ComplexObject {
@@ -1950,6 +2444,31 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
     page_number: cdktf.stringToTerraform(struct!.pageNumber),
     output_rectangle: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleToTerraform(struct!.outputRectangle),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    page_number: {
+      value: cdktf.stringToHclTerraform(struct!.pageNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    output_rectangle: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleToHclTerraform(struct!.outputRectangle),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference extends cdktf.ComplexObject {
@@ -2081,6 +2600,61 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
     scte27_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsToTerraform(struct!.scte27SourceSettings),
     teletext_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsToTerraform(struct!.teletextSourceSettings),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ancillary_source_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsToHclTerraform(struct!.ancillarySourceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsList",
+    },
+    arib_source_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsToHclTerraform(struct!.aribSourceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsList",
+    },
+    dvb_sub_source_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsToHclTerraform(struct!.dvbSubSourceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsList",
+    },
+    embedded_source_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsToHclTerraform(struct!.embeddedSourceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsList",
+    },
+    scte20_source_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsToHclTerraform(struct!.scte20SourceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsList",
+    },
+    scte27_source_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsToHclTerraform(struct!.scte27SourceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsList",
+    },
+    teletext_source_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsToHclTerraform(struct!.teletextSourceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference extends cdktf.ComplexObject {
@@ -2292,6 +2866,37 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToTe
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    language_code: {
+      value: cdktf.stringToHclTerraform(struct!.languageCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    selector_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsToHclTerraform(struct!.selectorSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2448,6 +3053,49 @@ export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSetting
     retry_interval: cdktf.numberToTerraform(struct!.retryInterval),
     scte35_source: cdktf.stringToTerraform(struct!.scte35Source),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bandwidth: {
+      value: cdktf.numberToHclTerraform(struct!.bandwidth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffer_segments: {
+      value: cdktf.numberToHclTerraform(struct!.bufferSegments),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retries: {
+      value: cdktf.numberToHclTerraform(struct!.retries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retry_interval: {
+      value: cdktf.numberToHclTerraform(struct!.retryInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scte35_source: {
+      value: cdktf.stringToHclTerraform(struct!.scte35Source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference extends cdktf.ComplexObject {
@@ -2610,6 +3258,31 @@ export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSetting
   }
 }
 
+
+export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    server_validation: {
+      value: cdktf.stringToHclTerraform(struct!.serverValidation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hls_input_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsToHclTerraform(struct!.hlsInputSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2700,6 +3373,31 @@ export function medialiveChannelInputAttachmentsInputSettingsVideoSelectorToTerr
     color_space: cdktf.stringToTerraform(struct!.colorSpace),
     color_space_usage: cdktf.stringToTerraform(struct!.colorSpaceUsage),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsVideoSelectorToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference | MedialiveChannelInputAttachmentsInputSettingsVideoSelector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color_space: {
+      value: cdktf.stringToHclTerraform(struct!.colorSpace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    color_space_usage: {
+      value: cdktf.stringToHclTerraform(struct!.colorSpaceUsage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference extends cdktf.ComplexObject {
@@ -2845,6 +3543,85 @@ export function medialiveChannelInputAttachmentsInputSettingsToTerraform(struct?
     network_input_settings: medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsToTerraform(struct!.networkInputSettings),
     video_selector: medialiveChannelInputAttachmentsInputSettingsVideoSelectorToTerraform(struct!.videoSelector),
   }
+}
+
+
+export function medialiveChannelInputAttachmentsInputSettingsToHclTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    deblock_filter: {
+      value: cdktf.stringToHclTerraform(struct!.deblockFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    denoise_filter: {
+      value: cdktf.stringToHclTerraform(struct!.denoiseFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_strength: {
+      value: cdktf.numberToHclTerraform(struct!.filterStrength),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    input_filter: {
+      value: cdktf.stringToHclTerraform(struct!.inputFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scte35_pid: {
+      value: cdktf.numberToHclTerraform(struct!.scte35Pid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    smpte2038_data_preference: {
+      value: cdktf.stringToHclTerraform(struct!.smpte2038DataPreference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_end_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.sourceEndBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audio_selector: {
+      value: cdktf.listMapperHcl(medialiveChannelInputAttachmentsInputSettingsAudioSelectorToHclTerraform, true)(struct!.audioSelector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList",
+    },
+    caption_selector: {
+      value: cdktf.listMapperHcl(medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToHclTerraform, true)(struct!.captionSelector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList",
+    },
+    network_input_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsToHclTerraform(struct!.networkInputSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsList",
+    },
+    video_selector: {
+      value: medialiveChannelInputAttachmentsInputSettingsVideoSelectorToHclTerraform(struct!.videoSelector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsVideoSelectorList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelInputAttachmentsInputSettingsOutputReference extends cdktf.ComplexObject {
@@ -3151,6 +3928,43 @@ export function medialiveChannelInputAttachmentsToTerraform(struct?: MedialiveCh
   }
 }
 
+
+export function medialiveChannelInputAttachmentsToHclTerraform(struct?: MedialiveChannelInputAttachments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input_attachment_name: {
+      value: cdktf.stringToHclTerraform(struct!.inputAttachmentName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    input_id: {
+      value: cdktf.stringToHclTerraform(struct!.inputId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    automatic_input_failover_settings: {
+      value: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsToHclTerraform(struct!.automaticInputFailoverSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsList",
+    },
+    input_settings: {
+      value: medialiveChannelInputAttachmentsInputSettingsToHclTerraform(struct!.inputSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveChannelInputAttachmentsInputSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputAttachmentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3318,6 +4132,37 @@ export function medialiveChannelInputSpecificationToTerraform(struct?: Medialive
   }
 }
 
+
+export function medialiveChannelInputSpecificationToHclTerraform(struct?: MedialiveChannelInputSpecificationOutputReference | MedialiveChannelInputSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    codec: {
+      value: cdktf.stringToHclTerraform(struct!.codec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    input_resolution: {
+      value: cdktf.stringToHclTerraform(struct!.inputResolution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maximum_bitrate: {
+      value: cdktf.stringToHclTerraform(struct!.maximumBitrate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelInputSpecificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3423,6 +4268,31 @@ export function medialiveChannelMaintenanceToTerraform(struct?: MedialiveChannel
   }
 }
 
+
+export function medialiveChannelMaintenanceToHclTerraform(struct?: MedialiveChannelMaintenanceOutputReference | MedialiveChannelMaintenance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maintenance_day: {
+      value: cdktf.stringToHclTerraform(struct!.maintenanceDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maintenance_start_time: {
+      value: cdktf.stringToHclTerraform(struct!.maintenanceStartTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveChannelMaintenanceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3512,6 +4382,37 @@ export function medialiveChannelTimeoutsToTerraform(struct?: MedialiveChannelTim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function medialiveChannelTimeoutsToHclTerraform(struct?: MedialiveChannelTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -3641,6 +4542,37 @@ export function medialiveChannelVpcToTerraform(struct?: MedialiveChannelVpcOutpu
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function medialiveChannelVpcToHclTerraform(struct?: MedialiveChannelVpcOutputReference | MedialiveChannelVpc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_address_allocation_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.publicAddressAllocationIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveChannelVpcOutputReference extends cdktf.ComplexObject {

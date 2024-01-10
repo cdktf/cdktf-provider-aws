@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc_ipam_preview_next_cidr
 // generated from terraform resource schema
 
@@ -171,5 +166,37 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       netmask_length: cdktf.numberToTerraform(this._netmaskLength),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disallowed_cidrs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._disallowedCidrs),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipam_pool_id: {
+        value: cdktf.stringToHclTerraform(this._ipamPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      netmask_length: {
+        value: cdktf.numberToHclTerraform(this._netmaskLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

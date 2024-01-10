@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.NewTranscribeVocabularyFilter(scope Construct, id *string, config TranscribeVocabularyFilterConfig) TranscribeVocabularyFilter
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetWords()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.TranscribeVocabularyFilter_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.TranscribeVocabularyFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ transcribevocabularyfilter.TranscribeVocabularyFilter_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.TranscribeVocabularyFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ transcribevocabularyfilter.TranscribeVocabularyFilter_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.TranscribeVocabularyFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 &transcribevocabularyfilter.TranscribeVocabularyFilterConfig {
 	Connection: interface{},

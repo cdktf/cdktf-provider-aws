@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/network_interface_sg_attachment
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_interface_id: {
+        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_id: {
+        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

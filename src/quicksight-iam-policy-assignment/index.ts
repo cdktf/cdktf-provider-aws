@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/quicksight_iam_policy_assignment
 // generated from terraform resource schema
 
@@ -59,6 +54,31 @@ export function quicksightIamPolicyAssignmentIdentitiesToTerraform(struct?: Quic
     group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
     user: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.user),
   }
+}
+
+
+export function quicksightIamPolicyAssignmentIdentitiesToHclTerraform(struct?: QuicksightIamPolicyAssignmentIdentities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.group),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    user: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.user),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightIamPolicyAssignmentIdentitiesOutputReference extends cdktf.ComplexObject {
@@ -340,5 +360,49 @@ export class QuicksightIamPolicyAssignment extends cdktf.TerraformResource {
       policy_arn: cdktf.stringToTerraform(this._policyArn),
       identities: cdktf.listMapper(quicksightIamPolicyAssignmentIdentitiesToTerraform, true)(this._identities.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assignment_name: {
+        value: cdktf.stringToHclTerraform(this._assignmentName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      assignment_status: {
+        value: cdktf.stringToHclTerraform(this._assignmentStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_arn: {
+        value: cdktf.stringToHclTerraform(this._policyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identities: {
+        value: cdktf.listMapperHcl(quicksightIamPolicyAssignmentIdentitiesToHclTerraform, true)(this._identities.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "QuicksightIamPolicyAssignmentIdentitiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

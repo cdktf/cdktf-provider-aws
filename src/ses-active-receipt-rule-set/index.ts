@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ses_active_receipt_rule_set
 // generated from terraform resource schema
 
@@ -127,5 +122,25 @@ export class SesActiveReceiptRuleSet extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       rule_set_name: cdktf.stringToTerraform(this._ruleSetName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_set_name: {
+        value: cdktf.stringToHclTerraform(this._ruleSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

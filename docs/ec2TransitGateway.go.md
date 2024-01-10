@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.NewEc2TransitGateway(scope Construct, id *string, config Ec2TransitGatewayConfig) Ec2TransitGateway
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -138,6 +139,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.toMetadata"></a>
 
@@ -475,7 +482,7 @@ func ResetVpnEcmpSupport()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +528,7 @@ ec2transitgateway.Ec2TransitGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +542,7 @@ ec2transitgateway.Ec2TransitGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1094,7 +1101,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 &ec2transitgateway.Ec2TransitGatewayConfig {
 	Connection: interface{},
@@ -1114,7 +1121,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
 	MulticastSupport: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2TransitGateway.Ec2TransitGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ec2TransitGateway.Ec2TransitGatewayTimeouts,
 	TransitGatewayCidrBlocks: *[]*string,
 	VpnEcmpSupport: *string,
 }
@@ -1383,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 &ec2transitgateway.Ec2TransitGatewayTimeouts {
 	Create: *string,
@@ -1445,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.NewEc2TransitGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TransitGatewayTimeoutsOutputReference
 ```

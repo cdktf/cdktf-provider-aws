@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/fsx_openzfs_file_system
 // generated from terraform resource schema
 
@@ -132,6 +127,31 @@ export function fsxOpenzfsFileSystemDiskIopsConfigurationToTerraform(struct?: Fs
   }
 }
 
+
+export function fsxOpenzfsFileSystemDiskIopsConfigurationToHclTerraform(struct?: FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference | FsxOpenzfsFileSystemDiskIopsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -222,6 +242,31 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfi
     clients: cdktf.stringToTerraform(struct!.clients),
     options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.options),
   }
+}
+
+
+export function fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsToHclTerraform(struct?: FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    clients: {
+      value: cdktf.stringToHclTerraform(struct!.clients),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.options),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference extends cdktf.ComplexObject {
@@ -339,6 +384,25 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsToTerraform
   }
 }
 
+
+export function fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsToHclTerraform(struct?: FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference | FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_configurations: {
+      value: cdktf.listMapperHcl(fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsToHclTerraform, true)(struct!.clientConfigurations),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -412,6 +476,37 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasToT
     storage_capacity_quota_gib: cdktf.numberToTerraform(struct!.storageCapacityQuotaGib),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function fsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasToHclTerraform(struct?: FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.numberToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_capacity_quota_gib: {
+      value: cdktf.numberToHclTerraform(struct!.storageCapacityQuotaGib),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference extends cdktf.ComplexObject {
@@ -573,6 +668,55 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationToTerraform(struct?: 
     nfs_exports: fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsToTerraform(struct!.nfsExports),
     user_and_group_quotas: cdktf.listMapper(fsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasToTerraform, true)(struct!.userAndGroupQuotas),
   }
+}
+
+
+export function fsxOpenzfsFileSystemRootVolumeConfigurationToHclTerraform(struct?: FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference | FsxOpenzfsFileSystemRootVolumeConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    copy_tags_to_snapshots: {
+      value: cdktf.booleanToHclTerraform(struct!.copyTagsToSnapshots),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    data_compression_type: {
+      value: cdktf.stringToHclTerraform(struct!.dataCompressionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read_only: {
+      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    record_size_kib: {
+      value: cdktf.numberToHclTerraform(struct!.recordSizeKib),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    nfs_exports: {
+      value: fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsToHclTerraform(struct!.nfsExports),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsList",
+    },
+    user_and_group_quotas: {
+      value: cdktf.listMapperHcl(fsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasToHclTerraform, true)(struct!.userAndGroupQuotas),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference extends cdktf.ComplexObject {
@@ -758,6 +902,37 @@ export function fsxOpenzfsFileSystemTimeoutsToTerraform(struct?: FsxOpenzfsFileS
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function fsxOpenzfsFileSystemTimeoutsToHclTerraform(struct?: FsxOpenzfsFileSystemTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOpenzfsFileSystemTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1344,5 +1519,145 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
       root_volume_configuration: fsxOpenzfsFileSystemRootVolumeConfigurationToTerraform(this._rootVolumeConfiguration.internalValue),
       timeouts: fsxOpenzfsFileSystemTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      automatic_backup_retention_days: {
+        value: cdktf.numberToHclTerraform(this._automaticBackupRetentionDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      backup_id: {
+        value: cdktf.stringToHclTerraform(this._backupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      copy_tags_to_backups: {
+        value: cdktf.booleanToHclTerraform(this._copyTagsToBackups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      copy_tags_to_volumes: {
+        value: cdktf.booleanToHclTerraform(this._copyTagsToVolumes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      daily_automatic_backup_start_time: {
+        value: cdktf.stringToHclTerraform(this._dailyAutomaticBackupStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_type: {
+        value: cdktf.stringToHclTerraform(this._deploymentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_ip_address_range: {
+        value: cdktf.stringToHclTerraform(this._endpointIpAddressRange),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_subnet_id: {
+        value: cdktf.stringToHclTerraform(this._preferredSubnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_table_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._routeTableIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      storage_capacity: {
+        value: cdktf.numberToHclTerraform(this._storageCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      throughput_capacity: {
+        value: cdktf.numberToHclTerraform(this._throughputCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      weekly_maintenance_start_time: {
+        value: cdktf.stringToHclTerraform(this._weeklyMaintenanceStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk_iops_configuration: {
+        value: fsxOpenzfsFileSystemDiskIopsConfigurationToHclTerraform(this._diskIopsConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxOpenzfsFileSystemDiskIopsConfigurationList",
+      },
+      root_volume_configuration: {
+        value: fsxOpenzfsFileSystemRootVolumeConfigurationToHclTerraform(this._rootVolumeConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxOpenzfsFileSystemRootVolumeConfigurationList",
+      },
+      timeouts: {
+        value: fsxOpenzfsFileSystemTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FsxOpenzfsFileSystemTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

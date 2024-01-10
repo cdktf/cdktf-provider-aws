@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/api_gateway_method
 // generated from terraform resource schema
 
@@ -333,5 +328,85 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
       resource_id: cdktf.stringToTerraform(this._resourceId),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_key_required: {
+        value: cdktf.booleanToHclTerraform(this._apiKeyRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      authorization: {
+        value: cdktf.stringToHclTerraform(this._authorization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorization_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorizationScopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      authorizer_id: {
+        value: cdktf.stringToHclTerraform(this._authorizerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_method: {
+        value: cdktf.stringToHclTerraform(this._httpMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operation_name: {
+        value: cdktf.stringToHclTerraform(this._operationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_models: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestModels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      request_parameters: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._requestParameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+      request_validator_id: {
+        value: cdktf.stringToHclTerraform(this._requestValidatorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_id: {
+        value: cdktf.stringToHclTerraform(this._resourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

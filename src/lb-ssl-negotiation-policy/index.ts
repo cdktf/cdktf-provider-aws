@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_ssl_negotiation_policy
 // generated from terraform resource schema
 
@@ -62,6 +57,31 @@ export function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotia
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function lbSslNegotiationPolicyAttributeToHclTerraform(struct?: LbSslNegotiationPolicyAttribute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LbSslNegotiationPolicyAttributeOutputReference extends cdktf.ComplexObject {
@@ -324,5 +344,49 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
       triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
       attribute: cdktf.listMapper(lbSslNegotiationPolicyAttributeToTerraform, true)(this._attribute.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lb_port: {
+        value: cdktf.numberToHclTerraform(this._lbPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      load_balancer: {
+        value: cdktf.stringToHclTerraform(this._loadBalancer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      triggers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      attribute: {
+        value: cdktf.listMapperHcl(lbSslNegotiationPolicyAttributeToHclTerraform, true)(this._attribute.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LbSslNegotiationPolicyAttributeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

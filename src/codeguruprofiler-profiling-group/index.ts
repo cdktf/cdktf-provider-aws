@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codeguruprofiler_profiling_group
 // generated from terraform resource schema
 
@@ -46,6 +41,25 @@ export function codeguruprofilerProfilingGroupAgentOrchestrationConfigToTerrafor
   return {
     profiling_enabled: cdktf.booleanToTerraform(struct!.profilingEnabled),
   }
+}
+
+
+export function codeguruprofilerProfilingGroupAgentOrchestrationConfigToHclTerraform(struct?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    profiling_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.profilingEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference extends cdktf.ComplexObject {
@@ -275,5 +289,37 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       agent_orchestration_config: cdktf.listMapper(codeguruprofilerProfilingGroupAgentOrchestrationConfigToTerraform, true)(this._agentOrchestrationConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compute_platform: {
+        value: cdktf.stringToHclTerraform(this._computePlatform),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      agent_orchestration_config: {
+        value: cdktf.listMapperHcl(codeguruprofilerProfilingGroupAgentOrchestrationConfigToHclTerraform, true)(this._agentOrchestrationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodeguruprofilerProfilingGroupAgentOrchestrationConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

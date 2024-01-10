@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.NewSesv2EmailIdentityMailFromAttributes(scope Construct, id *string, config Sesv2EmailIdentityMailFromAttributesConfig) Sesv2EmailIdentityMailFromAttributes
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetMailFromDomain()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
 
 sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentitymailfromattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentitymailfromattributes"
 
 &sesv2emailidentitymailfromattributes.Sesv2EmailIdentityMailFromAttributesConfig {
 	Connection: interface{},

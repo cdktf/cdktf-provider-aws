@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPoint(scope Construct, id *string, config EfsAccessPointConfig) EfsAccessPoint
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.toMetadata"></a>
 
@@ -432,7 +439,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ efsaccesspoint.EfsAccessPoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ efsaccesspoint.EfsAccessPoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -886,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointConfig {
 	Connection: interface{},
@@ -898,8 +905,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
 	Provisioners: *[]interface{},
 	FileSystemId: *string,
 	Id: *string,
-	PosixUser: github.com/cdktf/cdktf-provider-aws-go/aws/v18.efsAccessPoint.EfsAccessPointPosixUser,
-	RootDirectory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.efsAccessPoint.EfsAccessPointRootDirectory,
+	PosixUser: github.com/cdktf/cdktf-provider-aws-go/aws.efsAccessPoint.EfsAccessPointPosixUser,
+	RootDirectory: github.com/cdktf/cdktf-provider-aws-go/aws.efsAccessPoint.EfsAccessPointRootDirectory,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1079,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointPosixUser {
 	Gid: *f64,
@@ -1139,10 +1146,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointRootDirectory {
-	CreationInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo,
+	CreationInfo: github.com/cdktf/cdktf-provider-aws-go/aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo,
 	Path: *string,
 }
 ```
@@ -1187,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointRootDirectoryCreationInfo {
 	OwnerGid: *f64,
@@ -1249,7 +1256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPointPosixUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsAccessPointPosixUserOutputReference
 ```
@@ -1571,7 +1578,7 @@ func InternalValue() EfsAccessPointPosixUser
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPointRootDirectoryCreationInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsAccessPointRootDirectoryCreationInfoOutputReference
 ```
@@ -1886,7 +1893,7 @@ func InternalValue() EfsAccessPointRootDirectoryCreationInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/efsaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPointRootDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsAccessPointRootDirectoryOutputReference
 ```

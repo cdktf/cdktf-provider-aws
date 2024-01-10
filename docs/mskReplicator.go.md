@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicator(scope Construct, id *string, config MskReplicatorConfig) MskReplicator
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicator.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicator.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicator.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicator.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicator.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicator.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicator.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.mskReplicator.MskReplicator.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.mskReplicator.MskReplicator.toMetadata"></a>
 
@@ -445,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskReplicator.MskReplicator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.MskReplicator_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskReplicator.MskReplicator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.MskReplicator_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ mskreplicator.MskReplicator_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskReplicator.MskReplicator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.MskReplicator_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ mskreplicator.MskReplicator_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mskReplicator.MskReplicator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.MskReplicator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -954,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorConfig {
 	Connection: interface{},
@@ -965,14 +972,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	KafkaCluster: interface{},
-	ReplicationInfoList: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskReplicator.MskReplicatorReplicationInfoListStruct,
+	ReplicationInfoList: github.com/cdktf/cdktf-provider-aws-go/aws.mskReplicator.MskReplicatorReplicationInfoListStruct,
 	ReplicatorName: *string,
 	ServiceExecutionRoleArn: *string,
 	Description: *string,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskReplicator.MskReplicatorTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.mskReplicator.MskReplicatorTimeouts,
 }
 ```
 
@@ -1191,11 +1198,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorKafkaCluster {
-	AmazonMskCluster: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskReplicator.MskReplicatorKafkaClusterVpcConfig,
+	AmazonMskCluster: github.com/cdktf/cdktf-provider-aws-go/aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig,
 }
 ```
 
@@ -1241,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorKafkaClusterAmazonMskCluster {
 	MskClusterArn: *string,
@@ -1273,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorKafkaClusterVpcConfig {
 	SubnetIds: *[]*string,
@@ -1319,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListConsumerGroupReplication {
 	ConsumerGroupsToReplicate: *[]*string,
@@ -1393,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListStruct {
 	ConsumerGroupReplication: interface{},
@@ -1485,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListTopicReplication {
 	TopicsToReplicate: *[]*string,
@@ -1573,7 +1580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskReplicator.MskReplicatorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 &mskreplicator.MskReplicatorTimeouts {
 	Create: *string,
@@ -1635,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterAmazonMskClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorKafkaClusterAmazonMskClusterOutputReference
 ```
@@ -1906,7 +1913,7 @@ func InternalValue() MskReplicatorKafkaClusterAmazonMskCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskReplicatorKafkaClusterList
 ```
@@ -1947,10 +1954,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2049,7 +2073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskReplicatorKafkaClusterOutputReference
 ```
@@ -2386,7 +2410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorKafkaClusterVpcConfigOutputReference
 ```
@@ -2686,7 +2710,7 @@ func InternalValue() MskReplicatorKafkaClusterVpcConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListConsumerGroupReplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskReplicatorReplicationInfoListConsumerGroupReplicationList
 ```
@@ -2727,10 +2751,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2829,7 +2870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference
 ```
@@ -3205,7 +3246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorReplicationInfoListStructOutputReference
 ```
@@ -3612,7 +3653,7 @@ func InternalValue() MskReplicatorReplicationInfoListStruct
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListTopicReplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskReplicatorReplicationInfoListTopicReplicationList
 ```
@@ -3653,10 +3694,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3755,7 +3813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListTopicReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskReplicatorReplicationInfoListTopicReplicationOutputReference
 ```
@@ -4160,7 +4218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskReplicator.MskReplicatorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskreplicator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskreplicator"
 
 mskreplicator.NewMskReplicatorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorTimeoutsOutputReference
 ```

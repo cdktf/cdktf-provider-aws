@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/medialive_multiplex_program
 // generated from terraform resource schema
 
@@ -47,6 +42,31 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsServiceDescript
     provider_name: cdktf.stringToTerraform(struct!.providerName),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
   }
+}
+
+
+export function medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    provider_name: {
+      value: cdktf.stringToHclTerraform(struct!.providerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference extends cdktf.ComplexObject {
@@ -170,6 +190,37 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsSt
     minimum_bitrate: cdktf.numberToTerraform(struct!.minimumBitrate),
     priority: cdktf.numberToTerraform(struct!.priority),
   }
+}
+
+
+export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_bitrate: {
+      value: cdktf.numberToHclTerraform(struct!.maximumBitrate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum_bitrate: {
+      value: cdktf.numberToHclTerraform(struct!.minimumBitrate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference extends cdktf.ComplexObject {
@@ -320,6 +371,31 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsTo
   }
 }
 
+
+export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    constant_bitrate: {
+      value: cdktf.numberToHclTerraform(struct!.constantBitrate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    statmux_settings: {
+      value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToHclTerraform, true)(struct!.statmuxSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -456,6 +532,43 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsToTerraform(str
     service_descriptor: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToTerraform, true)(struct!.serviceDescriptor),
     video_settings: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToTerraform, true)(struct!.videoSettings),
   }
+}
+
+
+export function medialiveMultiplexProgramMultiplexProgramSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    preferred_channel_pipeline: {
+      value: cdktf.stringToHclTerraform(struct!.preferredChannelPipeline),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    program_number: {
+      value: cdktf.numberToHclTerraform(struct!.programNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    service_descriptor: {
+      value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToHclTerraform, true)(struct!.serviceDescriptor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
+    },
+    video_settings: {
+      value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToHclTerraform, true)(struct!.videoSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference extends cdktf.ComplexObject {
@@ -716,5 +829,31 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
       program_name: cdktf.stringToTerraform(this._programName),
       multiplex_program_settings: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsToTerraform, true)(this._multiplexProgramSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      multiplex_id: {
+        value: cdktf.stringToHclTerraform(this._multiplexId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      program_name: {
+        value: cdktf.stringToHclTerraform(this._programName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multiplex_program_settings: {
+        value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsToHclTerraform, true)(this._multiplexProgramSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

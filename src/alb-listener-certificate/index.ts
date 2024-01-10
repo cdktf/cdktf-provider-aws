@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/alb_listener_certificate
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class AlbListenerCertificate extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       listener_arn: cdktf.stringToTerraform(this._listenerArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_arn: {
+        value: cdktf.stringToHclTerraform(this._certificateArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listener_arn: {
+        value: cdktf.stringToHclTerraform(this._listenerArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

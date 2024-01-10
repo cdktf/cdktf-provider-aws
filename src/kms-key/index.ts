@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kms_key
 // generated from terraform resource schema
 
@@ -89,6 +84,25 @@ export function kmsKeyTimeoutsToTerraform(struct?: KmsKeyTimeouts | cdktf.IResol
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function kmsKeyTimeoutsToHclTerraform(struct?: KmsKeyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KmsKeyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -476,5 +490,97 @@ export class KmsKey extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: kmsKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bypass_policy_lockout_safety_check: {
+        value: cdktf.booleanToHclTerraform(this._bypassPolicyLockoutSafetyCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      custom_key_store_id: {
+        value: cdktf.stringToHclTerraform(this._customKeyStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_master_key_spec: {
+        value: cdktf.stringToHclTerraform(this._customerMasterKeySpec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_window_in_days: {
+        value: cdktf.numberToHclTerraform(this._deletionWindowInDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_key_rotation: {
+        value: cdktf.booleanToHclTerraform(this._enableKeyRotation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key_usage: {
+        value: cdktf.stringToHclTerraform(this._keyUsage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multi_region: {
+        value: cdktf.booleanToHclTerraform(this._multiRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: kmsKeyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "KmsKeyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

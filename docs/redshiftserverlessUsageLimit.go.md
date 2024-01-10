@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.NewRedshiftserverlessUsageLimit(scope Construct, id *string, config RedshiftserverlessUsageLimitConfig) RedshiftserverlessUsageLimit
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetPeriod()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
 
 redshiftserverlessusagelimit.RedshiftserverlessUsageLimit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessusagelimit"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessusagelimit"
 
 &redshiftserverlessusagelimit.RedshiftserverlessUsageLimitConfig {
 	Connection: interface{},

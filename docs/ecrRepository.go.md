@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.NewEcrRepository(scope Construct, id *string, config EcrRepositoryConfig) EcrRepository
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -135,6 +136,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ecrRepository.EcrRepository.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ecrRepository.EcrRepository.toMetadata"></a>
 
@@ -466,7 +473,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrRepository.EcrRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.EcrRepository_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrRepository.EcrRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.EcrRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +519,7 @@ ecrrepository.EcrRepository_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrRepository.EcrRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.EcrRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ ecrrepository.EcrRepository_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrRepository.EcrRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.EcrRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 &ecrrepository.EcrRepositoryConfig {
 	Connection: interface{},
@@ -1000,11 +1007,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
 	EncryptionConfiguration: interface{},
 	ForceDelete: interface{},
 	Id: *string,
-	ImageScanningConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecrRepository.EcrRepositoryImageScanningConfiguration,
+	ImageScanningConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecrRepository.EcrRepositoryImageScanningConfiguration,
 	ImageTagMutability: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecrRepository.EcrRepositoryTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ecrRepository.EcrRepositoryTimeouts,
 }
 ```
 
@@ -1223,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 &ecrrepository.EcrRepositoryEncryptionConfiguration {
 	EncryptionType: *string,
@@ -1269,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 &ecrrepository.EcrRepositoryImageScanningConfiguration {
 	ScanOnPush: interface{},
@@ -1301,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 &ecrrepository.EcrRepositoryTimeouts {
 	Delete: *string,
@@ -1335,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.NewEcrRepositoryEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrRepositoryEncryptionConfigurationList
 ```
@@ -1376,10 +1383,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1478,7 +1502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.NewEcrRepositoryEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrRepositoryEncryptionConfigurationOutputReference
 ```
@@ -1803,7 +1827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.NewEcrRepositoryImageScanningConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcrRepositoryImageScanningConfigurationOutputReference
 ```
@@ -2074,7 +2098,7 @@ func InternalValue() EcrRepositoryImageScanningConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepository"
 
 ecrrepository.NewEcrRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcrRepositoryTimeoutsOutputReference
 ```

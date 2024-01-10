@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/verifiedaccess_endpoint
 // generated from terraform resource schema
 
@@ -114,6 +109,43 @@ export function verifiedaccessEndpointLoadBalancerOptionsToTerraform(struct?: Ve
     protocol: cdktf.stringToTerraform(struct!.protocol),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function verifiedaccessEndpointLoadBalancerOptionsToHclTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsOutputReference | VerifiedaccessEndpointLoadBalancerOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    load_balancer_arn: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancerArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cdktf.ComplexObject {
@@ -257,6 +289,37 @@ export function verifiedaccessEndpointNetworkInterfaceOptionsToTerraform(struct?
   }
 }
 
+
+export function verifiedaccessEndpointNetworkInterfaceOptionsToHclTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference | VerifiedaccessEndpointNetworkInterfaceOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_interface_id: {
+      value: cdktf.stringToHclTerraform(struct!.networkInterfaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -371,6 +434,31 @@ export function verifiedaccessEndpointSseSpecificationToTerraform(struct?: Verif
   }
 }
 
+
+export function verifiedaccessEndpointSseSpecificationToHclTerraform(struct?: VerifiedaccessEndpointSseSpecificationOutputReference | VerifiedaccessEndpointSseSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    customer_managed_key_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VerifiedaccessEndpointSseSpecificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -466,6 +554,37 @@ export function verifiedaccessEndpointTimeoutsToTerraform(struct?: Verifiedacces
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function verifiedaccessEndpointTimeoutsToHclTerraform(struct?: VerifiedaccessEndpointTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -902,5 +1021,103 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
       sse_specification: verifiedaccessEndpointSseSpecificationToTerraform(this._sseSpecification.internalValue),
       timeouts: verifiedaccessEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_domain: {
+        value: cdktf.stringToHclTerraform(this._applicationDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attachment_type: {
+        value: cdktf.stringToHclTerraform(this._attachmentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_certificate_arn: {
+        value: cdktf.stringToHclTerraform(this._domainCertificateArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_domain_prefix: {
+        value: cdktf.stringToHclTerraform(this._endpointDomainPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_type: {
+        value: cdktf.stringToHclTerraform(this._endpointType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      verified_access_group_id: {
+        value: cdktf.stringToHclTerraform(this._verifiedAccessGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_balancer_options: {
+        value: verifiedaccessEndpointLoadBalancerOptionsToHclTerraform(this._loadBalancerOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessEndpointLoadBalancerOptionsList",
+      },
+      network_interface_options: {
+        value: verifiedaccessEndpointNetworkInterfaceOptionsToHclTerraform(this._networkInterfaceOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessEndpointNetworkInterfaceOptionsList",
+      },
+      sse_specification: {
+        value: verifiedaccessEndpointSseSpecificationToHclTerraform(this._sseSpecification.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessEndpointSseSpecificationList",
+      },
+      timeouts: {
+        value: verifiedaccessEndpointTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VerifiedaccessEndpointTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

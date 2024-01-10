@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipe(scope Construct, id *string, config ImagebuilderContainerRecipeConfig) ImagebuilderContainerRecipe
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -137,6 +138,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.toMetadata"></a>
 
@@ -480,7 +487,7 @@ func ResetWorkingDirectory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ imagebuildercontainerrecipe.ImagebuilderContainerRecipe_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.ImagebuilderContainerRecipe_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1176,7 +1183,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeComponent {
 	ComponentArn: *string,
@@ -1224,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeComponentParameter {
 	Name: *string,
@@ -1270,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeConfig {
 	Connection: interface{},
@@ -1284,13 +1291,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerreci
 	ContainerType: *string,
 	Name: *string,
 	ParentImage: *string,
-	TargetRepository: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepository,
+	TargetRepository: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepository,
 	Version: *string,
 	Description: *string,
 	DockerfileTemplateData: *string,
 	DockerfileTemplateUri: *string,
 	Id: *string,
-	InstanceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfiguration,
+	InstanceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfiguration,
 	KmsKeyId: *string,
 	PlatformOverride: *string,
 	Tags: *map[string]*string,
@@ -1605,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeInstanceConfiguration {
 	BlockDeviceMapping: interface{},
@@ -1653,11 +1660,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping {
 	DeviceName: *string,
-	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs,
+	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs,
 	NoDevice: interface{},
 	VirtualName: *string,
 }
@@ -1729,7 +1736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs {
 	DeleteOnTermination: *string,
@@ -1859,7 +1866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 &imagebuildercontainerrecipe.ImagebuilderContainerRecipeTargetRepository {
 	RepositoryName: *string,
@@ -1907,7 +1914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderContainerRecipeComponentList
 ```
@@ -1948,10 +1955,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2050,7 +2074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderContainerRecipeComponentOutputReference
 ```
@@ -2381,7 +2405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderContainerRecipeComponentParameterList
 ```
@@ -2422,10 +2446,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2524,7 +2565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeComponentParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderContainerRecipeComponentParameterOutputReference
 ```
@@ -2835,7 +2876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference
 ```
@@ -3316,7 +3357,7 @@ func InternalValue() ImagebuilderContainerRecipeInstanceConfigurationBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList
 ```
@@ -3357,10 +3398,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3459,7 +3517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference
 ```
@@ -3855,7 +3913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeInstanceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderContainerRecipeInstanceConfigurationOutputReference
 ```
@@ -4175,7 +4233,7 @@ func InternalValue() ImagebuilderContainerRecipeInstanceConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuildercontainerrecipe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuildercontainerrecipe"
 
 imagebuildercontainerrecipe.NewImagebuilderContainerRecipeTargetRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderContainerRecipeTargetRepositoryOutputReference
 ```

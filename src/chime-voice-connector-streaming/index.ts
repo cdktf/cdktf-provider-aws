@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/chime_voice_connector_streaming
 // generated from terraform resource schema
 
@@ -62,6 +57,31 @@ export function chimeVoiceConnectorStreamingMediaInsightsConfigurationToTerrafor
     configuration_arn: cdktf.stringToTerraform(struct!.configurationArn),
     disabled: cdktf.booleanToTerraform(struct!.disabled),
   }
+}
+
+
+export function chimeVoiceConnectorStreamingMediaInsightsConfigurationToHclTerraform(struct?: ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference | ChimeVoiceConnectorStreamingMediaInsightsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    configuration_arn: {
+      value: cdktf.stringToHclTerraform(struct!.configurationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference extends cdktf.ComplexObject {
@@ -301,5 +321,49 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
       voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
       media_insights_configuration: chimeVoiceConnectorStreamingMediaInsightsConfigurationToTerraform(this._mediaInsightsConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_retention: {
+        value: cdktf.numberToHclTerraform(this._dataRetention),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      streaming_notification_targets: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._streamingNotificationTargets),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      voice_connector_id: {
+        value: cdktf.stringToHclTerraform(this._voiceConnectorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      media_insights_configuration: {
+        value: chimeVoiceConnectorStreamingMediaInsightsConfigurationToHclTerraform(this._mediaInsightsConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ChimeVoiceConnectorStreamingMediaInsightsConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

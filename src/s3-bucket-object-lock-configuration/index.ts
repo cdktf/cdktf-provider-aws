@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3_bucket_object_lock_configuration
 // generated from terraform resource schema
 
@@ -67,6 +62,37 @@ export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToTerraform(
     mode: cdktf.stringToTerraform(struct!.mode),
     years: cdktf.numberToTerraform(struct!.years),
   }
+}
+
+
+export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToHclTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference | S3BucketObjectLockConfigurationRuleDefaultRetentionA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    years: {
+      value: cdktf.numberToHclTerraform(struct!.years),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference extends cdktf.ComplexObject {
@@ -178,6 +204,25 @@ export function s3BucketObjectLockConfigurationRuleAToTerraform(struct?: S3Bucke
   return {
     default_retention: s3BucketObjectLockConfigurationRuleDefaultRetentionAToTerraform(struct!.defaultRetention),
   }
+}
+
+
+export function s3BucketObjectLockConfigurationRuleAToHclTerraform(struct?: S3BucketObjectLockConfigurationRuleAOutputReference | S3BucketObjectLockConfigurationRuleA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_retention: {
+      value: s3BucketObjectLockConfigurationRuleDefaultRetentionAToHclTerraform(struct!.defaultRetention),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketObjectLockConfigurationRuleDefaultRetentionAList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketObjectLockConfigurationRuleAOutputReference extends cdktf.ComplexObject {
@@ -395,5 +440,49 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
       token: cdktf.stringToTerraform(this._token),
       rule: s3BucketObjectLockConfigurationRuleAToTerraform(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_bucket_owner: {
+        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_lock_enabled: {
+        value: cdktf.stringToHclTerraform(this._objectLockEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: s3BucketObjectLockConfigurationRuleAToHclTerraform(this._rule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketObjectLockConfigurationRuleAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

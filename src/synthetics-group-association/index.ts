@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/synthetics_group_association
 // generated from terraform resource schema
 
@@ -151,5 +146,31 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
       group_name: cdktf.stringToTerraform(this._groupName),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      canary_arn: {
+        value: cdktf.stringToHclTerraform(this._canaryArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_name: {
+        value: cdktf.stringToHclTerraform(this._groupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

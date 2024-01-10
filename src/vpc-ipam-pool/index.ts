@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/vpc_ipam_pool
 // generated from terraform resource schema
 
@@ -111,6 +106,37 @@ export function vpcIpamPoolTimeoutsToTerraform(struct?: VpcIpamPoolTimeouts | cd
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function vpcIpamPoolTimeoutsToHclTerraform(struct?: VpcIpamPoolTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcIpamPoolTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -600,5 +626,115 @@ export class VpcIpamPool extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: vpcIpamPoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address_family: {
+        value: cdktf.stringToHclTerraform(this._addressFamily),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allocation_default_netmask_length: {
+        value: cdktf.numberToHclTerraform(this._allocationDefaultNetmaskLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      allocation_max_netmask_length: {
+        value: cdktf.numberToHclTerraform(this._allocationMaxNetmaskLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      allocation_min_netmask_length: {
+        value: cdktf.numberToHclTerraform(this._allocationMinNetmaskLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      allocation_resource_tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._allocationResourceTags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      auto_import: {
+        value: cdktf.booleanToHclTerraform(this._autoImport),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_service: {
+        value: cdktf.stringToHclTerraform(this._awsService),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipam_scope_id: {
+        value: cdktf.stringToHclTerraform(this._ipamScopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locale: {
+        value: cdktf.stringToHclTerraform(this._locale),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_ip_source: {
+        value: cdktf.stringToHclTerraform(this._publicIpSource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      publicly_advertisable: {
+        value: cdktf.booleanToHclTerraform(this._publiclyAdvertisable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      source_ipam_pool_id: {
+        value: cdktf.stringToHclTerraform(this._sourceIpamPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: vpcIpamPoolTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpcIpamPoolTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

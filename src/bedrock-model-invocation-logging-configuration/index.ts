@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/bedrock_model_invocation_logging_configuration
 // generated from terraform resource schema
 
@@ -33,6 +28,31 @@ export function bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatc
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
     key_prefix: cdktf.stringToTerraform(struct!.keyPrefix),
   }
+}
+
+
+export function bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigToHclTerraform(struct?: BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigOutputReference extends cdktf.ComplexObject {
@@ -142,6 +162,37 @@ export function bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatc
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     large_data_delivery_s3_config: bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigToTerraform(struct!.largeDataDeliveryS3Config),
   }
+}
+
+
+export function bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigToHclTerraform(struct?: BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    large_data_delivery_s3_config: {
+      value: bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigToHclTerraform(struct!.largeDataDeliveryS3Config),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference extends cdktf.ComplexObject {
@@ -268,6 +319,31 @@ export function bedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigT
   }
 }
 
+
+export function bedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigToHclTerraform(struct?: BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -387,6 +463,49 @@ export function bedrockModelInvocationLoggingConfigurationLoggingConfigToTerrafo
     cloudwatch_config: bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigToTerraform(struct!.cloudwatchConfig),
     s3_config: bedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigToTerraform(struct!.s3Config),
   }
+}
+
+
+export function bedrockModelInvocationLoggingConfigurationLoggingConfigToHclTerraform(struct?: BedrockModelInvocationLoggingConfigurationLoggingConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    embedding_data_delivery_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.embeddingDataDeliveryEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    image_data_delivery_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.imageDataDeliveryEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    text_data_delivery_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.textDataDeliveryEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    cloudwatch_config: {
+      value: bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigToHclTerraform(struct!.cloudwatchConfig),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig",
+    },
+    s3_config: {
+      value: bedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigToHclTerraform(struct!.s3Config),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference extends cdktf.ComplexObject {
@@ -602,5 +721,11 @@ export class BedrockModelInvocationLoggingConfiguration extends cdktf.TerraformR
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
   }
 }

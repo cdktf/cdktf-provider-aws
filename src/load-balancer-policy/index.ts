@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/load_balancer_policy
 // generated from terraform resource schema
 
@@ -58,6 +53,31 @@ export function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalanc
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function loadBalancerPolicyPolicyAttributeToHclTerraform(struct?: LoadBalancerPolicyPolicyAttribute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LoadBalancerPolicyPolicyAttributeOutputReference extends cdktf.ComplexObject {
@@ -308,5 +328,43 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
       policy_type_name: cdktf.stringToTerraform(this._policyTypeName),
       policy_attribute: cdktf.listMapper(loadBalancerPolicyPolicyAttributeToTerraform, true)(this._policyAttribute.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_balancer_name: {
+        value: cdktf.stringToHclTerraform(this._loadBalancerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_name: {
+        value: cdktf.stringToHclTerraform(this._policyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_type_name: {
+        value: cdktf.stringToHclTerraform(this._policyTypeName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_attribute: {
+        value: cdktf.listMapperHcl(loadBalancerPolicyPolicyAttributeToHclTerraform, true)(this._policyAttribute.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LoadBalancerPolicyPolicyAttributeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

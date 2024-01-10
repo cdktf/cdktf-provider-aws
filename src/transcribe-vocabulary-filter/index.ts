@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/transcribe_vocabulary_filter
 // generated from terraform resource schema
 
@@ -239,5 +234,55 @@ export class TranscribeVocabularyFilter extends cdktf.TerraformResource {
       vocabulary_filter_name: cdktf.stringToTerraform(this._vocabularyFilterName),
       words: cdktf.listMapper(cdktf.stringToTerraform, false)(this._words),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      language_code: {
+        value: cdktf.stringToHclTerraform(this._languageCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vocabulary_filter_file_uri: {
+        value: cdktf.stringToHclTerraform(this._vocabularyFilterFileUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vocabulary_filter_name: {
+        value: cdktf.stringToHclTerraform(this._vocabularyFilterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      words: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._words),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_transit_gateway_multicast_domain
 // generated from terraform resource schema
 
@@ -70,6 +65,31 @@ export function ec2TransitGatewayMulticastDomainTimeoutsToTerraform(struct?: Ec2
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function ec2TransitGatewayMulticastDomainTimeoutsToHclTerraform(struct?: Ec2TransitGatewayMulticastDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Ec2TransitGatewayMulticastDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -368,5 +388,61 @@ export class Ec2TransitGatewayMulticastDomain extends cdktf.TerraformResource {
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
       timeouts: ec2TransitGatewayMulticastDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_accept_shared_associations: {
+        value: cdktf.stringToHclTerraform(this._autoAcceptSharedAssociations),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      igmpv2_support: {
+        value: cdktf.stringToHclTerraform(this._igmpv2Support),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      static_sources_support: {
+        value: cdktf.stringToHclTerraform(this._staticSourcesSupport),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      transit_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: ec2TransitGatewayMulticastDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Ec2TransitGatewayMulticastDomainTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

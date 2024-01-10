@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudwatch_log_data_protection_policy_document
 // generated from terraform resource schema
 
@@ -53,6 +48,25 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return {
     log_group: cdktf.stringToTerraform(struct!.logGroup),
   }
+}
+
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_group: {
+      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference extends cdktf.ComplexObject {
@@ -117,6 +131,25 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   }
 }
 
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delivery_stream: {
+      value: cdktf.stringToHclTerraform(struct!.deliveryStream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -177,6 +210,25 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return {
     bucket: cdktf.stringToTerraform(struct!.bucket),
   }
+}
+
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3ToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference extends cdktf.ComplexObject {
@@ -255,6 +307,37 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
     firehose: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseToTerraform(struct!.firehose),
     s3: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3ToTerraform(struct!.s3),
   }
+}
+
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_logs: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsToHclTerraform(struct!.cloudwatchLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsList",
+    },
+    firehose: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseToHclTerraform(struct!.firehose),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseList",
+    },
+    s3: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3ToHclTerraform(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference extends cdktf.ComplexObject {
@@ -368,6 +451,25 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   }
 }
 
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    findings_destination: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationToHclTerraform(struct!.findingsDestination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -425,6 +527,17 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   }
 }
 
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -468,6 +581,25 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return {
     mask_config: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigToTerraform(struct!.maskConfig),
   }
+}
+
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mask_config: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigToHclTerraform(struct!.maskConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference extends cdktf.ComplexObject {
@@ -539,6 +671,31 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
     audit: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditToTerraform(struct!.audit),
     deidentify: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyToTerraform(struct!.deidentify),
   }
+}
+
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditToHclTerraform(struct!.audit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditList",
+    },
+    deidentify: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyToHclTerraform(struct!.deidentify),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference extends cdktf.ComplexObject {
@@ -638,6 +795,37 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToTerra
     sid: cdktf.stringToTerraform(struct!.sid),
     operation: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationToTerraform(struct!.operation),
   }
+}
+
+
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_identifiers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataIdentifiers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    sid: {
+      value: cdktf.stringToHclTerraform(struct!.sid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation: {
+      value: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationToHclTerraform(struct!.operation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputReference extends cdktf.ComplexObject {
@@ -912,5 +1100,43 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktf.Terr
       version: cdktf.stringToTerraform(this._version),
       statement: cdktf.listMapper(dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToTerraform, true)(this._statement.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statement: {
+        value: cdktf.listMapperHcl(dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToHclTerraform, true)(this._statement.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

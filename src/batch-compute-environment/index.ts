@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment
 // generated from terraform resource schema
 
@@ -80,6 +75,31 @@ export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerrafo
     image_id_override: cdktf.stringToTerraform(struct!.imageIdOverride),
     image_type: cdktf.stringToTerraform(struct!.imageType),
   }
+}
+
+
+export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToHclTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    image_id_override: {
+      value: cdktf.stringToHclTerraform(struct!.imageIdOverride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_type: {
+      value: cdktf.stringToHclTerraform(struct!.imageType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -209,6 +229,37 @@ export function batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform
     launch_template_name: cdktf.stringToTerraform(struct!.launchTemplateName),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function batchComputeEnvironmentComputeResourcesLaunchTemplateToHclTerraform(struct?: BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference | BatchComputeEnvironmentComputeResourcesLaunchTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    launch_template_id: {
+      value: cdktf.stringToHclTerraform(struct!.launchTemplateId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    launch_template_name: {
+      value: cdktf.stringToHclTerraform(struct!.launchTemplateName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference extends cdktf.ComplexObject {
@@ -402,6 +453,121 @@ export function batchComputeEnvironmentComputeResourcesToTerraform(struct?: Batc
     ec2_configuration: cdktf.listMapper(batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform, true)(struct!.ec2Configuration),
     launch_template: batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform(struct!.launchTemplate),
   }
+}
+
+
+export function batchComputeEnvironmentComputeResourcesToHclTerraform(struct?: BatchComputeEnvironmentComputeResourcesOutputReference | BatchComputeEnvironmentComputeResources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allocation_strategy: {
+      value: cdktf.stringToHclTerraform(struct!.allocationStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bid_percentage: {
+      value: cdktf.numberToHclTerraform(struct!.bidPercentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    desired_vcpus: {
+      value: cdktf.numberToHclTerraform(struct!.desiredVcpus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ec2_key_pair: {
+      value: cdktf.stringToHclTerraform(struct!.ec2KeyPair),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_id: {
+      value: cdktf.stringToHclTerraform(struct!.imageId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_role: {
+      value: cdktf.stringToHclTerraform(struct!.instanceRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_type: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.instanceType),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    max_vcpus: {
+      value: cdktf.numberToHclTerraform(struct!.maxVcpus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_vcpus: {
+      value: cdktf.numberToHclTerraform(struct!.minVcpus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    placement_group: {
+      value: cdktf.stringToHclTerraform(struct!.placementGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    spot_iam_fleet_role: {
+      value: cdktf.stringToHclTerraform(struct!.spotIamFleetRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnets: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ec2_configuration: {
+      value: cdktf.listMapperHcl(batchComputeEnvironmentComputeResourcesEc2ConfigurationToHclTerraform, true)(struct!.ec2Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BatchComputeEnvironmentComputeResourcesEc2ConfigurationList",
+    },
+    launch_template: {
+      value: batchComputeEnvironmentComputeResourcesLaunchTemplateToHclTerraform(struct!.launchTemplate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BatchComputeEnvironmentComputeResourcesLaunchTemplateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdktf.ComplexObject {
@@ -817,6 +983,31 @@ export function batchComputeEnvironmentEksConfigurationToTerraform(struct?: Batc
   }
 }
 
+
+export function batchComputeEnvironmentEksConfigurationToHclTerraform(struct?: BatchComputeEnvironmentEksConfigurationOutputReference | BatchComputeEnvironmentEksConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eks_cluster_arn: {
+      value: cdktf.stringToHclTerraform(struct!.eksClusterArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kubernetes_namespace: {
+      value: cdktf.stringToHclTerraform(struct!.kubernetesNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BatchComputeEnvironmentEksConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1143,5 +1334,73 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       compute_resources: batchComputeEnvironmentComputeResourcesToTerraform(this._computeResources.internalValue),
       eks_configuration: batchComputeEnvironmentEksConfigurationToTerraform(this._eksConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compute_environment_name: {
+        value: cdktf.stringToHclTerraform(this._computeEnvironmentName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compute_environment_name_prefix: {
+        value: cdktf.stringToHclTerraform(this._computeEnvironmentNamePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_role: {
+        value: cdktf.stringToHclTerraform(this._serviceRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compute_resources: {
+        value: batchComputeEnvironmentComputeResourcesToHclTerraform(this._computeResources.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BatchComputeEnvironmentComputeResourcesList",
+      },
+      eks_configuration: {
+        value: batchComputeEnvironmentEksConfigurationToHclTerraform(this._eksConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BatchComputeEnvironmentEksConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

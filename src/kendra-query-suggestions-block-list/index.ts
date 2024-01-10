@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kendra_query_suggestions_block_list
 // generated from terraform resource schema
 
@@ -76,6 +71,31 @@ export function kendraQuerySuggestionsBlockListSourceS3PathToTerraform(struct?: 
     bucket: cdktf.stringToTerraform(struct!.bucket),
     key: cdktf.stringToTerraform(struct!.key),
   }
+}
+
+
+export function kendraQuerySuggestionsBlockListSourceS3PathToHclTerraform(struct?: KendraQuerySuggestionsBlockListSourceS3PathOutputReference | KendraQuerySuggestionsBlockListSourceS3Path): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KendraQuerySuggestionsBlockListSourceS3PathOutputReference extends cdktf.ComplexObject {
@@ -167,6 +187,37 @@ export function kendraQuerySuggestionsBlockListTimeoutsToTerraform(struct?: Kend
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function kendraQuerySuggestionsBlockListTimeoutsToHclTerraform(struct?: KendraQuerySuggestionsBlockListTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KendraQuerySuggestionsBlockListTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -501,5 +552,67 @@ export class KendraQuerySuggestionsBlockList extends cdktf.TerraformResource {
       source_s3_path: kendraQuerySuggestionsBlockListSourceS3PathToTerraform(this._sourceS3Path.internalValue),
       timeouts: kendraQuerySuggestionsBlockListTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index_id: {
+        value: cdktf.stringToHclTerraform(this._indexId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      source_s3_path: {
+        value: kendraQuerySuggestionsBlockListSourceS3PathToHclTerraform(this._sourceS3Path.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KendraQuerySuggestionsBlockListSourceS3PathList",
+      },
+      timeouts: {
+        value: kendraQuerySuggestionsBlockListTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "KendraQuerySuggestionsBlockListTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

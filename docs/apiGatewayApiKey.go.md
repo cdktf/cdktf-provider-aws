@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.NewApiGatewayApiKey(scope Construct, id *string, config ApiGatewayApiKeyConfig) ApiGatewayApiKey
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.toMetadata"></a>
 
@@ -420,7 +427,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ apigatewayapikey.ApiGatewayApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +487,7 @@ apigatewayapikey.ApiGatewayApiKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -918,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 &apigatewayapikey.ApiGatewayApiKeyConfig {
 	Connection: interface{},

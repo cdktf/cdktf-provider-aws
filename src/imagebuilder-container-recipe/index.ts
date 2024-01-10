@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/imagebuilder_container_recipe
 // generated from terraform resource schema
 
@@ -106,6 +101,31 @@ export function imagebuilderContainerRecipeComponentParameterToTerraform(struct?
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function imagebuilderContainerRecipeComponentParameterToHclTerraform(struct?: ImagebuilderContainerRecipeComponentParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ImagebuilderContainerRecipeComponentParameterOutputReference extends cdktf.ComplexObject {
@@ -226,6 +246,31 @@ export function imagebuilderContainerRecipeComponentToTerraform(struct?: Imagebu
     component_arn: cdktf.stringToTerraform(struct!.componentArn),
     parameter: cdktf.listMapper(imagebuilderContainerRecipeComponentParameterToTerraform, true)(struct!.parameter),
   }
+}
+
+
+export function imagebuilderContainerRecipeComponentToHclTerraform(struct?: ImagebuilderContainerRecipeComponent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    component_arn: {
+      value: cdktf.stringToHclTerraform(struct!.componentArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter: {
+      value: cdktf.listMapperHcl(imagebuilderContainerRecipeComponentParameterToHclTerraform, true)(struct!.parameter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ImagebuilderContainerRecipeComponentParameterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ImagebuilderContainerRecipeComponentOutputReference extends cdktf.ComplexObject {
@@ -377,6 +422,67 @@ export function imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappi
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
+}
+
+
+export function imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsToHclTerraform(struct?: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference | ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_on_termination: {
+      value: cdktf.stringToHclTerraform(struct!.deleteOnTermination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encrypted: {
+      value: cdktf.stringToHclTerraform(struct!.encrypted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    snapshot_id: {
+      value: cdktf.stringToHclTerraform(struct!.snapshotId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    throughput: {
+      value: cdktf.numberToHclTerraform(struct!.throughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_size: {
+      value: cdktf.numberToHclTerraform(struct!.volumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference extends cdktf.ComplexObject {
@@ -615,6 +721,43 @@ export function imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappi
   }
 }
 
+
+export function imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingToHclTerraform(struct?: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_name: {
+      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_device: {
+      value: cdktf.booleanToHclTerraform(struct!.noDevice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    virtual_name: {
+      value: cdktf.stringToHclTerraform(struct!.virtualName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ebs: {
+      value: imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsToHclTerraform(struct!.ebs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -785,6 +928,31 @@ export function imagebuilderContainerRecipeInstanceConfigurationToTerraform(stru
   }
 }
 
+
+export function imagebuilderContainerRecipeInstanceConfigurationToHclTerraform(struct?: ImagebuilderContainerRecipeInstanceConfigurationOutputReference | ImagebuilderContainerRecipeInstanceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    image: {
+      value: cdktf.stringToHclTerraform(struct!.image),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    block_device_mapping: {
+      value: cdktf.listMapperHcl(imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingToHclTerraform, true)(struct!.blockDeviceMapping),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ImagebuilderContainerRecipeInstanceConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -875,6 +1043,31 @@ export function imagebuilderContainerRecipeTargetRepositoryToTerraform(struct?: 
     repository_name: cdktf.stringToTerraform(struct!.repositoryName),
     service: cdktf.stringToTerraform(struct!.service),
   }
+}
+
+
+export function imagebuilderContainerRecipeTargetRepositoryToHclTerraform(struct?: ImagebuilderContainerRecipeTargetRepositoryOutputReference | ImagebuilderContainerRecipeTargetRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_name: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ImagebuilderContainerRecipeTargetRepositoryOutputReference extends cdktf.ComplexObject {
@@ -1301,5 +1494,109 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       instance_configuration: imagebuilderContainerRecipeInstanceConfigurationToTerraform(this._instanceConfiguration.internalValue),
       target_repository: imagebuilderContainerRecipeTargetRepositoryToTerraform(this._targetRepository.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      container_type: {
+        value: cdktf.stringToHclTerraform(this._containerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dockerfile_template_data: {
+        value: cdktf.stringToHclTerraform(this._dockerfileTemplateData),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dockerfile_template_uri: {
+        value: cdktf.stringToHclTerraform(this._dockerfileTemplateUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_image: {
+        value: cdktf.stringToHclTerraform(this._parentImage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform_override: {
+        value: cdktf.stringToHclTerraform(this._platformOverride),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      working_directory: {
+        value: cdktf.stringToHclTerraform(this._workingDirectory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      component: {
+        value: cdktf.listMapperHcl(imagebuilderContainerRecipeComponentToHclTerraform, true)(this._component.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ImagebuilderContainerRecipeComponentList",
+      },
+      instance_configuration: {
+        value: imagebuilderContainerRecipeInstanceConfigurationToHclTerraform(this._instanceConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ImagebuilderContainerRecipeInstanceConfigurationList",
+      },
+      target_repository: {
+        value: imagebuilderContainerRecipeTargetRepositoryToHclTerraform(this._targetRepository.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ImagebuilderContainerRecipeTargetRepositoryList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

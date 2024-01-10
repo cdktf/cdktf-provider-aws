@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.NewS3ControlBucketLifecycleConfiguration(scope Construct, id *string, config S3ControlBucketLifecycleConfigurationConfig) S3ControlBucketLifecycleConfiguration
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfiguration_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfiguration_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 &s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfigurationConfig {
 	Connection: interface{},
@@ -895,13 +902,13 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 &s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfigurationRule {
 	Id: *string,
-	AbortIncompleteMultipartUpload: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload,
-	Expiration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleExpiration,
-	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilter,
+	AbortIncompleteMultipartUpload: github.com/cdktf/cdktf-provider-aws-go/aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload,
+	Expiration: github.com/cdktf/cdktf-provider-aws-go/aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleExpiration,
+	Filter: github.com/cdktf/cdktf-provider-aws-go/aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilter,
 	Status: *string,
 }
 ```
@@ -992,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 &s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload {
 	DaysAfterInitiation: *f64,
@@ -1024,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 &s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfigurationRuleExpiration {
 	Date: *string,
@@ -1084,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 &s3controlbucketlifecycleconfiguration.S3ControlBucketLifecycleConfigurationRuleFilter {
 	Prefix: *string,
@@ -1132,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.NewS3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference
 ```
@@ -1403,7 +1410,7 @@ func InternalValue() S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMul
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.NewS3ControlBucketLifecycleConfigurationRuleExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference
 ```
@@ -1739,7 +1746,7 @@ func InternalValue() S3ControlBucketLifecycleConfigurationRuleExpiration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.NewS3ControlBucketLifecycleConfigurationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlBucketLifecycleConfigurationRuleFilterOutputReference
 ```
@@ -2046,7 +2053,7 @@ func InternalValue() S3ControlBucketLifecycleConfigurationRuleFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.NewS3ControlBucketLifecycleConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlBucketLifecycleConfigurationRuleList
 ```
@@ -2087,10 +2094,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2189,7 +2213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlbucketlifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucketlifecycleconfiguration"
 
 s3controlbucketlifecycleconfiguration.NewS3ControlBucketLifecycleConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlBucketLifecycleConfigurationRuleOutputReference
 ```

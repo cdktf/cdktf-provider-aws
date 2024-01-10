@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dms_s3_endpoint
 // generated from terraform resource schema
 
@@ -242,6 +237,31 @@ export function dmsS3EndpointTimeoutsToTerraform(struct?: DmsS3EndpointTimeouts 
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function dmsS3EndpointTimeoutsToHclTerraform(struct?: DmsS3EndpointTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DmsS3EndpointTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1315,5 +1335,319 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
       use_task_start_time_for_full_load_timestamp: cdktf.booleanToTerraform(this._useTaskStartTimeForFullLoadTimestamp),
       timeouts: dmsS3EndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      add_column_name: {
+        value: cdktf.booleanToHclTerraform(this._addColumnName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      add_trailing_padding_character: {
+        value: cdktf.booleanToHclTerraform(this._addTrailingPaddingCharacter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      bucket_folder: {
+        value: cdktf.stringToHclTerraform(this._bucketFolder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket_name: {
+        value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      canned_acl_for_objects: {
+        value: cdktf.stringToHclTerraform(this._cannedAclForObjects),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cdc_inserts_and_updates: {
+        value: cdktf.booleanToHclTerraform(this._cdcInsertsAndUpdates),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cdc_inserts_only: {
+        value: cdktf.booleanToHclTerraform(this._cdcInsertsOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cdc_max_batch_interval: {
+        value: cdktf.numberToHclTerraform(this._cdcMaxBatchInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cdc_min_file_size: {
+        value: cdktf.numberToHclTerraform(this._cdcMinFileSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cdc_path: {
+        value: cdktf.stringToHclTerraform(this._cdcPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_arn: {
+        value: cdktf.stringToHclTerraform(this._certificateArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compression_type: {
+        value: cdktf.stringToHclTerraform(this._compressionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csv_delimiter: {
+        value: cdktf.stringToHclTerraform(this._csvDelimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csv_no_sup_value: {
+        value: cdktf.stringToHclTerraform(this._csvNoSupValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csv_null_value: {
+        value: cdktf.stringToHclTerraform(this._csvNullValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csv_row_delimiter: {
+        value: cdktf.stringToHclTerraform(this._csvRowDelimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_format: {
+        value: cdktf.stringToHclTerraform(this._dataFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_page_size: {
+        value: cdktf.numberToHclTerraform(this._dataPageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      date_partition_delimiter: {
+        value: cdktf.stringToHclTerraform(this._datePartitionDelimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      date_partition_enabled: {
+        value: cdktf.booleanToHclTerraform(this._datePartitionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      date_partition_sequence: {
+        value: cdktf.stringToHclTerraform(this._datePartitionSequence),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      date_partition_timezone: {
+        value: cdktf.stringToHclTerraform(this._datePartitionTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      detach_target_on_lob_lookup_failure_parquet: {
+        value: cdktf.booleanToHclTerraform(this._detachTargetOnLobLookupFailureParquet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dict_page_size_limit: {
+        value: cdktf.numberToHclTerraform(this._dictPageSizeLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enable_statistics: {
+        value: cdktf.booleanToHclTerraform(this._enableStatistics),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      encoding_type: {
+        value: cdktf.stringToHclTerraform(this._encodingType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_mode: {
+        value: cdktf.stringToHclTerraform(this._encryptionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._endpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_type: {
+        value: cdktf.stringToHclTerraform(this._endpointType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_bucket_owner: {
+        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_table_definition: {
+        value: cdktf.stringToHclTerraform(this._externalTableDefinition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      glue_catalog_generation: {
+        value: cdktf.booleanToHclTerraform(this._glueCatalogGeneration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_header_rows: {
+        value: cdktf.numberToHclTerraform(this._ignoreHeaderRows),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      include_op_for_full_load: {
+        value: cdktf.booleanToHclTerraform(this._includeOpForFullLoad),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      kms_key_arn: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_file_size: {
+        value: cdktf.numberToHclTerraform(this._maxFileSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      parquet_timestamp_in_millisecond: {
+        value: cdktf.booleanToHclTerraform(this._parquetTimestampInMillisecond),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      parquet_version: {
+        value: cdktf.stringToHclTerraform(this._parquetVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preserve_transactions: {
+        value: cdktf.booleanToHclTerraform(this._preserveTransactions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      rfc_4180: {
+        value: cdktf.booleanToHclTerraform(this._rfc4180),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      row_group_length: {
+        value: cdktf.numberToHclTerraform(this._rowGroupLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      server_side_encryption_kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._serverSideEncryptionKmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_access_role_arn: {
+        value: cdktf.stringToHclTerraform(this._serviceAccessRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssl_mode: {
+        value: cdktf.stringToHclTerraform(this._sslMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timestamp_column_name: {
+        value: cdktf.stringToHclTerraform(this._timestampColumnName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_csv_no_sup_value: {
+        value: cdktf.booleanToHclTerraform(this._useCsvNoSupValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      use_task_start_time_for_full_load_timestamp: {
+        value: cdktf.booleanToHclTerraform(this._useTaskStartTimeForFullLoadTimestamp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: dmsS3EndpointTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DmsS3EndpointTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

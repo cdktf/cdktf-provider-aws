@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/connect_bot_association
 // generated from terraform resource schema
 
@@ -50,6 +45,31 @@ export function dataAwsConnectBotAssociationLexBotToTerraform(struct?: DataAwsCo
     lex_region: cdktf.stringToTerraform(struct!.lexRegion),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function dataAwsConnectBotAssociationLexBotToHclTerraform(struct?: DataAwsConnectBotAssociationLexBotOutputReference | DataAwsConnectBotAssociationLexBot): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lex_region: {
+      value: cdktf.stringToHclTerraform(struct!.lexRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsConnectBotAssociationLexBotOutputReference extends cdktf.ComplexObject {
@@ -232,5 +252,31 @@ export class DataAwsConnectBotAssociation extends cdktf.TerraformDataSource {
       instance_id: cdktf.stringToTerraform(this._instanceId),
       lex_bot: dataAwsConnectBotAssociationLexBotToTerraform(this._lexBot.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lex_bot: {
+        value: dataAwsConnectBotAssociationLexBotToHclTerraform(this._lexBot.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsConnectBotAssociationLexBotList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

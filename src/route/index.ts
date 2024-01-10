@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/route
 // generated from terraform resource schema
 
@@ -107,6 +102,37 @@ export function routeTimeoutsToTerraform(struct?: RouteTimeouts | cdktf.IResolva
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function routeTimeoutsToHclTerraform(struct?: RouteTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RouteTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -581,5 +607,109 @@ export class Route extends cdktf.TerraformResource {
       vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
       timeouts: routeTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      carrier_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._carrierGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      core_network_arn: {
+        value: cdktf.stringToHclTerraform(this._coreNetworkArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_ipv6_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._destinationIpv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_prefix_list_id: {
+        value: cdktf.stringToHclTerraform(this._destinationPrefixListId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      egress_only_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._egressOnlyGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_id: {
+        value: cdktf.stringToHclTerraform(this._gatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._localGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nat_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._natGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_interface_id: {
+        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_table_id: {
+        value: cdktf.stringToHclTerraform(this._routeTableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_peering_connection_id: {
+        value: cdktf.stringToHclTerraform(this._vpcPeeringConnectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: routeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RouteTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

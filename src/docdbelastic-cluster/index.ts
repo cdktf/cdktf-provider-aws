@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/docdbelastic_cluster
 // generated from terraform resource schema
 
@@ -94,6 +89,37 @@ export function docdbelasticClusterTimeoutsToTerraform(struct?: DocdbelasticClus
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function docdbelasticClusterTimeoutsToHclTerraform(struct?: DocdbelasticClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DocdbelasticClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -482,5 +508,85 @@ export class DocdbelasticCluster extends cdktf.TerraformResource {
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
       timeouts: docdbelasticClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_user_name: {
+        value: cdktf.stringToHclTerraform(this._adminUserName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      admin_user_password: {
+        value: cdktf.stringToHclTerraform(this._adminUserPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_type: {
+        value: cdktf.stringToHclTerraform(this._authType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_maintenance_window: {
+        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      shard_capacity: {
+        value: cdktf.numberToHclTerraform(this._shardCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shard_count: {
+        value: cdktf.numberToHclTerraform(this._shardCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpc_security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      timeouts: {
+        value: docdbelasticClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DocdbelasticClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

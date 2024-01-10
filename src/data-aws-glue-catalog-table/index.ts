@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/glue_catalog_table
 // generated from terraform resource schema
 
@@ -50,6 +45,17 @@ export function dataAwsGlueCatalogTablePartitionIndexToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsGlueCatalogTablePartitionIndexToHclTerraform(struct?: DataAwsGlueCatalogTablePartitionIndex): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsGlueCatalogTablePartitionIndexOutputReference extends cdktf.ComplexObject {
@@ -126,6 +132,17 @@ export function dataAwsGlueCatalogTablePartitionKeysToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsGlueCatalogTablePartitionKeysToHclTerraform(struct?: DataAwsGlueCatalogTablePartitionKeys): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsGlueCatalogTablePartitionKeysOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -198,6 +215,17 @@ export function dataAwsGlueCatalogTableStorageDescriptorColumnsToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataAwsGlueCatalogTableStorageDescriptorColumnsToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorColumns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference extends cdktf.ComplexObject {
@@ -280,6 +308,17 @@ export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdT
   }
 }
 
+
+export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -352,6 +391,17 @@ export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSchemaReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference extends cdktf.ComplexObject {
@@ -429,6 +479,17 @@ export function dataAwsGlueCatalogTableStorageDescriptorSerDeInfoToTerraform(str
   }
 }
 
+
+export function dataAwsGlueCatalogTableStorageDescriptorSerDeInfoToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSerDeInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsGlueCatalogTableStorageDescriptorSerDeInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -502,6 +563,17 @@ export function dataAwsGlueCatalogTableStorageDescriptorSkewedInfoToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsGlueCatalogTableStorageDescriptorSkewedInfoToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSkewedInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsGlueCatalogTableStorageDescriptorSkewedInfoOutputReference extends cdktf.ComplexObject {
@@ -579,6 +651,17 @@ export function dataAwsGlueCatalogTableStorageDescriptorSortColumnsToTerraform(s
   }
 }
 
+
+export function dataAwsGlueCatalogTableStorageDescriptorSortColumnsToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSortColumns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsGlueCatalogTableStorageDescriptorSortColumnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -646,6 +729,17 @@ export function dataAwsGlueCatalogTableStorageDescriptorToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsGlueCatalogTableStorageDescriptorToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsGlueCatalogTableStorageDescriptorOutputReference extends cdktf.ComplexObject {
@@ -776,6 +870,17 @@ export function dataAwsGlueCatalogTableTargetTableToTerraform(struct?: DataAwsGl
   }
   return {
   }
+}
+
+
+export function dataAwsGlueCatalogTableTargetTableToHclTerraform(struct?: DataAwsGlueCatalogTableTargetTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsGlueCatalogTableTargetTableOutputReference extends cdktf.ComplexObject {
@@ -1072,5 +1177,49 @@ export class DataAwsGlueCatalogTable extends cdktf.TerraformDataSource {
       query_as_of_time: cdktf.stringToTerraform(this._queryAsOfTime),
       transaction_id: cdktf.numberToTerraform(this._transactionId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      catalog_id: {
+        value: cdktf.stringToHclTerraform(this._catalogId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_name: {
+        value: cdktf.stringToHclTerraform(this._databaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query_as_of_time: {
+        value: cdktf.stringToHclTerraform(this._queryAsOfTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transaction_id: {
+        value: cdktf.numberToHclTerraform(this._transactionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

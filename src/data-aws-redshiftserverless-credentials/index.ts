@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/redshiftserverless_credentials
 // generated from terraform resource schema
 
@@ -181,5 +176,37 @@ export class DataAwsRedshiftserverlessCredentials extends cdktf.TerraformDataSou
       id: cdktf.stringToTerraform(this._id),
       workgroup_name: cdktf.stringToTerraform(this._workgroupName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_name: {
+        value: cdktf.stringToHclTerraform(this._dbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      duration_seconds: {
+        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workgroup_name: {
+        value: cdktf.stringToHclTerraform(this._workgroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

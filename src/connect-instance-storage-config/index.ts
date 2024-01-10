@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/connect_instance_storage_config
 // generated from terraform resource schema
 
@@ -49,6 +44,25 @@ export function connectInstanceStorageConfigStorageConfigKinesisFirehoseConfigTo
   return {
     firehose_arn: cdktf.stringToTerraform(struct!.firehoseArn),
   }
+}
+
+
+export function connectInstanceStorageConfigStorageConfigKinesisFirehoseConfigToHclTerraform(struct?: ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference | ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    firehose_arn: {
+      value: cdktf.stringToHclTerraform(struct!.firehoseArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference extends cdktf.ComplexObject {
@@ -111,6 +125,25 @@ export function connectInstanceStorageConfigStorageConfigKinesisStreamConfigToTe
   return {
     stream_arn: cdktf.stringToTerraform(struct!.streamArn),
   }
+}
+
+
+export function connectInstanceStorageConfigStorageConfigKinesisStreamConfigToHclTerraform(struct?: ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference | ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    stream_arn: {
+      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference extends cdktf.ComplexObject {
@@ -178,6 +211,31 @@ export function connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfi
     encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
     key_id: cdktf.stringToTerraform(struct!.keyId),
   }
+}
+
+
+export function connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigToHclTerraform(struct?: ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference | ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption_type: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference extends cdktf.ComplexObject {
@@ -271,6 +329,37 @@ export function connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfi
     retention_period_hours: cdktf.numberToTerraform(struct!.retentionPeriodHours),
     encryption_config: connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigToTerraform(struct!.encryptionConfig),
   }
+}
+
+
+export function connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigToHclTerraform(struct?: ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference | ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_period_hours: {
+      value: cdktf.numberToHclTerraform(struct!.retentionPeriodHours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    encryption_config: {
+      value: connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigToHclTerraform(struct!.encryptionConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference extends cdktf.ComplexObject {
@@ -378,6 +467,31 @@ export function connectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfi
   }
 }
 
+
+export function connectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigToHclTerraform(struct?: ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference | ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption_type: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -469,6 +583,37 @@ export function connectInstanceStorageConfigStorageConfigS3ConfigToTerraform(str
     bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
     encryption_config: connectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigToTerraform(struct!.encryptionConfig),
   }
+}
+
+
+export function connectInstanceStorageConfigStorageConfigS3ConfigToHclTerraform(struct?: ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference | ConnectInstanceStorageConfigStorageConfigS3Config): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encryption_config: {
+      value: connectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigToHclTerraform(struct!.encryptionConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference extends cdktf.ComplexObject {
@@ -600,6 +745,49 @@ export function connectInstanceStorageConfigStorageConfigToTerraform(struct?: Co
     kinesis_video_stream_config: connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigToTerraform(struct!.kinesisVideoStreamConfig),
     s3_config: connectInstanceStorageConfigStorageConfigS3ConfigToTerraform(struct!.s3Config),
   }
+}
+
+
+export function connectInstanceStorageConfigStorageConfigToHclTerraform(struct?: ConnectInstanceStorageConfigStorageConfigOutputReference | ConnectInstanceStorageConfigStorageConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    storage_type: {
+      value: cdktf.stringToHclTerraform(struct!.storageType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kinesis_firehose_config: {
+      value: connectInstanceStorageConfigStorageConfigKinesisFirehoseConfigToHclTerraform(struct!.kinesisFirehoseConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList",
+    },
+    kinesis_stream_config: {
+      value: connectInstanceStorageConfigStorageConfigKinesisStreamConfigToHclTerraform(struct!.kinesisStreamConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList",
+    },
+    kinesis_video_stream_config: {
+      value: connectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigToHclTerraform(struct!.kinesisVideoStreamConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigList",
+    },
+    s3_config: {
+      value: connectInstanceStorageConfigStorageConfigS3ConfigToHclTerraform(struct!.s3Config),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectInstanceStorageConfigStorageConfigS3ConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectInstanceStorageConfigStorageConfigOutputReference extends cdktf.ComplexObject {
@@ -868,5 +1056,37 @@ export class ConnectInstanceStorageConfig extends cdktf.TerraformResource {
       resource_type: cdktf.stringToTerraform(this._resourceType),
       storage_config: connectInstanceStorageConfigStorageConfigToTerraform(this._storageConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_type: {
+        value: cdktf.stringToHclTerraform(this._resourceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_config: {
+        value: connectInstanceStorageConfigStorageConfigToHclTerraform(this._storageConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConnectInstanceStorageConfigStorageConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

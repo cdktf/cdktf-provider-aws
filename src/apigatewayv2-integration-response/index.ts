@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/apigatewayv2_integration_response
 // generated from terraform resource schema
 
@@ -226,5 +221,55 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
       response_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseTemplates),
       template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_handling_strategy: {
+        value: cdktf.stringToHclTerraform(this._contentHandlingStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_id: {
+        value: cdktf.stringToHclTerraform(this._integrationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_response_key: {
+        value: cdktf.stringToHclTerraform(this._integrationResponseKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_templates: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._responseTemplates),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      template_selection_expression: {
+        value: cdktf.stringToHclTerraform(this._templateSelectionExpression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

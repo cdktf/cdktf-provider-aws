@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/gamelift_fleet
 // generated from terraform resource schema
 
@@ -111,6 +106,25 @@ export function gameliftFleetCertificateConfigurationToTerraform(struct?: Gameli
   }
 }
 
+
+export function gameliftFleetCertificateConfigurationToHclTerraform(struct?: GameliftFleetCertificateConfigurationOutputReference | GameliftFleetCertificateConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_type: {
+      value: cdktf.stringToHclTerraform(struct!.certificateType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GameliftFleetCertificateConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,6 +203,43 @@ export function gameliftFleetEc2InboundPermissionToTerraform(struct?: GameliftFl
     protocol: cdktf.stringToTerraform(struct!.protocol),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
+}
+
+
+export function gameliftFleetEc2InboundPermissionToHclTerraform(struct?: GameliftFleetEc2InboundPermission | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.ipRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GameliftFleetEc2InboundPermissionOutputReference extends cdktf.ComplexObject {
@@ -347,6 +398,31 @@ export function gameliftFleetResourceCreationLimitPolicyToTerraform(struct?: Gam
   }
 }
 
+
+export function gameliftFleetResourceCreationLimitPolicyToHclTerraform(struct?: GameliftFleetResourceCreationLimitPolicyOutputReference | GameliftFleetResourceCreationLimitPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    new_game_sessions_per_creator: {
+      value: cdktf.numberToHclTerraform(struct!.newGameSessionsPerCreator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    policy_period_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.policyPeriodInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -442,6 +518,37 @@ export function gameliftFleetRuntimeConfigurationServerProcessToTerraform(struct
     launch_path: cdktf.stringToTerraform(struct!.launchPath),
     parameters: cdktf.stringToTerraform(struct!.parameters),
   }
+}
+
+
+export function gameliftFleetRuntimeConfigurationServerProcessToHclTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    concurrent_executions: {
+      value: cdktf.numberToHclTerraform(struct!.concurrentExecutions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    launch_path: {
+      value: cdktf.stringToHclTerraform(struct!.launchPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.stringToHclTerraform(struct!.parameters),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GameliftFleetRuntimeConfigurationServerProcessOutputReference extends cdktf.ComplexObject {
@@ -591,6 +698,37 @@ export function gameliftFleetRuntimeConfigurationToTerraform(struct?: GameliftFl
   }
 }
 
+
+export function gameliftFleetRuntimeConfigurationToHclTerraform(struct?: GameliftFleetRuntimeConfigurationOutputReference | GameliftFleetRuntimeConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    game_session_activation_timeout_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.gameSessionActivationTimeoutSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_concurrent_game_session_activations: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrentGameSessionActivations),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    server_process: {
+      value: cdktf.listMapperHcl(gameliftFleetRuntimeConfigurationServerProcessToHclTerraform, true)(struct!.serverProcess),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GameliftFleetRuntimeConfigurationServerProcessList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GameliftFleetRuntimeConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -703,6 +841,31 @@ export function gameliftFleetTimeoutsToTerraform(struct?: GameliftFleetTimeouts 
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function gameliftFleetTimeoutsToHclTerraform(struct?: GameliftFleetTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1175,5 +1338,115 @@ export class GameliftFleet extends cdktf.TerraformResource {
       runtime_configuration: gameliftFleetRuntimeConfigurationToTerraform(this._runtimeConfiguration.internalValue),
       timeouts: gameliftFleetTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      build_id: {
+        value: cdktf.stringToHclTerraform(this._buildId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_instance_type: {
+        value: cdktf.stringToHclTerraform(this._ec2InstanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fleet_type: {
+        value: cdktf.stringToHclTerraform(this._fleetType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_role_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._metricGroups),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      new_game_session_protection_policy: {
+        value: cdktf.stringToHclTerraform(this._newGameSessionProtectionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      script_id: {
+        value: cdktf.stringToHclTerraform(this._scriptId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      certificate_configuration: {
+        value: gameliftFleetCertificateConfigurationToHclTerraform(this._certificateConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GameliftFleetCertificateConfigurationList",
+      },
+      ec2_inbound_permission: {
+        value: cdktf.listMapperHcl(gameliftFleetEc2InboundPermissionToHclTerraform, true)(this._ec2InboundPermission.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GameliftFleetEc2InboundPermissionList",
+      },
+      resource_creation_limit_policy: {
+        value: gameliftFleetResourceCreationLimitPolicyToHclTerraform(this._resourceCreationLimitPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GameliftFleetResourceCreationLimitPolicyList",
+      },
+      runtime_configuration: {
+        value: gameliftFleetRuntimeConfigurationToHclTerraform(this._runtimeConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GameliftFleetRuntimeConfigurationList",
+      },
+      timeouts: {
+        value: gameliftFleetTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GameliftFleetTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

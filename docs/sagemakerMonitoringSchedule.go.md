@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 sagemakermonitoringschedule.NewSagemakerMonitoringSchedule(scope Construct, id *string, config SagemakerMonitoringScheduleConfig) SagemakerMonitoringSchedule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 sagemakermonitoringschedule.SagemakerMonitoringSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 sagemakermonitoringschedule.SagemakerMonitoringSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ sagemakermonitoringschedule.SagemakerMonitoringSchedule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 sagemakermonitoringschedule.SagemakerMonitoringSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ sagemakermonitoringschedule.SagemakerMonitoringSchedule_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 sagemakermonitoringschedule.SagemakerMonitoringSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 &sagemakermonitoringschedule.SagemakerMonitoringScheduleConfig {
 	Connection: interface{},
@@ -832,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedu
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	MonitoringScheduleConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfig,
+	MonitoringScheduleConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfig,
 	Id: *string,
 	Name: *string,
 	Tags: *map[string]*string,
@@ -999,12 +1006,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 &sagemakermonitoringschedule.SagemakerMonitoringScheduleMonitoringScheduleConfig {
 	MonitoringJobDefinitionName: *string,
 	MonitoringType: *string,
-	ScheduleConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfig,
+	ScheduleConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfig,
 }
 ```
 
@@ -1061,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 &sagemakermonitoringschedule.SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfig {
 	ScheduleExpression: *string,
@@ -1095,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 sagemakermonitoringschedule.NewSagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference
 ```
@@ -1430,7 +1437,7 @@ func InternalValue() SagemakerMonitoringScheduleMonitoringScheduleConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerMonitoringSchedule.SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakermonitoringschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermonitoringschedule"
 
 sagemakermonitoringschedule.NewSagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigOutputReference
 ```

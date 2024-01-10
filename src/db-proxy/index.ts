@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/db_proxy
 // generated from terraform resource schema
 
@@ -112,6 +107,55 @@ export function dbProxyAuthToTerraform(struct?: DbProxyAuth | cdktf.IResolvable)
     secret_arn: cdktf.stringToTerraform(struct!.secretArn),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function dbProxyAuthToHclTerraform(struct?: DbProxyAuth | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_scheme: {
+      value: cdktf.stringToHclTerraform(struct!.authScheme),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_password_auth_type: {
+      value: cdktf.stringToHclTerraform(struct!.clientPasswordAuthType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iam_auth: {
+      value: cdktf.stringToHclTerraform(struct!.iamAuth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_arn: {
+      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
@@ -329,6 +373,37 @@ export function dbProxyTimeoutsToTerraform(struct?: DbProxyTimeouts | cdktf.IRes
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dbProxyTimeoutsToHclTerraform(struct?: DbProxyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -727,5 +802,91 @@ export class DbProxy extends cdktf.TerraformResource {
       auth: cdktf.listMapper(dbProxyAuthToTerraform, true)(this._auth.internalValue),
       timeouts: dbProxyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      debug_logging: {
+        value: cdktf.booleanToHclTerraform(this._debugLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      engine_family: {
+        value: cdktf.stringToHclTerraform(this._engineFamily),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idle_client_timeout: {
+        value: cdktf.numberToHclTerraform(this._idleClientTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_tls: {
+        value: cdktf.booleanToHclTerraform(this._requireTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpc_security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      vpc_subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSubnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      auth: {
+        value: cdktf.listMapperHcl(dbProxyAuthToHclTerraform, true)(this._auth.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DbProxyAuthList",
+      },
+      timeouts: {
+        value: dbProxyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DbProxyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

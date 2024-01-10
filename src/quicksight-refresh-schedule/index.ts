@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/quicksight_refresh_schedule
 // generated from terraform resource schema
 
@@ -51,6 +46,31 @@ export function quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayTo
     day_of_month: cdktf.stringToTerraform(struct!.dayOfMonth),
     day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
   }
+}
+
+
+export function quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToHclTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_month: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfMonth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    day_of_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutputReference extends cdktf.ComplexObject {
@@ -187,6 +207,43 @@ export function quicksightRefreshScheduleScheduleScheduleFrequencyToTerraform(st
     timezone: cdktf.stringToTerraform(struct!.timezone),
     refresh_on_day: cdktf.listMapper(quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToTerraform, true)(struct!.refreshOnDay),
   }
+}
+
+
+export function quicksightRefreshScheduleScheduleScheduleFrequencyToHclTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequency | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.stringToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_of_the_day: {
+      value: cdktf.stringToHclTerraform(struct!.timeOfTheDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timezone: {
+      value: cdktf.stringToHclTerraform(struct!.timezone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_on_day: {
+      value: cdktf.listMapperHcl(quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToHclTerraform, true)(struct!.refreshOnDay),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference extends cdktf.ComplexObject {
@@ -359,6 +416,37 @@ export function quicksightRefreshScheduleScheduleToTerraform(struct?: Quicksight
     start_after_date_time: cdktf.stringToTerraform(struct!.startAfterDateTime),
     schedule_frequency: cdktf.listMapper(quicksightRefreshScheduleScheduleScheduleFrequencyToTerraform, true)(struct!.scheduleFrequency),
   }
+}
+
+
+export function quicksightRefreshScheduleScheduleToHclTerraform(struct?: QuicksightRefreshScheduleSchedule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    refresh_type: {
+      value: cdktf.stringToHclTerraform(struct!.refreshType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_after_date_time: {
+      value: cdktf.stringToHclTerraform(struct!.startAfterDateTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schedule_frequency: {
+      value: cdktf.listMapperHcl(quicksightRefreshScheduleScheduleScheduleFrequencyToHclTerraform, true)(struct!.scheduleFrequency),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightRefreshScheduleScheduleScheduleFrequencyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightRefreshScheduleScheduleOutputReference extends cdktf.ComplexObject {
@@ -623,5 +711,37 @@ export class QuicksightRefreshSchedule extends cdktf.TerraformResource {
       schedule_id: cdktf.stringToTerraform(this._scheduleId),
       schedule: cdktf.listMapper(quicksightRefreshScheduleScheduleToTerraform, true)(this._schedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_set_id: {
+        value: cdktf.stringToHclTerraform(this._dataSetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule_id: {
+        value: cdktf.stringToHclTerraform(this._scheduleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule: {
+        value: cdktf.listMapperHcl(quicksightRefreshScheduleScheduleToHclTerraform, true)(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "QuicksightRefreshScheduleScheduleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

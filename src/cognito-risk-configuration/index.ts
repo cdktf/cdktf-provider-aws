@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cognito_risk_configuration
 // generated from terraform resource schema
 
@@ -66,6 +61,31 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsH
     event_action: cdktf.stringToTerraform(struct!.eventAction),
     notify: cdktf.booleanToTerraform(struct!.notify),
   }
+}
+
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_action: {
+      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notify: {
+      value: cdktf.booleanToHclTerraform(struct!.notify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference extends cdktf.ComplexObject {
@@ -154,6 +174,31 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsL
   }
 }
 
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_action: {
+      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notify: {
+      value: cdktf.booleanToHclTerraform(struct!.notify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -238,6 +283,31 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsM
     event_action: cdktf.stringToTerraform(struct!.eventAction),
     notify: cdktf.booleanToTerraform(struct!.notify),
   }
+}
+
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_action: {
+      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notify: {
+      value: cdktf.booleanToHclTerraform(struct!.notify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference extends cdktf.ComplexObject {
@@ -335,6 +405,37 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsT
     low_action: cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionToTerraform(struct!.lowAction),
     medium_action: cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionToTerraform(struct!.mediumAction),
   }
+}
+
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    high_action: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionToHclTerraform(struct!.highAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionList",
+    },
+    low_action: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionToHclTerraform(struct!.lowAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionList",
+    },
+    medium_action: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionToHclTerraform(struct!.mediumAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference extends cdktf.ComplexObject {
@@ -456,6 +557,37 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
   }
 }
 
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    html_body: {
+      value: cdktf.stringToHclTerraform(struct!.htmlBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subject: {
+      value: cdktf.stringToHclTerraform(struct!.subject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_body: {
+      value: cdktf.stringToHclTerraform(struct!.textBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -566,6 +698,37 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
   }
 }
 
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    html_body: {
+      value: cdktf.stringToHclTerraform(struct!.htmlBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subject: {
+      value: cdktf.stringToHclTerraform(struct!.subject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_body: {
+      value: cdktf.stringToHclTerraform(struct!.textBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -674,6 +837,37 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
     subject: cdktf.stringToTerraform(struct!.subject),
     text_body: cdktf.stringToTerraform(struct!.textBody),
   }
+}
+
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    html_body: {
+      value: cdktf.stringToHclTerraform(struct!.htmlBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subject: {
+      value: cdktf.stringToHclTerraform(struct!.subject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_body: {
+      value: cdktf.stringToHclTerraform(struct!.textBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference extends cdktf.ComplexObject {
@@ -805,6 +999,55 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
     mfa_email: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailToTerraform(struct!.mfaEmail),
     no_action_email: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailToTerraform(struct!.noActionEmail),
   }
+}
+
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from: {
+      value: cdktf.stringToHclTerraform(struct!.from),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reply_to: {
+      value: cdktf.stringToHclTerraform(struct!.replyTo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sourceArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    block_email: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailToHclTerraform(struct!.blockEmail),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailList",
+    },
+    mfa_email: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailToHclTerraform(struct!.mfaEmail),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailList",
+    },
+    no_action_email: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailToHclTerraform(struct!.noActionEmail),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference extends cdktf.ComplexObject {
@@ -988,6 +1231,31 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationToTerraf
   }
 }
 
+
+export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsToHclTerraform(struct!.actions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsList",
+    },
+    notify_configuration: {
+      value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationToHclTerraform(struct!.notifyConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1069,6 +1337,25 @@ export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationA
   }
 }
 
+
+export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsToHclTerraform(struct?: CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference | CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_action: {
+      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1136,6 +1423,31 @@ export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationT
     event_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventFilter),
     actions: cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsToTerraform(struct!.actions),
   }
+}
+
+
+export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationToHclTerraform(struct?: CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference | CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_filter: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eventFilter),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    actions: {
+      value: cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsToHclTerraform(struct!.actions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1225,6 +1537,31 @@ export function cognitoRiskConfigurationRiskExceptionConfigurationToTerraform(st
     blocked_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.blockedIpRangeList),
     skipped_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.skippedIpRangeList),
   }
+}
+
+
+export function cognitoRiskConfigurationRiskExceptionConfigurationToHclTerraform(struct?: CognitoRiskConfigurationRiskExceptionConfigurationOutputReference | CognitoRiskConfigurationRiskExceptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    blocked_ip_range_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.blockedIpRangeList),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    skipped_ip_range_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.skippedIpRangeList),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoRiskConfigurationRiskExceptionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1467,5 +1804,49 @@ export class CognitoRiskConfiguration extends cdktf.TerraformResource {
       compromised_credentials_risk_configuration: cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationToTerraform(this._compromisedCredentialsRiskConfiguration.internalValue),
       risk_exception_configuration: cognitoRiskConfigurationRiskExceptionConfigurationToTerraform(this._riskExceptionConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_pool_id: {
+        value: cdktf.stringToHclTerraform(this._userPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_takeover_risk_configuration: {
+        value: cognitoRiskConfigurationAccountTakeoverRiskConfigurationToHclTerraform(this._accountTakeoverRiskConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CognitoRiskConfigurationAccountTakeoverRiskConfigurationList",
+      },
+      compromised_credentials_risk_configuration: {
+        value: cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationToHclTerraform(this._compromisedCredentialsRiskConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationList",
+      },
+      risk_exception_configuration: {
+        value: cognitoRiskConfigurationRiskExceptionConfigurationToHclTerraform(this._riskExceptionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CognitoRiskConfigurationRiskExceptionConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

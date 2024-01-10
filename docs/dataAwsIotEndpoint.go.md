@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotendpoint"
 
 dataawsiotendpoint.NewDataAwsIotEndpoint(scope Construct, id *string, config DataAwsIotEndpointConfig) DataAwsIotEndpoint
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotendpoint"
 
 &dataawsiotendpoint.DataAwsIotEndpointConfig {
 	Connection: interface{},

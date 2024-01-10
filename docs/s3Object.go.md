@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3Object.S3Object.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 s3object.NewS3Object(scope Construct, id *string, config S3ObjectConfig) S3Object
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3Object.S3Object.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Object.S3Object.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Object.S3Object.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Object.S3Object.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.s3Object.S3Object.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -151,6 +152,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.s3Object.S3Object.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.s3Object.S3Object.toMetadata"></a>
 
@@ -566,7 +573,7 @@ func ResetWebsiteRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3Object.S3Object.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 s3object.S3Object_IsConstruct(x interface{}) *bool
 ```
@@ -598,7 +605,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3Object.S3Object.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 s3object.S3Object_IsTerraformElement(x interface{}) *bool
 ```
@@ -612,7 +619,7 @@ s3object.S3Object_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3Object.S3Object.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 s3object.S3Object_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +633,7 @@ s3object.S3Object_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3Object.S3Object.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 s3object.S3Object_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1526,7 +1533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 &s3object.S3ObjectConfig {
 	Connection: interface{},
@@ -1556,7 +1563,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
 	ObjectLockLegalHoldStatus: *string,
 	ObjectLockMode: *string,
 	ObjectLockRetainUntilDate: *string,
-	OverrideProvider: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3Object.S3ObjectOverrideProvider,
+	OverrideProvider: github.com/cdktf/cdktf-provider-aws-go/aws.s3Object.S3ObjectOverrideProvider,
 	ServerSideEncryption: *string,
 	Source: *string,
 	SourceHash: *string,
@@ -2025,10 +2032,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 &s3object.S3ObjectOverrideProvider {
-	DefaultTags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3Object.S3ObjectOverrideProviderDefaultTags,
+	DefaultTags: github.com/cdktf/cdktf-provider-aws-go/aws.s3Object.S3ObjectOverrideProviderDefaultTags,
 }
 ```
 
@@ -2059,7 +2066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 &s3object.S3ObjectOverrideProviderDefaultTags {
 	Tags: *map[string]*string,
@@ -2093,7 +2100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 s3object.NewS3ObjectOverrideProviderDefaultTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ObjectOverrideProviderDefaultTagsOutputReference
 ```
@@ -2371,7 +2378,7 @@ func InternalValue() S3ObjectOverrideProviderDefaultTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3object"
 
 s3object.NewS3ObjectOverrideProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ObjectOverrideProviderOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdborderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.NewDataAwsDocdbOrderableDbInstance(scope Construct, id *string, config DataAwsDocdbOrderableDbInstanceConfig) DataAwsDocdbOrderableDbInstance
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -125,6 +126,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.toMetadata"></a>
 
@@ -316,7 +325,7 @@ func ResetVpc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdborderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdborderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -362,7 +371,7 @@ dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdborderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -376,7 +385,7 @@ dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdborderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -748,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdborderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdborderabledbinstance"
 
 &dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstanceConfig {
 	Connection: interface{},

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3_access_point
 // generated from terraform resource schema
 
@@ -82,6 +77,43 @@ export function s3AccessPointPublicAccessBlockConfigurationToTerraform(struct?: 
     ignore_public_acls: cdktf.booleanToTerraform(struct!.ignorePublicAcls),
     restrict_public_buckets: cdktf.booleanToTerraform(struct!.restrictPublicBuckets),
   }
+}
+
+
+export function s3AccessPointPublicAccessBlockConfigurationToHclTerraform(struct?: S3AccessPointPublicAccessBlockConfigurationOutputReference | S3AccessPointPublicAccessBlockConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    block_public_acls: {
+      value: cdktf.booleanToHclTerraform(struct!.blockPublicAcls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    block_public_policy: {
+      value: cdktf.booleanToHclTerraform(struct!.blockPublicPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ignore_public_acls: {
+      value: cdktf.booleanToHclTerraform(struct!.ignorePublicAcls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    restrict_public_buckets: {
+      value: cdktf.booleanToHclTerraform(struct!.restrictPublicBuckets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends cdktf.ComplexObject {
@@ -213,6 +245,25 @@ export function s3AccessPointVpcConfigurationToTerraform(struct?: S3AccessPointV
   return {
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
+}
+
+
+export function s3AccessPointVpcConfigurationToHclTerraform(struct?: S3AccessPointVpcConfigurationOutputReference | S3AccessPointVpcConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexObject {
@@ -494,5 +545,61 @@ export class S3AccessPoint extends cdktf.TerraformResource {
       public_access_block_configuration: s3AccessPointPublicAccessBlockConfigurationToTerraform(this._publicAccessBlockConfiguration.internalValue),
       vpc_configuration: s3AccessPointVpcConfigurationToTerraform(this._vpcConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket_account_id: {
+        value: cdktf.stringToHclTerraform(this._bucketAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_access_block_configuration: {
+        value: s3AccessPointPublicAccessBlockConfigurationToHclTerraform(this._publicAccessBlockConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3AccessPointPublicAccessBlockConfigurationList",
+      },
+      vpc_configuration: {
+        value: s3AccessPointVpcConfigurationToHclTerraform(this._vpcConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3AccessPointVpcConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

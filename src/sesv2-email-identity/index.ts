@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sesv2_email_identity
 // generated from terraform resource schema
 
@@ -67,6 +62,37 @@ export function sesv2EmailIdentityDkimSigningAttributesToTerraform(struct?: Sesv
     domain_signing_selector: cdktf.stringToTerraform(struct!.domainSigningSelector),
     next_signing_key_length: cdktf.stringToTerraform(struct!.nextSigningKeyLength),
   }
+}
+
+
+export function sesv2EmailIdentityDkimSigningAttributesToHclTerraform(struct?: Sesv2EmailIdentityDkimSigningAttributesOutputReference | Sesv2EmailIdentityDkimSigningAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_signing_private_key: {
+      value: cdktf.stringToHclTerraform(struct!.domainSigningPrivateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain_signing_selector: {
+      value: cdktf.stringToHclTerraform(struct!.domainSigningSelector),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    next_signing_key_length: {
+      value: cdktf.stringToHclTerraform(struct!.nextSigningKeyLength),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Sesv2EmailIdentityDkimSigningAttributesOutputReference extends cdktf.ComplexObject {
@@ -371,5 +397,49 @@ export class Sesv2EmailIdentity extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       dkim_signing_attributes: sesv2EmailIdentityDkimSigningAttributesToTerraform(this._dkimSigningAttributes.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      configuration_set_name: {
+        value: cdktf.stringToHclTerraform(this._configurationSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_identity: {
+        value: cdktf.stringToHclTerraform(this._emailIdentity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      dkim_signing_attributes: {
+        value: sesv2EmailIdentityDkimSigningAttributesToHclTerraform(this._dkimSigningAttributes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Sesv2EmailIdentityDkimSigningAttributesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

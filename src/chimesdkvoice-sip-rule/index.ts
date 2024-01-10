@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/chimesdkvoice_sip_rule
 // generated from terraform resource schema
 
@@ -67,6 +62,37 @@ export function chimesdkvoiceSipRuleTargetApplicationsToTerraform(struct?: Chime
     priority: cdktf.numberToTerraform(struct!.priority),
     sip_media_application_id: cdktf.stringToTerraform(struct!.sipMediaApplicationId),
   }
+}
+
+
+export function chimesdkvoiceSipRuleTargetApplicationsToHclTerraform(struct?: ChimesdkvoiceSipRuleTargetApplications | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_region: {
+      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sip_media_application_id: {
+      value: cdktf.stringToHclTerraform(struct!.sipMediaApplicationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ChimesdkvoiceSipRuleTargetApplicationsOutputReference extends cdktf.ComplexObject {
@@ -345,5 +371,49 @@ export class ChimesdkvoiceSipRule extends cdktf.TerraformResource {
       trigger_value: cdktf.stringToTerraform(this._triggerValue),
       target_applications: cdktf.listMapper(chimesdkvoiceSipRuleTargetApplicationsToTerraform, true)(this._targetApplications.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trigger_type: {
+        value: cdktf.stringToHclTerraform(this._triggerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trigger_value: {
+        value: cdktf.stringToHclTerraform(this._triggerValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_applications: {
+        value: cdktf.listMapperHcl(chimesdkvoiceSipRuleTargetApplicationsToHclTerraform, true)(this._targetApplications.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ChimesdkvoiceSipRuleTargetApplicationsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

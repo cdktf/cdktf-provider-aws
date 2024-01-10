@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codecatalyst_dev_environment
 // generated from terraform resource schema
 
@@ -84,6 +79,31 @@ export function codecatalystDevEnvironmentIdesToTerraform(struct?: CodecatalystD
     name: cdktf.stringToTerraform(struct!.name),
     runtime: cdktf.stringToTerraform(struct!.runtime),
   }
+}
+
+
+export function codecatalystDevEnvironmentIdesToHclTerraform(struct?: CodecatalystDevEnvironmentIdesOutputReference | CodecatalystDevEnvironmentIdes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    runtime: {
+      value: cdktf.stringToHclTerraform(struct!.runtime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodecatalystDevEnvironmentIdesOutputReference extends cdktf.ComplexObject {
@@ -173,6 +193,25 @@ export function codecatalystDevEnvironmentPersistentStorageToTerraform(struct?: 
   }
 }
 
+
+export function codecatalystDevEnvironmentPersistentStorageToHclTerraform(struct?: CodecatalystDevEnvironmentPersistentStorageOutputReference | CodecatalystDevEnvironmentPersistentStorage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodecatalystDevEnvironmentPersistentStorageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -238,6 +277,31 @@ export function codecatalystDevEnvironmentRepositoriesToTerraform(struct?: Codec
     branch_name: cdktf.stringToTerraform(struct!.branchName),
     repository_name: cdktf.stringToTerraform(struct!.repositoryName),
   }
+}
+
+
+export function codecatalystDevEnvironmentRepositoriesToHclTerraform(struct?: CodecatalystDevEnvironmentRepositories | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    branch_name: {
+      value: cdktf.stringToHclTerraform(struct!.branchName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repository_name: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodecatalystDevEnvironmentRepositoriesOutputReference extends cdktf.ComplexObject {
@@ -364,6 +428,37 @@ export function codecatalystDevEnvironmentTimeoutsToTerraform(struct?: Codecatal
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function codecatalystDevEnvironmentTimeoutsToHclTerraform(struct?: CodecatalystDevEnvironmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodecatalystDevEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -698,5 +793,73 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
       repositories: cdktf.listMapper(codecatalystDevEnvironmentRepositoriesToTerraform, true)(this._repositories.internalValue),
       timeouts: codecatalystDevEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inactivity_timeout_minutes: {
+        value: cdktf.numberToHclTerraform(this._inactivityTimeoutMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_name: {
+        value: cdktf.stringToHclTerraform(this._projectName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      space_name: {
+        value: cdktf.stringToHclTerraform(this._spaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ides: {
+        value: codecatalystDevEnvironmentIdesToHclTerraform(this._ides.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodecatalystDevEnvironmentIdesList",
+      },
+      persistent_storage: {
+        value: codecatalystDevEnvironmentPersistentStorageToHclTerraform(this._persistentStorage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodecatalystDevEnvironmentPersistentStorageList",
+      },
+      repositories: {
+        value: cdktf.listMapperHcl(codecatalystDevEnvironmentRepositoriesToHclTerraform, true)(this._repositories.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodecatalystDevEnvironmentRepositoriesList",
+      },
+      timeouts: {
+        value: codecatalystDevEnvironmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CodecatalystDevEnvironmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

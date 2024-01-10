@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/route53_traffic_policy_instance
 // generated from terraform resource schema
 
@@ -198,5 +193,49 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
       traffic_policy_version: cdktf.numberToTerraform(this._trafficPolicyVersion),
       ttl: cdktf.numberToTerraform(this._ttl),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hosted_zone_id: {
+        value: cdktf.stringToHclTerraform(this._hostedZoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_policy_id: {
+        value: cdktf.stringToHclTerraform(this._trafficPolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_policy_version: {
+        value: cdktf.numberToHclTerraform(this._trafficPolicyVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/organizations_organization
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function organizationsOrganizationAccountsToTerraform(struct?: Organizati
   }
   return {
   }
+}
+
+
+export function organizationsOrganizationAccountsToHclTerraform(struct?: OrganizationsOrganizationAccounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class OrganizationsOrganizationAccountsOutputReference extends cdktf.ComplexObject {
@@ -128,6 +134,17 @@ export function organizationsOrganizationNonMasterAccountsToTerraform(struct?: O
   }
 }
 
+
+export function organizationsOrganizationNonMasterAccountsToHclTerraform(struct?: OrganizationsOrganizationNonMasterAccounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class OrganizationsOrganizationNonMasterAccountsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -212,6 +229,17 @@ export function organizationsOrganizationRootsPolicyTypesToTerraform(struct?: Or
   }
 }
 
+
+export function organizationsOrganizationRootsPolicyTypesToHclTerraform(struct?: OrganizationsOrganizationRootsPolicyTypes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class OrganizationsOrganizationRootsPolicyTypesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -279,6 +307,17 @@ export function organizationsOrganizationRootsToTerraform(struct?: Organizations
   }
   return {
   }
+}
+
+
+export function organizationsOrganizationRootsToHclTerraform(struct?: OrganizationsOrganizationRoots): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class OrganizationsOrganizationRootsOutputReference extends cdktf.ComplexObject {
@@ -524,5 +563,37 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
       feature_set: cdktf.stringToTerraform(this._featureSet),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_service_access_principals: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._awsServiceAccessPrincipals),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      enabled_policy_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._enabledPolicyTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      feature_set: {
+        value: cdktf.stringToHclTerraform(this._featureSet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

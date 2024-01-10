@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecr_pull_through_cache_rule
 // generated from terraform resource schema
 
@@ -146,5 +141,31 @@ export class EcrPullThroughCacheRule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       upstream_registry_url: cdktf.stringToTerraform(this._upstreamRegistryUrl),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ecr_repository_prefix: {
+        value: cdktf.stringToHclTerraform(this._ecrRepositoryPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      upstream_registry_url: {
+        value: cdktf.stringToHclTerraform(this._upstreamRegistryUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

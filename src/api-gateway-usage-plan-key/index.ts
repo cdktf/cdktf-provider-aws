@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/api_gateway_usage_plan_key
 // generated from terraform resource schema
 
@@ -170,5 +165,37 @@ export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
       key_type: cdktf.stringToTerraform(this._keyType),
       usage_plan_id: cdktf.stringToTerraform(this._usagePlanId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_id: {
+        value: cdktf.stringToHclTerraform(this._keyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_type: {
+        value: cdktf.stringToHclTerraform(this._keyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      usage_plan_id: {
+        value: cdktf.stringToHclTerraform(this._usagePlanId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

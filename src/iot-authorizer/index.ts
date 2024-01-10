@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iot_authorizer
 // generated from terraform resource schema
 
@@ -256,5 +251,61 @@ export class IotAuthorizer extends cdktf.TerraformResource {
       token_key_name: cdktf.stringToTerraform(this._tokenKeyName),
       token_signing_public_keys: cdktf.hashMapper(cdktf.stringToTerraform)(this._tokenSigningPublicKeys),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorizer_function_arn: {
+        value: cdktf.stringToHclTerraform(this._authorizerFunctionArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_caching_for_http: {
+        value: cdktf.booleanToHclTerraform(this._enableCachingForHttp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signing_disabled: {
+        value: cdktf.booleanToHclTerraform(this._signingDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_key_name: {
+        value: cdktf.stringToHclTerraform(this._tokenKeyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_signing_public_keys: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tokenSigningPublicKeys),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

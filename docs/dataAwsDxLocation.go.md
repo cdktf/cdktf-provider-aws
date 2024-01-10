@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.NewDataAwsDxLocation(scope Construct, id *string, config DataAwsDxLocationConfig) DataAwsDxLocation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawsdxlocation.DataAwsDxLocation_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 &dataawsdxlocation.DataAwsDxLocationConfig {
 	Connection: interface{},

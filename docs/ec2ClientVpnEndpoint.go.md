@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.NewEc2ClientVpnEndpoint(scope Construct, id *string, config Ec2ClientVpnEndpointConfig) Ec2ClientVpnEndpoint
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -142,6 +143,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.toMetadata"></a>
 
@@ -521,7 +528,7 @@ func ResetVpnPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.Ec2ClientVpnEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +560,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.Ec2ClientVpnEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +574,7 @@ ec2clientvpnendpoint.Ec2ClientVpnEndpoint_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.Ec2ClientVpnEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +588,7 @@ ec2clientvpnendpoint.Ec2ClientVpnEndpoint_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.Ec2ClientVpnEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1239,7 +1246,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 &ec2clientvpnendpoint.Ec2ClientVpnEndpointAuthenticationOptions {
 	Type: *string,
@@ -1327,7 +1334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 &ec2clientvpnendpoint.Ec2ClientVpnEndpointClientConnectOptions {
 	Enabled: interface{},
@@ -1373,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 &ec2clientvpnendpoint.Ec2ClientVpnEndpointClientLoginBannerOptions {
 	BannerText: *string,
@@ -1419,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 &ec2clientvpnendpoint.Ec2ClientVpnEndpointConfig {
 	Connection: interface{},
@@ -1431,10 +1438,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
 	Provisioners: *[]interface{},
 	AuthenticationOptions: interface{},
 	ClientCidrBlock: *string,
-	ConnectionLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptions,
+	ConnectionLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptions,
 	ServerCertificateArn: *string,
-	ClientConnectOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptions,
-	ClientLoginBannerOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptions,
+	ClientConnectOptions: github.com/cdktf/cdktf-provider-aws-go/aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptions,
+	ClientLoginBannerOptions: github.com/cdktf/cdktf-provider-aws-go/aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptions,
 	Description: *string,
 	DnsServers: *[]*string,
 	Id: *string,
@@ -1784,7 +1791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 &ec2clientvpnendpoint.Ec2ClientVpnEndpointConnectionLogOptions {
 	Enabled: interface{},
@@ -1846,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.NewEc2ClientVpnEndpointAuthenticationOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2ClientVpnEndpointAuthenticationOptionsList
 ```
@@ -1887,10 +1894,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1989,7 +2013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.NewEc2ClientVpnEndpointAuthenticationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2ClientVpnEndpointAuthenticationOptionsOutputReference
 ```
@@ -2394,7 +2418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.NewEc2ClientVpnEndpointClientConnectOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2ClientVpnEndpointClientConnectOptionsOutputReference
 ```
@@ -2701,7 +2725,7 @@ func InternalValue() Ec2ClientVpnEndpointClientConnectOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.NewEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference
 ```
@@ -3008,7 +3032,7 @@ func InternalValue() Ec2ClientVpnEndpointClientLoginBannerOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2clientvpnendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2clientvpnendpoint"
 
 ec2clientvpnendpoint.NewEc2ClientVpnEndpointConnectionLogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2ClientVpnEndpointConnectionLogOptionsOutputReference
 ```

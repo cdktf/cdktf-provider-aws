@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/verifiedaccess_instance_logging_configuration
 // generated from terraform resource schema
 
@@ -50,6 +45,31 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLo
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     log_group: cdktf.stringToTerraform(struct!.logGroup),
   }
+}
+
+
+export function verifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group: {
+      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference extends cdktf.ComplexObject {
@@ -139,6 +159,31 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataF
     delivery_stream: cdktf.stringToTerraform(struct!.deliveryStream),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehose): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delivery_stream: {
+      value: cdktf.stringToHclTerraform(struct!.deliveryStream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference extends cdktf.ComplexObject {
@@ -238,6 +283,43 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToTerrafor
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_owner: {
+      value: cdktf.stringToHclTerraform(struct!.bucketOwner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference extends cdktf.ComplexObject {
@@ -392,6 +474,49 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsToTerraform(
     kinesis_data_firehose: verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseToTerraform(struct!.kinesisDataFirehose),
     s3: verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToTerraform(struct!.s3),
   }
+}
+
+
+export function verifiedaccessInstanceLoggingConfigurationAccessLogsToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    include_trust_context: {
+      value: cdktf.booleanToHclTerraform(struct!.includeTrustContext),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_version: {
+      value: cdktf.stringToHclTerraform(struct!.logVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logs: {
+      value: verifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsToHclTerraform(struct!.cloudwatchLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsList",
+    },
+    kinesis_data_firehose: {
+      value: verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseToHclTerraform(struct!.kinesisDataFirehose),
+      isBlock: true,
+      type: "list",
+      storageClassType: "VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseList",
+    },
+    s3: {
+      value: verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToHclTerraform(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "VerifiedaccessInstanceLoggingConfigurationAccessLogsS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference extends cdktf.ComplexObject {
@@ -643,5 +768,31 @@ export class VerifiedaccessInstanceLoggingConfiguration extends cdktf.TerraformR
       verifiedaccess_instance_id: cdktf.stringToTerraform(this._verifiedaccessInstanceId),
       access_logs: verifiedaccessInstanceLoggingConfigurationAccessLogsToTerraform(this._accessLogs.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      verifiedaccess_instance_id: {
+        value: cdktf.stringToHclTerraform(this._verifiedaccessInstanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      access_logs: {
+        value: verifiedaccessInstanceLoggingConfigurationAccessLogsToHclTerraform(this._accessLogs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessInstanceLoggingConfigurationAccessLogsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

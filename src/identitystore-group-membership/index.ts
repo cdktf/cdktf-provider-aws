@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/identitystore_group_membership
 // generated from terraform resource schema
 
@@ -165,5 +160,37 @@ export class IdentitystoreGroupMembership extends cdktf.TerraformResource {
       identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
       member_id: cdktf.stringToTerraform(this._memberId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group_id: {
+        value: cdktf.stringToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_store_id: {
+        value: cdktf.stringToHclTerraform(this._identityStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_id: {
+        value: cdktf.stringToHclTerraform(this._memberId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

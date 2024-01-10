@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_capacity_reservation
 // generated from terraform resource schema
 
@@ -409,5 +404,103 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       tenancy: cdktf.stringToTerraform(this._tenancy),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ebs_optimized: {
+        value: cdktf.booleanToHclTerraform(this._ebsOptimized),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      end_date: {
+        value: cdktf.stringToHclTerraform(this._endDate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      end_date_type: {
+        value: cdktf.stringToHclTerraform(this._endDateType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ephemeral_storage: {
+        value: cdktf.booleanToHclTerraform(this._ephemeralStorage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_count: {
+        value: cdktf.numberToHclTerraform(this._instanceCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      instance_match_criteria: {
+        value: cdktf.stringToHclTerraform(this._instanceMatchCriteria),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_platform: {
+        value: cdktf.stringToHclTerraform(this._instancePlatform),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      outpost_arn: {
+        value: cdktf.stringToHclTerraform(this._outpostArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      placement_group_arn: {
+        value: cdktf.stringToHclTerraform(this._placementGroupArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tenancy: {
+        value: cdktf.stringToHclTerraform(this._tenancy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloudfront_function
 // generated from terraform resource schema
 
@@ -224,5 +219,49 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
       publish: cdktf.booleanToTerraform(this._publish),
       runtime: cdktf.stringToTerraform(this._runtime),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      code: {
+        value: cdktf.stringToHclTerraform(this._code),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      publish: {
+        value: cdktf.booleanToHclTerraform(this._publish),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      runtime: {
+        value: cdktf.stringToHclTerraform(this._runtime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

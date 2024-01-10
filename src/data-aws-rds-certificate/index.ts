@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/rds_certificate
 // generated from terraform resource schema
 
@@ -160,5 +155,25 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       latest_valid_till: cdktf.booleanToTerraform(this._latestValidTill),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      latest_valid_till: {
+        value: cdktf.booleanToHclTerraform(this._latestValidTill),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

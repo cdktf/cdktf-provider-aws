@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3_directory_bucket
 // generated from terraform resource schema
 
@@ -55,6 +50,31 @@ export function s3DirectoryBucketLocationToTerraform(struct?: S3DirectoryBucketL
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function s3DirectoryBucketLocationToHclTerraform(struct?: S3DirectoryBucketLocation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3DirectoryBucketLocationOutputReference extends cdktf.ComplexObject {
@@ -318,5 +338,43 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       location: cdktf.listMapper(s3DirectoryBucketLocationToTerraform, true)(this._location.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_redundancy: {
+        value: cdktf.stringToHclTerraform(this._dataRedundancy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.listMapperHcl(s3DirectoryBucketLocationToHclTerraform, true)(this._location.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3DirectoryBucketLocationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

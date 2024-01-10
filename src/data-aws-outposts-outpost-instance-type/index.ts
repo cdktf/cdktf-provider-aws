@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/outposts_outpost_instance_type
 // generated from terraform resource schema
 
@@ -166,5 +161,37 @@ export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSourc
       instance_type: cdktf.stringToTerraform(this._instanceType),
       preferred_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceTypes),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_instance_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredInstanceTypes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

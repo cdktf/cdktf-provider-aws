@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayer(scope Construct, id *string, config OpsworksJavaAppLayerConfig) OpsworksJavaAppLayer
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -156,6 +157,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.toMetadata"></a>
 
@@ -613,7 +620,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_IsConstruct(x interface{}) *bool
 ```
@@ -645,7 +652,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -659,7 +666,7 @@ opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -673,7 +680,7 @@ opsworksjavaapplayer.OpsworksJavaAppLayer_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.OpsworksJavaAppLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1573,7 +1580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1621,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1793,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerConfig {
 	Connection: interface{},
@@ -1809,7 +1816,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1827,7 +1834,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
 	JvmOptions: *string,
 	JvmType: *string,
 	JvmVersion: *string,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling,
 	Name: *string,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
@@ -2324,7 +2331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerEbsVolume {
 	MountPoint: *string,
@@ -2440,12 +2447,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2504,7 +2511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2620,7 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 &opsworksjavaapplayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2738,7 +2745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2779,10 +2786,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2881,7 +2905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3453,7 +3477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerCloudwatchConfigurationOutputReference
 ```
@@ -3773,7 +3797,7 @@ func InternalValue() OpsworksJavaAppLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksJavaAppLayerEbsVolumeList
 ```
@@ -3814,10 +3838,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3916,7 +3957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksJavaAppLayerEbsVolumeOutputReference
 ```
@@ -4365,7 +4406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4817,7 +4858,7 @@ func InternalValue() OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference
 ```
@@ -5179,7 +5220,7 @@ func InternalValue() OpsworksJavaAppLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksjavaapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksjavaapplayer"
 
 opsworksjavaapplayer.NewOpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/amplify_domain_association
 // generated from terraform resource schema
 
@@ -62,6 +57,31 @@ export function amplifyDomainAssociationSubDomainToTerraform(struct?: AmplifyDom
     branch_name: cdktf.stringToTerraform(struct!.branchName),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function amplifyDomainAssociationSubDomainToHclTerraform(struct?: AmplifyDomainAssociationSubDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    branch_name: {
+      value: cdktf.stringToHclTerraform(struct!.branchName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AmplifyDomainAssociationSubDomainOutputReference extends cdktf.ComplexObject {
@@ -344,5 +364,49 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
       wait_for_verification: cdktf.booleanToTerraform(this._waitForVerification),
       sub_domain: cdktf.listMapper(amplifyDomainAssociationSubDomainToTerraform, true)(this._subDomain.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_auto_sub_domain: {
+        value: cdktf.booleanToHclTerraform(this._enableAutoSubDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_verification: {
+        value: cdktf.booleanToHclTerraform(this._waitForVerification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sub_domain: {
+        value: cdktf.listMapperHcl(amplifyDomainAssociationSubDomainToHclTerraform, true)(this._subDomain.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AmplifyDomainAssociationSubDomainList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

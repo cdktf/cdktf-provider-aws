@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sfn_alias
 // generated from terraform resource schema
 
@@ -60,6 +55,31 @@ export function sfnAliasRoutingConfigurationToTerraform(struct?: SfnAliasRouting
     state_machine_version_arn: cdktf.stringToTerraform(struct!.stateMachineVersionArn),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
+}
+
+
+export function sfnAliasRoutingConfigurationToHclTerraform(struct?: SfnAliasRoutingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    state_machine_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.stateMachineVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SfnAliasRoutingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -183,6 +203,37 @@ export function sfnAliasTimeoutsToTerraform(struct?: SfnAliasTimeouts | cdktf.IR
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function sfnAliasTimeoutsToHclTerraform(struct?: SfnAliasTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SfnAliasTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -446,5 +497,43 @@ export class SfnAlias extends cdktf.TerraformResource {
       routing_configuration: cdktf.listMapper(sfnAliasRoutingConfigurationToTerraform, true)(this._routingConfiguration.internalValue),
       timeouts: sfnAliasTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routing_configuration: {
+        value: cdktf.listMapperHcl(sfnAliasRoutingConfigurationToHclTerraform, true)(this._routingConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SfnAliasRoutingConfigurationList",
+      },
+      timeouts: {
+        value: sfnAliasTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SfnAliasTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

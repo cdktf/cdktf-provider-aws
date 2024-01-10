@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lambda_function
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataAwsLambdaFunctionDeadLetterConfigToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsLambdaFunctionDeadLetterConfigToHclTerraform(struct?: DataAwsLambdaFunctionDeadLetterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLambdaFunctionDeadLetterConfigOutputReference extends cdktf.ComplexObject {
@@ -106,6 +112,17 @@ export function dataAwsLambdaFunctionEnvironmentToTerraform(struct?: DataAwsLamb
   }
   return {
   }
+}
+
+
+export function dataAwsLambdaFunctionEnvironmentToHclTerraform(struct?: DataAwsLambdaFunctionEnvironment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObject {
@@ -173,6 +190,17 @@ export function dataAwsLambdaFunctionEphemeralStorageToTerraform(struct?: DataAw
   }
 }
 
+
+export function dataAwsLambdaFunctionEphemeralStorageToHclTerraform(struct?: DataAwsLambdaFunctionEphemeralStorage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsLambdaFunctionEphemeralStorageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -235,6 +263,17 @@ export function dataAwsLambdaFunctionFileSystemConfigToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsLambdaFunctionFileSystemConfigToHclTerraform(struct?: DataAwsLambdaFunctionFileSystemConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLambdaFunctionFileSystemConfigOutputReference extends cdktf.ComplexObject {
@@ -306,6 +345,17 @@ export function dataAwsLambdaFunctionTracingConfigToTerraform(struct?: DataAwsLa
   }
 }
 
+
+export function dataAwsLambdaFunctionTracingConfigToHclTerraform(struct?: DataAwsLambdaFunctionTracingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsLambdaFunctionTracingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -368,6 +418,17 @@ export function dataAwsLambdaFunctionVpcConfigToTerraform(struct?: DataAwsLambda
   }
   return {
   }
+}
+
+
+export function dataAwsLambdaFunctionVpcConfigToHclTerraform(struct?: DataAwsLambdaFunctionVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -717,5 +778,37 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
       qualifier: cdktf.stringToTerraform(this._qualifier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      qualifier: {
+        value: cdktf.stringToHclTerraform(this._qualifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

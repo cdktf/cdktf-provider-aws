@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cleanrooms_collaboration
 // generated from terraform resource schema
 
@@ -89,6 +84,43 @@ export function cleanroomsCollaborationDataEncryptionMetadataToTerraform(struct?
     allow_joins_on_columns_with_different_names: cdktf.booleanToTerraform(struct!.allowJoinsOnColumnsWithDifferentNames),
     preserve_nulls: cdktf.booleanToTerraform(struct!.preserveNulls),
   }
+}
+
+
+export function cleanroomsCollaborationDataEncryptionMetadataToHclTerraform(struct?: CleanroomsCollaborationDataEncryptionMetadataOutputReference | CleanroomsCollaborationDataEncryptionMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_clear_text: {
+      value: cdktf.booleanToHclTerraform(struct!.allowClearText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_duplicates: {
+      value: cdktf.booleanToHclTerraform(struct!.allowDuplicates),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_joins_on_columns_with_different_names: {
+      value: cdktf.booleanToHclTerraform(struct!.allowJoinsOnColumnsWithDifferentNames),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    preserve_nulls: {
+      value: cdktf.booleanToHclTerraform(struct!.preserveNulls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CleanroomsCollaborationDataEncryptionMetadataOutputReference extends cdktf.ComplexObject {
@@ -218,6 +250,37 @@ export function cleanroomsCollaborationMemberToTerraform(struct?: CleanroomsColl
     display_name: cdktf.stringToTerraform(struct!.displayName),
     member_abilities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.memberAbilities),
   }
+}
+
+
+export function cleanroomsCollaborationMemberToHclTerraform(struct?: CleanroomsCollaborationMember | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.stringToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    member_abilities: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.memberAbilities),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CleanroomsCollaborationMemberOutputReference extends cdktf.ComplexObject {
@@ -365,6 +428,37 @@ export function cleanroomsCollaborationTimeoutsToTerraform(struct?: CleanroomsCo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function cleanroomsCollaborationTimeoutsToHclTerraform(struct?: CleanroomsCollaborationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CleanroomsCollaborationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -719,5 +813,73 @@ export class CleanroomsCollaboration extends cdktf.TerraformResource {
       member: cdktf.listMapper(cleanroomsCollaborationMemberToTerraform, true)(this._member.internalValue),
       timeouts: cleanroomsCollaborationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      creator_display_name: {
+        value: cdktf.stringToHclTerraform(this._creatorDisplayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creator_member_abilities: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._creatorMemberAbilities),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query_log_status: {
+        value: cdktf.stringToHclTerraform(this._queryLogStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      data_encryption_metadata: {
+        value: cleanroomsCollaborationDataEncryptionMetadataToHclTerraform(this._dataEncryptionMetadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CleanroomsCollaborationDataEncryptionMetadataList",
+      },
+      member: {
+        value: cdktf.listMapperHcl(cleanroomsCollaborationMemberToHclTerraform, true)(this._member.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CleanroomsCollaborationMemberList",
+      },
+      timeouts: {
+        value: cleanroomsCollaborationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CleanroomsCollaborationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

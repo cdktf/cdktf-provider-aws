@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/acm_certificate
 // generated from terraform resource schema
 
@@ -88,6 +83,17 @@ export function acmCertificateDomainValidationOptionsToTerraform(struct?: AcmCer
   }
 }
 
+
+export function acmCertificateDomainValidationOptionsToHclTerraform(struct?: AcmCertificateDomainValidationOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AcmCertificateDomainValidationOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -165,6 +171,17 @@ export function acmCertificateRenewalSummaryToTerraform(struct?: AcmCertificateR
   }
   return {
   }
+}
+
+
+export function acmCertificateRenewalSummaryToHclTerraform(struct?: AcmCertificateRenewalSummary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class AcmCertificateRenewalSummaryOutputReference extends cdktf.ComplexObject {
@@ -246,6 +263,25 @@ export function acmCertificateOptionsToTerraform(struct?: AcmCertificateOptionsO
   }
 }
 
+
+export function acmCertificateOptionsToHclTerraform(struct?: AcmCertificateOptionsOutputReference | AcmCertificateOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_transparency_logging_preference: {
+      value: cdktf.stringToHclTerraform(struct!.certificateTransparencyLoggingPreference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AcmCertificateOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -314,6 +350,31 @@ export function acmCertificateValidationOptionToTerraform(struct?: AcmCertificat
     domain_name: cdktf.stringToTerraform(struct!.domainName),
     validation_domain: cdktf.stringToTerraform(struct!.validationDomain),
   }
+}
+
+
+export function acmCertificateValidationOptionToHclTerraform(struct?: AcmCertificateValidationOption | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.domainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    validation_domain: {
+      value: cdktf.stringToHclTerraform(struct!.validationDomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AcmCertificateValidationOptionOutputReference extends cdktf.ComplexObject {
@@ -781,5 +842,97 @@ export class AcmCertificate extends cdktf.TerraformResource {
       options: acmCertificateOptionsToTerraform(this._options.internalValue),
       validation_option: cdktf.listMapper(acmCertificateValidationOptionToTerraform, true)(this._validationOption.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_authority_arn: {
+        value: cdktf.stringToHclTerraform(this._certificateAuthorityArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_body: {
+        value: cdktf.stringToHclTerraform(this._certificateBody),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_chain: {
+        value: cdktf.stringToHclTerraform(this._certificateChain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      early_renewal_duration: {
+        value: cdktf.stringToHclTerraform(this._earlyRenewalDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_algorithm: {
+        value: cdktf.stringToHclTerraform(this._keyAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subject_alternative_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subjectAlternativeNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      validation_method: {
+        value: cdktf.stringToHclTerraform(this._validationMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: acmCertificateOptionsToHclTerraform(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AcmCertificateOptionsList",
+      },
+      validation_option: {
+        value: cdktf.listMapperHcl(acmCertificateValidationOptionToHclTerraform, true)(this._validationOption.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AcmCertificateValidationOptionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

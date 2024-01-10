@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sns_topic_subscription
 // generated from terraform resource schema
 
@@ -378,5 +373,91 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
       subscription_role_arn: cdktf.stringToTerraform(this._subscriptionRoleArn),
       topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      confirmation_timeout_in_minutes: {
+        value: cdktf.numberToHclTerraform(this._confirmationTimeoutInMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      delivery_policy: {
+        value: cdktf.stringToHclTerraform(this._deliveryPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint: {
+        value: cdktf.stringToHclTerraform(this._endpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_auto_confirms: {
+        value: cdktf.booleanToHclTerraform(this._endpointAutoConfirms),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filter_policy: {
+        value: cdktf.stringToHclTerraform(this._filterPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter_policy_scope: {
+        value: cdktf.stringToHclTerraform(this._filterPolicyScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      raw_message_delivery: {
+        value: cdktf.booleanToHclTerraform(this._rawMessageDelivery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      redrive_policy: {
+        value: cdktf.stringToHclTerraform(this._redrivePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replay_policy: {
+        value: cdktf.stringToHclTerraform(this._replayPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subscription_role_arn: {
+        value: cdktf.stringToHclTerraform(this._subscriptionRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_arn: {
+        value: cdktf.stringToHclTerraform(this._topicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

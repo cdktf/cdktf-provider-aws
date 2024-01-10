@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3control_multi_region_access_point
 // generated from terraform resource schema
 
@@ -66,6 +61,43 @@ export function s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToTerrafo
     ignore_public_acls: cdktf.booleanToTerraform(struct!.ignorePublicAcls),
     restrict_public_buckets: cdktf.booleanToTerraform(struct!.restrictPublicBuckets),
   }
+}
+
+
+export function s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToHclTerraform(struct?: S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference | S3ControlMultiRegionAccessPointDetailsPublicAccessBlock): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    block_public_acls: {
+      value: cdktf.booleanToHclTerraform(struct!.blockPublicAcls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    block_public_policy: {
+      value: cdktf.booleanToHclTerraform(struct!.blockPublicPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ignore_public_acls: {
+      value: cdktf.booleanToHclTerraform(struct!.ignorePublicAcls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    restrict_public_buckets: {
+      value: cdktf.booleanToHclTerraform(struct!.restrictPublicBuckets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference extends cdktf.ComplexObject {
@@ -204,6 +236,31 @@ export function s3ControlMultiRegionAccessPointDetailsRegionToTerraform(struct?:
   }
 }
 
+
+export function s3ControlMultiRegionAccessPointDetailsRegionToHclTerraform(struct?: S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_account_id: {
+      value: cdktf.stringToHclTerraform(struct!.bucketAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -339,6 +396,37 @@ export function s3ControlMultiRegionAccessPointDetailsToTerraform(struct?: S3Con
   }
 }
 
+
+export function s3ControlMultiRegionAccessPointDetailsToHclTerraform(struct?: S3ControlMultiRegionAccessPointDetailsOutputReference | S3ControlMultiRegionAccessPointDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public_access_block: {
+      value: s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToHclTerraform(struct!.publicAccessBlock),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3ControlMultiRegionAccessPointDetailsPublicAccessBlockList",
+    },
+    region: {
+      value: cdktf.listMapperHcl(s3ControlMultiRegionAccessPointDetailsRegionToHclTerraform, true)(struct!.region),
+      isBlock: true,
+      type: "set",
+      storageClassType: "S3ControlMultiRegionAccessPointDetailsRegionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -445,6 +533,31 @@ export function s3ControlMultiRegionAccessPointTimeoutsToTerraform(struct?: S3Co
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function s3ControlMultiRegionAccessPointTimeoutsToHclTerraform(struct?: S3ControlMultiRegionAccessPointTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -681,5 +794,37 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
       details: s3ControlMultiRegionAccessPointDetailsToTerraform(this._details.internalValue),
       timeouts: s3ControlMultiRegionAccessPointTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      details: {
+        value: s3ControlMultiRegionAccessPointDetailsToHclTerraform(this._details.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3ControlMultiRegionAccessPointDetailsList",
+      },
+      timeouts: {
+        value: s3ControlMultiRegionAccessPointTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "S3ControlMultiRegionAccessPointTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

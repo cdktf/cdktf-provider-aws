@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloudfront_field_level_encryption_profile
 // generated from terraform resource schema
 
@@ -49,6 +44,25 @@ export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFiel
   return {
     items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
   }
+}
+
+
+export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsToHclTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference | CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.items),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference extends cdktf.ComplexObject {
@@ -126,6 +140,37 @@ export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTe
     public_key_id: cdktf.stringToTerraform(struct!.publicKeyId),
     field_patterns: cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsToTerraform(struct!.fieldPatterns),
   }
+}
+
+
+export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToHclTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    provider_id: {
+      value: cdktf.stringToHclTerraform(struct!.providerId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.publicKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_patterns: {
+      value: cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsToHclTerraform(struct!.fieldPatterns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference extends cdktf.ComplexObject {
@@ -260,6 +305,25 @@ export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToTerrafo
   return {
     items: cdktf.listMapper(cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTerraform, true)(struct!.items),
   }
+}
+
+
+export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToHclTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference | CloudfrontFieldLevelEncryptionProfileEncryptionEntities): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToHclTerraform, true)(struct!.items),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference extends cdktf.ComplexObject {
@@ -451,5 +515,37 @@ export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResour
       name: cdktf.stringToTerraform(this._name),
       encryption_entities: cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToTerraform(this._encryptionEntities.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_entities: {
+        value: cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToHclTerraform(this._encryptionEntities.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

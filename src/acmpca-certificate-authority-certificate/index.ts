@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/acmpca_certificate_authority_certificate
 // generated from terraform resource schema
 
@@ -163,5 +158,37 @@ export class AcmpcaCertificateAuthorityCertificate extends cdktf.TerraformResour
       certificate_chain: cdktf.stringToTerraform(this._certificateChain),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate: {
+        value: cdktf.stringToHclTerraform(this._certificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_authority_arn: {
+        value: cdktf.stringToHclTerraform(this._certificateAuthorityArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_chain: {
+        value: cdktf.stringToHclTerraform(this._certificateChain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

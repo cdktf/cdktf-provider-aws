@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.NewLightsailContainerServiceDeploymentVersion(scope Construct, id *string, config LightsailContainerServiceDeploymentVersionConfig) LightsailContainerServiceDeploymentVersion
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.toMetadata"></a>
 
@@ -431,7 +438,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersion_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +484,7 @@ lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -863,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 &lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersionConfig {
 	Connection: interface{},
@@ -876,8 +883,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservice
 	Container: interface{},
 	ServiceName: *string,
 	Id: *string,
-	PublicEndpoint: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpoint,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionTimeouts,
+	PublicEndpoint: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpoint,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionTimeouts,
 }
 ```
 
@@ -1044,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 &lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersionContainer {
 	ContainerName: *string,
@@ -1132,12 +1139,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 &lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersionPublicEndpoint {
 	ContainerName: *string,
 	ContainerPort: *f64,
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheck,
 }
 ```
 
@@ -1194,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 &lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheck {
 	HealthyThreshold: *f64,
@@ -1296,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 &lightsailcontainerservicedeploymentversion.LightsailContainerServiceDeploymentVersionTimeouts {
 	Create: *string,
@@ -1330,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.NewLightsailContainerServiceDeploymentVersionContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailContainerServiceDeploymentVersionContainerList
 ```
@@ -1371,10 +1378,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1473,7 +1497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.NewLightsailContainerServiceDeploymentVersionContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LightsailContainerServiceDeploymentVersionContainerOutputReference
 ```
@@ -1871,7 +1895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference
 ```
@@ -2294,7 +2318,7 @@ func InternalValue() LightsailContainerServiceDeploymentVersionPublicEndpointHea
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.NewLightsailContainerServiceDeploymentVersionPublicEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference
 ```
@@ -2622,7 +2646,7 @@ func InternalValue() LightsailContainerServiceDeploymentVersionPublicEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailcontainerservicedeploymentversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailcontainerservicedeploymentversion"
 
 lightsailcontainerservicedeploymentversion.NewLightsailContainerServiceDeploymentVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailContainerServiceDeploymentVersionTimeoutsOutputReference
 ```

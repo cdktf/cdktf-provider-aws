@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/securitylake_data_lake
 // generated from terraform resource schema
 
@@ -48,6 +43,25 @@ export function securitylakeDataLakeConfigurationEncryptionConfigurationToTerraf
   return {
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
   }
+}
+
+
+export function securitylakeDataLakeConfigurationEncryptionConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -145,6 +159,25 @@ export function securitylakeDataLakeConfigurationLifecycleConfigurationExpiratio
   return {
     days: cdktf.numberToTerraform(struct!.days),
   }
+}
+
+
+export function securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference extends cdktf.ComplexObject {
@@ -247,6 +280,31 @@ export function securitylakeDataLakeConfigurationLifecycleConfigurationTransitio
     days: cdktf.numberToTerraform(struct!.days),
     storage_class: cdktf.stringToTerraform(struct!.storageClass),
   }
+}
+
+
+export function securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference extends cdktf.ComplexObject {
@@ -377,6 +435,31 @@ export function securitylakeDataLakeConfigurationLifecycleConfigurationToTerrafo
   }
 }
 
+
+export function securitylakeDataLakeConfigurationLifecycleConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expiration: {
+      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToHclTerraform, true)(struct!.expiration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList",
+    },
+    transition: {
+      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToHclTerraform, true)(struct!.transition),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -499,6 +582,31 @@ export function securitylakeDataLakeConfigurationReplicationConfigurationToTerra
     regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
+}
+
+
+export function securitylakeDataLakeConfigurationReplicationConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference extends cdktf.ComplexObject {
@@ -637,6 +745,43 @@ export function securitylakeDataLakeConfigurationToTerraform(struct?: Securityla
     lifecycle_configuration: cdktf.listMapper(securitylakeDataLakeConfigurationLifecycleConfigurationToTerraform, true)(struct!.lifecycleConfiguration),
     replication_configuration: cdktf.listMapper(securitylakeDataLakeConfigurationReplicationConfigurationToTerraform, true)(struct!.replicationConfiguration),
   }
+}
+
+
+export function securitylakeDataLakeConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption_configuration: {
+      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationEncryptionConfigurationToHclTerraform, false)(struct!.encryptionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecuritylakeDataLakeConfigurationEncryptionConfigurationList",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_configuration: {
+      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationToHclTerraform, true)(struct!.lifecycleConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecuritylakeDataLakeConfigurationLifecycleConfigurationList",
+    },
+    replication_configuration: {
+      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationReplicationConfigurationToHclTerraform, true)(struct!.replicationConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecuritylakeDataLakeConfigurationReplicationConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.ComplexObject {
@@ -813,6 +958,37 @@ export function securitylakeDataLakeTimeoutsToTerraform(struct?: SecuritylakeDat
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function securitylakeDataLakeTimeoutsToHclTerraform(struct?: SecuritylakeDataLakeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecuritylakeDataLakeTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1072,5 +1248,37 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
       configuration: cdktf.listMapper(securitylakeDataLakeConfigurationToTerraform, true)(this._configuration.internalValue),
       timeouts: securitylakeDataLakeTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      meta_store_manager_role_arn: {
+        value: cdktf.stringToHclTerraform(this._metaStoreManagerRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      configuration: {
+        value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationToHclTerraform, true)(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecuritylakeDataLakeConfigurationList",
+      },
+      timeouts: {
+        value: securitylakeDataLakeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SecuritylakeDataLakeTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

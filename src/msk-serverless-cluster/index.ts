@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/msk_serverless_cluster
 // generated from terraform resource schema
 
@@ -65,6 +60,25 @@ export function mskServerlessClusterClientAuthenticationSaslIamToTerraform(struc
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function mskServerlessClusterClientAuthenticationSaslIamToHclTerraform(struct?: MskServerlessClusterClientAuthenticationSaslIamOutputReference | MskServerlessClusterClientAuthenticationSaslIam): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskServerlessClusterClientAuthenticationSaslIamOutputReference extends cdktf.ComplexObject {
@@ -131,6 +145,25 @@ export function mskServerlessClusterClientAuthenticationSaslToTerraform(struct?:
   }
 }
 
+
+export function mskServerlessClusterClientAuthenticationSaslToHclTerraform(struct?: MskServerlessClusterClientAuthenticationSaslOutputReference | MskServerlessClusterClientAuthenticationSasl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iam: {
+      value: mskServerlessClusterClientAuthenticationSaslIamToHclTerraform(struct!.iam),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskServerlessClusterClientAuthenticationSaslIamList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MskServerlessClusterClientAuthenticationSaslOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -193,6 +226,25 @@ export function mskServerlessClusterClientAuthenticationToTerraform(struct?: Msk
   return {
     sasl: mskServerlessClusterClientAuthenticationSaslToTerraform(struct!.sasl),
   }
+}
+
+
+export function mskServerlessClusterClientAuthenticationToHclTerraform(struct?: MskServerlessClusterClientAuthenticationOutputReference | MskServerlessClusterClientAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sasl: {
+      value: mskServerlessClusterClientAuthenticationSaslToHclTerraform(struct!.sasl),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskServerlessClusterClientAuthenticationSaslList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskServerlessClusterClientAuthenticationOutputReference extends cdktf.ComplexObject {
@@ -260,6 +312,31 @@ export function mskServerlessClusterTimeoutsToTerraform(struct?: MskServerlessCl
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function mskServerlessClusterTimeoutsToHclTerraform(struct?: MskServerlessClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskServerlessClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -362,6 +439,31 @@ export function mskServerlessClusterVpcConfigToTerraform(struct?: MskServerlessC
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function mskServerlessClusterVpcConfigToHclTerraform(struct?: MskServerlessClusterVpcConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskServerlessClusterVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -655,5 +757,55 @@ export class MskServerlessCluster extends cdktf.TerraformResource {
       timeouts: mskServerlessClusterTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_config: cdktf.listMapper(mskServerlessClusterVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      client_authentication: {
+        value: mskServerlessClusterClientAuthenticationToHclTerraform(this._clientAuthentication.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MskServerlessClusterClientAuthenticationList",
+      },
+      timeouts: {
+        value: mskServerlessClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MskServerlessClusterTimeouts",
+      },
+      vpc_config: {
+        value: cdktf.listMapperHcl(mskServerlessClusterVpcConfigToHclTerraform, true)(this._vpcConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MskServerlessClusterVpcConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

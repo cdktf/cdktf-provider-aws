@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_region
 // generated from terraform resource schema
 
@@ -77,6 +72,37 @@ export function directoryServiceRegionTimeoutsToTerraform(struct?: DirectoryServ
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function directoryServiceRegionTimeoutsToHclTerraform(struct?: DirectoryServiceRegionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DirectoryServiceRegionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -201,6 +227,31 @@ export function directoryServiceRegionVpcSettingsToTerraform(struct?: DirectoryS
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
+}
+
+
+export function directoryServiceRegionVpcSettingsToHclTerraform(struct?: DirectoryServiceRegionVpcSettingsOutputReference | DirectoryServiceRegionVpcSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DirectoryServiceRegionVpcSettingsOutputReference extends cdktf.ComplexObject {
@@ -467,5 +518,61 @@ export class DirectoryServiceRegion extends cdktf.TerraformResource {
       timeouts: directoryServiceRegionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_settings: directoryServiceRegionVpcSettingsToTerraform(this._vpcSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      desired_number_of_domain_controllers: {
+        value: cdktf.numberToHclTerraform(this._desiredNumberOfDomainControllers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region_name: {
+        value: cdktf.stringToHclTerraform(this._regionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: directoryServiceRegionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DirectoryServiceRegionTimeouts",
+      },
+      vpc_settings: {
+        value: directoryServiceRegionVpcSettingsToHclTerraform(this._vpcSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DirectoryServiceRegionVpcSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

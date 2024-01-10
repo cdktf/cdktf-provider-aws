@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/chimesdkvoice_global_settings
 // generated from terraform resource schema
 
@@ -41,6 +36,25 @@ export function chimesdkvoiceGlobalSettingsVoiceConnectorToTerraform(struct?: Ch
   return {
     cdr_bucket: cdktf.stringToTerraform(struct!.cdrBucket),
   }
+}
+
+
+export function chimesdkvoiceGlobalSettingsVoiceConnectorToHclTerraform(struct?: ChimesdkvoiceGlobalSettingsVoiceConnectorOutputReference | ChimesdkvoiceGlobalSettingsVoiceConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cdr_bucket: {
+      value: cdktf.stringToHclTerraform(struct!.cdrBucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ChimesdkvoiceGlobalSettingsVoiceConnectorOutputReference extends cdktf.ComplexObject {
@@ -189,5 +203,25 @@ export class ChimesdkvoiceGlobalSettings extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       voice_connector: chimesdkvoiceGlobalSettingsVoiceConnectorToTerraform(this._voiceConnector.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      voice_connector: {
+        value: chimesdkvoiceGlobalSettingsVoiceConnectorToHclTerraform(this._voiceConnector.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ChimesdkvoiceGlobalSettingsVoiceConnectorList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

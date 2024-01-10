@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloud9_environment_membership
 // generated from terraform resource schema
 
@@ -165,5 +160,37 @@ export class Cloud9EnvironmentMembership extends cdktf.TerraformResource {
       permissions: cdktf.stringToTerraform(this._permissions),
       user_arn: cdktf.stringToTerraform(this._userArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      environment_id: {
+        value: cdktf.stringToHclTerraform(this._environmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.stringToHclTerraform(this._permissions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_arn: {
+        value: cdktf.stringToHclTerraform(this._userArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

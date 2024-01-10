@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/imagebuilder_infrastructure_configuration
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOp
   }
   return {
   }
+}
+
+
+export function dataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsToHclTerraform(struct?: DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference extends cdktf.ComplexObject {
@@ -113,6 +119,17 @@ export function dataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsToTer
   }
 }
 
+
+export function dataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsToHclTerraform(struct?: DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -180,6 +197,17 @@ export function dataAwsImagebuilderInfrastructureConfigurationLoggingToTerraform
   }
   return {
   }
+}
+
+
+export function dataAwsImagebuilderInfrastructureConfigurationLoggingToHclTerraform(struct?: DataAwsImagebuilderInfrastructureConfigurationLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsImagebuilderInfrastructureConfigurationLoggingOutputReference extends cdktf.ComplexObject {
@@ -436,5 +464,37 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
       resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._resourceTags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

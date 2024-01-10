@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_snapshot
 // generated from terraform resource schema
 
@@ -198,5 +193,37 @@ export class RedshiftserverlessSnapshot extends cdktf.TerraformResource {
       retention_period: cdktf.numberToTerraform(this._retentionPeriod),
       snapshot_name: cdktf.stringToTerraform(this._snapshotName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_name: {
+        value: cdktf.stringToHclTerraform(this._namespaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retention_period: {
+        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      snapshot_name: {
+        value: cdktf.stringToHclTerraform(this._snapshotName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

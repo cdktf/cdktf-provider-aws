@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/glue_classifier
 // generated from terraform resource schema
 
@@ -98,6 +93,67 @@ export function glueClassifierCsvClassifierToTerraform(struct?: GlueClassifierCs
     header: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.header),
     quote_symbol: cdktf.stringToTerraform(struct!.quoteSymbol),
   }
+}
+
+
+export function glueClassifierCsvClassifierToHclTerraform(struct?: GlueClassifierCsvClassifierOutputReference | GlueClassifierCsvClassifier): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_single_column: {
+      value: cdktf.booleanToHclTerraform(struct!.allowSingleColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    contains_header: {
+      value: cdktf.stringToHclTerraform(struct!.containsHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_datatype_configured: {
+      value: cdktf.booleanToHclTerraform(struct!.customDatatypeConfigured),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    custom_datatypes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.customDatatypes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    delimiter: {
+      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disable_value_trimming: {
+      value: cdktf.booleanToHclTerraform(struct!.disableValueTrimming),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    header: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.header),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    quote_symbol: {
+      value: cdktf.stringToHclTerraform(struct!.quoteSymbol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObject {
@@ -329,6 +385,37 @@ export function glueClassifierGrokClassifierToTerraform(struct?: GlueClassifierG
   }
 }
 
+
+export function glueClassifierGrokClassifierToHclTerraform(struct?: GlueClassifierGrokClassifierOutputReference | GlueClassifierGrokClassifier): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    classification: {
+      value: cdktf.stringToHclTerraform(struct!.classification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_patterns: {
+      value: cdktf.stringToHclTerraform(struct!.customPatterns),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grok_pattern: {
+      value: cdktf.stringToHclTerraform(struct!.grokPattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -432,6 +519,25 @@ export function glueClassifierJsonClassifierToTerraform(struct?: GlueClassifierJ
   }
 }
 
+
+export function glueClassifierJsonClassifierToHclTerraform(struct?: GlueClassifierJsonClassifierOutputReference | GlueClassifierJsonClassifier): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    json_path: {
+      value: cdktf.stringToHclTerraform(struct!.jsonPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -497,6 +603,31 @@ export function glueClassifierXmlClassifierToTerraform(struct?: GlueClassifierXm
     classification: cdktf.stringToTerraform(struct!.classification),
     row_tag: cdktf.stringToTerraform(struct!.rowTag),
   }
+}
+
+
+export function glueClassifierXmlClassifierToHclTerraform(struct?: GlueClassifierXmlClassifierOutputReference | GlueClassifierXmlClassifier): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    classification: {
+      value: cdktf.stringToHclTerraform(struct!.classification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    row_tag: {
+      value: cdktf.stringToHclTerraform(struct!.rowTag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObject {
@@ -733,5 +864,49 @@ export class GlueClassifier extends cdktf.TerraformResource {
       json_classifier: glueClassifierJsonClassifierToTerraform(this._jsonClassifier.internalValue),
       xml_classifier: glueClassifierXmlClassifierToTerraform(this._xmlClassifier.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csv_classifier: {
+        value: glueClassifierCsvClassifierToHclTerraform(this._csvClassifier.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueClassifierCsvClassifierList",
+      },
+      grok_classifier: {
+        value: glueClassifierGrokClassifierToHclTerraform(this._grokClassifier.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueClassifierGrokClassifierList",
+      },
+      json_classifier: {
+        value: glueClassifierJsonClassifierToHclTerraform(this._jsonClassifier.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueClassifierJsonClassifierList",
+      },
+      xml_classifier: {
+        value: glueClassifierXmlClassifierToHclTerraform(this._xmlClassifier.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueClassifierXmlClassifierList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

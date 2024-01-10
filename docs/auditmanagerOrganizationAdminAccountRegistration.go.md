@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.NewAuditmanagerOrganizationAdminAccountRegistration(scope Construct, id *string, config AuditmanagerOrganizationAdminAccountRegistrationConfig) AuditmanagerOrganizationAdminAccountRegistration
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -124,6 +125,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.toMetadata"></a>
 
@@ -371,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
 
 &auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistrationConfig {
 	Connection: interface{},

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/load_balancer_listener_policy
 // generated from terraform resource schema
 
@@ -185,5 +180,43 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
       policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyNames),
       triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_balancer_name: {
+        value: cdktf.stringToHclTerraform(this._loadBalancerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_balancer_port: {
+        value: cdktf.numberToHclTerraform(this._loadBalancerPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      policy_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      triggers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

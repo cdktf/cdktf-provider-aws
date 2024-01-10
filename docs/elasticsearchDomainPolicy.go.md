@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.NewElasticsearchDomainPolicy(scope Construct, id *string, config ElasticsearchDomainPolicyConfig) ElasticsearchDomainPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.ElasticsearchDomainPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 &elasticsearchdomainpolicy.ElasticsearchDomainPolicyConfig {
 	Connection: interface{},
@@ -788,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy
 	AccessPolicies: *string,
 	DomainName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts,
 }
 ```
 
@@ -938,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 &elasticsearchdomainpolicy.ElasticsearchDomainPolicyTimeouts {
 	Delete: *string,
@@ -986,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.NewElasticsearchDomainPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainPolicyTimeoutsOutputReference
 ```

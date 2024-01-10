@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amplifybranch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybranch"
 
 amplifybranch.NewAmplifyBranch(scope Construct, id *string, config AmplifyBranchConfig) AmplifyBranch
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -141,6 +142,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toMetadata"></a>
 
@@ -490,7 +497,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amplifybranch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amplifybranch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +543,7 @@ amplifybranch.AmplifyBranch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amplifybranch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +557,7 @@ amplifybranch.AmplifyBranch_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amplifybranch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybranch"
 
 amplifybranch.AmplifyBranch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1252,7 +1259,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/amplifybranch"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybranch"
 
 &amplifybranch.AmplifyBranchConfig {
 	Connection: interface{},

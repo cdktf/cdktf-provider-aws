@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ssmcontacts_plan
 // generated from terraform resource schema
 
@@ -34,6 +29,17 @@ export function dataAwsSsmcontactsPlanStageTargetChannelTargetInfoToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsSsmcontactsPlanStageTargetChannelTargetInfoToHclTerraform(struct?: DataAwsSsmcontactsPlanStageTargetChannelTargetInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmcontactsPlanStageTargetChannelTargetInfoOutputReference extends cdktf.ComplexObject {
@@ -105,6 +111,17 @@ export function dataAwsSsmcontactsPlanStageTargetContactTargetInfoToTerraform(st
   }
 }
 
+
+export function dataAwsSsmcontactsPlanStageTargetContactTargetInfoToHclTerraform(struct?: DataAwsSsmcontactsPlanStageTargetContactTargetInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsmcontactsPlanStageTargetContactTargetInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -172,6 +189,17 @@ export function dataAwsSsmcontactsPlanStageTargetToTerraform(struct?: DataAwsSsm
   }
   return {
   }
+}
+
+
+export function dataAwsSsmcontactsPlanStageTargetToHclTerraform(struct?: DataAwsSsmcontactsPlanStageTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmcontactsPlanStageTargetOutputReference extends cdktf.ComplexObject {
@@ -243,6 +271,17 @@ export function dataAwsSsmcontactsPlanStageToTerraform(struct?: DataAwsSsmcontac
   }
   return {
   }
+}
+
+
+export function dataAwsSsmcontactsPlanStageToHclTerraform(struct?: DataAwsSsmcontactsPlanStage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
@@ -407,5 +446,25 @@ export class DataAwsSsmcontactsPlan extends cdktf.TerraformDataSource {
       contact_id: cdktf.stringToTerraform(this._contactId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      contact_id: {
+        value: cdktf.stringToHclTerraform(this._contactId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

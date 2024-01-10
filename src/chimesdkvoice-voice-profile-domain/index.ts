@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/chimesdkvoice_voice_profile_domain
 // generated from terraform resource schema
 
@@ -56,6 +51,25 @@ export function chimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration
   return {
     kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
   }
+}
+
+
+export function chimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationToHclTerraform(struct?: ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference | ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -128,6 +142,37 @@ export function chimesdkvoiceVoiceProfileDomainTimeoutsToTerraform(struct?: Chim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function chimesdkvoiceVoiceProfileDomainTimeoutsToHclTerraform(struct?: ChimesdkvoiceVoiceProfileDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -409,5 +454,49 @@ export class ChimesdkvoiceVoiceProfileDomain extends cdktf.TerraformResource {
       server_side_encryption_configuration: chimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationToTerraform(this._serverSideEncryptionConfiguration.internalValue),
       timeouts: chimesdkvoiceVoiceProfileDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      server_side_encryption_configuration: {
+        value: chimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationToHclTerraform(this._serverSideEncryptionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationList",
+      },
+      timeouts: {
+        value: chimesdkvoiceVoiceProfileDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ChimesdkvoiceVoiceProfileDomainTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

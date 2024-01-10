@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAcl(scope Construct, id *string, config WafregionalWebAclConfig) WafregionalWebAcl
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.toMetadata"></a>
 
@@ -445,7 +452,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.WafregionalWebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.WafregionalWebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ wafregionalwebacl.WafregionalWebAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.WafregionalWebAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ wafregionalwebacl.WafregionalWebAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.WafregionalWebAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -921,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclConfig {
 	Connection: interface{},
@@ -931,11 +938,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultAction: github.com/cdktf/cdktf-provider-aws-go/aws/v18.wafregionalWebAcl.WafregionalWebAclDefaultAction,
+	DefaultAction: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalWebAcl.WafregionalWebAclDefaultAction,
 	MetricName: *string,
 	Name: *string,
 	Id: *string,
-	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration,
+	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration,
 	Rule: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1144,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclDefaultAction {
 	Type: *string,
@@ -1176,11 +1183,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclLoggingConfiguration {
 	LogDestination: *string,
-	RedactedFields: github.com/cdktf/cdktf-provider-aws-go/aws/v18.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFields,
+	RedactedFields: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFields,
 }
 ```
 
@@ -1224,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclLoggingConfigurationRedactedFields {
 	FieldToMatch: interface{},
@@ -1258,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
 	Type: *string,
@@ -1304,13 +1311,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclRule {
 	Priority: *f64,
 	RuleId: *string,
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.wafregionalWebAcl.WafregionalWebAclRuleAction,
-	OverrideAction: github.com/cdktf/cdktf-provider-aws-go/aws/v18.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalWebAcl.WafregionalWebAclRuleAction,
+	OverrideAction: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction,
 	Type: *string,
 }
 ```
@@ -1396,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclRuleAction {
 	Type: *string,
@@ -1428,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 &wafregionalwebacl.WafregionalWebAclRuleOverrideAction {
 	Type: *string,
@@ -1462,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalWebAclDefaultActionOutputReference
 ```
@@ -1733,7 +1740,7 @@ func InternalValue() WafregionalWebAclDefaultAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalWebAclLoggingConfigurationOutputReference
 ```
@@ -2046,7 +2053,7 @@ func InternalValue() WafregionalWebAclLoggingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList
 ```
@@ -2087,10 +2094,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2189,7 +2213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference
 ```
@@ -2507,7 +2531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference
 ```
@@ -2791,7 +2815,7 @@ func InternalValue() WafregionalWebAclLoggingConfigurationRedactedFields
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalWebAclRuleActionOutputReference
 ```
@@ -3062,7 +3086,7 @@ func InternalValue() WafregionalWebAclRuleAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalWebAclRuleList
 ```
@@ -3103,10 +3127,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3205,7 +3246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalWebAclRuleOutputReference
 ```
@@ -3629,7 +3670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalwebacl"
 
 wafregionalwebacl.NewWafregionalWebAclRuleOverrideActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalWebAclRuleOverrideActionOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lightsail_lb_certificate_attachment
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class LightsailLbCertificateAttachment extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       lb_name: cdktf.stringToTerraform(this._lbName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_name: {
+        value: cdktf.stringToHclTerraform(this._certificateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lb_name: {
+        value: cdktf.stringToHclTerraform(this._lbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

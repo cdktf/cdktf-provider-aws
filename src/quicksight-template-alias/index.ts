@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/quicksight_template_alias
 // generated from terraform resource schema
 
@@ -167,5 +162,37 @@ export class QuicksightTemplateAlias extends cdktf.TerraformResource {
       template_id: cdktf.stringToTerraform(this._templateId),
       template_version_number: cdktf.numberToTerraform(this._templateVersionNumber),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alias_name: {
+        value: cdktf.stringToHclTerraform(this._aliasName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_id: {
+        value: cdktf.stringToHclTerraform(this._templateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_version_number: {
+        value: cdktf.numberToHclTerraform(this._templateVersionNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

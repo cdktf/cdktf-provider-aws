@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lambda_function
 // generated from terraform resource schema
 
@@ -191,6 +186,25 @@ export function lambdaFunctionDeadLetterConfigToTerraform(struct?: LambdaFunctio
   }
 }
 
+
+export function lambdaFunctionDeadLetterConfigToHclTerraform(struct?: LambdaFunctionDeadLetterConfigOutputReference | LambdaFunctionDeadLetterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_arn: {
+      value: cdktf.stringToHclTerraform(struct!.targetArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaFunctionDeadLetterConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -251,6 +265,25 @@ export function lambdaFunctionEnvironmentToTerraform(struct?: LambdaFunctionEnvi
   return {
     variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.variables),
   }
+}
+
+
+export function lambdaFunctionEnvironmentToHclTerraform(struct?: LambdaFunctionEnvironmentOutputReference | LambdaFunctionEnvironment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.variables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObject {
@@ -316,6 +349,25 @@ export function lambdaFunctionEphemeralStorageToTerraform(struct?: LambdaFunctio
   return {
     size: cdktf.numberToTerraform(struct!.size),
   }
+}
+
+
+export function lambdaFunctionEphemeralStorageToHclTerraform(struct?: LambdaFunctionEphemeralStorageOutputReference | LambdaFunctionEphemeralStorage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionEphemeralStorageOutputReference extends cdktf.ComplexObject {
@@ -386,6 +438,31 @@ export function lambdaFunctionFileSystemConfigToTerraform(struct?: LambdaFunctio
     arn: cdktf.stringToTerraform(struct!.arn),
     local_mount_path: cdktf.stringToTerraform(struct!.localMountPath),
   }
+}
+
+
+export function lambdaFunctionFileSystemConfigToHclTerraform(struct?: LambdaFunctionFileSystemConfigOutputReference | LambdaFunctionFileSystemConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arn: {
+      value: cdktf.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    local_mount_path: {
+      value: cdktf.stringToHclTerraform(struct!.localMountPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionFileSystemConfigOutputReference extends cdktf.ComplexObject {
@@ -477,6 +554,37 @@ export function lambdaFunctionImageConfigToTerraform(struct?: LambdaFunctionImag
     entry_point: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.entryPoint),
     working_directory: cdktf.stringToTerraform(struct!.workingDirectory),
   }
+}
+
+
+export function lambdaFunctionImageConfigToHclTerraform(struct?: LambdaFunctionImageConfigOutputReference | LambdaFunctionImageConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    command: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    entry_point: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.entryPoint),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    working_directory: {
+      value: cdktf.stringToHclTerraform(struct!.workingDirectory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionImageConfigOutputReference extends cdktf.ComplexObject {
@@ -588,6 +696,25 @@ export function lambdaFunctionSnapStartToTerraform(struct?: LambdaFunctionSnapSt
   }
 }
 
+
+export function lambdaFunctionSnapStartToHclTerraform(struct?: LambdaFunctionSnapStartOutputReference | LambdaFunctionSnapStart): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apply_on: {
+      value: cdktf.stringToHclTerraform(struct!.applyOn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaFunctionSnapStartOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -663,6 +790,37 @@ export function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeout
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function lambdaFunctionTimeoutsToHclTerraform(struct?: LambdaFunctionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -784,6 +942,25 @@ export function lambdaFunctionTracingConfigToTerraform(struct?: LambdaFunctionTr
   }
 }
 
+
+export function lambdaFunctionTracingConfigToHclTerraform(struct?: LambdaFunctionTracingConfigOutputReference | LambdaFunctionTracingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaFunctionTracingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -854,6 +1031,37 @@ export function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcCon
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function lambdaFunctionVpcConfigToHclTerraform(struct?: LambdaFunctionVpcConfigOutputReference | LambdaFunctionVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ipv6_allowed_for_dual_stack: {
+      value: cdktf.booleanToHclTerraform(struct!.ipv6AllowedForDualStack),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -1681,5 +1889,223 @@ export class LambdaFunction extends cdktf.TerraformResource {
       tracing_config: lambdaFunctionTracingConfigToTerraform(this._tracingConfig.internalValue),
       vpc_config: lambdaFunctionVpcConfigToTerraform(this._vpcConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      architectures: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._architectures),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      code_signing_config_arn: {
+        value: cdktf.stringToHclTerraform(this._codeSigningConfigArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filename: {
+        value: cdktf.stringToHclTerraform(this._filename),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      handler: {
+        value: cdktf.stringToHclTerraform(this._handler),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_uri: {
+        value: cdktf.stringToHclTerraform(this._imageUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_arn: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      layers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._layers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      memory_size: {
+        value: cdktf.numberToHclTerraform(this._memorySize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      package_type: {
+        value: cdktf.stringToHclTerraform(this._packageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      publish: {
+        value: cdktf.booleanToHclTerraform(this._publish),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      replace_security_groups_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._replaceSecurityGroupsOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      replacement_security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._replacementSecurityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      reserved_concurrent_executions: {
+        value: cdktf.numberToHclTerraform(this._reservedConcurrentExecutions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime: {
+        value: cdktf.stringToHclTerraform(this._runtime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_bucket: {
+        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_key: {
+        value: cdktf.stringToHclTerraform(this._s3Key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_object_version: {
+        value: cdktf.stringToHclTerraform(this._s3ObjectVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_destroy: {
+        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      source_code_hash: {
+        value: cdktf.stringToHclTerraform(this._sourceCodeHash),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeout: {
+        value: cdktf.numberToHclTerraform(this._timeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      dead_letter_config: {
+        value: lambdaFunctionDeadLetterConfigToHclTerraform(this._deadLetterConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionDeadLetterConfigList",
+      },
+      environment: {
+        value: lambdaFunctionEnvironmentToHclTerraform(this._environment.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionEnvironmentList",
+      },
+      ephemeral_storage: {
+        value: lambdaFunctionEphemeralStorageToHclTerraform(this._ephemeralStorage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionEphemeralStorageList",
+      },
+      file_system_config: {
+        value: lambdaFunctionFileSystemConfigToHclTerraform(this._fileSystemConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionFileSystemConfigList",
+      },
+      image_config: {
+        value: lambdaFunctionImageConfigToHclTerraform(this._imageConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionImageConfigList",
+      },
+      snap_start: {
+        value: lambdaFunctionSnapStartToHclTerraform(this._snapStart.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionSnapStartList",
+      },
+      timeouts: {
+        value: lambdaFunctionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LambdaFunctionTimeouts",
+      },
+      tracing_config: {
+        value: lambdaFunctionTracingConfigToHclTerraform(this._tracingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionTracingConfigList",
+      },
+      vpc_config: {
+        value: lambdaFunctionVpcConfigToHclTerraform(this._vpcConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionVpcConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

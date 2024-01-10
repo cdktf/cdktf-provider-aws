@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/backup_selection
 // generated from terraform resource schema
 
@@ -156,5 +151,31 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
       plan_id: cdktf.stringToTerraform(this._planId),
       selection_id: cdktf.stringToTerraform(this._selectionId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plan_id: {
+        value: cdktf.stringToHclTerraform(this._planId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selection_id: {
+        value: cdktf.stringToHclTerraform(this._selectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

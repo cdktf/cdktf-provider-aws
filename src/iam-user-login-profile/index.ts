@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iam_user_login_profile
 // generated from terraform resource schema
 
@@ -203,5 +198,43 @@ export class IamUserLoginProfile extends cdktf.TerraformResource {
       pgp_key: cdktf.stringToTerraform(this._pgpKey),
       user: cdktf.stringToTerraform(this._user),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_length: {
+        value: cdktf.numberToHclTerraform(this._passwordLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_reset_required: {
+        value: cdktf.booleanToHclTerraform(this._passwordResetRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pgp_key: {
+        value: cdktf.stringToHclTerraform(this._pgpKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktf.stringToHclTerraform(this._user),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

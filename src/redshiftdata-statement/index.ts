@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftdata_statement
 // generated from terraform resource schema
 
@@ -84,6 +79,31 @@ export function redshiftdataStatementParametersToTerraform(struct?: Redshiftdata
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function redshiftdataStatementParametersToHclTerraform(struct?: RedshiftdataStatementParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RedshiftdataStatementParametersOutputReference extends cdktf.ComplexObject {
@@ -197,6 +217,25 @@ export function redshiftdataStatementTimeoutsToTerraform(struct?: RedshiftdataSt
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function redshiftdataStatementTimeoutsToHclTerraform(struct?: RedshiftdataStatementTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RedshiftdataStatementTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -514,5 +553,79 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
       parameters: cdktf.listMapper(redshiftdataStatementParametersToTerraform, true)(this._parameters.internalValue),
       timeouts: redshiftdataStatementTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_identifier: {
+        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_user: {
+        value: cdktf.stringToHclTerraform(this._dbUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_arn: {
+        value: cdktf.stringToHclTerraform(this._secretArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sql: {
+        value: cdktf.stringToHclTerraform(this._sql),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statement_name: {
+        value: cdktf.stringToHclTerraform(this._statementName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      with_event: {
+        value: cdktf.booleanToHclTerraform(this._withEvent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      workgroup_name: {
+        value: cdktf.stringToHclTerraform(this._workgroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.listMapperHcl(redshiftdataStatementParametersToHclTerraform, true)(this._parameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RedshiftdataStatementParametersList",
+      },
+      timeouts: {
+        value: redshiftdataStatementTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RedshiftdataStatementTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

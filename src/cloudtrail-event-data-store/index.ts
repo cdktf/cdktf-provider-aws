@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/cloudtrail_event_data_store
 // generated from terraform resource schema
 
@@ -109,6 +104,61 @@ export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerr
     not_starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notStartsWith),
     starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.startsWith),
   }
+}
+
+
+export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToHclTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ends_with: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.endsWith),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    equals: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.equalTo),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    not_ends_with: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notEndsWith),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    not_equals: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notEquals),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    not_starts_with: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notStartsWith),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    starts_with: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.startsWith),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference extends cdktf.ComplexObject {
@@ -347,6 +397,31 @@ export function cloudtrailEventDataStoreAdvancedEventSelectorToTerraform(struct?
   }
 }
 
+
+export function cloudtrailEventDataStoreAdvancedEventSelectorToHclTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelector | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_selector: {
+      value: cdktf.listMapperHcl(cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToHclTerraform, true)(struct!.fieldSelector),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudtrailEventDataStoreAdvancedEventSelectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -474,6 +549,37 @@ export function cloudtrailEventDataStoreTimeoutsToTerraform(struct?: CloudtrailE
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function cloudtrailEventDataStoreTimeoutsToHclTerraform(struct?: CloudtrailEventDataStoreTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudtrailEventDataStoreTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -843,5 +949,79 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
       advanced_event_selector: cdktf.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorToTerraform, true)(this._advancedEventSelector.internalValue),
       timeouts: cloudtrailEventDataStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multi_region_enabled: {
+        value: cdktf.booleanToHclTerraform(this._multiRegionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_enabled: {
+        value: cdktf.booleanToHclTerraform(this._organizationEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      retention_period: {
+        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      termination_protection_enabled: {
+        value: cdktf.booleanToHclTerraform(this._terminationProtectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      advanced_event_selector: {
+        value: cdktf.listMapperHcl(cloudtrailEventDataStoreAdvancedEventSelectorToHclTerraform, true)(this._advancedEventSelector.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudtrailEventDataStoreAdvancedEventSelectorList",
+      },
+      timeouts: {
+        value: cloudtrailEventDataStoreTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CloudtrailEventDataStoreTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

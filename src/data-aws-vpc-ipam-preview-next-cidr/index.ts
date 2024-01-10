@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/vpc_ipam_preview_next_cidr
 // generated from terraform resource schema
 
@@ -53,6 +48,25 @@ export function dataAwsVpcIpamPreviewNextCidrTimeoutsToTerraform(struct?: DataAw
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsVpcIpamPreviewNextCidrTimeoutsToHclTerraform(struct?: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -270,5 +284,43 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
       netmask_length: cdktf.numberToTerraform(this._netmaskLength),
       timeouts: dataAwsVpcIpamPreviewNextCidrTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disallowed_cidrs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._disallowedCidrs),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipam_pool_id: {
+        value: cdktf.stringToHclTerraform(this._ipamPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      netmask_length: {
+        value: cdktf.numberToHclTerraform(this._netmaskLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      timeouts: {
+        value: dataAwsVpcIpamPreviewNextCidrTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsVpcIpamPreviewNextCidrTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

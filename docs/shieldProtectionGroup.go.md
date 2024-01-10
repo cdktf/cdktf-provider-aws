@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.NewShieldProtectionGroup(scope Construct, id *string, config ShieldProtectionGroupConfig) ShieldProtectionGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.ShieldProtectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.ShieldProtectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ shieldprotectiongroup.ShieldProtectionGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.ShieldProtectionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ shieldprotectiongroup.ShieldProtectionGroup_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.ShieldProtectionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 &shieldprotectiongroup.ShieldProtectionGroupConfig {
 	Connection: interface{},

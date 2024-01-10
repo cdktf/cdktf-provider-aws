@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/auditmanager_account_registration
 // generated from terraform resource schema
 
@@ -154,5 +149,31 @@ export class AuditmanagerAccountRegistration extends cdktf.TerraformResource {
       deregister_on_destroy: cdktf.booleanToTerraform(this._deregisterOnDestroy),
       kms_key: cdktf.stringToTerraform(this._kmsKey),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      delegated_admin_account: {
+        value: cdktf.stringToHclTerraform(this._delegatedAdminAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deregister_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._deregisterOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      kms_key: {
+        value: cdktf.stringToHclTerraform(this._kmsKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

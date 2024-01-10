@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ssmincidents_response_plan
 // generated from terraform resource schema
 
@@ -38,6 +33,17 @@ export function dataAwsSsmincidentsResponsePlanActionSsmAutomationParameterToTer
   }
   return {
   }
+}
+
+
+export function dataAwsSsmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference extends cdktf.ComplexObject {
@@ -107,6 +113,17 @@ export function dataAwsSsmincidentsResponsePlanActionSsmAutomationToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsSsmincidentsResponsePlanActionSsmAutomationToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanActionSsmAutomation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmincidentsResponsePlanActionSsmAutomationOutputReference extends cdktf.ComplexObject {
@@ -200,6 +217,17 @@ export function dataAwsSsmincidentsResponsePlanActionToTerraform(struct?: DataAw
   }
 }
 
+
+export function dataAwsSsmincidentsResponsePlanActionToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsmincidentsResponsePlanActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -265,6 +293,17 @@ export function dataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarge
   }
 }
 
+
+export function dataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -327,6 +366,17 @@ export function dataAwsSsmincidentsResponsePlanIncidentTemplateToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataAwsSsmincidentsResponsePlanIncidentTemplateToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIncidentTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmincidentsResponsePlanIncidentTemplateOutputReference extends cdktf.ComplexObject {
@@ -420,6 +470,17 @@ export function dataAwsSsmincidentsResponsePlanIntegrationPagerdutyToTerraform(s
   }
 }
 
+
+export function dataAwsSsmincidentsResponsePlanIntegrationPagerdutyToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIntegrationPagerduty): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -492,6 +553,17 @@ export function dataAwsSsmincidentsResponsePlanIntegrationToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataAwsSsmincidentsResponsePlanIntegrationToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIntegration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmincidentsResponsePlanIntegrationOutputReference extends cdktf.ComplexObject {
@@ -701,5 +773,31 @@ export class DataAwsSsmincidentsResponsePlan extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

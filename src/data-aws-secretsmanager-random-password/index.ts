@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/secretsmanager_random_password
 // generated from terraform resource schema
 
@@ -301,5 +296,73 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
       random_password: cdktf.stringToTerraform(this._randomPassword),
       require_each_included_type: cdktf.booleanToTerraform(this._requireEachIncludedType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      exclude_characters: {
+        value: cdktf.stringToHclTerraform(this._excludeCharacters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      exclude_lowercase: {
+        value: cdktf.booleanToHclTerraform(this._excludeLowercase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      exclude_numbers: {
+        value: cdktf.booleanToHclTerraform(this._excludeNumbers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      exclude_punctuation: {
+        value: cdktf.booleanToHclTerraform(this._excludePunctuation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      exclude_uppercase: {
+        value: cdktf.booleanToHclTerraform(this._excludeUppercase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_space: {
+        value: cdktf.booleanToHclTerraform(this._includeSpace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      password_length: {
+        value: cdktf.numberToHclTerraform(this._passwordLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      random_password: {
+        value: cdktf.stringToHclTerraform(this._randomPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_each_included_type: {
+        value: cdktf.booleanToHclTerraform(this._requireEachIncludedType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

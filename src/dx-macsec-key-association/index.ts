@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dx_macsec_key_association
 // generated from terraform resource schema
 
@@ -198,5 +193,43 @@ export class DxMacsecKeyAssociation extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       secret_arn: cdktf.stringToTerraform(this._secretArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cak: {
+        value: cdktf.stringToHclTerraform(this._cak),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ckn: {
+        value: cdktf.stringToHclTerraform(this._ckn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connection_id: {
+        value: cdktf.stringToHclTerraform(this._connectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_arn: {
+        value: cdktf.stringToHclTerraform(this._secretArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

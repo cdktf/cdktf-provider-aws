@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/fsx_windows_file_system
 // generated from terraform resource schema
 
@@ -143,6 +138,37 @@ export function fsxWindowsFileSystemAuditLogConfigurationToTerraform(struct?: Fs
   }
 }
 
+
+export function fsxWindowsFileSystemAuditLogConfigurationToHclTerraform(struct?: FsxWindowsFileSystemAuditLogConfigurationOutputReference | FsxWindowsFileSystemAuditLogConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_log_destination: {
+      value: cdktf.stringToHclTerraform(struct!.auditLogDestination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_access_audit_log_level: {
+      value: cdktf.stringToHclTerraform(struct!.fileAccessAuditLogLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_share_access_audit_log_level: {
+      value: cdktf.stringToHclTerraform(struct!.fileShareAccessAuditLogLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxWindowsFileSystemAuditLogConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -257,6 +283,31 @@ export function fsxWindowsFileSystemDiskIopsConfigurationToTerraform(struct?: Fs
   }
 }
 
+
+export function fsxWindowsFileSystemDiskIopsConfigurationToHclTerraform(struct?: FsxWindowsFileSystemDiskIopsConfigurationOutputReference | FsxWindowsFileSystemDiskIopsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxWindowsFileSystemDiskIopsConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -367,6 +418,55 @@ export function fsxWindowsFileSystemSelfManagedActiveDirectoryToTerraform(struct
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function fsxWindowsFileSystemSelfManagedActiveDirectoryToHclTerraform(struct?: FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference | FsxWindowsFileSystemSelfManagedActiveDirectory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsIps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.domainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_system_administrators_group: {
+      value: cdktf.stringToHclTerraform(struct!.fileSystemAdministratorsGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organizational_unit_distinguished_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationalUnitDistinguishedName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference extends cdktf.ComplexObject {
@@ -540,6 +640,37 @@ export function fsxWindowsFileSystemTimeoutsToTerraform(struct?: FsxWindowsFileS
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function fsxWindowsFileSystemTimeoutsToHclTerraform(struct?: FsxWindowsFileSystemTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxWindowsFileSystemTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1152,5 +1283,151 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
       self_managed_active_directory: fsxWindowsFileSystemSelfManagedActiveDirectoryToTerraform(this._selfManagedActiveDirectory.internalValue),
       timeouts: fsxWindowsFileSystemTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active_directory_id: {
+        value: cdktf.stringToHclTerraform(this._activeDirectoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aliases: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._aliases),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      automatic_backup_retention_days: {
+        value: cdktf.numberToHclTerraform(this._automaticBackupRetentionDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      backup_id: {
+        value: cdktf.stringToHclTerraform(this._backupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      copy_tags_to_backups: {
+        value: cdktf.booleanToHclTerraform(this._copyTagsToBackups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      daily_automatic_backup_start_time: {
+        value: cdktf.stringToHclTerraform(this._dailyAutomaticBackupStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_type: {
+        value: cdktf.stringToHclTerraform(this._deploymentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_subnet_id: {
+        value: cdktf.stringToHclTerraform(this._preferredSubnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      skip_final_backup: {
+        value: cdktf.booleanToHclTerraform(this._skipFinalBackup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      storage_capacity: {
+        value: cdktf.numberToHclTerraform(this._storageCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      throughput_capacity: {
+        value: cdktf.numberToHclTerraform(this._throughputCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      weekly_maintenance_start_time: {
+        value: cdktf.stringToHclTerraform(this._weeklyMaintenanceStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      audit_log_configuration: {
+        value: fsxWindowsFileSystemAuditLogConfigurationToHclTerraform(this._auditLogConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxWindowsFileSystemAuditLogConfigurationList",
+      },
+      disk_iops_configuration: {
+        value: fsxWindowsFileSystemDiskIopsConfigurationToHclTerraform(this._diskIopsConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxWindowsFileSystemDiskIopsConfigurationList",
+      },
+      self_managed_active_directory: {
+        value: fsxWindowsFileSystemSelfManagedActiveDirectoryToHclTerraform(this._selfManagedActiveDirectory.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxWindowsFileSystemSelfManagedActiveDirectoryList",
+      },
+      timeouts: {
+        value: fsxWindowsFileSystemTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FsxWindowsFileSystemTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

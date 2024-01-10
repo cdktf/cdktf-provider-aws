@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/backup_region_settings
 // generated from terraform resource schema
 
@@ -144,5 +139,31 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
       resource_type_management_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeManagementPreference),
       resource_type_opt_in_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeOptInPreference),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_type_management_preference: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._resourceTypeManagementPreference),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+      resource_type_opt_in_preference: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._resourceTypeOptInPreference),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

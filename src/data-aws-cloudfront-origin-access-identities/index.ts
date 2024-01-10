@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cloudfront_origin_access_identities
 // generated from terraform resource schema
 
@@ -140,5 +135,25 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
       comments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._comments),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comments: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._comments),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

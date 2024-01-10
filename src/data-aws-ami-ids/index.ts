@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ami_ids
 // generated from terraform resource schema
 
@@ -72,6 +67,31 @@ export function dataAwsAmiIdsFilterToTerraform(struct?: DataAwsAmiIdsFilter | cd
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsAmiIdsFilterToHclTerraform(struct?: DataAwsAmiIdsFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsAmiIdsFilterOutputReference extends cdktf.ComplexObject {
@@ -185,6 +205,25 @@ export function dataAwsAmiIdsTimeoutsToTerraform(struct?: DataAwsAmiIdsTimeouts 
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsAmiIdsTimeoutsToHclTerraform(struct?: DataAwsAmiIdsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsAmiIdsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -456,5 +495,61 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
       filter: cdktf.listMapper(dataAwsAmiIdsFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsAmiIdsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      executable_users: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._executableUsers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_deprecated: {
+        value: cdktf.booleanToHclTerraform(this._includeDeprecated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name_regex: {
+        value: cdktf.stringToHclTerraform(this._nameRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owners: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      sort_ascending: {
+        value: cdktf.booleanToHclTerraform(this._sortAscending),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsAmiIdsFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsAmiIdsFilterList",
+      },
+      timeouts: {
+        value: dataAwsAmiIdsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsAmiIdsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

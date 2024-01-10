@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/cognito_user_pool_client
 // generated from terraform resource schema
 
@@ -38,6 +33,17 @@ export function dataAwsCognitoUserPoolClientAnalyticsConfigurationToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsCognitoUserPoolClientAnalyticsConfigurationToHclTerraform(struct?: DataAwsCognitoUserPoolClientAnalyticsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference extends cdktf.ComplexObject {
@@ -122,6 +128,17 @@ export function dataAwsCognitoUserPoolClientTokenValidityUnitsToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataAwsCognitoUserPoolClientTokenValidityUnitsToHclTerraform(struct?: DataAwsCognitoUserPoolClientTokenValidityUnits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference extends cdktf.ComplexObject {
@@ -406,5 +423,31 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_pool_id: {
+        value: cdktf.stringToHclTerraform(this._userPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

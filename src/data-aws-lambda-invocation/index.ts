@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lambda_invocation
 // generated from terraform resource schema
 
@@ -168,5 +163,37 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
       input: cdktf.stringToTerraform(this._input),
       qualifier: cdktf.stringToTerraform(this._qualifier),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      input: {
+        value: cdktf.stringToHclTerraform(this._input),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      qualifier: {
+        value: cdktf.stringToHclTerraform(this._qualifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

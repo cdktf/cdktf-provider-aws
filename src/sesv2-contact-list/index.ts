@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sesv2_contact_list
 // generated from terraform resource schema
 
@@ -72,6 +67,43 @@ export function sesv2ContactListTopicToTerraform(struct?: Sesv2ContactListTopic 
     display_name: cdktf.stringToTerraform(struct!.displayName),
     topic_name: cdktf.stringToTerraform(struct!.topicName),
   }
+}
+
+
+export function sesv2ContactListTopicToHclTerraform(struct?: Sesv2ContactListTopic | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_subscription_status: {
+      value: cdktf.stringToHclTerraform(struct!.defaultSubscriptionStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic_name: {
+      value: cdktf.stringToHclTerraform(struct!.topicName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Sesv2ContactListTopicOutputReference extends cdktf.ComplexObject {
@@ -396,5 +428,49 @@ export class Sesv2ContactList extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       topic: cdktf.listMapper(sesv2ContactListTopicToTerraform, true)(this._topic.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      contact_list_name: {
+        value: cdktf.stringToHclTerraform(this._contactListName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      topic: {
+        value: cdktf.listMapperHcl(sesv2ContactListTopicToHclTerraform, true)(this._topic.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "Sesv2ContactListTopicList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

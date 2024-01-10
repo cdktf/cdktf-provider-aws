@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfiguration(scope Construct, id *string, config LaunchConfigurationConfig) LaunchConfiguration
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -145,6 +146,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.toMetadata"></a>
 
@@ -542,7 +549,7 @@ func ResetUserDataBase64()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -574,7 +581,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -588,7 +595,7 @@ launchconfiguration.LaunchConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -602,7 +609,7 @@ launchconfiguration.LaunchConfiguration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1260,7 +1267,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationConfig {
 	Connection: interface{},
@@ -1280,11 +1287,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
 	IamInstanceProfile: *string,
 	Id: *string,
 	KeyName: *string,
-	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchConfiguration.LaunchConfigurationMetadataOptions,
+	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchConfiguration.LaunchConfigurationMetadataOptions,
 	Name: *string,
 	NamePrefix: *string,
 	PlacementTenancy: *string,
-	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchConfiguration.LaunchConfigurationRootBlockDevice,
+	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws.launchConfiguration.LaunchConfigurationRootBlockDevice,
 	SecurityGroups: *[]*string,
 	SpotPrice: *string,
 	UserData: *string,
@@ -1639,7 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationEbsBlockDevice {
 	DeviceName: *string,
@@ -1783,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationEphemeralBlockDevice {
 	DeviceName: *string,
@@ -1843,7 +1850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationMetadataOptions {
 	HttpEndpoint: *string,
@@ -1903,7 +1910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationRootBlockDevice {
 	DeleteOnTermination: interface{},
@@ -2007,7 +2014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchConfigurationEbsBlockDeviceList
 ```
@@ -2048,10 +2055,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2150,7 +2174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchConfigurationEbsBlockDeviceOutputReference
 ```
@@ -2671,7 +2695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchConfigurationEphemeralBlockDeviceList
 ```
@@ -2712,10 +2736,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2814,7 +2855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchConfigurationEphemeralBlockDeviceOutputReference
 ```
@@ -3161,7 +3202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchConfigurationMetadataOptionsOutputReference
 ```
@@ -3497,7 +3538,7 @@ func InternalValue() LaunchConfigurationMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchConfigurationRootBlockDeviceOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_log_subscription
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class DirectoryServiceLogSubscription extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       log_group_name: cdktf.stringToTerraform(this._logGroupName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_group_name: {
+        value: cdktf.stringToHclTerraform(this._logGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

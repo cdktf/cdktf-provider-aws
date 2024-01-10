@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/autoscaling_group
 // generated from terraform resource schema
 
@@ -34,6 +29,17 @@ export function dataAwsAutoscalingGroupInstanceMaintenancePolicyToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupInstanceMaintenancePolicyToHclTerraform(struct?: DataAwsAutoscalingGroupInstanceMaintenancePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupInstanceMaintenancePolicyOutputReference extends cdktf.ComplexObject {
@@ -103,6 +109,17 @@ export function dataAwsAutoscalingGroupLaunchTemplateToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupLaunchTemplateToHclTerraform(struct?: DataAwsAutoscalingGroupLaunchTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
@@ -177,6 +194,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistribution
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistribution): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference extends cdktf.ComplexObject {
@@ -268,6 +296,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchT
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -342,6 +381,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -409,6 +459,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibOutputReference extends cdktf.ComplexObject {
@@ -480,6 +541,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -547,6 +619,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference extends cdktf.ComplexObject {
@@ -618,6 +701,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -685,6 +779,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference extends cdktf.ComplexObject {
@@ -756,6 +861,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -823,6 +939,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbOutputReference extends cdktf.ComplexObject {
@@ -894,6 +1021,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -961,6 +1099,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference extends cdktf.ComplexObject {
@@ -1146,6 +1295,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1218,6 +1378,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrid
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference extends cdktf.ComplexObject {
@@ -1301,6 +1472,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateToTerra
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1372,6 +1554,17 @@ export function dataAwsAutoscalingGroupMixedInstancesPolicyToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsAutoscalingGroupMixedInstancesPolicyToHclTerraform(struct?: DataAwsAutoscalingGroupMixedInstancesPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1441,6 +1634,17 @@ export function dataAwsAutoscalingGroupTagToTerraform(struct?: DataAwsAutoscalin
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupTagToHclTerraform(struct?: DataAwsAutoscalingGroupTag): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupTagOutputReference extends cdktf.ComplexObject {
@@ -1517,6 +1721,17 @@ export function dataAwsAutoscalingGroupTrafficSourceToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsAutoscalingGroupTrafficSourceToHclTerraform(struct?: DataAwsAutoscalingGroupTrafficSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupTrafficSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1586,6 +1801,17 @@ export function dataAwsAutoscalingGroupWarmPoolInstanceReusePolicyToTerraform(st
   }
 }
 
+
+export function dataAwsAutoscalingGroupWarmPoolInstanceReusePolicyToHclTerraform(struct?: DataAwsAutoscalingGroupWarmPoolInstanceReusePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1648,6 +1874,17 @@ export function dataAwsAutoscalingGroupWarmPoolToTerraform(struct?: DataAwsAutos
   }
   return {
   }
+}
+
+
+export function dataAwsAutoscalingGroupWarmPoolToHclTerraform(struct?: DataAwsAutoscalingGroupWarmPool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject {
@@ -1967,5 +2204,25 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/rbin_rule
 // generated from terraform resource schema
 
@@ -73,6 +68,31 @@ export function rbinRuleLockConfigurationUnlockDelayToTerraform(struct?: RbinRul
     unlock_delay_unit: cdktf.stringToTerraform(struct!.unlockDelayUnit),
     unlock_delay_value: cdktf.numberToTerraform(struct!.unlockDelayValue),
   }
+}
+
+
+export function rbinRuleLockConfigurationUnlockDelayToHclTerraform(struct?: RbinRuleLockConfigurationUnlockDelayOutputReference | RbinRuleLockConfigurationUnlockDelay): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unlock_delay_unit: {
+      value: cdktf.stringToHclTerraform(struct!.unlockDelayUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unlock_delay_value: {
+      value: cdktf.numberToHclTerraform(struct!.unlockDelayValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RbinRuleLockConfigurationUnlockDelayOutputReference extends cdktf.ComplexObject {
@@ -158,6 +178,25 @@ export function rbinRuleLockConfigurationToTerraform(struct?: RbinRuleLockConfig
   }
 }
 
+
+export function rbinRuleLockConfigurationToHclTerraform(struct?: RbinRuleLockConfigurationOutputReference | RbinRuleLockConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unlock_delay: {
+      value: rbinRuleLockConfigurationUnlockDelayToHclTerraform(struct!.unlockDelay),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RbinRuleLockConfigurationUnlockDelayList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RbinRuleLockConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -223,6 +262,31 @@ export function rbinRuleResourceTagsToTerraform(struct?: RbinRuleResourceTags | 
     resource_tag_key: cdktf.stringToTerraform(struct!.resourceTagKey),
     resource_tag_value: cdktf.stringToTerraform(struct!.resourceTagValue),
   }
+}
+
+
+export function rbinRuleResourceTagsToHclTerraform(struct?: RbinRuleResourceTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.resourceTagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.resourceTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RbinRuleResourceTagsOutputReference extends cdktf.ComplexObject {
@@ -346,6 +410,31 @@ export function rbinRuleRetentionPeriodToTerraform(struct?: RbinRuleRetentionPer
   }
 }
 
+
+export function rbinRuleRetentionPeriodToHclTerraform(struct?: RbinRuleRetentionPeriodOutputReference | RbinRuleRetentionPeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    retention_period_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionPeriodUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_period_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionPeriodValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RbinRuleRetentionPeriodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -435,6 +524,37 @@ export function rbinRuleTimeoutsToTerraform(struct?: RbinRuleTimeouts | cdktf.IR
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function rbinRuleTimeoutsToHclTerraform(struct?: RbinRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RbinRuleTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -767,5 +887,61 @@ export class RbinRule extends cdktf.TerraformResource {
       retention_period: rbinRuleRetentionPeriodToTerraform(this._retentionPeriod.internalValue),
       timeouts: rbinRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_type: {
+        value: cdktf.stringToHclTerraform(this._resourceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      lock_configuration: {
+        value: rbinRuleLockConfigurationToHclTerraform(this._lockConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RbinRuleLockConfigurationList",
+      },
+      resource_tags: {
+        value: cdktf.listMapperHcl(rbinRuleResourceTagsToHclTerraform, true)(this._resourceTags.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "RbinRuleResourceTagsList",
+      },
+      retention_period: {
+        value: rbinRuleRetentionPeriodToHclTerraform(this._retentionPeriod.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RbinRuleRetentionPeriodList",
+      },
+      timeouts: {
+        value: rbinRuleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RbinRuleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

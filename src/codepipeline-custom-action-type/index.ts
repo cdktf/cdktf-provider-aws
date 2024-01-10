@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline_custom_action_type
 // generated from terraform resource schema
 
@@ -109,6 +104,61 @@ export function codepipelineCustomActionTypeConfigurationPropertyToTerraform(str
     secret: cdktf.booleanToTerraform(struct!.secret),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function codepipelineCustomActionTypeConfigurationPropertyToHclTerraform(struct?: CodepipelineCustomActionTypeConfigurationProperty | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.booleanToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queryable: {
+      value: cdktf.booleanToHclTerraform(struct!.queryable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    secret: {
+      value: cdktf.booleanToHclTerraform(struct!.secret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference extends cdktf.ComplexObject {
@@ -333,6 +383,31 @@ export function codepipelineCustomActionTypeInputArtifactDetailsToTerraform(stru
   }
 }
 
+
+export function codepipelineCustomActionTypeInputArtifactDetailsToHclTerraform(struct?: CodepipelineCustomActionTypeInputArtifactDetailsOutputReference | CodepipelineCustomActionTypeInputArtifactDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_count: {
+      value: cdktf.numberToHclTerraform(struct!.maximumCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum_count: {
+      value: cdktf.numberToHclTerraform(struct!.minimumCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodepipelineCustomActionTypeInputArtifactDetailsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -417,6 +492,31 @@ export function codepipelineCustomActionTypeOutputArtifactDetailsToTerraform(str
     maximum_count: cdktf.numberToTerraform(struct!.maximumCount),
     minimum_count: cdktf.numberToTerraform(struct!.minimumCount),
   }
+}
+
+
+export function codepipelineCustomActionTypeOutputArtifactDetailsToHclTerraform(struct?: CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference | CodepipelineCustomActionTypeOutputArtifactDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_count: {
+      value: cdktf.numberToHclTerraform(struct!.maximumCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum_count: {
+      value: cdktf.numberToHclTerraform(struct!.minimumCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference extends cdktf.ComplexObject {
@@ -513,6 +613,43 @@ export function codepipelineCustomActionTypeSettingsToTerraform(struct?: Codepip
     revision_url_template: cdktf.stringToTerraform(struct!.revisionUrlTemplate),
     third_party_configuration_url: cdktf.stringToTerraform(struct!.thirdPartyConfigurationUrl),
   }
+}
+
+
+export function codepipelineCustomActionTypeSettingsToHclTerraform(struct?: CodepipelineCustomActionTypeSettingsOutputReference | CodepipelineCustomActionTypeSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_url_template: {
+      value: cdktf.stringToHclTerraform(struct!.entityUrlTemplate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    execution_url_template: {
+      value: cdktf.stringToHclTerraform(struct!.executionUrlTemplate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    revision_url_template: {
+      value: cdktf.stringToHclTerraform(struct!.revisionUrlTemplate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    third_party_configuration_url: {
+      value: cdktf.stringToHclTerraform(struct!.thirdPartyConfigurationUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodepipelineCustomActionTypeSettingsOutputReference extends cdktf.ComplexObject {
@@ -869,5 +1006,73 @@ export class CodepipelineCustomActionType extends cdktf.TerraformResource {
       output_artifact_details: codepipelineCustomActionTypeOutputArtifactDetailsToTerraform(this._outputArtifactDetails.internalValue),
       settings: codepipelineCustomActionTypeSettingsToTerraform(this._settings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      category: {
+        value: cdktf.stringToHclTerraform(this._category),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_name: {
+        value: cdktf.stringToHclTerraform(this._providerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration_property: {
+        value: cdktf.listMapperHcl(codepipelineCustomActionTypeConfigurationPropertyToHclTerraform, true)(this._configurationProperty.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodepipelineCustomActionTypeConfigurationPropertyList",
+      },
+      input_artifact_details: {
+        value: codepipelineCustomActionTypeInputArtifactDetailsToHclTerraform(this._inputArtifactDetails.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodepipelineCustomActionTypeInputArtifactDetailsList",
+      },
+      output_artifact_details: {
+        value: codepipelineCustomActionTypeOutputArtifactDetailsToHclTerraform(this._outputArtifactDetails.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodepipelineCustomActionTypeOutputArtifactDetailsList",
+      },
+      settings: {
+        value: codepipelineCustomActionTypeSettingsToHclTerraform(this._settings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodepipelineCustomActionTypeSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

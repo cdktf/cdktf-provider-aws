@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ecr_image
 // generated from terraform resource schema
 
@@ -225,5 +220,49 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
       registry_id: cdktf.stringToTerraform(this._registryId),
       repository_name: cdktf.stringToTerraform(this._repositoryName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_digest: {
+        value: cdktf.stringToHclTerraform(this._imageDigest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_tag: {
+        value: cdktf.stringToHclTerraform(this._imageTag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      most_recent: {
+        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      registry_id: {
+        value: cdktf.stringToHclTerraform(this._registryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository_name: {
+        value: cdktf.stringToHclTerraform(this._repositoryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

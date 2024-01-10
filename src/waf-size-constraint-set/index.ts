@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/waf_size_constraint_set
 // generated from terraform resource schema
 
@@ -50,6 +45,31 @@ export function wafSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struc
     data: cdktf.stringToTerraform(struct!.data),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function wafSizeConstraintSetSizeConstraintsFieldToMatchToHclTerraform(struct?: WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference | WafSizeConstraintSetSizeConstraintsFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data: {
+      value: cdktf.stringToHclTerraform(struct!.data),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -151,6 +171,43 @@ export function wafSizeConstraintSetSizeConstraintsToTerraform(struct?: WafSizeC
     text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
     field_to_match: wafSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struct!.fieldToMatch),
   }
+}
+
+
+export function wafSizeConstraintSetSizeConstraintsToHclTerraform(struct?: WafSizeConstraintSetSizeConstraints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison_operator: {
+      value: cdktf.stringToHclTerraform(struct!.comparisonOperator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    text_transformation: {
+      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafSizeConstraintSetSizeConstraintsFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafSizeConstraintSetSizeConstraintsFieldToMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafSizeConstraintSetSizeConstraintsOutputReference extends cdktf.ComplexObject {
@@ -408,5 +465,31 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       size_constraints: cdktf.listMapper(wafSizeConstraintSetSizeConstraintsToTerraform, true)(this._sizeConstraints.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      size_constraints: {
+        value: cdktf.listMapperHcl(wafSizeConstraintSetSizeConstraintsToHclTerraform, true)(this._sizeConstraints.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafSizeConstraintSetSizeConstraintsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

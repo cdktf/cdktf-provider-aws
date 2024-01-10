@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dynamodb_table
 // generated from terraform resource schema
 
@@ -44,6 +39,17 @@ export function dataAwsDynamodbTableAttributeToTerraform(struct?: DataAwsDynamod
   }
   return {
   }
+}
+
+
+export function dataAwsDynamodbTableAttributeToHclTerraform(struct?: DataAwsDynamodbTableAttribute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
@@ -113,6 +119,17 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsDynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndex): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.ComplexObject {
@@ -209,6 +226,17 @@ export function dataAwsDynamodbTableLocalSecondaryIndexToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsDynamodbTableLocalSecondaryIndexToHclTerraform(struct?: DataAwsDynamodbTableLocalSecondaryIndex): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDynamodbTableLocalSecondaryIndexOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -288,6 +316,17 @@ export function dataAwsDynamodbTablePointInTimeRecoveryToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsDynamodbTablePointInTimeRecoveryToHclTerraform(struct?: DataAwsDynamodbTablePointInTimeRecovery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDynamodbTablePointInTimeRecoveryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -350,6 +389,17 @@ export function dataAwsDynamodbTableReplicaToTerraform(struct?: DataAwsDynamodbT
   }
   return {
   }
+}
+
+
+export function dataAwsDynamodbTableReplicaToHclTerraform(struct?: DataAwsDynamodbTableReplica): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
@@ -421,6 +471,17 @@ export function dataAwsDynamodbTableTtlToTerraform(struct?: DataAwsDynamodbTable
   }
 }
 
+
+export function dataAwsDynamodbTableTtlToHclTerraform(struct?: DataAwsDynamodbTableTtl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDynamodbTableTtlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -488,6 +549,17 @@ export function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsDynamodbTableServerSideEncryptionToHclTerraform(struct?: DataAwsDynamodbTableServerSideEncryptionOutputReference | DataAwsDynamodbTableServerSideEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdktf.ComplexObject {
@@ -756,5 +828,37 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       server_side_encryption: dataAwsDynamodbTableServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      server_side_encryption: {
+        value: dataAwsDynamodbTableServerSideEncryptionToHclTerraform(this._serverSideEncryption.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsDynamodbTableServerSideEncryptionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

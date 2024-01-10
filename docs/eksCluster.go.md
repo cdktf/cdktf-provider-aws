@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksCluster(scope Construct, id *string, config EksClusterConfig) EksCluster
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -138,6 +139,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.eksCluster.EksCluster.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.eksCluster.EksCluster.toMetadata"></a>
 
@@ -499,7 +506,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.eksCluster.EksCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +538,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.eksCluster.EksCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +552,7 @@ ekscluster.EksCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.eksCluster.EksCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -559,7 +566,7 @@ ekscluster.EksCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.eksCluster.EksCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1140,7 +1147,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterCertificateAuthority {
 
@@ -1153,7 +1160,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterConfig {
 	Connection: interface{},
@@ -1165,15 +1172,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
 	Provisioners: *[]interface{},
 	Name: *string,
 	RoleArn: *string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksCluster.EksClusterVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterVpcConfig,
 	EnabledClusterLogTypes: *[]*string,
-	EncryptionConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksCluster.EksClusterEncryptionConfig,
+	EncryptionConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterEncryptionConfig,
 	Id: *string,
-	KubernetesNetworkConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksCluster.EksClusterKubernetesNetworkConfig,
-	OutpostConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksCluster.EksClusterOutpostConfig,
+	KubernetesNetworkConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterKubernetesNetworkConfig,
+	OutpostConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterOutpostConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksCluster.EksClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterTimeouts,
 	Version: *string,
 }
 ```
@@ -1436,10 +1443,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterEncryptionConfig {
-	Provider: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksCluster.EksClusterEncryptionConfigProvider,
+	Provider: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterEncryptionConfigProvider,
 	Resources: *[]*string,
 }
 ```
@@ -1484,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterEncryptionConfigProvider {
 	KeyArn: *string,
@@ -1516,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterIdentity {
 
@@ -1529,7 +1536,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterIdentityOidc {
 
@@ -1542,7 +1549,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterKubernetesNetworkConfig {
 	IpFamily: *string,
@@ -1588,12 +1595,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterOutpostConfig {
 	ControlPlaneInstanceType: *string,
 	OutpostArns: *[]*string,
-	ControlPlanePlacement: github.com/cdktf/cdktf-provider-aws-go/aws/v18.eksCluster.EksClusterOutpostConfigControlPlanePlacement,
+	ControlPlanePlacement: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement,
 }
 ```
 
@@ -1650,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterOutpostConfigControlPlanePlacement {
 	GroupName: *string,
@@ -1682,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterTimeouts {
 	Create: *string,
@@ -1742,7 +1749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterVpcConfig {
 	SubnetIds: *[]*string,
@@ -1832,7 +1839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterCertificateAuthorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksClusterCertificateAuthorityList
 ```
@@ -1873,10 +1880,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1964,7 +1988,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterCertificateAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksClusterCertificateAuthorityOutputReference
 ```
@@ -2242,7 +2266,7 @@ func InternalValue() EksClusterCertificateAuthority
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterEncryptionConfigOutputReference
 ```
@@ -2548,7 +2572,7 @@ func InternalValue() EksClusterEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterEncryptionConfigProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterEncryptionConfigProviderOutputReference
 ```
@@ -2819,7 +2843,7 @@ func InternalValue() EksClusterEncryptionConfigProvider
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksClusterIdentityList
 ```
@@ -2860,10 +2884,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2951,7 +2992,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityOidcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksClusterIdentityOidcList
 ```
@@ -2992,10 +3033,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3083,7 +3141,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksClusterIdentityOidcOutputReference
 ```
@@ -3361,7 +3419,7 @@ func InternalValue() EksClusterIdentityOidc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksClusterIdentityOutputReference
 ```
@@ -3639,7 +3697,7 @@ func InternalValue() EksClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterKubernetesNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterKubernetesNetworkConfigOutputReference
 ```
@@ -3957,7 +4015,7 @@ func InternalValue() EksClusterKubernetesNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterOutpostConfigControlPlanePlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterOutpostConfigControlPlanePlacementOutputReference
 ```
@@ -4228,7 +4286,7 @@ func InternalValue() EksClusterOutpostConfigControlPlanePlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterOutpostConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterOutpostConfigOutputReference
 ```
@@ -4563,7 +4621,7 @@ func InternalValue() EksClusterOutpostConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterTimeoutsOutputReference
 ```
@@ -4899,7 +4957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterVpcConfigOutputReference
 ```

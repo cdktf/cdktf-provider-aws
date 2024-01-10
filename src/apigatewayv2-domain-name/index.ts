@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/apigatewayv2_domain_name
 // generated from terraform resource schema
 
@@ -80,6 +75,43 @@ export function apigatewayv2DomainNameDomainNameConfigurationToTerraform(struct?
     ownership_verification_certificate_arn: cdktf.stringToTerraform(struct!.ownershipVerificationCertificateArn),
     security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
   }
+}
+
+
+export function apigatewayv2DomainNameDomainNameConfigurationToHclTerraform(struct?: Apigatewayv2DomainNameDomainNameConfigurationOutputReference | Apigatewayv2DomainNameDomainNameConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_arn: {
+      value: cdktf.stringToHclTerraform(struct!.certificateArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoint_type: {
+      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ownership_verification_certificate_arn: {
+      value: cdktf.stringToHclTerraform(struct!.ownershipVerificationCertificateArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_policy: {
+      value: cdktf.stringToHclTerraform(struct!.securityPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extends cdktf.ComplexObject {
@@ -219,6 +251,31 @@ export function apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(struct?
   }
 }
 
+
+export function apigatewayv2DomainNameMutualTlsAuthenticationToHclTerraform(struct?: Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference | Apigatewayv2DomainNameMutualTlsAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    truststore_uri: {
+      value: cdktf.stringToHclTerraform(struct!.truststoreUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    truststore_version: {
+      value: cdktf.stringToHclTerraform(struct!.truststoreVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -306,6 +363,31 @@ export function apigatewayv2DomainNameTimeoutsToTerraform(struct?: Apigatewayv2D
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function apigatewayv2DomainNameTimeoutsToHclTerraform(struct?: Apigatewayv2DomainNameTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -583,5 +665,55 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
       mutual_tls_authentication: apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(this._mutualTlsAuthentication.internalValue),
       timeouts: apigatewayv2DomainNameTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      domain_name_configuration: {
+        value: apigatewayv2DomainNameDomainNameConfigurationToHclTerraform(this._domainNameConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Apigatewayv2DomainNameDomainNameConfigurationList",
+      },
+      mutual_tls_authentication: {
+        value: apigatewayv2DomainNameMutualTlsAuthenticationToHclTerraform(this._mutualTlsAuthentication.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Apigatewayv2DomainNameMutualTlsAuthenticationList",
+      },
+      timeouts: {
+        value: apigatewayv2DomainNameTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Apigatewayv2DomainNameTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/route53_resolver_rule
 // generated from terraform resource schema
 
@@ -76,6 +71,31 @@ export function route53ResolverRuleTargetIpToTerraform(struct?: Route53ResolverR
     ip: cdktf.stringToTerraform(struct!.ip),
     port: cdktf.numberToTerraform(struct!.port),
   }
+}
+
+
+export function route53ResolverRuleTargetIpToHclTerraform(struct?: Route53ResolverRuleTargetIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53ResolverRuleTargetIpOutputReference extends cdktf.ComplexObject {
@@ -202,6 +222,37 @@ export function route53ResolverRuleTimeoutsToTerraform(struct?: Route53ResolverR
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function route53ResolverRuleTimeoutsToHclTerraform(struct?: Route53ResolverRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -542,5 +593,67 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
       target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform, true)(this._targetIp.internalValue),
       timeouts: route53ResolverRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resolver_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._resolverEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_type: {
+        value: cdktf.stringToHclTerraform(this._ruleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      target_ip: {
+        value: cdktf.listMapperHcl(route53ResolverRuleTargetIpToHclTerraform, true)(this._targetIp.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "Route53ResolverRuleTargetIpList",
+      },
+      timeouts: {
+        value: route53ResolverRuleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Route53ResolverRuleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

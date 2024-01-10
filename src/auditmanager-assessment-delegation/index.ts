@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/auditmanager_assessment_delegation
 // generated from terraform resource schema
 
@@ -191,5 +186,43 @@ export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       role_type: cdktf.stringToTerraform(this._roleType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assessment_id: {
+        value: cdktf.stringToHclTerraform(this._assessmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      control_set_id: {
+        value: cdktf.stringToHclTerraform(this._controlSetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_type: {
+        value: cdktf.stringToHclTerraform(this._roleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

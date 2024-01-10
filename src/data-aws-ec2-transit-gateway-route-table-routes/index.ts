@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ec2_transit_gateway_route_table_routes
 // generated from terraform resource schema
 
@@ -40,6 +35,17 @@ export function dataAwsEc2TransitGatewayRouteTableRoutesRoutesToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataAwsEc2TransitGatewayRouteTableRoutesRoutesToHclTerraform(struct?: DataAwsEc2TransitGatewayRouteTableRoutesRoutes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEc2TransitGatewayRouteTableRoutesRoutesOutputReference extends cdktf.ComplexObject {
@@ -134,6 +140,31 @@ export function dataAwsEc2TransitGatewayRouteTableRoutesFilterToTerraform(struct
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsEc2TransitGatewayRouteTableRoutesFilterToHclTerraform(struct?: DataAwsEc2TransitGatewayRouteTableRoutesFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEc2TransitGatewayRouteTableRoutesFilterOutputReference extends cdktf.ComplexObject {
@@ -351,5 +382,31 @@ export class DataAwsEc2TransitGatewayRouteTableRoutes extends cdktf.TerraformDat
       transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
       filter: cdktf.listMapper(dataAwsEc2TransitGatewayRouteTableRoutesFilterToTerraform, true)(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_route_table_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayRouteTableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsEc2TransitGatewayRouteTableRoutesFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsEc2TransitGatewayRouteTableRoutesFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

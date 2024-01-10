@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.NewCloudwatchEventPermission(scope Construct, id *string, config CloudwatchEventPermissionConfig) CloudwatchEventPermission
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 &cloudwatcheventpermission.CloudwatchEventPermissionCondition {
 	Key: *string,
@@ -893,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 &cloudwatcheventpermission.CloudwatchEventPermissionConfig {
 	Connection: interface{},
@@ -906,7 +913,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission
 	Principal: *string,
 	StatementId: *string,
 	Action: *string,
-	Condition: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventPermission.CloudwatchEventPermissionCondition,
+	Condition: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition,
 	EventBusName: *string,
 	Id: *string,
 }
@@ -1086,7 +1093,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.NewCloudwatchEventPermissionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventPermissionConditionOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/api_gateway_request_validator
 // generated from terraform resource schema
 
@@ -185,5 +180,43 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
       validate_request_body: cdktf.booleanToTerraform(this._validateRequestBody),
       validate_request_parameters: cdktf.booleanToTerraform(this._validateRequestParameters),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validate_request_body: {
+        value: cdktf.booleanToHclTerraform(this._validateRequestBody),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      validate_request_parameters: {
+        value: cdktf.booleanToHclTerraform(this._validateRequestParameters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

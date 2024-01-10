@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/eks_node_group
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataAwsEksNodeGroupLaunchTemplateToTerraform(struct?: DataAwsEks
   }
   return {
   }
+}
+
+
+export function dataAwsEksNodeGroupLaunchTemplateToHclTerraform(struct?: DataAwsEksNodeGroupLaunchTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
@@ -118,6 +124,17 @@ export function dataAwsEksNodeGroupRemoteAccessToTerraform(struct?: DataAwsEksNo
   }
 }
 
+
+export function dataAwsEksNodeGroupRemoteAccessToHclTerraform(struct?: DataAwsEksNodeGroupRemoteAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsEksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -187,6 +204,17 @@ export function dataAwsEksNodeGroupResourcesAutoscalingGroupsToTerraform(struct?
   }
 }
 
+
+export function dataAwsEksNodeGroupResourcesAutoscalingGroupsToHclTerraform(struct?: DataAwsEksNodeGroupResourcesAutoscalingGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -249,6 +277,17 @@ export function dataAwsEksNodeGroupResourcesToTerraform(struct?: DataAwsEksNodeG
   }
   return {
   }
+}
+
+
+export function dataAwsEksNodeGroupResourcesToHclTerraform(struct?: DataAwsEksNodeGroupResources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksNodeGroupResourcesOutputReference extends cdktf.ComplexObject {
@@ -319,6 +358,17 @@ export function dataAwsEksNodeGroupScalingConfigToTerraform(struct?: DataAwsEksN
   }
   return {
   }
+}
+
+
+export function dataAwsEksNodeGroupScalingConfigToHclTerraform(struct?: DataAwsEksNodeGroupScalingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObject {
@@ -393,6 +443,17 @@ export function dataAwsEksNodeGroupTaintsToTerraform(struct?: DataAwsEksNodeGrou
   }
   return {
   }
+}
+
+
+export function dataAwsEksNodeGroupTaintsToHclTerraform(struct?: DataAwsEksNodeGroupTaints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEksNodeGroupTaintsOutputReference extends cdktf.ComplexObject {
@@ -674,5 +735,37 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
       node_group_name: cdktf.stringToTerraform(this._nodeGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_group_name: {
+        value: cdktf.stringToHclTerraform(this._nodeGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_transit_gateway_multicast_group_source
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResour
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       transit_gateway_multicast_domain_id: cdktf.stringToTerraform(this._transitGatewayMulticastDomainId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group_ip_address: {
+        value: cdktf.stringToHclTerraform(this._groupIpAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_interface_id: {
+        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_multicast_domain_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayMulticastDomainId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

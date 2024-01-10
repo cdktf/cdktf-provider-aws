@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSet(scope Construct, id *string, config Route53RecoveryreadinessResourceSetConfig) Route53RecoveryreadinessResourceSet
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.toMetadata"></a>
 
@@ -425,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSet_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSet_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSet_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 &route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSetConfig {
 	Connection: interface{},
@@ -895,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessr
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeouts,
 }
 ```
 
@@ -1086,10 +1093,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 &route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSetResources {
-	DnsTargetResource: github.com/cdktf/cdktf-provider-aws-go/aws/v18.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResource,
+	DnsTargetResource: github.com/cdktf/cdktf-provider-aws-go/aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResource,
 	ReadinessScopes: *[]*string,
 	ResourceArn: *string,
 }
@@ -1148,14 +1155,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 &route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSetResourcesDnsTargetResource {
 	DomainName: *string,
 	HostedZoneArn: *string,
 	RecordSetId: *string,
 	RecordType: *string,
-	TargetResource: github.com/cdktf/cdktf-provider-aws-go/aws/v18.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource,
+	TargetResource: github.com/cdktf/cdktf-provider-aws-go/aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource,
 }
 ```
 
@@ -1238,11 +1245,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 &route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource {
-	NlbResource: github.com/cdktf/cdktf-provider-aws-go/aws/v18.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource,
-	R53Resource: github.com/cdktf/cdktf-provider-aws-go/aws/v18.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource,
+	NlbResource: github.com/cdktf/cdktf-provider-aws-go/aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource,
+	R53Resource: github.com/cdktf/cdktf-provider-aws-go/aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource,
 }
 ```
 
@@ -1288,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 &route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource {
 	Arn: *string,
@@ -1320,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 &route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource {
 	DomainName: *string,
@@ -1366,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 &route53recoveryreadinessresourceset.Route53RecoveryreadinessResourceSetTimeouts {
 	Delete: *string,
@@ -1400,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference
 ```
@@ -1800,7 +1807,7 @@ func InternalValue() Route53RecoveryreadinessResourceSetResourcesDnsTargetResour
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference
 ```
@@ -2078,7 +2085,7 @@ func InternalValue() Route53RecoveryreadinessResourceSetResourcesDnsTargetResour
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference
 ```
@@ -2411,7 +2418,7 @@ func InternalValue() Route53RecoveryreadinessResourceSetResourcesDnsTargetResour
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference
 ```
@@ -2718,7 +2725,7 @@ func InternalValue() Route53RecoveryreadinessResourceSetResourcesDnsTargetResour
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSetResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecoveryreadinessResourceSetResourcesList
 ```
@@ -2759,10 +2766,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2861,7 +2885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSetResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecoveryreadinessResourceSetResourcesOutputReference
 ```
@@ -3239,7 +3263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinessresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoveryreadinessresourceset"
 
 route53recoveryreadinessresourceset.NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessResourceSetTimeoutsOutputReference
 ```

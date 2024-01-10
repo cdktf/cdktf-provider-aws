@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/quicksight_analysis
 // generated from terraform resource schema
 
@@ -98,6 +93,31 @@ export function quicksightAnalysisParametersDateTimeParametersToTerraform(struct
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function quicksightAnalysisParametersDateTimeParametersToHclTerraform(struct?: QuicksightAnalysisParametersDateTimeParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightAnalysisParametersDateTimeParametersOutputReference extends cdktf.ComplexObject {
@@ -218,6 +238,31 @@ export function quicksightAnalysisParametersDecimalParametersToTerraform(struct?
   }
 }
 
+
+export function quicksightAnalysisParametersDecimalParametersToHclTerraform(struct?: QuicksightAnalysisParametersDecimalParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightAnalysisParametersDecimalParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -336,6 +381,31 @@ export function quicksightAnalysisParametersIntegerParametersToTerraform(struct?
   }
 }
 
+
+export function quicksightAnalysisParametersIntegerParametersToHclTerraform(struct?: QuicksightAnalysisParametersIntegerParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightAnalysisParametersIntegerParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -452,6 +522,31 @@ export function quicksightAnalysisParametersStringParametersToTerraform(struct?:
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function quicksightAnalysisParametersStringParametersToHclTerraform(struct?: QuicksightAnalysisParametersStringParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightAnalysisParametersStringParametersOutputReference extends cdktf.ComplexObject {
@@ -590,6 +685,43 @@ export function quicksightAnalysisParametersToTerraform(struct?: QuicksightAnaly
   }
 }
 
+
+export function quicksightAnalysisParametersToHclTerraform(struct?: QuicksightAnalysisParametersOutputReference | QuicksightAnalysisParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    date_time_parameters: {
+      value: cdktf.listMapperHcl(quicksightAnalysisParametersDateTimeParametersToHclTerraform, true)(struct!.dateTimeParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightAnalysisParametersDateTimeParametersList",
+    },
+    decimal_parameters: {
+      value: cdktf.listMapperHcl(quicksightAnalysisParametersDecimalParametersToHclTerraform, true)(struct!.decimalParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightAnalysisParametersDecimalParametersList",
+    },
+    integer_parameters: {
+      value: cdktf.listMapperHcl(quicksightAnalysisParametersIntegerParametersToHclTerraform, true)(struct!.integerParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightAnalysisParametersIntegerParametersList",
+    },
+    string_parameters: {
+      value: cdktf.listMapperHcl(quicksightAnalysisParametersStringParametersToHclTerraform, true)(struct!.stringParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightAnalysisParametersStringParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightAnalysisParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -726,6 +858,31 @@ export function quicksightAnalysisPermissionsToTerraform(struct?: QuicksightAnal
   }
 }
 
+
+export function quicksightAnalysisPermissionsToHclTerraform(struct?: QuicksightAnalysisPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    principal: {
+      value: cdktf.stringToHclTerraform(struct!.principal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightAnalysisPermissionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -842,6 +999,31 @@ export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToT
     data_set_arn: cdktf.stringToTerraform(struct!.dataSetArn),
     data_set_placeholder: cdktf.stringToTerraform(struct!.dataSetPlaceholder),
   }
+}
+
+
+export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToHclTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_set_arn: {
+      value: cdktf.stringToHclTerraform(struct!.dataSetArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_set_placeholder: {
+      value: cdktf.stringToHclTerraform(struct!.dataSetPlaceholder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutputReference extends cdktf.ComplexObject {
@@ -964,6 +1146,31 @@ export function quicksightAnalysisSourceEntitySourceTemplateToTerraform(struct?:
   }
 }
 
+
+export function quicksightAnalysisSourceEntitySourceTemplateToHclTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateOutputReference | QuicksightAnalysisSourceEntitySourceTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arn: {
+      value: cdktf.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_set_references: {
+      value: cdktf.listMapperHcl(quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToHclTerraform, true)(struct!.dataSetReferences),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightAnalysisSourceEntitySourceTemplateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1047,6 +1254,25 @@ export function quicksightAnalysisSourceEntityToTerraform(struct?: QuicksightAna
   }
 }
 
+
+export function quicksightAnalysisSourceEntityToHclTerraform(struct?: QuicksightAnalysisSourceEntityOutputReference | QuicksightAnalysisSourceEntity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_template: {
+      value: quicksightAnalysisSourceEntitySourceTemplateToHclTerraform(struct!.sourceTemplate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightAnalysisSourceEntitySourceTemplateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightAnalysisSourceEntityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1120,6 +1346,37 @@ export function quicksightAnalysisTimeoutsToTerraform(struct?: QuicksightAnalysi
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function quicksightAnalysisTimeoutsToHclTerraform(struct?: QuicksightAnalysisTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightAnalysisTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1542,5 +1799,91 @@ export class QuicksightAnalysis extends cdktf.TerraformResource {
       source_entity: quicksightAnalysisSourceEntityToTerraform(this._sourceEntity.internalValue),
       timeouts: quicksightAnalysisTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      analysis_id: {
+        value: cdktf.stringToHclTerraform(this._analysisId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recovery_window_in_days: {
+        value: cdktf.numberToHclTerraform(this._recoveryWindowInDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      theme_arn: {
+        value: cdktf.stringToHclTerraform(this._themeArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      definition: {
+        value: cdktf.anyToHclTerraform(this._definition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "any",
+      },
+      parameters: {
+        value: quicksightAnalysisParametersToHclTerraform(this._parameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "QuicksightAnalysisParametersList",
+      },
+      permissions: {
+        value: cdktf.listMapperHcl(quicksightAnalysisPermissionsToHclTerraform, true)(this._permissions.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "QuicksightAnalysisPermissionsList",
+      },
+      source_entity: {
+        value: quicksightAnalysisSourceEntityToHclTerraform(this._sourceEntity.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "QuicksightAnalysisSourceEntityList",
+      },
+      timeouts: {
+        value: quicksightAnalysisTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "QuicksightAnalysisTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/rolesanywhere_trust_anchor
 // generated from terraform resource schema
 
@@ -62,6 +57,31 @@ export function rolesanywhereTrustAnchorSourceSourceDataToTerraform(struct?: Rol
     acm_pca_arn: cdktf.stringToTerraform(struct!.acmPcaArn),
     x509_certificate_data: cdktf.stringToTerraform(struct!.x509CertificateData),
   }
+}
+
+
+export function rolesanywhereTrustAnchorSourceSourceDataToHclTerraform(struct?: RolesanywhereTrustAnchorSourceSourceDataOutputReference | RolesanywhereTrustAnchorSourceSourceData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    acm_pca_arn: {
+      value: cdktf.stringToHclTerraform(struct!.acmPcaArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    x509_certificate_data: {
+      value: cdktf.stringToHclTerraform(struct!.x509CertificateData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RolesanywhereTrustAnchorSourceSourceDataOutputReference extends cdktf.ComplexObject {
@@ -156,6 +176,31 @@ export function rolesanywhereTrustAnchorSourceToTerraform(struct?: Rolesanywhere
     source_type: cdktf.stringToTerraform(struct!.sourceType),
     source_data: rolesanywhereTrustAnchorSourceSourceDataToTerraform(struct!.sourceData),
   }
+}
+
+
+export function rolesanywhereTrustAnchorSourceToHclTerraform(struct?: RolesanywhereTrustAnchorSourceOutputReference | RolesanywhereTrustAnchorSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_type: {
+      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_data: {
+      value: rolesanywhereTrustAnchorSourceSourceDataToHclTerraform(struct!.sourceData),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RolesanywhereTrustAnchorSourceSourceDataList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RolesanywhereTrustAnchorSourceOutputReference extends cdktf.ComplexObject {
@@ -394,5 +439,49 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       source: rolesanywhereTrustAnchorSourceToTerraform(this._source.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      source: {
+        value: rolesanywhereTrustAnchorSourceToHclTerraform(this._source.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RolesanywhereTrustAnchorSourceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

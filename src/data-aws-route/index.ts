@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/route
 // generated from terraform resource schema
 
@@ -97,6 +92,25 @@ export function dataAwsRouteTimeoutsToTerraform(struct?: DataAwsRouteTimeouts | 
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsRouteTimeoutsToHclTerraform(struct?: DataAwsRouteTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsRouteTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -507,5 +521,109 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
       vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
       timeouts: dataAwsRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      carrier_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._carrierGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      core_network_arn: {
+        value: cdktf.stringToHclTerraform(this._coreNetworkArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_ipv6_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._destinationIpv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_prefix_list_id: {
+        value: cdktf.stringToHclTerraform(this._destinationPrefixListId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      egress_only_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._egressOnlyGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_id: {
+        value: cdktf.stringToHclTerraform(this._gatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._localGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nat_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._natGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_interface_id: {
+        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_table_id: {
+        value: cdktf.stringToHclTerraform(this._routeTableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_peering_connection_id: {
+        value: cdktf.stringToHclTerraform(this._vpcPeeringConnectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dataAwsRouteTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsRouteTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

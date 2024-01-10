@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/mq_broker
 // generated from terraform resource schema
 
@@ -130,6 +125,17 @@ export function mqBrokerInstancesToTerraform(struct?: MqBrokerInstances): any {
   }
 }
 
+
+export function mqBrokerInstancesToHclTerraform(struct?: MqBrokerInstances): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class MqBrokerInstancesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -215,6 +221,31 @@ export function mqBrokerConfigurationToTerraform(struct?: MqBrokerConfigurationO
     id: cdktf.stringToTerraform(struct!.id),
     revision: cdktf.numberToTerraform(struct!.revision),
   }
+}
+
+
+export function mqBrokerConfigurationToHclTerraform(struct?: MqBrokerConfigurationOutputReference | MqBrokerConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    revision: {
+      value: cdktf.numberToHclTerraform(struct!.revision),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
@@ -307,6 +338,31 @@ export function mqBrokerEncryptionOptionsToTerraform(struct?: MqBrokerEncryption
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     use_aws_owned_key: cdktf.booleanToTerraform(struct!.useAwsOwnedKey),
   }
+}
+
+
+export function mqBrokerEncryptionOptionsToHclTerraform(struct?: MqBrokerEncryptionOptionsOutputReference | MqBrokerEncryptionOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_aws_owned_key: {
+      value: cdktf.booleanToHclTerraform(struct!.useAwsOwnedKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObject {
@@ -444,6 +500,85 @@ export function mqBrokerLdapServerMetadataToTerraform(struct?: MqBrokerLdapServe
     user_search_matching: cdktf.stringToTerraform(struct!.userSearchMatching),
     user_search_subtree: cdktf.booleanToTerraform(struct!.userSearchSubtree),
   }
+}
+
+
+export function mqBrokerLdapServerMetadataToHclTerraform(struct?: MqBrokerLdapServerMetadataOutputReference | MqBrokerLdapServerMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hosts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    role_base: {
+      value: cdktf.stringToHclTerraform(struct!.roleBase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_name: {
+      value: cdktf.stringToHclTerraform(struct!.roleName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_search_matching: {
+      value: cdktf.stringToHclTerraform(struct!.roleSearchMatching),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_search_subtree: {
+      value: cdktf.booleanToHclTerraform(struct!.roleSearchSubtree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    service_account_password: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAccountPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_account_username: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAccountUsername),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_base: {
+      value: cdktf.stringToHclTerraform(struct!.userBase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_role_name: {
+      value: cdktf.stringToHclTerraform(struct!.userRoleName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_search_matching: {
+      value: cdktf.stringToHclTerraform(struct!.userSearchMatching),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_search_subtree: {
+      value: cdktf.booleanToHclTerraform(struct!.userSearchSubtree),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObject {
@@ -736,6 +871,31 @@ export function mqBrokerLogsToTerraform(struct?: MqBrokerLogsOutputReference | M
   }
 }
 
+
+export function mqBrokerLogsToHclTerraform(struct?: MqBrokerLogsOutputReference | MqBrokerLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit: {
+      value: cdktf.stringToHclTerraform(struct!.audit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    general: {
+      value: cdktf.booleanToHclTerraform(struct!.general),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MqBrokerLogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -831,6 +991,37 @@ export function mqBrokerMaintenanceWindowStartTimeToTerraform(struct?: MqBrokerM
     time_of_day: cdktf.stringToTerraform(struct!.timeOfDay),
     time_zone: cdktf.stringToTerraform(struct!.timeZone),
   }
+}
+
+
+export function mqBrokerMaintenanceWindowStartTimeToHclTerraform(struct?: MqBrokerMaintenanceWindowStartTimeOutputReference | MqBrokerMaintenanceWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_of_day: {
+      value: cdktf.stringToHclTerraform(struct!.timeOfDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
@@ -941,6 +1132,37 @@ export function mqBrokerTimeoutsToTerraform(struct?: MqBrokerTimeouts | cdktf.IR
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function mqBrokerTimeoutsToHclTerraform(struct?: MqBrokerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MqBrokerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1080,6 +1302,49 @@ export function mqBrokerUserToTerraform(struct?: MqBrokerUser | cdktf.IResolvabl
     replication_user: cdktf.booleanToTerraform(struct!.replicationUser),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function mqBrokerUserToHclTerraform(struct?: MqBrokerUser | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    console_access: {
+      value: cdktf.booleanToHclTerraform(struct!.consoleAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    groups: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    replication_user: {
+      value: cdktf.booleanToHclTerraform(struct!.replicationUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
@@ -1701,5 +1966,145 @@ export class MqBroker extends cdktf.TerraformResource {
       timeouts: mqBrokerTimeoutsToTerraform(this._timeouts.internalValue),
       user: cdktf.listMapper(mqBrokerUserToTerraform, true)(this._user.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      apply_immediately: {
+        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      authentication_strategy: {
+        value: cdktf.stringToHclTerraform(this._authenticationStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_minor_version_upgrade: {
+        value: cdktf.booleanToHclTerraform(this._autoMinorVersionUpgrade),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      broker_name: {
+        value: cdktf.stringToHclTerraform(this._brokerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_mode: {
+        value: cdktf.stringToHclTerraform(this._deploymentMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine_type: {
+        value: cdktf.stringToHclTerraform(this._engineType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine_version: {
+        value: cdktf.stringToHclTerraform(this._engineVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_instance_type: {
+        value: cdktf.stringToHclTerraform(this._hostInstanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      publicly_accessible: {
+        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      security_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      configuration: {
+        value: mqBrokerConfigurationToHclTerraform(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MqBrokerConfigurationList",
+      },
+      encryption_options: {
+        value: mqBrokerEncryptionOptionsToHclTerraform(this._encryptionOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MqBrokerEncryptionOptionsList",
+      },
+      ldap_server_metadata: {
+        value: mqBrokerLdapServerMetadataToHclTerraform(this._ldapServerMetadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MqBrokerLdapServerMetadataList",
+      },
+      logs: {
+        value: mqBrokerLogsToHclTerraform(this._logs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MqBrokerLogsList",
+      },
+      maintenance_window_start_time: {
+        value: mqBrokerMaintenanceWindowStartTimeToHclTerraform(this._maintenanceWindowStartTime.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MqBrokerMaintenanceWindowStartTimeList",
+      },
+      timeouts: {
+        value: mqBrokerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MqBrokerTimeouts",
+      },
+      user: {
+        value: cdktf.listMapperHcl(mqBrokerUserToHclTerraform, true)(this._user.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "MqBrokerUserList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

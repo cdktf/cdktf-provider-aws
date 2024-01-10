@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lightsail_distribution
 // generated from terraform resource schema
 
@@ -100,6 +95,17 @@ export function lightsailDistributionLocationToTerraform(struct?: LightsailDistr
   }
 }
 
+
+export function lightsailDistributionLocationToHclTerraform(struct?: LightsailDistributionLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class LightsailDistributionLocationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -181,6 +187,31 @@ export function lightsailDistributionCacheBehaviorToTerraform(struct?: Lightsail
     behavior: cdktf.stringToTerraform(struct!.behavior),
     path: cdktf.stringToTerraform(struct!.path),
   }
+}
+
+
+export function lightsailDistributionCacheBehaviorToHclTerraform(struct?: LightsailDistributionCacheBehavior | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktf.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailDistributionCacheBehaviorOutputReference extends cdktf.ComplexObject {
@@ -305,6 +336,31 @@ export function lightsailDistributionCacheBehaviorSettingsForwardedCookiesToTerr
   }
 }
 
+
+export function lightsailDistributionCacheBehaviorSettingsForwardedCookiesToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cookies_allow_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cookiesAllowList),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    option: {
+      value: cdktf.stringToHclTerraform(struct!.option),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -401,6 +457,31 @@ export function lightsailDistributionCacheBehaviorSettingsForwardedHeadersToTerr
   }
 }
 
+
+export function lightsailDistributionCacheBehaviorSettingsForwardedHeadersToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    headers_allow_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.headersAllowList),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    option: {
+      value: cdktf.stringToHclTerraform(struct!.option),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -495,6 +576,31 @@ export function lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsT
     option: cdktf.booleanToTerraform(struct!.option),
     query_strings_allowed_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryStringsAllowedList),
   }
+}
+
+
+export function lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    option: {
+      value: cdktf.booleanToHclTerraform(struct!.option),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    query_strings_allowed_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryStringsAllowedList),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference extends cdktf.ComplexObject {
@@ -633,6 +739,67 @@ export function lightsailDistributionCacheBehaviorSettingsToTerraform(struct?: L
     forwarded_headers: lightsailDistributionCacheBehaviorSettingsForwardedHeadersToTerraform(struct!.forwardedHeaders),
     forwarded_query_strings: lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsToTerraform(struct!.forwardedQueryStrings),
   }
+}
+
+
+export function lightsailDistributionCacheBehaviorSettingsToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsOutputReference | LightsailDistributionCacheBehaviorSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_http_methods: {
+      value: cdktf.stringToHclTerraform(struct!.allowedHttpMethods),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cached_http_methods: {
+      value: cdktf.stringToHclTerraform(struct!.cachedHttpMethods),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.defaultTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.maximumTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.minimumTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    forwarded_cookies: {
+      value: lightsailDistributionCacheBehaviorSettingsForwardedCookiesToHclTerraform(struct!.forwardedCookies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LightsailDistributionCacheBehaviorSettingsForwardedCookiesList",
+    },
+    forwarded_headers: {
+      value: lightsailDistributionCacheBehaviorSettingsForwardedHeadersToHclTerraform(struct!.forwardedHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LightsailDistributionCacheBehaviorSettingsForwardedHeadersList",
+    },
+    forwarded_query_strings: {
+      value: lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsToHclTerraform(struct!.forwardedQueryStrings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailDistributionCacheBehaviorSettingsOutputReference extends cdktf.ComplexObject {
@@ -856,6 +1023,25 @@ export function lightsailDistributionDefaultCacheBehaviorToTerraform(struct?: Li
   }
 }
 
+
+export function lightsailDistributionDefaultCacheBehaviorToHclTerraform(struct?: LightsailDistributionDefaultCacheBehaviorOutputReference | LightsailDistributionDefaultCacheBehavior): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktf.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailDistributionDefaultCacheBehaviorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -932,6 +1118,37 @@ export function lightsailDistributionOriginToTerraform(struct?: LightsailDistrib
     protocol_policy: cdktf.stringToTerraform(struct!.protocolPolicy),
     region_name: cdktf.stringToTerraform(struct!.regionName),
   }
+}
+
+
+export function lightsailDistributionOriginToHclTerraform(struct?: LightsailDistributionOriginOutputReference | LightsailDistributionOrigin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol_policy: {
+      value: cdktf.stringToHclTerraform(struct!.protocolPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region_name: {
+      value: cdktf.stringToHclTerraform(struct!.regionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailDistributionOriginOutputReference extends cdktf.ComplexObject {
@@ -1050,6 +1267,37 @@ export function lightsailDistributionTimeoutsToTerraform(struct?: LightsailDistr
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function lightsailDistributionTimeoutsToHclTerraform(struct?: LightsailDistributionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailDistributionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1487,5 +1735,91 @@ export class LightsailDistribution extends cdktf.TerraformResource {
       origin: lightsailDistributionOriginToTerraform(this._origin.internalValue),
       timeouts: lightsailDistributionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bundle_id: {
+        value: cdktf.stringToHclTerraform(this._bundleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_name: {
+        value: cdktf.stringToHclTerraform(this._certificateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_address_type: {
+        value: cdktf.stringToHclTerraform(this._ipAddressType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      cache_behavior: {
+        value: cdktf.listMapperHcl(lightsailDistributionCacheBehaviorToHclTerraform, true)(this._cacheBehavior.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LightsailDistributionCacheBehaviorList",
+      },
+      cache_behavior_settings: {
+        value: lightsailDistributionCacheBehaviorSettingsToHclTerraform(this._cacheBehaviorSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LightsailDistributionCacheBehaviorSettingsList",
+      },
+      default_cache_behavior: {
+        value: lightsailDistributionDefaultCacheBehaviorToHclTerraform(this._defaultCacheBehavior.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LightsailDistributionDefaultCacheBehaviorList",
+      },
+      origin: {
+        value: lightsailDistributionOriginToHclTerraform(this._origin.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LightsailDistributionOriginList",
+      },
+      timeouts: {
+        value: lightsailDistributionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LightsailDistributionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

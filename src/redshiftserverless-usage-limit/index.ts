@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_usage_limit
 // generated from terraform resource schema
 
@@ -209,5 +204,49 @@ export class RedshiftserverlessUsageLimit extends cdktf.TerraformResource {
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
       usage_type: cdktf.stringToTerraform(this._usageType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      amount: {
+        value: cdktf.numberToHclTerraform(this._amount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      breach_action: {
+        value: cdktf.stringToHclTerraform(this._breachAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      period: {
+        value: cdktf.stringToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_arn: {
+        value: cdktf.stringToHclTerraform(this._resourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      usage_type: {
+        value: cdktf.stringToHclTerraform(this._usageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

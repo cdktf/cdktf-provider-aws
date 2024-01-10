@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lexv2models_bot
 // generated from terraform resource schema
 
@@ -74,6 +69,25 @@ export function lexv2ModelsBotDataPrivacyToTerraform(struct?: Lexv2ModelsBotData
   return {
     child_directed: cdktf.booleanToTerraform(struct!.childDirected),
   }
+}
+
+
+export function lexv2ModelsBotDataPrivacyToHclTerraform(struct?: Lexv2ModelsBotDataPrivacy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    child_directed: {
+      value: cdktf.booleanToHclTerraform(struct!.childDirected),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Lexv2ModelsBotDataPrivacyOutputReference extends cdktf.ComplexObject {
@@ -191,6 +205,49 @@ export function lexv2ModelsBotMembersToTerraform(struct?: Lexv2ModelsBotMembers 
     name: cdktf.stringToTerraform(struct!.name),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function lexv2ModelsBotMembersToHclTerraform(struct?: Lexv2ModelsBotMembers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias_id: {
+      value: cdktf.stringToHclTerraform(struct!.aliasId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    alias_name: {
+      value: cdktf.stringToHclTerraform(struct!.aliasName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Lexv2ModelsBotMembersOutputReference extends cdktf.ComplexObject {
@@ -377,6 +434,37 @@ export function lexv2ModelsBotTimeoutsToTerraform(struct?: Lexv2ModelsBotTimeout
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function lexv2ModelsBotTimeoutsToHclTerraform(struct?: Lexv2ModelsBotTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Lexv2ModelsBotTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -733,5 +821,73 @@ export class Lexv2ModelsBot extends cdktf.TerraformResource {
       members: cdktf.listMapper(lexv2ModelsBotMembersToTerraform, true)(this._members.internalValue),
       timeouts: lexv2ModelsBotTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idle_session_ttl_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._idleSessionTtlInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      test_bot_alias_tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._testBotAliasTags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_privacy: {
+        value: cdktf.listMapperHcl(lexv2ModelsBotDataPrivacyToHclTerraform, true)(this._dataPrivacy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Lexv2ModelsBotDataPrivacyList",
+      },
+      members: {
+        value: cdktf.listMapperHcl(lexv2ModelsBotMembersToHclTerraform, true)(this._members.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Lexv2ModelsBotMembersList",
+      },
+      timeouts: {
+        value: lexv2ModelsBotTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Lexv2ModelsBotTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

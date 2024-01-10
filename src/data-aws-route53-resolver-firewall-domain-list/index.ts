@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/route53_resolver_firewall_domain_list
 // generated from terraform resource schema
 
@@ -167,5 +162,25 @@ export class DataAwsRoute53ResolverFirewallDomainList extends cdktf.TerraformDat
       firewall_domain_list_id: cdktf.stringToTerraform(this._firewallDomainListId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      firewall_domain_list_id: {
+        value: cdktf.stringToHclTerraform(this._firewallDomainListId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

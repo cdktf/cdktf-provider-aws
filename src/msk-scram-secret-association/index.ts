@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/msk_scram_secret_association
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       secret_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secretArnList),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_arn: {
+        value: cdktf.stringToHclTerraform(this._clusterArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_arn_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._secretArnList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

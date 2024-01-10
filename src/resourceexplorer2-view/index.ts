@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/resourceexplorer2_view
 // generated from terraform resource schema
 
@@ -52,6 +47,25 @@ export function resourceexplorer2ViewFiltersToTerraform(struct?: Resourceexplore
   return {
     filter_string: cdktf.stringToTerraform(struct!.filterString),
   }
+}
+
+
+export function resourceexplorer2ViewFiltersToHclTerraform(struct?: Resourceexplorer2ViewFilters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter_string: {
+      value: cdktf.stringToHclTerraform(struct!.filterString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Resourceexplorer2ViewFiltersOutputReference extends cdktf.ComplexObject {
@@ -146,6 +160,25 @@ export function resourceexplorer2ViewIncludedPropertyToTerraform(struct?: Resour
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function resourceexplorer2ViewIncludedPropertyToHclTerraform(struct?: Resourceexplorer2ViewIncludedProperty | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Resourceexplorer2ViewIncludedPropertyOutputReference extends cdktf.ComplexObject {
@@ -393,5 +426,43 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
       filters: cdktf.listMapper(resourceexplorer2ViewFiltersToTerraform, true)(this._filters.internalValue),
       included_property: cdktf.listMapper(resourceexplorer2ViewIncludedPropertyToTerraform, true)(this._includedProperty.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_view: {
+        value: cdktf.booleanToHclTerraform(this._defaultView),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      filters: {
+        value: cdktf.listMapperHcl(resourceexplorer2ViewFiltersToHclTerraform, true)(this._filters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Resourceexplorer2ViewFiltersList",
+      },
+      included_property: {
+        value: cdktf.listMapperHcl(resourceexplorer2ViewIncludedPropertyToHclTerraform, true)(this._includedProperty.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Resourceexplorer2ViewIncludedPropertyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

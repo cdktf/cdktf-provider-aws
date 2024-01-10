@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/ami
 // generated from terraform resource schema
 
@@ -66,6 +61,17 @@ export function dataAwsAmiBlockDeviceMappingsToTerraform(struct?: DataAwsAmiBloc
   }
   return {
   }
+}
+
+
+export function dataAwsAmiBlockDeviceMappingsToHclTerraform(struct?: DataAwsAmiBlockDeviceMappings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAmiBlockDeviceMappingsOutputReference extends cdktf.ComplexObject {
@@ -148,6 +154,17 @@ export function dataAwsAmiProductCodesToTerraform(struct?: DataAwsAmiProductCode
   }
 }
 
+
+export function dataAwsAmiProductCodesToHclTerraform(struct?: DataAwsAmiProductCodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAmiProductCodesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -225,6 +242,31 @@ export function dataAwsAmiFilterToTerraform(struct?: DataAwsAmiFilter | cdktf.IR
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsAmiFilterToHclTerraform(struct?: DataAwsAmiFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsAmiFilterOutputReference extends cdktf.ComplexObject {
@@ -338,6 +380,25 @@ export function dataAwsAmiTimeoutsToTerraform(struct?: DataAwsAmiTimeouts | cdkt
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsAmiTimeoutsToHclTerraform(struct?: DataAwsAmiTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsAmiTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -783,5 +844,67 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
       filter: cdktf.listMapper(dataAwsAmiFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsAmiTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      executable_users: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._executableUsers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_deprecated: {
+        value: cdktf.booleanToHclTerraform(this._includeDeprecated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      most_recent: {
+        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name_regex: {
+        value: cdktf.stringToHclTerraform(this._nameRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owners: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsAmiFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsAmiFilterList",
+      },
+      timeouts: {
+        value: dataAwsAmiTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsAmiTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

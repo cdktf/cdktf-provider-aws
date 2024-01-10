@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sesv2_account_vdm_attributes
 // generated from terraform resource schema
 
@@ -51,6 +46,25 @@ export function sesv2AccountVdmAttributesDashboardAttributesToTerraform(struct?:
   return {
     engagement_metrics: cdktf.stringToTerraform(struct!.engagementMetrics),
   }
+}
+
+
+export function sesv2AccountVdmAttributesDashboardAttributesToHclTerraform(struct?: Sesv2AccountVdmAttributesDashboardAttributesOutputReference | Sesv2AccountVdmAttributesDashboardAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    engagement_metrics: {
+      value: cdktf.stringToHclTerraform(struct!.engagementMetrics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Sesv2AccountVdmAttributesDashboardAttributesOutputReference extends cdktf.ComplexObject {
@@ -116,6 +130,25 @@ export function sesv2AccountVdmAttributesGuardianAttributesToTerraform(struct?: 
   return {
     optimized_shared_delivery: cdktf.stringToTerraform(struct!.optimizedSharedDelivery),
   }
+}
+
+
+export function sesv2AccountVdmAttributesGuardianAttributesToHclTerraform(struct?: Sesv2AccountVdmAttributesGuardianAttributesOutputReference | Sesv2AccountVdmAttributesGuardianAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    optimized_shared_delivery: {
+      value: cdktf.stringToHclTerraform(struct!.optimizedSharedDelivery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Sesv2AccountVdmAttributesGuardianAttributesOutputReference extends cdktf.ComplexObject {
@@ -300,5 +333,37 @@ export class Sesv2AccountVdmAttributes extends cdktf.TerraformResource {
       dashboard_attributes: sesv2AccountVdmAttributesDashboardAttributesToTerraform(this._dashboardAttributes.internalValue),
       guardian_attributes: sesv2AccountVdmAttributesGuardianAttributesToTerraform(this._guardianAttributes.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vdm_enabled: {
+        value: cdktf.stringToHclTerraform(this._vdmEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dashboard_attributes: {
+        value: sesv2AccountVdmAttributesDashboardAttributesToHclTerraform(this._dashboardAttributes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Sesv2AccountVdmAttributesDashboardAttributesList",
+      },
+      guardian_attributes: {
+        value: sesv2AccountVdmAttributesGuardianAttributesToHclTerraform(this._guardianAttributes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Sesv2AccountVdmAttributesGuardianAttributesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

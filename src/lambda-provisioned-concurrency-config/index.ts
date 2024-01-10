@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lambda_provisioned_concurrency_config
 // generated from terraform resource schema
 
@@ -62,6 +57,31 @@ export function lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(struct?: L
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function lambdaProvisionedConcurrencyConfigTimeoutsToHclTerraform(struct?: LambdaProvisionedConcurrencyConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaProvisionedConcurrencyConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -308,5 +328,49 @@ export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource 
       skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       timeouts: lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provisioned_concurrent_executions: {
+        value: cdktf.numberToHclTerraform(this._provisionedConcurrentExecutions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      qualifier: {
+        value: cdktf.stringToHclTerraform(this._qualifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_destroy: {
+        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: lambdaProvisionedConcurrencyConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LambdaProvisionedConcurrencyConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

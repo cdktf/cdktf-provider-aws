@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/licensemanager_received_license
 // generated from terraform resource schema
 
@@ -34,6 +29,17 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorr
   }
   return {
   }
+}
+
+
+export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationOutputReference extends cdktf.ComplexObject {
@@ -105,6 +111,17 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProv
   }
 }
 
+
+export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -167,6 +184,17 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationToTe
   }
   return {
   }
+}
+
+
+export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -243,6 +271,17 @@ export function dataAwsLicensemanagerReceivedLicenseEntitlementsToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsLicensemanagerReceivedLicenseEntitlementsToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseEntitlements): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference extends cdktf.ComplexObject {
@@ -329,6 +368,17 @@ export function dataAwsLicensemanagerReceivedLicenseIssuerToTerraform(struct?: D
   }
 }
 
+
+export function dataAwsLicensemanagerReceivedLicenseIssuerToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseIssuer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsLicensemanagerReceivedLicenseIssuerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -403,6 +453,17 @@ export function dataAwsLicensemanagerReceivedLicenseLicenseMetadataToTerraform(s
   }
 }
 
+
+export function dataAwsLicensemanagerReceivedLicenseLicenseMetadataToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseLicenseMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -470,6 +531,17 @@ export function dataAwsLicensemanagerReceivedLicenseReceivedMetadataToTerraform(
   }
   return {
   }
+}
+
+
+export function dataAwsLicensemanagerReceivedLicenseReceivedMetadataToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseReceivedMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference extends cdktf.ComplexObject {
@@ -544,6 +616,17 @@ export function dataAwsLicensemanagerReceivedLicenseValidityToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataAwsLicensemanagerReceivedLicenseValidityToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseValidity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsLicensemanagerReceivedLicenseValidityOutputReference extends cdktf.ComplexObject {
@@ -777,5 +860,25 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
       id: cdktf.stringToTerraform(this._id),
       license_arn: cdktf.stringToTerraform(this._licenseArn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      license_arn: {
+        value: cdktf.stringToHclTerraform(this._licenseArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

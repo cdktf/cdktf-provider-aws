@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ec2_host
 // generated from terraform resource schema
 
@@ -308,5 +303,73 @@ export class Ec2Host extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      asset_id: {
+        value: cdktf.stringToHclTerraform(this._assetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_placement: {
+        value: cdktf.stringToHclTerraform(this._autoPlacement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_recovery: {
+        value: cdktf.stringToHclTerraform(this._hostRecovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_family: {
+        value: cdktf.stringToHclTerraform(this._instanceFamily),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      outpost_arn: {
+        value: cdktf.stringToHclTerraform(this._outpostArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

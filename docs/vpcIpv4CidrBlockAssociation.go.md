@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.NewVpcIpv4CidrBlockAssociation(scope Construct, id *string, config VpcIpv4CidrBlockAssociationConfig) VpcIpv4CidrBlockAssociation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 &vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociationConfig {
 	Connection: interface{},
@@ -855,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociati
 	Id: *string,
 	Ipv4IpamPoolId: *string,
 	Ipv4NetmaskLength: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeouts,
 }
 ```
 
@@ -1031,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 &vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociationTimeouts {
 	Create: *string,
@@ -1079,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.NewVpcIpv4CidrBlockAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpv4CidrBlockAssociationTimeoutsOutputReference
 ```

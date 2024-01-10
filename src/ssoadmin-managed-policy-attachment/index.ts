@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ssoadmin_managed_policy_attachment
 // generated from terraform resource schema
 
@@ -58,6 +53,31 @@ export function ssoadminManagedPolicyAttachmentTimeoutsToTerraform(struct?: Ssoa
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function ssoadminManagedPolicyAttachmentTimeoutsToHclTerraform(struct?: SsoadminManagedPolicyAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminManagedPolicyAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -291,5 +311,43 @@ export class SsoadminManagedPolicyAttachment extends cdktf.TerraformResource {
       permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
       timeouts: ssoadminManagedPolicyAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_policy_arn: {
+        value: cdktf.stringToHclTerraform(this._managedPolicyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission_set_arn: {
+        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: ssoadminManagedPolicyAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SsoadminManagedPolicyAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

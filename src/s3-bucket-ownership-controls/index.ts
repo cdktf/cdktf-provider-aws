@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/s3_bucket_ownership_controls
 // generated from terraform resource schema
 
@@ -45,6 +40,25 @@ export function s3BucketOwnershipControlsRuleToTerraform(struct?: S3BucketOwners
   return {
     object_ownership: cdktf.stringToTerraform(struct!.objectOwnership),
   }
+}
+
+
+export function s3BucketOwnershipControlsRuleToHclTerraform(struct?: S3BucketOwnershipControlsRuleOutputReference | S3BucketOwnershipControlsRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    object_ownership: {
+      value: cdktf.stringToHclTerraform(struct!.objectOwnership),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexObject {
@@ -205,5 +219,31 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       rule: s3BucketOwnershipControlsRuleToTerraform(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: s3BucketOwnershipControlsRuleToHclTerraform(this._rule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketOwnershipControlsRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

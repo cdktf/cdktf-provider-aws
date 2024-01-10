@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.NewDataAwsS3BucketPolicy(scope Construct, id *string, config DataAwsS3BucketPolicyConfig) DataAwsS3BucketPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3bucketpolicy"
 
 &dataawss3bucketpolicy.DataAwsS3BucketPolicyConfig {
 	Connection: interface{},

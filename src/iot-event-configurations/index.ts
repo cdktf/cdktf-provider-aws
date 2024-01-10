@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iot_event_configurations
 // generated from terraform resource schema
 
@@ -122,5 +117,25 @@ export class IotEventConfigurations extends cdktf.TerraformResource {
       event_configurations: cdktf.hashMapper(cdktf.booleanToTerraform)(this._eventConfigurations),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      event_configurations: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._eventConfigurations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

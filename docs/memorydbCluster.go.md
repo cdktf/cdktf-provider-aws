@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbCluster(scope Construct, id *string, config MemorydbClusterConfig) MemorydbCluster
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbCluster.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbCluster.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbCluster.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -150,6 +151,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.toMetadata"></a>
 
@@ -559,7 +566,7 @@ func ResetTlsEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_IsConstruct(x interface{}) *bool
 ```
@@ -591,7 +598,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -605,7 +612,7 @@ memorydbcluster.MemorydbCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -619,7 +626,7 @@ memorydbcluster.MemorydbCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.memorydbCluster.MemorydbCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.MemorydbCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1486,7 +1493,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterClusterEndpoint {
 
@@ -1499,7 +1506,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterConfig {
 	Connection: interface{},
@@ -1534,7 +1541,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 	SubnetGroupName: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.memorydbCluster.MemorydbClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.memorydbCluster.MemorydbClusterTimeouts,
 	TlsEnabled: interface{},
 }
 ```
@@ -1984,7 +1991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterShards {
 
@@ -1997,7 +2004,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterShardsNodes {
 
@@ -2010,7 +2017,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterShardsNodesEndpoint {
 
@@ -2023,7 +2030,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 &memorydbcluster.MemorydbClusterTimeouts {
 	Create: *string,
@@ -2085,7 +2092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterClusterEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterClusterEndpointList
 ```
@@ -2126,10 +2133,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2217,7 +2241,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterClusterEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterClusterEndpointOutputReference
 ```
@@ -2506,7 +2530,7 @@ func InternalValue() MemorydbClusterClusterEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterShardsList
 ```
@@ -2547,10 +2571,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2638,7 +2679,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterShardsNodesEndpointList
 ```
@@ -2679,10 +2720,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2770,7 +2828,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterShardsNodesEndpointOutputReference
 ```
@@ -3059,7 +3117,7 @@ func InternalValue() MemorydbClusterShardsNodesEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterShardsNodesList
 ```
@@ -3100,10 +3158,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3191,7 +3266,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterShardsNodesOutputReference
 ```
@@ -3502,7 +3577,7 @@ func InternalValue() MemorydbClusterShardsNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterShardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbClusterShardsOutputReference
 ```
@@ -3813,7 +3888,7 @@ func InternalValue() MemorydbClusterShards
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbcluster"
 
 memorydbcluster.NewMemorydbClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MemorydbClusterTimeoutsOutputReference
 ```
